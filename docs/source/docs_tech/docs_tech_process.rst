@@ -1,7 +1,6 @@
 =======================
 Barrier Data Processing
 =======================
-
 .. toctree::
     :hidden:
 

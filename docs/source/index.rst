@@ -18,6 +18,7 @@ Welcome to the CABD documentation page!
 
    docs_user/docs_user_web_map
    docs_user/docs_user_data_catalogue
+   docs_user/docs_user_engagement
 
 .. toctree::
    :maxdepth: 3
