@@ -1,0 +1,36 @@
+.. Canadian Aquatic Barriers Database documentation master file, created by
+   sphinx-quickstart on Fri Nov 19 15:33:08 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+:orphan:
+
+**Canadian Aquatic Barriers Database (CABD)**
+---------------------------------------------
+Welcome to the CABD documentation page! 
+
+Please select the documentation you are interested in from the categories provided below:
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Web Tool Documentation
+
+   web_main
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Technical Documentation
+
+   tech_main
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Data Processing Methods
+
+   methods_main
+
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

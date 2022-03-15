@@ -1,0 +1,6 @@
+.. toctree::
+    :maxdepth: 3
+    :caption:   Web Mapping Resources
+
+    web_map_docs/web_walkthrough
+    web_map_docs/web_simplified_data_dictionary

@@ -1,0 +1,46 @@
+/*Navigation caption heading colour*/
+nav.bd-links p.caption {
+    color: #0a4f58
+}
+
+/*Navigation heading colour when selected*/
+#site-navigation nav ul.nav a:hover, #site-navigation nav ul.nav li.active>a, #site-navigation nav ul.nav li.active {
+    color: #03837f !important
+}
+
+/*Navigation heading colour on hover*/
+#site-navigation nav ul.nav a:hover, #site-navigation nav ul.nav li.active>a, #site-navigation nav ul.nav li.active>a:hover {
+    color: #03837f !important
+}
+
+/*Credit box: 1) text colour, 2) text colour hover, 3) border colour*/
+a {
+    color: #03837f
+}
+a:hover {
+    color: #0a4f58
+}
+
+#site-navigation div.navbar_extra_footer {
+    border-color:#03837f !important
+}
+
+/*Main page TOC link colour and font weight*/
+main.bd-content #main-content a, main.bd-content #main-content a:visited {
+    color: #03837f!important;
+}
+
+/*Footer button previous/next label colour*/
+p {
+    color:#0a4f58!important  
+}
+
+/*Footer button title text*/
+.prev-next-area a p.prev-next-title {
+    color:#03837f 
+}
+
+/*Page headers colour*/
+main.bd-content #main-content h1, main.bd-content #main-content h2, main.bd-content #main-content h3, main.bd-content #main-content h4, main.bd-content #main-content h5 {
+    color:#0a4f58
+}
