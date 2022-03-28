@@ -1,0 +1,7 @@
+﻿Column,Description
+id,A unique identifier for the data source.
+name,Name of the data source.
+version_date,Data source version date.
+version_number,Data source version number (optional).
+source,A link to the source data or description of where the source data came from.
+comments,Any additional comments.
