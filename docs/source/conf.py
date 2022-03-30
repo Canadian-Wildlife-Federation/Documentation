@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Canadian Aquatic Barriers Database'
-copyright = '2021, Canadian Wildlife Federation'
+copyright = '2022, Canadian Wildlife Federation'
 #author = 'alexl'
 
 # The full version, including alpha/beta/rc tags
@@ -47,7 +47,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
+import sphinx_book_theme
 html_theme = 'sphinx_book_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,

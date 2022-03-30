@@ -44,3 +44,21 @@ p {
 main.bd-content #main-content h1, main.bd-content #main-content h2, main.bd-content #main-content h3, main.bd-content #main-content h4, main.bd-content #main-content h5 {
     color:#0a4f58
 }
+
+/* code blocks */
+code {
+    background-color: rgb(175 184 193 / 20%);
+    border-radius: 6px;
+    color: #F91E0A;
+    padding: 0.2em 0.4em;
+    padding-top: 0.2em;
+    padding-right: 0.4em;
+    padding-bottom: 0.2em;
+    padding-left: 0.4em;
+}
+
+/* h2 */
+
+h2 {
+    color: #0a4f58;
+}

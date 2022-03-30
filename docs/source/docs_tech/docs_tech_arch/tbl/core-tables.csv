@@ -1,0 +1,7 @@
+﻿Column,Description
+type,Unique identifier for feature type. Required.
+data_view,The data view supporting the feature type. Required.
+name,The human readable name for the feature type. Required.
+attribute_source_table,The data table containing the attribute data source information for the feature type. This is optional and can be null.
+default_featurename_field,The field in the data_view that represents the main feature name.
+feature_source_table,The data table containing a link between the features and the data source information. This is optional and can be null.
