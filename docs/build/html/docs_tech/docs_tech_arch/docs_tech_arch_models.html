@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CABD Feature and Database Models &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,18 +18,21 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=4fea3ae4a0a4ba949df0a89bbae557cc2ce861ae" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,21 +45,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,10 +54,9 @@
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -259,297 +245,164 @@
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
             
-            <div class="navbar_extra_footer">
-            <p></p>
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_models.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Topics
             </div>
-            
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cabd-feature-model">
+   CABD Feature Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generic-feature-model">
+     Generic Feature Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#implemented-feature-model">
+     Implemented Feature Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cabd-database-model">
+   CABD Database Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#views">
+     Views
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#core-tables">
+     Core Tables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shared-attribute-tables">
+     Shared Attribute Tables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-tables">
+     Feature Tables
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-type-attribute-data-sources">
+     Feature Type Attribute Data Sources
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-add-a-new-feature-type">
+   How Add a New Feature Type
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
-    <div id="rtd-footer-container"></div>
 </div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/Canadian-Wildlife-Federation"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-
-</a>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_models.rst.txt"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.rst</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Topics
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cabd-feature-model">
-   CABD Feature Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#generic-feature-model">
-     Generic Feature Model
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#implemented-feature-model">
-     Implemented Feature Model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cabd-database-model">
-   CABD Database Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#views">
-     Views
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#core-tables">
-     Core Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#shared-attribute-tables">
-     Shared Attribute Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-tables">
-     Feature Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-type-attribute-data-sources">
-     Feature Type Attribute Data Sources
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-add-a-new-feature-type">
-   How Add a New Feature Type
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CABD Feature and Database Models</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Topics </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cabd-feature-model">
-   CABD Feature Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#generic-feature-model">
-     Generic Feature Model
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#implemented-feature-model">
-     Implemented Feature Model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cabd-database-model">
-   CABD Database Model
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#views">
-     Views
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#core-tables">
-     Core Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#shared-attribute-tables">
-     Shared Attribute Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-tables">
-     Feature Tables
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-type-attribute-data-sources">
-     Feature Type Attribute Data Sources
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-add-a-new-feature-type">
-   How Add a New Feature Type
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
-                
               <div>
                 
-  <section id="cabd-feature-and-database-models">
-<span id="cabd-models"></span><h1>CABD Feature and Database Models<a class="headerlink" href="#cabd-feature-and-database-models" title="Permalink to this headline">#</a></h1>
-<section id="cabd-feature-model">
-<span id="id1"></span><h2>CABD Feature Model<a class="headerlink" href="#cabd-feature-model" title="Permalink to this headline">#</a></h2>
-<section id="generic-feature-model">
-<span id="id2"></span><h3>Generic Feature Model<a class="headerlink" href="#generic-feature-model" title="Permalink to this headline">#</a></h3>
+  <div class="section" id="cabd-feature-and-database-models">
+<span id="cabd-models"></span><h1>CABD Feature and Database Models<a class="headerlink" href="#cabd-feature-and-database-models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cabd-feature-model">
+<span id="id1"></span><h2>CABD Feature Model<a class="headerlink" href="#cabd-feature-model" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="generic-feature-model">
+<span id="id2"></span><h3>Generic Feature Model<a class="headerlink" href="#generic-feature-model" title="Permalink to this headline">¶</a></h3>
 <p>Features in CABD have an optional hierarchical structure. Feature types can be combined to form “super feature types”.</p>
 <p>There are no structures in the software/database that enforce this model. The database views (see section below) are used to define the various feature types and super types. It would be possible for a feature type to be associated with multiple super types, if desired.</p>
 <img alt="../../_images/generic-feature-model.png" class="align-center" src="../../_images/generic-feature-model.png" />
-</section>
-<section id="implemented-feature-model">
-<span id="id3"></span><h3>Implemented Feature Model<a class="headerlink" href="#implemented-feature-model" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="implemented-feature-model">
+<span id="id3"></span><h3>Implemented Feature Model<a class="headerlink" href="#implemented-feature-model" title="Permalink to this headline">¶</a></h3>
 <p>There are currently three feature types and one super type implemented in CABD. Adding additional feature types is expected and the instructions for this are outlined below (How to add new Feature Type).</p>
 <img alt="../../_images/implemented-feature-model.png" class="align-center" src="../../_images/implemented-feature-model.png" />
 <p>Feature types:</p>
@@ -561,18 +414,18 @@ title="Print to PDF"
 <li><p><code class="docutils literal notranslate"><span class="pre">medium</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">big</span></code></p></li>
 </ul>
-</section>
-</section>
-<section id="cabd-database-model">
-<span id="id4"></span><h2>CABD Database Model<a class="headerlink" href="#cabd-database-model" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="cabd-database-model">
+<span id="id4"></span><h2>CABD Database Model<a class="headerlink" href="#cabd-database-model" title="Permalink to this headline">¶</a></h2>
 <p>The database is structured into multiple schemas.  Each feature type has its own schema, with a common <code class="docutils literal notranslate"><span class="pre">cabd</span></code> schema for shared data and feature metadata.</p>
-<section id="views">
-<span id="cabd-views"></span><h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">#</a></h3>
+<div class="section" id="views">
+<span id="cabd-views"></span><h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h3>
 <p>Each feature type and super feature type has an associated view which supports the api. This view should include all fields required for output (either for display on the UI or to support the future editing api).  The view <code class="docutils literal notranslate"><span class="pre">cabd.all_features_view</span></code> supports all features api endpoint.</p>
 <p>The views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the <code class="docutils literal notranslate"><span class="pre">dams</span></code> view queries the dams data table). Super feature types will generally query multiple data tables (for example, the <code class="docutils literal notranslate"><span class="pre">barriers</span></code> view queries both the dams data table and the waterfalls data table).</p>
-</section>
-<section id="core-tables">
-<span id="id5"></span><h3>Core Tables<a class="headerlink" href="#core-tables" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="core-tables">
+<span id="id5"></span><h3>Core Tables<a class="headerlink" href="#core-tables" title="Permalink to this headline">¶</a></h3>
 <p>These tables are the core tables for the system and required regardless of the feature types loaded. They support the definition of feature types.</p>
 <p><code class="docutils literal notranslate"><span class="pre">cabd.feature_types</span></code></p>
 <p>Lists all the feature types supported by the system.</p>
@@ -688,9 +541,9 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-</section>
-<section id="shared-attribute-tables">
-<span id="id6"></span><h3>Shared Attribute Tables<a class="headerlink" href="#shared-attribute-tables" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="shared-attribute-tables">
+<span id="id6"></span><h3>Shared Attribute Tables<a class="headerlink" href="#shared-attribute-tables" title="Permalink to this headline">¶</a></h3>
 <p>All of these tables store data that are shared between multiple feature types. Generally, each of these tables have a unique code (for references), a name, and a description.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">cabd.barrier_ownership_type_codes</span></code></p></li>
@@ -701,13 +554,13 @@ title="Print to PDF"
 <li><p><code class="docutils literal notranslate"><span class="pre">cabd.upstream_passage_type_codes</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cabd.census_subdivisions</span></code></p></li>
 </ul>
-</section>
-<section id="feature-tables">
-<span id="id7"></span><h3>Feature Tables<a class="headerlink" href="#feature-tables" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="feature-tables">
+<span id="id7"></span><h3>Feature Tables<a class="headerlink" href="#feature-tables" title="Permalink to this headline">¶</a></h3>
 <p>The feature type data tables are found in their corresponding schema. Generally, there will be one feature data table and a number of reference tables that represent attribute values.  Details for current feature types can be found in the Data Dictionary document.</p>
-</section>
-<section id="feature-type-attribute-data-sources">
-<span id="id8"></span><h3>Feature Type Attribute Data Sources<a class="headerlink" href="#feature-type-attribute-data-sources" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="feature-type-attribute-data-sources">
+<span id="id8"></span><h3>Feature Type Attribute Data Sources<a class="headerlink" href="#feature-type-attribute-data-sources" title="Permalink to this headline">¶</a></h3>
 <p>The CABD database has the option of storing the data source for each attribute associated with the feature type. This has been implemented by having <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;.&lt;featuretype&gt;_feature_source</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;.&lt;featuretype&gt;_attribute_source</span></code> tables for the feature type.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;_feature_source</span></code>  table contains for each cabd feature a link to the data source and associated data source feature id.</p>
 <table class="colwidths-given table">
@@ -733,10 +586,10 @@ title="Print to PDF"
 </tbody>
 </table>
 <p>The <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;_attribute_source</span></code> table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, <code class="docutils literal notranslate"><span class="pre">&lt;attribute&gt;_ds</span></code>, links to the <code class="docutils literal notranslate"><span class="pre">cabd.data_source</span> <span class="pre">table</span></code> to identify the data source for the attribute value.</p>
-</section>
-</section>
-<section id="how-add-a-new-feature-type">
-<span id="add-new-feature-type"></span><h2>How Add a New Feature Type<a class="headerlink" href="#how-add-a-new-feature-type" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="how-add-a-new-feature-type">
+<span id="add-new-feature-type"></span><h2>How Add a New Feature Type<a class="headerlink" href="#how-add-a-new-feature-type" title="Permalink to this headline">¶</a></h2>
 <p>New feature types can be added to the system by adding the data to the database and updating the database metadata tables.</p>
 <ol class="arabic simple">
 <li><p>Create a new schema for your feature type.</p></li>
@@ -774,17 +627,15 @@ title="Print to PDF"
 </ol>
 <p>The new feature type should show up in the types API: <code class="docutils literal notranslate"><span class="pre">https://server.ca/cabd-api/features/types/</span></code>.</p>
 <p>The new features can be accessed from here: <code class="docutils literal notranslate"><span class="pre">https://server.ca/cabd-api/features/&lt;newfeaturetype&gt;</span></code>.</p>
-</section>
-</section>
+</div>
+</div>
 
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../docs_tech_arch.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -800,26 +651,24 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+        
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-      &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
-</p>
-        </footer>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
     </div>
-    
-</div>
+  </footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

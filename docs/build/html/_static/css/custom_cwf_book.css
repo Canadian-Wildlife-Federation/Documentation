@@ -62,3 +62,33 @@ code {
 h2 {
     color: #0a4f58;
 }
+
+/*Formatting for static html - data dictionary*/
+.bd-content .section table {
+    display: inline-table;
+}
+.table caption {
+    background-color: #0a4f58!important;
+}
+caption {
+    text-align: center;
+    caption-side: top;
+    color: #ffffff!important;
+}
+.table, .table caption, .table th, .table td {
+    border: 1px solid #0a4f587a!important;
+}
+.table th, .table .title, .table .label {
+    background-color: #0a4f583b!important;
+}
+.title, th {
+    font-weight: bold;
+    text-align: center;
+    color: #0a4f58!important;
+}
+.data-type {
+    color: #ce6300!important;
+}
+.nav-link {
+    background-color: #f2f2f3!important;
+  }
