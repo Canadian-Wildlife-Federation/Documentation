@@ -49,7 +49,7 @@ main.bd-content #main-content h1, main.bd-content #main-content h2, main.bd-cont
 code {
     background-color: rgb(175 184 193 / 20%);
     border-radius: 6px;
-    color: #F91E0A;
+    color: #CC3600;
     padding: 0.2em 0.4em;
     padding-top: 0.2em;
     padding-right: 0.4em;
@@ -87,7 +87,7 @@ caption {
     color: #0a4f58!important;
 }
 .data-type {
-    color: #ce6300!important;
+    color: #CC3600!important;
 }
 .nav-link {
     background-color: #f2f2f3!important;
