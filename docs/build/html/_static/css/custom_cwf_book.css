@@ -92,3 +92,11 @@ caption {
 .nav-link {
     background-color: #f2f2f3!important;
   }
+
+/*Topics bar aesthetic*/
+.toc-entry>.nav-link.active {
+    color: #5A5A5A!important;
+}
+:root {
+    --pst-color-link: 90, 90, 90;
+}

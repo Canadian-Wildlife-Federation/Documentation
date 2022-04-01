@@ -1,0 +1,5 @@
+Name,Description
+Small,A dam having a height less than 5 m. 
+Medium,A dam having a height between 5 and 15 m.
+Large,"A dam having a height of 15 m or greater, or a height between 5 m and 15 m that impounds more than 3 million m3. "
+Unknown,The size of the dam is unknown
