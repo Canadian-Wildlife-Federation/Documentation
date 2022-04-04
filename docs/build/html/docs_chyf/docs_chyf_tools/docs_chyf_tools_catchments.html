@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catchment Delineation &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    <title>Catchment Delineator &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Input Specifications" href="docs_chyf_tools_specification.html" />
-    <link rel="prev" title="Flowpath Processing" href="docs_chyf_tools_flowpaths.html" />
+    <link rel="prev" title="Flowpath Constructor" href="docs_chyf_tools_flowpaths.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -189,6 +189,11 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
+    <a class="reference internal" href="docs_chyf_tools_copyright_author.html">
+     CHyF Tools Copyright and Authorship
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="docs_chyf_tools_logical_model.html">
      Logical Model
     </a>
@@ -200,12 +205,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="docs_chyf_tools_flowpaths.html">
-     Flowpath Processing
+     Flowpath Constructor
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Catchment Delineation
+     Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
@@ -326,6 +331,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#purpose">
+   Purpose
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -334,8 +352,23 @@
         
               <div>
                 
-  <div class="section" id="catchment-delineation">
-<h1>Catchment Delineation<a class="headerlink" href="#catchment-delineation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="catchment-delineator">
+<h1>Catchment Delineator<a class="headerlink" href="#catchment-delineator" title="Permalink to this headline">¶</a></h1>
+<dl class="simple">
+<dt>Modification Date</dt><dd><p>2020 April 6</p>
+</dd>
+</dl>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This tool is used to create CHyF compliant catchments from hydrographic data in combination with a gridded Digital Elevation Model that represents the elevation of the bare earth.</p></li>
+<li><p>It takes into account the surface hydrography and a digital elevation model representing the ground surface. In very flat areas where the elevation data may not be very helpful, the results approximate a medial axis approach, with each catchment boundary placed about halfway between the nearby linear or polygonal waterbodies. Where local elevation differences are more significant, the boundaries are located such that the slopes on either side are oriented toward different waterbodies. The software makes a natural and continuous progression between these cases.</p></li>
+<li><p>CHyF compliant catchments delineated by the tool include reach catchments and bank catchments. Water catchments, which may for example correspond to lakes, wide streams, or estuaries - or subdivisions of such features - are provided by the user as input.</p></li>
+<li><p>The reach catchments, bank catchments and water catchments form a complete coverage of the Area of Interest.</p></li>
+<li><p>Empty catchments are out of scope with this version of the delineator. This means that depressions that do not contain linear or polygonal waterbodies and are not bordering such waterbodies will be absorbed into adjacent catchments.</p></li>
+<li><p>Special treatment of built-up areas is also out of scope at this time.</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -348,7 +381,7 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Flowpath Processing</p>
+            <p class="prev-next-title">Flowpath Constructor</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="docs_chyf_tools_specification.html" title="next page">

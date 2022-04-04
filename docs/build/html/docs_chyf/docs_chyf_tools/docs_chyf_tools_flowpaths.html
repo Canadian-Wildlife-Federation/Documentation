@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flowpath Processing &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    <title>Flowpath Constructor &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Catchment Delineation" href="docs_chyf_tools_catchments.html" />
+    <link rel="next" title="Catchment Delineator" href="docs_chyf_tools_catchments.html" />
     <link rel="prev" title="Data Model" href="docs_chyf_tools_data_model.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -189,6 +189,11 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
+    <a class="reference internal" href="docs_chyf_tools_copyright_author.html">
+     CHyF Tools Copyright and Authorship
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="docs_chyf_tools_logical_model.html">
      Logical Model
     </a>
@@ -200,12 +205,12 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Flowpath Processing
+     Flowpath Constructor
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="docs_chyf_tools_catchments.html">
-     Catchment Delineation
+     Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
@@ -326,6 +331,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#purpose">
+   Purpose
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -334,8 +352,21 @@
         
               <div>
                 
-  <div class="section" id="flowpath-processing">
-<h1>Flowpath Processing<a class="headerlink" href="#flowpath-processing" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="flowpath-constructor">
+<h1>Flowpath Constructor<a class="headerlink" href="#flowpath-constructor" title="Permalink to this headline">¶</a></h1>
+<dl class="simple">
+<dt>Modification Date</dt><dd><p>2020 April 6</p>
+</dd>
+</dl>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Flowpath Constructor may be used to generate all elementary flowpaths found in polygonal waterbodies, such as lakes, estuaries and double-line (i.e. comparatively wide) rivers, or subdivisions of such waterbodies. It may for example be of interest to break large lakes or rivers into multiple subdivisions.</p></li>
+<li><p>In some situations existing skeletons in lakes are available that are considered worth retaining, in terms of both their geometry and associated attributes. In this case, the Flowpath Constructor can be run such that only bank flowpaths are generated. Where a bank flowpath intersects an existing skeleton flowpath, the existing skeleton flowpath is broken into two skeleton flowpaths, with identical attribution.</p></li>
+<li><p>In addition to the skeletonizer the Flowpath Constructor includes a directionalizer that can determine the direction of a flowpath if newly created or if the direction is unknown.</p></li>
+<li><p>The tool can also assess whether a flowpath represents a primary or secondary flow; this is of particular interest in areas where the flowpaths do not all follow a dendritic pattern, i.e., at points of divergence. The resulting primary flowpaths do form a dendritic pattern. Any cycles in the network (where water can flow around a loop back to its starting position) are corrected where practical.</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -354,7 +385,7 @@
     <a class='right-next' id="next-link" href="docs_chyf_tools_catchments.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Catchment Delineation</p>
+        <p class="prev-next-title">Catchment Delineator</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

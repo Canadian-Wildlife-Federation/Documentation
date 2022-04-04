@@ -72,5 +72,5 @@ html_theme_options = {
     "extra_footer": False,
     "extra_navbar": "<p></p>",
     "home_page_in_toc": False,
-    "toc_title": "Topics",
+    "toc_title": "Document Contents",
 }
