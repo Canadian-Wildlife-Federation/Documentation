@@ -1,0 +1,5 @@
+﻿Column,Description
+id,The unique identifier.
+type,A WARNING or ERROR value depending on the severity of the issue. 
+message,A description of the problem.
+geometry,Point geometry that roughly identifies the position or feature of the problem.

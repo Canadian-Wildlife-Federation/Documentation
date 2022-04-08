@@ -1,0 +1,3 @@
+﻿Attribute Name,Description
+type,The catchment type (‘elementary_catchment’).
+size,The area in square meters of the catchment. 

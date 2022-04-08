@@ -1,0 +1,6 @@
+﻿Column,Description
+id,The unique identifier for the error or warning.
+aoi_id,The unique identifier for the aoi that the error occurred in.
+type,An ERROR or WARNING value depending on the severity of the issue.
+message,A description of the problem.
+geometry,a point or linestring of the problem location.
