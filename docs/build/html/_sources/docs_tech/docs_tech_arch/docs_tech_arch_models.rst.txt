@@ -1,8 +1,8 @@
 .. _cabd-models:
 
-================================
-CABD Feature and Database Models
-================================
+=================================
+CABD Features and Database Models
+=================================
 
 .. _cabd-feature-model:
 

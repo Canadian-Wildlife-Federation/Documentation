@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CABD REST Services (API Endpoints) &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,23 +18,26 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=4fea3ae4a0a4ba949df0a89bbae557cc2ce861ae" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Data Dictionary" href="docs_tech_arch_data_dict.html" />
-    <link rel="prev" title="CABD Feature and Database Models" href="docs_tech_arch_models.html" />
+    <link rel="prev" title="CABD Features and Database Models" href="docs_tech_arch_models.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -44,21 +45,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,10 +54,9 @@
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -138,7 +124,7 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="docs_tech_arch_models.html">
-     CABD Feature and Database Models
+     CABD Features and Database Models
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -203,6 +189,11 @@
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_copyright_author.html">
+     CHyF Tools Copyright and Authorship
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_logical_model.html">
      Logical Model
     </a>
@@ -214,12 +205,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_flowpaths.html">
-     Flowpath Processing
+     Flowpath Constructor
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_catchments.html">
-     Catchment Delineation
+     Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
@@ -259,333 +250,193 @@
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
             
-            <div class="navbar_extra_footer">
-            <p></p>
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_api.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_tech/docs_tech_arch/docs_tech_arch_api.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_tech/docs_tech_arch/docs_tech_arch_api.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
             </div>
-            
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#projection">
+     Projection
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#max-features">
+     Max Features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#api-specification">
+     API Specification
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#api-end-points">
+   API End Points
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-type-end-points">
+     Feature Type End Points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-end-points">
+     Feature End Points
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filter">
+     Filter
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#format">
+     Format
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-features">
+     Maximum Features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feature-data-source-end-point">
+   Feature Data Source End Point
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#feature-datasource-endpoint-format">
+     Format
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
-    <div id="rtd-footer-container"></div>
 </div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/Canadian-Wildlife-Federation"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-
-</a>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_api.rst.txt"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.rst</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Topics
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection">
-     Projection
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#max-features">
-     Max Features
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#api-specification">
-     API Specification
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#api-end-points">
-   API End Points
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-type-end-points">
-     Feature Type End Points
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-end-points">
-     Feature End Points
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#filter">
-     Filter
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#format">
-     Format
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#maximum-features">
-     Maximum Features
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#feature-data-source-end-point">
-   Feature Data Source End Point
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-datasource-endpoint-format">
-     Format
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>CABD REST Services (API Endpoints)</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Topics </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#overview">
-   Overview
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection">
-     Projection
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#max-features">
-     Max Features
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#api-specification">
-     API Specification
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#api-end-points">
-   API End Points
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-type-end-points">
-     Feature Type End Points
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-end-points">
-     Feature End Points
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#filter">
-     Filter
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#format">
-     Format
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#maximum-features">
-     Maximum Features
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#feature-data-source-end-point">
-   Feature Data Source End Point
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#feature-datasource-endpoint-format">
-     Format
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
-                
               <div>
                 
-  <section id="cabd-rest-services-api-endpoints">
-<span id="cabd-rest-services"></span><h1>CABD REST Services (API Endpoints)<a class="headerlink" href="#cabd-rest-services-api-endpoints" title="Permalink to this headline">#</a></h1>
-<section id="overview">
-<span id="api-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h2>
-<section id="projection">
-<span id="api-projection"></span><h3>Projection<a class="headerlink" href="#projection" title="Permalink to this headline">#</a></h3>
+  <div class="section" id="cabd-rest-services-api-endpoints">
+<span id="cabd-rest-services"></span><h1>CABD REST Services (API Endpoints)<a class="headerlink" href="#cabd-rest-services-api-endpoints" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<span id="api-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="projection">
+<span id="api-projection"></span><h3>Projection<a class="headerlink" href="#projection" title="Permalink to this headline">¶</a></h3>
 <p>All coordinates are returned in latitude/longitude (EPSG:4617).</p>
-</section>
-<section id="max-features">
-<span id="api-max-features"></span><h3>Max Features<a class="headerlink" href="#max-features" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="max-features">
+<span id="api-max-features"></span><h3>Max Features<a class="headerlink" href="#max-features" title="Permalink to this headline">¶</a></h3>
 <p>For all the feature API end points below, the application returns a maximum of 15000 features. This is configurable and may be modified if required.</p>
-</section>
-<section id="api-specification">
-<span id="id1"></span><h3>API Specification<a class="headerlink" href="#api-specification" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="api-specification">
+<span id="id1"></span><h3>API Specification<a class="headerlink" href="#api-specification" title="Permalink to this headline">¶</a></h3>
 <p>The latest Open API v3 specification can be found on the server:</p>
 <p><a class="reference external" href="https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml">https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml</a> (YAML)</p>
 <p><a class="reference external" href="https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs">https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs</a> (JSON)</p>
-</section>
-</section>
-<section id="api-end-points">
-<span id="api-endpoints"></span><h2>API End Points<a class="headerlink" href="#api-end-points" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="api-end-points">
+<span id="api-endpoints"></span><h2>API End Points<a class="headerlink" href="#api-end-points" title="Permalink to this headline">¶</a></h2>
 <p>The base API server for the CABD end points is: <code class="docutils literal notranslate"><span class="pre">https://cabd-web.azurewebsites.net/cabd-api</span></code>.</p>
-<section id="feature-type-end-points">
-<span id="feature-type-endpoints"></span><h3>Feature Type End Points<a class="headerlink" href="#feature-type-end-points" title="Permalink to this headline">#</a></h3>
+<div class="section" id="feature-type-end-points">
+<span id="feature-type-endpoints"></span><h3>Feature Type End Points<a class="headerlink" href="#feature-type-end-points" title="Permalink to this headline">¶</a></h3>
 <p>The output format of all Feature Type End points is <code class="docutils literal notranslate"><span class="pre">json</span></code>.</p>
 <p>Existing feature types are: <code class="docutils literal notranslate"><span class="pre">barriers</span></code>, <code class="docutils literal notranslate"><span class="pre">dams</span></code>, <code class="docutils literal notranslate"><span class="pre">waterfalls</span></code>, <code class="docutils literal notranslate"><span class="pre">fishways</span></code>, <code class="docutils literal notranslate"><span class="pre">medium</span></code>, and <code class="docutils literal notranslate"><span class="pre">big</span></code>. See <a class="reference internal" href="docs_tech_arch_models.html#implemented-feature-model"><span class="std std-ref">Implemented Feature Model</span></a> for definitions of each feature type.</p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/types/</span></code></p>
@@ -597,9 +448,9 @@ title="Print to PDF"
 <div><p>Returns a description of the feature type. This description includes all attributes, names, and other metadata associated with the feature type. In addition, the metadata includes display details for attributes, including the details of which attributes should be included in the “simple” display and which included in the “all” attributes display.</p>
 <p>For example, <code class="docutils literal notranslate"><span class="pre">https://cabd-web.azurewebsites.net/cabd-api/features/types/dams</span></code> returns a <code class="docutils literal notranslate"><span class="pre">json</span></code> with the description of the <code class="docutils literal notranslate"><span class="pre">dams</span></code> feature type.</p>
 </div></blockquote>
-</section>
-<section id="feature-end-points">
-<span id="feature-endpoints"></span><h3>Feature End Points<a class="headerlink" href="#feature-end-points" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="feature-end-points">
+<span id="feature-endpoints"></span><h3>Feature End Points<a class="headerlink" href="#feature-end-points" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">/features/&lt;feature-id&gt;</span></code></p>
 <blockquote>
 <div><p>Returns a single feature based on its ID, which is provided as <code class="docutils literal notranslate"><span class="pre">&lt;feature-id&gt;</span></code>. This will include all of the attributes specific to the type of feature. Thus, the schema of this resource is variable based on the feature type.</p>
@@ -635,9 +486,9 @@ title="Print to PDF"
 <blockquote>
 <div><p>Returns a vector tile of all features for the given type.</p>
 </div></blockquote>
-</section>
-<section id="filter">
-<span id="feature-endpoints-filter"></span><h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="filter">
+<span id="feature-endpoints-filter"></span><h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
 <p>Provides a basic option for filtering features based on the feature attributes.</p>
 <ul class="simple">
 <li><p>If the filter attribute name provided is not valid for the feature type, then an error will be returned (HTTP status code <code class="docutils literal notranslate"><span class="pre">400</span> <span class="pre">-</span> <span class="pre">Bad</span> <span class="pre">Request</span></code>)</p></li>
@@ -672,9 +523,9 @@ title="Print to PDF"
 <p>Example:</p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/dams?bbox=0,0,1,1&amp;filter=passability_status_code:in:1,2&amp;filter=nhn_workunit_id:eq:08GABX1</span></code></p>
 <p>This request will return all dam features with a passability status code of 1 (Barrier) or 2 (Partial Barrier) in the NHN work unit 08GABX1 within the bounding box [(0 0), (1 1)].</p>
-</section>
-<section id="format">
-<span id="feature-endpoints-format"></span><h3>Format<a class="headerlink" href="#format" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="format">
+<span id="feature-endpoints-format"></span><h3>Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h3>
 <p>The default output format is GeoJSON, however by supplying the format query parameter additional formats are supported.</p>
 <p>Example:</p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/dams_medium_large?filter=nhn_workunit_id:eq:08GABX1&amp;format=geopackage</span></code></p>
@@ -687,41 +538,39 @@ title="Print to PDF"
 <li><p><code class="docutils literal notranslate"><span class="pre">json</span></code>/<code class="docutils literal notranslate"><span class="pre">geojson</span></code> - outputs geojson (default)</p></li>
 </ul>
 <p>The single feature endpoints only return geojson output.</p>
-</section>
-<section id="maximum-features">
-<span id="feature-endpoints-max-features"></span><h3>Maximum Features<a class="headerlink" href="#maximum-features" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="maximum-features">
+<span id="feature-endpoints-max-features"></span><h3>Maximum Features<a class="headerlink" href="#maximum-features" title="Permalink to this headline">¶</a></h3>
 <p>A maximum of 15,000 features will be returned.  If a feature api request would result in more than 15,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.</p>
 <p>The value <code class="docutils literal notranslate"><span class="pre">15000</span></code> is an application parameter and can be modified if required (see <code class="docutils literal notranslate"><span class="pre">application.properties</span></code> file).</p>
-</section>
-</section>
-<section id="feature-data-source-end-point">
-<span id="feature-datasource-endpoint"></span><h2>Feature Data Source End Point<a class="headerlink" href="#feature-data-source-end-point" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="feature-data-source-end-point">
+<span id="feature-datasource-endpoint"></span><h2>Feature Data Source End Point<a class="headerlink" href="#feature-data-source-end-point" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">/features/datasources/&lt;feature-id&gt;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/datasources/&lt;feature-id&gt;?fields=all</span></code></p>
 <blockquote>
 <div><p>Returns the data source details for each attribute associated with the given feature id.  By default this returns a reduced set of attributes: <code class="docutils literal notranslate"><span class="pre">feature</span> <span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">attribute</span> <span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">source</span> <span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">source</span> <span class="pre">feature</span> <span class="pre">id</span></code>. To include the complete set of attributes (<code class="docutils literal notranslate"><span class="pre">feature</span> <span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">attribute</span> <span class="pre">field</span></code>, <code class="docutils literal notranslate"><span class="pre">attribute</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">source</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">source</span> <span class="pre">date</span></code>, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">source</span> <span class="pre">version</span></code>, <code class="docutils literal notranslate"><span class="pre">ata</span> <span class="pre">source</span> <span class="pre">feature</span> <span class="pre">id</span></code>, add the query parameter <code class="docutils literal notranslate"><span class="pre">fields=all</span></code> to the request.</p>
 </div></blockquote>
-<section id="feature-datasource-endpoint-format">
-<span id="id2"></span><h3>Format<a class="headerlink" href="#feature-datasource-endpoint-format" title="Permalink to this headline">#</a></h3>
+<div class="section" id="feature-datasource-endpoint-format">
+<span id="id2"></span><h3>Format<a class="headerlink" href="#feature-datasource-endpoint-format" title="Permalink to this headline">¶</a></h3>
 <p>The default output format of this end point is CSV.</p>
 <p>JSON format is also supported by providing the <code class="docutils literal notranslate"><span class="pre">format=json</span></code> query parameter: <code class="docutils literal notranslate"><span class="pre">/features/datasources/&lt;feature-id&gt;?format=json</span></code>.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="docs_tech_arch_models.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">CABD Feature and Database Models</p>
+            <p class="prev-next-title">CABD Features and Database Models</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="docs_tech_arch_data_dict.html" title="next page">
@@ -732,26 +581,24 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+        
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-      &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
-</p>
-        </footer>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
     </div>
-    
-</div>
+  </footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

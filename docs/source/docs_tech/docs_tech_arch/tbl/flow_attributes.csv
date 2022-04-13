@@ -1,0 +1,6 @@
+﻿Attribute Name,Description
+type,The type of the features (‘flowpath’ or ‘waterbody’).
+sub_type,The sub classification of the feature. See the ef_type and ec_type attributes in the CHyF Data Model documentation for valid values. 
+size,"The size of the feature. For linear features this will be the length in meters, for polygons features this will be the area in square meters. "
+name,The name of the feature. 
+rank,The rank associated with the feature (primary/secondary). This only applies to linear flowpath features. See rank attribute in the CHyF Data Model documentation for more information.

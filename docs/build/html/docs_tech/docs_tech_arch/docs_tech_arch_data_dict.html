@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Dictionary &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,18 +18,21 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=4fea3ae4a0a4ba949df0a89bbae557cc2ce861ae" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -44,21 +45,7 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -67,10 +54,9 @@
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -138,7 +124,7 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="docs_tech_arch_models.html">
-     CABD Feature and Database Models
+     CABD Features and Database Models
     </a>
    </li>
    <li class="toctree-l2">
@@ -203,6 +189,11 @@
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_copyright_author.html">
+     CHyF Tools Copyright and Authorship
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_logical_model.html">
      Logical Model
     </a>
@@ -214,12 +205,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_flowpaths.html">
-     Flowpath Processing
+     Flowpath Constructor
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_catchments.html">
-     Catchment Delineation
+     Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
@@ -259,866 +250,3998 @@
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
             
-            <div class="navbar_extra_footer">
-            <p></p>
-            </div>
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_data_dict.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_tech/docs_tech_arch/docs_tech_arch_data_dict.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_tech/docs_tech_arch/docs_tech_arch_data_dict.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
             
         </div>
     </div>
-    <div id="rtd-footer-container"></div>
 </div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-<a href="https://github.com/Canadian-Wildlife-Federation"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="bottom"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-
-</a>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/docs_tech/docs_tech_arch/docs_tech_arch_data_dict.rst.txt"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.rst</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Topics
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dams-dams">
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     dams.dams
-    </span>
-   </code>
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data Dictionary</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Topics </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dams-dams">
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     dams.dams
-    </span>
-   </code>
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <main id="main-content" role="main">
-                
               <div>
                 
-  <section id="data-dictionary">
-<span id="cabd-data-dictionary"></span><h1>Data Dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">#</a></h1>
-<dl class="glossary">
-<dt id="term-Database">Database<a class="headerlink" href="#term-Database" title="Permalink to this term">#</a></dt><dd><p>cabd</p>
-</dd>
-<dt id="term-Tables">Tables<a class="headerlink" href="#term-Tables" title="Permalink to this term">#</a></dt><dd><p><a class="reference internal" href="#dams-dams"><span class="std std-ref">dams.dams</span></a></p>
-<p>table2</p>
-<p>table3</p>
-</dd>
-</dl>
-<section id="dams-dams">
-<span id="id1"></span><h2><code class="docutils literal notranslate"><span class="pre">dams.dams</span></code><a class="headerlink" href="#dams-dams" title="Permalink to this headline">#</a></h2>
-<p>Attributes and description for medium dams (i.e., having a height between 5 and 15 m) and large dams (i.e., having height of 15 m or greater, or a height between 5 m and 15 m that impounds more than 3 million m3).</p>
-<table class="colwidths-given table">
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 20%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 5%" />
-<col style="width: 30%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Data type</p></th>
-<th class="head"><p>PK</p></th>
-<th class="head"><p>FK</p></th>
-<th class="head"><p>UQ</p></th>
-<th class="head"><p>Not null</p></th>
-<th class="head"><p>Default value</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>cabd_id</p></td>
-<td><p>uuid</p></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>Unique identifier for each barrier point.</p></td>
-</tr>
-<tr class="row-odd"><td><p>latitude</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>Latitude of point location of dam in decimal degrees; the point location is only an approximation of the actual dam location (held in geometry).</p></td>
-</tr>
-<tr class="row-even"><td><p>longitude</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>Longitude of point location of dam in decimal degrees; the point location is only an approximation of the actual dam location (held in geometry).</p></td>
-</tr>
-<tr class="row-odd"><td><p>dam_name_en</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Given or known name of the dam structure (English).</p></td>
-</tr>
-<tr class="row-even"><td><p>dam_name_fr</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Given or known name of the dam structure (French).</p></td>
-</tr>
-<tr class="row-odd"><td><p>waterbody_name_en</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name of waterbody in which the dam is recorded (English).</p></td>
-</tr>
-<tr class="row-even"><td><p>waterbody_name_fr</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name of waterbody in which the dam is recorded (French).</p></td>
-</tr>
-<tr class="row-odd"><td><p>reservoir_name_en</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name of the reservoir or controlled lake (i.e., impounded waterbody; English).</p></td>
-</tr>
-<tr class="row-even"><td><p>reservoir_name_fr</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name of the reservoir or controlled lake (i.e., impounded waterbody; French).</p></td>
-</tr>
-<tr class="row-odd"><td><p>nhn_sub_sub_drainage_name</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name associated with NHN Work Unit polygons (WSCSSDANAME field value).</p></td>
-</tr>
-<tr class="row-even"><td><p>nhn_workunit_id</p></td>
-<td><p>varchar(7)</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Unique codes assigned to NHN Work Unit polygons.</p></td>
-</tr>
-<tr class="row-odd"><td><p>province_territory_code</p></td>
-<td><p>varchar(2)</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>Code referencing the Province or Territory in which the structure resides.</p></td>
-</tr>
-<tr class="row-even"><td><p>municipality</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Name of nearest municipality.</p></td>
-</tr>
-<tr class="row-odd"><td><p>owner</p></td>
-<td><p>varchar(512)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Person, company, organization, government unit, public utility, corporation or other entity which either holds a water license to operate a dam or retains the legal property title on the dam site.</p></td>
-</tr>
-<tr class="row-even"><td><p>ownership_type_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing barrier ownership type.</p></td>
-</tr>
-<tr class="row-odd"><td><p>provincial_compliance_status</p></td>
-<td><p>varchar(64)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The status of regulatory compliance with provincial licensing body.</p></td>
-</tr>
-<tr class="row-even"><td><p>federal_compliance_status</p></td>
-<td><p>varchar(64)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The status of regulatory compliance with the federal licensing body.</p></td>
-</tr>
-<tr class="row-odd"><td><p>operating_notes</p></td>
-<td><p>text</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Unstructured comments on important operation considerations for the dam structure.</p></td>
-</tr>
-<tr class="row-even"><td><p>operating_status_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the operating status of the dam.</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the primary use of the dam and associated facilities.</p></td>
-</tr>
-<tr class="row-even"><td><p>use_irrigation_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for irrigation purposes, and the extent to which irrigation is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_electricity_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for hydroelectric energy production, and the extent to which hydroelectric production is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-even"><td><p>use_supply_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for water supply purposes, and the extent to which water supply is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_floodcontrol_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for flood control purposes, and the extent to which flood control is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-even"><td><p>use_recreaction_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for recreation purposes, and the extent to which recreation is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_navigation_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for navigation, and the extent to which navigation is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-even"><td><p>use_fish_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for fisheries purposes, and the extent to which fisheries are a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_pollution_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for pollution control purposes, and the extent to which pollution control is a planned use (i.e., main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-even"><td><p>use_invasivespecies_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used in control invasive species and the extent to which invasive species control is a planned use (i.e., Main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-odd"><td><p>use_other_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates the dam is used for “other” purposes, and the extent to which it is a planned use (i.e., Main use, major use, or secondary use).</p></td>
-</tr>
-<tr class="row-even"><td><p>lake_control_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates whether a reservoir has been built at the location of an existing natural lake using a lake control structure; currently this column only contains limited entries; “Yes” = lake control structure raises original lake level; “Enlarged” = lake control structure enlarged the original lake surface area; “Maybe” = not sure, but data seems to indicate a lake control structure.</p></td>
-</tr>
-<tr class="row-odd"><td><p>construction_year</p></td>
-<td><p>numeric</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Year in which the dam was built (not further specified: year of construction; year of completion; year of commissioning; year of refurbishment/update; etc.)</p></td>
-</tr>
-<tr class="row-even"><td><p>assess_schedule</p></td>
-<td><p>varchar(100)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Frequency at which the dam structure is assessed by ownership party or regulatory body.</p></td>
-</tr>
-<tr class="row-odd"><td><p>maintenance_last</p></td>
-<td><p>date</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Date of last maintenance or renovation work performed on the barrier.</p></td>
-</tr>
-<tr class="row-even"><td><p>maintenance_next</p></td>
-<td><p>date</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Date of the next scheduled maintenance or renovation work performed on the barrier.</p></td>
-</tr>
-<tr class="row-odd"><td><p>expected_life</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Number of years the dam structure is expected to last.</p></td>
-</tr>
-<tr class="row-even"><td><p>condition_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the physical condition of the dam.</p></td>
-</tr>
-<tr class="row-odd"><td><p>function_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the function of the dam.</p></td>
-</tr>
-<tr class="row-even"><td><p>construction_type_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the dam structure type based on construction material/design.</p></td>
-</tr>
-<tr class="row-odd"><td><p>height_m</p></td>
-<td><p>float4</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Reported height of the dam in meters. Depending on the data source this could variably be height of dam wall, crest height, or head height.</p></td>
-</tr>
-<tr class="row-even"><td><p>length_m</p></td>
-<td><p>float4</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Length of the crest of the dam from one bank (or abutment) to the other in meters.</p></td>
-</tr>
-<tr class="row-odd"><td><p>size_class_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The size classification of the dam based on the height of the dam in meters (dam_hgt_m).</p></td>
-</tr>
-<tr class="row-even"><td><p>spillway_capacity</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The designed capacity of the spillway in m3 per second.</p></td>
-</tr>
-<tr class="row-odd"><td><p>spillway_type_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing spillway type.</p></td>
-</tr>
-<tr class="row-even"><td><p>reservoir_present</p></td>
-<td><p>bool</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates if a reservoir is present due to the creation of the dam.</p></td>
-</tr>
-<tr class="row-odd"><td><p>reservoir_area_sqkm</p></td>
-<td><p>float4</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Representative surface area of reservoir in square kilometers.</p></td>
-</tr>
-<tr class="row-even"><td><p>reservoir_depth_m</p></td>
-<td><p>float4</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Average depth of reservoir in meters.</p></td>
-</tr>
-<tr class="row-odd"><td><p>storage_capacity_mcm</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Storage capacity of reservoir in million cubic meters.</p></td>
-</tr>
-<tr class="row-even"><td><p>avg_rate_of_discharge_ls</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Average rate of discharge at dam location in liters per second.</p></td>
-</tr>
-<tr class="row-odd"><td><p>degree_of_regulation_pc</p></td>
-<td><p>float4</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Degree of Regulation (DOR) in percent; equivalent to “residence time” of water in the reservoir; calculated as ratio between storage capacity (‘Cap_mcm’) and total annual flow (derived from ‘Dis_avg_ls’); values capped at 10,000 indicate exceedingly high values, which may be due to inconsistencies in the data and/or incorrect allocation to the river network and the associated discharges.</p></td>
-</tr>
-<tr class="row-even"><td><p>provincial_flow_req</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Legislated flow requirements for the dam structure in cubic meters per second (m3/s) regulated by the provincial licensing body.</p></td>
-</tr>
-<tr class="row-odd"><td><p>federal_flow_req</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Minimum flow recommendations for the dam structure in cubic meters per second (m3/s). Based on assessments by Fisheries and Oceans Canada for the protection of fish and fish habitat.</p></td>
-</tr>
-<tr class="row-even"><td><p>catchment_area_skm</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Area of upstream catchment draining into the reservoir in square kilometers. The area of upstream catchment is defined by “Elementary Catchment” units in the National Hydrography Network.</p></td>
-</tr>
-<tr class="row-odd"><td><p>upstream_linear_km</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The amount of unobstructed linear kilometers upstream of the barrier that would become available to aquatic species if the barrier were to be remediated.</p></td>
-</tr>
-<tr class="row-even"><td><p>hydro_peaking_system</p></td>
-<td><p>bool</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Indicates if the dam employs a hydro peaking system.</p></td>
-</tr>
-<tr class="row-odd"><td><p>generating_capacity_mwh</p></td>
-<td><p>float8</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The amount of electricity the hydroelectric facility can produce in megawatt hours.</p></td>
-</tr>
-<tr class="row-even"><td><p>turbine_number</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The number of turbines in the dam structure.</p></td>
-</tr>
-<tr class="row-odd"><td><p>up_passage_type_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the upstream fish passage measure type.</p></td>
-</tr>
-<tr class="row-even"><td><p>down_passage_route_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the downstream fish passage routes.</p></td>
-</tr>
-<tr class="row-odd"><td><p>passability_status_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the degree to which the structure acts as a barrier to fish in the upstream direction.</p></td>
-</tr>
-<tr class="row-even"><td><p>passability_status_note</p></td>
-<td><p>varchar(256)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Unstructured notes to provide context for the assigned passability status code (e.g., species restrictions).</p></td>
-</tr>
-<tr class="row-odd"><td><p>last_modified</p></td>
-<td><p>date</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Most recent date of the data source used to create, revise or confirm the dam record.</p></td>
-</tr>
-<tr class="row-even"><td><p>turbine_type_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing turbine type.</p></td>
-</tr>
-<tr class="row-odd"><td><p>data_source_id</p></td>
-<td><p>varchar(256)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The unique id assigned to the dam record in the original data source.</p></td>
-</tr>
-<tr class="row-even"><td><p>data_source</p></td>
-<td><p>varchar(256)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>The original data source from which the dam record was obtained.</p></td>
-</tr>
-<tr class="row-odd"><td><p>comments</p></td>
-<td><p>text</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Unstructured comments about the dam.</p></td>
-</tr>
-<tr class="row-even"><td><p>complete_level_code</p></td>
-<td><p>int2</p></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>Code referencing the level of information available for the barrier structure.</p></td>
-</tr>
-<tr class="row-odd"><td><p>original_point</p></td>
-<td><p>geometry(POINT, 3395)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>This column contains the original spatial representation of the dam feature. Only point features are supported.</p></td>
-</tr>
-<tr class="row-even"><td><p>snapped_point</p></td>
-<td><p>geometry(POINT, 3395)</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p>✓</p></td>
-<td></td>
-<td><p>This column contains the snapped spatial representation of the dam feature. Only point features are supported.</p></td>
-</tr>
-</tbody>
+  <div class="section" id="data-dictionary">
+<span id="cabd-data-dictionary"></span><h1>Data Dictionary<a class="headerlink" href="#data-dictionary" title="Permalink to this headline">¶</a></h1>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>data_dictionary_limited_03302022</title>
+	<style>
+body {
+	font-family: sans-serif;
+	color: #333;
+	margin-left: 2em;
+	margin-top: 2em;
+	background-color: white;
+}
+
+footer {
+	margin-top: 3em;
+	margin-bottom: .5em;
+	font-size: 75%;
+}
+
+h3 {
+	margin-bottom: .5em;
+}
+
+a {
+	color: #4182c3;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #080;
+	text-decoration: underline;
+}
+
+#index {
+	background-color: #f8f9fa;
+	margin-block-end: 1.5em;
+	list-style: none;
+	display: inline-block;
+	padding: 1em;
+	border: 1px solid #c0c0c0;
+	border-radius: 4px 4px 4px 4px;
+}
+
+#index li {
+	list-style: none;
+	margin: 0;
+}
+
+#index > li > ul {
+	padding-inline-start: 1em;
+}
+
+.table, .foreigntable, .view {
+	font-size: 11pt;
+	border-collapse: collapse;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.table caption {
+	background-color: #d2f3ff;
+}
+
+.foreigntable caption {	
+	background-color: #94f0b1;
+}
+
+.view caption {	
+	background-color: #ffd8a1;
+}
+
+.table,
+.table caption, 
+.table th, 
+.table td {
+	border: 1px solid #b4d0da;
+}
+
+.foreigntable, 
+.foreigntable caption, 
+.foreigntable th, 
+.foreigntable td {
+	border: 1px solid #6aad80;
+}
+
+.view, 
+.view caption, 
+.view th, 
+.view td {
+	border: 1px solid #ba7c00;
+}
+
+.table caption, 
+.foreigntable caption, 
+.view caption {
+	border-bottom: 0;
+}
+
+.table th,
+.table .title,
+.table .label{
+	background-color: #e9f8ff;
+}
+
+.foreigntable th,
+.foreigntable .title,
+.foreigntable .label {
+	background-color: #e2ffed;
+}
+
+.view th,
+.view .title,
+.view .label {
+	background-color: #ffebd2;
+}
+
+.type-label {
+	float: right;
+	color: #212529;
+	font-size: 70%;
+	font-weight: bold;
+	background-color: #f8f9fa;
+	padding: 5px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+caption {
+	border-radius: 5px 5px 0 0;	
+}
+
+.nav-link {
+	font-size: 85%;
+	background-color: #f2f2f3;
+	padding: 5px;
+	border-radius: 4px 4px 4px 4px;
+	color: #212529;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: .5em;
+}
+
+.nav-link:hover {
+	color: white;
+	background-color: #007bff;
+}
+
+td, th, caption, .title {
+	margin: 0;
+	padding: .3em;
+}
+
+.title, th {
+	font-weight: bold;
+	text-align: center;
+	color: #535c67;
+}
+
+.data-type, .value, .constr-type {
+	font-family: monospace;
+	text-align: center;
+}
+
+.constr-type {
+	color: #24486c;
+}
+
+.data-type {            
+	color: #b00;
+}
+
+.bool-field {
+	text-align: center;
+	color: #080;
+}
+
+.label {
+	font-weight: bold;
+	color: #444f53;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.tab-name {
+	font-size: 112%;
+}
+
+.tab-description {
+	font-style: italic;
+	padding: .5em;
+}
+
+.nested-tab-parent {
+	padding: 0;
+}
+
+.nested-tab {
+	font-size: 11pt;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.nested-tab > tbody > tr,
+.nested-tab > tr{
+	padding: 0;
+}
+
+.nested-tab td {
+	border-bottom: 0;
+	border-left: 0;
+}
+
+.nested-tab > tbody > tr:first-child td,
+.nested-tab > tr:first-child td {
+	border-top: 0;
+}
+
+.nested-tab td:last-child {
+	border-right: 0;
+}
+
+
+	</style>
+</head>
+<body>
+
+<h2></h2>
+	<ul id="index">
+		<li><strong>Table Index</strong>
+			<ul>
+				<li><a href="#cabd.barrier_ownership_type_codes">cabd.barrier_ownership_type_codes</a></li>
+				<li><a href="#cabd.census_subdivisions">cabd.census_subdivisions</a></li>
+				<li><a href="#cabd.fish_species">cabd.fish_species</a></li>
+				<li><a href="#cabd.nhn_workunit">cabd.nhn_workunit</a></li>
+				<li><a href="#cabd.passability_status_codes">cabd.passability_status_codes</a></li>
+				<li><a href="#cabd.province_territory_codes">cabd.province_territory_codes</a></li>
+				<li><a href="#cabd.upstream_passage_type_codes">cabd.upstream_passage_type_codes</a></li>
+				<li><a href="#dams.condition_codes">dams.condition_codes</a></li>
+				<li><a href="#dams.construction_type_codes">dams.construction_type_codes</a></li>
+				<li><a href="#dams.dam_complete_level_codes">dams.dam_complete_level_codes</a></li>
+				<li><a href="#dams.dam_use_codes">dams.dam_use_codes</a></li>
+				<li><a href="#dams.dams">dams.dams</a></li>
+				<li><a href="#dams.downstream_passage_route_codes">dams.downstream_passage_route_codes</a></li>
+				<li><a href="#dams.function_codes">dams.function_codes</a></li>
+				<li><a href="#dams.lake_control_codes">dams.lake_control_codes</a></li>
+				<li><a href="#dams.operating_status_codes">dams.operating_status_codes</a></li>
+				<li><a href="#dams.size_codes">dams.size_codes</a></li>
+				<li><a href="#dams.spillway_type_codes">dams.spillway_type_codes</a></li>
+				<li><a href="#dams.turbine_type_codes">dams.turbine_type_codes</a></li>
+				<li><a href="#dams.use_codes">dams.use_codes</a></li>
+				<li><a href="#fishways.entrance_location_codes">fishways.entrance_location_codes</a></li>
+				<li><a href="#fishways.entrance_position_codes">fishways.entrance_position_codes</a></li>
+				<li><a href="#fishways.fishway_complete_level_codes">fishways.fishway_complete_level_codes</a></li>
+				<li><a href="#fishways.fishways">fishways.fishways</a></li>
+				<li><a href="#waterfalls.waterfall_complete_level_codes">waterfalls.waterfall_complete_level_codes</a></li>
+				<li><a href="#waterfalls.waterfalls">waterfalls.waterfalls</a></li>
+			</ul>
+		</li>
+	</ul>
+<table id="cabd.barrier_ownership_type_codes" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>barrier_ownership_type_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the general classification of the type of barrier owner.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>barrier_ownership_types_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
 </table>
-<p><a class="reference internal" href="#cabd-data-dictionary"><span class="std std-ref">Return to top.</span></a></p>
-</section>
-</section>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.census_subdivisions" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>census_subdivisions</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>fid</td>
+		<td class="data-type">integer</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>objectid_1</td>
+		<td class="data-type">bigint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>pruid</td>
+		<td class="data-type">character varying(2)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>prname</td>
+		<td class="data-type">character varying(100)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>cduid</td>
+		<td class="data-type">character varying(4)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>cdname</td>
+		<td class="data-type">character varying(100)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>cdtype</td>
+		<td class="data-type">character varying(3)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>csduid</td>
+		<td class="data-type">character varying(7)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>csdname</td>
+		<td class="data-type">character varying(100)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>csdtype</td>
+		<td class="data-type">character varying(3)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>objectid</td>
+		<td class="data-type">integer</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>shape_length</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>shape_area</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>geometry</td>
+		<td class="data-type">geometry(MULTIPOLYGON, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>cabd_id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>census_subdivisions_pkey</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>fid</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.fish_species" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>fish_species</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value">uuid_generate_v4()</td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(128)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>common_name</td>
+		<td class="data-type">character varying(128)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>species_name</td>
+		<td class="data-type">character varying(128)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>family</td>
+		<td class="data-type">character varying(128)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>fish_species_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>id</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fish_species_un</td>
+					<td class="value constr-type">UNIQUE</td>
+					<td>name</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.nhn_workunit" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>nhn_workunit</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>id</td>
+		<td class="data-type">character varying(7)</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>polygon</td>
+		<td class="data-type">geometry(POLYGON, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>major_drainage_area</td>
+		<td class="data-type">character varying(500)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>sub_drainage_area</td>
+		<td class="data-type">character varying(500)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>sub_sub_drainage_area</td>
+		<td class="data-type">character varying(500)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>nhn_workunit_pkey</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>id</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.passability_status_codes" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>passability_status_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the degree to which the structure acts as a barrier to fish in the upstream direction.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the degree to which the structure acts as a barrier to fish in the upstream direction.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The degree to which the structure acts as a barrier to fish in the upstream direction</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>passability_sutatus_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.province_territory_codes" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>province_territory_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for Province or Territory codes.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">character varying(2)</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Character code for province or Territory.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Province or Territory name.</em></td>
+	</tr>
+	<tr>
+		<td>geometry</td>
+		<td class="data-type">geometry(MULTIPOLYGON, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>province_territory_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="cabd.upstream_passage_type_codes" class="table">
+	<caption class="tab-name">
+		<em>cabd</em>.<strong>upstream_passage_type_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the types of upstream fish passage measures associated with barrier structures.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the upstream fish passage measure type.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Type of upstream fish passage measure associated with barrier structures.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>upstream_passage_types_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.condition_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>condition_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the physical condition of the dam.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the physical condition of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The physical condition of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_conditions_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.construction_type_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>construction_type_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for dam construction types.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the dam structure type based on construction material/design.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Dam structure type based on construction material/design.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_construction_types_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.dam_complete_level_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>dam_complete_level_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the level of information available for the dam barrier structure.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the level of information available for the barrier structure.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The level of information available for the barrier structure.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>data_complete_level_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.dam_use_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>dam_use_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the primary intended use of the dam and associated facilities.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the primary use of the dam and associated facilities.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The primary intended use of the dam and associated facilities.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_uses_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.dams" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>dams</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Attributes and description for dams. A dam is a structure that is constructed to divert or hold back water of a stream, river, or lake for a specific purpose, e.g., hydroelectricity, water storage, or flood control. This category includes dams, weirs, and dykes.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>cabd_id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Unique identifier for each barrier point.</em></td>
+	</tr>
+	<tr>
+		<td>dam_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Given or known name of the dam structure, English.</em></td>
+	</tr>
+	<tr>
+		<td>dam_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Given or known name of the dam structure, French.</em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of waterbody in which the dam is recorded, English.</em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of waterbody in which the dam is recorded, French.</em></td>
+	</tr>
+	<tr>
+		<td>reservoir_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of the reservoir or controlled lake (i.e., impounded waterbody), English.</em></td>
+	</tr>
+	<tr>
+		<td>reservoir_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of the reservoir or controlled lake (i.e., impounded waterbody), French.</em></td>
+	</tr>
+	<tr>
+		<td>province_territory_code</td>
+		<td class="data-type">character varying(2)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>municipality</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of nearest municipality.</em></td>
+	</tr>
+	<tr>
+		<td>owner</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Person, company, organization, government unit, public utility, corporation or other entity which either holds a water license to operate a dam or retains the legal property title on the dam site.</em></td>
+	</tr>
+	<tr>
+		<td>ownership_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>provincial_compliance_status</td>
+		<td class="data-type">character varying(64)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The status of regulatory compliance with provincial licensing body.</em></td>
+	</tr>
+	<tr>
+		<td>federal_compliance_status</td>
+		<td class="data-type">character varying(64)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The status of regulatory compliance with the federal licensing body.</em></td>
+	</tr>
+	<tr>
+		<td>operating_notes</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Unstructured comments on important operation considerations for the dam structure.</em></td>
+	</tr>
+	<tr>
+		<td>operating_status_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>use_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>use_irrigation_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for irrigation purposes, and the extent to which irrigation is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_electricity_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for hydroelectric energy production, and the extent to which hydroelectric production is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_supply_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for water supply purposes, and the extent to which water supply is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_floodcontrol_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for flood control purposes, and the extent to which flood control is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_recreation_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for recreation purposes, and the extent to which recreation is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_navigation_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for navigation, and the extent to which navigation is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_fish_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for fisheries purposes, and the extent to which fisheries are a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_pollution_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for pollution control purposes, and the extent to which pollution control is a planned use (i.e., main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_invasivespecies_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used in control invasive species and the extent to which invasive species control is a planned use (i.e., Main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>use_other_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates the dam is used for “other” purposes, and the extent to which it is a planned use (i.e., Main use, major use, or secondary use).</em></td>
+	</tr>
+	<tr>
+		<td>lake_control_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates whether a reservoir has been built at the location of an existing natural lake using a lake control structure; currently this column only contains limited entries; “Yes” = lake control structure raises original lake level; “Enlarged” = lake control structure enlarged the original lake surface area; “Maybe” = not sure, but data seems to indicate a lake control structure.</em></td>
+	</tr>
+	<tr>
+		<td>construction_year</td>
+		<td class="data-type">numeric</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Year in which the dam was built (not further specified: year of construction; year of completion; year of commissioning; year of refurbishment/update; etc.)</em></td>
+	</tr>
+	<tr>
+		<td>removed_year</td>
+		<td class="data-type">numeric</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Year in which the dam was decommissioned, removed, replaced, subsumed, or destroyed.</em></td>
+	</tr>
+	<tr>
+		<td>assess_schedule</td>
+		<td class="data-type">character varying(100)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Frequency at which the dam structure is assessed by ownership party or regulatory body.</em></td>
+	</tr>
+	<tr>
+		<td>expected_life</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Number of years the dam structure is expected to last.</em></td>
+	</tr>
+	<tr>
+		<td>maintenance_last</td>
+		<td class="data-type">date</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Date of last maintenance or renovation work performed on the barrier.</em></td>
+	</tr>
+	<tr>
+		<td>maintenance_next</td>
+		<td class="data-type">date</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Date of the next scheduled maintenance or renovation work performed on the barrier.</em></td>
+	</tr>
+	<tr>
+		<td>function_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>condition_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>construction_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>height_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Reported height of the dam in meters. Depending on the data source this could variably be height of dam wall, crest height, or head height.</em></td>
+	</tr>
+	<tr>
+		<td>length_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Length of the crest of the dam from one bank (or abutment) to the other in meters.</em></td>
+	</tr>
+	<tr>
+		<td>size_class_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The size classification of the dam based on the height of the dam in meters (dam_hgt_m).</em></td>
+	</tr>
+	<tr>
+		<td>spillway_capacity</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The designed capacity of the spillway in m3 per second.</em></td>
+	</tr>
+	<tr>
+		<td>spillway_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>reservoir_present</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates if a reservoir is present due to the creation of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>reservoir_area_skm</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Representative surface area of reservoir in square kilometers.</em></td>
+	</tr>
+	<tr>
+		<td>reservoir_depth_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Average depth of reservoir in meters.</em></td>
+	</tr>
+	<tr>
+		<td>storage_capacity_mcm</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Storage capacity of reservoir in million cubic meters.</em></td>
+	</tr>
+	<tr>
+		<td>avg_rate_of_discharge_ls</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Average rate of discharge at dam location in liters per second.</em></td>
+	</tr>
+	<tr>
+		<td>degree_of_regulation_pc</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Degree of Regulation (DOR) in percent; equivalent to “residence time” of water in the reservoir; calculated as ratio between storage capacity (‘Cap_mcm’) and total annual flow (derived from ‘Dis_avg_ls’); values capped at 10,000 indicate exceedingly high values, which may be due to inconsistencies in the data and/or incorrect allocation to the river network and the associated discharges.</em></td>
+	</tr>
+	<tr>
+		<td>provincial_flow_req</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Legislated flow requirements for the dam structure in cubic meters per second regulated by the provincial licensing body.</em></td>
+	</tr>
+	<tr>
+		<td>federal_flow_req</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Minimum flow recommendations for the dam structure in cubic meters per second. Based on assessments by Fisheries and Oceans Canada for the protection of fish and fish habitat.</em></td>
+	</tr>
+	<tr>
+		<td>catchment_area_skm</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Area of upstream catchment draining into the reservoir in square kilometers. The area of upstream catchment is defined by “Elementary Catchment” units in the National Hydrography Network.</em></td>
+	</tr>
+	<tr>
+		<td>hydro_peaking_system</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates if the dam employs a hydro peaking system.</em></td>
+	</tr>
+	<tr>
+		<td>generating_capacity_mwh</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The amount of electricity the hydroelectric facility can produce in megawatt hours.</em></td>
+	</tr>
+	<tr>
+		<td>turbine_number</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The number of turbines in the dam structure.</em></td>
+	</tr>
+	<tr>
+		<td>turbine_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>up_passage_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>down_passage_route_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>last_modified</td>
+		<td class="data-type">date</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The capture date for a structure as documented in the original dataset, if provided.</em></td>
+	</tr>
+	<tr>
+		<td>comments</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Unstructured comments about the dam.</em></td>
+	</tr>
+	<tr>
+		<td>complete_level_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>original_point</td>
+		<td class="data-type">geometry(POINT, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>snapped_point</td>
+		<td class="data-type">geometry(POINT, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>nhn_watershed_id</td>
+		<td class="data-type">character varying(7)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>upstream_linear_km</td>
+		<td class="data-type">double precision</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The amount of unobstructed linear kilometers upstream of the barrier that would become available to aquatic species if the barrier were to be remediated.</em></td>
+	</tr>
+	<tr>
+		<td>passability_status_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Code referencing the degree to which the structure acts as a barrier to fish in the upstream direction</em></td>
+	</tr>
+	<tr>
+		<td>passability_status_note</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Unstructured notes to provide context for the assigned passability status code (e.g., species restrictions).</em></td>
+	</tr>
+	<tr>
+		<td>use_analysis</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates whether a barrier should be snapped to the stream network and used for network connectivity analysis.</em></td>
+	</tr>
+	<tr>
+		<td>facility_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Given or known name of the larger facility of which the dam is a part of (e.g., a hydroelectric generating station or mining operation); English.</em></td>
+	</tr>
+	<tr>
+		<td>facility_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The given or known name of the larger facility that the dam is a part of (e.g., a hydroelectric generating station or mining operation); French.</em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>cabd_id</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>province_territory_code</td>
+					<td><a href="#cabd.province_territory_codes">cabd.province_territory_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_10</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_navigation_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_11</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_fish_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_12</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_pollution_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_13</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_invasivespecies_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_14</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_other_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_15</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>condition_code</td>
+					<td><a href="#dams.condition_codes">dams.condition_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_16</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>function_code</td>
+					<td><a href="#dams.function_codes">dams.function_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_17</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>construction_type_code</td>
+					<td><a href="#dams.construction_type_codes">dams.construction_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_18</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>size_class_code</td>
+					<td><a href="#dams.size_codes">dams.size_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_19</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>spillway_type_code</td>
+					<td><a href="#dams.spillway_type_codes">dams.spillway_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_2</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>ownership_type_code</td>
+					<td><a href="#cabd.barrier_ownership_type_codes">cabd.barrier_ownership_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_20</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>up_passage_type_code</td>
+					<td><a href="#cabd.upstream_passage_type_codes">cabd.upstream_passage_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_21</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>down_passage_route_code</td>
+					<td><a href="#dams.downstream_passage_route_codes">dams.downstream_passage_route_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_22</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>turbine_type_code</td>
+					<td><a href="#dams.turbine_type_codes">dams.turbine_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_23</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>complete_level_code</td>
+					<td><a href="#dams.dam_complete_level_codes">dams.dam_complete_level_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_24</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>lake_control_code</td>
+					<td><a href="#dams.lake_control_codes">dams.lake_control_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_3</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>operating_status_code</td>
+					<td><a href="#dams.operating_status_codes">dams.operating_status_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_4</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_code</td>
+					<td><a href="#dams.dam_use_codes">dams.dam_use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_5</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_irrigation_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_6</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_electricity_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_7</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_supply_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_8</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_floodcontrol_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_9</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>use_recreation_code</td>
+					<td><a href="#dams.use_codes">dams.use_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>dams_medium_large_fk_26</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>passability_status_code</td>
+					<td><a href="#cabd.passability_status_codes">cabd.passability_status_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.downstream_passage_route_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>downstream_passage_route_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for downstream fish passage routes associated with barrier structures.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the downstream fish passage routes.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Types of downstream fish passage routes.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>downstream_passage_routes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.function_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>function_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the function of the dam.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the function of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(64)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The function of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_function_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.lake_control_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>lake_control_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Code identifying whether a reservoir has been built at the location of an existing natural lake using a lake control structure
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Control structure code</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Control structure name</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>lake_control_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.operating_status_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>operating_status_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the operating status of the dam.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the operating status of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The status of the dam indicating continued active operation or the type of ‘end-of-life’ action completed if operations have ceased; validity based on date from the ‘LAST_UPDATE’ field.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_operating_status_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.size_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>size_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the size classification of the dam based on the height of the dam in meters.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the size classification of the dam.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The size classification of the dam based on the height of the dam in meters (dam_hgt_m).</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_size_class_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.spillway_type_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>spillway_type_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the type of spillway associated with the dam structure.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing spillway type.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The type of spillway associated with the dam structure.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_spillway_types_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.turbine_type_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>turbine_type_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for turbine types.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing turbine type.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>The type of turbine in the dam structure.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>dam_turbine_types_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="dams.use_codes" class="table">
+	<caption class="tab-name">
+		<em>dams</em>.<strong>use_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for use fields of barriers. The extent to which specific use field is a planned use.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the amount of use</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Amount of use.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>use_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="fishways.entrance_location_codes" class="table">
+	<caption class="tab-name">
+		<em>fishways</em>.<strong>entrance_location_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>fishpass_entrance_location_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="fishways.entrance_position_codes" class="table">
+	<caption class="tab-name">
+		<em>fishways</em>.<strong>entrance_position_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>fishpass_entrance_position_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="fishways.fishway_complete_level_codes" class="table">
+	<caption class="tab-name">
+		<em>fishways</em>.<strong>fishway_complete_level_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="fishways.fishways" class="table">
+	<caption class="tab-name">
+		<em>fishways</em>.<strong>fishways</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>cabd_id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>dam_id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>structure_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>structure_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>river_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>river_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>nhn_watershed_id</td>
+		<td class="data-type">character varying(7)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>province_territory_code</td>
+		<td class="data-type">character varying(2)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>municipality</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>fishpass_type_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>monitoring_equipment</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>architect</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>contracted_by</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>constructed_by</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>plans_held_by</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>purpose</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>designed_on_biology</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>length_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>elevation_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>gradient</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>depth_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>entrance_location_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>entrance_position_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>modified</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>modification_year</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>modification_purpose</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>year_constructed</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>operated_by</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>operation_period</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>has_evaluating_studies</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>nature_of_evaluation_studies</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>engineering_notes</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>operating_notes</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>mean_fishway_velocity_ms</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>max_fishway_velocity_ms</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>estimate_of_attraction_pct</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>estimate_of_passage_success_pct</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>fishway_reference_id</td>
+		<td class="data-type">character varying(256)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>complete_level_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>original_point</td>
+		<td class="data-type">geometry(POINT, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>fishpass_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>cabd_id</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishpass_fk</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>fishpass_type_code</td>
+					<td><a href="#cabd.upstream_passage_type_codes">cabd.upstream_passage_type_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishpass_fk_1</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>province_territory_code</td>
+					<td><a href="#cabd.province_territory_codes">cabd.province_territory_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishpass_fk_3</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>entrance_location_code</td>
+					<td><a href="#fishways.entrance_location_codes">fishways.entrance_location_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishpass_fk_4</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>entrance_position_code</td>
+					<td><a href="#fishways.entrance_position_codes">fishways.entrance_position_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishways_fk</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>dam_id</td>
+					<td><a href="#dams.dams">dams.dams</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>fishways_fk_8</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>complete_level_code</td>
+					<td><a href="#fishways.fishway_complete_level_codes">fishways.fishway_complete_level_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="waterfalls.waterfall_complete_level_codes" class="table">
+	<caption class="tab-name">
+		<em>waterfalls</em>.<strong>waterfall_complete_level_codes</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Reference table for the level of information available for the waterfall barrier structure.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Code referencing the level of information available for the barrier structure.</em></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td class="data-type">character varying(32)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The level of information available for the barrier structure.</em></td>
+	</tr>
+	<tr>
+		<td>description</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>waterfall_complele_level_codes_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>code</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<table id="waterfalls.waterfalls" class="table">
+	<caption class="tab-name">
+		<em>waterfalls</em>.<strong>waterfalls</strong>
+		<span class="type-label">Table</span>
+	</caption>
+	<thead>
+	<tr>
+		<td colspan="8" class="tab-description">Contains spatial point representation of waterfalls and their attributes.
+		</td>
+	</tr>
+		<tr>
+			<th>Name</th>
+			<th>Data type</th>
+			<th>PK</th>
+			<th>FK</th>
+			<th>UQ</th>
+			<th>Not null</th>
+			<th>Default value</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>cabd_id</td>
+		<td class="data-type">uuid</td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em>Unique identifier for each barrier point.</em></td>
+	</tr>
+	<tr>
+		<td>fall_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>English given or known name of the waterfall.</em></td>
+	</tr>
+	<tr>
+		<td>fall_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>French given or known name of the waterfall.</em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_en</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>English name of waterbody in which the waterfall is recorded.</em></td>
+	</tr>
+	<tr>
+		<td>waterbody_name_fr</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>French name of waterbody in which the waterfall is recorded.</em></td>
+	</tr>
+	<tr>
+		<td>province_territory_code</td>
+		<td class="data-type">character varying(2)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>nhn_watershed_id</td>
+		<td class="data-type">character varying(7)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>municipality</td>
+		<td class="data-type">character varying(512)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Name of nearest municipality (i.e., a city or town that has corporate status and local government).</em></td>
+	</tr>
+	<tr>
+		<td>fall_height_m</td>
+		<td class="data-type">real</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Height of the waterfall in meters.</em></td>
+	</tr>
+	<tr>
+		<td>last_modified</td>
+		<td class="data-type">date</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>The capture date for a structure as documented in the original dataset, if provided.</em></td>
+	</tr>
+	<tr>
+		<td>comments</td>
+		<td class="data-type">text</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Unstructured comments about the waterfall.</em></td>
+	</tr>
+	<tr>
+		<td>complete_level_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Level of information available for the barrier structure.</em></td>
+	</tr>
+	<tr>
+		<td>snapped_point</td>
+		<td class="data-type">geometry(POINT, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>original_point</td>
+		<td class="data-type">geometry(POINT, 4617)</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em></em></td>
+	</tr>
+	<tr>
+		<td>passability_status_code</td>
+		<td class="data-type">smallint</td>
+		<td class="bool-field"></td>
+		<td class="bool-field">&#10003;</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Code referencing the degree to which the structure acts as a barrier to fish in the upstream direction</em></td>
+	</tr>
+	<tr>
+		<td>use_analysis</td>
+		<td class="data-type">boolean</td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="bool-field"></td>
+		<td class="value"></td>
+		<td><em>Indicates whether a barrier should be snapped to the stream network and used for network connectivity analysis.</em></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="nested-tab-parent">
+			<table class="nested-tab">
+				<tr>
+					<td class="title" colspan="5">Constraints</td>
+				</tr>
+				<tr>
+					<td class="title">Name</td>
+					<td class="title">Type</td>
+					<td class="title">Column(s)</td>
+					<td class="title">References</td>
+					<td class="title">Description</td>
+				</tr>
+				<tr>
+					<td>waterfalls_pk</td>
+					<td class="value constr-type">PRIMARY KEY</td>
+					<td>cabd_id</td>
+					<td></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>waterfalls_fk_1</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>province_territory_code</td>
+					<td><a href="#cabd.province_territory_codes">cabd.province_territory_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>waterfalls_fk_2</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>complete_level_code</td>
+					<td><a href="#waterfalls.waterfall_complete_level_codes">waterfalls.waterfall_complete_level_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+				<tr>
+					<td>waterfalls_fk_4</td>
+					<td class="value constr-type">FOREIGN KEY</td>
+					<td>passability_status_code</td>
+					<td><a href="#cabd.passability_status_codes">cabd.passability_status_codes</a></td>
+					<td colspan="4"><em></em></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<div>
+	<a href="#index" class="nav-link">&uarr; Index</a>
+</div>
+<footer>
+Generated by <a href="https://pgmodeler.io"> PostgreSQL Database Modeler - pgModeler</a><br/>
+Copyright © 2006 - 2019 Raphael A. Silva 
+</footer> </body>
+</html>
+</div>
 
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="docs_tech_arch_api.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1134,26 +4257,24 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+        
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-      &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
-</p>
-        </footer>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
     </div>
-    
-</div>
+  </footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,5 @@
+﻿Attribute Name,Description
+id,The NHN work unit identifier (DATASETNAM).
+major_drainage_area,Water Survey of Canada Major Drainage Area (WSCMDA).
+sub_drainage_area,Water Survey of Canada Sub-Drainage Area (WSCSDA).
+sub_sub_drainage_area,Water Survey of Canada Sub-Sub-Drainage Area (WSCSSDA).

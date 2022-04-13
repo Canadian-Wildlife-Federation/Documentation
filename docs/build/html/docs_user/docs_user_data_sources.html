@@ -1,0 +1,2467 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Sources &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_cwf_book.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Application Architecture" href="../docs_tech/docs_tech_arch.html" />
+    <link rel="prev" title="Use Cases" href="docs_user_engagement/docs_user_engagement_use_cases.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/cwf_logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD User Resources
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_user_web_map.html">
+   Web Mapping Interface
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_user_data_catalogue.html">
+   Data Catalogue
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs_user_engagement.html">
+   Stakeholder Engagement
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_engagement/docs_user_engagement_use_cases.html">
+     Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data Sources
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD Technical Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_tech/docs_tech_arch.html">
+   Application Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_models.html">
+     CABD Features and Database Models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_api.html">
+     CABD REST Services (API Endpoints)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
+     Data Dictionary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_tiles.html">
+     Vector Tile Service
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_tech/docs_tech_process.html">
+   Barrier Data Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_process/docs_tech_process_dams.html">
+     Dams
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_process/docs_tech_process_fishways.html">
+     Fishways
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_process/docs_tech_process_waterfalls.html">
+     Waterfalls
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CHyF Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_tools.html">
+   CHyF Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_copyright_author.html">
+     CHyF Tools Copyright and Authorship
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_logical_model.html">
+     Logical Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_data_model.html">
+     Data Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_flowpaths.html">
+     Flowpath Constructor
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_catchments.html">
+     Catchment Delineator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_stream_order.html">
+     Stream Order
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_process.html">
+   Hydro Network Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_steps.html">
+     NHN - CHyF Conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_stream_order.html">
+     Calculating Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_troubleshoot.html">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs_user/docs_user_data_sources.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_user/docs_user_data_sources.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_user/docs_user_data_sources.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spatial-data-sources">
+   Spatial Data Sources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#federal-sources">
+     Federal Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#natural-resources-canada-nrcan">
+       Natural Resources Canada (NRCan)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#canadian-geographical-names-database">
+         Canadian Geographical Names Database
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#canvec-series-manmade-features">
+         CanVec Series – Manmade Features
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#canvec-series-hydrographic-features">
+         CanVec Series - Hydrographic Features
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#national-hydrographic-network-nhn">
+         National Hydrographic Network (NHN)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#statistics-canada">
+       Statistics Canada
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#intercensal-census-subdivision-boundary-files">
+         Intercensal - Census Subdivision Boundary Files
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#united-states-army-corps-of-engineers">
+       United States Army Corps of Engineers
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#national-inventory-of-dams">
+         National Inventory of Dams
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#provincial-state-sources">
+     Provincial/State Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alberta-environment-and-parks-aep">
+       Alberta – Environment and Parks (AEP)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#base-features-hydrography">
+         Base Features Hydrography
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#british-columbia-environment-and-climate-change-strategy">
+       British Columbia – Environment and Climate Change Strategy
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#provincial-obstacles-to-fish-passage-fiss">
+         Provincial Obstacles to Fish Passage (FISS)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#british-columbia-forests-lands-natural-resource-operations-and-rural-development-flnrord">
+       British Columbia – Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bc-geographic-warehouse-public-dams">
+         BC Geographic Warehouse – Public Dams
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bc-public-dams-kml">
+         BC Public Dams KML
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#freshwater-atlas-fwa-obstructions">
+         Freshwater Atlas (FWA) Obstructions
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#maine-office-of-geographic-information-systems">
+       Maine Office of Geographic Information Systems
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#impounds">
+         Impounds
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#new-brunswick-energy-and-resource-development">
+       New Brunswick – Energy and Resource Development
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#new-brunswick-hydrographic-network-nbhn">
+         New Brunswick Hydrographic Network (NBHN)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#newfoundland-and-labrador-environment-climate-change-and-municipalities">
+       Newfoundland and Labrador – Environment, Climate Change and Municipalities
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#provincial-dam-inventory-nlpdi">
+         Provincial Dam Inventory (NLPDI)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nova-scotia-environment">
+       Nova Scotia – Environment
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#topographic-database-water-feature-points-a-lines-b-polygons-c">
+         Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#water-control-structure-database-accessed-from-gillian-fielding-unpublished-thesis-2011">
+         Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ontario-northern-development-mines-natural-resources-and-forestry-mndmnrf">
+       Ontario – Northern Development, Mines, Natural Resources and Forestry (MNDMNRF)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ontario-dam-inventory-odi">
+         Ontario Dam Inventory (ODI)
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ontario-hydro-network-ohn-hydrographic-points-a-lines-b-polygons-c">
+         Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#quebec-ministere-de-l-environnement-et-de-la-lutte-contre-les-changements-climatiques">
+       Québec – Ministère de l’Environnement et de la Lutte contre les changements climatiques
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#repertoire-des-barrages">
+         Répertoire des Barrages
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#academic-institutions-ngo-sources">
+     Academic Institutions/NGO Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#canadian-wildlife-federation-cwf">
+       Canadian Wildlife Federation (CWF)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#canfishpass-database-inherited-from-cooke-lab-carleton-university">
+         CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#food-and-agriculture-organization-fao-of-the-united-nations">
+       Food and Agriculture Organization (FAO) of the United Nations
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#aquastat-dam-database">
+         AQUASTAT Dam Database
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#global-dam-watch">
+       Global Dam Watch
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#global-reservoir-and-dam-database-grand">
+         Global Reservoir and Dam Database (GRanD)
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#global-georeferenced-database-of-dams-goodd">
+         Global Georeferenced Database of Dams (GOODD)
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nature-conservancy-of-canada-ncc">
+       Nature Conservancy of Canada (NCC)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#canadian-hydrologic-units-aquatic-barriers">
+         Canadian Hydrologic Units – Aquatic Barriers
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stanford-university">
+       Stanford University
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#national-performance-of-dams-program-npdp-dam-database">
+         National Performance of Dams Program (NPDP) Dam Database
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#wisconsin-institute-for-discovery">
+       Wisconsin Institute for Discovery
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fishwerks">
+         Fishwerks
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miscellaneous-sources">
+     Miscellaneous Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mr-maps">
+       MR Maps
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#waterfalls-of-new-brunswick">
+         Waterfalls of New Brunswick
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#waterfalls-of-nova-scotia">
+         Waterfalls of Nova Scotia
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#non-spatial-data-sources">
+   Non-Spatial Data Sources
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Federal Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fisheries-and-oceans-dfo">
+       Fisheries and Oceans (DFO)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#administration-and-enforcement-of-the-fish-habitat-protection-and-pollution-prevention-provisions-of-the-fisheries-act-2003-2004-annual-report-to-parliament">
+         Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament)
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#information-in-support-of-a-recovery-potential-assessment-of-bull-trout">
+         Information in Support of a Recovery Potential Assessment of Bull Trout
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#recovery-strategy-for-the-atlantic-whitefish">
+         Recovery Strategy for the Atlantic Whitefish
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Natural Resources Canada (NRCan)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#atlantic-salmon-rehabilitation-project">
+         Atlantic Salmon Rehabilitation Project
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#prairie-farm-rehabilitation-administration-pfra">
+       Prairie Farm Rehabilitation Administration (PFRA)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#pfra-dam-inventory">
+         PFRA Dam Inventory
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#provincial-sources">
+     Provincial Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alberta-agriculture-forestry-and-rural-economic-development">
+       Alberta – Agriculture, Forestry and Rural Economic Development
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#alberta-irrigation-information">
+         Alberta Irrigation Information
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alberta-environment-and-parks">
+       Alberta – Environment and Parks
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#alberta-dam-safety-map">
+         Alberta Dam Safety Map
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#berry-creek-carolside-reservoir-fisheries-management-objectives">
+         Berry Creek (Carolside) Reservoir Fisheries Management Objectives
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bow-river-basin-transalta-operations">
+         Bow River Basin – TransAlta Operations
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#fish-stocking-maps">
+         Fish Stocking Maps
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#little-bow-reservoir-fin-summary">
+         Little Bow Reservoir FIN Summary
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alberta-sustainable-resource-development">
+       Alberta – Sustainable Resource Development
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bathymetry-maps">
+         Bathymetry Maps
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#newfoundland-and-labrador-municipal-affairs-and-environment">
+       Newfoundland and Labrador – Municipal Affairs and Environment
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#permits-to-alter-a-body-of-water">
+         Permits to Alter a Body of Water
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nova-scotia-agriculture">
+       Nova Scotia – Agriculture
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#dykeland-sites">
+         Dykeland Sites
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#municipal-sources">
+     Municipal Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#city-of-calgary-alberta">
+       City of Calgary, Alberta
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#glenmore-dam-infrastructure-improvements">
+         Glenmore Dam Infrastructure Improvements
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#glenmore-reservoir-dam-operations">
+         Glenmore Reservoir Dam Operations
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#city-of-dawson-creek-british-columbia">
+       City of Dawson Creek, British Columbia
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#drinking-water-quality-reports">
+         Drinking Water Quality Reports
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#eastern-irrigation-district-alberta">
+       Eastern Irrigation District, Alberta
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bassano-dam">
+         Bassano Dam
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#halifax-water">
+       Halifax Water
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#chain-lakes-emergency-water-supply-watershed-area-source-water-protection-plan">
+         Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Plan
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#chain-lake-dam-and-pockwock-lake-dam-consultant-services">
+         Chain Lake Dam and Pockwock Lake Dam – Consultant Services
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#halifax-water-dam-safety-review">
+         Halifax Water Dam Safety Review
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#integrated-resource-plan-water-system-review">
+         Integrated Resource Plan – Water System Review
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#energy-company-sources">
+     Energy Company Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#irrican-power">
+       Irrican Power
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#chin-chute-power-plant">
+         Chin Chute Power Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#drops-4-5-and-6-power-plant">
+         Drops 4, 5, and 6 Power Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#raymond-reservoir-power-plant">
+         Raymond Reservoir Power Plant
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lower-churchill-management-corporation">
+       Lower Churchill Management Corporation
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#muskrat-falls-dams-cold-climate-considerations-in-design-and-construction">
+         Muskrat Falls Dams – Cold Climate Considerations in Design and Construction
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nb-power">
+       NB Power
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#hydro-tour">
+         Hydro Tour
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#newfoundland-and-labrador-hydro">
+       Newfoundland and Labrador Hydro
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#audit-dam-safety-review-for-pudops-dam-north-salmon-dam-and-spillway-rfp-2017-70503">
+         Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017-70503)
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#depreciation-methodology-and-asset-service-lives">
+         Depreciation Methodology and Asset Service Lives
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#operations-hydro-generation">
+         Operations – Hydro Generation
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#newfoundland-power">
+       Newfoundland Power
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#depreciation-study-hydro-plant-decommissioning-report">
+         2019 Depreciation Study – Hydro Plant Decommissioning Report
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#dam-safety-inspection-reports">
+         Dam Safety Inspection Reports
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#facility-rehabilitation">
+         Facility Rehabilitation
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#potential-projects-to-increase-energy-production">
+         Potential Projects to Increase Energy Production
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#public-safety-around-dams">
+         Public Safety Around Dams
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#rattling-brook-fisheries-compensation">
+         Rattling Brook Fisheries Compensation
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#sustainable-electricity-program">
+         Sustainable Electricity Program
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nova-scotia-power">
+       Nova Scotia Power
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#nova-scotia-power-incorporated-hydro-asset-study-redacted">
+         Nova Scotia Power Incorporated Hydro Asset Study – Redacted
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#suncor-energy">
+       Suncor Energy
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#investor-mining-and-tailings-safety-initiative-disclosure-table">
+         Investor Mining and Tailings Safety Initiative Disclosure Table
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#transalta">
+       TransAlta
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#barrier-power-plant">
+         Barrier Power Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bearspaw-plant">
+         Bearspaw Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#belly-river-hydro-facility">
+         Belly River Hydro Facility
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#bighorn-plant">
+         Bighorn Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#brazeau-plant">
+         Brazeau Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#cascade-plant">
+         Cascade Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ghost-plant">
+         Ghost Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#horseshoe-plant">
+         Horseshoe Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kananaskis-plant">
+         Kananaskis Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#pocaterra-plant">
+         Pocaterra Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#rundle-plant">
+         Rundle Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#sheerness-generating-station">
+         Sheerness Generating Station
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#spray-hydro-facility">
+         Spray Hydro Facility
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#st-mary-hydro-facility">
+         St. Mary Hydro Facility
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#taylor-hydro-facility">
+         Taylor Hydro Facility
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#three-sisters-plant">
+         Three Sisters Plant
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#waterton-hydro-facility">
+         Waterton Hydro Facility
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Academic Institutions/NGO Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shubenacadie-canal-commission">
+       Shubenacadie Canal Commission
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#the-locks">
+         The Locks
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#south-east-alberta-watershed-alliance-seawa">
+       South East Alberta Watershed Alliance (SEAWA)
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#pakowki-lake-watershed-profile">
+         Pakowki Lake Watershed Profile
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#consulting-reports">
+     Consulting Reports
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#advanced-construction-techniques-ltd">
+       Advanced Construction Techniques Ltd.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#st-mary-dam-spillway-replacement-project">
+         St. Mary Dam Spillway Replacement Project
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#amec-americas-ltd">
+       AMEC Americas Ltd.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#flood-risk-mapping-project">
+         Flood Risk Mapping Project
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#east-coast-aquatics-inc">
+       East Coast Aquatics Inc.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#biological-assessment-for-proposed-liverpool-wind-farm">
+         Biological Assessment for Proposed Liverpool Wind Farm
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#golder-associates-inc">
+       Golder Associates Inc.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#inventory-and-assessment-of-dams-in-eastern-newfoundland">
+         Inventory and Assessment of Dams in Eastern Newfoundland
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-three">
+         Inventory and Assessment of Dams in Newfoundland and Labrador Year Three
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-two">
+         Inventory and Assessment of Dams in Newfoundland and Labrador Year Two
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mpe-engineering-ltd">
+       MPE Engineering Ltd.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#provincial-inventory-of-potential-water-storage-sites-and-diversion-scenarios">
+         Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#power-advisory-llc">
+       Power Advisory LLC
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#review-of-the-newfoundland-and-labrador-electricity-system">
+         Review of the Newfoundland and Labrador Electricity System
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#snc-lavalin-group-inc">
+       SNC-Lavalin Group Inc.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#lower-churchill-project-design-criteria">
+         Lower Churchill Project Design Criteria
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#peer-reviewed-articles">
+     Peer-Reviewed Articles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#canadian-geotechnical-journal">
+       Canadian Geotechnical Journal
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#miscellaneous-online-sources">
+     Miscellaneous Online Sources
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#wikipedia">
+       Wikipedia
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#list-of-canadian-waterfalls">
+         List of Canadian Waterfalls
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#list-of-generating-stations-in-british-columbia">
+         List of Generating Stations in British Columbia
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#list-of-generating-stations-in-new-brunswick">
+         List of Generating Stations in New Brunswick
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#little-bow-lake-reservoir">
+         Little Bow Lake Reservoir
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-sources">
+<h1>Data Sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference external" href="https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html">Canadian Aquatic Barriers Database</a> is a multi-year project that is supported partially by financial contributions from <a class="reference external" href="https://www.dfo-mpo.gc.ca/index-eng.html">Fisheries and Oceans Canada</a> and the <a class="reference external" href="https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/">RBC Foundation</a>.</p>
+<div class="section" id="spatial-data-sources">
+<h2>Spatial Data Sources<a class="headerlink" href="#spatial-data-sources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="federal-sources">
+<h3>Federal Sources<a class="headerlink" href="#federal-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="natural-resources-canada-nrcan">
+<h4>Natural Resources Canada (NRCan)<a class="headerlink" href="#natural-resources-canada-nrcan" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="canadian-geographical-names-database">
+<h5>Canadian Geographical Names Database<a class="headerlink" href="#canadian-geographical-names-database" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Natural Resources Canada, 2020. Canadian Geographical Names Database. Government of Canada Open Government Portal. Accessed July 28, 2021, from <a class="reference external" href="https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c">https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: CGNDB_ID</p>
+<p>Short name: nrcan_cgndb</p>
+</div></blockquote>
+</div>
+<div class="section" id="canvec-series-manmade-features">
+<h5>CanVec Series – Manmade Features<a class="headerlink" href="#canvec-series-manmade-features" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Natural Resources Canada, 2019. Constructions and Land Use in Canada - CanVec Series - Manmade Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from <a class="reference external" href="https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6">https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: feature_id</p>
+<p>Short name: nrcan_canvec_mm</p>
+</div></blockquote>
+</div>
+<div class="section" id="canvec-series-hydrographic-features">
+<h5>CanVec Series - Hydrographic Features<a class="headerlink" href="#canvec-series-hydrographic-features" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Natural Resources Canada, 2019. Lakes, Rivers and Glaciers in Canada - CanVec Series - Hydrographic Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from <a class="reference external" href="https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b">https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: feature_id</p>
+<p>Short name: nrcan_canvec_hyf</p>
+</div></blockquote>
+</div>
+<div class="section" id="national-hydrographic-network-nhn">
+<h5>National Hydrographic Network (NHN)<a class="headerlink" href="#national-hydrographic-network-nhn" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Natural Resources Canada, 2016. National Hydro Network - NHN - GeoBase Series. Government of Canada Open Government Portal. Accessed July 24, 2019, from <a class="reference external" href="https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977">https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: nid</p>
+<p>Short name: nrcan_nhn</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="statistics-canada">
+<h4>Statistics Canada<a class="headerlink" href="#statistics-canada" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="intercensal-census-subdivision-boundary-files">
+<h5>Intercensal - Census Subdivision Boundary Files<a class="headerlink" href="#intercensal-census-subdivision-boundary-files" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Statistics Canada, 2020. Intercensal - Census Subdivision Boundary Files. Accessed November 13, 2020, from <a class="reference external" href="https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20">https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: csduid</p>
+<p>Short name: statscan_census_subs</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="united-states-army-corps-of-engineers">
+<h4>United States Army Corps of Engineers<a class="headerlink" href="#united-states-army-corps-of-engineers" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="national-inventory-of-dams">
+<h5>National Inventory of Dams<a class="headerlink" href="#national-inventory-of-dams" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>United States Army Corps of Engineers, 2022. National Inventory of Dams. United States Army. Accessed February 15, 2022, from <a class="reference external" href="https://nid.sec.usace.army.mil/#/downloads">https://nid.sec.usace.army.mil/#/downloads</a></p>
+<p>Geographic coverage: United States</p>
+<p>Source ID field: federal_id</p>
+<p>Short name: usace_nid</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="provincial-state-sources">
+<h3>Provincial/State Sources<a class="headerlink" href="#provincial-state-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="alberta-environment-and-parks-aep">
+<h4>Alberta – Environment and Parks (AEP)<a class="headerlink" href="#alberta-environment-and-parks-aep" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="base-features-hydrography">
+<h5>Base Features Hydrography<a class="headerlink" href="#base-features-hydrography" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Environment and Parks, 2000. Base Features Hydrography. Alberta Open Government Portal. Accessed January 31, 2020, from <a class="reference external" href="https://www.altalis.com/map;id=116">https://www.altalis.com/map;id=116</a></p>
+<p>Geographic coverage: Alberta</p>
+<p>Source ID field: bf_id</p>
+<p>Short name: aep_bf_hy</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="british-columbia-environment-and-climate-change-strategy">
+<h4>British Columbia – Environment and Climate Change Strategy<a class="headerlink" href="#british-columbia-environment-and-climate-change-strategy" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="provincial-obstacles-to-fish-passage-fiss">
+<h5>Provincial Obstacles to Fish Passage (FISS)<a class="headerlink" href="#provincial-obstacles-to-fish-passage-fiss" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Government of British Columbia Knowledge Management, 2007. Provincial Obstacles to Fish Passage. British Columbia Data Catalogue. Accessed October 2, 2019, from <a class="reference external" href="https://catalogue.data.gov.bc.ca/dataset/provincial-obstacles-to-fish-passage">https://catalogue.data.gov.bc.ca/dataset/provincial-obstacles-to-fish-passage</a></p>
+<p>Geographic coverage: British Columbia</p>
+<p>Source ID field: fish_obstacle_point_id</p>
+<p>Short name: bceccs_fiss</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="british-columbia-forests-lands-natural-resource-operations-and-rural-development-flnrord">
+<h4>British Columbia – Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD)<a class="headerlink" href="#british-columbia-forests-lands-natural-resource-operations-and-rural-development-flnrord" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="bc-geographic-warehouse-public-dams">
+<h5>BC Geographic Warehouse – Public Dams<a class="headerlink" href="#bc-geographic-warehouse-public-dams" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Government of British Columbia Water Management, 1997. BC Dams. British Columbia Data Catalogue. Accessed March 9, 2019, from <a class="reference external" href="https://catalogue.data.gov.bc.ca/dataset/bc-dams">https://catalogue.data.gov.bc.ca/dataset/bc-dams</a></p>
+<p>Geographic coverage: British Columbia</p>
+<p>Source ID field: objectid</p>
+<p>Short name: bcflnrord_wris_pubdams</p>
+</div></blockquote>
+</div>
+<div class="section" id="bc-public-dams-kml">
+<h5>BC Public Dams KML<a class="headerlink" href="#bc-public-dams-kml" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Government of British Columbia, 2014. Dams-public-20140626.kmz. Accessed from <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-resource-use/land-water-use/water-use/dam-safety/dams-public-20140626-2.kmz">https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-resource-use/land-water-use/water-use/dam-safety/dams-public-20140626-2.kmz</a></p>
+<p>Geographic coverage: British Columbia</p>
+<p>Source ID field: objectid</p>
+<p>Short name: bcflnrord_kml_pubdams</p>
+</div></blockquote>
+</div>
+<div class="section" id="freshwater-atlas-fwa-obstructions">
+<h5>Freshwater Atlas (FWA) Obstructions<a class="headerlink" href="#freshwater-atlas-fwa-obstructions" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>GeoBC, 2008. Freshwater Atlas Obstructions. British Columbia Data Catalogue. Accessed December 17, 2019, from <a class="reference external" href="https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-obstructions">https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-obstructions</a></p>
+<p>Geographic coverage: British Columbia</p>
+<p>Source ID field: obstruction_id</p>
+<p>Short name: bcflnrord_fwa</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="maine-office-of-geographic-information-systems">
+<h4>Maine Office of Geographic Information Systems<a class="headerlink" href="#maine-office-of-geographic-information-systems" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="impounds">
+<h5>Impounds<a class="headerlink" href="#impounds" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Army Corp of Engineers (USACE), Maine Emergency Management Agency (MEMA), Maine Department of Environmental Protection (MEDEP), Maine Office of Geographic Information Systems, 2006. Impounds. Augusta, ME: Maine Office of Geographic Systems. Accessed January 26, 2022, from <a class="reference external" href="https://www1.maine.gov/geolib/catalog/indexaz.shtml">https://www1.maine.gov/geolib/catalog/indexaz.shtml</a>.</p>
+<p>Geographic coverage: State of Maine, United States of America</p>
+<p>Source id field: unique_id</p>
+<p>Short name: megis_impounds</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="new-brunswick-energy-and-resource-development">
+<h4>New Brunswick – Energy and Resource Development<a class="headerlink" href="#new-brunswick-energy-and-resource-development" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="new-brunswick-hydrographic-network-nbhn">
+<h5>New Brunswick Hydrographic Network (NBHN)<a class="headerlink" href="#new-brunswick-hydrographic-network-nbhn" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Government of New Brunswick Energy and Resource Development, 2020. New Brunswick Hydrographic Network (NBHN). Government of New Brunswick Open Data Portal. Accessed from <a class="reference external" href="https://gnb.socrata.com/Geographic-Data/New-Brunswick-Hydrographic-Network-NBHN-R-seau-Hyd/v2ft-66he">https://gnb.socrata.com/Geographic-Data/New-Brunswick-Hydrographic-Network-NBHN-R-seau-Hyd/v2ft-66he</a></p>
+<p>Geographic coverage: New Brunswick</p>
+<p>Source ID field: nid</p>
+<p>Short name (manmade hydrographic features): nberd_nbhn_mmh</p>
+<p>Short name (hydrographic obstacle features): nberd_nbhn_ho</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="newfoundland-and-labrador-environment-climate-change-and-municipalities">
+<h4>Newfoundland and Labrador – Environment, Climate Change and Municipalities<a class="headerlink" href="#newfoundland-and-labrador-environment-climate-change-and-municipalities" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="provincial-dam-inventory-nlpdi">
+<h5>Provincial Dam Inventory (NLPDI)<a class="headerlink" href="#provincial-dam-inventory-nlpdi" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Government of Newfoundland and Labrador Water Resources Management, no date. Water Resources - Dams. Newfoundland and Labrador Water Resources Portal. Accessed January 27, 2021, from <a class="reference external" href="https://maps.gov.nl.ca/water/mapbrowser/Default.aspx">https://maps.gov.nl.ca/water/mapbrowser/Default.aspx</a></p>
+<p>Geographic coverage: Newfoundland and Labrador</p>
+<p>Source ID field: dam_index_num</p>
+<p>Short name: nleccm_nlpdi</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="nova-scotia-environment">
+<h4>Nova Scotia – Environment<a class="headerlink" href="#nova-scotia-environment" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="topographic-database-water-feature-points-a-lines-b-polygons-c">
+<h5>Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)<a class="headerlink" href="#topographic-database-water-feature-points-a-lines-b-polygons-c" title="Permalink to this headline">¶</a></h5>
+<p>References:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Point Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from <a class="reference external" href="https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/458x-dmz3">https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/458x-dmz3</a></p></li>
+<li><p>Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Line Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from <a class="reference external" href="https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Li/fpca-jrmt">https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Li/fpca-jrmt</a></p></li>
+<li><p>Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Polygon Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from <a class="reference external" href="https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/h8jb-hzrm">https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/h8jb-hzrm</a></p></li>
+</ol>
+<p>Geographic coverage: Nova Scotia</p>
+<p>Source ID field: shape_fid</p>
+<p>Short name: nse_td_wf</p>
+</div></blockquote>
+</div>
+<div class="section" id="water-control-structure-database-accessed-from-gillian-fielding-unpublished-thesis-2011">
+<h5>Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)<a class="headerlink" href="#water-control-structure-database-accessed-from-gillian-fielding-unpublished-thesis-2011" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Fielding, G., 2011. Barriers to Fish Passage in Nova Scotia: The Evolution of Water Control Barriers in Nova Scotia’s Watershed. [Undergraduate thesis, Dalhousie University]. Accessed from <a class="reference external" href="https://cdn.dal.ca/content/dam/dalhousie/pdf/science/environmental-science-program/Honours%20Theses/GillianFielding.pdf">https://cdn.dal.ca/content/dam/dalhousie/pdf/science/environmental-science-program/Honours%20Theses/GillianFielding.pdf</a></p>
+<p>Geographic coverage: Nova Scotia</p>
+<p>Source ID field: dam_id_number</p>
+<p>Short name: nse_wcsd_gfielding</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="ontario-northern-development-mines-natural-resources-and-forestry-mndmnrf">
+<h4>Ontario – Northern Development, Mines, Natural Resources and Forestry (MNDMNRF)<a class="headerlink" href="#ontario-northern-development-mines-natural-resources-and-forestry-mndmnrf" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="ontario-dam-inventory-odi">
+<h5>Ontario Dam Inventory (ODI)<a class="headerlink" href="#ontario-dam-inventory-odi" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Ontario Ministry of Natural Resources and Forestry, 2014. Ontario Dam Inventory. Ontario GeoHub. Accessed July 30, 2020, from <a class="reference external" href="https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-dam-inventory/about">https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-dam-inventory/about</a></p>
+<p>Geographic coverage: Ontario</p>
+<p>Source ID field: dam_id</p>
+<p>Short name: mndmnrf_odi</p>
+</div></blockquote>
+</div>
+<div class="section" id="ontario-hydro-network-ohn-hydrographic-points-a-lines-b-polygons-c">
+<h5>Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)<a class="headerlink" href="#ontario-hydro-network-ohn-hydrographic-points-a-lines-b-polygons-c" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Point. Ontario GeoHub. Accessed October 8, 2019, from <a class="reference external" href="https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-point/about">https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-point/about</a></p></li>
+<li><p>Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Lines. Ontario GeoHub. Accessed October 8, 2019, from <a class="reference external" href="https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-line/about">https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-line/about</a></p></li>
+<li><p>Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Polygons. Ontario GeoHub. Accessed October 8, 2019, from <a class="reference external" href="https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-poly/about">https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-poly/about</a></p></li>
+</ol>
+<p>Geographic coverage: Ontario</p>
+<p>Source ID field: ogf_id</p>
+<p>Short name: mndmnrf_ohn</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="quebec-ministere-de-l-environnement-et-de-la-lutte-contre-les-changements-climatiques">
+<h4>Québec – Ministère de l’Environnement et de la Lutte contre les changements climatiques<a class="headerlink" href="#quebec-ministere-de-l-environnement-et-de-la-lutte-contre-les-changements-climatiques" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="repertoire-des-barrages">
+<h5>Répertoire des Barrages<a class="headerlink" href="#repertoire-des-barrages" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Gouvernement du Québec Ministère de l’Environnement et de la Lutte contre les changements climatiques, no date. Répertoire des barrages. Gouvernement du Québec. Accessed October 20, 2020, from <a class="reference external" href="https://www.cehq.gouv.qc.ca/barrages/default.asp">https://www.cehq.gouv.qc.ca/barrages/default.asp</a></p>
+<p>Geographic coverage: Québec</p>
+<p>Source ID field: numéro_barrage</p>
+<p>Short name: qmelcc_repbarrages</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="academic-institutions-ngo-sources">
+<h3>Academic Institutions/NGO Sources<a class="headerlink" href="#academic-institutions-ngo-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="canadian-wildlife-federation-cwf">
+<h4>Canadian Wildlife Federation (CWF)<a class="headerlink" href="#canadian-wildlife-federation-cwf" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="canfishpass-database-inherited-from-cooke-lab-carleton-university">
+<h5>CANFISHPASS Database (inherited from Cooke Lab – Carleton University)<a class="headerlink" href="#canfishpass-database-inherited-from-cooke-lab-carleton-university" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Cooke, S., Hatry, C., Smokorowksi, K., Clarke, K., Katopodis, C., Binder, T., Hasler, C., &amp; Thiem, J., 2013. CanFishPass: Inventory of Canadian Fish Passage Facilities. Cooke Lab. Accessed from <a class="reference external" href="http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/">http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/</a></p>
+<p>Geographic coverage: National</p>
+<p>Source ID field: fid</p>
+<p>Short name: cwf_canfish</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="food-and-agriculture-organization-fao-of-the-united-nations">
+<h4>Food and Agriculture Organization (FAO) of the United Nations<a class="headerlink" href="#food-and-agriculture-organization-fao-of-the-united-nations" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="aquastat-dam-database">
+<h5>AQUASTAT Dam Database<a class="headerlink" href="#aquastat-dam-database" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Food and Agriculture Organization of the United Nations, 2016. AQUASTAT - FAO’s Global Information System on Water and Agriculture. Food and Agriculture Organization. Accessed from <a class="reference external" href="https://www.fao.org/aquastat/en/databases/dams">https://www.fao.org/aquastat/en/databases/dams</a></p>
+<p>Geographic coverage: Global</p>
+<p>Source ID field: id_fao</p>
+<p>Short name: fao_aquastat</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="global-dam-watch">
+<h4>Global Dam Watch<a class="headerlink" href="#global-dam-watch" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="global-reservoir-and-dam-database-grand">
+<h5>Global Reservoir and Dam Database (GRanD)<a class="headerlink" href="#global-reservoir-and-dam-database-grand" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Global Dam Watch, 2019. GDW’s Global Dam and Reservoir Datasets. Accessed February 1, 2019, from <a class="reference external" href="http://globaldamwatch.org/data/#core_global">http://globaldamwatch.org/data/#core_global</a></p>
+<p>Geographic coverage: Global</p>
+<p>Source ID field: grand_id</p>
+<p>Short name: gdw_grand</p>
+</div></blockquote>
+</div>
+<div class="section" id="global-georeferenced-database-of-dams-goodd">
+<h5>Global Georeferenced Database of Dams (GOODD)<a class="headerlink" href="#global-georeferenced-database-of-dams-goodd" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Global Dam Watch, 2020. GOODD, a global dataset of more than 38,000 georeferenced dams. Accessed August 16, 2019, from <a class="reference external" href="http://globaldamwatch.org/data/#core_global">http://globaldamwatch.org/data/#core_global</a></p>
+<p>Geographic coverage: Global</p>
+<p>Source ID field: dam_id</p>
+<p>Short name: gdw_goodd</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="nature-conservancy-of-canada-ncc">
+<h4>Nature Conservancy of Canada (NCC)<a class="headerlink" href="#nature-conservancy-of-canada-ncc" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="canadian-hydrologic-units-aquatic-barriers">
+<h5>Canadian Hydrologic Units – Aquatic Barriers<a class="headerlink" href="#canadian-hydrologic-units-aquatic-barriers" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Nature Conservancy of Canada, 2019. NCC Canadian Hydrologic Units. Conservation Biology Institute Data Basin. Accessed October 9, 2019, from <a class="reference external" href="https://databasin.org/datasets/a2097617294f49529f87c3630149d63c/">https://databasin.org/datasets/a2097617294f49529f87c3630149d63c/</a></p>
+<p>Geographic coverage: Maritimes</p>
+<p>Source ID field: unique_id</p>
+<p>Short name: ncc_chu_ab</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="stanford-university">
+<h4>Stanford University<a class="headerlink" href="#stanford-university" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="national-performance-of-dams-program-npdp-dam-database">
+<h5>National Performance of Dams Program (NPDP) Dam Database<a class="headerlink" href="#national-performance-of-dams-program-npdp-dam-database" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Stanford University Department of Civil and Environmental Engineering, 2019. NPDP Dams Database. National Performance of Dams Program. Accessed October 9, 2019, from <a class="reference external" href="https://npdp.stanford.edu/dams_database">https://npdp.stanford.edu/dams_database</a></p>
+<p>Geographic coverage: Global</p>
+<p>Source ID field: npdp_id</p>
+<p>Short name: su_npdp</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="wisconsin-institute-for-discovery">
+<h4>Wisconsin Institute for Discovery<a class="headerlink" href="#wisconsin-institute-for-discovery" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="fishwerks">
+<h5>Fishwerks<a class="headerlink" href="#fishwerks" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Wisconsin Institute for Discovery, no date. Fishwerks. Great Lakes Connectivity. Accessed October 9, 2019, from <a class="reference external" href="https://greatlakesconnectivity.org/">https://greatlakesconnectivity.org/</a></p>
+<p>Geographic coverage: Great Lakes Region</p>
+<p>Source ID field: barrier_id</p>
+<p>Short name: wid_fishwerks</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="miscellaneous-sources">
+<h3>Miscellaneous Sources<a class="headerlink" href="#miscellaneous-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="mr-maps">
+<h4>MR Maps<a class="headerlink" href="#mr-maps" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="waterfalls-of-new-brunswick">
+<h5>Waterfalls of New Brunswick<a class="headerlink" href="#waterfalls-of-new-brunswick" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Richard, M., 2019. Waterfalls of New Brunswick. MR Maps. Accessed from <a class="reference external" href="https://www.mrmaps.ca/home/2019/5/19/waterfalls-of-new-brunswick">https://www.mrmaps.ca/home/2019/5/19/waterfalls-of-new-brunswick</a></p>
+<p>Geographic coverage: New Brunswick</p>
+<p>Source ID field: nb_id</p>
+<p>Short name: mrmaps_nbwf</p>
+</div></blockquote>
+</div>
+<div class="section" id="waterfalls-of-nova-scotia">
+<h5>Waterfalls of Nova Scotia<a class="headerlink" href="#waterfalls-of-nova-scotia" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Richard, M., 2019. Waterfalls of Nova Scotia. MR Maps. Accessed June 4, 2021, from <a class="reference external" href="https://www.mrmaps.ca/home/2019/5/30/waterfalls-of-nova-scotia">https://www.mrmaps.ca/home/2019/5/30/waterfalls-of-nova-scotia</a></p>
+<p>Geographic coverage: Nova Scotia</p>
+<p>Source ID field: ns_id</p>
+<p>Short name: mrmaps_nswf</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="non-spatial-data-sources">
+<h2>Non-Spatial Data Sources<a class="headerlink" href="#non-spatial-data-sources" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Federal Sources<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="fisheries-and-oceans-dfo">
+<h4>Fisheries and Oceans (DFO)<a class="headerlink" href="#fisheries-and-oceans-dfo" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="administration-and-enforcement-of-the-fish-habitat-protection-and-pollution-prevention-provisions-of-the-fisheries-act-2003-2004-annual-report-to-parliament">
+<h5>Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament)<a class="headerlink" href="#administration-and-enforcement-of-the-fish-habitat-protection-and-pollution-prevention-provisions-of-the-fisheries-act-2003-2004-annual-report-to-parliament" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Fisheries and Oceans Canada, 2004. 2003-2004 Annual report to Parliament on the administration and enforcement of the fish habitat protection and pollution prevention provisions of the Fisheries Act. pp. 35-36. Ottawa, ON: Fisheries and Oceans Canada. Accessed from <a class="reference external" href="https://waves-vagues.dfo-mpo.gc.ca/Library/357831eng.pdf">https://waves-vagues.dfo-mpo.gc.ca/Library/357831eng.pdf</a></p>
+<p>Short name: dfo_annu_rep_2003_4</p>
+</div></blockquote>
+</div>
+<div class="section" id="information-in-support-of-a-recovery-potential-assessment-of-bull-trout">
+<h5>Information in Support of a Recovery Potential Assessment of Bull Trout<a class="headerlink" href="#information-in-support-of-a-recovery-potential-assessment-of-bull-trout" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Sawatzky, C.D., 2016. Information in support of a recovery potential assessment of Bull Trout (Salvelinus confluentus) (Saskatchewan – Nelson rivers populations) in Alberta. Fisheries and Oceans Canada Canadian Science Advisory Secretariat Research Document 2016/113. pp. 43, 47, 52.  Accessed from <a class="reference external" href="https://waves-vagues.dfo-mpo.gc.ca/Library/40580180.pdf">https://waves-vagues.dfo-mpo.gc.ca/Library/40580180.pdf</a></p>
+<p>Short name: dfo_sawatsky_2016</p>
+</div></blockquote>
+</div>
+<div class="section" id="recovery-strategy-for-the-atlantic-whitefish">
+<h5>Recovery Strategy for the Atlantic Whitefish<a class="headerlink" href="#recovery-strategy-for-the-atlantic-whitefish" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Department of Fisheries and Oceans. 2006. Recovery Strategy for the Atlantic Whitefish (Coregonus huntsmani) in Canada [Proposed]. Species at Risk Act Recovery Strategy Series. Ottawa: Fisheries and Oceans Canada. 42 pp. Accessed February 8, 2022, from <a class="reference external" href="https://sararegistry.gc.ca/default.asp?lang=En&amp;n=B2C0EB3D-1&amp;offset=5">https://sararegistry.gc.ca/default.asp?lang=En&amp;n=B2C0EB3D-1&amp;offset=5</a></p>
+<p>Short name: sarpr_atlantic_wfish</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Natural Resources Canada (NRCan)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="atlantic-salmon-rehabilitation-project">
+<h5>Atlantic Salmon Rehabilitation Project<a class="headerlink" href="#atlantic-salmon-rehabilitation-project" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Department of Fisheries and Forestry of Canada - Resource Development Branch - Fisheries Service, no date. Atlantic Salmon Rehabilitation Project - East River, Sheet Harbour, Nova Scotia. Halifax, NS: Department of Fisheries and Forestry of Canada. Accessed February 8, 2022 from <a class="reference external" href="https://waves-vagues.dfo-mpo.gc.ca/Library/83454.pdf">https://waves-vagues.dfo-mpo.gc.ca/Library/83454.pdf</a></p>
+<p>Short name: dfo_atl_sal_rehab_ns</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="prairie-farm-rehabilitation-administration-pfra">
+<h4>Prairie Farm Rehabilitation Administration (PFRA)<a class="headerlink" href="#prairie-farm-rehabilitation-administration-pfra" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="pfra-dam-inventory">
+<h5>PFRA Dam Inventory<a class="headerlink" href="#pfra-dam-inventory" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Prairie Farm Rehabilitation Administration, 1992. PFRA Dam Inventory. pp. 16-18. Accessed from <a class="reference external" href="http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf">http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf</a></p>
+<p>Short name: pfra_dams</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="provincial-sources">
+<h3>Provincial Sources<a class="headerlink" href="#provincial-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="alberta-agriculture-forestry-and-rural-economic-development">
+<h4>Alberta – Agriculture, Forestry and Rural Economic Development<a class="headerlink" href="#alberta-agriculture-forestry-and-rural-economic-development" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="alberta-irrigation-information">
+<h5>Alberta Irrigation Information<a class="headerlink" href="#alberta-irrigation-information" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Agriculture and Forestry, 2018. Alberta Irrigation Information. pp. 19-20. Accessed  from <a class="reference external" href="https://www1.agric.gov.ab.ca/$Department/deptdocs.nsf/all/irr7401/$FILE/alta_irrig_info2017.pdf">https://www1.agric.gov.ab.ca/$Department/deptdocs.nsf/all/irr7401/$FILE/alta_irrig_info2017.pdf</a></p>
+<p>Short name: aafred_aii</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="alberta-environment-and-parks">
+<h4>Alberta – Environment and Parks<a class="headerlink" href="#alberta-environment-and-parks" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="alberta-dam-safety-map">
+<h5>Alberta Dam Safety Map<a class="headerlink" href="#alberta-dam-safety-map" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Environment and Parks, no date. Alberta Dam Safety Map. Government of Alberta. Accessed December 13, 2021, from <a class="reference external" href="http://damsafetymap.alberta.ca/">http://damsafetymap.alberta.ca/</a></p>
+<p>Short name: aep_dsm</p>
+</div></blockquote>
+</div>
+<div class="section" id="berry-creek-carolside-reservoir-fisheries-management-objectives">
+<h5>Berry Creek (Carolside) Reservoir Fisheries Management Objectives<a class="headerlink" href="#berry-creek-carolside-reservoir-fisheries-management-objectives" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Fish and Wildlife, 2018. Berry Creek (Carolside) Reservoir Fisheries Management Objectives. Alberta Environment and Parks. Accessed from <a class="reference external" href="https://mywildalberta.ca/fishing/regulations/documents/BerryCreekCarolsideReservoir-FMO-Jul01-2018.pdf">https://mywildalberta.ca/fishing/regulations/documents/BerryCreekCarolsideReservoir-FMO-Jul01-2018.pdf</a></p>
+<p>Short name: aep_fmo_berry_crk</p>
+</div></blockquote>
+</div>
+<div class="section" id="bow-river-basin-transalta-operations">
+<h5>Bow River Basin – TransAlta Operations<a class="headerlink" href="#bow-river-basin-transalta-operations" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Environment and Parks, 2021. Bow River Basin – TransAlta operations. Government of Alberta. Accessed December 13, 2021, from <a class="reference external" href="https://www.alberta.ca/bow-river-basin-transalta-operations.aspx">https://www.alberta.ca/bow-river-basin-transalta-operations.aspx</a></p>
+<p>Short name: aep_tao_bow_riv_basin</p>
+</div></blockquote>
+</div>
+<div class="section" id="fish-stocking-maps">
+<h5>Fish Stocking Maps<a class="headerlink" href="#fish-stocking-maps" title="Permalink to this headline">¶</a></h5>
+<p>References:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Alberta Environment and Parks, 2021. Stocking Maps - Mound Red Reservoir. My Wild Alberta. Accessed December 13, 2021, from <a class="reference external" href="https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6737">https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6737</a></p></li>
+</ol>
+<p>Short name: aep_fsm_moundred_res</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Alberta Environment and Parks, 2021. Stocking Maps - Open Creek Reservoir. My Wild Alberta. Accessed December 13, 2021, from <a class="reference external" href="https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6726">https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6726</a></p></li>
+</ol>
+<p>Short name: aep_fsm_open_crk</p>
+</div></blockquote>
+</div>
+<div class="section" id="little-bow-reservoir-fin-summary">
+<h5>Little Bow Reservoir FIN Summary<a class="headerlink" href="#little-bow-reservoir-fin-summary" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Alberta Fish and Wildlife, 2020. Little Bow Reservoir FIN Summary 2020. Alberta Environment and Parks. p. 1. Accessed from <a class="reference external" href="https://open.alberta.ca/dataset/dfe0c6b7-5f3a-478b-a0aa-e66ffc9c6c07/resource/7289e415-eaf7-4e78-a51b-57e842e282b4/download/aep-little-bow-reservoir-fin-summary-2020.pdf">https://open.alberta.ca/dataset/dfe0c6b7-5f3a-478b-a0aa-e66ffc9c6c07/resource/7289e415-eaf7-4e78-a51b-57e842e282b4/download/aep-little-bow-reservoir-fin-summary-2020.pdf</a></p>
+<p>Short name: aep_littlebow_res_fin_2020</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="alberta-sustainable-resource-development">
+<h4>Alberta – Sustainable Resource Development<a class="headerlink" href="#alberta-sustainable-resource-development" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="bathymetry-maps">
+<h5>Bathymetry Maps<a class="headerlink" href="#bathymetry-maps" title="Permalink to this headline">¶</a></h5>
+<p>References:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Alberta Resource Information Unit, 2004. Bathymetry of Chin Lakes, 1:20,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from <a class="reference external" href="https://open.alberta.ca/publications/chin-lakes-bathymetry">https://open.alberta.ca/publications/chin-lakes-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_chin</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Alberta Resource Information Unit, 2002. Bathymetry of Forty Mile Coulee Reservoir, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from <a class="reference external" href="https://open.alberta.ca/publications/forty-mile-coulee-reservoir-bathymetry">https://open.alberta.ca/publications/forty-mile-coulee-reservoir-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_forty_mile</p>
+<ol class="loweralpha simple" start="3">
+<li><p>Alberta Resource Information Unit, 2002. Bathymetry of Jensen (Pothole) Reservoir, 1:5,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  <a class="reference external" href="https://open.alberta.ca/publications/jensen-pothole-reservoir-bathymetry">https://open.alberta.ca/publications/jensen-pothole-reservoir-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_jensen</p>
+<ol class="loweralpha simple" start="4">
+<li><p>Alberta Resource Information Unit, 2002. Bathymetry of Keho Lake, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from   <a class="reference external" href="https://open.alberta.ca/publications/keho-lake-bathymetry">https://open.alberta.ca/publications/keho-lake-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_keho</p>
+<ol class="loweralpha simple" start="5">
+<li><p>Alberta Resource Information Unit, 2004. Bathymetry of Lake Newell, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  <a class="reference external" href="https://open.alberta.ca/publications/lake-newell-bathymetry">https://open.alberta.ca/publications/lake-newell-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_newell</p>
+<ol class="loweralpha simple" start="6">
+<li><p>Alberta Resource Information Unit, 2002. Bathymetry of McGregor Lake,1:20,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  <a class="reference external" href="https://open.alberta.ca/publications/mcgregor-lake-bathymetry">https://open.alberta.ca/publications/mcgregor-lake-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_mcgregor</p>
+<ol class="loweralpha simple" start="7">
+<li><p>Alberta Resource Information Unit, 2005. Bathymetry of Payne Lake, 1:7500. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  <a class="reference external" href="https://open.alberta.ca/publications/payne-lake-bathymetry">https://open.alberta.ca/publications/payne-lake-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_payne</p>
+<ol class="loweralpha simple" start="8">
+<li><p>Alberta Resource Information Unit, 2004. Bathymetry of St. Mary Reservoir, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  <a class="reference external" href="https://open.alberta.ca/publications/st-mary-reservoir-bathymetry">https://open.alberta.ca/publications/st-mary-reservoir-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_st_mary</p>
+<ol class="lowerroman simple">
+<li><p>Alberta Resource Information Unit, 2003. Bathymetry of Stafford Reservoir, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from <a class="reference external" href="https://open.alberta.ca/publications/stafford-reservoir-bathymetry">https://open.alberta.ca/publications/stafford-reservoir-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_stafford</p>
+<ol class="loweralpha simple" start="10">
+<li><p>Alberta Resource Information Unit, 2003. Bathymetry of Travers Reservoir, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from <a class="reference external" href="https://open.alberta.ca/publications/travers-reservoir-bathymetry">https://open.alberta.ca/publications/travers-reservoir-bathymetry</a></p></li>
+</ol>
+<p>Short name: asrd_bathym_travers</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="newfoundland-and-labrador-municipal-affairs-and-environment">
+<h4>Newfoundland and Labrador – Municipal Affairs and Environment<a class="headerlink" href="#newfoundland-and-labrador-municipal-affairs-and-environment" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="permits-to-alter-a-body-of-water">
+<h5>Permits to Alter a Body of Water<a class="headerlink" href="#permits-to-alter-a-body-of-water" title="Permalink to this headline">¶</a></h5>
+<p>References:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Newfoundland and Labrador Department of Municipal Affairs and Environment - Water Resources Management Division, 2017. Permit to Alter a Body of Water - Permit No. ALT9067-2017. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9067-2017.pdf">https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9067-2017.pdf</a></p></li>
+</ol>
+<p>Short name: nl_mae_permit_alt9067</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Newfoundland and Labrador Department of Municipal Affairs and Environment - Water Resources Management Division, 2017. Permit to Alter a Body of Water - Permit No. ALT9371-2017. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9371-2017.pdf">https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9371-2017.pdf</a></p></li>
+</ol>
+<p>Short name: nl_mae_permit_alt9371</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="nova-scotia-agriculture">
+<h4>Nova Scotia – Agriculture<a class="headerlink" href="#nova-scotia-agriculture" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="dykeland-sites">
+<h5>Dykeland Sites<a class="headerlink" href="#dykeland-sites" title="Permalink to this headline">¶</a></h5>
+<p>References:</p>
+<blockquote>
+<div><p>Government of Nova Scotia, no date. Working With the Tides - Dykeland Sites. Accessed February 8, 2022, from <a class="reference external" href="https://novascotia.ca/dykeland-system-upgrades/dykeland-sites/">https://novascotia.ca/dykeland-system-upgrades/dykeland-sites/</a></p>
+<p>Short name: ns_dykeland_sites</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="municipal-sources">
+<h3>Municipal Sources<a class="headerlink" href="#municipal-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="city-of-calgary-alberta">
+<h4>City of Calgary, Alberta<a class="headerlink" href="#city-of-calgary-alberta" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="glenmore-dam-infrastructure-improvements">
+<h5>Glenmore Dam Infrastructure Improvements<a class="headerlink" href="#glenmore-dam-infrastructure-improvements" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>City of Calgary, 2020. Glenmore Dam infrastructure improvements. Accessed December 13, 2021, from <a class="reference external" href="https://www.calgary.ca/uep/water/construction-projects/construction-projects-and-upgrades/glenmore-dam-infrastructure-improvements.html">https://www.calgary.ca/uep/water/construction-projects/construction-projects-and-upgrades/glenmore-dam-infrastructure-improvements.html</a></p>
+<p>Short name: ab_cal_gdii</p>
+</div></blockquote>
+</div>
+<div class="section" id="glenmore-reservoir-dam-operations">
+<h5>Glenmore Reservoir Dam Operations<a class="headerlink" href="#glenmore-reservoir-dam-operations" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>City of Calgary, no date. Glenmore Reservoir Dam Operations. Accessed December 13, 2021, from <a class="reference external" href="https://www.calgary.ca/uep/water/water-and-wastewater-systems/water-treatment/glenmore-reservoir-dam-operations.html">https://www.calgary.ca/uep/water/water-and-wastewater-systems/water-treatment/glenmore-reservoir-dam-operations.html</a></p>
+<p>Short name: ab_cal_grdo</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="city-of-dawson-creek-british-columbia">
+<h4>City of Dawson Creek, British Columbia<a class="headerlink" href="#city-of-dawson-creek-british-columbia" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="drinking-water-quality-reports">
+<h5>Drinking Water Quality Reports<a class="headerlink" href="#drinking-water-quality-reports" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>City of Dawson Creek, 2020. 2019 Drinking Water Quality Annual Report. p. 6. Accessed from <a class="reference external" href="https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/WTP-Annual-Water-Quality-Report-FINAL_DA_KG.pdf">https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/WTP-Annual-Water-Quality-Report-FINAL_DA_KG.pdf</a></p></li>
+</ol>
+<p>Short name: bc_dc_wqar2019</p>
+<ol class="loweralpha simple" start="2">
+<li><p>City of Dawson Creek, 2017. 2016 Drinking Water Quality Annual Report. p. 6. Accessed from <a class="reference external" href="https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Report-2016.pdf">https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Report-2016.pdf</a></p></li>
+</ol>
+<p>Short name: bc_dc_wqar2016</p>
+<ol class="loweralpha simple" start="3">
+<li><p>City of Dawson Creek, 2015. Drinking Water Quality Assurance Plan Update Final Report. pp. 4, 33. Accessed from <a class="reference external" href="https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Assurance-Plan-2015.pdf">https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Assurance-Plan-2015.pdf</a></p></li>
+</ol>
+<p>Short name: bc_dc_wqap2015</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="eastern-irrigation-district-alberta">
+<h4>Eastern Irrigation District, Alberta<a class="headerlink" href="#eastern-irrigation-district-alberta" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="bassano-dam">
+<h5>Bassano Dam<a class="headerlink" href="#bassano-dam" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Eastern Irrigation District, no date. Bassano Dam. Accessed December 13, 2021, from <a class="reference external" href="https://www.eid.ca/documents/publications/Brochure_Bassano_Dam.pdf">https://www.eid.ca/documents/publications/Brochure_Bassano_Dam.pdf</a></p>
+<p>Short name: aeid_bassano</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="halifax-water">
+<h4>Halifax Water<a class="headerlink" href="#halifax-water" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="chain-lakes-emergency-water-supply-watershed-area-source-water-protection-plan">
+<h5>Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Plan<a class="headerlink" href="#chain-lakes-emergency-water-supply-watershed-area-source-water-protection-plan" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Halifax Water, 2017. Chain Lakes Emergency Water Supply Watershed Area - Source Water Protection Plan. pp. 23, 66. Accessed from <a class="reference external" href="https://www.halifaxwater.ca/sites/default/files/2019-01/chainlakes-swp-plan.pdf">https://www.halifaxwater.ca/sites/default/files/2019-01/chainlakes-swp-plan.pdf</a></p>
+<p>Short name: ns_hal_clews_swpp</p>
+</div></blockquote>
+</div>
+<div class="section" id="chain-lake-dam-and-pockwock-lake-dam-consultant-services">
+<h5>Chain Lake Dam and Pockwock Lake Dam – Consultant Services<a class="headerlink" href="#chain-lake-dam-and-pockwock-lake-dam-consultant-services" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Halifax Water, 2021. RFP #P25.2021 - Chain Lake Dam and Pockwock Lake Dam - Consultant Services. pp. 5. Accessed from <a class="reference external" href="https://procurement.novascotia.ca/pt_files/tenders/P252021.pdf">https://procurement.novascotia.ca/pt_files/tenders/P252021.pdf</a></p>
+<p>Short name: ns_hal_p25_2021</p>
+</div></blockquote>
+</div>
+<div class="section" id="halifax-water-dam-safety-review">
+<h5>Halifax Water Dam Safety Review<a class="headerlink" href="#halifax-water-dam-safety-review" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Halifax Water, 2019. RFP #P24.2019 - Halifax Water Dam Safety Review (2019); Appendix E. Accessed from <a class="reference external" href="https://procurement.novascotia.ca/pt_files/tenders/P242019.pdf">https://procurement.novascotia.ca/pt_files/tenders/P242019.pdf</a></p>
+<p>Short name: ns_hal_p24_2019</p>
+</div></blockquote>
+</div>
+<div class="section" id="integrated-resource-plan-water-system-review">
+<h5>Integrated Resource Plan – Water System Review<a class="headerlink" href="#integrated-resource-plan-water-system-review" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Halifax Water, 2012. Halifax Water Integrated Resource Plan; Volume 3 Appendix A - Water System Review. pp. 41-42. Accessed from <a class="reference external" href="https://www.halifax.ca/sites/default/files/documents/home-property/water/HW_IntegratedResourcePlan_AppendixA.pdf">https://www.halifax.ca/sites/default/files/documents/home-property/water/HW_IntegratedResourcePlan_AppendixA.pdf</a></p>
+<p>Short name: ns_hal_hwirp_v3</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="energy-company-sources">
+<h3>Energy Company Sources<a class="headerlink" href="#energy-company-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="irrican-power">
+<h4>Irrican Power<a class="headerlink" href="#irrican-power" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="chin-chute-power-plant">
+<h5>Chin Chute Power Plant<a class="headerlink" href="#chin-chute-power-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Irrican Power, no date. Chin Chute Power Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from <a class="reference external" href="https://www.smrid.com/wp-content/uploads/2020/09/irrican-CHIN.pdf">https://www.smrid.com/wp-content/uploads/2020/09/irrican-CHIN.pdf</a></p>
+<p>Short name: irrican_chin_chute</p>
+</div></blockquote>
+</div>
+<div class="section" id="drops-4-5-and-6-power-plant">
+<h5>Drops 4, 5, and 6 Power Plant<a class="headerlink" href="#drops-4-5-and-6-power-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Irrican Power, 2020. Drops 4, 5, and 6 Power Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from <a class="reference external" href="https://www.smrid.com/wp-content/uploads/2020/09/irrican-456-brochure.pdf">https://www.smrid.com/wp-content/uploads/2020/09/irrican-456-brochure.pdf</a></p>
+<p>Short name: irrican_drops_456</p>
+</div></blockquote>
+</div>
+<div class="section" id="raymond-reservoir-power-plant">
+<h5>Raymond Reservoir Power Plant<a class="headerlink" href="#raymond-reservoir-power-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Irrican Power, 2020. Raymond Reservoir Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from <a class="reference external" href="https://www.smrid.com/wp-content/uploads/2020/09/Raymond-Hydro-2.pdf">https://www.smrid.com/wp-content/uploads/2020/09/Raymond-Hydro-2.pdf</a></p>
+<p>Short name: irrican_ray_res</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="lower-churchill-management-corporation">
+<h4>Lower Churchill Management Corporation<a class="headerlink" href="#lower-churchill-management-corporation" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="muskrat-falls-dams-cold-climate-considerations-in-design-and-construction">
+<h5>Muskrat Falls Dams – Cold Climate Considerations in Design and Construction<a class="headerlink" href="#muskrat-falls-dams-cold-climate-considerations-in-design-and-construction" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Protulipac, D., Smith, T., Snyder, G., O’Brien, J., &amp; Chislett, T., 2018. Muskrat Falls Dams – Cold Climate Considerations in Design and Construction. CDA 2018 Annual Conference, Québec, Québec. pp. 4-5. Accessed from <a class="reference external" href="https://www.researchgate.net/publication/328365634_MUSKRAT_FALLS_DAMS_-_COLD_CLIMATE_CONSIDERATIONS_IN_DESIGN_AND_CONSTRUCTION">https://www.researchgate.net/publication/328365634_MUSKRAT_FALLS_DAMS_-_COLD_CLIMATE_CONSIDERATIONS_IN_DESIGN_AND_CONSTRUCTION</a></p>
+<p>Short name: lcmc_protulipac_et_al_2018</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="nb-power">
+<h4>NB Power<a class="headerlink" href="#nb-power" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="hydro-tour">
+<h5>Hydro Tour<a class="headerlink" href="#hydro-tour" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>NB Power, no date. Hydro Tour. Accessed February 8, 2022, from <a class="reference external" href="https://www.nbpower.com/en/about-us/learning/learn-about-electricity/hydro/hydro-tour/">https://www.nbpower.com/en/about-us/learning/learn-about-electricity/hydro/hydro-tour/</a></p>
+<p>Short name: nbpower_hydro_tour</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="newfoundland-and-labrador-hydro">
+<h4>Newfoundland and Labrador Hydro<a class="headerlink" href="#newfoundland-and-labrador-hydro" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="audit-dam-safety-review-for-pudops-dam-north-salmon-dam-and-spillway-rfp-2017-70503">
+<h5>Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017-70503)<a class="headerlink" href="#audit-dam-safety-review-for-pudops-dam-north-salmon-dam-and-spillway-rfp-2017-70503" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland and Labrador Hydro, 2017. RFP # 2017-70503 - Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway; Appendix VI: Inventory of Dams and Dykes. Accessed from <a class="reference external" href="https://bids.nalcorenergy.com/Module/Tenders/en/Document/Preview/c33bf56c-20b9-453d-914a-4d779ce9ed0e">https://bids.nalcorenergy.com/Module/Tenders/en/Document/Preview/c33bf56c-20b9-453d-914a-4d779ce9ed0e</a></p>
+<p>Short name: nlhydro_adsr_2017_70503</p>
+</div></blockquote>
+</div>
+<div class="section" id="depreciation-methodology-and-asset-service-lives">
+<h5>Depreciation Methodology and Asset Service Lives<a class="headerlink" href="#depreciation-methodology-and-asset-service-lives" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Hydro, 2009. CA-NLH-155 Attachment 1 - Depreciation Methodology and Asset Service Lives. Accessed from <a class="reference external" href="http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-155.pdf">http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-155.pdf</a></p>
+<p>Short name: nlhydro_ca_nlh_155</p>
+</div></blockquote>
+</div>
+<div class="section" id="operations-hydro-generation">
+<h5>Operations – Hydro Generation<a class="headerlink" href="#operations-hydro-generation" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland and Labrador Hydro, no date. Operations - Hydro Generation. Accessed February 8, 2022, from <a class="reference external" href="https://nlhydro.com/operations/hydro-generation/">https://nlhydro.com/operations/hydro-generation/</a></p>
+<p>Short name: nlhydro_ops_hydro</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="newfoundland-power">
+<h4>Newfoundland Power<a class="headerlink" href="#newfoundland-power" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="depreciation-study-hydro-plant-decommissioning-report">
+<h5>2019 Depreciation Study – Hydro Plant Decommissioning Report<a class="headerlink" href="#depreciation-study-hydro-plant-decommissioning-report" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2019. 2019 Depreciation Study - Hydro Plant Decommissioning Report. pp. 4-83. Accessed from <a class="reference external" href="http://publicinfo.nlh.nl.ca/Newfoundland%20Power's%202022%20CBA/RFI%20Responses/CA-NP-021.pdf">http://publicinfo.nlh.nl.ca/Newfoundland%20Power’s%202022%20CBA/RFI%20Responses/CA-NP-021.pdf</a></p>
+<p>Short name: nlp_depreciation_2019</p>
+</div></blockquote>
+</div>
+<div class="section" id="dam-safety-inspection-reports">
+<h5>Dam Safety Inspection Reports<a class="headerlink" href="#dam-safety-inspection-reports" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2007. 2007 Dam Safety Inspection Report - Tors Cove / Rocky Pond Developments. Accessed from <a class="reference external" href="http://www.pub.nf.ca/applications/NP2009Capital/files/rfi/CA-NP-10.pdf">http://www.pub.nf.ca/applications/NP2009Capital/files/rfi/CA-NP-10.pdf</a></p>
+<p>Short name: nlp_dsi_2007</p>
+</div></blockquote>
+</div>
+<div class="section" id="facility-rehabilitation">
+<h5>Facility Rehabilitation<a class="headerlink" href="#facility-rehabilitation" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Newfoundland Power, 2013. 2014 Facility Rehabilitation. pp. 3, 5-6. Accessed from <a class="reference external" href="http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf">http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf</a></p></li>
+</ol>
+<p>Short name: nlp_fac_rehab_2014</p>
+<ol class="loweralpha simple" start="2">
+<li><p>Newfoundland Power, 2011. 2012 Facility Rehabilitation. pp. 1-3. Accessed from <a class="reference external" href="http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf">http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf</a></p></li>
+</ol>
+<p>Short name: nlp_fac_rehab_2012</p>
+</div></blockquote>
+</div>
+<div class="section" id="potential-projects-to-increase-energy-production">
+<h5>Potential Projects to Increase Energy Production<a class="headerlink" href="#potential-projects-to-increase-energy-production" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2009. Potential Projects to Increase Energy Production. pp. 2-25. Accessed from <a class="reference external" href="http://pub.nl.ca/applications/NP2010Capital/files/rfi/PUB-NP-009.pdf">http://pub.nl.ca/applications/NP2010Capital/files/rfi/PUB-NP-009.pdf</a></p>
+<p>Short name: nlp_ppiep_2009</p>
+</div></blockquote>
+</div>
+<div class="section" id="public-safety-around-dams">
+<h5>Public Safety Around Dams<a class="headerlink" href="#public-safety-around-dams" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2016. Public Safety Around Dams. pp. 2-20. Accessed from <a class="reference external" href="http://www.pub.nf.ca/applications/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf">http://www.pub.nf.ca/applications/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf</a></p>
+<p>Short name: nlp_pub_safety_2016</p>
+</div></blockquote>
+</div>
+<div class="section" id="rattling-brook-fisheries-compensation">
+<h5>Rattling Brook Fisheries Compensation<a class="headerlink" href="#rattling-brook-fisheries-compensation" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2011. Rattling Brook Fisheries Compensation. pp. 3-4. Accessed from <a class="reference external" href="http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf">http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf</a></p>
+<p>Short name: nlp_rbfc_2011</p>
+</div></blockquote>
+</div>
+<div class="section" id="sustainable-electricity-program">
+<h5>Sustainable Electricity Program<a class="headerlink" href="#sustainable-electricity-program" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Newfoundland Power, 2009. 2008 Submission - Sustainable Electricity Program. pp. 4. Accessed from <a class="reference external" href="https://secure.newfoundlandpower.com/-/media/PDFs/About-Us/Sustainable-Electricity/SEP-2008-Report.pdf">https://secure.newfoundlandpower.com/-/media/PDFs/About-Us/Sustainable-Electricity/SEP-2008-Report.pdf</a></p>
+<p>Short name: nlp_sep_2008</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="nova-scotia-power">
+<h4>Nova Scotia Power<a class="headerlink" href="#nova-scotia-power" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="nova-scotia-power-incorporated-hydro-asset-study-redacted">
+<h5>Nova Scotia Power Incorporated Hydro Asset Study – Redacted<a class="headerlink" href="#nova-scotia-power-incorporated-hydro-asset-study-redacted" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Nova Scotia Power Inc., 2018. Nova Scotia Power Incorporated Hydro Asset Study - Redacted; Appendix B. pp. 16-68. Accessed from <a class="reference external" href="https://irp.nspower.ca/files/key-documents/background-materials/20181221-NS-Power-Hydro-Asset-Study-REDACTED.pdf">https://irp.nspower.ca/files/key-documents/background-materials/20181221-NS-Power-Hydro-Asset-Study-REDACTED.pdf</a></p>
+<p>Short name: nsp_ihas</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="suncor-energy">
+<h4>Suncor Energy<a class="headerlink" href="#suncor-energy" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="investor-mining-and-tailings-safety-initiative-disclosure-table">
+<h5>Investor Mining and Tailings Safety Initiative Disclosure Table<a class="headerlink" href="#investor-mining-and-tailings-safety-initiative-disclosure-table" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Suncor Energy, no date. Investor Mining and Tailings Safety Initiative Disclosure Table. Sustainability at Suncor. Accessed December 13, 2021, from <a class="reference external" href="https://sustainability-prd-cdn.suncor.com/-/media/project/ros/shared/documents/other-disclosures/suncor-industry-disclosure-table-en.pdf?la=en&amp;modified=20201216022314&amp;hash=FF951A51BA9699AF9ACC4A631A5AC36A999663FB">https://sustainability-prd-cdn.suncor.com/-/media/project/ros/shared/documents/other-disclosures/suncor-industry-disclosure-table-en.pdf?la=en&amp;modified=20201216022314&amp;hash=FF951A51BA9699AF9ACC4A631A5AC36A999663FB</a></p>
+<p>Short name: suncor_safety_initiative</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="transalta">
+<h4>TransAlta<a class="headerlink" href="#transalta" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="barrier-power-plant">
+<h5>Barrier Power Plant<a class="headerlink" href="#barrier-power-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Barrier. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/barrier/">https://transalta.com/plants-operation/barrier/</a></p>
+<p>Short name: transalta_barrier</p>
+</div></blockquote>
+</div>
+<div class="section" id="bearspaw-plant">
+<h5>Bearspaw Plant<a class="headerlink" href="#bearspaw-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Bearspaw. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/bearspaw/">https://transalta.com/plants-operation/bearspaw/</a></p>
+<p>Short name: transalta_bearspaw</p>
+</div></blockquote>
+</div>
+<div class="section" id="belly-river-hydro-facility">
+<h5>Belly River Hydro Facility<a class="headerlink" href="#belly-river-hydro-facility" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Belly River. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/belly-river/">https://transalta.com/plants-operation/belly-river/</a></p>
+<p>Short name: transalta_belly</p>
+</div></blockquote>
+</div>
+<div class="section" id="bighorn-plant">
+<h5>Bighorn Plant<a class="headerlink" href="#bighorn-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Bighorn. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/bighorn/">https://transalta.com/plants-operation/bighorn/</a></p>
+<p>Short name: transalta_bighorn</p>
+</div></blockquote>
+</div>
+<div class="section" id="brazeau-plant">
+<h5>Brazeau Plant<a class="headerlink" href="#brazeau-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Brazeau. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/brazeau/">https://transalta.com/plants-operation/brazeau/</a></p>
+<p>Short name: transalta_brazeau</p>
+</div></blockquote>
+</div>
+<div class="section" id="cascade-plant">
+<h5>Cascade Plant<a class="headerlink" href="#cascade-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Cascade. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/cascade/">https://transalta.com/plants-operation/cascade/</a></p>
+<p>Short name: transalta_cascade</p>
+</div></blockquote>
+</div>
+<div class="section" id="ghost-plant">
+<h5>Ghost Plant<a class="headerlink" href="#ghost-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Ghost. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/ghost/">https://transalta.com/plants-operation/ghost/</a></p>
+<p>Short name: transalta_ghost</p>
+</div></blockquote>
+</div>
+<div class="section" id="horseshoe-plant">
+<h5>Horseshoe Plant<a class="headerlink" href="#horseshoe-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Horseshoe. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/horseshoe/">https://transalta.com/plants-operation/horseshoe/</a></p>
+<p>Short name: transalta_horseshoe</p>
+</div></blockquote>
+</div>
+<div class="section" id="kananaskis-plant">
+<h5>Kananaskis Plant<a class="headerlink" href="#kananaskis-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Kananaskis. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/kananaskis/">https://transalta.com/plants-operation/kananaskis/</a></p>
+<p>Short name: transalta_kananaskis</p>
+</div></blockquote>
+</div>
+<div class="section" id="pocaterra-plant">
+<h5>Pocaterra Plant<a class="headerlink" href="#pocaterra-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Pocaterra. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/pocaterra/">https://transalta.com/plants-operation/pocaterra/</a></p>
+<p>Short name: transalta_pocaterra</p>
+</div></blockquote>
+</div>
+<div class="section" id="rundle-plant">
+<h5>Rundle Plant<a class="headerlink" href="#rundle-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Rundle. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/rundle/">https://transalta.com/plants-operation/rundle/</a></p>
+<p>Short name: transalta_rundle</p>
+</div></blockquote>
+</div>
+<div class="section" id="sheerness-generating-station">
+<h5>Sheerness Generating Station<a class="headerlink" href="#sheerness-generating-station" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Sheerness. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/sheerness/">https://transalta.com/plants-operation/sheerness/</a></p>
+<p>Short name: transalta_sheerness</p>
+</div></blockquote>
+</div>
+<div class="section" id="spray-hydro-facility">
+<h5>Spray Hydro Facility<a class="headerlink" href="#spray-hydro-facility" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Spray. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/spray/">https://transalta.com/plants-operation/spray/</a></p>
+<p>Short name: transalta_spray</p>
+</div></blockquote>
+</div>
+<div class="section" id="st-mary-hydro-facility">
+<h5>St. Mary Hydro Facility<a class="headerlink" href="#st-mary-hydro-facility" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. St. Mary. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/st-mary/">https://transalta.com/plants-operation/st-mary/</a></p>
+<p>Short name: transalta_st_mary</p>
+</div></blockquote>
+</div>
+<div class="section" id="taylor-hydro-facility">
+<h5>Taylor Hydro Facility<a class="headerlink" href="#taylor-hydro-facility" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Taylor. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/taylor-hydro/">https://transalta.com/plants-operation/taylor-hydro/</a></p>
+<p>Short name: transalta_taylor</p>
+</div></blockquote>
+</div>
+<div class="section" id="three-sisters-plant">
+<h5>Three Sisters Plant<a class="headerlink" href="#three-sisters-plant" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Three Sisters. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/three-sisters/">https://transalta.com/plants-operation/three-sisters/</a></p>
+<p>Short name: transalta_three_sisters</p>
+</div></blockquote>
+</div>
+<div class="section" id="waterton-hydro-facility">
+<h5>Waterton Hydro Facility<a class="headerlink" href="#waterton-hydro-facility" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>TransAlta, 2020. Waterton. Accessed December 13, 2021, from <a class="reference external" href="https://transalta.com/plants-operation/waterton/">https://transalta.com/plants-operation/waterton/</a></p>
+<p>Short name: transalta_waterton</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Academic Institutions/NGO Sources<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="shubenacadie-canal-commission">
+<h4>Shubenacadie Canal Commission<a class="headerlink" href="#shubenacadie-canal-commission" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="the-locks">
+<h5>The Locks<a class="headerlink" href="#the-locks" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Shubenacadie Canal Commission, no date. The Locks. Accessed February 8, 2022, from <a class="reference external" href="https://www.shubenacadiecanal.ca/the-locks">https://www.shubenacadiecanal.ca/the-locks</a></p>
+<p>Short name: scc_locks</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="south-east-alberta-watershed-alliance-seawa">
+<h4>South East Alberta Watershed Alliance (SEAWA)<a class="headerlink" href="#south-east-alberta-watershed-alliance-seawa" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="pakowki-lake-watershed-profile">
+<h5>Pakowki Lake Watershed Profile<a class="headerlink" href="#pakowki-lake-watershed-profile" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>South East Alberta Watershed Alliance, 2020. Pakowki Lake. Accessed December 13, 2021, from <a class="reference external" href="https://seawa.ca/your-watershed/profile-of-the-seawa-watershed/pakowki-lake">https://seawa.ca/your-watershed/profile-of-the-seawa-watershed/pakowki-lake</a></p>
+<p>Short name: seawa_pakowki_lake</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="consulting-reports">
+<h3>Consulting Reports<a class="headerlink" href="#consulting-reports" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="advanced-construction-techniques-ltd">
+<h4>Advanced Construction Techniques Ltd.<a class="headerlink" href="#advanced-construction-techniques-ltd" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="st-mary-dam-spillway-replacement-project">
+<h5>St. Mary Dam Spillway Replacement Project<a class="headerlink" href="#st-mary-dam-spillway-replacement-project" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Advanced Construction Techniques Ltd., no date. St. Mary Dam Spillway Replacement Project. Advanced Construction Techniques. Accessed December 13, 2021, from <a class="reference external" href="http://www.advancedconstructiontechniques.com/St-Mary-Dam-Spillway-Replacement-Project.asp">http://www.advancedconstructiontechniques.com/St-Mary-Dam-Spillway-Replacement-Project.asp</a></p>
+<p>Short name: act_st_mary_spillway</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="amec-americas-ltd">
+<h4>AMEC Americas Ltd.<a class="headerlink" href="#amec-americas-ltd" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="flood-risk-mapping-project">
+<h5>Flood Risk Mapping Project<a class="headerlink" href="#flood-risk-mapping-project" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>AMEC Environment &amp; Infrastructure, 2013. Flood Risk Mapping Project - Corner Brook Stream and Petrie’s Brook. Report prepared for Government of Newfoundland and Labrador Department of Environment and Conservation, Water Resources Management Division. pp. 2-12 - 2-15. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-flooding-corner-brook-stream-cornerbrook-report.pdf">https://www.gov.nl.ca/ecc/files/waterres-flooding-corner-brook-stream-cornerbrook-report.pdf</a></p>
+<p>Short name: amec_frmp_2013</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="east-coast-aquatics-inc">
+<h4>East Coast Aquatics Inc.<a class="headerlink" href="#east-coast-aquatics-inc" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="biological-assessment-for-proposed-liverpool-wind-farm">
+<h5>Biological Assessment for Proposed Liverpool Wind Farm<a class="headerlink" href="#biological-assessment-for-proposed-liverpool-wind-farm" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>East Coast Aquatics Inc., 2014. Biological Assessment for Proposed Liverpool Wind Farm. Report prepared for Eon Wind Electric. pp. 17; Table 3. Accessed from <a class="reference external" href="https://novascotia.ca/nse/ea/liverpool-wind-farm/Appendix_H-K.pdf">https://novascotia.ca/nse/ea/liverpool-wind-farm/Appendix_H-K.pdf</a></p>
+<p>Short name: eca_bio_assess</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="golder-associates-inc">
+<h4>Golder Associates Inc.<a class="headerlink" href="#golder-associates-inc" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="inventory-and-assessment-of-dams-in-eastern-newfoundland">
+<h5>Inventory and Assessment of Dams in Eastern Newfoundland<a class="headerlink" href="#inventory-and-assessment-of-dams-in-eastern-newfoundland" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Golder Associates Inc., 2016. Inventory and Assessment of Dams in Eastern Newfoundland. Report Prepared for Government of Newfoundland and Labrador Department of Environment and Conservation, Water Resources Management Division. pp. 5-42. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-1533903-01-rev1-east-nl-dam-inv-report.pdf">https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-1533903-01-rev1-east-nl-dam-inv-report.pdf</a></p>
+<p>Short name: golder_inv_nl_2016</p>
+</div></blockquote>
+</div>
+<div class="section" id="inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-three">
+<h5>Inventory and Assessment of Dams in Newfoundland and Labrador Year Three<a class="headerlink" href="#inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-three" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Golder Associates Inc., 2019. Inventory and Assessment of Dams in Newfoundland and Labrador Year Three. Report Prepared for Government of Newfoundland and Labrador Department of Municipal Affairs and Environment, Water Resources Management Division. pp. 11-37. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-3-report.pdf">https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-3-report.pdf</a></p>
+<p>Short name: golder_inv_nl_2019</p>
+</div></blockquote>
+</div>
+<div class="section" id="inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-two">
+<h5>Inventory and Assessment of Dams in Newfoundland and Labrador Year Two<a class="headerlink" href="#inventory-and-assessment-of-dams-in-newfoundland-and-labrador-year-two" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Golder Associates Inc., 2017. Inventory and Assessment of Dams in Newfoundland and Labrador Year Two. Report Prepared for Government of Newfoundland and Labrador Department of Municipal Affairs and Environment, Water Resources Management Division. pp. 12-40. Accessed from <a class="reference external" href="https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-2-final-report.pdf">https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-2-final-report.pdf</a></p>
+<p>Short name: golder_inv_nl_2017</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="mpe-engineering-ltd">
+<h4>MPE Engineering Ltd.<a class="headerlink" href="#mpe-engineering-ltd" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="provincial-inventory-of-potential-water-storage-sites-and-diversion-scenarios">
+<h5>Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios<a class="headerlink" href="#provincial-inventory-of-potential-water-storage-sites-and-diversion-scenarios" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>MPE Engineering Ltd., 2005. Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios. Report prepared for Alberta Environment. Accessed from <a class="reference external" href="https://open.alberta.ca/dataset/9b95703a-13ca-4645-87a7-ee33e99508ca/resource/2f28e7ed-0c72-427d-bfe2-3b1ddfb00bbf/download/aenv-water-for-life-reliable-quality-water-supplies-for-a-sustainable-economy-7750.pdf">https://open.alberta.ca/dataset/9b95703a-13ca-4645-87a7-ee33e99508ca/resource/2f28e7ed-0c72-427d-bfe2-3b1ddfb00bbf/download/aenv-water-for-life-reliable-quality-water-supplies-for-a-sustainable-economy-7750.pdf</a></p>
+<p>Short name: mpe_aep_prov_inventory</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="power-advisory-llc">
+<h4>Power Advisory LLC<a class="headerlink" href="#power-advisory-llc" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="review-of-the-newfoundland-and-labrador-electricity-system">
+<h5>Review of the Newfoundland and Labrador Electricity System<a class="headerlink" href="#review-of-the-newfoundland-and-labrador-electricity-system" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Power Advisory LLC, 2015. Review of the Newfoundland and Labrador Electricity System. Report prepared for Government of Newfoundland and Labrador Department of Natural Resources. pp. 40, 45, 47, 52-53, 76. Accessed from <a class="reference external" href="https://www.muskratfallsinquiry.ca/files/P-00110.pdf">https://www.muskratfallsinquiry.ca/files/P-00110.pdf</a></p>
+<p>Short name: pallc_nl_elec</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="snc-lavalin-group-inc">
+<h4>SNC-Lavalin Group Inc.<a class="headerlink" href="#snc-lavalin-group-inc" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="lower-churchill-project-design-criteria">
+<h5>Lower Churchill Project Design Criteria<a class="headerlink" href="#lower-churchill-project-design-criteria" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>SNC-Lavalin Group Inc., 2013. Lower Churchill Project Design Criteria - Civil. Report prepared for Nalcor Energy. pp. 34, 44-45. Accessed from <a class="reference external" href="https://muskratfalls.nalcorenergy.com/wp-content/uploads/2013/03/Muskrat-Falls_Civil-Design-Criteria_Feb2013_Web.pdf">https://muskratfalls.nalcorenergy.com/wp-content/uploads/2013/03/Muskrat-Falls_Civil-Design-Criteria_Feb2013_Web.pdf</a></p>
+<p>Short name: sncl_lower_churchill</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="peer-reviewed-articles">
+<h3>Peer-Reviewed Articles<a class="headerlink" href="#peer-reviewed-articles" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="canadian-geotechnical-journal">
+<h4>Canadian Geotechnical Journal<a class="headerlink" href="#canadian-geotechnical-journal" title="Permalink to this headline">¶</a></h4>
+<p>Reference(s):</p>
+<blockquote>
+<div><p>Williams, D. R., Balanko, L. A., &amp; Martin, R. L., 1983. Monitoring and performance of an earth-fill dam in central Alberta. Canadian Geotechnical Journal, 20(4), pp. 570–586. <a class="reference external" href="https://doi.org/10.1139/t83-068">https://doi.org/10.1139/t83-068</a></p>
+<p>Short name: cgj_williams_etal_1983</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="miscellaneous-online-sources">
+<h3>Miscellaneous Online Sources<a class="headerlink" href="#miscellaneous-online-sources" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="wikipedia">
+<h4>Wikipedia<a class="headerlink" href="#wikipedia" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="list-of-canadian-waterfalls">
+<h5>List of Canadian Waterfalls<a class="headerlink" href="#list-of-canadian-waterfalls" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Wikipedia contributors, 2020. List of waterfalls of Canada. Wikipedia. Accessed February 14, 2020, from <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_waterfalls_of_Canada">https://en.wikipedia.org/wiki/List_of_waterfalls_of_Canada</a></p>
+<p>Short name: wiki_cdn_wfs</p>
+</div></blockquote>
+</div>
+<div class="section" id="list-of-generating-stations-in-british-columbia">
+<h5>List of Generating Stations in British Columbia<a class="headerlink" href="#list-of-generating-stations-in-british-columbia" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Wikipedia contributors, 2020. List of generating stations in British Columbia. Wikipedia. Accessed April 28, 2020, from <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_generating_stations_in_British_Columbia">https://en.wikipedia.org/wiki/List_of_generating_stations_in_British_Columbia</a></p>
+<p>Short name: wiki_gs_bc</p>
+</div></blockquote>
+</div>
+<div class="section" id="list-of-generating-stations-in-new-brunswick">
+<h5>List of Generating Stations in New Brunswick<a class="headerlink" href="#list-of-generating-stations-in-new-brunswick" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Wikipedia contributors, 2021. List of generating stations in New Brunswick. Wikipedia. Accessed February 8, 2022, from <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_generating_stations_in_New_Brunswick">https://en.wikipedia.org/wiki/List_of_generating_stations_in_New_Brunswick</a></p>
+<p>Short name: wiki_nb_hydro</p>
+</div></blockquote>
+</div>
+<div class="section" id="little-bow-lake-reservoir">
+<h5>Little Bow Lake Reservoir<a class="headerlink" href="#little-bow-lake-reservoir" title="Permalink to this headline">¶</a></h5>
+<p>Reference:</p>
+<blockquote>
+<div><p>Wikipedia contributors, 2020. Little Bow Lake Reservoir. Wikipedia. Accessed from <a class="reference external" href="https://en.wikipedia.org/wiki/Little_Bow_Lake_Reservoir">https://en.wikipedia.org/wiki/Little_Bow_Lake_Reservoir</a></p>
+<p>Short name: wiki_lbr</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="docs_user_engagement/docs_user_engagement_use_cases.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Use Cases</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../docs_tech/docs_tech_arch.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Application Architecture</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

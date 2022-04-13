@@ -8,8 +8,8 @@ This section contains technical details about the current implementation of the 
 
 .. _current-application-architecture:
 
-Current Application Architecture
---------------------------------
+Existing Architecture
+---------------------------------
 
 The current application runs on two Microsoft Azure Java Web App servers, ``cabd-web`` (for CABD data) and ``chyf-web`` (for CHyF data).
 

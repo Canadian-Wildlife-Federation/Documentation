@@ -1,0 +1,4 @@
+Name,Description
+attribute_field_name,The name of the attribute which has been populated with information from a specific data source.
+datasource_name ,The short name given to the data source which was used to populate information for the associated attribute.
+datasource_feature_id,The unique identifier for the feature from the original spatial source dataset which was used to populate information for the associated attribute. This field will be blank if the data source is non-spatial.

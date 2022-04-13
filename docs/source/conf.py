@@ -65,9 +65,12 @@ html_logo = 'branding/cwf_logo.png'
 html_theme_options = {
     'logo_only': True,
     "repository_url": "https://github.com/Canadian-Wildlife-Federation",
+    "use_issues_button": True,
+    "repository_branch": "",
     "use_repository_button": True,
+    "use_edit_page_button": True,
     "extra_footer": False,
     "extra_navbar": "<p></p>",
     "home_page_in_toc": False,
-    "toc_title": "Topics",
+    "toc_title": "Document Contents",
 }

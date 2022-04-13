@@ -1,0 +1,11 @@
+Name,Description
+Denil ,"A series of close-spaced baffles placed on the bottom and/or sides of an inclined (up to 20%) channel, to redirect the flow of water and reduce its velocity, allowing fish to ascend and migrate upstream."
+Nature-like fishway ,"A diversion channel excavated along the bank of the river, allowing fish to bypass the barrier structure."
+Pool and weir ,"A series of small overflow pools and weirs forming steps that fish can jump between, migrating upstream."
+Pool and weir with hole ,"A series of small overflow pools and weirs provided with submerged holes in which fish can jump between, migrating upstream. "
+Trap and truck ,Fish are trapped and transported upstream of the barrier where they are released.
+Vertical slot ,"A variation of pool and weir fishways where weirs are replaced by walls with vertical slots in which fish can pass through, allowing fish to swim at their desired depth."
+Other ,A fish passage measure exists but is different than the types defined in this table.
+No structure ,No fish passage measure is present.
+Unknown ,Fish passage measures exists but no other information is known.
+NULL,No fish passage information is known.
