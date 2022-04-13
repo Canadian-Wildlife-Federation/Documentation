@@ -1,6 +1,5 @@
 =====================
 Web Mapping Interface
 =====================
-.. toctree:
 
     
