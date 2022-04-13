@@ -15,13 +15,13 @@ Welcome to the CABD documentation page!
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :hidden:
    :caption: CABD User Resources
 
    docs_user/docs_user_web_map
-   docs_user/docs_user_data_catalogue
    docs_user/docs_user_data_sources
+   docs_user/docs_user_data_catalogue
    docs_user/docs_user_engagement
 
 
