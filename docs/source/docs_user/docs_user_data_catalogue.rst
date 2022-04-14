@@ -2,8 +2,11 @@
 Data Catalogue
 ==============
 
+-----
+
 Feature Types
 -------------
+
 Dams
 ~~~~
 Definition:	
@@ -24,6 +27,8 @@ Definition:
     *A structure that is constructed to facilitate the passage of fish up- and/or downstream of an aquatic barrier (e.g., a dam or waterfall).*
 Attributes:
     :ref:`Architect <architect>`, :ref:`Attraction Estimate (%) <attraction>`, :ref:`Average Velocity of Water Flow (m/s) <avgvelocity>`, :ref:`Completeness Level <complvl>`, :ref:`Constructed By <constructby>`, :ref:`Contracted By <contractby>`, :ref:`Dam Identifier <damid>`, :ref:`Designed Based on Biology <biodesign>`, :ref:`Elevation (m) <elevation>`, :ref:`Engineering Notes <engnotes>`, :ref:`Entrance Location <enterlocal>`, :ref:`Entrance Position <enterpos>`, :ref:`Evaluating Study <evalstudy>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Fishway Type <fishwaytype>`, :ref:`Gradient <gradient>`, :ref:`Has Evaluating Studies <hasevalstudy>`, :ref:`Is Modified <ismod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Maximum Velocity of Water Flow (m/s) <maxvelo>`, :ref:`Mean Channel Depth (m) <meandepth>`, :ref:`Modification Purpose <modpurpose>`, :ref:`Modification Year <modyear>`, :ref:`Monitoring Equipment <monitor>`, :ref:`Municipality <municipality>`, :ref:`Nature of Evaluating Studies <natureevalstudy>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`Operating Note <opnote>`, :ref:`Operation Period <opperiod>`, :ref:`Plans Held By <plansheld>`, :ref:`Province/Territory Name <provterr>`, :ref:`Purpose of Fishway  <fishwaypurpose>`, :ref:`River/Stream Name (English) <rivnameen>`, :ref:`River/Stream Name (French) <rivnamefr>`, :ref:`Species Known to Not Use <knowntouse>`, :ref:`Species Known to Use <knowntouse>`, :ref:`Structure Name (English) <strucnameen>`, :ref:`Structure Name (French) <strucnamefr>`, :ref:`System Identifier <systemid>`, :ref:`Transit Success Estimate (%) <success>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`, :ref:`NHN Watershed Name <nhnname>`, :ref:`Year Constructed <yearconst>`
+
+-----
 
 .. _assessment-schedule:
 

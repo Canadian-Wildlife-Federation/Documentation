@@ -6,6 +6,8 @@ Application Architecture
 
 This section contains technical details about the current implementation of the Canadian Aquatic Barriers Database (CABD) back-end application, including feaure and vector tile services and the CABD data dictionary. The intended audience are software developers and similar technical users looking to upgrade/maintain the current system or use the API endpoints.
 
+-----
+
 .. _current-application-architecture:
 
 Existing Architecture
