@@ -5,6 +5,8 @@ Catchment Delineator
 Modification Date
  2020 April 6
 
+-----
+
 Purpose
 -------
 * This tool is used to create CHyF compliant catchments from hydrographic data in combination with a gridded Digital Elevation Model that represents the elevation of the bare earth. 

@@ -1,21 +1,24 @@
-============
 Data Sources
-============
+------------
 
 The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
+
+-----
 
 Spatial Data Sources
 --------------------
 
+-----
+
 Federal Sources
 ~~~~~~~~~~~~~~~
+
 
 Natural Resources Canada (NRCan)
 ++++++++++++++++++++++++++++++++
 
 Canadian Geographical Names Database
 ````````````````````````````````````
-Reference:
 
     Natural Resources Canada, 2020. Canadian Geographical Names Database. Government of Canada Open Government Portal. Accessed July 28, 2021, from https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c
     
@@ -28,7 +31,6 @@ Reference:
 
 CanVec Series – Manmade Features
 ````````````````````````````````
-Reference:
 
     Natural Resources Canada, 2019. Constructions and Land Use in Canada - CanVec Series - Manmade Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6
 
@@ -41,7 +43,6 @@ Reference:
 
 CanVec Series - Hydrographic Features
 `````````````````````````````````````
-Reference:
 
     Natural Resources Canada, 2019. Lakes, Rivers and Glaciers in Canada - CanVec Series - Hydrographic Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b
 
@@ -54,7 +55,6 @@ Reference:
 
 National Hydrographic Network (NHN)
 ```````````````````````````````````
-Reference:
 
     Natural Resources Canada, 2016. National Hydro Network - NHN - GeoBase Series. Government of Canada Open Government Portal. Accessed July 24, 2019, from https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977
 
@@ -70,7 +70,6 @@ Statistics Canada
 
 Intercensal - Census Subdivision Boundary Files
 ```````````````````````````````````````````````
-Reference:
 
     Statistics Canada, 2020. Intercensal - Census Subdivision Boundary Files. Accessed November 13, 2020, from https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20
 
@@ -86,7 +85,6 @@ United States Army Corps of Engineers
 
 National Inventory of Dams
 ``````````````````````````
-Reference:
 
     United States Army Corps of Engineers, 2022. National Inventory of Dams. United States Army. Accessed February 15, 2022, from https://nid.sec.usace.army.mil/#/downloads 
 
@@ -105,7 +103,6 @@ Alberta – Environment and Parks (AEP)
 
 Base Features Hydrography
 `````````````````````````
-Reference:
 
     Alberta Environment and Parks, 2000. Base Features Hydrography. Alberta Open Government Portal. Accessed January 31, 2020, from https://www.altalis.com/map;id=116
 
@@ -121,7 +118,6 @@ British Columbia – Environment and Climate Change Strategy
 
 Provincial Obstacles to Fish Passage (FISS)
 ```````````````````````````````````````````
-Reference:
 
     Government of British Columbia Knowledge Management, 2007. Provincial Obstacles to Fish Passage. British Columbia Data Catalogue. Accessed October 2, 2019, from https://catalogue.data.gov.bc.ca/dataset/provincial-obstacles-to-fish-passage
 
@@ -137,7 +133,6 @@ British Columbia – Forests, Lands, Natural Resource Operations and Rural Devel
 
 BC Geographic Warehouse – Public Dams
 `````````````````````````````````````
-Reference:
 
     Government of British Columbia Water Management, 1997. BC Dams. British Columbia Data Catalogue. Accessed March 9, 2019, from https://catalogue.data.gov.bc.ca/dataset/bc-dams
 
@@ -150,7 +145,6 @@ Reference:
 
 BC Public Dams KML
 ``````````````````
-Reference:
 
     Government of British Columbia, 2014. Dams-public-20140626.kmz. Accessed from https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-resource-use/land-water-use/water-use/dam-safety/dams-public-20140626-2.kmz 
 
@@ -163,7 +157,6 @@ Reference:
 
 Freshwater Atlas (FWA) Obstructions 
 ```````````````````````````````````
-Reference:
 
     GeoBC, 2008. Freshwater Atlas Obstructions. British Columbia Data Catalogue. Accessed December 17, 2019, from https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-obstructions
 
@@ -179,7 +172,6 @@ Maine Office of Geographic Information Systems
 
 Impounds
 ````````
-Reference:
 
     Army Corp of Engineers (USACE), Maine Emergency Management Agency (MEMA), Maine Department of Environmental Protection (MEDEP), Maine Office of Geographic Information Systems, 2006. Impounds. Augusta, ME: Maine Office of Geographic Systems. Accessed January 26, 2022, from https://www1.maine.gov/geolib/catalog/indexaz.shtml.
 
@@ -195,7 +187,6 @@ New Brunswick – Energy and Resource Development
 
 New Brunswick Hydrographic Network (NBHN)
 `````````````````````````````````````````
-Reference:
 
     Government of New Brunswick Energy and Resource Development, 2020. New Brunswick Hydrographic Network (NBHN). Government of New Brunswick Open Data Portal. Accessed from https://gnb.socrata.com/Geographic-Data/New-Brunswick-Hydrographic-Network-NBHN-R-seau-Hyd/v2ft-66he
 
@@ -213,7 +204,6 @@ Newfoundland and Labrador – Environment, Climate Change and Municipalities
 
 Provincial Dam Inventory (NLPDI)
 ````````````````````````````````
-Reference:
 
     Government of Newfoundland and Labrador Water Resources Management, no date. Water Resources - Dams. Newfoundland and Labrador Water Resources Portal. Accessed January 27, 2021, from https://maps.gov.nl.ca/water/mapbrowser/Default.aspx
 
@@ -229,7 +219,6 @@ Nova Scotia – Environment
 
 Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)
 ````````````````````````````````````````````````````````````````````````
-References: 
 
     a. Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Point Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/458x-dmz3
     
@@ -246,8 +235,6 @@ References:
 
 Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)
 ``````````````````````````````````````````````````````````````````````````````````````````
-Reference:
-
 
     Fielding, G., 2011. Barriers to Fish Passage in Nova Scotia: The Evolution of Water Control Barriers in Nova Scotia’s Watershed. [Undergraduate thesis, Dalhousie University]. Accessed from https://cdn.dal.ca/content/dam/dalhousie/pdf/science/environmental-science-program/Honours%20Theses/GillianFielding.pdf
 
@@ -263,7 +250,6 @@ Ontario – Northern Development, Mines, Natural Resources and Forestry (MNDMNRF
 
 Ontario Dam Inventory (ODI)
 ```````````````````````````
-Reference:
 
     Ontario Ministry of Natural Resources and Forestry, 2014. Ontario Dam Inventory. Ontario GeoHub. Accessed July 30, 2020, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-dam-inventory/about
 
@@ -276,7 +262,6 @@ Reference:
 
 Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)
 ``````````````````````````````````````````````````````````````````````````````
-Reference:
 
     a. Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Point. Ontario GeoHub. Accessed October 8, 2019, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-point/about
 
@@ -296,7 +281,6 @@ Québec – Ministère de l'Environnement et de la Lutte contre les changements 
 
 Répertoire des Barrages
 ```````````````````````
-Reference:
 
     Gouvernement du Québec Ministère de l’Environnement et de la Lutte contre les changements climatiques, no date. Répertoire des barrages. Gouvernement du Québec. Accessed October 20, 2020, from https://www.cehq.gouv.qc.ca/barrages/default.asp
 
@@ -315,7 +299,6 @@ Canadian Wildlife Federation (CWF)
 
 CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
 `````````````````````````````````````````````````````````````````````
-Reference:
 
     Cooke, S., Hatry, C., Smokorowksi, K., Clarke, K., Katopodis, C., Binder, T., Hasler, C., & Thiem, J., 2013. CanFishPass: Inventory of Canadian Fish Passage Facilities. Cooke Lab. Accessed from http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/ 
 
@@ -331,7 +314,6 @@ Food and Agriculture Organization (FAO) of the United Nations
 
 AQUASTAT Dam Database
 `````````````````````
-Reference:
 
     Food and Agriculture Organization of the United Nations, 2016. AQUASTAT - FAO’s Global Information System on Water and Agriculture. Food and Agriculture Organization. Accessed from https://www.fao.org/aquastat/en/databases/dams
 
@@ -347,7 +329,6 @@ Global Dam Watch
 
 Global Reservoir and Dam Database (GRanD)
 `````````````````````````````````````````
-Reference:
 
     Global Dam Watch, 2019. GDW’s Global Dam and Reservoir Datasets. Accessed February 1, 2019, from http://globaldamwatch.org/data/#core_global
 
@@ -360,7 +341,6 @@ Reference:
 
 Global Georeferenced Database of Dams (GOODD)
 `````````````````````````````````````````````
-Reference:
 
     Global Dam Watch, 2020. GOODD, a global dataset of more than 38,000 georeferenced dams. Accessed August 16, 2019, from http://globaldamwatch.org/data/#core_global
 
@@ -376,7 +356,6 @@ Nature Conservancy of Canada (NCC)
 
 Canadian Hydrologic Units – Aquatic Barriers
 ````````````````````````````````````````````
-Reference:
 
     Nature Conservancy of Canada, 2019. NCC Canadian Hydrologic Units. Conservation Biology Institute Data Basin. Accessed October 9, 2019, from https://databasin.org/datasets/a2097617294f49529f87c3630149d63c/
 
@@ -392,7 +371,6 @@ Stanford University
 
 National Performance of Dams Program (NPDP) Dam Database
 ````````````````````````````````````````````````````````
-Reference:
 
     Stanford University Department of Civil and Environmental Engineering, 2019. NPDP Dams Database. National Performance of Dams Program. Accessed October 9, 2019, from https://npdp.stanford.edu/dams_database
 
@@ -408,7 +386,6 @@ Wisconsin Institute for Discovery
 
 Fishwerks
 `````````
-Reference:
 
     Wisconsin Institute for Discovery, no date. Fishwerks. Great Lakes Connectivity. Accessed October 9, 2019, from https://greatlakesconnectivity.org/
 
@@ -427,7 +404,6 @@ MR Maps
 
 Waterfalls of New Brunswick
 ```````````````````````````
-Reference:
 
 
     Richard, M., 2019. Waterfalls of New Brunswick. MR Maps. Accessed from https://www.mrmaps.ca/home/2019/5/19/waterfalls-of-new-brunswick
@@ -440,8 +416,6 @@ Reference:
 
 Waterfalls of Nova Scotia
 `````````````````````````
-Reference:
-
 
     Richard, M., 2019. Waterfalls of Nova Scotia. MR Maps. Accessed June 4, 2021, from https://www.mrmaps.ca/home/2019/5/30/waterfalls-of-nova-scotia 
 
@@ -451,9 +425,12 @@ Reference:
 
     Short name: mrmaps_nswf
 
+-----
 
 Non-Spatial Data Sources
 ------------------------
+
+-----
 
 Federal Sources
 ~~~~~~~~~~~~~~~
@@ -463,7 +440,6 @@ Fisheries and Oceans (DFO)
 
 Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament)
 ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
-Reference:
 
     Fisheries and Oceans Canada, 2004. 2003-2004 Annual report to Parliament on the administration and enforcement of the fish habitat protection and pollution prevention provisions of the Fisheries Act. pp. 35-36. Ottawa, ON: Fisheries and Oceans Canada. Accessed from https://waves-vagues.dfo-mpo.gc.ca/Library/357831eng.pdf
 
@@ -472,7 +448,6 @@ Reference:
 
 Information in Support of a Recovery Potential Assessment of Bull Trout
 ```````````````````````````````````````````````````````````````````````
-Reference:
 
     Sawatzky, C.D., 2016. Information in support of a recovery potential assessment of Bull Trout (Salvelinus confluentus) (Saskatchewan – Nelson rivers populations) in Alberta. Fisheries and Oceans Canada Canadian Science Advisory Secretariat Research Document 2016/113. pp. 43, 47, 52.  Accessed from https://waves-vagues.dfo-mpo.gc.ca/Library/40580180.pdf
 
@@ -481,7 +456,6 @@ Reference:
 
 Recovery Strategy for the Atlantic Whitefish
 ````````````````````````````````````````````
-Reference:
 
     Department of Fisheries and Oceans. 2006. Recovery Strategy for the Atlantic Whitefish (Coregonus huntsmani) in Canada [Proposed]. Species at Risk Act Recovery Strategy Series. Ottawa: Fisheries and Oceans Canada. 42 pp. Accessed February 8, 2022, from https://sararegistry.gc.ca/default.asp?lang=En&n=B2C0EB3D-1&offset=5
 
@@ -493,7 +467,6 @@ Natural Resources Canada (NRCan)
 
 Atlantic Salmon Rehabilitation Project
 ``````````````````````````````````````
-Reference:
 
     Department of Fisheries and Forestry of Canada - Resource Development Branch - Fisheries Service, no date. Atlantic Salmon Rehabilitation Project - East River, Sheet Harbour, Nova Scotia. Halifax, NS: Department of Fisheries and Forestry of Canada. Accessed February 8, 2022 from https://waves-vagues.dfo-mpo.gc.ca/Library/83454.pdf
 
@@ -505,7 +478,6 @@ Prairie Farm Rehabilitation Administration (PFRA)
 
 PFRA Dam Inventory 
 ``````````````````
-Reference:
 
     Prairie Farm Rehabilitation Administration, 1992. PFRA Dam Inventory. pp. 16-18. Accessed from http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf 
     
@@ -520,7 +492,6 @@ Alberta – Agriculture, Forestry and Rural Economic Development
 
 Alberta Irrigation Information 
 ``````````````````````````````
-Reference:
 
     Alberta Agriculture and Forestry, 2018. Alberta Irrigation Information. pp. 19-20. Accessed  from https://www1.agric.gov.ab.ca/$Department/deptdocs.nsf/all/irr7401/$FILE/alta_irrig_info2017.pdf
 
@@ -532,7 +503,6 @@ Alberta – Environment and Parks
 
 Alberta Dam Safety Map
 ``````````````````````
-Reference:
 
     Alberta Environment and Parks, no date. Alberta Dam Safety Map. Government of Alberta. Accessed December 13, 2021, from http://damsafetymap.alberta.ca/
 
@@ -541,7 +511,6 @@ Reference:
 
 Berry Creek (Carolside) Reservoir Fisheries Management Objectives
 `````````````````````````````````````````````````````````````````
-Reference:
 
     Alberta Fish and Wildlife, 2018. Berry Creek (Carolside) Reservoir Fisheries Management Objectives. Alberta Environment and Parks. Accessed from https://mywildalberta.ca/fishing/regulations/documents/BerryCreekCarolsideReservoir-FMO-Jul01-2018.pdf
 
@@ -550,7 +519,6 @@ Reference:
 
 Bow River Basin – TransAlta Operations
 ``````````````````````````````````````
-Reference:
 
     Alberta Environment and Parks, 2021. Bow River Basin – TransAlta operations. Government of Alberta. Accessed December 13, 2021, from https://www.alberta.ca/bow-river-basin-transalta-operations.aspx
 
@@ -559,7 +527,6 @@ Reference:
 
 Fish Stocking Maps
 ``````````````````
-References:
 
     a. Alberta Environment and Parks, 2021. Stocking Maps - Mound Red Reservoir. My Wild Alberta. Accessed December 13, 2021, from https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6737
 
@@ -572,7 +539,6 @@ References:
 
 Little Bow Reservoir FIN Summary
 ````````````````````````````````
-Reference:
 
     Alberta Fish and Wildlife, 2020. Little Bow Reservoir FIN Summary 2020. Alberta Environment and Parks. p. 1. Accessed from https://open.alberta.ca/dataset/dfe0c6b7-5f3a-478b-a0aa-e66ffc9c6c07/resource/7289e415-eaf7-4e78-a51b-57e842e282b4/download/aep-little-bow-reservoir-fin-summary-2020.pdf
 
@@ -584,7 +550,6 @@ Alberta – Sustainable Resource Development
 
 Bathymetry Maps
 ```````````````
-References:
 
     a. Alberta Resource Information Unit, 2004. Bathymetry of Chin Lakes, 1:20,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from https://open.alberta.ca/publications/chin-lakes-bathymetry
 
@@ -632,7 +597,6 @@ Newfoundland and Labrador – Municipal Affairs and Environment
 
 Permits to Alter a Body of Water
 ````````````````````````````````
-References:
 
     a. Newfoundland and Labrador Department of Municipal Affairs and Environment - Water Resources Management Division, 2017. Permit to Alter a Body of Water - Permit No. ALT9067-2017. Accessed from https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9067-2017.pdf
 
@@ -648,7 +612,6 @@ Nova Scotia – Agriculture
 
 Dykeland Sites
 ``````````````
-References:
 
     Government of Nova Scotia, no date. Working With the Tides - Dykeland Sites. Accessed February 8, 2022, from https://novascotia.ca/dykeland-system-upgrades/dykeland-sites/
 
@@ -663,7 +626,6 @@ City of Calgary, Alberta
 
 Glenmore Dam Infrastructure Improvements
 ````````````````````````````````````````
-Reference:
 
     City of Calgary, 2020. Glenmore Dam infrastructure improvements. Accessed December 13, 2021, from https://www.calgary.ca/uep/water/construction-projects/construction-projects-and-upgrades/glenmore-dam-infrastructure-improvements.html
 
@@ -672,7 +634,6 @@ Reference:
 
 Glenmore Reservoir Dam Operations
 `````````````````````````````````
-Reference: 
 
     City of Calgary, no date. Glenmore Reservoir Dam Operations. Accessed December 13, 2021, from https://www.calgary.ca/uep/water/water-and-wastewater-systems/water-treatment/glenmore-reservoir-dam-operations.html
 
@@ -684,7 +645,6 @@ City of Dawson Creek, British Columbia
 
 Drinking Water Quality Reports
 ``````````````````````````````
-Reference:
 
     a. City of Dawson Creek, 2020. 2019 Drinking Water Quality Annual Report. p. 6. Accessed from https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/WTP-Annual-Water-Quality-Report-FINAL_DA_KG.pdf
 
@@ -704,7 +664,6 @@ Eastern Irrigation District, Alberta
 
 Bassano Dam
 ```````````
-Reference: 
 
     Eastern Irrigation District, no date. Bassano Dam. Accessed December 13, 2021, from https://www.eid.ca/documents/publications/Brochure_Bassano_Dam.pdf
 
@@ -716,7 +675,6 @@ Halifax Water
 
 Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Plan
 ````````````````````````````````````````````````````````````````````````````````
-Reference:
 
     Halifax Water, 2017. Chain Lakes Emergency Water Supply Watershed Area - Source Water Protection Plan. pp. 23, 66. Accessed from https://www.halifaxwater.ca/sites/default/files/2019-01/chainlakes-swp-plan.pdf
 
@@ -725,7 +683,6 @@ Reference:
 
 Chain Lake Dam and Pockwock Lake Dam – Consultant Services
 ``````````````````````````````````````````````````````````
-Reference:
 
     Halifax Water, 2021. RFP #P25.2021 - Chain Lake Dam and Pockwock Lake Dam - Consultant Services. pp. 5. Accessed from https://procurement.novascotia.ca/pt_files/tenders/P252021.pdf
 
@@ -734,7 +691,6 @@ Reference:
 
 Halifax Water Dam Safety Review
 ```````````````````````````````
-Reference:
 
     Halifax Water, 2019. RFP #P24.2019 - Halifax Water Dam Safety Review (2019); Appendix E. Accessed from https://procurement.novascotia.ca/pt_files/tenders/P242019.pdf
 
@@ -743,7 +699,6 @@ Reference:
 
 Integrated Resource Plan – Water System Review
 ``````````````````````````````````````````````
-Reference:
 
     Halifax Water, 2012. Halifax Water Integrated Resource Plan; Volume 3 Appendix A - Water System Review. pp. 41-42. Accessed from https://www.halifax.ca/sites/default/files/documents/home-property/water/HW_IntegratedResourcePlan_AppendixA.pdf
 
@@ -758,7 +713,6 @@ Irrican Power
 
 Chin Chute Power Plant
 ``````````````````````
-Reference: 
 
     Irrican Power, no date. Chin Chute Power Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from https://www.smrid.com/wp-content/uploads/2020/09/irrican-CHIN.pdf
 
@@ -767,7 +721,6 @@ Reference:
 
 Drops 4, 5, and 6 Power Plant
 `````````````````````````````
-Reference: 
 
     Irrican Power, 2020. Drops 4, 5, and 6 Power Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from https://www.smrid.com/wp-content/uploads/2020/09/irrican-456-brochure.pdf
 
@@ -776,7 +729,6 @@ Reference:
 
 Raymond Reservoir Power Plant
 `````````````````````````````
-Reference: 
 
     Irrican Power, 2020. Raymond Reservoir Plant. St. Mary’s River Irrigation District. Accessed December 13, 2021, from https://www.smrid.com/wp-content/uploads/2020/09/Raymond-Hydro-2.pdf
 
@@ -788,7 +740,6 @@ Lower Churchill Management Corporation
 
 Muskrat Falls Dams – Cold Climate Considerations in Design and Construction
 ```````````````````````````````````````````````````````````````````````````
-Reference:
 
     Protulipac, D., Smith, T., Snyder, G., O’Brien, J., & Chislett, T., 2018. Muskrat Falls Dams – Cold Climate Considerations in Design and Construction. CDA 2018 Annual Conference, Québec, Québec. pp. 4-5. Accessed from `https://www.researchgate.net/publication/328365634_MUSKRAT_FALLS_DAMS_-_COLD_CLIMATE_CONSIDERATIONS_IN_DESIGN_AND_CONSTRUCTION <https://www.researchgate.net/publication/328365634_MUSKRAT_FALLS_DAMS_-_COLD_CLIMATE_CONSIDERATIONS_IN_DESIGN_AND_CONSTRUCTION>`_
 
@@ -800,7 +751,6 @@ NB Power
 
 Hydro Tour
 ``````````
-Reference:
 
     NB Power, no date. Hydro Tour. Accessed February 8, 2022, from https://www.nbpower.com/en/about-us/learning/learn-about-electricity/hydro/hydro-tour/
 
@@ -812,7 +762,6 @@ Newfoundland and Labrador Hydro
 
 Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017-70503)
 ```````````````````````````````````````````````````````````````````````````````````````
-Reference:
 
     Newfoundland and Labrador Hydro, 2017. RFP # 2017-70503 - Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway; Appendix VI: Inventory of Dams and Dykes. Accessed from https://bids.nalcorenergy.com/Module/Tenders/en/Document/Preview/c33bf56c-20b9-453d-914a-4d779ce9ed0e
 
@@ -821,7 +770,6 @@ Reference:
 
 Depreciation Methodology and Asset Service Lives
 ````````````````````````````````````````````````
-Reference:
 
     Newfoundland Hydro, 2009. CA-NLH-155 Attachment 1 - Depreciation Methodology and Asset Service Lives. Accessed from http://www.pub.nl.ca/applications/ARCHIVE/NLH2012Depreciation/files/rfi/CA-NLH-155.pdf
 
@@ -830,8 +778,6 @@ Reference:
 
 Operations – Hydro Generation
 `````````````````````````````
-
-Reference:
 
     Newfoundland and Labrador Hydro, no date. Operations - Hydro Generation. Accessed February 8, 2022, from https://nlhydro.com/operations/hydro-generation/
 
@@ -843,7 +789,6 @@ Newfoundland Power
 
 2019 Depreciation Study – Hydro Plant Decommissioning Report
 ````````````````````````````````````````````````````````````
-Reference:
 
     Newfoundland Power, 2019. 2019 Depreciation Study - Hydro Plant Decommissioning Report. pp. 4-83. Accessed from http://publicinfo.nlh.nl.ca/Newfoundland%20Power's%202022%20CBA/RFI%20Responses/CA-NP-021.pdf
 
@@ -852,7 +797,6 @@ Reference:
 
 Dam Safety Inspection Reports
 `````````````````````````````
-Reference:
 
     Newfoundland Power, 2007. 2007 Dam Safety Inspection Report - Tors Cove / Rocky Pond Developments. Accessed from http://www.pub.nf.ca/applications/NP2009Capital/files/rfi/CA-NP-10.pdf
 
@@ -861,7 +805,6 @@ Reference:
 
 Facility Rehabilitation
 ```````````````````````
-Reference:
 
     a)	Newfoundland Power, 2013. 2014 Facility Rehabilitation. pp. 3, 5-6. Accessed from http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf
 
@@ -874,7 +817,6 @@ Reference:
 
 Potential Projects to Increase Energy Production
 ````````````````````````````````````````````````
-Reference:
 
     Newfoundland Power, 2009. Potential Projects to Increase Energy Production. pp. 2-25. Accessed from http://pub.nl.ca/applications/NP2010Capital/files/rfi/PUB-NP-009.pdf
 
@@ -883,7 +825,6 @@ Reference:
 
 Public Safety Around Dams
 `````````````````````````
-Reference:
 
     Newfoundland Power, 2016. Public Safety Around Dams. pp. 2-20. Accessed from http://www.pub.nf.ca/applications/NP2017Capital/files/applications/FromNP-2017CapitalBudgetApplication-2016-07-19.pdf
 
@@ -892,7 +833,6 @@ Reference:
 
 Rattling Brook Fisheries Compensation
 `````````````````````````````````````
-Reference:
 
     Newfoundland Power, 2011. Rattling Brook Fisheries Compensation. pp. 3-4. Accessed from http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf
 
@@ -901,7 +841,6 @@ Reference:
 
 Sustainable Electricity Program
 ```````````````````````````````
-Reference:
 
     Newfoundland Power, 2009. 2008 Submission - Sustainable Electricity Program. pp. 4. Accessed from https://secure.newfoundlandpower.com/-/media/PDFs/About-Us/Sustainable-Electricity/SEP-2008-Report.pdf
 
@@ -913,7 +852,6 @@ Nova Scotia Power
 
 Nova Scotia Power Incorporated Hydro Asset Study – Redacted
 ```````````````````````````````````````````````````````````
-Reference:
 
     Nova Scotia Power Inc., 2018. Nova Scotia Power Incorporated Hydro Asset Study - Redacted; Appendix B. pp. 16-68. Accessed from https://irp.nspower.ca/files/key-documents/background-materials/20181221-NS-Power-Hydro-Asset-Study-REDACTED.pdf
 
@@ -925,7 +863,6 @@ Suncor Energy
 
 Investor Mining and Tailings Safety Initiative Disclosure Table
 ```````````````````````````````````````````````````````````````
-Reference: 
 
     Suncor Energy, no date. Investor Mining and Tailings Safety Initiative Disclosure Table. Sustainability at Suncor. Accessed December 13, 2021, from https://sustainability-prd-cdn.suncor.com/-/media/project/ros/shared/documents/other-disclosures/suncor-industry-disclosure-table-en.pdf?la=en&modified=20201216022314&hash=FF951A51BA9699AF9ACC4A631A5AC36A999663FB
 
@@ -937,7 +874,6 @@ TransAlta
 
 Barrier Power Plant
 ```````````````````
-Reference:
 
     TransAlta, 2020. Barrier. Accessed December 13, 2021, from https://transalta.com/plants-operation/barrier/
 
@@ -946,7 +882,6 @@ Reference:
 
 Bearspaw Plant
 ``````````````
-Reference:
 
     TransAlta, 2020. Bearspaw. Accessed December 13, 2021, from https://transalta.com/plants-operation/bearspaw/
 
@@ -955,7 +890,6 @@ Reference:
 
 Belly River Hydro Facility
 ``````````````````````````
-Reference:
 
     TransAlta, 2020. Belly River. Accessed December 13, 2021, from https://transalta.com/plants-operation/belly-river/
 
@@ -964,7 +898,6 @@ Reference:
 
 Bighorn Plant
 `````````````
-Reference:
 
     TransAlta, 2020. Bighorn. Accessed December 13, 2021, from https://transalta.com/plants-operation/bighorn/
 
@@ -973,7 +906,6 @@ Reference:
 
 Brazeau Plant
 `````````````
-Reference:
 
     TransAlta, 2020. Brazeau. Accessed December 13, 2021, from https://transalta.com/plants-operation/brazeau/
 
@@ -982,7 +914,6 @@ Reference:
 
 Cascade Plant
 `````````````
-Reference:
 
     TransAlta, 2020. Cascade. Accessed December 13, 2021, from https://transalta.com/plants-operation/cascade/
 
@@ -991,7 +922,6 @@ Reference:
 
 Ghost Plant
 ```````````
-Reference:
 
     TransAlta, 2020. Ghost. Accessed December 13, 2021, from https://transalta.com/plants-operation/ghost/
 
@@ -1000,7 +930,6 @@ Reference:
 
 Horseshoe Plant
 ```````````````
-Reference:
 
     TransAlta, 2020. Horseshoe. Accessed December 13, 2021, from https://transalta.com/plants-operation/horseshoe/
     
@@ -1009,7 +938,6 @@ Reference:
 
 Kananaskis Plant
 ````````````````
-Reference:
 
     TransAlta, 2020. Kananaskis. Accessed December 13, 2021, from https://transalta.com/plants-operation/kananaskis/
 
@@ -1018,7 +946,6 @@ Reference:
 
 Pocaterra Plant
 ```````````````
-Reference:
 
     TransAlta, 2020. Pocaterra. Accessed December 13, 2021, from https://transalta.com/plants-operation/pocaterra/
 
@@ -1027,7 +954,6 @@ Reference:
 
 Rundle Plant
 ````````````
-Reference:
 
     TransAlta, 2020. Rundle. Accessed December 13, 2021, from https://transalta.com/plants-operation/rundle/
 
@@ -1036,7 +962,6 @@ Reference:
 
 Sheerness Generating Station
 ````````````````````````````
-Reference: 
 
     TransAlta, 2020. Sheerness. Accessed December 13, 2021, from https://transalta.com/plants-operation/sheerness/
 
@@ -1045,7 +970,6 @@ Reference:
 
 Spray Hydro Facility
 ````````````````````
-Reference: 
 
     TransAlta, 2020. Spray. Accessed December 13, 2021, from https://transalta.com/plants-operation/spray/
 
@@ -1054,7 +978,6 @@ Reference:
 
 St. Mary Hydro Facility
 ```````````````````````
-Reference: 
 
     TransAlta, 2020. St. Mary. Accessed December 13, 2021, from https://transalta.com/plants-operation/st-mary/
 
@@ -1063,7 +986,6 @@ Reference:
 
 Taylor Hydro Facility
 `````````````````````
-Reference: 
 
     TransAlta, 2020. Taylor. Accessed December 13, 2021, from https://transalta.com/plants-operation/taylor-hydro/
 
@@ -1072,7 +994,6 @@ Reference:
 
 Three Sisters Plant
 ```````````````````
-Reference: 
 
     TransAlta, 2020. Three Sisters. Accessed December 13, 2021, from https://transalta.com/plants-operation/three-sisters/
 
@@ -1081,7 +1002,6 @@ Reference:
 
 Waterton Hydro Facility
 ```````````````````````
-Reference: 
 
     TransAlta, 2020. Waterton. Accessed December 13, 2021, from https://transalta.com/plants-operation/waterton/
 
@@ -1096,7 +1016,6 @@ Shubenacadie Canal Commission
 
 The Locks
 `````````
-Reference:
 
     Shubenacadie Canal Commission, no date. The Locks. Accessed February 8, 2022, from https://www.shubenacadiecanal.ca/the-locks
 
@@ -1108,7 +1027,6 @@ South East Alberta Watershed Alliance (SEAWA)
 
 Pakowki Lake Watershed Profile
 ``````````````````````````````
-Reference:
 
     South East Alberta Watershed Alliance, 2020. Pakowki Lake. Accessed December 13, 2021, from https://seawa.ca/your-watershed/profile-of-the-seawa-watershed/pakowki-lake
 
@@ -1123,7 +1041,6 @@ Advanced Construction Techniques Ltd.
 
 St. Mary Dam Spillway Replacement Project
 `````````````````````````````````````````
-Reference:
 
     Advanced Construction Techniques Ltd., no date. St. Mary Dam Spillway Replacement Project. Advanced Construction Techniques. Accessed December 13, 2021, from http://www.advancedconstructiontechniques.com/St-Mary-Dam-Spillway-Replacement-Project.asp
 
@@ -1135,7 +1052,6 @@ AMEC Americas Ltd.
 
 Flood Risk Mapping Project
 ``````````````````````````
-Reference:
 
     AMEC Environment & Infrastructure, 2013. Flood Risk Mapping Project - Corner Brook Stream and Petrie's Brook. Report prepared for Government of Newfoundland and Labrador Department of Environment and Conservation, Water Resources Management Division. pp. 2-12 - 2-15. Accessed from https://www.gov.nl.ca/ecc/files/waterres-flooding-corner-brook-stream-cornerbrook-report.pdf
 
@@ -1147,7 +1063,6 @@ East Coast Aquatics Inc.
 
 Biological Assessment for Proposed Liverpool Wind Farm
 ``````````````````````````````````````````````````````
-Reference:
 
     East Coast Aquatics Inc., 2014. Biological Assessment for Proposed Liverpool Wind Farm. Report prepared for Eon Wind Electric. pp. 17; Table 3. Accessed from https://novascotia.ca/nse/ea/liverpool-wind-farm/Appendix_H-K.pdf
 
@@ -1159,7 +1074,6 @@ Golder Associates Inc.
 
 Inventory and Assessment of Dams in Eastern Newfoundland
 ````````````````````````````````````````````````````````
-Reference:
 
     Golder Associates Inc., 2016. Inventory and Assessment of Dams in Eastern Newfoundland. Report Prepared for Government of Newfoundland and Labrador Department of Environment and Conservation, Water Resources Management Division. pp. 5-42. Accessed from https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-1533903-01-rev1-east-nl-dam-inv-report.pdf
 
@@ -1168,7 +1082,6 @@ Reference:
 
 Inventory and Assessment of Dams in Newfoundland and Labrador Year Three
 ````````````````````````````````````````````````````````````````````````
-Reference:
 
     Golder Associates Inc., 2019. Inventory and Assessment of Dams in Newfoundland and Labrador Year Three. Report Prepared for Government of Newfoundland and Labrador Department of Municipal Affairs and Environment, Water Resources Management Division. pp. 11-37. Accessed from https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-3-report.pdf
 
@@ -1177,7 +1090,6 @@ Reference:
 
 Inventory and Assessment of Dams in Newfoundland and Labrador Year Two
 ``````````````````````````````````````````````````````````````````````
-Reference:
 
     Golder Associates Inc., 2017. Inventory and Assessment of Dams in Newfoundland and Labrador Year Two. Report Prepared for Government of Newfoundland and Labrador Department of Municipal Affairs and Environment, Water Resources Management Division. pp. 12-40. Accessed from https://www.gov.nl.ca/ecc/files/waterres-reports-dam-safety-nl-dam-inventory-year-2-final-report.pdf
 
@@ -1189,7 +1101,6 @@ MPE Engineering Ltd.
 
 Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios
 `````````````````````````````````````````````````````````````````````````````
-Reference:
 
     MPE Engineering Ltd., 2005. Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios. Report prepared for Alberta Environment. Accessed from https://open.alberta.ca/dataset/9b95703a-13ca-4645-87a7-ee33e99508ca/resource/2f28e7ed-0c72-427d-bfe2-3b1ddfb00bbf/download/aenv-water-for-life-reliable-quality-water-supplies-for-a-sustainable-economy-7750.pdf
 
@@ -1201,7 +1112,6 @@ Power Advisory LLC
 
 Review of the Newfoundland and Labrador Electricity System
 ``````````````````````````````````````````````````````````
-Reference:
 
     Power Advisory LLC, 2015. Review of the Newfoundland and Labrador Electricity System. Report prepared for Government of Newfoundland and Labrador Department of Natural Resources. pp. 40, 45, 47, 52-53, 76. Accessed from https://www.muskratfallsinquiry.ca/files/P-00110.pdf
 
@@ -1213,7 +1123,6 @@ SNC-Lavalin Group Inc.
 
 Lower Churchill Project Design Criteria
 ```````````````````````````````````````
-Reference:
 
     SNC-Lavalin Group Inc., 2013. Lower Churchill Project Design Criteria - Civil. Report prepared for Nalcor Energy. pp. 34, 44-45. Accessed from https://muskratfalls.nalcorenergy.com/wp-content/uploads/2013/03/Muskrat-Falls_Civil-Design-Criteria_Feb2013_Web.pdf
 
@@ -1225,7 +1134,6 @@ Peer-Reviewed Articles
 
 Canadian Geotechnical Journal
 +++++++++++++++++++++++++++++
-Reference(s): 
 
     Williams, D. R., Balanko, L. A., & Martin, R. L., 1983. Monitoring and performance of an earth-fill dam in central Alberta. Canadian Geotechnical Journal, 20(4), pp. 570–586. https://doi.org/10.1139/t83-068
 
@@ -1240,7 +1148,6 @@ Wikipedia
 
 List of Canadian Waterfalls
 ```````````````````````````
-Reference:
 
     Wikipedia contributors, 2020. List of waterfalls of Canada. Wikipedia. Accessed February 14, 2020, from https://en.wikipedia.org/wiki/List_of_waterfalls_of_Canada
 
@@ -1249,7 +1156,6 @@ Reference:
 
 List of Generating Stations in British Columbia
 ```````````````````````````````````````````````
-Reference:
 
     Wikipedia contributors, 2020. List of generating stations in British Columbia. Wikipedia. Accessed April 28, 2020, from https://en.wikipedia.org/wiki/List_of_generating_stations_in_British_Columbia
 
@@ -1258,7 +1164,6 @@ Reference:
 
 List of Generating Stations in New Brunswick
 ````````````````````````````````````````````
-Reference: 
 
     Wikipedia contributors, 2021. List of generating stations in New Brunswick. Wikipedia. Accessed February 8, 2022, from https://en.wikipedia.org/wiki/List_of_generating_stations_in_New_Brunswick
 
@@ -1267,7 +1172,6 @@ Reference:
 
 Little Bow Lake Reservoir
 `````````````````````````
-Reference:
 
     Wikipedia contributors, 2020. Little Bow Lake Reservoir. Wikipedia. Accessed from https://en.wikipedia.org/wiki/Little_Bow_Lake_Reservoir
 

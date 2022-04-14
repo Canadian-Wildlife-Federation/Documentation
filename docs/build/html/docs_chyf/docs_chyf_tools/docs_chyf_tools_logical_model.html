@@ -542,6 +542,7 @@
                 
   <div class="section" id="logical-model">
 <h1>Logical Model<a class="headerlink" href="#logical-model" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
 <div class="section" id="abstract">
 <h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
 <p>The Open Geospatial Consortium has defined “OGC® WaterML 2: Part 3 - Surface Hydrology
@@ -549,6 +550,7 @@ Features (HY_Features) - Conceptual Model”, but not any particular implementat
 <p>HY_Features defines catchments and catchment networks, as well as rivers, channels, flowpaths and hydrographic networks. The CHyF logical model specifies a profile and some extensions to HY_Features, as required to implement topological and graph relations. This starts with the definition of elementary catchments and elementary flowpaths, which are treated as fundamental elements. They are tightly specified terms corresponding to basic catchments and flowpaths in HY_Features and the basic components in the standard reach-catchment model (Maidment and Clark, 2016). If they are subdivided, the result is simply more elementary catchments and elementary flowpaths. Consequently, they are the building blocks used to form complementary coverages as well as a graph structure referred to as a hygraph. Building the hygraph necessitates that connections between features be manifest through their geometry. Divergences and distributaries are supported in CHyF, as the hygraph need not be hierarchical. Nevertheless, CHyF does recognize hierarchical drainage basins and the value in identifying them explicitly (Blodgett, et al, 2021).</p>
 <p>Different kinds of elementary catchments and elementary flowpaths are defined in CHyF. Of note is that polygonal waterbody features, or portions of such features, are treated as elementary catchments in their own right. In addition to these water catchments, several kinds of land-based elementary catchments are recognized. These model constructs are compatible with the higher level conceptual model in HY_Features, although they differ in detail from other popular implementation models. With the approach taken it becomes practical to handle very large lakes and rivers, as well as coastal ocean zones. CHyF also includes wetlands, glaciers and snowfields as kinds of hydro features; these features help complete the concept of a catchment coverage as put forward by HY_Features.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="keywords">
 <h2>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h2>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
@@ -556,12 +558,14 @@ Features (HY_Features) - Conceptual Model”, but not any particular implementat
 <div><p>CHyF; HY_Features implementation; implementation specifications; hydrologic features model; hydrologic services; hydrographic features.</p>
 </div></blockquote>
 </div>
+<hr class="docutils" />
 <div class="section" id="preface">
 <h2>Preface<a class="headerlink" href="#preface" title="Permalink to this headline">¶</a></h2>
 <p>The CHyF (pronounced chief) logical model provides an implementation of the HY_Features conceptual model. It also borrows directly from hydrologic and topologic concepts, and from graph theory. It defines a geospatial data specification directly amenable to the development of open hydrologic services accessible over the World Wide Web. However, it is fully suitable for use on traditionally architected projects where the web is not a factor. In either case CHyF is designed to be performant and scalable.</p>
 <p>CHyF impacts data management in several ways. It significantly reduces the amount of work that must be undertaken to maintain a database for a given area or for an entire continent. The general level of complexity of the data model is much less than that of some alternatives. Local adjustments to the data are not required to meet specific model limitations, such as the requirement by some coding systems for dendritic structures at all scales. Updates can be handled comparatively easily without the need to continuously support and conflate large numbers of feature identifiers.</p>
 <p>The power of CHyF comes about because of its use of a mathematical graph, referred to here as a hygraph. This graph is similar in intent and design to graphs built for navigation through road networks. It is specialized in that it is tailored for hydrologically related networks composed of elementary catchments and flowpaths.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="scope">
 <h2>1. Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
 <p>This document describes the CHyF logical model, a profile of the HY_Features conceptual model and also an implementation of it. CHyF is intended to meet the needs of hydrologists and environmental professionals concerned with hydrologic assessments or the health of watersheds and river systems.</p>
@@ -570,6 +574,7 @@ Features (HY_Features) - Conceptual Model”, but not any particular implementat
 <p>Familiarity with HY_Features is helpful, but not mandatory. The model presented in HY_Features is similar in many respects to that used as the basis of the United States NHD (National Hydrographic Dataset) and its offshoots, the NHDPlus and the NHDPlus HR (High Resolution). So knowledge of any of these and their related developments (e.g., StreamStats) is also relevant, but again not necessary.</p>
 <p>The structure of the document is similar to that of many Open Geospatial Consortium (OGC) publications. In all cases where relevant, the relationship to HY_Features is noted. In some cases, the relationship to the NHD suite of standards is also indicated. This is done to help foster semantic interoperability, and where differences exist, to help clarify why they do. Thus, reference is also made to the terminology found in the WMO/UNESCO “International Glossary of Hydrology”.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="conformance">
 <h2>2. Conformance<a class="headerlink" href="#conformance" title="Permalink to this headline">¶</a></h2>
 <p>CHyF conforms to the HY_Features conceptual model. Appendix 1 clarifies the relationship through provision of a CHyF ‒ HY_Features Crosswalk. Similar mappings are also included in Appendix 2 to Canada’s National Hydro Network (NHN) and the NHDPlus model of the United States.</p>
@@ -578,6 +583,7 @@ Features (HY_Features) - Conceptual Model”, but not any particular implementat
 <p>CHyF also provides web services that follow a RESTful design, making use of HTML and GeoJSON. They are architected in line with common practice on the Web, and thus are in support of general interoperability. Currently, they are specified independently of OGC Web Services. In the future this may change as the OGC moves toward REST.</p>
 <p>Formal modeling is expressed through UML diagrams, in line with OGC practices. However, for clarity, simple logic diagrams are used in the section on Terms and Definitions. These diagrams are similar to class and subclass definitions in UML but are more accessible to a broader audience.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="references">
 <h2>3. References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p>This document contains references to the following:</p>
@@ -619,6 +625,7 @@ Features (HY_Features) - Conceptual Model”, but not any particular implementat
 (<a class="reference external" href="https://wordnet.princeton.edu/">https://wordnet.princeton.edu/</a>)</p>
 </div></blockquote>
 </div>
+<hr class="docutils" />
 <div class="section" id="terms-and-definitions">
 <h2>4. Terms and Definitions<a class="headerlink" href="#terms-and-definitions" title="Permalink to this headline">¶</a></h2>
 <p>The following modelling terms and definitions are used  in this document. To ease understanding, they are provided within groups that correspond to the primary entities within the CHyF model. These concepts are taken from HY_Features and extended as needed to relate effectively to compatibility with a graph implementation and with specific geospatial concerns.</p>

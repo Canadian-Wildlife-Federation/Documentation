@@ -4,6 +4,8 @@
 CABD REST Services (API Endpoints)
 ==================================
 
+-----
+
 .. _api-overview:
 
 Overview
@@ -33,6 +35,8 @@ The latest Open API v3 specification can be found on the server:
 https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml (YAML)
 
 https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs (JSON)
+
+-----
 
 .. _api-endpoints:
 
@@ -159,6 +163,8 @@ Maximum Features
 A maximum of 15,000 features will be returned.  If a feature api request would result in more than 15,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.
 
 The value ``15000`` is an application parameter and can be modified if required (see ``application.properties`` file).
+
+-----
 
 .. _feature-datasource-endpoint:
 

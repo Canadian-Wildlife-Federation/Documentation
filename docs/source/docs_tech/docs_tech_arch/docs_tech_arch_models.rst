@@ -4,6 +4,8 @@
 CABD Features and Database Models
 =================================
 
+-----
+
 .. _cabd-feature-model:
 
 CABD Feature Model
@@ -39,6 +41,8 @@ Feature types:
 - ``fishways``
 - ``medium``
 - ``big``
+
+-----
 
 .. _cabd-database-model:
 
@@ -128,6 +132,8 @@ The ``<featuretype>_feature_source``  table contains for each cabd feature a lin
     :header-rows: 1
 
 The ``<featuretype>_attribute_source`` table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, ``<attribute>_ds``, links to the ``cabd.data_source table`` to identify the data source for the attribute value.
+
+-----
 
 .. _add-new-feature-type:
 

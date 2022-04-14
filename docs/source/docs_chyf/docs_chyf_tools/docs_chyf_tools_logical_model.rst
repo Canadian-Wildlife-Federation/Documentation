@@ -2,6 +2,8 @@
 Logical Model
 =============
 
+-----
+
 Abstract
 --------
 The Open Geospatial Consortium has defined “OGC® WaterML 2: Part 3 - Surface Hydrology 
@@ -11,11 +13,15 @@ HY_Features defines catchments and catchment networks, as well as rivers, channe
 
 Different kinds of elementary catchments and elementary flowpaths are defined in CHyF. Of note is that polygonal waterbody features, or portions of such features, are treated as elementary catchments in their own right. In addition to these water catchments, several kinds of land-based elementary catchments are recognized. These model constructs are compatible with the higher level conceptual model in HY_Features, although they differ in detail from other popular implementation models. With the approach taken it becomes practical to handle very large lakes and rivers, as well as coastal ocean zones. CHyF also includes wetlands, glaciers and snowfields as kinds of hydro features; these features help complete the concept of a catchment coverage as put forward by HY_Features. 
 
+-----
+
 Keywords
 --------
 The following are keywords to be used by search engines and document catalogues. 
 
  CHyF; HY_Features implementation; implementation specifications; hydrologic features model; hydrologic services; hydrographic features. 
+
+-----
 
 Preface
 -------
@@ -24,6 +30,8 @@ The CHyF (pronounced chief) logical model provides an implementation of the HY_F
 CHyF impacts data management in several ways. It significantly reduces the amount of work that must be undertaken to maintain a database for a given area or for an entire continent. The general level of complexity of the data model is much less than that of some alternatives. Local adjustments to the data are not required to meet specific model limitations, such as the requirement by some coding systems for dendritic structures at all scales. Updates can be handled comparatively easily without the need to continuously support and conflate large numbers of feature identifiers.  
 
 The power of CHyF comes about because of its use of a mathematical graph, referred to here as a hygraph. This graph is similar in intent and design to graphs built for navigation through road networks. It is specialized in that it is tailored for hydrologically related networks composed of elementary catchments and flowpaths.  
+
+-----
 
 1. Scope
 --------
@@ -37,6 +45,8 @@ Familiarity with HY_Features is helpful, but not mandatory. The model presented 
 
 The structure of the document is similar to that of many Open Geospatial Consortium (OGC) publications. In all cases where relevant, the relationship to HY_Features is noted. In some cases, the relationship to the NHD suite of standards is also indicated. This is done to help foster semantic interoperability, and where differences exist, to help clarify why they do. Thus, reference is also made to the terminology found in the WMO/UNESCO "International Glossary of Hydrology". 
 
+-----
+
 2. Conformance
 --------------
 CHyF conforms to the HY_Features conceptual model. Appendix 1 clarifies the relationship through provision of a CHyF ‒ HY_Features Crosswalk. Similar mappings are also included in Appendix 2 to Canada’s National Hydro Network (NHN) and the NHDPlus model of the United States.  
@@ -48,6 +58,8 @@ Because CHyF conforms with the standards and specifications noted above, popular
 CHyF also provides web services that follow a RESTful design, making use of HTML and GeoJSON. They are architected in line with common practice on the Web, and thus are in support of general interoperability. Currently, they are specified independently of OGC Web Services. In the future this may change as the OGC moves toward REST. 
 
 Formal modeling is expressed through UML diagrams, in line with OGC practices. However, for clarity, simple logic diagrams are used in the section on Terms and Definitions. These diagrams are similar to class and subclass definitions in UML but are more accessible to a broader audience. 
+
+-----
 
 3. References
 -------------
@@ -108,6 +120,8 @@ This document contains references to the following:
 
  WordNet Search; Princeton University 
  (https://wordnet.princeton.edu/)  
+
+-----
 
 4. Terms and Definitions
 --------------------------------
