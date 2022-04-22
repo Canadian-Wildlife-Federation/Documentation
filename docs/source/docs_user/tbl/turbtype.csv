@@ -1,6 +1,6 @@
-Name,Description
-Cross-flow ,An impulse turbine used in smaller hydroelectric sites with power outputs between 5 and 100 kW. Known also as Banki-Mitchell or Ossberger turbines. 
-Francis  ,A reaction (propeller) turbine commonly used in medium- or large-scale hydroelectric plants for head heights as low as 2 m and as high as 300 m. 
-Kaplan  ,A reaction (propeller) turbine with axial-flow and adjustable blades. Most useful for use in cams with large volumes of flow. 
-Pelton ,An impulse turbine commonly used in facilities with head height greater than 300 m.
-Unknown  ,The turbine type is unknown.
+Name,Code,Description
+Cross-flow ,1,An impulse turbine used in smaller hydroelectric sites with power outputs between 5 and 100 kW. Known also as Banki-Mitchell or Ossberger turbines. 
+Francis  ,2,A reaction (propeller) turbine commonly used in medium- or large-scale hydroelectric plants for head heights as low as 2 m and as high as 300 m. 
+Kaplan  ,3,A reaction (propeller) turbine with axial-flow and adjustable blades. Most useful for use in cams with large volumes of flow. 
+Pelton ,4,An impulse turbine commonly used in facilities with head height greater than 300 m.
+Unknown  ,5,The turbine type is unknown.

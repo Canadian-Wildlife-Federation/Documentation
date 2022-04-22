@@ -165,3 +165,7 @@ code {
     --pst-color-danger: 160, 66, 84;
 }
 
+/*Horizontal lines*/
+hr {
+    border-top: 3px solid #e5e5e5;
+}

@@ -1,12 +1,12 @@
-Name,Description
-Irrigation  ,Supplies controlled amounts of water to land or crops in needed intervals. 
-Hydroelectricity  ,Generates electricity by passing water through a hydraulic turbine.
-Water supply  ,Water stored for municipal use.
-Flood control  ,Reduces the effects of flood waters or high-water levels on downstream areas. 
-Recreation  ,"Reservoir allows for recreational activities (e.g., swimming, boating, fishing, etc.)."
-Navigation  ,Increases water levels on rivers to permit ship to navigate waters that were previously unnavigable. 
-Fisheries  ,"Increasing water levels of the reservoir during spawning season creates suitable spawning habitat for fish, enhancing fish production and fishing success of anglers. "
-Pollution control  ,Protects the water resource by trapping polluted water in reservoirs or ponds.
-Invasive species control ,Prevents the spread of invasive species upstream or to environmentally sensitive areas within the waterway.
-Other  ,The intended use of the dam cannot be defined by the use categories defined in this table.
-Unknown  ,The intended use of the dam is unknown.
+Name,Code,Description
+Irrigation  ,1,Supplies controlled amounts of water to land or crops in needed intervals. 
+Hydroelectricity  ,2,Generates electricity by passing water through a hydraulic turbine.
+Water supply  ,3,Water stored for municipal use.
+Flood control  ,4,Reduces the effects of flood waters or high-water levels on downstream areas. 
+Recreation  ,5,"Reservoir allows for recreational activities (e.g., swimming, boating, fishing, etc.)."
+Navigation  ,6,Increases water levels on rivers to permit ship to navigate waters that were previously unnavigable. 
+Fisheries  ,7,"Increasing water levels of the reservoir during spawning season creates suitable spawning habitat for fish, enhancing fish production and fishing success of anglers. "
+Pollution control  ,8,Protects the water resource by trapping polluted water in reservoirs or ponds.
+Invasive species control ,9,Prevents the spread of invasive species upstream or to environmentally sensitive areas within the waterway.
+Other  ,10,The intended use of the dam cannot be defined by the use categories defined in this table.
+Unknown  ,11,The intended use of the dam is unknown.

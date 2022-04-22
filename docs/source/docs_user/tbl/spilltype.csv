@@ -1,6 +1,6 @@
-Name,Description
-Combined,Single spillway that acts as both the principal and emergency spillway. 
-Free,Surplus water falls freely from the crest of the weir; a straight drop spillway or free overfall spillway. 
-Gated,Surplus water is regulated with a gate to prevent downstream flooding. 
-Other,"The spillway type of the dam structure is defined as something other than 'combined', 'free', or 'gated'."
-None,Structure does not have a spillway. 
+Name,Code,Description
+Combined,1,Single spillway that acts as both the principal and emergency spillway. 
+Free,2,Surplus water falls freely from the crest of the weir; a straight drop spillway or free overfall spillway. 
+Gated,3,Surplus water is regulated with a gate to prevent downstream flooding. 
+Other,4,"The spillway type of the dam structure is defined as something other than 'combined', 'free', or 'gated'."
+None,5,Structure does not have a spillway. 

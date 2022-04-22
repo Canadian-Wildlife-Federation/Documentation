@@ -1,11 +1,11 @@
-Name,Description
-Arch  ,Concrete structure that is curved in the upstream direction. 
-Buttress  ,"Structure with watertight wall supported at intervals on the downstream side by a series of triangle shaped walls; typically, reinforced concrete. "
-Earthfill  ,Structure composed of successive compacted layers of earth; clay-soil core reduces permeability. Also referred to as earth and embankment dams. 
-Gravity  ,Structure constructed of concrete and/or masonry which relies on its weight and internal strength for stability. 
-Multiple Arch ,A buttress dam composed of a series of arches for the upstream face.  
-Rockfill  ,Structure composed of dumped and compacted rock fill; permeable with impermeable core or layer on the upstream face. 
-Steel  ,"Structure consisting of a steel framework; inclined struts and steel plates on the upstream face. Supplemented with timber and earthfill to make them water-tight, steel dams are sometimes used as a temporary cofferdam during the construction of the main dam. "
-Timber  ,Structure built primarily of wood. Commonly used for temporary water diversion in low-head (2-4 m) areas during the construction of the main dam. 
-Unknown  ,Construction type is unknown. 
-Other  ,Construction type is different than those defined in this table.
+Name,Code,Description
+Arch  ,1,Concrete structure that is curved in the upstream direction. 
+Buttress  ,2,"Structure with watertight wall supported at intervals on the downstream side by a series of triangle shaped walls; typically, reinforced concrete. "
+Earthfill  ,3,Structure composed of successive compacted layers of earth; clay-soil core reduces permeability. Also referred to as earth and embankment dams. 
+Gravity  ,4,Structure constructed of concrete and/or masonry which relies on its weight and internal strength for stability. 
+Multiple Arch ,5,A buttress dam composed of a series of arches for the upstream face.  
+Rockfill  ,6,Structure composed of dumped and compacted rock fill; permeable with impermeable core or layer on the upstream face. 
+Steel  ,7,"Structure consisting of a steel framework; inclined struts and steel plates on the upstream face. Supplemented with timber and earthfill to make them water-tight, steel dams are sometimes used as a temporary cofferdam during the construction of the main dam. "
+Timber  ,8,Structure built primarily of wood. Commonly used for temporary water diversion in low-head (2-4 m) areas during the construction of the main dam. 
+Unknown  ,9,Construction type is unknown. 
+Other  ,10,Construction type is different than those defined in this table.
