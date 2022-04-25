@@ -1,5 +1,5 @@
-Name,Code,Description
-Bypass  ,1,"A fish screen is used to channel juvenile fish downstream of the structure, bypassing the turbine channel. "
-River Channel ,2,Fish move downstream of the structure via the natural river channel. 
-Spillway ,3,Fish move downstream of the structure by passing over the spillway. 
-Turbine  ,4,Fish move downstream of the structure by passing through the turbine channel. 
+Code,Name,Description
+1,Bypass  ,"A fish screen is used to channel juvenile fish downstream of the structure, bypassing the turbine channel. "
+2,River Channel ,Fish move downstream of the structure via the natural river channel. 
+3,Spillway ,Fish move downstream of the structure by passing over the spillway. 
+4,Turbine  ,Fish move downstream of the structure by passing through the turbine channel. 

@@ -66,7 +66,7 @@ Completeness Level
 
 .. csv-table:: 
     :file: tbl/complvl.csv
-    :widths: 20, 15, 25, 25, 25
+    :widths: 15, 20, 25, 25, 25
     :header-rows: 1
 
 .. _ftdatasrc:
@@ -234,7 +234,7 @@ Construction Type
 
 .. csv-table:: 
     :file: tbl/contype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _conyear:
@@ -272,7 +272,7 @@ Dam Function
 
 .. csv-table:: 
     :file: tbl/damfunc.csv
-    :widths: 25, 15, 70
+    :widths: 15, 25, 70
     :header-rows: 1
 
 .. _damnameen:
@@ -318,7 +318,7 @@ Dam Use
 
 .. csv-table:: 
     :file: tbl/damuse.csv
-    :widths: 25, 15, 60
+    :widths: 15, 25, 60
     :header-rows: 1
 
 .. _degreg:
@@ -459,7 +459,7 @@ Operating Status
 
 .. csv-table:: 
     :file: tbl/opstat.csv
-    :widths: 25, 15, 60
+    :widths: 15, 25, 60
     :header-rows: 1
 
 .. _owner:
@@ -482,7 +482,7 @@ Ownership Type
 
 .. csv-table:: 
     :file: tbl/owntype.csv
-    :widths: 25, 15, 60
+    :widths: 15, 25, 60
     :header-rows: 1
 
 Provincial Compliance Status
@@ -590,7 +590,7 @@ Turbine Type
 
 .. csv-table:: 
     :file: tbl/turbtype.csv
-    :widths: 20, 15, 65
+    :widths: 10, 25, 65
     :header-rows: 1
 
 .. _upcatcharea:
@@ -621,7 +621,7 @@ Upstream Passage Type
 
 .. csv-table:: 
     :file: tbl/uppasstype.csv
-    :widths: 25, 15, 60
+    :widths: 15, 25, 60
     :header-rows: 1
 
 .. _usefish:
@@ -636,7 +636,7 @@ Use Fisheries
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _useflood:
@@ -651,7 +651,7 @@ Use Flood Control
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _usehydro:
@@ -666,7 +666,7 @@ Use Hydroelectric
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _useais:
@@ -681,7 +681,7 @@ Use Invasive Species Control
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _useirr:
@@ -696,7 +696,7 @@ Use Irrigation
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _usenav:
@@ -711,7 +711,7 @@ Use Navigation
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _useother:
@@ -726,7 +726,7 @@ Use Other
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _usepoll:
@@ -741,7 +741,7 @@ Use Pollution Control
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _userec:
@@ -756,7 +756,7 @@ Use Recreation
  
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 .. _usesupply:
@@ -771,7 +771,7 @@ Use Water Supply
 
 .. csv-table:: 
     :file: tbl/usetype.csv
-    :widths: 20, 15, 65
+    :widths: 15, 20, 65
     :header-rows: 1
 
 Attributes Unique to Waterfalls

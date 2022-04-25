@@ -1,4 +1,4 @@
-Name,Code,Description
-Main,1,The primary/most important purpose of the dam.
-Major,2,A primary/important use of the dam but not the main use.
-Secondary,3,A secondary use of the dam.
+Code,Name,Description
+1,Main,The primary/most important purpose of the dam.
+2,Major,A primary/important use of the dam but not the main use.
+3,Secondary,A secondary use of the dam.
