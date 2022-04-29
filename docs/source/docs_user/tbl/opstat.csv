@@ -1,6 +1,6 @@
-Name,Description
-Abandoned/Orphaned ,Structure is not in operation; has no identifiable owner with legal liability.
-Active ,Structure is in operation; functioning as intended.
-Decommissioned ,Structure dismantled/removed. 
-Retired/Closed ,Structure was withdrawn from service but remains in place. 
-Unknown  ,Operating status of the structure is not known.
+Code,Name,Description
+1,Abandoned/Orphaned ,Structure is not in operation; has no identifiable owner with legal liability.
+2,Active ,Structure is in operation; functioning as intended.
+3,Decommissioned ,Structure dismantled/removed. 
+4,Retired/Closed ,Structure was withdrawn from service but remains in place. 
+5,Unknown  ,Operating status of the structure is not known.

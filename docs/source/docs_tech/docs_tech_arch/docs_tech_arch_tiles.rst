@@ -2,16 +2,17 @@
 Vector Tile Service
 ===================
 
------
-
 Format
 ------
-The only format supported for the vector tile services is mvt (mapbox vector tile).
 
 -----
+The only format supported for the vector tile services is mvt (mapbox vector tile).
 
 CHyF API End Points
 -------------------
+
+-----
+
 ``/chyf-web/tiles/water/{z}/{x}/{y}.{format}``
 
 End point for water features.  This includes single line streams and polygonal waterbody features. The output features include the following attributes:

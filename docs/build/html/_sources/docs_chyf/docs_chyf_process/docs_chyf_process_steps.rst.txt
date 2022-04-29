@@ -4,18 +4,18 @@ NHN - CHyF Conversion
 
 This document describes the steps and scripts required to convert data from NHN into the CHyF format.
 
------
-
 Workflow Overview
 -----------------
+
+-----
 
 .. image:: img/processing_workflow_b.png
     :align: center
 
------
-
 Processing Scripts
 ------------------
+
+-----
 
 All python scripts referenced below are located in the github repo:
 
@@ -33,10 +33,10 @@ Click the most recent workflow run, then under Artifacts, download chyf-processi
 .. image:: img/build_b.png
     :align: center
 
------
-
 Processing Steps
 ----------------
+
+-----
 
 .. _step1download:
 

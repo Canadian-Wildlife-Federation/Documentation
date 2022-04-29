@@ -1,5 +1,5 @@
-Name,Description
-Good,Structure is fit for its intended purpose; not damaged and capable of agreed standard of performance. 
-Fair,"Structure is in average condition, possessing minor defects. "
-Poor,Structure condition is deteriorated and requires maintenance. 
-Unreliable,Structure is not suitable for its intended purpose. 
+Code,Name,Description
+1,Good,Structure is fit for its intended purpose; not damaged and capable of agreed standard of performance. 
+2,Fair,"Structure is in average condition, possessing minor defects. "
+3,Poor,Structure condition is deteriorated and requires maintenance. 
+4,Unreliable,Structure is not suitable for its intended purpose. 

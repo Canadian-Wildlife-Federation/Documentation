@@ -1,4 +1,4 @@
-Name,Description
-Yes ,The lake control structure raises the original water level. 
-Enlarged,The lake control structure enlarged the original lake surface area. 
-Maybe  ,"Unknown, but data indicates the presence of a lake control structure."
+Code,Name,Description
+1,Yes ,The lake control structure raises the original water level. 
+2,Enlarged,The lake control structure enlarged the original lake surface area. 
+3,Maybe  ,"Unknown, but data indicates the presence of a lake control structure."

@@ -425,9 +425,9 @@
                 
   <div class="section" id="cabd-rest-services-api-endpoints">
 <span id="cabd-rest-services"></span><h1>CABD REST Services (API Endpoints)<a class="headerlink" href="#cabd-rest-services-api-endpoints" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
 <div class="section" id="overview">
 <span id="api-overview"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <div class="section" id="projection">
 <span id="api-projection"></span><h3>Projection<a class="headerlink" href="#projection" title="Permalink to this headline">¶</a></h3>
 <p>All coordinates are returned in latitude/longitude (EPSG:4617).</p>
@@ -441,11 +441,11 @@
 <p>The latest Open API v3 specification can be found on the server:</p>
 <p><a class="reference external" href="https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml">https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml</a> (YAML)</p>
 <p><a class="reference external" href="https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs">https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs</a> (JSON)</p>
-<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="api-end-points">
 <span id="api-endpoints"></span><h2>API End Points<a class="headerlink" href="#api-end-points" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <p>The base API server for the CABD end points is: <code class="docutils literal notranslate"><span class="pre">https://cabd-web.azurewebsites.net/cabd-api</span></code>.</p>
 <div class="section" id="feature-type-end-points">
 <span id="feature-type-endpoints"></span><h3>Feature Type End Points<a class="headerlink" href="#feature-type-end-points" title="Permalink to this headline">¶</a></h3>
@@ -555,11 +555,11 @@
 <span id="feature-endpoints-max-features"></span><h3>Maximum Features<a class="headerlink" href="#maximum-features" title="Permalink to this headline">¶</a></h3>
 <p>A maximum of 15,000 features will be returned.  If a feature api request would result in more than 15,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.</p>
 <p>The value <code class="docutils literal notranslate"><span class="pre">15000</span></code> is an application parameter and can be modified if required (see <code class="docutils literal notranslate"><span class="pre">application.properties</span></code> file).</p>
-<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="feature-data-source-end-point">
 <span id="feature-datasource-endpoint"></span><h2>Feature Data Source End Point<a class="headerlink" href="#feature-data-source-end-point" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <p><code class="docutils literal notranslate"><span class="pre">/features/datasources/&lt;feature-id&gt;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/datasources/&lt;feature-id&gt;?fields=all</span></code></p>
 <blockquote>

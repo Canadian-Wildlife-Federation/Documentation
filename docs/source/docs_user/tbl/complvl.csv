@@ -1,5 +1,5 @@
-Name,Description (Dams),Description (Waterfalls),Description (Fishways)
-Unverified ,Record is not verified. ,Record is not verified. ,Record is not verified. 
-Minimal  ,Location is verified but little attribute data is captured. ,Only location is verified. ,Only location is verified. 
-Moderate ,"Location is verified, and most attribute data is captured. ",Location and height are known-unknown if waterfall is a barrier to fish. ,Location and some attributes are known. 
-Complete ,"Location is verified, and all attribute data is captured. ",Location and height are known-confirmed to be a barrier to fish. ,Location and all attributes are known. 
+Code,Name,Description (Dams),Description (Waterfalls),Description (Fishways)
+1,Unverified ,Record is not verified. ,Record is not verified. ,Record is not verified. 
+2,Minimal  ,Location is verified but little attribute data is captured. ,Only location is verified. ,Only location is verified. 
+3,Moderate ,"Location is verified, and most attribute data is captured. ",Location and height are known-unknown if waterfall is a barrier to fish. ,Location and some attributes are known. 
+4,Complete ,"Location is verified, and all attribute data is captured. ",Location and height are known-confirmed to be a barrier to fish. ,Location and all attributes are known. 
