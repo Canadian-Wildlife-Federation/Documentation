@@ -93,6 +93,11 @@
    Data Catalogue
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_user/docs_user_submitted_updates.html">
+   Submit Data Updates
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../docs_user/docs_user_engagement.html">
    Stakeholder Engagement
@@ -161,17 +166,17 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_tech/docs_tech_process/docs_tech_process_dams.html">
-     Dams
+     Dam Review
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_tech/docs_tech_process/docs_tech_process_fishways.html">
-     Fishways
+     Fishway Review
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_tech/docs_tech_process/docs_tech_process_waterfalls.html">
-     Waterfalls
+     Waterfall Review
     </a>
    </li>
   </ul>
@@ -341,6 +346,70 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#workflow">
+   Workflow
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inputs-and-outputs">
+   Inputs and Outputs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inputs">
+     Inputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outputs">
+     Outputs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#graph-id">
+       Graph ID
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mainstem-id">
+       Mainstem ID
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#longest-upstream-path-only">
+         Longest Upstream Path Only
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#names-and-longest-upstream-path">
+         Names and Longest Upstream Path
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mainstem-sequence-number">
+       Mainstem Sequence Number
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#maximum-upstream-length">
+       Maximum Upstream length
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -351,6 +420,154 @@
                 
   <div class="section" id="stream-order">
 <h1>Stream Order<a class="headerlink" href="#stream-order" title="Permalink to this headline">¶</a></h1>
+<p>This document describes the tool developed to compute stream orders, mainstems and other attributes for CHyF2 compliant datasets.</p>
+<p>The software is open source under the Apache 2 license. It is written in Java SE 11 (Long Term Support). It can be run directly or by using Python scripts, for example, if desired.</p>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>The stream order processing is designed to be executed after the hydro network has been converted into the CHyF model. Stream order values should be recomputed whenever any updates are made to the CHyF datasets. Processing is done on the entire CHyF dataset.</p>
+<div class="figure align-center" id="id1">
+<img alt="../../_images/highlvlworkflow.png" src="../../_images/highlvlworkflow.png" />
+<p class="caption"><span class="caption-text"><em>Figure 1. High level workflow</em></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="inputs-and-outputs">
+<h2>Inputs and Outputs<a class="headerlink" href="#inputs-and-outputs" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>The CHyF mainstem/order processing tool requires the CHyF data to be hosted in a PostgreSQL database.  All inputs and outputs are read/written directly from/to the database.</p>
+<div class="section" id="inputs">
+<h3>Inputs<a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h3>
+<p>The input data meets the CHyF2 model specifications. The input database schema for the datasets is provided as a parameter (see Running the Software). The stream order computer uses the following tables and associated fields.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Table</p></th>
+<th class="head"><p>Required Fields</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;schema&gt;.eflowpath</p></td>
+<td><p>aoi_id, from_nexus_id, to_nexus_id, id, ef_type, ef_subtype, length, rank, name_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;schema&gt;.nexus</p></td>
+<td><p>id, nexus_type</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;schema&gt;.aoi</p></td>
+<td><p>id</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p>The output table/schema for the results is provided as a parameter (see Running the Software). If the output table exists, it will be dropped and recreated. The table below describes the values computed and the fields in the output table.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>uuid</p></td>
+<td><p>uuid</p></td>
+<td><p>Unique identifier for eflowpath edge.</p></td>
+</tr>
+<tr class="row-odd"><td><p>graph_id</p></td>
+<td><p>integer</p></td>
+<td><p>A number assigned to a group of connected edges. Every flowpath with the same identifier is connected to every other flowpath with that identifier. Applies to all edges (primary, and secondary).</p></td>
+</tr>
+<tr class="row-even"><td><p>mainstem_id</p></td>
+<td><p>uuid</p></td>
+<td><p>A unique identifier that represents the mainstem the edge is associated with. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p>mainstem_seq</p></td>
+<td><p>integer</p></td>
+<td><p>A sequential number that starts at 1 at the mouth of the mainstem, and increases as one walks up the mainstem to the headwater. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-even"><td><p>max_uplength</p></td>
+<td><p>double</p></td>
+<td><p>The length of the longest path to a headwater from the upstream node of this edge. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p>strahler_order</p></td>
+<td><p>integer</p></td>
+<td><p>Strahler order computed for the edge. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-even"><td><p>hack_order</p></td>
+<td><p>integer</p></td>
+<td><p>Hack order computed for the edge. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p>horton_order</p></td>
+<td><p>integer</p></td>
+<td><p>Horton order computed for the edge. Applies only to primary flowpath edges.</p></td>
+</tr>
+<tr class="row-even"><td><p>shreve_order</p></td>
+<td><p>integer</p></td>
+<td><p>Shreve order computed for the edge. Applies only to primary flowpath edges.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="graph-id">
+<h4>Graph ID<a class="headerlink" href="#graph-id" title="Permalink to this headline">¶</a></h4>
+<p>Each connected graph component is assigned a unique identifier. The graph components are connected subgraphs which have no flowpath connections between them. While not required for mainstem or order processing, it is computed for performance reasons and may be useful for future computations. The graph id is applied to all edges (primary and secondary).</p>
+<div class="figure align-center" id="id2">
+<img alt="../../_images/graphid.png" src="../../_images/graphid.png" />
+<p class="caption"><span class="caption-text"><em>Figure 2. Example data coloured by graph id</em></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="mainstem-id">
+<h4>Mainstem ID<a class="headerlink" href="#mainstem-id" title="Permalink to this headline">¶</a></h4>
+<p>Mainstems are computed based on the stream network formed by selecting primary, non-bank flowpath edges. All secondary and bank flowpath edges are not assigned a mainstem.</p>
+<p>There are two options for computing mainstems:</p>
+<ol class="arabic simple">
+<li><p>Based entirely on the longest upstream path.</p></li>
+<li><p>Based on both names and the longest upstream path.</p></li>
+</ol>
+<div class="section" id="longest-upstream-path-only">
+<h5>Longest Upstream Path Only<a class="headerlink" href="#longest-upstream-path-only" title="Permalink to this headline">¶</a></h5>
+<p>When computing mainstems based on the longest upstream path, for each sink the flow network is traversed upstream. At each confluence the path with the longest length to the headwaters is selected for the mainstem.  All other edges represent the start of a new mainstem.</p>
+<div class="figure align-center" id="id3">
+<img alt="../../_images/mainstemid.png" src="../../_images/mainstemid.png" />
+<p class="caption"><span class="caption-text"><em>Figure 3. Example data coloured by mainstem id.</em></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="names-and-longest-upstream-path">
+<h5>Names and Longest Upstream Path<a class="headerlink" href="#names-and-longest-upstream-path" title="Permalink to this headline">¶</a></h5>
+<p>Similar to longest upstream path, except at each confluence:</p>
+<ul class="simple">
+<li><p>First look for the upstream edge with the same name as the downstream edge. If found, use this upstream path for the mainstem.</p></li>
+<li><p>Second, look for any named upstream edge. If found, use this upstream path for the mainstem. If multiple named edges are found, use the one with the longest length to the headwaters.</p></li>
+<li><p>Lastly, use the path with the longest length to the headerwaters.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="mainstem-sequence-number">
+<h4>Mainstem Sequence Number<a class="headerlink" href="#mainstem-sequence-number" title="Permalink to this headline">¶</a></h4>
+<p>The mainstem sequence number orders mainstem edges from the sink to the headwaters. This only applies to edges with mainstems (primary, non-bank flowpath edges).</p>
+<div class="figure align-center" id="id4">
+<img alt="../../_images/mainstemseqnum.png" src="../../_images/mainstemseqnum.png" />
+<p class="caption"><span class="caption-text"><em>Figure 4. Example data labeled by mainstem sequence numbers.</em></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="maximum-upstream-length">
+<h4>Maximum Upstream length<a class="headerlink" href="#maximum-upstream-length" title="Permalink to this headline">¶</a></h4>
+<p>The maximum upstream length is used for computing mainstem. As with mainstems it is based on the stream network formed by selecting primary, non-bank flowpath edges. All secondary and bank flowpath edges are not assigned upstream length values.</p>
+<p>The maximum upstream length is the longest path to a headwaters from the upstream nexus of the edge. As a result, headwater edges will have a value of 0. Length is computed in the same units as the flowpath edge length property.</p>
+<div class="figure align-center" id="id5">
+<img alt="../../_images/uplength.png" src="../../_images/uplength.png" />
+<p class="caption"><span class="caption-text"><em>Figure 5. Example data displayed with values for upstream length (black) and individual edge length (blue).</em></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
