@@ -2,10 +2,11 @@
 Logical Model
 =============
 
------
-
 Abstract
 --------
+
+-----
+
 The Open Geospatial Consortium has defined “OGC® WaterML 2: Part 3 - Surface Hydrology 
 Features (HY_Features) - Conceptual Model”, but not any particular implementation of it. The Common Hydrology Features (CHyF) model extends HY_Features and makes some minor changes to it required for implementation and the delivery of high performance services. HY_Features discusses catchment coverage and topological relations. In CHyF these are key ideas, as is the notion that hydrologically defined network components form elements of a mathematical graph, allowing for very fast network traversal. 
 
@@ -13,28 +14,31 @@ HY_Features defines catchments and catchment networks, as well as rivers, channe
 
 Different kinds of elementary catchments and elementary flowpaths are defined in CHyF. Of note is that polygonal waterbody features, or portions of such features, are treated as elementary catchments in their own right. In addition to these water catchments, several kinds of land-based elementary catchments are recognized. These model constructs are compatible with the higher level conceptual model in HY_Features, although they differ in detail from other popular implementation models. With the approach taken it becomes practical to handle very large lakes and rivers, as well as coastal ocean zones. CHyF also includes wetlands, glaciers and snowfields as kinds of hydro features; these features help complete the concept of a catchment coverage as put forward by HY_Features. 
 
------
-
 Keywords
 --------
+
+-----
+
 The following are keywords to be used by search engines and document catalogues. 
 
  CHyF; HY_Features implementation; implementation specifications; hydrologic features model; hydrologic services; hydrographic features. 
 
------
-
 Preface
 -------
+
+-----
+
 The CHyF (pronounced chief) logical model provides an implementation of the HY_Features conceptual model. It also borrows directly from hydrologic and topologic concepts, and from graph theory. It defines a geospatial data specification directly amenable to the development of open hydrologic services accessible over the World Wide Web. However, it is fully suitable for use on traditionally architected projects where the web is not a factor. In either case CHyF is designed to be performant and scalable.  
 
 CHyF impacts data management in several ways. It significantly reduces the amount of work that must be undertaken to maintain a database for a given area or for an entire continent. The general level of complexity of the data model is much less than that of some alternatives. Local adjustments to the data are not required to meet specific model limitations, such as the requirement by some coding systems for dendritic structures at all scales. Updates can be handled comparatively easily without the need to continuously support and conflate large numbers of feature identifiers.  
 
 The power of CHyF comes about because of its use of a mathematical graph, referred to here as a hygraph. This graph is similar in intent and design to graphs built for navigation through road networks. It is specialized in that it is tailored for hydrologically related networks composed of elementary catchments and flowpaths.  
 
------
-
 1. Scope
 --------
+
+-----
+
 This document describes the CHyF logical model, a profile of the HY_Features conceptual model and also an implementation of it. CHyF is intended to meet the needs of hydrologists and environmental professionals concerned with hydrologic assessments or the health of watersheds and river systems.  
 
 CHyF pertains to the description and behaviour of hydrologic features found on the surface of the earth. It is relevant to such questions as: where does surface water exist, how much of it is there, how does it change over time, what is upstream or downstream of what, how are land features connected to water features, and how can other types of data be related to water features. 
@@ -45,10 +49,11 @@ Familiarity with HY_Features is helpful, but not mandatory. The model presented 
 
 The structure of the document is similar to that of many Open Geospatial Consortium (OGC) publications. In all cases where relevant, the relationship to HY_Features is noted. In some cases, the relationship to the NHD suite of standards is also indicated. This is done to help foster semantic interoperability, and where differences exist, to help clarify why they do. Thus, reference is also made to the terminology found in the WMO/UNESCO "International Glossary of Hydrology". 
 
------
-
 2. Conformance
 --------------
+
+-----
+
 CHyF conforms to the HY_Features conceptual model. Appendix 1 clarifies the relationship through provision of a CHyF ‒ HY_Features Crosswalk. Similar mappings are also included in Appendix 2 to Canada’s National Hydro Network (NHN) and the NHDPlus model of the United States.  
 
 CHyF also conforms to a number of existing OGC and ISO standards, as listed in section 3 below. In particular, geometric representations follow the Simple Feature Access (ISO 19125) model and the specification in general aligns with the SQL/MM Spatial (ISO/IEC 13249-3) specification. 
@@ -59,10 +64,11 @@ CHyF also provides web services that follow a RESTful design, making use of HTML
 
 Formal modeling is expressed through UML diagrams, in line with OGC practices. However, for clarity, simple logic diagrams are used in the section on Terms and Definitions. These diagrams are similar to class and subclass definitions in UML but are more accessible to a broader audience. 
 
------
-
 3. References
 -------------
+
+-----
+
 This document contains references to the following: 
 
  A Land Use And Land Cover Classification System For Use With Remote Sensor Data; by James R. Anderson, Ernest E. Hardy, John T. Roach, and Richard E. Witmer; Geological Survey Professional Paper 964, United States Geological Survey (http://www.pbcgis.com/data_basics/anderson.pdf)   
@@ -121,10 +127,11 @@ This document contains references to the following:
  WordNet Search; Princeton University 
  (https://wordnet.princeton.edu/)  
 
+4. Terms and Definitions
+------------------------
+
 -----
 
-4. Terms and Definitions
---------------------------------
 The following modelling terms and definitions are used  in this document. To ease understanding, they are provided within groups that correspond to the primary entities within the CHyF model. These concepts are taken from HY_Features and extended as needed to relate effectively to compatibility with a graph implementation and with specific geospatial concerns.  
 
 To aid understanding, for each of the high level concepts, a simple logic model is shown, depicting the further breakdown of the concept. This begins with CHyF as a domain, with the major types of objects encompassed by CHyF shown on the right in Figure 1. In subsequent chapters the CHyF model is fully explained and UML diagrams are provided. These figures should not be interpreted as equivalent to UML class diagrams; in some cases they do correspond to class – subclass relationships, but in other cases they do not. 

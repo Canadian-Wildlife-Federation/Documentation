@@ -4,12 +4,12 @@
 CABD REST Services (API Endpoints)
 ==================================
 
------
-
 .. _api-overview:
 
 Overview
 --------
+
+-----
 
 .. _api-projection:
 
@@ -36,12 +36,12 @@ https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml (YAML)
 
 https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs (JSON)
 
------
-
 .. _api-endpoints:
 
 API End Points
 --------------
+
+-----
 
 The base API server for the CABD end points is: ``https://cabd-web.azurewebsites.net/cabd-api``.
 
@@ -164,12 +164,12 @@ A maximum of 15,000 features will be returned.  If a feature api request would r
 
 The value ``15000`` is an application parameter and can be modified if required (see ``application.properties`` file).
 
------
-
 .. _feature-datasource-endpoint:
 
 Feature Data Source End Point
 -----------------------------
+
+-----
 
 ``/features/datasources/<feature-id>``
 

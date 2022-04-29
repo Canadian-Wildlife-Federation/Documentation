@@ -413,9 +413,9 @@
                 
   <div class="section" id="cabd-features-and-database-models">
 <span id="cabd-models"></span><h1>CABD Features and Database Models<a class="headerlink" href="#cabd-features-and-database-models" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
 <div class="section" id="cabd-feature-model">
 <span id="id1"></span><h2>CABD Feature Model<a class="headerlink" href="#cabd-feature-model" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <div class="section" id="generic-feature-model">
 <span id="id2"></span><h3>Generic Feature Model<a class="headerlink" href="#generic-feature-model" title="Permalink to this headline">¶</a></h3>
 <p>Features in CABD have an optional hierarchical structure. Feature types can be combined to form “super feature types”.</p>
@@ -435,11 +435,11 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">medium</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">big</span></code></p></li>
 </ul>
-<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="cabd-database-model">
 <span id="id4"></span><h2>CABD Database Model<a class="headerlink" href="#cabd-database-model" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <p>The database is structured into multiple schemas.  Each feature type has its own schema, with a common <code class="docutils literal notranslate"><span class="pre">cabd</span></code> schema for shared data and feature metadata.</p>
 <div class="section" id="views">
 <span id="cabd-views"></span><h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h3>
@@ -608,11 +608,11 @@
 </tbody>
 </table>
 <p>The <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;_attribute_source</span></code> table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, <code class="docutils literal notranslate"><span class="pre">&lt;attribute&gt;_ds</span></code>, links to the <code class="docutils literal notranslate"><span class="pre">cabd.data_source</span> <span class="pre">table</span></code> to identify the data source for the attribute value.</p>
-<hr class="docutils" />
 </div>
 </div>
 <div class="section" id="how-add-a-new-feature-type">
 <span id="add-new-feature-type"></span><h2>How Add a New Feature Type<a class="headerlink" href="#how-add-a-new-feature-type" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
 <p>New feature types can be added to the system by adding the data to the database and updating the database metadata tables.</p>
 <ol class="arabic simple">
 <li><p>Create a new schema for your feature type.</p></li>

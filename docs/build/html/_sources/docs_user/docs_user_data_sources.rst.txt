@@ -3,8 +3,6 @@ Data Sources
 
 The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
 
------
-
 Spatial Data Sources
 --------------------
 
@@ -424,8 +422,6 @@ Waterfalls of Nova Scotia
     **Source ID field:** ns_id
 
     **Short name:** mrmaps_nswf
-
------
 
 Non-Spatial Data Sources
 ------------------------

@@ -4,12 +4,12 @@
 CABD Features and Database Models
 =================================
 
------
-
 .. _cabd-feature-model:
 
 CABD Feature Model
 ------------------
+
+-----
 
 .. _generic-feature-model:
 
@@ -42,12 +42,12 @@ Feature types:
 - ``medium``
 - ``big``
 
------
-
 .. _cabd-database-model:
 
 CABD Database Model
 -------------------
+
+-----
 
 The database is structured into multiple schemas.  Each feature type has its own schema, with a common ``cabd`` schema for shared data and feature metadata.
 
@@ -133,12 +133,12 @@ The ``<featuretype>_feature_source``  table contains for each cabd feature a lin
 
 The ``<featuretype>_attribute_source`` table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, ``<attribute>_ds``, links to the ``cabd.data_source table`` to identify the data source for the attribute value.
 
------
-
 .. _add-new-feature-type:
 
 How Add a New Feature Type
 --------------------------
+
+-----
 
 New feature types can be added to the system by adding the data to the database and updating the database metadata tables.
 
