@@ -166,7 +166,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../docs_tech/docs_tech_process/docs_tech_process_dams.html">
-     Dam Review
+     Dam Review Process
     </a>
    </li>
    <li class="toctree-l2">
@@ -403,9 +403,51 @@
        Maximum Upstream length
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#strahler-order">
+       Strahler Order
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hack-order">
+       Hack Order
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#horton-order">
+       Horton Order
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shreve-order">
+       Shreve Order
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-the-software">
+   Running the Software
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#performance">
+     Performance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logging">
+     Logging
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algorithm-overview">
+   Algorithm Overview
+  </a>
  </li>
 </ul>
 
@@ -566,7 +608,106 @@
 <p class="caption"><span class="caption-text"><em>Figure 5. Example data displayed with values for upstream length (black) and individual edge length (blue).</em></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 </div>
+<div class="section" id="strahler-order">
+<h4>Strahler Order<a class="headerlink" href="#strahler-order" title="Permalink to this headline">¶</a></h4>
+<p>Strahler order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: <a class="reference external" href="https://en.wikipedia.org/wiki/Strahler_number">https://en.wikipedia.org/wiki/Strahler_number</a>.</p>
+<div class="figure align-center" id="id6">
+<img alt="../../_images/strahler.png" src="../../_images/strahler.png" />
+<p class="caption"><span class="caption-text"><em>Figure 6. Example data labeled for strahler order.</em></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="hack-order">
+<h4>Hack Order<a class="headerlink" href="#hack-order" title="Permalink to this headline">¶</a></h4>
+<p>Hack order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: <a class="reference external" href="https://en.wikipedia.org/wiki/Stream_order">https://en.wikipedia.org/wiki/Stream_order</a>.</p>
+<div class="figure align-center" id="id7">
+<img alt="../../_images/hack.png" src="../../_images/hack.png" />
+<p class="caption"><span class="caption-text"><em>Figure 7. Example data labeled for hack order.</em></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="horton-order">
+<h4>Horton Order<a class="headerlink" href="#horton-order" title="Permalink to this headline">¶</a></h4>
+<p>Horton order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: <a class="reference external" href="https://en.wikipedia.org/wiki/Stream_order">https://en.wikipedia.org/wiki/Stream_order</a>.</p>
+<div class="figure align-center" id="id8">
+<img alt="../../_images/horton.png" src="../../_images/horton.png" />
+<p class="caption"><span class="caption-text"><em>Figure 8. Example data labeled for horton order.</em></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="shreve-order">
+<h4>Shreve Order<a class="headerlink" href="#shreve-order" title="Permalink to this headline">¶</a></h4>
+<p>Shreve order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: <a class="reference external" href="https://en.wikipedia.org/wiki/Stream_order">https://en.wikipedia.org/wiki/Stream_order</a>.</p>
+<div class="figure align-center" id="id9">
+<img alt="../../_images/shreve.png" src="../../_images/shreve.png" />
+<p class="caption"><span class="caption-text"><em>Figure 9. Example data labeled for shreve order.</em></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="running-the-software">
+<h2>Running the Software<a class="headerlink" href="#running-the-software" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>To run the software use the .bat (windows) or .sh (linux) files provided as follows:</p>
+<p><code class="docutils literal notranslate"><span class="pre">chyf-streamorder-computer.bat</span> <span class="pre">[OPTIONS]</span> <span class="pre">&lt;INSCHEMA&gt;</span> <span class="pre">&lt;OUTTABLE&gt;</span></code></p>
+<p>Example:</p>
+<p><code class="docutils literal notranslate"><span class="pre">chyf-streamorder-computer.bat</span> <span class="pre">-ignorenames</span> <span class="pre">-d</span> <span class="pre">host=localhost;port=5432;db=chyf;user=user;password=pass</span> <span class="pre">chyf2</span> <span class="pre">chyf2.eflowpath_properties</span></code></p>
+<p>The following options can be provided:</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-d</p></td>
+<td><p>Yes</p></td>
+<td><p>PostgreSQL connection details in the form: host=&lt;HOST&gt;;port=&lt;PORT&gt;;db=&lt;DBNAME&gt;;user=&lt;USERNAME&gt;;password=&lt;PASSWORD&gt;</p></td>
+</tr>
+<tr class="row-odd"><td><p>-ignorenames</p></td>
+<td><p>No*</p></td>
+<td><p>Ignore names when computing mainstems</p></td>
+</tr>
+<tr class="row-even"><td><p>-usenames</p></td>
+<td><p>No*</p></td>
+<td><p>Use names when computing mainstems</p></td>
+</tr>
+</tbody>
+</table>
+<p><cite>* one of ignorenames or usernames must be provided</cite></p>
+<div class="section" id="performance">
+<h3>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h3>
+<p>On large datasets these tools may take a significant amount of time to complete. Logging should provide updates on status.</p>
+</div>
+<div class="section" id="logging">
+<h3>Logging<a class="headerlink" href="#logging" title="Permalink to this headline">¶</a></h3>
+<p>All logging is written to the console (errors, warning, info).</p>
+<p>Warnings and errors are written to a streamordercomputer-{yyyymmdd}-{hhmmss}.log file.</p>
+</div>
+</div>
+<div class="section" id="algorithm-overview">
+<h2>Algorithm Overview<a class="headerlink" href="#algorithm-overview" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>NeoJ4 is used as a graph database to aid in these computations. Graph databases are created on-the-fly on the machine running the software and are deleted once the computations are completed.</p>
+<p>Stream order is calculated on the entire dataset, however in order to improve performance the first few steps attempt to break down the datasets into smaller datasets.</p>
+<p><em>The algorithm below was designed to produce results in a reasonable time based on the smallish sample dataset we had. There are a bunch of modifications that could applied depending on the how the performance is on larger datasets.</em></p>
+<p>Step 1: Compute AOI Groups. This step uses the database to compute AOI groups that are connected. AOIs are considered connected if there are flowpaths in different AOIs that share a nexus.</p>
+<p>The following steps are performed for each AOI group:</p>
+<ol class="arabic simple" start="2">
+<li><p>Load all nexus and flowpaths for the AOI group into a graph database.</p></li>
+<li><p>Compute connected components within this graph. Assign a graph_id to each of these connected components.</p></li>
+<li><p>Find all “connected” graphs with 1 or fewer edges. These graphs have only 1 edge so we can assume each is a unique mainstem with order value of 1.</p></li>
+<li><p>Group remaining connected graphs to form a graph with approximately 1 million nodes or 500 groups.  This is done for performance reasons.  Computing each connected graph individually is very slow.</p></li>
+</ol>
+<p>For each of these groups:</p>
+<ol class="arabic simple" start="6">
+<li><p>Do a breadth-first-search, computing strahler order, max upstream length, mainstem id and shreve order.</p></li>
+<li><p>Reverse the order of the edges from step 6; walk upstream computing horton, hack and mainstem sequence.</p></li>
+<li><p>Save results to the database.</p></li>
+</ol>
 </div>
 </div>
 

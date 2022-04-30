@@ -105,3 +105,107 @@ The maximum upstream length is the longest path to a headwaters from the upstrea
 
     *Figure 5. Example data displayed with values for upstream length (black) and individual edge length (blue).*
 
+Strahler Order
+++++++++++++++
+
+Strahler order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: https://en.wikipedia.org/wiki/Strahler_number.
+
+.. figure:: img/stream_order/strahler.png
+    :align: center
+
+    *Figure 6. Example data labeled for strahler order.*
+
+Hack Order
+++++++++++
+
+Hack order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: https://en.wikipedia.org/wiki/Stream_order.
+
+.. figure:: img/stream_order/hack.png
+    :align: center
+
+    *Figure 7. Example data labeled for hack order.*
+
+Horton Order
+++++++++++++
+
+Horton order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: https://en.wikipedia.org/wiki/Stream_order.
+
+.. figure:: img/stream_order/horton.png
+    :align: center
+
+    *Figure 8. Example data labeled for horton order.*
+
+Shreve Order
+++++++++++++
+
+Shreve order is computed based on the stream network formed by selecting primary, non-bank flowpath edges. For details see: https://en.wikipedia.org/wiki/Stream_order.
+
+.. figure:: img/stream_order/shreve.png
+    :align: center
+
+    *Figure 9. Example data labeled for shreve order.*
+
+Running the Software
+--------------------
+
+-----
+
+To run the software use the .bat (windows) or .sh (linux) files provided as follows:
+
+``chyf-streamorder-computer.bat [OPTIONS] <INSCHEMA> <OUTTABLE>``
+
+Example:
+
+``chyf-streamorder-computer.bat -ignorenames -d host=localhost;port=5432;db=chyf;user=user;password=pass chyf2 chyf2.eflowpath_properties``
+
+The following options can be provided:
+
+.. csv-table:: 
+    :file: tbl/so_options.csv
+    :widths: 20, 10, 70
+    :header-rows: 1
+
+`* one of ignorenames or usernames must be provided`
+
+Performance
+~~~~~~~~~~~
+
+On large datasets these tools may take a significant amount of time to complete. Logging should provide updates on status.
+
+Logging
+~~~~~~~
+
+All logging is written to the console (errors, warning, info). 
+
+Warnings and errors are written to a streamordercomputer-{yyyymmdd}-{hhmmss}.log file.
+
+Algorithm Overview
+------------------
+
+-----
+
+NeoJ4 is used as a graph database to aid in these computations. Graph databases are created on-the-fly on the machine running the software and are deleted once the computations are completed.
+
+Stream order is calculated on the entire dataset, however in order to improve performance the first few steps attempt to break down the datasets into smaller datasets.
+
+*The algorithm below was designed to produce results in a reasonable time based on the smallish sample dataset we had. There are a bunch of modifications that could applied depending on the how the performance is on larger datasets.*
+
+Step 1: Compute AOI Groups. This step uses the database to compute AOI groups that are connected. AOIs are considered connected if there are flowpaths in different AOIs that share a nexus. 
+
+The following steps are performed for each AOI group:
+
+2. Load all nexus and flowpaths for the AOI group into a graph database.
+
+3. Compute connected components within this graph. Assign a graph_id to each of these connected components.
+
+4. Find all “connected” graphs with 1 or fewer edges. These graphs have only 1 edge so we can assume each is a unique mainstem with order value of 1.
+
+5. Group remaining connected graphs to form a graph with approximately 1 million nodes or 500 groups.  This is done for performance reasons.  Computing each connected graph individually is very slow.
+
+For each of these groups:
+
+6. Do a breadth-first-search, computing strahler order, max upstream length, mainstem id and shreve order.
+
+7. Reverse the order of the edges from step 6; walk upstream computing horton, hack and mainstem sequence.
+
+8. Save results to the database.
