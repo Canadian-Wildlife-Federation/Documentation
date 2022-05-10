@@ -73,4 +73,6 @@ html_theme_options = {
     "extra_navbar": "<p></p>",
     "home_page_in_toc": False,
     "toc_title": "Document Contents",
+    "navigation_depth": 3,
 }
+
