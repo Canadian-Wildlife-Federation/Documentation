@@ -6,4 +6,3 @@ No structures present,"The imagery quality is high, and you have a clear view of
 Obscured in imagery,"The imagery quality is poor, or dense tree/vegetation cover is present where the structure should be."
 Relocated,"Based on imagery or additional documentation about a feature, you have moved the structure point a significant distance from where it was placed in the original dataset."
 Road crossing?,"The structure may be a road crossing (e.g., a culvert) instead of a dam. "
-Verify primary flowpath,The structure is in an area with multiple flowpaths and should be checked after CHyF processing to ensure the structure is on a primary flowpath.

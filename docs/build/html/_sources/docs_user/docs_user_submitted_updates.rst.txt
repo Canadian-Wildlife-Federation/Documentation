@@ -4,7 +4,7 @@ Submit Data Updates
 
 A user may record and submit updates to the attribute information for one or multiple feature type records in the CABD using the user submitted updates template for dams, fishways or waterfalls. 
 
-Downloading the template
+Downloading the Template
 ------------------------
 
 -----
@@ -20,13 +20,13 @@ Download the appropriate template for the feature type you are looking to submit
 .. important::
     As changes to the CABD data structure may occur at any time, it is important to check this page and **verify that you have the most recent version** of the user submitted updates template for the feature type you are looking to submit data for. 
 
-Populating the template
+Populating the Template
 -----------------------
 
 -----
 
-Updating existing records
-~~~~~~~~~~~~~~~~~~~~~
+Updating Existing Records
+~~~~~~~~~~~~~~~~~~~~~~~~~
 1. The cabd_id field is the first column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. Copy this value and paste it into the next available cell of the cabd_id column in the template.
 
 .. image:: img/use_submitted_updates/barrierid.jpg
