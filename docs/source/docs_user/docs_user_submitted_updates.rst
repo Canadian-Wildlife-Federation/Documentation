@@ -31,9 +31,11 @@ Updating Existing Records
 
 .. image:: img/use_submitted_updates/barrierid.jpg
    :align: center
+   :width: 700
 
 .. image:: img/use_submitted_updates/cabd_id.jpg
    :align: center
+   :width: 700
 
 .. note::
     Skip this step if the information being added if for a feature that does not yet exist in the CABD. The cabd_id for new features will be generated when initially loaded into the database. 
@@ -47,11 +49,13 @@ Updating Existing Records
 
 .. image:: img/use_submitted_updates/datasrc.jpg
    :align: center
+   :width: 700
 
 4. Next, select the attribute(s) for which new information will be added, from the options available in the drop down list. 
 
 .. image:: img/use_submitted_updates/list1.png
    :align: center
+   :width: 700
 
 .. important::
     Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.
@@ -62,6 +66,7 @@ Updating Existing Records
    
    .. image:: img/use_submitted_updates/list2.png
       :align: center
+      :width: 700
 
    b. If there is no defined list of allowable values for the selected attribute, type the information directly into the cell. 
 
