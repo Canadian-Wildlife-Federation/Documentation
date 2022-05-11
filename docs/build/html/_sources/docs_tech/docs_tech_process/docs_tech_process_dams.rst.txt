@@ -13,17 +13,17 @@ Setup
 
 2. Open the qgis_projects folder, select the folder for the province or territory you are reviewing, and open the QGIS project file (.qgz) file saved there – this will be named something like “qc_dam_review” or “qc_waterfall_review”.
 
-3.	Once the project loads, you’ll want to double check a few things before you get started:
+3. Once the project loads, you’ll want to double check a few things before you get started:
 
-    a.	Go to **View > Panels** and ensure the **Identify Results** panel is enabled. Change the mode at the bottom of this panel to **Layer Selection**.
+   a. Go to **View > Panels** and ensure the **Identify Results** panel is enabled. Change the mode at the bottom of this panel to **Layer Selection**.
 
-    b.	Go to **Project > Properties** and click the **Data Sources** tab. Ensure that the satellite imagery layers (e.g., Bing VirtualEarth) and the NHN WMS layer are not identifiable, and that all the source datasets and the review layer (e.g., featurecopy.dams) are identifiable.
+   b. Go to **Project > Properties** and click the **Data Sources** tab. Ensure that the satellite imagery layers (e.g., Bing VirtualEarth) and the NHN WMS layer are not identifiable, and that all the source datasets and the review layer (e.g., featurecopy.dams) are identifiable.
 
-    c.	Ensure the NHN work units layer (e.g., qc_workunits) is toggled on in the layers panel, and that it is not filtered. You can also set this to be not identifiable in the **Data Sources** tab noted in the previous step.
+   c. Ensure the NHN work units layer (e.g., qc_workunits) is toggled on in the layers panel, and that it is not filtered. You can also set this to be not identifiable in the **Data Sources** tab noted in the previous step.
 
-    d.	Go to **Settings > Options** and click the **Map Tools** tab. Change your “search radius for identifying features and displaying map tips” to at least 5 mm – this will make it easier to query features from the map for this exercise.
+   d. Go to **Settings > Options** and click the **Map Tools** tab. Change your “search radius for identifying features and displaying map tips” to at least 5 mm – this will make it easier to query features from the map for this exercise.
 
-    e.	Double check the symbology for all the source dataset layers to ensure features are visible and you can easily distinguish between the datasets.
+   e. Double check the symbology for all the source dataset layers to ensure features are visible and you can easily distinguish between the datasets.
 
 Reviewing and Adding Features 
 -----------------------------
@@ -53,23 +53,25 @@ Find Any Duplicate Features From Other Datasets
 
 .. image:: img/uniqueids.png
     :align: center
+    :width: 400
 
-4.	If all the unique IDs are accounted for:
+4. If all the unique IDs are accounted for:
 
-    * Expand the individual entries in the **Identify Results** panel and double check that any names available in the source datasets match. If they do match, you’re done this step. If they don’t match, check the imagery and the attributes of other nearby points to see if this feature needs two separate points to represent it.
+   * Expand the individual entries in the **Identify Results** panel and double check that any names available in the source datasets match. If they do match, you’re done this step. If they don’t match, check the imagery and the attributes of other nearby points to see if this feature needs two separate points to represent it.
 
-5.	If you’re missing some unique IDs:
+5. If you’re missing some unique IDs:
 
-    * Refer to the **Identify Results** panel, check the names in the source datasets, and add them in the appropriate field in the **Duplicates** tab of your review layer.
+   * Refer to the **Identify Results** panel, check the names in the source datasets, and add them in the appropriate field in the **Duplicates** tab of your review layer.
 
-6.	If there is no existing feature in the review layer:
+6. If there is no existing feature in the review layer:
 
-    * Add a new point feature to the review layer and fill in the appropriate fields. You can use any of the unique IDs for the data_source_text and data_source fields, then add the remaining unique IDs in the **Duplicates** tab of the review layer.
+   * Add a new point feature to the review layer and fill in the appropriate fields. You can use any of the unique IDs for the data_source_text and data_source fields, then add the remaining unique IDs in the **Duplicates** tab of the review layer.
 
 7.	To ensure you get the correct unique for a dataset, please right click the unique id field in the **Identify** panel and click ‘copy attribute value’.
 
 .. image:: img/duplicates.png
     :align: center
+    :width: 400
 
 8.	In some cases, the review layer may include several distinct points close to each other that refer to the same feature. In this case, check the attributes of the source datasets at that location. If the source datasets all appear to refer to a single feature (e.g., a large dam structure), remove any extra points from the review layer until you have a single point, then add all the unique IDs for that feature to the single point.
 
@@ -82,6 +84,7 @@ Identify if Features Should Be Used for Analysis
 
 .. image:: img/useanalysis.png
     :align: center
+    :width: 700
 
 * If a feature should be used for analysis:
 
@@ -114,6 +117,7 @@ Determine if a Feature Is Visible
 
 .. image:: img/presence.png
     :align: center
+    :width: 700
 
 * For our purposes, we assume that all feature from source datasets exist and are active (i.e., not decommissioned) unless research or attributes from our source data tell us otherwise.
 
@@ -135,6 +139,7 @@ A Work Unit Is Complete
 
 .. image:: img/modatts.png
     :align: center
+    :width: 400
 
 * On the new form that pops up, check the **Complete** box for the appropriate feature type (e.g., dams_complete) and save your edits. The default symbology for work units will shade incomplete areas in light yellow, and complete areas with just a black border.
 
@@ -158,9 +163,11 @@ Appendix A: Troubleshooting and Tips
 
 .. image:: img/multidam.png
     :align: center
+    :width: 700
 
 .. image:: img/multidamb.png
     :align: center
+    :width: 700
 
 * If there are two points for the same feature from one dataset, only include one point in your review layer, ideally the one which has the most attribute information about that feature.
 

@@ -422,17 +422,16 @@
 <ol class="arabic simple">
 <li><p>Go to the feature review folder on the CWF shared drive: J:Conservation ProgramGISFreshwatercabdfeature_review.</p></li>
 <li><p>Open the qgis_projects folder, select the folder for the province or territory you are reviewing, and open the QGIS project file (.qgz) file saved there – this will be named something like “qc_dam_review” or “qc_waterfall_review”.</p></li>
-<li><p>Once the project loads, you’ll want to double check a few things before you get started:</p></li>
-</ol>
-<blockquote>
-<div><ol class="loweralpha simple">
+<li><p>Once the project loads, you’ll want to double check a few things before you get started:</p>
+<ol class="loweralpha simple">
 <li><p>Go to <strong>View &gt; Panels</strong> and ensure the <strong>Identify Results</strong> panel is enabled. Change the mode at the bottom of this panel to <strong>Layer Selection</strong>.</p></li>
 <li><p>Go to <strong>Project &gt; Properties</strong> and click the <strong>Data Sources</strong> tab. Ensure that the satellite imagery layers (e.g., Bing VirtualEarth) and the NHN WMS layer are not identifiable, and that all the source datasets and the review layer (e.g., featurecopy.dams) are identifiable.</p></li>
 <li><p>Ensure the NHN work units layer (e.g., qc_workunits) is toggled on in the layers panel, and that it is not filtered. You can also set this to be not identifiable in the <strong>Data Sources</strong> tab noted in the previous step.</p></li>
 <li><p>Go to <strong>Settings &gt; Options</strong> and click the <strong>Map Tools</strong> tab. Change your “search radius for identifying features and displaying map tips” to at least 5 mm – this will make it easier to query features from the map for this exercise.</p></li>
 <li><p>Double check the symbology for all the source dataset layers to ensure features are visible and you can easily distinguish between the datasets.</p></li>
 </ol>
-</div></blockquote>
+</li>
+</ol>
 </div>
 <div class="section" id="reviewing-and-adding-features">
 <h2>Reviewing and Adding Features<a class="headerlink" href="#reviewing-and-adding-features" title="Permalink to this headline">¶</a></h2>
@@ -452,35 +451,26 @@
 <li><p>The display name for all layers should be set to their unique ID by default, so if you expand each layer using the accordion icon, you will see all the unique IDs for features at that location:</p></li>
 <li><p>Referring to the <strong>Identify Results</strong> panel for unique IDs, check the data_source_text and data_source_id fields for the point in the review layer, as well as any fields populated in the <strong>Duplicates</strong> tab of the review layer. Note that the visibility of the <strong>Duplicates</strong> tab is controlled by the duplicates field checkbox – when it is toggled, the <strong>Duplicates</strong> tab will be shown.</p></li>
 </ol>
-<img alt="../../_images/uniqueids.png" class="align-center" src="../../_images/uniqueids.png" />
+<a class="reference internal image-reference" href="../../_images/uniqueids.png"><img alt="../../_images/uniqueids.png" class="align-center" src="../../_images/uniqueids.png" style="width: 400px;" /></a>
 <ol class="arabic simple" start="4">
-<li><p>If all the unique IDs are accounted for:</p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+<li><p>If all the unique IDs are accounted for:</p>
+<ul class="simple">
 <li><p>Expand the individual entries in the <strong>Identify Results</strong> panel and double check that any names available in the source datasets match. If they do match, you’re done this step. If they don’t match, check the imagery and the attributes of other nearby points to see if this feature needs two separate points to represent it.</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="5">
-<li><p>If you’re missing some unique IDs:</p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+</li>
+<li><p>If you’re missing some unique IDs:</p>
+<ul class="simple">
 <li><p>Refer to the <strong>Identify Results</strong> panel, check the names in the source datasets, and add them in the appropriate field in the <strong>Duplicates</strong> tab of your review layer.</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="6">
-<li><p>If there is no existing feature in the review layer:</p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+</li>
+<li><p>If there is no existing feature in the review layer:</p>
+<ul class="simple">
 <li><p>Add a new point feature to the review layer and fill in the appropriate fields. You can use any of the unique IDs for the data_source_text and data_source fields, then add the remaining unique IDs in the <strong>Duplicates</strong> tab of the review layer.</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="7">
+</li>
 <li><p>To ensure you get the correct unique for a dataset, please right click the unique id field in the <strong>Identify</strong> panel and click ‘copy attribute value’.</p></li>
 </ol>
-<img alt="../../_images/duplicates.png" class="align-center" src="../../_images/duplicates.png" />
+<a class="reference internal image-reference" href="../../_images/duplicates.png"><img alt="../../_images/duplicates.png" class="align-center" src="../../_images/duplicates.png" style="width: 400px;" /></a>
 <ol class="arabic simple" start="8">
 <li><p>In some cases, the review layer may include several distinct points close to each other that refer to the same feature. In this case, check the attributes of the source datasets at that location. If the source datasets all appear to refer to a single feature (e.g., a large dam structure), remove any extra points from the review layer until you have a single point, then add all the unique IDs for that feature to the single point.</p></li>
 </ol>
@@ -491,7 +481,7 @@
 <li><p>Some attributes from source datasets may also indicate if a feature should be used for analysis. For example, in most cases, we wouldn’t use features marked as “embankments”, “canals”, or “dykes” for analysis.</p></li>
 <li><p>Fishway features will also not be used for analysis and should be stored as separate features from dams. Leaving the <strong>Use in analysis?</strong> box blank, just add the data source and data source id, and check the <strong>Is this a fishway?</strong> box on the <strong>Fishways</strong> tab. If there’s a corresponding record in the CANFISHPASS database, add the unique ID as well. Finally, make sure your point isn’t snapped to a flowpath on the hydro network, and that it reflects the real-world location of the fishway.</p></li>
 </ul>
-<img alt="../../_images/useanalysis.png" class="align-center" src="../../_images/useanalysis.png" />
+<a class="reference internal image-reference" href="../../_images/useanalysis.png"><img alt="../../_images/useanalysis.png" class="align-center" src="../../_images/useanalysis.png" style="width: 700px;" /></a>
 <ul class="simple">
 <li><p>If a feature should be used for analysis:</p>
 <ol class="arabic simple">
@@ -521,7 +511,7 @@
 <ul class="simple">
 <li><p>Generally, dam structures are characterized by being perpendicular to a watercourse/waterbody and having calm water on one side and disturbed water on the other side:</p></li>
 </ul>
-<img alt="../../_images/presence.png" class="align-center" src="../../_images/presence.png" />
+<a class="reference internal image-reference" href="../../_images/presence.png"><img alt="../../_images/presence.png" class="align-center" src="../../_images/presence.png" style="width: 700px;" /></a>
 <ul class="simple">
 <li><p>For our purposes, we assume that all feature from source datasets exist and are active (i.e., not decommissioned) unless research or attributes from our source data tell us otherwise.</p></li>
 <li><p>If you have a clear view of the hydro network from imagery, but you can’t see any structures near a feature’s location, set the <strong>reviewer_classification</strong> field in the <strong>Comments</strong> tab to “No structures present”.</p></li>
@@ -538,7 +528,7 @@
 <ul class="simple">
 <li><p>Select the work unit, toggle on editing, and click the <strong>Modify attributes</strong> button:</p></li>
 </ul>
-<img alt="../../_images/modatts.png" class="align-center" src="../../_images/modatts.png" />
+<a class="reference internal image-reference" href="../../_images/modatts.png"><img alt="../../_images/modatts.png" class="align-center" src="../../_images/modatts.png" style="width: 400px;" /></a>
 <ul class="simple">
 <li><p>On the new form that pops up, check the <strong>Complete</strong> box for the appropriate feature type (e.g., dams_complete) and save your edits. The default symbology for work units will shade incomplete areas in light yellow, and complete areas with just a black border.</p></li>
 </ul>
@@ -562,8 +552,8 @@
 <li><p>When reviewing a dam facility with many structures, you may find it easiest to start by identifying the main structure by looking at the NHN flowpaths or any details about the facility found online.</p></li>
 <li><p>For multi-dam complexes, use your best judgement to determine which source data points are closest to each dam. You should also check the names and group all the points with common names together for a feature – e.g., Alvin Main Dam vs Alvin Freeboard Dam:</p></li>
 </ul>
-<img alt="../../_images/multidam.png" class="align-center" src="../../_images/multidam.png" />
-<img alt="../../_images/multidamb.png" class="align-center" src="../../_images/multidamb.png" />
+<a class="reference internal image-reference" href="../../_images/multidam.png"><img alt="../../_images/multidam.png" class="align-center" src="../../_images/multidam.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/multidamb.png"><img alt="../../_images/multidamb.png" class="align-center" src="../../_images/multidamb.png" style="width: 700px;" /></a>
 <ul class="simple">
 <li><p>If there are two points for the same feature from one dataset, only include one point in your review layer, ideally the one which has the most attribute information about that feature.</p></li>
 <li><p>For long dam structures where there are multiple points from source datasets, choose the side that’s furthest downstream (based on the NHN flowpaths) to include in your review layer – you should not include both.</p></li>
