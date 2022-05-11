@@ -379,6 +379,16 @@ National Performance of Dams Program (NPDP) Dam Database
     **Short name:** su_npdp
 
 
+Superior Watershed Partnership and Land Conservancy
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
+``````````````````````````````````````````````````````````````````````
+
+    Superior Watershed Partnership and Land Conservancy, no date. Lake Superior Dam Inventory. Funded by the United States Fish and Wildlife Service. Accessed December 4, 2019 from data provided by Jeff Koch of the Superior Watershed Partnership and Land Conservancy.
+
+    **Short name:** swp_lsdi
+
 Wisconsin Institute for Discovery 
 +++++++++++++++++++++++++++++++++
 
@@ -430,6 +440,16 @@ Non-Spatial Data Sources
 
 Federal Sources
 ~~~~~~~~~~~~~~~
+
+Environment and Climate Change Canada
++++++++++++++++++++++++++++++++++++++
+
+Canadian Environmental Assessment Agency
+````````````````````````````````````````
+
+    Canadian Environmental Assessment Agency, 2012. Archived - Carseland Very Low Head (VLH) Hydro Project. Accessed May 6, 2022, from https://www.ceaa-acee.gc.ca/052/details-eng.cfm?pid=52237
+
+    **Short name:** ecc_ceaa_090152237
 
 Fisheries and Oceans (DFO)
 ++++++++++++++++++++++++++
@@ -540,6 +560,16 @@ Little Bow Reservoir FIN Summary
 
     **Short name:** aep_littlebow_res_fin_2020
 
+
+Alberta - Natural Resources Conservation Board
+++++++++++++++++++++++++++++++++++++++++++++++
+
+Pine Coolee Water Management Project
+````````````````````````````````````
+
+    Natural Resources Conservation Board/Environmental Assessment and Review Process Joint Review Panel, 1995. NCRB Application #9401: Pine Coulee Water Management Project, Willow Creek Basin, Southwest of Staveley, Alberta. Accessed May 6, 2022, from https://publications.gc.ca/collections/collection_2018/acee-ceaa/En106-167-1995-eng.pdf
+
+    **Short name:** nrcb_earp_app9401
 
 Alberta – Sustainable Resource Development
 ++++++++++++++++++++++++++++++++++++++++++
@@ -802,11 +832,11 @@ Dam Safety Inspection Reports
 Facility Rehabilitation
 ```````````````````````
 
-    a)	Newfoundland Power, 2013. 2014 Facility Rehabilitation. pp. 3, 5-6. Accessed from http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf
+    a. Newfoundland Power, 2013. 2014 Facility Rehabilitation. pp. 3, 5-6. Accessed from http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf
 
     **Short name:** nlp_fac_rehab_2014
 
-    b)	Newfoundland Power, 2011. 2012 Facility Rehabilitation. pp. 1-3. Accessed from http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf
+    b.	Newfoundland Power, 2011. 2012 Facility Rehabilitation. pp. 1-3. Accessed from http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf
 
     **Short name:** nlp_fac_rehab_2012
 
@@ -932,6 +962,13 @@ Horseshoe Plant
     **Short name:** transalta_horseshoe
 
 
+Interlakes Plant
+````````````````
+
+    TransAlta, n.d. Interlakes. Accessed May 6, 2022, from https://transalta.com/plants-operation/interlakes/
+
+    **Short name:** transalta_interlakes
+
 Kananaskis Plant
 ````````````````
 
@@ -1007,6 +1044,30 @@ Waterton Hydro Facility
 Academic Institutions/NGO Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Alberta WaterPortal Society
++++++++++++++++++++++++++++
+
+Bow River Irrigation District
+`````````````````````````````
+
+    Alberta WaterPortal Society, 2022. Bow River Irrigation District. Accessed May 6, 2022, from https://albertawater.com/latest/8786-bow-river-irrigation-district/
+
+    **Short name:** awps_brid
+
+St. Mary River Irrigation District
+``````````````````````````````````
+
+    Alberta WaterPortal Society, 2022. St. Mary River Irrigation District. Accessed May 6, 2022, from https://albertawater.com/latest/8795-st-mary-river-irrigation-district-projects-overview/
+
+    **Short name:** awps_smrid
+
+Alberta Wilderness Association
+++++++++++++++++++++++++++++++
+
+    Alberta Wilderness Association, 2017. News Release: 4 Years After Obed Spill, Questions Remain. Accessed May 6, 2022, from https://albertawilderness.ca/news-release-4-years-obed-spill-questions-remain/
+
+    **Short name:** awa_obed_spill
+
 Shubenacadie Canal Commission
 +++++++++++++++++++++++++++++
 
@@ -1053,6 +1114,12 @@ Flood Risk Mapping Project
 
     **Short name:** amec_frmp_2013
 
+South Saskatchewan River Basin in Alberta: Water Supply Study
+`````````````````````````````````````````````````````````````
+
+    AMEC Earth & Environmental, 2009. South Saskatchewan River Basin in Alberta: Water Supply Study. Report prepared for Alberta Agriculture and Rural Development. pp. 20. Accessed May 6, 2022, from https://www1.agric.gov.ab.ca/$Department/deptdocs.nsf/all/irr13053/$FILE/ssrb_main_report.pdf
+
+    **Short name:** amec_ssrba_wss
 
 East Coast Aquatics Inc.
 ++++++++++++++++++++++++
@@ -1067,6 +1134,13 @@ Biological Assessment for Proposed Liverpool Wind Farm
 
 Golder Associates Inc.
 ++++++++++++++++++++++
+
+Genesee Cooling Pond Thermal and Water Quality Modelling Study
+``````````````````````````````````````````````````````````````
+
+    Golder Associates, 2013. Genesee Cooling Pond Thermal and Water Quality Modelling Study. Report prepared for Capital Power Corporation. pp. 1. Accessed May 6, 2022, from https://www.capitalpower.com/wp-content/uploads/2019/06/Appendix_F_Genesee_Cooling_Pond_Modelling_Study.pdf 
+
+    **Short name:** golder_genesee_2013
 
 Inventory and Assessment of Dams in Eastern Newfoundland
 ````````````````````````````````````````````````````````
@@ -1128,6 +1202,13 @@ Lower Churchill Project Design Criteria
 Peer-Reviewed Articles
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Alberta Law Review
+++++++++++++++++++
+
+    Nykolaishen, S. & Bankes, N., 2012. Sacrificing Fish for Power: A Legal History of the Spray Lakes Development. Alberta Law Review 50(1), pp. 6. https://doi.org/10.29173/alr266
+
+    **Short name:** alrs_spray_lakes
+
 Canadian Geotechnical Journal
 +++++++++++++++++++++++++++++
 
@@ -1139,8 +1220,22 @@ Canadian Geotechnical Journal
 Miscellaneous Online Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+MERX
+++++
+
+    Alberta Environment and Sustainable Resource Development, 2015. Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe). Accessed May 6, 2022, from https://legacy.merx.com/English/SUPPLIER_Menu.asp?WCE=Show&TAB=1&PORTAL=MERX&State=7&id=AB-2015-02510&src=osr&FED_ONLY=0&ACTION=NEXT&rowcount=2000&lastpage=200&MoreResults=&PUBSORT=2&CLOSESORT=0&IS_SME=N&langswitch=1&hcode=sTvMTncPfnbG4oSXtP%2fDhw%3d%3d
+
+    **Short name:** aep_cldps
+
 Wikipedia
 +++++++++
+
+Dickson Dam
+```````````
+
+    Wikipedia contributors, 2022. Dickson Dam. Wikipedia. Accessed May 6, 2022, from https://en.wikipedia.org/wiki/Dickson_Dam
+
+    **Short name:** wiki_dickson_dam
 
 List of Canadian Waterfalls
 ```````````````````````````
