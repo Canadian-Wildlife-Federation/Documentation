@@ -1,5 +1,8 @@
+.. _data-sources:
+
+============
 Data Sources
-------------
+============
 
 The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
 
@@ -383,7 +386,7 @@ Superior Watershed Partnership and Land Conservancy
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
-``````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````
 
     Superior Watershed Partnership and Land Conservancy, no date. Lake Superior Dam Inventory. Funded by the United States Fish and Wildlife Service. Accessed December 4, 2019 from data provided by Jeff Koch of the Superior Watershed Partnership and Land Conservancy.
 
@@ -1267,3 +1270,9 @@ Little Bow Lake Reservoir
     Wikipedia contributors, 2020. Little Bow Lake Reservoir. Wikipedia. Accessed from https://en.wikipedia.org/wiki/Little_Bow_Lake_Reservoir
 
     **Short name:** wiki_lbr
+
+
+.. toctree::
+    :hidden:
+
+    docs_user_data_sources/docs_user_data_sources_csv_download
