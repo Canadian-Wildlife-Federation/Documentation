@@ -1,5 +1,8 @@
+.. _data-sources:
+
+============
 Data Sources
-------------
+============
 
 The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
 
@@ -383,7 +386,7 @@ Superior Watershed Partnership and Land Conservancy
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
-``````````````````````````````````````````````````````````````````````
+`````````````````````````````````````````````````````````````````````````
 
     Superior Watershed Partnership and Land Conservancy, no date. Lake Superior Dam Inventory. Funded by the United States Fish and Wildlife Service. Accessed December 4, 2019 from data provided by Jeff Koch of the Superior Watershed Partnership and Land Conservancy.
 
@@ -539,6 +542,14 @@ Bow River Basin – TransAlta Operations
     Alberta Environment and Parks, 2021. Bow River Basin – TransAlta operations. Government of Alberta. Accessed December 13, 2021, from https://www.alberta.ca/bow-river-basin-transalta-operations.aspx
 
     **Short name:** aep_tao_bow_riv_basin
+
+
+Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe)
+````````````````````````````````````````````````````````````````````````````````````````````
+
+    Alberta Environment and Sustainable Resource Development, 2015. Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe). Accessed May 6, 2022, from https://legacy.merx.com/English/SUPPLIER_Menu.asp?WCE=Show&TAB=1&PORTAL=MERX&State=7&id=AB-2015-02510&src=osr&FED_ONLY=0&ACTION=NEXT&rowcount=2000&lastpage=200&MoreResults=&PUBSORT=2&CLOSESORT=0&IS_SME=N&langswitch=1&hcode=sTvMTncPfnbG4oSXtP%2fDhw%3d%3d
+
+    **Short name:** aep_cldps
 
 
 Fish Stocking Maps
@@ -901,7 +912,7 @@ TransAlta
 Barrier Power Plant
 ```````````````````
 
-    TransAlta, 2020. Barrier. Accessed December 13, 2021, from https://transalta.com/plants-operation/barrier/
+    TransAlta, n.d. Barrier. Accessed December 13, 2021, from https://transalta.com/plants-operation/barrier/
 
     **Short name:** transalta_barrier
 
@@ -909,7 +920,7 @@ Barrier Power Plant
 Bearspaw Plant
 ``````````````
 
-    TransAlta, 2020. Bearspaw. Accessed December 13, 2021, from https://transalta.com/plants-operation/bearspaw/
+    TransAlta, n.d. Bearspaw. Accessed December 13, 2021, from https://transalta.com/plants-operation/bearspaw/
 
     **Short name:** transalta_bearspaw
 
@@ -917,7 +928,7 @@ Bearspaw Plant
 Belly River Hydro Facility
 ``````````````````````````
 
-    TransAlta, 2020. Belly River. Accessed December 13, 2021, from https://transalta.com/plants-operation/belly-river/
+    TransAlta, n.d. Belly River. Accessed December 13, 2021, from https://transalta.com/plants-operation/belly-river/
 
     **Short name:** transalta_belly
 
@@ -925,7 +936,7 @@ Belly River Hydro Facility
 Bighorn Plant
 `````````````
 
-    TransAlta, 2020. Bighorn. Accessed December 13, 2021, from https://transalta.com/plants-operation/bighorn/
+    TransAlta, n.d. Bighorn. Accessed December 13, 2021, from https://transalta.com/plants-operation/bighorn/
 
     **Short name:** transalta_bighorn
 
@@ -933,7 +944,7 @@ Bighorn Plant
 Brazeau Plant
 `````````````
 
-    TransAlta, 2020. Brazeau. Accessed December 13, 2021, from https://transalta.com/plants-operation/brazeau/
+    TransAlta, n.d. Brazeau. Accessed December 13, 2021, from https://transalta.com/plants-operation/brazeau/
 
     **Short name:** transalta_brazeau
 
@@ -941,7 +952,7 @@ Brazeau Plant
 Cascade Plant
 `````````````
 
-    TransAlta, 2020. Cascade. Accessed December 13, 2021, from https://transalta.com/plants-operation/cascade/
+    TransAlta, n.d. Cascade. Accessed December 13, 2021, from https://transalta.com/plants-operation/cascade/
 
     **Short name:** transalta_cascade
 
@@ -949,7 +960,7 @@ Cascade Plant
 Ghost Plant
 ```````````
 
-    TransAlta, 2020. Ghost. Accessed December 13, 2021, from https://transalta.com/plants-operation/ghost/
+    TransAlta, n.d. Ghost. Accessed December 13, 2021, from https://transalta.com/plants-operation/ghost/
 
     **Short name:** transalta_ghost
 
@@ -957,7 +968,7 @@ Ghost Plant
 Horseshoe Plant
 ```````````````
 
-    TransAlta, 2020. Horseshoe. Accessed December 13, 2021, from https://transalta.com/plants-operation/horseshoe/
+    TransAlta, n.d. Horseshoe. Accessed December 13, 2021, from https://transalta.com/plants-operation/horseshoe/
     
     **Short name:** transalta_horseshoe
 
@@ -972,7 +983,7 @@ Interlakes Plant
 Kananaskis Plant
 ````````````````
 
-    TransAlta, 2020. Kananaskis. Accessed December 13, 2021, from https://transalta.com/plants-operation/kananaskis/
+    TransAlta, n.d. Kananaskis. Accessed December 13, 2021, from https://transalta.com/plants-operation/kananaskis/
 
     **Short name:** transalta_kananaskis
 
@@ -980,7 +991,7 @@ Kananaskis Plant
 Pocaterra Plant
 ```````````````
 
-    TransAlta, 2020. Pocaterra. Accessed December 13, 2021, from https://transalta.com/plants-operation/pocaterra/
+    TransAlta, n.d. Pocaterra. Accessed December 13, 2021, from https://transalta.com/plants-operation/pocaterra/
 
     **Short name:** transalta_pocaterra
 
@@ -988,7 +999,7 @@ Pocaterra Plant
 Rundle Plant
 ````````````
 
-    TransAlta, 2020. Rundle. Accessed December 13, 2021, from https://transalta.com/plants-operation/rundle/
+    TransAlta, n.d. Rundle. Accessed December 13, 2021, from https://transalta.com/plants-operation/rundle/
 
     **Short name:** transalta_rundle
 
@@ -996,7 +1007,7 @@ Rundle Plant
 Sheerness Generating Station
 ````````````````````````````
 
-    TransAlta, 2020. Sheerness. Accessed December 13, 2021, from https://transalta.com/plants-operation/sheerness/
+    TransAlta, n.d. Sheerness. Accessed December 13, 2021, from https://transalta.com/plants-operation/sheerness/
 
     **Short name:** transalta_sheerness
 
@@ -1004,7 +1015,7 @@ Sheerness Generating Station
 Spray Hydro Facility
 ````````````````````
 
-    TransAlta, 2020. Spray. Accessed December 13, 2021, from https://transalta.com/plants-operation/spray/
+    TransAlta, n.d. Spray. Accessed December 13, 2021, from https://transalta.com/plants-operation/spray/
 
     **Short name:** transalta_spray
 
@@ -1012,7 +1023,7 @@ Spray Hydro Facility
 St. Mary Hydro Facility
 ```````````````````````
 
-    TransAlta, 2020. St. Mary. Accessed December 13, 2021, from https://transalta.com/plants-operation/st-mary/
+    TransAlta, n.d. St. Mary. Accessed December 13, 2021, from https://transalta.com/plants-operation/st-mary/
 
     **Short name:** transalta_st_mary
 
@@ -1020,7 +1031,7 @@ St. Mary Hydro Facility
 Taylor Hydro Facility
 `````````````````````
 
-    TransAlta, 2020. Taylor. Accessed December 13, 2021, from https://transalta.com/plants-operation/taylor-hydro/
+    TransAlta, n.d. Taylor. Accessed December 13, 2021, from https://transalta.com/plants-operation/taylor-hydro/
 
     **Short name:** transalta_taylor
 
@@ -1028,7 +1039,7 @@ Taylor Hydro Facility
 Three Sisters Plant
 ```````````````````
 
-    TransAlta, 2020. Three Sisters. Accessed December 13, 2021, from https://transalta.com/plants-operation/three-sisters/
+    TransAlta, n.d. Three Sisters. Accessed December 13, 2021, from https://transalta.com/plants-operation/three-sisters/
 
     **Short name:** transalta_three_sisters
 
@@ -1036,7 +1047,7 @@ Three Sisters Plant
 Waterton Hydro Facility
 ```````````````````````
 
-    TransAlta, 2020. Waterton. Accessed December 13, 2021, from https://transalta.com/plants-operation/waterton/
+    TransAlta, n.d. Waterton. Accessed December 13, 2021, from https://transalta.com/plants-operation/waterton/
 
     **Short name:** transalta_waterton
 
@@ -1220,13 +1231,6 @@ Canadian Geotechnical Journal
 Miscellaneous Online Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-MERX
-++++
-
-    Alberta Environment and Sustainable Resource Development, 2015. Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe). Accessed May 6, 2022, from https://legacy.merx.com/English/SUPPLIER_Menu.asp?WCE=Show&TAB=1&PORTAL=MERX&State=7&id=AB-2015-02510&src=osr&FED_ONLY=0&ACTION=NEXT&rowcount=2000&lastpage=200&MoreResults=&PUBSORT=2&CLOSESORT=0&IS_SME=N&langswitch=1&hcode=sTvMTncPfnbG4oSXtP%2fDhw%3d%3d
-
-    **Short name:** aep_cldps
-
 Wikipedia
 +++++++++
 
@@ -1267,3 +1271,9 @@ Little Bow Lake Reservoir
     Wikipedia contributors, 2020. Little Bow Lake Reservoir. Wikipedia. Accessed from https://en.wikipedia.org/wiki/Little_Bow_Lake_Reservoir
 
     **Short name:** wiki_lbr
+
+
+.. toctree::
+    :hidden:
+
+    docs_user_data_sources/docs_user_data_sources_csv_download
