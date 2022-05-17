@@ -27,7 +27,7 @@ The image below is an example of what the data sources csv table looks like. The
     
    .. note:: 
        
-       Data source names in the csv are listed using the given short names. These short names can be cross referenced with the `Data Sources <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources.html>`_ page to identify the full name of the data source. 
+       The shortened data source names in the CSV can be cross referenced with the `Data Sources <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources.html>`_ page to identify the full name and reference information for each data source. 
 	
 4. The list of spatial data sources used to populate attribute information for the structure. 
 	
