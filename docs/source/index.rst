@@ -8,7 +8,9 @@
 Documentation
 -----------------
 
-Welcome to the CABD documentation page!
+-----
+
+Welcome to the CABD documentation site!
 
 .. note::
    The CABD project is under active development.
