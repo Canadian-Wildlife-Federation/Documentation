@@ -1,6 +1,6 @@
-====================================
-Feature Data Source Details Download
-====================================
+===========================
+Feature Data Source Details
+===========================
 
 This page provides a breakdown of the data source information available for a specific structure. The information is provided in csv format, which can be obtained through the `Canadian Aquatic Barriers Database's web-map <https://aquaticbarriers.ca/>`_ by navigating to the **Feature Data Source Details** entry in the attribute popup window for the desired structure and clicking the download link. 
 

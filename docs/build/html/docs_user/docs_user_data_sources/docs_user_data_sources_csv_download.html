@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feature Data Source Details Download &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    <title>Feature Data Source Details &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -24,7 +24,14 @@
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/assets/jsonview.bundle.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/layouts.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/styles.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
     
   <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
@@ -33,10 +40,17 @@
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../../_static/assets/jsonview.bundle.js"></script>
+    <script src="../../_static/assets/jsonview_loader.js"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables.min.js"></script>
+    <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js"></script>
+    <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../_static/main.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data Catalogue" href="../docs_user_data_catalogue.html" />
+    <link rel="next" title="Spatial Data Sources" href="docs_user_data_sources_spatial.html" />
     <link rel="prev" title="Data Sources" href="../docs_user_data_sources.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -95,7 +109,17 @@
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Feature Data Source Details Download
+     Feature Data Source Details
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_data_sources_spatial.html">
+     Spatial Data Sources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_data_sources_nonspatial.html">
+     Non-Spatial Data Sources
     </a>
    </li>
   </ul>
@@ -369,8 +393,8 @@
         
               <div>
                 
-  <div class="section" id="feature-data-source-details-download">
-<h1>Feature Data Source Details Download<a class="headerlink" href="#feature-data-source-details-download" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="feature-data-source-details">
+<h1>Feature Data Source Details<a class="headerlink" href="#feature-data-source-details" title="Permalink to this headline">¶</a></h1>
 <p>This page provides a breakdown of the data source information available for a specific structure. The information is provided in csv format, which can be obtained through the <a class="reference external" href="https://aquaticbarriers.ca/">Canadian Aquatic Barriers Database’s web-map</a> by navigating to the <strong>Feature Data Source Details</strong> entry in the attribute popup window for the desired structure and clicking the download link.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/download_link.png"><img alt="../../_images/download_link.png" src="../../_images/download_link.png" style="width: 400px;" /></a>
@@ -413,10 +437,10 @@
             <p class="prev-next-title">Data Sources</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../docs_user_data_catalogue.html" title="next page">
+    <a class='right-next' id="next-link" href="docs_user_data_sources_spatial.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Catalogue</p>
+        <p class="prev-next-title">Spatial Data Sources</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

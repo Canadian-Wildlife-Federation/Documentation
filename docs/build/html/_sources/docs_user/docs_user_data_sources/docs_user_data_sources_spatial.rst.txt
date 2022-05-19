@@ -1,0 +1,486 @@
+====================
+Spatial Data Sources
+====================
+
+Federal Sources
+---------------
+
+-----
+
+Natural Resources Canada (NRCan)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _nrcan_cgndb:
+
+Canadian Geographical Names Database
+++++++++++++++++++++++++++++++++++++
+
+    Natural Resources Canada, 2020. Canadian Geographical Names Database. Government of Canada Open Government Portal. Accessed July 28, 2021, from https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c
+    
+    **Geographic coverage:** National
+    
+    **Source ID field:** CGNDB_ID
+    
+    **Short name:** nrcan_cgndb
+
+.. _nrcan_canvec_mm:
+
+CanVec Series – Manmade Features
+++++++++++++++++++++++++++++++++
+
+    Natural Resources Canada, 2019. Constructions and Land Use in Canada - CanVec Series - Manmade Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6
+
+    **Geographic coverage:** National
+
+    **Source ID field:** feature_id
+
+    **Short name:** nrcan_canvec_mm
+
+.. _nrcan_canvec_hyf:
+
+CanVec Series - Hydrographic Features
++++++++++++++++++++++++++++++++++++++
+
+    Natural Resources Canada, 2019. Lakes, Rivers and Glaciers in Canada - CanVec Series - Hydrographic Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b
+
+    **Geographic coverage:** National
+
+    **Source ID field:** feature_id
+
+    **Short name:** nrcan_canvec_hyf
+
+.. _nrcan_nhn:
+
+National Hydrographic Network (NHN)
++++++++++++++++++++++++++++++++++++
+
+    Natural Resources Canada, 2016. National Hydro Network - NHN - GeoBase Series. Government of Canada Open Government Portal. Accessed July 24, 2019, from https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977
+
+    **Geographic coverage:** National
+
+    **Source ID field:** nid
+
+    **Short name:** nrcan_nhn
+
+
+Statistics Canada
+~~~~~~~~~~~~~~~~~
+
+.. _statscan_census_subs:
+
+Intercensal - Census Subdivision Boundary Files
++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Statistics Canada, 2020. Intercensal - Census Subdivision Boundary Files. Accessed November 13, 2020, from https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20
+
+    **Geographic coverage:** National
+
+    **Source ID field:** csduid
+
+    **Short name:** statscan_census_subs
+
+
+United States Army Corps of Engineers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _usace_nid:
+
+National Inventory of Dams
+++++++++++++++++++++++++++
+
+    United States Army Corps of Engineers, 2022. National Inventory of Dams. United States Army. Accessed February 15, 2022, from https://nid.sec.usace.army.mil/#/downloads 
+
+    **Geographic coverage:** United States
+
+    **Source ID field:** federal_id
+
+    **Short name:** usace_nid
+
+
+Provincial/State Sources
+------------------------
+
+-----
+
+
+Alberta – Environment and Parks (AEP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _aep_bf_hy:
+
+Base Features Hydrography
++++++++++++++++++++++++++
+
+    Alberta Environment and Parks, 2000. Base Features Hydrography. Alberta Open Government Portal. Accessed January 31, 2020, from https://www.altalis.com/map;id=116
+
+    **Geographic coverage:** Alberta
+
+    **Source ID field:** bf_id
+
+    **Short name:** aep_bf_hy
+
+
+British Columbia – Environment and Climate Change Strategy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _bceccs_fiss:
+
+Provincial Obstacles to Fish Passage (FISS)
++++++++++++++++++++++++++++++++++++++++++++
+
+    Government of British Columbia Knowledge Management, 2007. Provincial Obstacles to Fish Passage. British Columbia Data Catalogue. Accessed October 2, 2019, from https://catalogue.data.gov.bc.ca/dataset/provincial-obstacles-to-fish-passage
+
+    **Geographic coverage:** British Columbia
+
+    **Source ID field:** fish_obstacle_point_id
+
+    **Short name:** bceccs_fiss
+
+
+British Columbia – Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _bcflnrord_wris_pubdams:
+
+BC Geographic Warehouse – Public Dams
++++++++++++++++++++++++++++++++++++++
+
+    Government of British Columbia Water Management, 1997. BC Dams. British Columbia Data Catalogue. Accessed March 9, 2019, from https://catalogue.data.gov.bc.ca/dataset/bc-dams
+
+    **Geographic coverage:** British Columbia
+
+    **Source ID field:** objectid
+
+    **Short name:** bcflnrord_wris_pubdams
+
+.. _bcflnrord_kml_pubdams:
+
+BC Public Dams KML
+++++++++++++++++++
+
+    Government of British Columbia, 2014. Dams-public-20140626.kmz. Accessed from https://www2.gov.bc.ca/assets/gov/farming-natural-resources-and-industry/natural-resource-use/land-water-use/water-use/dam-safety/dams-public-20140626-2.kmz 
+
+    **Geographic coverage:** British Columbia
+
+    **Source ID field:** objectid
+
+    **Short name:** bcflnrord_kml_pubdams
+
+.. _bcflnrord_fwa:
+
+Freshwater Atlas (FWA) Obstructions 
++++++++++++++++++++++++++++++++++++
+
+    GeoBC, 2008. Freshwater Atlas Obstructions. British Columbia Data Catalogue. Accessed December 17, 2019, from https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-obstructions
+
+    **Geographic coverage:** British Columbia
+
+    **Source ID field:** obstruction_id
+
+    **Short name:** bcflnrord_fwa
+
+
+Maine Office of Geographic Information Systems
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _megis_impounds:
+
+Impounds
+++++++++
+
+    Army Corp of Engineers (USACE), Maine Emergency Management Agency (MEMA), Maine Department of Environmental Protection (MEDEP), Maine Office of Geographic Information Systems, 2006. Impounds. Augusta, ME: Maine Office of Geographic Systems. Accessed January 26, 2022, from https://www1.maine.gov/geolib/catalog/indexaz.shtml.
+
+    **Geographic coverage:** State of Maine, United States of America
+
+    **Source ID field:** unique_id
+
+    **Short name:** megis_impounds
+
+
+New Brunswick – Energy and Resource Development 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _nberd_nbhn_mmh-nberd_nbhn_ho:
+
+New Brunswick Hydrographic Network (NBHN)
++++++++++++++++++++++++++++++++++++++++++
+
+    Government of New Brunswick Energy and Resource Development, 2020. New Brunswick Hydrographic Network (NBHN). Government of New Brunswick Open Data Portal. Accessed from https://gnb.socrata.com/Geographic-Data/New-Brunswick-Hydrographic-Network-NBHN-R-seau-Hyd/v2ft-66he
+
+    **Geographic coverage:** New Brunswick 
+
+    **Source ID field:** nid
+
+    **Short name (manmade hydrographic features):** nberd_nbhn_mmh
+
+    **Short name (hydrographic obstacle features):** nberd_nbhn_ho
+
+
+Newfoundland and Labrador – Environment, Climate Change and Municipalities 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _nleccm_nlpdi:
+
+Provincial Dam Inventory (NLPDI)
+++++++++++++++++++++++++++++++++
+
+    Government of Newfoundland and Labrador Water Resources Management, no date. Water Resources - Dams. Newfoundland and Labrador Water Resources Portal. Accessed January 27, 2021, from https://maps.gov.nl.ca/water/mapbrowser/Default.aspx
+
+    **Geographic coverage:** Newfoundland and Labrador
+
+    **Source ID field:** dam_index_num
+
+    **Short name:** nleccm_nlpdi
+
+
+Nova Scotia – Environment 
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _nse_td_wf:
+
+Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    a. Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Point Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/458x-dmz3
+    
+    b. Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Line Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Li/fpca-jrmt
+    
+    c. Service Nova Scotia and Internal Services, 2002. Nova Scotia Topographic DataBase - Water Features (Polygon Layer). Government of Nova Scotia Open Data Portal. Accessed April 5, 2019, from https://data.novascotia.ca/Lands-Forests-and-Wildlife/Nova-Scotia-Topographic-DataBase-Water-Features-Po/h8jb-hzrm
+
+    **Geographic coverage:** Nova Scotia
+
+    **Source ID field:** shape_fid
+
+    **Short name:** nse_td_wf
+
+.. _nse_wcsd_gfielding:
+
+Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Fielding, G., 2011. Barriers to Fish Passage in Nova Scotia: The Evolution of Water Control Barriers in Nova Scotia’s Watershed. [Undergraduate thesis, Dalhousie University]. Accessed from https://cdn.dal.ca/content/dam/dalhousie/pdf/science/environmental-science-program/Honours%20Theses/GillianFielding.pdf
+
+    **Geographic coverage:** Nova Scotia
+
+    **Source ID field:** dam_id_number
+
+    **Short name:** nse_wcsd_gfielding
+
+
+Ontario – Northern Development, Mines, Natural Resources and Forestry (MNDMNRF)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _mndmnrf_odi:
+
+Ontario Dam Inventory (ODI)
++++++++++++++++++++++++++++
+
+    Ontario Ministry of Natural Resources and Forestry, 2014. Ontario Dam Inventory. Ontario GeoHub. Accessed July 30, 2020, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-dam-inventory/about
+
+    **Geographic coverage:** Ontario
+
+    **Source ID field:** dam_id
+
+    **Short name:** mndmnrf_odi
+
+.. _mndmnrf_ohn:
+
+Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    a. Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Point. Ontario GeoHub. Accessed October 8, 2019, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-point/about
+
+    b. Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Lines. Ontario GeoHub. Accessed October 8, 2019, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-line/about
+
+    c. Ontario Ministry of Natural Resources and Forestry, 2010. Ontario Hydro Network (OHN) – Hydrographic Polygons. Ontario GeoHub. Accessed October 8, 2019, from https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-poly/about
+
+    **Geographic coverage:** Ontario
+
+    **Source ID field:** ogf_id
+
+    **Short name:** mndmnrf_ohn
+
+
+Québec – Ministère de l'Environnement et de la Lutte contre les changements climatiques 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _qmelcc_repbarrages:
+
+Répertoire des Barrages
++++++++++++++++++++++++
+
+    Gouvernement du Québec Ministère de l’Environnement et de la Lutte contre les changements climatiques, no date. Répertoire des barrages. Gouvernement du Québec. Accessed October 20, 2020, from https://www.cehq.gouv.qc.ca/barrages/default.asp
+
+    **Geographic coverage:** Québec
+
+    **Source ID field:** numéro_barrage
+
+    **Short name:** qmelcc_repbarrages
+
+
+Academic Institutions/NGO Sources
+---------------------------------
+
+-----
+
+Canadian Wildlife Federation (CWF)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _cwf_canfish:
+
+CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Cooke, S., Hatry, C., Smokorowksi, K., Clarke, K., Katopodis, C., Binder, T., Hasler, C., & Thiem, J., 2013. CanFishPass: Inventory of Canadian Fish Passage Facilities. Cooke Lab. Accessed from http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/ 
+
+    **Geographic coverage:** National
+
+    **Source ID field:** fid
+
+    **Short name:** cwf_canfish
+
+
+Food and Agriculture Organization (FAO) of the United Nations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _fao_aquastat:
+
+AQUASTAT Dam Database
++++++++++++++++++++++
+
+    Food and Agriculture Organization of the United Nations, 2016. AQUASTAT - FAO’s Global Information System on Water and Agriculture. Food and Agriculture Organization. Accessed from https://www.fao.org/aquastat/en/databases/dams
+
+    **Geographic coverage:** Global
+
+    **Source ID field:** id_fao
+
+    **Short name:** fao_aquastat
+
+
+Global Dam Watch
+~~~~~~~~~~~~~~~~
+
+.. _gdw_grand:
+
+Global Reservoir and Dam Database (GRanD)
++++++++++++++++++++++++++++++++++++++++++
+
+    Global Dam Watch, 2019. GDW’s Global Dam and Reservoir Datasets. Accessed February 1, 2019, from http://globaldamwatch.org/data/#core_global
+
+    **Geographic coverage:** Global
+
+    **Source ID field:** grand_id
+
+    **Short name:** gdw_grand
+
+.. _gdw_goodd:
+
+Global Georeferenced Database of Dams (GOODD)
++++++++++++++++++++++++++++++++++++++++++++++
+
+    Global Dam Watch, 2020. GOODD, a global dataset of more than 38,000 georeferenced dams. Accessed August 16, 2019, from http://globaldamwatch.org/data/#core_global
+
+    **Geographic coverage:** Global
+
+    **Source ID field:** dam_id
+
+    **Short name:** gdw_goodd
+
+
+Nature Conservancy of Canada (NCC)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _ncc_chu_ab:
+
+Canadian Hydrologic Units – Aquatic Barriers
+++++++++++++++++++++++++++++++++++++++++++++
+
+    Nature Conservancy of Canada, 2019. NCC Canadian Hydrologic Units. Conservation Biology Institute Data Basin. Accessed October 9, 2019, from https://databasin.org/datasets/a2097617294f49529f87c3630149d63c/
+
+    **Geographic coverage:** Maritimes
+
+    **Source ID field:** unique_id
+
+    **Short name:** ncc_chu_ab
+
+
+Stanford University
+~~~~~~~~~~~~~~~~~~~
+
+.. _su_npdp:
+
+National Performance of Dams Program (NPDP) Dam Database
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Stanford University Department of Civil and Environmental Engineering, 2019. NPDP Dams Database. National Performance of Dams Program. Accessed October 9, 2019, from https://npdp.stanford.edu/dams_database
+
+    **Geographic coverage:** Global
+
+    **Source ID field:** npdp_id
+
+    **Short name:** su_npdp
+
+
+Superior Watershed Partnership and Land Conservancy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _swp_lsdi:
+
+Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    Superior Watershed Partnership and Land Conservancy, no date. Lake Superior Dam Inventory. Funded by the United States Fish and Wildlife Service. Accessed December 4, 2019 from data provided by Jeff Koch of the Superior Watershed Partnership and Land Conservancy.
+
+    **Short name:** swp_lsdi
+
+Wisconsin Institute for Discovery 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _wid_fishwerks:
+
+Fishwerks
++++++++++
+
+    Wisconsin Institute for Discovery, no date. Fishwerks. Great Lakes Connectivity. Accessed October 9, 2019, from https://greatlakesconnectivity.org/
+
+    **Geographic coverage:** Great Lakes Region
+
+    **Source ID field:** barrier_id
+
+    **Short name:** wid_fishwerks
+
+
+Miscellaneous Sources
+---------------------
+
+-----
+
+MR Maps 
+~~~~~~~
+
+.. _mrmaps_nbwf: 
+
+Waterfalls of New Brunswick
++++++++++++++++++++++++++++
+
+
+    Richard, M., 2019. Waterfalls of New Brunswick. MR Maps. Accessed from https://www.mrmaps.ca/home/2019/5/19/waterfalls-of-new-brunswick
+
+    **Geographic coverage:** New Brunswick
+
+    **Source ID field:** nb_id
+
+    **Short name:** mrmaps_nbwf
+
+.. _mrmaps_nswf:
+
+Waterfalls of Nova Scotia
++++++++++++++++++++++++++
+
+    Richard, M., 2019. Waterfalls of Nova Scotia. MR Maps. Accessed June 4, 2021, from https://www.mrmaps.ca/home/2019/5/30/waterfalls-of-nova-scotia 
+
+    **Geographic coverage:** Nova Scotia
+
+    **Source ID field:** ns_id
+
+    **Short name:** mrmaps_nswf
