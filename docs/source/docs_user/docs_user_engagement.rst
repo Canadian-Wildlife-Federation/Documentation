@@ -19,7 +19,7 @@ The Stakeholder Engagement Framework comprises four components:
 
 4.	*Reciprocal data-sharing relationships* – The data-sharing relationships are established between CWF and existing data creators, compilers, and managers. The relationships are reciprocal to ensure mutual benefit, facilitate collaboration, prevent the duplication of efforts, and maintain long-term data currency. 
 
-Stakeholders include representatives from all levels of government, NGOs, local and community groups, researchers, and industry. The stakeholder engagement process has successfully provided advice on feasibility, identification of target end uses and associated data requirements, data acquisition and compilation, database design, and mechanisms to fill data gaps. This stakeholder network supports Canada-wide collaboration on aquatic connectivity, allows for efficient dissemination of information, and ensures that the CABD is a functional tool that can support a range of projects across multiple sectors (see Appendix A for a summary of identified use cases).
+Stakeholders include representatives from all levels of government, NGOs, local and community groups, researchers, and industry. The stakeholder engagement process has successfully provided advice on feasibility, identification of target end uses and associated data requirements, data acquisition and compilation, database design, and mechanisms to fill data gaps. This stakeholder network supports Canada-wide collaboration on aquatic connectivity, allows for efficient dissemination of information, and ensures that the CABD is a functional tool that can support a range of projects across multiple sectors.
 
 .. toctree::
     :hidden:

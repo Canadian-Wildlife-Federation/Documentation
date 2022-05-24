@@ -6,6 +6,131 @@ Data Sources
 
 The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
 
+Data Sources Search Table
+-------------------------
+
+-----
+
+.. table:: 
+   :class: datatable
+
+   ========== ======================== ============================================================================================== ============================================================================================================================================================== ==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+   Data Type  Source Type              Organization Name                                                                              Data Source Name                                                                                                                                               Data Source Short Name                                                                                                                                                                                      
+   ========== ======================== ============================================================================================== ============================================================================================================================================================== ==========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+   Spatial    Federal                  Natural Resources Canada (NRCan)                                                               Canadian Geographical Names Database                                                                                                                           :ref:`nrcan_cgndb <nrcan_cgndb>`                                                                                                                                                                                                                                        
+   Spatial    Federal                  Natural Resources Canada (NRCan)                                                               CanVec Series – Manmade Features                                                                                                                               :ref:`nrcan_canvec_mm <nrcan_canvec_mm>`                                                                                                                                                                                             
+   Spatial    Federal                  Natural Resources Canada (NRCan)                                                               CanVec Series - Hydrographic Features                                                                                                                          :ref:`nrcan_canvec_hyf <nrcan_canvec_hyf>`                                                                                                                                                                                            
+   Spatial    Federal                  Natural Resources Canada (NRCan)                                                               National Hydrographic Network (NHN)                                                                                                                            :ref:`nrcan_nhn <nrcan_nhn>`                                                                                                                                                                                                   
+   Spatial    Federal                  Statistics Canada                                                                              Intercensal - Census Subdivision Boundary Files                                                                                                                :ref:`statscan_census_subs <statscan_census_subs>`                                                                                                                                                                                        
+   Spatial    Federal                  United States Army Corps of Engineers                                                          National Inventory of Dams                                                                                                                                     :ref:`usace_nid <usace_nid>`                                                                                                                                                                                                   
+   Spatial    Provincial/State         Alberta - Environment and Parks (AEP)                                                          Base Features Hydrography                                                                                                                                      :ref:`aep_bf_hy <aep_bf_hy>`                                                                                                                                                                                                   
+   Spatial    Provincial/State         British Columbia - Environment and Climate Change Strategy                                     Provincial Obstacles to Fish Passage (FISS)                                                                                                                    :ref:`bceccs_fiss <bceccs_fiss>`                                                                                                                                                                                                 
+   Spatial    Provincial/State         British Columbia - Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD) BC Geographic Warehouse – Public Dams                                                                                                                          :ref:`bcflnrord_wris_pubdams <bcflnrord_wris_pubdams>`                                                                                                                                                                                      
+   Spatial    Provincial/State         British Columbia - Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD) BC Public Dams KML                                                                                                                                             :ref:`bcflnrord_kml_pubdams <bcflnrord_kml_pubdams>`                                                                                                                                                                                       
+   Spatial    Provincial/State         British Columbia - Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD) Freshwater Atlas (FWA) Obstructions                                                                                                                            :ref:`bcflnrord_fwa <bcflnrord_fwa>`                                                                                                                                                                                               
+   Spatial    Provincial/State         Maine - Office of Geographic Information Systems                                               Impounds                                                                                                                                                       :ref:`megis_impounds <megis_impounds>`                                                                                                                                                                                              
+   Spatial    Provincial/State         New Brunswick - Energy and Resource Development                                                New Brunswick Hydrographic Network (NBHN)                                                                                                                      :ref:`nberd_nbhn_mmh, nberd_nbhn_ho <nberd_nbhn_mmh-nberd_nbhn_ho>`                                                                                                                                                                               
+   Spatial    Provincial/State         Newfoundland and Labrador - Environment, Climate Change and Municipalities                     Provincial Dam Inventory (NLPDI)                                                                                                                               :ref:`nleccm_nlpdi <nleccm_nlpdi>`                                                                                                                                                                                                
+   Spatial    Provincial/State         Nova Scotia - Environment                                                                      Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)                                                                                       :ref:`nse_td_wf <nse_td_wf>`                                                                                                                                                                                                   
+   Spatial    Provincial/State         Nova Scotia - Environment                                                                      Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)                                                                     :ref:`nse_wcsd_gfielding <nse_wcsd_gfielding>`                                                                                                                                                                                          
+   Spatial    Provincial/State         Ontario - Northern Development, Mines, Natural Resources and Foretry (MNDMNRF)                 Ontario Dam Inventory (ODI)                                                                                                                                    :ref:`mndmnrf_odi <mndmnrf_odi>`                                                                                                                                                                                                
+   Spatial    Provincial/State         Ontario - Northern Development, Mines, Natural Resources and Foretry (MNDMNRF)                 Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)                                                                                 :ref:`mndmnrf_ohn <mndmnrf_ohn>`                                                                                                                                                                                                 
+   Spatial    Provincial/State         Québec – Ministère de l’Environnement et de la Lutte contre les changements climatiques        Répertoire des Barrages                                                                                                                                        :ref:`qmelcc_repbarrages <qmelcc_repbarrages>`                                                                                                                                                                                          
+   Spatial    Academic Institution/NGO Canadian Wildlife Federation (CWF)                                                             CANFISHPASS Database (inherited from Cooke Lab – Carleton University)                                                                                          :ref:`cwf_canfish <cwf_canfish>`                                                                                                                                                                                                 
+   Spatial    Academic Institution/NGO Food and Agriculture Organization (FAO) of the United Nations                                  AQUASTAT Dam Database                                                                                                                                          :ref:`fao_aquastat <fao_aquastat>`                                                                                                                                                                                                
+   Spatial    Academic Institution/NGO Global Dam Watch                                                                               Global Reservoir and Dam Database (GRanD)                                                                                                                      :ref:`gdw_grand <gdw_grand>`                                                                                                                                                                                                   
+   Spatial    Academic Institution/NGO Global Dam Watch                                                                               Global Georeferenced Database of Dams (GOODD)                                                                                                                  :ref:`gdw_goodd <gdw_goodd>`                                                                                                                                                                                                   
+   Spatial    Academic Institution/NGO Nature Conservancy of Canada (NCC)                                                             Canadian Hydrologic Units – Aquatic Barriers                                                                                                                   :ref:`ncc_chu_ab <ncc_chu_ab>`                                                                                                                                                                                                  
+   Spatial    Academic Institution/NGO Stanford University                                                                            National Performance of Dams Program (NPDP) Dam Database                                                                                                       :ref:`su_npdp <su_npdp>`                                                                                                                                                                                                     
+   Spatial    Academic Institution/NGO Superior Watershed Partnership and Land Conservancy                                            Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)                                                                                      :ref:`swp_lsdi <swp_lsdi>`                                                                                                                                                                                                    
+   Spatial    Academic Institution/NGO Wisconsin Institute for Discovery                                                              Fishwerks                                                                                                                                                      :ref:`wid_fishwerks <wid_fishwerks>`                                                                                                                                                                                               
+   Spatial    Miscellaneous            MR Maps                                                                                        Waterfalls of New Brunswick                                                                                                                                    :ref:`mrmaps_nbwf <mrmaps_nbwf>`                                                                                                                                                                                                 
+   Spatial    Miscellaneous            MR Maps                                                                                        Waterfalls of Nova Scotia                                                                                                                                      :ref:`mrmaps_nswf <mrmaps_nswf>`                                                                                                                                                                                                 
+   Nonspatial Federal                  Environment and Climate Change Canada                                                          Canadian Environmental Assessment Agency                                                                                                                       :ref:`ecc_ceaa_090152237 <ecc_ceaa_090152237>`                                                                                                                                                                                          
+   Nonspatial Federal                  Fisheries and Oceans (DFO)                                                                     Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament) :ref:`dfo_annu_rep_2003_4 <dfo_annu_rep_2003_4>`                                                                                                                                                                                         
+   Nonspatial Federal                  Fisheries and Oceans (DFO)                                                                     Information in Support of a Recovery Potential Assessment of Bull Trout                                                                                        :ref:`dfo_sawatsky_2016 <dfo_sawatsky_2016>`                                                                                                                                                                                           
+   Nonspatial Federal                  Fisheries and Oceans (DFO)                                                                     Recovery Strategy for the Atlantic Whitefish                                                                                                                   :ref:`sarpr_atlantic_wfish <sarpr_atlantic_wfish>`                                                                                                                                                                                        
+   Nonspatial Federal                  Natural Resources Canada (NRCan)                                                               Atlantic Salmon Rehabilitation Project                                                                                                                         :ref:`dfo_atl_sal_rehab_ns <dfo_atl_sal_rehab_ns>`                                                                                                                                                                                        
+   Nonspatial Federal                  Prairie Farm Rehabilitation Administration (PFRA)                                              PFRA Dam Inventory                                                                                                                                             :ref:`pfra_dams <pfra_dams>`                                                                                                                                                                                                   
+   Nonspatial Provincial               Alberta – Agriculture, Forestry and Rural Economic Development                                 Alberta Irrigation Information                                                                                                                                 :ref:`aafred_aii <aafred_aii>`                                                                                                                                                                                                  
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Alberta Dam Safety Map                                                                                                                                         :ref:`aep_dsm <aep_dsm>`                                                                                                                                                                                                     
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Berry Creek (Carolside) Reservoir Fisheries Management Objectives                                                                                              :ref:`aep_fmo_berry_crk <aep_fmo_berry_crk>`                                                                                                                                                                                           
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Bow River Basin – TransAlta Operations                                                                                                                         :ref:`aep_tao_bow_riv_basin <aep_tao_bow_riv_basin>`                                                                                                                                                                                       
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe)                                                                   :ref:`aep_cldps <aep_cldps>`                                                                                                                                                                                                   
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Fish Stocking Maps                                                                                                                                             :ref:`aep_fsm_moundred_res <aep_fsm_moundred_res>`, :ref:`aep_fsm_open_crk <aep_fsm_open_crk>`                                                                                                                                                                      
+   Nonspatial Provincial               Alberta – Environment and Parks                                                                Little Bow Reservoir FIN Summary                                                                                                                               :ref:`aep_littlebow_res_fin_2020 <aep_littlebow_res_fin_2020>`                                                                                                                                                                                 
+   Nonspatial Provincial               Alberta - Natural Resources Conservation Board                                                 Pine Coolee Water Management Project                                                                                                                           :ref:`nrcb_earp_app9401 <nrcb_earp_app9401>`                                                                                                                                                                                           
+   Nonspatial Provincial               Alberta – Sustainable Resource Development                                                     Bathymetry Maps                                                                                                                                                :ref:`asrd_bathym_chin <asrd_bathym_chin>`, :ref:`asrd_bathym_forty_mile <asrd_bathym_forty_mile>`, :ref:`asrd_bathym_jensen <asrd_bathym_jensen>`, :ref:`asrd_bathym_keho <asrd_bathym_keho>`, :ref:`asrd_bathym_newell <asrd_bathym_newell>`, :ref:`asrd_bathym_mcgregor <asrd_bathym_mcgregor>`, :ref:`asrd_bathym_payne <asrd_bathym_payne>`, :ref:`asrd_bathym_st_mary <asrd_bathym_st_mary>`, :ref:`asrd_bathym_stafford <asrd_bathym_stafford>`, :ref:`asrd_bathym_travers <asrd_bathym_travers>`  
+   Nonspatial Provincial               Newfoundland and Labrador – Municipal Affairs and Environment                                  Permits to Alter a Body of Water                                                                                                                               :ref:`nl_mae_permit_alt9067 <nl_mae_permit_alt9067>`, :ref:`nl_mae_permit_alt9371 <nl_mae_permit_alt9371>`                                                                                                                                                                
+   Nonspatial Provincial               Nova Scotia – Agriculture                                                                      Dykeland Sites                                                                                                                                                 :ref:`ns_dykeland_sites <ns_dykeland_sites>`                                                                                                                                                                                          
+   Nonspatial Municipal                City of Calgary, Alberta                                                                       Glenmore Dam Infrastructure Improvements                                                                                                                       :ref:`ab_cal_gdii <ab_cal_gdii>`                                                                                                                                                                                                 
+   Nonspatial Municipal                City of Calgary, Alberta                                                                       Glenmore Reservoir Dam Operations                                                                                                                              :ref:`ab_cal_grdo <ab_cal_grdo>`                                                                                                                                                                                                 
+   Nonspatial Municipal                City of Dawson Creek, British Columbia                                                         Drinking Water Quality Reports                                                                                                                                 :ref:`bc_dc_wqar2019 <bc_dc_wqar2019>`, :ref:`bc_dc_wqar2016 <bc_dc_wqar2016>`, :ref:`bc_dc_wqap2015 <bc_dc_wqap2015>`                                                                                                                                                             
+   Nonspatial Municipal                Eastern Irrigation District, Alberta                                                           Bassano Dam                                                                                                                                                    :ref:`aeid_bassano <aeid_bassano>`                                                                                                                                                                                                
+   Nonspatial Municipal                Halifax Water                                                                                  Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Plan                                                                               :ref:`ns_hal_clews_swpp <ns_hal_clews_swpp>`                                                                                                                                                                                           
+   Nonspatial Municipal                Halifax Water                                                                                  Chain Lake Dam and Pockwock Lake Dam – Consultant Services                                                                                                     :ref:`ns_hal_p25_2021 <ns_hal_p25_2021>`                                                                                                                                                                                             
+   Nonspatial Municipal                Halifax Water                                                                                  Halifax Water Dam Safety Review                                                                                                                                :ref:`ns_hal_p24_2019 <ns_hal_p24_2019>`                                                                                                                                                                                             
+   Nonspatial Municipal                Halifax Water                                                                                  Integrated Resource Plan – Water System Review                                                                                                                 :ref:`ns_hal_hwirp_v3 <ns_hal_hwirp_v3>`                                                                                                                                                                                             
+   Nonspatial Energy Company           Irrican Power                                                                                  Chin Chute Power Plant                                                                                                                                         :ref:`irrican_chin_chute <irrican_chin_chute>`                                                                                                                                                                                          
+   Nonspatial Energy Company           Irrican Power                                                                                  Drops 4, 5, and 6 Power Plant                                                                                                                                  :ref:`irrican_drops_456 <irrican_drops_456>`                                                                                                                                                                                           
+   Nonspatial Energy Company           Irrican Power                                                                                  Raymond Reservoir Power Plant                                                                                                                                  :ref:`irrican_ray_res <irrican_ray_res>`                                                                                                                                                                                             
+   Nonspatial Energy Company           Lower Churchill Management Corporation                                                         Muskrat Falls Dams – Cold Climate Considerations in Design and Construction                                                                                    :ref:`lcmc_protulipac_et_al_2018 <lcmc_protulipac_et_al_2018>`                                                                                                                                                                                  
+   Nonspatial Energy Company           NB Power                                                                                       Hydro Tour                                                                                                                                                     :ref:`nbpower_hydro_tour <nbpower_hydro_tour>`                                                                                                                                                                                          
+   Nonspatial Energy Company           Newfoundland and Labrador Hydro                                                                Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017-70503)                                                                        :ref:`nlhydro_adsr_2017_70503 <nlhydro_adsr_2017_70503>`                                                                                                                                                                                     
+   Nonspatial Energy Company           Newfoundland and Labrador Hydro                                                                Depreciation Methodology and Asset Service Lives                                                                                                               :ref:`nlhydro_ca_nlh_155 <nlhydro_ca_nlh_155>`                                                                                                                                                                                          
+   Nonspatial Energy Company           Newfoundland and Labrador Hydro                                                                Operations – Hydro Generation                                                                                                                                  :ref:`nlhydro_ops_hydro <nlhydro_ops_hydro>`                                                                                                                                                                                           
+   Nonspatial Energy Company           Newfoundland Power                                                                             2019 Depreciation Study – Hydro Plant Decommissioning Report                                                                                                   :ref:`nlp_depreciation_2019 <nlp_depreciation_2019>`                                                                                                                                                                                       
+   Nonspatial Energy Company           Newfoundland Power                                                                             Dam Safety Inspection Reports                                                                                                                                  :ref:`nlp_dsi_2007 <nlp_dsi_2007>`                                                                                                                                                                                                
+   Nonspatial Energy Company           Newfoundland Power                                                                             Facility Rehabilitation                                                                                                                                        :ref:`nlp_fac_rehab_2014 <nlp_fac_rehab_2014>`, :ref:`nlp_fac_rehab_2012 <nlp_fac_rehab_2012>`                                                                                                                                                                      
+   Nonspatial Energy Company           Newfoundland Power                                                                             Potential Projects to Increase Energy Production                                                                                                               :ref:`nlp_ppiep_2009 <nlp_ppiep_2009>`                                                                                                                                                                                             
+   Nonspatial Energy Company           Newfoundland Power                                                                             Public Safety Around Dams                                                                                                                                      :ref:`nlp_pub_safety_2016 <nlp_pub_safety_2016>`                                                                                                                                                                                         
+   Nonspatial Energy Company           Newfoundland Power                                                                             Rattling Brook Fisheries Compensation                                                                                                                          :ref:`nlp_rbfc_2011 <nlp_rbfc_2011>`                                                                                                                                                                                               
+   Nonspatial Energy Company           Newfoundland Power                                                                             Sustainable Electricity Program                                                                                                                                :ref:`nlp_sep_2008 <nlp_sep_2008>`                                                                                                                                                                                                
+   Nonspatial Energy Company           Nova Scotia Power                                                                              Nova Scotia Power Incorporated Hydro Asset Study – Redacted                                                                                                    :ref:`nsp_ihas <nsp_ihas>`                                                                                                                                                                                                    
+   Nonspatial Energy Company           Suncor Energy                                                                                  Investor Mining and Tailings Safety Initiative Disclosure Table                                                                                                :ref:`suncor_safety_initiative <suncor_safety_initiative>`                                                                                                                                                                                    
+   Nonspatial Energy Company           TransAlta                                                                                      Barrier Power Plant                                                                                                                                            :ref:`transalta_barrier <transalta_barrier>`                                                                                                                                                                                           
+   Nonspatial Energy Company           TransAlta                                                                                      Bearspaw Plant                                                                                                                                                 :ref:`transalta_bearspaw <transalta_bearspaw>`                                                                                                                                                                                          
+   Nonspatial Energy Company           TransAlta                                                                                      Belly River Hydro Facility                                                                                                                                     :ref:`transalta_belly <transalta_belly>`                                                                                                                                                                                            
+   Nonspatial Energy Company           TransAlta                                                                                      Bighorn Plant                                                                                                                                                  :ref:`transalta_bighorn <transalta_bighorn>`                                                                                                                                                                                           
+   Nonspatial Energy Company           TransAlta                                                                                      Brazeau Plant                                                                                                                                                  :ref:`transalta_brazeau <transalta_brazeau>`                                                                                                                                                                                           
+   Nonspatial Energy Company           TransAlta                                                                                      Cascade Plant                                                                                                                                                  :ref:`transalta_cascade <transalta_cascade>`                                                                                                                                                                                           
+   Nonspatial Energy Company           TransAlta                                                                                      Ghost Plant                                                                                                                                                    :ref:`transalta_ghost <transalta_ghost>`                                                                                                                                                                                            
+   Nonspatial Energy Company           TransAlta                                                                                      Horseshoe Plant                                                                                                                                                :ref:`transalta_horseshoe <transalta_horseshoe>`                                                                                                                                                                                         
+   Nonspatial Energy Company           TransAlta                                                                                      Interlakes Plant                                                                                                                                               :ref:`transalta_interlakes <transalta_interlakes>`                                                                                                                                                                                        
+   Nonspatial Energy Company           TransAlta                                                                                      Kananaskis Plant                                                                                                                                               :ref:`transalta_kananaskis <transalta_kananaskis>`                                                                                                                                                                                       
+   Nonspatial Energy Company           TransAlta                                                                                      Pocaterra Plant                                                                                                                                                :ref:`transalta_pocaterra <transalta_pocaterra>`                                                                                                                                                                                         
+   Nonspatial Energy Company           TransAlta                                                                                      Rundle Plant                                                                                                                                                   :ref:`transalta_rundle <transalta_rundle>`                                                                                                                                                                                            
+   Nonspatial Energy Company           TransAlta                                                                                      Sheerness Generating Station                                                                                                                                   :ref:`transalta_sheerness <transalta_sheerness>`                                                                                                                                                                                         
+   Nonspatial Energy Company           TransAlta                                                                                      Spray Hydro Facility                                                                                                                                           :ref:`transalta_spray <transalta_spray>`                                                                                                                                                                                             
+   Nonspatial Energy Company           TransAlta                                                                                      St. Mary Hydro Facility                                                                                                                                        :ref:`transalta_st_mary <transalta_st_mary>`                                                                                                                                                                                           
+   Nonspatial Energy Company           TransAlta                                                                                      Taylor Hydro Facility                                                                                                                                          :ref:`transalta_taylor <transalta_taylor>`                                                                                                                                                                                            
+   Nonspatial Energy Company           TransAlta                                                                                      Three Sisters Plant                                                                                                                                            :ref:`transalta_three_sisters <transalta_three_sisters>`                                                                                                                                                                                     
+   Nonspatial Energy Company           TransAlta                                                                                      Waterton Hydro Facility                                                                                                                                        :ref:`transalta_waterton <transalta_waterton>`                                                                                                                                                                                          
+   Nonspatial Academic Institution/NGO Alberta WaterPortal Society                                                                    Bow River Irrigation District                                                                                                                                  :ref:`awps_brid <awps_brid>`                                                                                                                                                                                                   
+   Nonspatial Academic Institution/NGO Alberta WaterPortal Society                                                                    St. Mary River Irrigation District                                                                                                                             :ref:`awps_smrid <awps_smrid>`                                                                                                                                                                                                  
+   Nonspatial Academic Institution/NGO Alberta Wilderness Association                                                                                                                                                                                                                                :ref:`awa_obed_spill <awa_obed_spill>`                                                                                                                                                                                              
+   Nonspatial Academic Institution/NGO Shubenacadie Canal Commission                                                                  The Locks                                                                                                                                                      :ref:`scc_locks <scc_locks>`                                                                                                                                                                                                   
+   Nonspatial Academic Institution/NGO South East Alberta Watershed Alliance (SEAWA)                                                  Pakowki Lake Watershed Profile                                                                                                                                 :ref:`seawa_pakowki_lake <seawa_pakowki_lake>`                                                                                                                                                                                          
+   Nonspatial Consulting Reports       Advanced Construction Techniques Ltd.                                                          St. Mary Dam Spillway Replacement Project                                                                                                                      :ref:`act_st_mary_spillway <act_st_mary_spillway>`                                                                                                                                                                                        
+   Nonspatial Consulting Reports       AMEC Americas Ltd.                                                                             Flood Risk Mapping Project                                                                                                                                     :ref:`amec_frmp_2013 <amec_frmp_2013>`                                                                                                                                                                                              
+   Nonspatial Consulting Reports       AMEC Americas Ltd.                                                                             South Saskatchewan River Basin in Alberta: Water Supply Study                                                                                                  :ref:`amec_ssrba_wss <amec_ssrba_wss>`                                                                                                                                                                                              
+   Nonspatial Consulting Reports       East Coast Aquatics Inc.                                                                       Biological Assessment for Proposed Liverpool Wind Farm                                                                                                         :ref:`eca_bio_assess <eca_bio_assess>`                                                                                                                                                                                              
+   Nonspatial Consulting Reports       Golder Associates Inc.                                                                         Genesee Cooling Pond Thermal and Water Quality Modelling Study                                                                                                 :ref:`golder_genesee_2013 <golder_genesee_2013>`                                                                                                                                                                                         
+   Nonspatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Eastern Newfoundland                                                                                                       :ref:`golder_inv_nl_2016 <golder_inv_nl_2016>`                                                                                                                                                                                          
+   Nonspatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Newfoundland and Labrador Year Three                                                                                       :ref:`golder_inv_nl_2019 <golder_inv_nl_2019>`                                                                                                                                                                                          
+   Nonspatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Newfoundland and Labrador Year Two                                                                                         :ref:`golder_inv_nl_2017 <golder_inv_nl_2017>`                                                                                                                                                                                          
+   Nonspatial Consulting Reports       MPE Engineering Ltd.                                                                           Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios                                                                                  :ref:`mpe_aep_prov_inventory <mpe_aep_prov_inventory>`                                                                                                                                                                                      
+   Nonspatial Consulting Reports       Power Advisory LLC                                                                             Review of the Newfoundland and Labrador Electricity System                                                                                                     :ref:`pallc_nl_elec <pallc_nl_elec>`                                                                                                                                                                                               
+   Nonspatial Consulting Reports       SNC-Lavalin Group Inc.                                                                         Lower Churchill Project Design Criteria                                                                                                                        :ref:`sncl_lower_churchill <sncl_lower_churchill>`                                                                                                                                                                                        
+   Nonspatial Peer-reviewed Articles   Alberta Law Review                                                                                                                                                                                                                                            :ref:`alrs_spray_lakes <alrs_spray_lakes>`                                                                                                                                                                                            
+   Nonspatial Peer-reviewed Articles   Canadian Geotechnical Journal                                                                                                                                                                                                                                 :ref:`cgj_williams_etal_1983 <cgj_williams_etal_1983>`                                                                                                                                                                                      
+   Nonspatial Miscellaneous            Wikipedia                                                                                      Dickson Dam                                                                                                                                                    :ref:`wiki_dickson_dam <wiki_dickson_dam>`                                                                                                                                                                                            
+   Nonspatial Miscellaneous            Wikipedia                                                                                      List of Canadian Waterfalls                                                                                                                                    :ref:`wiki_cdn_wfs <wiki_cdn_wfs>`                                                                                                                                                                                                
+   Nonspatial Miscellaneous            Wikipedia                                                                                      List of Generating Stations in British Columbia                                                                                                                :ref:`wiki_gs_bc <wiki_gs_bc>`                                                                                                                                                                                                  
+   Nonspatial Miscellaneous            Wikipedia                                                                                      List of Generating Stations in New Brunswick                                                                                                                   :ref:`wiki_nb_hydro <wiki_nb_hydro>`                                                                                                                                                                                               
+   Nonspatial Miscellaneous            Wikipedia                                                                                      Little Bow Lake Reservoir                                                                                                                                      :ref:`wiki_lbr <wiki_lbr>`                                                                                                                                                                                                    
+   ========== ======================== ============================================================================================== ============================================================================================================================================================== ========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================== 
+
 Spatial Data Sources
 --------------------
 
@@ -14,9 +139,10 @@ Spatial Data Sources
 Federal Sources
 ~~~~~~~~~~~~~~~
 
-
 Natural Resources Canada (NRCan)
 ++++++++++++++++++++++++++++++++
+
+.. _nrcan_cgndb:
 
 Canadian Geographical Names Database
 ````````````````````````````````````
@@ -29,6 +155,7 @@ Canadian Geographical Names Database
     
     **Short name:** nrcan_cgndb
 
+.. _nrcan_canvec_mm:
 
 CanVec Series – Manmade Features
 ````````````````````````````````
@@ -41,6 +168,7 @@ CanVec Series – Manmade Features
 
     **Short name:** nrcan_canvec_mm
 
+.. _nrcan_canvec_hyf:
 
 CanVec Series - Hydrographic Features
 `````````````````````````````````````
@@ -53,6 +181,7 @@ CanVec Series - Hydrographic Features
 
     **Short name:** nrcan_canvec_hyf
 
+.. _nrcan_nhn:
 
 National Hydrographic Network (NHN)
 ```````````````````````````````````
@@ -69,6 +198,8 @@ National Hydrographic Network (NHN)
 Statistics Canada
 +++++++++++++++++
 
+.. _statscan_census_subs:
+
 Intercensal - Census Subdivision Boundary Files
 ```````````````````````````````````````````````
 
@@ -83,6 +214,8 @@ Intercensal - Census Subdivision Boundary Files
 
 United States Army Corps of Engineers
 +++++++++++++++++++++++++++++++++++++
+
+.. _usace_nid:
 
 National Inventory of Dams
 ``````````````````````````
@@ -102,6 +235,8 @@ Provincial/State Sources
 Alberta – Environment and Parks (AEP)
 +++++++++++++++++++++++++++++++++++++
 
+.. _aep_bf_hy:
+
 Base Features Hydrography
 `````````````````````````
 
@@ -116,6 +251,8 @@ Base Features Hydrography
 
 British Columbia – Environment and Climate Change Strategy
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _bceccs_fiss:
 
 Provincial Obstacles to Fish Passage (FISS)
 ```````````````````````````````````````````
@@ -132,6 +269,8 @@ Provincial Obstacles to Fish Passage (FISS)
 British Columbia – Forests, Lands, Natural Resource Operations and Rural Development (FLNRORD)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _bcflnrord_wris_pubdams:
+
 BC Geographic Warehouse – Public Dams
 `````````````````````````````````````
 
@@ -143,6 +282,7 @@ BC Geographic Warehouse – Public Dams
 
     **Short name:** bcflnrord_wris_pubdams
 
+.. _bcflnrord_kml_pubdams:
 
 BC Public Dams KML
 ``````````````````
@@ -155,6 +295,7 @@ BC Public Dams KML
 
     **Short name:** bcflnrord_kml_pubdams
 
+.. _bcflnrord_fwa:
 
 Freshwater Atlas (FWA) Obstructions 
 ```````````````````````````````````
@@ -171,6 +312,8 @@ Freshwater Atlas (FWA) Obstructions
 Maine Office of Geographic Information Systems
 ++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _megis_impounds:
+
 Impounds
 ````````
 
@@ -186,6 +329,8 @@ Impounds
 New Brunswick – Energy and Resource Development 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _nberd_nbhn_mmh-nberd_nbhn_ho:
+
 New Brunswick Hydrographic Network (NBHN)
 `````````````````````````````````````````
 
@@ -195,13 +340,15 @@ New Brunswick Hydrographic Network (NBHN)
 
     **Source ID field:** nid
 
-    Short name (manmade hydrographic features): nberd_nbhn_mmh
+    **Short name (manmade hydrographic features):** nberd_nbhn_mmh
 
-    Short name (hydrographic obstacle features): nberd_nbhn_ho
+    **Short name (hydrographic obstacle features):** nberd_nbhn_ho
 
 
 Newfoundland and Labrador – Environment, Climate Change and Municipalities 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _nleccm_nlpdi:
 
 Provincial Dam Inventory (NLPDI)
 ````````````````````````````````
@@ -218,6 +365,8 @@ Provincial Dam Inventory (NLPDI)
 Nova Scotia – Environment 
 +++++++++++++++++++++++++
 
+.. _nse_td_wf:
+
 Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)
 ````````````````````````````````````````````````````````````````````````
 
@@ -233,6 +382,7 @@ Topographic Database – Water Feature Points (a), Lines (b), Polygons (c)
 
     **Short name:** nse_td_wf
 
+.. _nse_wcsd_gfielding:
 
 Water Control Structure Database (accessed from Gillian Fielding unpublished thesis, 2011)
 ``````````````````````````````````````````````````````````````````````````````````````````
@@ -249,6 +399,8 @@ Water Control Structure Database (accessed from Gillian Fielding unpublished the
 Ontario – Northern Development, Mines, Natural Resources and Forestry (MNDMNRF)
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _mndmnrf_odi:
+
 Ontario Dam Inventory (ODI)
 ```````````````````````````
 
@@ -260,6 +412,7 @@ Ontario Dam Inventory (ODI)
 
     **Short name:** mndmnrf_odi
 
+.. _mndmnrf_ohn:
 
 Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)
 ``````````````````````````````````````````````````````````````````````````````
@@ -280,6 +433,8 @@ Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)
 Québec – Ministère de l'Environnement et de la Lutte contre les changements climatiques 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _qmelcc_repbarrages:
+
 Répertoire des Barrages
 ```````````````````````
 
@@ -298,6 +453,8 @@ Academic Institutions/NGO Sources
 Canadian Wildlife Federation (CWF)
 ++++++++++++++++++++++++++++++++++
 
+.. _cwf_canfish:
+
 CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
 `````````````````````````````````````````````````````````````````````
 
@@ -312,6 +469,8 @@ CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
 
 Food and Agriculture Organization (FAO) of the United Nations 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _fao_aquastat:
 
 AQUASTAT Dam Database
 `````````````````````
@@ -328,6 +487,8 @@ AQUASTAT Dam Database
 Global Dam Watch
 ++++++++++++++++
 
+.. _gdw_grand:
+
 Global Reservoir and Dam Database (GRanD)
 `````````````````````````````````````````
 
@@ -339,6 +500,7 @@ Global Reservoir and Dam Database (GRanD)
 
     **Short name:** gdw_grand
 
+.. _gdw_goodd:
 
 Global Georeferenced Database of Dams (GOODD)
 `````````````````````````````````````````````
@@ -355,6 +517,8 @@ Global Georeferenced Database of Dams (GOODD)
 Nature Conservancy of Canada (NCC)
 ++++++++++++++++++++++++++++++++++
 
+.. _ncc_chu_ab:
+
 Canadian Hydrologic Units – Aquatic Barriers
 ````````````````````````````````````````````
 
@@ -369,6 +533,8 @@ Canadian Hydrologic Units – Aquatic Barriers
 
 Stanford University
 +++++++++++++++++++
+
+.. _su_npdp:
 
 National Performance of Dams Program (NPDP) Dam Database
 ````````````````````````````````````````````````````````
@@ -385,6 +551,8 @@ National Performance of Dams Program (NPDP) Dam Database
 Superior Watershed Partnership and Land Conservancy
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _swp_lsdi:
+
 Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
 `````````````````````````````````````````````````````````````````````````
 
@@ -394,6 +562,8 @@ Lake Superior Dam Inventory (funded by the U.S Fish and Wildlife Service)
 
 Wisconsin Institute for Discovery 
 +++++++++++++++++++++++++++++++++
+
+.. _wid_fishwerks:
 
 Fishwerks
 `````````
@@ -413,6 +583,8 @@ Miscellaneous Sources
 MR Maps 
 +++++++
 
+.. _mrmaps_nbwf: 
+
 Waterfalls of New Brunswick
 ```````````````````````````
 
@@ -424,6 +596,8 @@ Waterfalls of New Brunswick
     **Source ID field:** nb_id
 
     **Short name:** mrmaps_nbwf
+
+.. _mrmaps_nswf:
 
 Waterfalls of Nova Scotia
 `````````````````````````
@@ -447,6 +621,8 @@ Federal Sources
 Environment and Climate Change Canada
 +++++++++++++++++++++++++++++++++++++
 
+.. _ecc_ceaa_090152237:
+
 Canadian Environmental Assessment Agency
 ````````````````````````````````````````
 
@@ -457,6 +633,8 @@ Canadian Environmental Assessment Agency
 Fisheries and Oceans (DFO)
 ++++++++++++++++++++++++++
 
+.. _dfo_annu_rep_2003_4:
+
 Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament)
 ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
@@ -464,6 +642,7 @@ Administration and Enforcement of the Fish Habitat Protection and Pollution Prev
 
     **Short name:** dfo_annu_rep_2003_4
 
+.. _dfo_sawatsky_2016:
 
 Information in Support of a Recovery Potential Assessment of Bull Trout
 ```````````````````````````````````````````````````````````````````````
@@ -472,6 +651,7 @@ Information in Support of a Recovery Potential Assessment of Bull Trout
 
     **Short name:** dfo_sawatsky_2016
 
+.. _sarpr_atlantic_wfish:
 
 Recovery Strategy for the Atlantic Whitefish
 ````````````````````````````````````````````
@@ -484,6 +664,8 @@ Recovery Strategy for the Atlantic Whitefish
 Natural Resources Canada (NRCan)
 ++++++++++++++++++++++++++++++++
 
+.. _dfo_atl_sal_rehab_ns:
+
 Atlantic Salmon Rehabilitation Project
 ``````````````````````````````````````
 
@@ -494,6 +676,8 @@ Atlantic Salmon Rehabilitation Project
 
 Prairie Farm Rehabilitation Administration (PFRA)
 +++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _pfra_dams:
 
 PFRA Dam Inventory 
 ``````````````````
@@ -509,6 +693,8 @@ Provincial Sources
 Alberta – Agriculture, Forestry and Rural Economic Development
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.. _aafred_aii:
+
 Alberta Irrigation Information 
 ``````````````````````````````
 
@@ -520,6 +706,8 @@ Alberta Irrigation Information
 Alberta – Environment and Parks
 +++++++++++++++++++++++++++++++
 
+.. _aep_dsm:
+
 Alberta Dam Safety Map
 ``````````````````````
 
@@ -527,6 +715,7 @@ Alberta Dam Safety Map
 
     **Short name:** aep_dsm
 
+.. _aep_fmo_berry_crk:
 
 Berry Creek (Carolside) Reservoir Fisheries Management Objectives
 `````````````````````````````````````````````````````````````````
@@ -535,6 +724,7 @@ Berry Creek (Carolside) Reservoir Fisheries Management Objectives
 
     **Short name:** aep_fmo_berry_crk
 
+.. _aep_tao_bow_riv_basin:
 
 Bow River Basin – TransAlta Operations
 ``````````````````````````````````````
@@ -543,6 +733,7 @@ Bow River Basin – TransAlta Operations
 
     **Short name:** aep_tao_bow_riv_basin
 
+.. _aep_cldps:
 
 Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at Downstream Toe)
 ````````````````````````````````````````````````````````````````````````````````````````````
@@ -555,14 +746,19 @@ Coal Lake Dam – Planning Study (Assessment of Spillway & Drainage/Seepage at D
 Fish Stocking Maps
 ``````````````````
 
+.. _aep_fsm_moundred_res:
+
     a. Alberta Environment and Parks, 2021. Stocking Maps - Mound Red Reservoir. My Wild Alberta. Accessed December 13, 2021, from https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6737
 
     **Short name:** aep_fsm_moundred_res
+
+.. _aep_fsm_open_crk:
 
     b.	Alberta Environment and Parks, 2021. Stocking Maps - Open Creek Reservoir. My Wild Alberta. Accessed December 13, 2021, from https://mywildalberta.ca/fishing/fish-stocking/stocking-maps.aspx?id=6726
 
     **Short name:** aep_fsm_open_crk
 
+.. _aep_littlebow_res_fin_2020:
 
 Little Bow Reservoir FIN Summary
 ````````````````````````````````
@@ -574,6 +770,8 @@ Little Bow Reservoir FIN Summary
 
 Alberta - Natural Resources Conservation Board
 ++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _nrcb_earp_app9401:
 
 Pine Coolee Water Management Project
 ````````````````````````````````````
@@ -588,41 +786,61 @@ Alberta – Sustainable Resource Development
 Bathymetry Maps
 ```````````````
 
+.. _asrd_bathym_chin:
+
     a. Alberta Resource Information Unit, 2004. Bathymetry of Chin Lakes, 1:20,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from https://open.alberta.ca/publications/chin-lakes-bathymetry
 
     **Short name:** asrd_bathym_chin
+
+.. _asrd_bathym_forty_mile:
 
     b. Alberta Resource Information Unit, 2002. Bathymetry of Forty Mile Coulee Reservoir, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from https://open.alberta.ca/publications/forty-mile-coulee-reservoir-bathymetry
 
     **Short name:** asrd_bathym_forty_mile
 
+.. _asrd_bathym_jensen:
+
     c. Alberta Resource Information Unit, 2002. Bathymetry of Jensen (Pothole) Reservoir, 1:5,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  https://open.alberta.ca/publications/jensen-pothole-reservoir-bathymetry
 
     **Short name:** asrd_bathym_jensen
+
+.. _asrd_bathym_keho:
 
     d. Alberta Resource Information Unit, 2002. Bathymetry of Keho Lake, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from   https://open.alberta.ca/publications/keho-lake-bathymetry
 
     **Short name:** asrd_bathym_keho
 
+.. _asrd_bathym_newell:
+
     e. Alberta Resource Information Unit, 2004. Bathymetry of Lake Newell, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  https://open.alberta.ca/publications/lake-newell-bathymetry
 
     **Short name:** asrd_bathym_newell
+
+.. _asrd_bathym_mcgregor:
 
     f. Alberta Resource Information Unit, 2002. Bathymetry of McGregor Lake,1:20,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  https://open.alberta.ca/publications/mcgregor-lake-bathymetry
 
     **Short name:** asrd_bathym_mcgregor
 
+.. _asrd_bathym_payne:
+
     g. Alberta Resource Information Unit, 2005. Bathymetry of Payne Lake, 1:7500. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  https://open.alberta.ca/publications/payne-lake-bathymetry
 
     **Short name:** asrd_bathym_payne
+
+.. _asrd_bathym_st_mary:
 
     h. Alberta Resource Information Unit, 2004. Bathymetry of St. Mary Reservoir, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from  https://open.alberta.ca/publications/st-mary-reservoir-bathymetry
 
     **Short name:** asrd_bathym_st_mary
 
+.. _asrd_bathym_stafford:
+
     i. Alberta Resource Information Unit, 2003. Bathymetry of Stafford Reservoir, 1:10,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from https://open.alberta.ca/publications/stafford-reservoir-bathymetry
 
     **Short name:** asrd_bathym_stafford
+
+.. _asrd_bathym_travers:
 
     j. Alberta Resource Information Unit, 2003. Bathymetry of Travers Reservoir, 1:15,000. Lethbridge, AB: Alberta Sustainable Resource Development. Accessed from https://open.alberta.ca/publications/travers-reservoir-bathymetry
 
@@ -632,12 +850,17 @@ Bathymetry Maps
 Newfoundland and Labrador – Municipal Affairs and Environment
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
 Permits to Alter a Body of Water
 ````````````````````````````````
+
+.. _nl_mae_permit_alt9067:
 
     a. Newfoundland and Labrador Department of Municipal Affairs and Environment - Water Resources Management Division, 2017. Permit to Alter a Body of Water - Permit No. ALT9067-2017. Accessed from https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9067-2017.pdf
 
     **Short name:** nl_mae_permit_alt9067
+
+.. _nl_mae_permit_alt9371:
 
     b. Newfoundland and Labrador Department of Municipal Affairs and Environment - Water Resources Management Division, 2017. Permit to Alter a Body of Water - Permit No. ALT9371-2017. Accessed from https://www.gov.nl.ca/ecc/files/waterres-permits-water-alt-dams-2017-r-alt9371-2017.pdf
 
@@ -646,6 +869,8 @@ Permits to Alter a Body of Water
 
 Nova Scotia – Agriculture
 +++++++++++++++++++++++++
+
+.. _ns_dykeland_sites:
 
 Dykeland Sites
 ``````````````
@@ -661,6 +886,8 @@ Municipal Sources
 City of Calgary, Alberta
 ++++++++++++++++++++++++
 
+.. _ab_cal_gdii:
+
 Glenmore Dam Infrastructure Improvements
 ````````````````````````````````````````
 
@@ -668,6 +895,7 @@ Glenmore Dam Infrastructure Improvements
 
     **Short name:** ab_cal_gdii
 
+.. _ab_cal_grdo:
 
 Glenmore Reservoir Dam Operations
 `````````````````````````````````
@@ -683,13 +911,19 @@ City of Dawson Creek, British Columbia
 Drinking Water Quality Reports
 ``````````````````````````````
 
+.. _bc_dc_wqar2019:
+
     a. City of Dawson Creek, 2020. 2019 Drinking Water Quality Annual Report. p. 6. Accessed from https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/WTP-Annual-Water-Quality-Report-FINAL_DA_KG.pdf
 
     **Short name:** bc_dc_wqar2019
 
+.. _bc_dc_wqar2016:
+
     b. City of Dawson Creek, 2017. 2016 Drinking Water Quality Annual Report. p. 6. Accessed from https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Report-2016.pdf
 
     **Short name:** bc_dc_wqar2016
+
+.. _bc_dc_wqap2015:
 
     c. City of Dawson Creek, 2015. Drinking Water Quality Assurance Plan Update Final Report. pp. 4, 33. Accessed from https://www.dawsoncreek.ca/wordpress/wp-content/uploads/annual-reports/Water-Quality-Assurance-Plan-2015.pdf
 
@@ -698,6 +932,8 @@ Drinking Water Quality Reports
 
 Eastern Irrigation District, Alberta 
 ++++++++++++++++++++++++++++++++++++
+
+.. _aeid_bassano:
 
 Bassano Dam
 ```````````
@@ -710,6 +946,8 @@ Bassano Dam
 Halifax Water 
 +++++++++++++
 
+.. _ns_hal_clews_swpp:
+
 Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Plan
 ````````````````````````````````````````````````````````````````````````````````
 
@@ -717,6 +955,7 @@ Chain Lakes Emergency Water Supply Watershed Area – Source Water Protection Pl
 
     **Short name:** ns_hal_clews_swpp
 
+.. _ns_hal_p25_2021:
 
 Chain Lake Dam and Pockwock Lake Dam – Consultant Services
 ``````````````````````````````````````````````````````````
@@ -725,6 +964,7 @@ Chain Lake Dam and Pockwock Lake Dam – Consultant Services
 
     **Short name:** ns_hal_p25_2021
 
+.. _ns_hal_p24_2019:
 
 Halifax Water Dam Safety Review
 ```````````````````````````````
@@ -733,6 +973,7 @@ Halifax Water Dam Safety Review
 
     **Short name:** ns_hal_p24_2019
 
+.. _ns_hal_hwirp_v3:
 
 Integrated Resource Plan – Water System Review
 ``````````````````````````````````````````````
@@ -748,6 +989,8 @@ Energy Company Sources
 Irrican Power
 +++++++++++++
 
+.. _irrican_chin_chute:
+
 Chin Chute Power Plant
 ``````````````````````
 
@@ -755,6 +998,7 @@ Chin Chute Power Plant
 
     **Short name:** irrican_chin_chute
 
+.. _irrican_drops_456:
 
 Drops 4, 5, and 6 Power Plant
 `````````````````````````````
@@ -763,6 +1007,7 @@ Drops 4, 5, and 6 Power Plant
 
     **Short name:** irrican_drops_456
 
+.. _irrican_ray_res:
 
 Raymond Reservoir Power Plant
 `````````````````````````````
@@ -775,6 +1020,8 @@ Raymond Reservoir Power Plant
 Lower Churchill Management Corporation
 ++++++++++++++++++++++++++++++++++++++
 
+.. _lcmc_protulipac_et_al_2018:
+
 Muskrat Falls Dams – Cold Climate Considerations in Design and Construction
 ```````````````````````````````````````````````````````````````````````````
 
@@ -785,6 +1032,8 @@ Muskrat Falls Dams – Cold Climate Considerations in Design and Construction
 
 NB Power 
 ++++++++
+
+.. _nbpower_hydro_tour:
 
 Hydro Tour
 ``````````
@@ -797,6 +1046,8 @@ Hydro Tour
 Newfoundland and Labrador Hydro
 +++++++++++++++++++++++++++++++
 
+.. _nlhydro_adsr_2017_70503:
+
 Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017-70503)
 ```````````````````````````````````````````````````````````````````````````````````````
 
@@ -804,6 +1055,7 @@ Audit Dam Safety Review for Pudops Dam, North Salmon Dam and Spillway (RFP# 2017
 
     **Short name:** nlhydro_adsr_2017_70503
 
+.. _nlhydro_ca_nlh_155:
 
 Depreciation Methodology and Asset Service Lives
 ````````````````````````````````````````````````
@@ -812,6 +1064,7 @@ Depreciation Methodology and Asset Service Lives
 
     **Short name:** nlhydro_ca_nlh_155
 
+.. _nlhydro_ops_hydro:
 
 Operations – Hydro Generation
 `````````````````````````````
@@ -824,6 +1077,8 @@ Operations – Hydro Generation
 Newfoundland Power
 ++++++++++++++++++
 
+.. _nlp_depreciation_2019:
+
 2019 Depreciation Study – Hydro Plant Decommissioning Report
 ````````````````````````````````````````````````````````````
 
@@ -831,6 +1086,7 @@ Newfoundland Power
 
     **Short name:** nlp_depreciation_2019
 
+.. _nlp_dsi_2007:
 
 Dam Safety Inspection Reports
 `````````````````````````````
@@ -839,18 +1095,22 @@ Dam Safety Inspection Reports
 
     **Short name:** nlp_dsi_2007
 
-
 Facility Rehabilitation
 ```````````````````````
+
+.. _nlp_fac_rehab_2014:
 
     a. Newfoundland Power, 2013. 2014 Facility Rehabilitation. pp. 3, 5-6. Accessed from http://www.pub.nf.ca/applications/IslandInterconnectedSystem/files/rfi/PUB-NP-175.pdf
 
     **Short name:** nlp_fac_rehab_2014
 
+.. _nlp_fac_rehab_2012:
+
     b.	Newfoundland Power, 2011. 2012 Facility Rehabilitation. pp. 1-3. Accessed from http://www.pub.nl.ca/applications/NP2012Capital/files/applic/NP2012Application-Generation.pdf
 
     **Short name:** nlp_fac_rehab_2012
 
+.. _nlp_ppiep_2009:
 
 Potential Projects to Increase Energy Production
 ````````````````````````````````````````````````
@@ -859,6 +1119,7 @@ Potential Projects to Increase Energy Production
 
     **Short name:** nlp_ppiep_2009
 
+.. _nlp_pub_safety_2016:
 
 Public Safety Around Dams
 `````````````````````````
@@ -867,6 +1128,7 @@ Public Safety Around Dams
 
     **Short name:** nlp_pub_safety_2016
 
+.. _nlp_rbfc_2011:
 
 Rattling Brook Fisheries Compensation
 `````````````````````````````````````
@@ -875,6 +1137,7 @@ Rattling Brook Fisheries Compensation
 
     **Short name:** nlp_rbfc_2011
 
+.. _nlp_sep_2008:
 
 Sustainable Electricity Program
 ```````````````````````````````
@@ -887,6 +1150,8 @@ Sustainable Electricity Program
 Nova Scotia Power
 +++++++++++++++++
 
+.. _nsp_ihas:
+
 Nova Scotia Power Incorporated Hydro Asset Study – Redacted
 ```````````````````````````````````````````````````````````
 
@@ -897,6 +1162,8 @@ Nova Scotia Power Incorporated Hydro Asset Study – Redacted
 
 Suncor Energy
 +++++++++++++
+
+.. _suncor_safety_initiative:
 
 Investor Mining and Tailings Safety Initiative Disclosure Table
 ```````````````````````````````````````````````````````````````
@@ -909,6 +1176,8 @@ Investor Mining and Tailings Safety Initiative Disclosure Table
 TransAlta
 +++++++++
 
+.. _transalta_barrier:
+
 Barrier Power Plant
 ```````````````````
 
@@ -916,6 +1185,7 @@ Barrier Power Plant
 
     **Short name:** transalta_barrier
 
+.. _transalta_bearspaw:
 
 Bearspaw Plant
 ``````````````
@@ -924,6 +1194,7 @@ Bearspaw Plant
 
     **Short name:** transalta_bearspaw
 
+.. _transalta_belly:
 
 Belly River Hydro Facility
 ``````````````````````````
@@ -932,6 +1203,7 @@ Belly River Hydro Facility
 
     **Short name:** transalta_belly
 
+.. _transalta_bighorn:
 
 Bighorn Plant
 `````````````
@@ -940,6 +1212,7 @@ Bighorn Plant
 
     **Short name:** transalta_bighorn
 
+.. _transalta_brazeau:
 
 Brazeau Plant
 `````````````
@@ -948,6 +1221,7 @@ Brazeau Plant
 
     **Short name:** transalta_brazeau
 
+.. _transalta_cascade:
 
 Cascade Plant
 `````````````
@@ -956,6 +1230,7 @@ Cascade Plant
 
     **Short name:** transalta_cascade
 
+.. _transalta_ghost:
 
 Ghost Plant
 ```````````
@@ -964,6 +1239,7 @@ Ghost Plant
 
     **Short name:** transalta_ghost
 
+.. _transalta_horseshoe:
 
 Horseshoe Plant
 ```````````````
@@ -972,6 +1248,7 @@ Horseshoe Plant
     
     **Short name:** transalta_horseshoe
 
+.. _transalta_interlakes:
 
 Interlakes Plant
 ````````````````
@@ -980,6 +1257,8 @@ Interlakes Plant
 
     **Short name:** transalta_interlakes
 
+.. _transalta_kananaskis:
+
 Kananaskis Plant
 ````````````````
 
@@ -987,6 +1266,7 @@ Kananaskis Plant
 
     **Short name:** transalta_kananaskis
 
+.. _transalta_pocaterra:
 
 Pocaterra Plant
 ```````````````
@@ -995,6 +1275,7 @@ Pocaterra Plant
 
     **Short name:** transalta_pocaterra
 
+.. _transalta_rundle:
 
 Rundle Plant
 ````````````
@@ -1003,6 +1284,7 @@ Rundle Plant
 
     **Short name:** transalta_rundle
 
+.. _transalta_sheerness:
 
 Sheerness Generating Station
 ````````````````````````````
@@ -1011,6 +1293,7 @@ Sheerness Generating Station
 
     **Short name:** transalta_sheerness
 
+.. _transalta_spray:
 
 Spray Hydro Facility
 ````````````````````
@@ -1019,6 +1302,7 @@ Spray Hydro Facility
 
     **Short name:** transalta_spray
 
+.. _transalta_st_mary:
 
 St. Mary Hydro Facility
 ```````````````````````
@@ -1027,6 +1311,7 @@ St. Mary Hydro Facility
 
     **Short name:** transalta_st_mary
 
+.. _transalta_taylor:
 
 Taylor Hydro Facility
 `````````````````````
@@ -1035,6 +1320,7 @@ Taylor Hydro Facility
 
     **Short name:** transalta_taylor
 
+.. _transalta_three_sisters:
 
 Three Sisters Plant
 ```````````````````
@@ -1043,6 +1329,7 @@ Three Sisters Plant
 
     **Short name:** transalta_three_sisters
 
+.. _transalta_waterton:
 
 Waterton Hydro Facility
 ```````````````````````
@@ -1058,6 +1345,8 @@ Academic Institutions/NGO Sources
 Alberta WaterPortal Society
 +++++++++++++++++++++++++++
 
+.. _awps_brid:
+
 Bow River Irrigation District
 `````````````````````````````
 
@@ -1065,12 +1354,16 @@ Bow River Irrigation District
 
     **Short name:** awps_brid
 
+.. _awps_smrid:
+
 St. Mary River Irrigation District
 ``````````````````````````````````
 
     Alberta WaterPortal Society, 2022. St. Mary River Irrigation District. Accessed May 6, 2022, from https://albertawater.com/latest/8795-st-mary-river-irrigation-district-projects-overview/
 
     **Short name:** awps_smrid
+
+.. _awa_obed_spill:
 
 Alberta Wilderness Association
 ++++++++++++++++++++++++++++++
@@ -1082,6 +1375,8 @@ Alberta Wilderness Association
 Shubenacadie Canal Commission
 +++++++++++++++++++++++++++++
 
+.. _scc_locks:
+
 The Locks
 `````````
 
@@ -1092,6 +1387,8 @@ The Locks
 
 South East Alberta Watershed Alliance (SEAWA)
 +++++++++++++++++++++++++++++++++++++++++++++
+
+.. _seawa_pakowki_lake:
 
 Pakowki Lake Watershed Profile
 ``````````````````````````````
@@ -1107,6 +1404,8 @@ Consulting Reports
 Advanced Construction Techniques Ltd.
 +++++++++++++++++++++++++++++++++++++
 
+.. _act_st_mary_spillway:
+
 St. Mary Dam Spillway Replacement Project
 `````````````````````````````````````````
 
@@ -1118,12 +1417,16 @@ St. Mary Dam Spillway Replacement Project
 AMEC Americas Ltd.
 ++++++++++++++++++
 
+.. _amec_frmp_2013:
+
 Flood Risk Mapping Project
 ``````````````````````````
 
     AMEC Environment & Infrastructure, 2013. Flood Risk Mapping Project - Corner Brook Stream and Petrie's Brook. Report prepared for Government of Newfoundland and Labrador Department of Environment and Conservation, Water Resources Management Division. pp. 2-12 - 2-15. Accessed from https://www.gov.nl.ca/ecc/files/waterres-flooding-corner-brook-stream-cornerbrook-report.pdf
 
     **Short name:** amec_frmp_2013
+
+.. _amec_ssrba_wss:
 
 South Saskatchewan River Basin in Alberta: Water Supply Study
 `````````````````````````````````````````````````````````````
@@ -1134,6 +1437,8 @@ South Saskatchewan River Basin in Alberta: Water Supply Study
 
 East Coast Aquatics Inc.
 ++++++++++++++++++++++++
+
+.. _eca_bio_assess:
 
 Biological Assessment for Proposed Liverpool Wind Farm
 ``````````````````````````````````````````````````````
@@ -1146,12 +1451,16 @@ Biological Assessment for Proposed Liverpool Wind Farm
 Golder Associates Inc.
 ++++++++++++++++++++++
 
+.. _golder_genesee_2013:
+
 Genesee Cooling Pond Thermal and Water Quality Modelling Study
 ``````````````````````````````````````````````````````````````
 
     Golder Associates, 2013. Genesee Cooling Pond Thermal and Water Quality Modelling Study. Report prepared for Capital Power Corporation. pp. 1. Accessed May 6, 2022, from https://www.capitalpower.com/wp-content/uploads/2019/06/Appendix_F_Genesee_Cooling_Pond_Modelling_Study.pdf 
 
     **Short name:** golder_genesee_2013
+
+.. _golder_inv_nl_2016:
 
 Inventory and Assessment of Dams in Eastern Newfoundland
 ````````````````````````````````````````````````````````
@@ -1160,6 +1469,7 @@ Inventory and Assessment of Dams in Eastern Newfoundland
 
     **Short name:** golder_inv_nl_2016
 
+.. _golder_inv_nl_2019:
 
 Inventory and Assessment of Dams in Newfoundland and Labrador Year Three
 ````````````````````````````````````````````````````````````````````````
@@ -1168,6 +1478,7 @@ Inventory and Assessment of Dams in Newfoundland and Labrador Year Three
 
     **Short name:** golder_inv_nl_2019
 
+.. _golder_inv_nl_2017:
 
 Inventory and Assessment of Dams in Newfoundland and Labrador Year Two
 ``````````````````````````````````````````````````````````````````````
@@ -1180,6 +1491,8 @@ Inventory and Assessment of Dams in Newfoundland and Labrador Year Two
 MPE Engineering Ltd.
 ++++++++++++++++++++
 
+.. _mpe_aep_prov_inventory:
+
 Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios
 `````````````````````````````````````````````````````````````````````````````
 
@@ -1190,6 +1503,8 @@ Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios
 
 Power Advisory LLC
 ++++++++++++++++++
+
+.. _pallc_nl_elec:
 
 Review of the Newfoundland and Labrador Electricity System
 ``````````````````````````````````````````````````````````
@@ -1202,6 +1517,8 @@ Review of the Newfoundland and Labrador Electricity System
 SNC-Lavalin Group Inc.
 ++++++++++++++++++++++
 
+.. _sncl_lower_churchill:
+
 Lower Churchill Project Design Criteria
 ```````````````````````````````````````
 
@@ -1213,12 +1530,16 @@ Lower Churchill Project Design Criteria
 Peer-Reviewed Articles
 ~~~~~~~~~~~~~~~~~~~~~~
 
+.. _alrs_spray_lakes:
+
 Alberta Law Review
 ++++++++++++++++++
 
     Nykolaishen, S. & Bankes, N., 2012. Sacrificing Fish for Power: A Legal History of the Spray Lakes Development. Alberta Law Review 50(1), pp. 6. https://doi.org/10.29173/alr266
 
     **Short name:** alrs_spray_lakes
+
+.. _cgj_williams_etal_1983:
 
 Canadian Geotechnical Journal
 +++++++++++++++++++++++++++++
@@ -1234,12 +1555,16 @@ Miscellaneous Online Sources
 Wikipedia
 +++++++++
 
+.. _wiki_dickson_dam:
+
 Dickson Dam
 ```````````
 
     Wikipedia contributors, 2022. Dickson Dam. Wikipedia. Accessed May 6, 2022, from https://en.wikipedia.org/wiki/Dickson_Dam
 
     **Short name:** wiki_dickson_dam
+
+.. _wiki_cdn_wfs:
 
 List of Canadian Waterfalls
 ```````````````````````````
@@ -1248,6 +1573,7 @@ List of Canadian Waterfalls
 
     **Short name:** wiki_cdn_wfs
 
+.. _wiki_gs_bc:
 
 List of Generating Stations in British Columbia
 ```````````````````````````````````````````````
@@ -1256,6 +1582,7 @@ List of Generating Stations in British Columbia
 
     **Short name:** wiki_gs_bc
 
+.. _wiki_nb_hydro: 
 
 List of Generating Stations in New Brunswick
 ````````````````````````````````````````````
@@ -1264,6 +1591,7 @@ List of Generating Stations in New Brunswick
 
     **Short name:** wiki_nb_hydro
 
+.. _wiki_lbr: 
 
 Little Bow Lake Reservoir
 `````````````````````````
@@ -1274,6 +1602,6 @@ Little Bow Lake Reservoir
 
 
 .. toctree::
-    :hidden:
+   :hidden:
 
-    docs_user_data_sources/docs_user_data_sources_csv_download
+   docs_user_data_sources/docs_user_data_sources_csv_download.rst
