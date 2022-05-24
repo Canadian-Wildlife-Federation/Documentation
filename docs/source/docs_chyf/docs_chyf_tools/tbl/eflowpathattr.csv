@@ -1,0 +1,20 @@
+﻿Attribute ,Required ,Data Type ,Description 
+eflowpath_id ,yes ,uuid ,Unique identifier for segment. 
+strahler_order ,system-generated ,Integer ,
+horton_order ,system-generated ,Integer ,
+hack_order ,system-generated ,Integer ,
+shreve_order,system-generated ,Integer ,
+gradient ,system-generated ,Numeric? ,The slope (%) of the stream segment  
+functional_network_up ,system-generated ,Integer ,Upstream functional network route measure in km. This measurement is affected by the presence of barriers. 
+functional_network_down ,system-generated ,Integer ,Downstream functional  network route measure in km. This measurement is affected by the presence of barriers. 
+total_network_up ,system-generated ,Integer ,Upstream total network route measure in km. 
+total_network_down ,system-generated ,Integer ,Downstream total network route measure in km. 
+catchment_area_up ,system-generated ,Integer ,Upstream catchment area in km2. 
+catchment_area_down ,system-generated ,Integer ,Downstream catchment area in km2. 
+barrier_count_up ,system-generated ,Integer ,Number of barriers upstream of segment. 
+barrier_count_down ,system-generated ,Integer ,Number of barriers downstream of segment. 
+barrier_ids_up ,system-generated ,Array ,IDs of barriers upstream of segment. 
+barrier_ids_down ,system-generated ,Array ,IDs of barriers downstream of segment. 
+permanency ,no ,Integer ,"Nature of the occurrence through time (e.g., permanent, intermittent). This is directly equivalent to the Permanency attribute in the NHN (-1-Unknown, 0-None, 1-Permanent, 2-Intermittent. Users should not rely on data in the field as it may not be current)."
+stream_temp ,no ,Integer ,"Stream temperature category (categorical e.g., cold, warm, cool, etc.). Not currently assigned through any tools. "
+additional attributes,no ,n/a,Additional attributes may be added as needed or as computed. 

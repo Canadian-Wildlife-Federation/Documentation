@@ -1,0 +1,9 @@
+﻿Attribute ,Required ,Data Type ,Description 
+id ,yes ,uuid ,Unique identifier for feature. 
+ec_type ,yes ,Integer ,"Describes the type of catchment (1-Reach, 2-Bank, 3-Empty, 4-Water, 5-Built-up Area)"
+ec_subtype ,no ,Integer ,"An additional description for catchment (10-Lake, 11-Great Lake, 12-Wastewater Point, 20-Estuary, 30-Nearshore Zone, 40-River, 41-Canal, 50-Buried Infrastructure, 90-Ocean, 99-Unknown)"
+area ,yes ,Double ,Area of catchment in m2. 
+aoi_id ,yes ,UUID ,Link to the id field in the AOI table.  
+name_id ,no ,UUID ,References the id field in the Names table. 
+is_reservoir ,no ,boolean ,"A true value indicates if the ecatchment is a reservoir (i.e., an artificially-controlled lake). Equivalent to waterDefinition Reservoir (5) in the nhn. Default is false.  "
+geometry ,yes ,Polygon ,n/a

@@ -1,0 +1,5 @@
+﻿Attribute ,Required ,Data Type ,Description 
+id ,yes ,uuid ,Unique identifier for feature. 
+full_name ,no ,String ,NHN work unit sub sub drainage area name.  
+short_name ,no ,String ,"NHN work unit dataset name (i.e., 05AH000). "
+geometry ,yes ,Polygon ,Polygonal representation of AOI. 

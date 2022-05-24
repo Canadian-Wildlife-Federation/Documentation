@@ -1,0 +1,3 @@
+﻿Attribute ,Required ,Data Type 
+flow_direction ,yes ,"Integer (1-Input, 2-Output) "
+geometry ,yes ,Point 

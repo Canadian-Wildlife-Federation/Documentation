@@ -1,0 +1,8 @@
+﻿1 ,Headwater ,"Headwater flowpath start point. The start of an elementary flowpath, for which the start point does not intersect other flowpaths, lake boundaries, or double-line river boundaries. "
+2 ,Terminal Isolated ,Terminal flowpath endpoint. The endpoint of an elementary flowpath that is not connected to any other flowpath at the endpoint. These are true sinks or the endpoint of a flowpath across a terminal lake. 
+3 ,Terminal Boundary ,Terminal flowpath endpoint. The endpoint of an elementary flowpath that is not connected to any other flowpath at the endpoint. These represent the limit of what was visible when the hydrography was compiled and would generally flow into other water if additional data was included. 
+4 ,Flowpath ,Flowpath hydro node. The junction of a single-line river with another single-line river or with the boundary of a double-line river or lake. These are defined by the endpoints of observed flowpaths. 
+5 ,Water ,"Water hydro node. The junction of a double-line river or lake with another double-line river or lake, as represented by the intersection of the incoming and outgoing flowpaths at that location. "
+6 ,Bank ,"Bank hydro node. A type of hydro node that is arbitrarily placed on the boundary of adjacent catchments to show flow or potential flow from one to the other, where no observed flowpaths exist to convey that information, and where the upper catchment is land based and the lower is water based (lake or double-line river). "
+7 ,Inferred ,Inferred junction. These are required for the purpose of connectivity only. They are not hydro nodes. 
+99 ,Unknown ,Nexus type is unknown.
