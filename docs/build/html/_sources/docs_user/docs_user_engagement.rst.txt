@@ -17,7 +17,7 @@ The Stakeholder Engagement Framework comprises four components:
 
 3.	**CABD Technical Advisory Committee** – The Technical Advisory Committee assisted in final decision-making review of products from the Working Group. The committee was responsible for providing feedback and input on technical aspects of project implementation, including but not limited to, database design, logistic consideration for data compilation and mechanisms to fill data gaps, and long-term strategic planning from spring 2020 to spring 2022. This group has since been amalgamated with the Practitioner Working Group to form a single advisory committee for the CABD.
 
-4.  **CABD Advisory Committee** - The Advisory Committee is responsible for providing guidance and feedback on strategic planning, data and user requirements, and technical development aspects of project implementation. The committee was established in spring 2022 and will remain active with monthly conference calls through the 2022-23 fiscal year.
+4.  **CABD Advisory Committee** - The Advisory Committee is responsible for providing guidance and feedback on strategic planning, data and user requirements, and technical development aspects of project implementation. The committee was established in spring 2022 and is anticipated to remain active with monthly conference calls through the 2022-23 fiscal year.
 
 5.	**Reciprocal data-sharing relationships** – The data-sharing relationships are established between CWF and existing data creators, compilers, and managers. The relationships are reciprocal to ensure mutual benefit, facilitate collaboration, prevent the duplication of efforts, and maintain long-term data currency. 
 
