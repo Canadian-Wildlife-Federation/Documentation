@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHyF Tools &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    <title>Processing Tools &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -39,8 +39,8 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="CHyF Tools Copyright and Authorship" href="docs_chyf_tools/docs_chyf_tools_copyright_author.html" />
-    <link rel="prev" title="Feature Review Process" href="../docs_tech/docs_tech_process/docs_tech_process_dams.html" />
+    <link rel="next" title="Flowpath Constructor and Catchment Delineator" href="docs_chyf_tools/docs_chyf_tools_flow_and_catch.html" />
+    <link rel="prev" title="Data Model" href="docs_chyf_data_model.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -193,9 +193,19 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_chyf_logical_model.html">
+   Logical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_chyf_data_model.html">
+   Data Model
+  </a>
+ </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   CHyF Tools
+   Processing Tools
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -204,38 +214,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_copyright_author.html">
-     CHyF Tools Copyright and Authorship
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_logical_model.html">
-     Logical Model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_data_model.html">
-     CHyF Data Model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_flowpaths.html">
-     Flowpath Constructor
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_catchments.html">
-     Catchment Delineator
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_specification.html">
-     Input Specifications
+    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_flow_and_catch.html">
+     Flowpath Constructor and Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_stream_order.html">
      Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
     </a>
    </li>
   </ul>
@@ -351,6 +341,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chyf-tools-copyright-and-authorship">
+   CHyF Tools Copyright and Authorship
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -359,9 +362,22 @@
         
               <div>
                 
-  <div class="section" id="chyf-tools">
-<h1>CHyF Tools<a class="headerlink" href="#chyf-tools" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="processing-tools">
+<h1>Processing Tools<a class="headerlink" href="#processing-tools" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chyf-tools-copyright-and-authorship">
+<h2>CHyF Tools Copyright and Authorship<a class="headerlink" href="#chyf-tools-copyright-and-authorship" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<dl>
+<dt>Copyright and Licence Notice</dt><dd><p>Copyright © 2020 Government of Canada
+This document falls under the Open Government Licence - Canada, Version 2.0
+(<a class="reference external" href="https://open.canada.ca/en/open-government-licence-canada">https://open.canada.ca/en/open-government-licence-canada</a>)</p>
+</dd>
+<dt>Authorship</dt><dd><p>Mark Sondheim (<a class="reference external" href="mailto:mark&#46;sondheim&#37;&#52;&#48;canada&#46;ca">mark<span>&#46;</span>sondheim<span>&#64;</span>canada<span>&#46;</span>ca</a>) - <em>Canada Centre for Mapping and Earth Observation, Natural Resources Canada</em></p>
+<p>Emily Gouge (<a class="reference external" href="mailto:egouge&#37;&#52;&#48;refractions&#46;net">egouge<span>&#64;</span>refractions<span>&#46;</span>net</a>), Chris Hodgson (<a class="reference external" href="mailto:chodgson&#37;&#52;&#48;refractions&#46;net">chodgson<span>&#64;</span>refractions<span>&#46;</span>net</a>) - <em>Refractions Research, Inc.</em></p>
+</dd>
+</dl>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -371,17 +387,17 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../docs_tech/docs_tech_process/docs_tech_process_dams.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="docs_chyf_data_model.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Feature Review Process</p>
+            <p class="prev-next-title">Data Model</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="docs_chyf_tools/docs_chyf_tools_copyright_author.html" title="next page">
+    <a class='right-next' id="next-link" href="docs_chyf_tools/docs_chyf_tools_flow_and_catch.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CHyF Tools Copyright and Authorship</p>
+        <p class="prev-next-title">Flowpath Constructor and Catchment Delineator</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

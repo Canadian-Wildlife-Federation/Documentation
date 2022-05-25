@@ -42,5 +42,7 @@ Welcome to the CABD documentation site!
    :hidden:
    :caption: CHyF Documents
 
+   docs_chyf/docs_chyf_logical_model
+   docs_chyf/docs_chyf_data_model
    docs_chyf/docs_chyf_tools
    docs_chyf/docs_chyf_process

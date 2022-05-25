@@ -1,6 +1,6 @@
-===============
-CHyF Data Model
-===============
+==========
+Data Model
+==========
 
 This document is designed to describe the target data model for CHyF.  For reference (at the end) it includes a description of the existing CHyF services data model, and the data model output from the CHyF processing tools.
 

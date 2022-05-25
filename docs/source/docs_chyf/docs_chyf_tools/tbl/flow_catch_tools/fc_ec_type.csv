@@ -1,0 +1,6 @@
+﻿Value,Name,Description
+1,Reach,"An elementary catchment that contains a section of a single-line stream. The contained stream will bisect the catchment, except in the case of headwater stream segments or terminal stream segments. "
+2,Bank,"An elementary catchment that is adjacent to a waterbody and that drains directly into it. It does not contain a waterbody. For example, if two streams drain into a lake, the remnant area between the catchments for the two streams also drains into the lake; it defines a bank catchment."
+3,Empty,An elementary catchment consisting of internally drained land that does not touch a waterbody. In 2D the ring defining its boundary does not surround any waterbodies.
+4,Water,"An elementary catchment with polygonal geometry representing (i) watercourses such as rivers that are sufficiently large to have been mapped with polygonal geometry, or (ii) static or tidal waterbodies such as lakes, estuaries, nearshore zones, and the ocean."
+5,Built-Up Area,"Urban or industrial area, or area under construction. Such areas where constructed features may involve significant infrastructure developments that include conduits for the transfer of freshwater or waste water. Such conduits may cross one another and not intersect; as well, they may not drain the immediate area through which they pass."
