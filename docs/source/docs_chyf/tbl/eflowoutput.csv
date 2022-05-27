@@ -1,0 +1,8 @@
+﻿Attribute ,Required ,Data Type 
+internal_id ,yes ,UUID 
+ef_type ,yes ,"Integer (1-reach, 2-bank, 3-skeleton, 4-infrastructure) "
+name_string ,no ,String 
+rank ,yes ,"Integer (1-primary, 2-secondary) "
+direction_known ,yes ,Integer - should always be 1 
+geometry ,yes ,LineString 
+other_attributes ,no ,n/a

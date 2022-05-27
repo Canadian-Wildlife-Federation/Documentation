@@ -1,0 +1,4 @@
+﻿Attribute ,Required ,Data Type ,Description 
+id ,yes ,uuid ,Unique identifier for feature. 
+aoi_id ,yes ,uuid ,Link to id in AOI table. 
+geometry ,yes ,Linestring ,Linear representation of coastline. 

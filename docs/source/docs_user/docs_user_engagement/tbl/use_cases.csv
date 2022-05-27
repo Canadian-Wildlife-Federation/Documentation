@@ -1,0 +1,10 @@
+﻿Use Case,Requirements,Data Access
+"Variable-scale reporting on the state of fish, fish habitat, and watershed status, including the development of indicators to assess/quantify freshwater connectivity",Consistent geographic scales/coverage and standardized attributes for each barrier type,"Visualize barrier data and hydrographic network, and access attribute information, via web mapping interface"
+,"Identify, locate, and visualize barriers to aquatic connectivity in a defined area of interest",Download data in either .csv or geopackage/shapefile format
+,"Assessments or estimates of passability for each barrier structure (focus is on fish, though other species may be considered) based on physical attributes and hydrologic conditions",High-quality metadata is required
+,"Topological coincidence of barrier data and hydrographic network to support network analyses (e.g., upstream/downstream traces, calculation of contributing catchment areas, calculation of barrier densities, etc.)","Provision of data through an API would be useful, but not a necessity"
+,"Ability to calculate some basic connectivity indicators (to be determined) within the web mapping tool would be useful, but not a necessity",
+"Assessing regulation, compliance, and enforcement of existing hydropower facility","Detailed, consistent, and accurate attributes for dams and associated hydropower facilities (i.e., focus on data quality)","Visualize barrier data and hydrographic network, and access attribute information, via web mapping interface"
+,"Ability to link to key hydrologic data (e.g., reservoir size, rate of discharge, degree of regulation, etc.)",Download data in either .csv or geopackage/shapefile format
+,"Ability to crosswalk with existing databases (e.g., Fisheries and Oceans Canada’s Fisheries Act Authorizations database)","Provision of data through an API would be useful, but not a necessity"
+,Ability to input assessment data into CABD as it is collected to ensure data currency,Access to data entry portal for accredited partners

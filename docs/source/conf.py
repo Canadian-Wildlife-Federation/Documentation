@@ -56,8 +56,16 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 # Add custom css file relative to html_static_path
-html_css_files = ['css/custom_cwf_book.css']
+html_css_files = [
+    'css/custom_cwf_book.css',
+    'https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css',
+]
 
+# Java Files
+html_js_files = [
+    'https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js',
+    'main.js',
+]
 # Add a custom favicon and html logo to sidebar
 html_favicon = 'branding/favicon.ico'
 html_logo = 'branding/cwf_logo.png'

@@ -1,0 +1,5 @@
+﻿Attribute ,Required ,Data Type ,Description 
+id ,system-generated ,uuid ,Unique identifier for feature. 
+nexus_type ,system-generated ,Integer ,"1-Headwater, 2-Terminal Isolated, 3-Terminal Boundary, 4-Flowpath, 5-Water, 6-Bank, 7-Inferred, 99-Unknown "
+bank_ecatchment_id ,system-generated ,uuid ,"Link to bank ecatchment, if applicable "
+geometry ,system-generated ,Point ,n/a

@@ -1,0 +1,10 @@
+﻿10 ,Lake ,A body of surface water. Equivalent to waterDefinition Lake and waterDefinition Reservoir in the NHN. 
+11 ,Great Lake ,One of the Great Lakes of North America or other very large lakes. 
+12 ,Wastewater Pond ,A pond or lagoon designed to contain wastewater for treatment. Equivalent to waterDefinition Liquid Waste in the NHN. 
+20 ,Estuary ,"A body of surface water at a freshwater - ocean water interface, typically characterized by tidal waters. Equivalent to waterDefinition Tidal River in the NHN "
+30 ,Nearshore Zone ,"The zone extending from the shore of a large waterbody (freshwater or the ocean), based on an arbitrary distance, bathymetry or littoral characteristics. "
+40 ,River ,A body of surface water characterized by its flow. Equivalent to waterDefinition Watercourse in the NHN. 
+41 ,Canal ,"A body of surface water, participating in a hydrographic network, special due to its artificial origin. Ditches are also included here. Equivalent to waterDefinition Canal and Ditch in the NHN. "
+50 ,Buried Infrastructure ,"A body of subsurface flow contained in a conduit, such as a storm drain, a sanitary sewer, a flow through a dam or an industrial complex. Includes waterDefinition Conduit in the NHN. "
+90 ,Ocean ,"A large body of saline water that composes much of the earth’s hydrosphere and that is not situated inland. [After Wikipedia and Princeton] Seas and bays that extend to the open ocean are classed as ocean. The Caribbean and Mediterranean Seas and the Bay of Bengal are considered as ocean, whereas the Caspian Sea in Asia is a lake. Subdivisions of oceans are considered as water catchments. "
+99 ,Unknown ,The subtype is not known or does not correspond to one of the known types listed above. Equivalent to waterDefinition None in the NHN. 

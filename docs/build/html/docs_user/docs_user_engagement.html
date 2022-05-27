@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom_cwf_book.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
     
   <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
@@ -33,6 +34,8 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../_static/main.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -190,9 +193,19 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_logical_model.html">
+   Logical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_data_model.html">
+   Data Model
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../docs_chyf/docs_chyf_tools.html">
-   CHyF Tools
+   Processing Tools
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -201,38 +214,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_copyright_author.html">
-     CHyF Tools Copyright and Authorship
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_logical_model.html">
-     Logical Model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_data_model.html">
-     Data Model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_flowpaths.html">
-     Flowpath Constructor
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_catchments.html">
-     Catchment Delineator
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
-     Input Specifications
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_flow_and_catch.html">
+     Flowpath Constructor and Catchment Delineator
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_stream_order.html">
      Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
     </a>
    </li>
   </ul>
@@ -348,6 +341,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stakeholder-engagement-framework">
+   Stakeholder Engagement Framework
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -358,7 +364,21 @@
                 
   <div class="section" id="stakeholder-engagement">
 <h1>Stakeholder Engagement<a class="headerlink" href="#stakeholder-engagement" title="Permalink to this headline">¶</a></h1>
+<p>CWF is interested in developing this database to support barrier remediation prioritization analyses; however, the utility of a national-scale database of this nature extends beyond fish passage applications. The creation of a national database and framework to support freshwater connectivity efforts necessitates multilateral collaboration across geographic regions, legislative jurisdictions, and private and public sectors. No such forum existed to facilitate discussions specific to freshwater aquatic connectivity and barrier remediation at a national scale. As such, to support and facilitate the development of the Canadian Aquatic Barriers Database, CWF has established a national stakeholder engagement framework to discuss barriers to aquatic connectivity and fish passage, and to actively engage with interested parties, potential end-users, and data providers, to elicit feedback for the development of the CABD.</p>
+<div class="section" id="stakeholder-engagement-framework">
+<h2>Stakeholder Engagement Framework<a class="headerlink" href="#stakeholder-engagement-framework" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>The Stakeholder Engagement Framework comprises four components:</p>
+<ol class="arabic simple">
+<li><p><strong>User requirements interviews</strong> – A standardized questionnaire used during phone interviews to elicit feedback on database value and types of use, scale of work, and data requirements and access. The user requirement interviews were completed during the fiscal year 2019-20.</p></li>
+<li><p><strong>CABD Practitioner Working Group</strong> – The Working Group aided in the synthesis of the results of the stakeholder interviews. The group was responsible for providing feedback and input on (among other topics) target end uses and data requirements, decisions related to project objectives and outcomes, and existing aquatic barrier datasets from spring 2020 to spring 2022. This group has since been amalgamated with the Technical Advisory Committee to form a single advisory committee for the CABD.</p></li>
+<li><p><strong>CABD Technical Advisory Committee</strong> – The Technical Advisory Committee assisted in final decision-making review of products from the Working Group. The committee was responsible for providing feedback and input on technical aspects of project implementation, including but not limited to, database design, logistic consideration for data compilation and mechanisms to fill data gaps, and long-term strategic planning from spring 2020 to spring 2022. This group has since been amalgamated with the Practitioner Working Group to form a single advisory committee for the CABD.</p></li>
+<li><p><strong>CABD Advisory Committee</strong> - The Advisory Committee is responsible for providing guidance and feedback on strategic planning, data and user requirements, and technical development aspects of project implementation. The committee was established in spring 2022 and is anticipated to remain active with monthly conference calls through the 2022-23 fiscal year.</p></li>
+<li><p><strong>Reciprocal data-sharing relationships</strong> – The data-sharing relationships are established between CWF and existing data creators, compilers, and managers. The relationships are reciprocal to ensure mutual benefit, facilitate collaboration, prevent the duplication of efforts, and maintain long-term data currency.</p></li>
+</ol>
+<p>Stakeholders include representatives from all levels of government, NGOs, local and community groups, researchers, and industry. The stakeholder engagement process has successfully provided advice on feasibility, identification of target end uses and associated data requirements, data acquisition and compilation, database design, and mechanisms to fill data gaps. This stakeholder network supports Canada-wide collaboration on aquatic connectivity, allows for efficient dissemination of information, and ensures that the CABD is a functional tool that can support a range of projects across multiple sectors.</p>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 

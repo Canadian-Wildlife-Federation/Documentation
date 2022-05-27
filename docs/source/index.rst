@@ -8,7 +8,9 @@
 Documentation
 -----------------
 
-Welcome to the CABD documentation page!
+-----
+
+Welcome to the CABD documentation site!
 
 .. note::
    The CABD project is under active development.
@@ -40,5 +42,7 @@ Welcome to the CABD documentation page!
    :hidden:
    :caption: CHyF Documents
 
+   docs_chyf/docs_chyf_logical_model
+   docs_chyf/docs_chyf_data_model
    docs_chyf/docs_chyf_tools
    docs_chyf/docs_chyf_process
