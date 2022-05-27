@@ -175,3 +175,8 @@ hr {
 .bd-content .section table {
     font-size: 90%;
 }
+
+span.pre {
+    font-family: var(--pst-font-family-base);
+    font-size: 1.15em;
+}

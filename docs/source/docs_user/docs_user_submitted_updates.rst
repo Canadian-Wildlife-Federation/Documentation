@@ -11,7 +11,7 @@ Downloading the Template
 
 Download the appropriate template for the feature type you are looking to submit updates for from the options below: 
 
-:download:`Dam Updates Template <downloads/damstemplate4202022.xlsx>`
+:download:`Dam Updates Template <downloads/damstemplate5272022.xlsx>` *(released: 05/27/2022)*
 
 *Fishway Updates Template (coming soon)*
 
@@ -27,53 +27,70 @@ Populating the Template
 
 Updating Existing Records
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-1. The cabd_id field is the first column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. Copy this value and paste it into the next available cell of the cabd_id column in the template.
 
-.. image:: img/use_submitted_updates/barrierid.jpg
-   :align: center
-   :width: 700
+1. Upon opening the template, the first field in column A is the 'entry_classification' field which is used to define the purpose of the information being provided in that row. Please select the most appropriate option from the list of values and descriptions provided below for the feature in question:
 
-.. image:: img/use_submitted_updates/cabd_id.jpg
-   :align: center
-   :width: 700
+   * **new_feature**: The information being submitted pertains to a feature that is not yet present in the CABD. A new feature point must be generated.
 
-.. note::
-    Skip this step if the information being added if for a feature that does not yet exist in the CABD. The cabd_id for new features will be generated when initially loaded into the database. 
+   * **modify_feature**: The information being submitted is meant to update attribute information for an existing feature point in the CABD. The existing data is currently unknown, incorrect, or out of date.
 
-2. If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.
+   * **delete_feature**: The feature, identified via cabd_id, does not exist and should be removed from the CABD. 
 
-.. note::
-    Latitude and longitude values *must* be populated when adding information for a new feature point.  
+   .. figure:: img/use_submitted_updates/entryclass.jpg
+       :align: center
+       :width: 800
 
-3. Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.
+2. The cabd_id field is the second column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. 
 
-.. image:: img/use_submitted_updates/datasrc.jpg
-   :align: center
-   :width: 700
+   .. figure:: img/use_submitted_updates/barrierid.jpg
+       :align: center
+       :width: 500
 
-4. Next, select the attribute(s) for which new information will be added, from the options available in the drop down list. 
+   Copy this value and paste it into the next available cell of the cabd_id column in the template, as show in the image below.
 
-.. image:: img/use_submitted_updates/list1.png
-   :align: center
-   :width: 700
+   .. figure:: img/use_submitted_updates/cabd_id.jpg
+      :align: center
+      :width: 800
 
-.. important::
-    Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.
+   .. note::
+       a. If the information being added is for a feature that does not yet exist in the CABD, skip this step. The cabd_id for a new feature will be generated when initially loaded into the database. 
 
-5. Populate the information for the chosen attributes.
+       b. If a feature is being submitted for deletion, then only the cabd_id of the feature is required as input and the remaining steps detailed below should be skipped.
+
+3. If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.
+
+   .. note::
+       Latitude and longitude values are **required** when adding information for a new feature point.  
+
+4. Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.
+
+   .. image:: img/use_submitted_updates/datasource.jpg
+      :align: center
+      :width: 800
+
+5. Next, select the attribute(s) for which new information will be added, from the options available in the drop down list. 
+
+   .. image:: img/use_submitted_updates/list1.jpg
+      :align: center
+      :width: 800
+
+   .. important::
+       Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.
+
+6. Populate the information for the chosen attributes.
 
    a. If an attribute has a defined list of allowable values, these can be selected via the dropdown that is present next to each cell in the column below the chosen attribute. 
    
-   .. image:: img/use_submitted_updates/list2.png
+   .. image:: img/use_submitted_updates/fieldentry.jpg
       :align: center
-      :width: 700
+      :width: 800
 
    b. If there is no defined list of allowable values for the selected attribute, type the information directly into the cell. 
 
-.. note::
-    Before entering the information for the chosen attribute, consult the `Data Catalogue <https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html>`_ page to check the definition and allowable values for the attribute. 
+   .. note::
+       Before entering the information for the chosen attribute, consult the `Data Catalogue <https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html>`_ page to check the definition and allowable values for the attribute. 
    
-6. Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.
+7. Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.
 
 
 Submitting the Updated Template

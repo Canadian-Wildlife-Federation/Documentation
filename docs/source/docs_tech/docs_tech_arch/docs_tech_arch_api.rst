@@ -82,11 +82,12 @@ Feature End Points
 ``/features?filter=<filter>&filter=<filter>``
 
     Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of bbox or point should be specified. Query options include:
-        - ``bbox`` - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: ``<min_long>,<min_lat>,<max_long>,<max_lat>``
-        - ``point`` - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: ``<longitude>,<latitude>``
-        - ``max-results`` - The maximum number of features to return.
-        - ``types`` - The feature types to query.
-        - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
+        
+    - ``bbox`` - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: ``<min_long>,<min_lat>,<max_long>,<max_lat>``
+    - ``point`` - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: ``<longitude>,<latitude>``
+    - ``max-results`` - The maximum number of features to return.
+    - ``types`` - The feature types to query.
+    - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
 
 ``/features/<type>``
 

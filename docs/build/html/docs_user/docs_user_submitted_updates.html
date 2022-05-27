@@ -386,7 +386,7 @@
 <h2>Downloading the Template<a class="headerlink" href="#downloading-the-template" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>Download the appropriate template for the feature type you are looking to submit updates for from the options below:</p>
-<p><a class="reference download internal" download="" href="../_downloads/a8b399bd3975e2c4574d0dfcf09811b2/damstemplate4202022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Dam</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a></p>
+<p><a class="reference download internal" download="" href="../_downloads/c2b2dd48004b905a08f8647b167b3c1d/damstemplate5272022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Dam</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a> <em>(released: 05/27/2022)</em></p>
 <p><em>Fishway Updates Template (coming soon)</em></p>
 <p><em>Waterfall Updates Template (coming soon)</em></p>
 <div class="admonition important">
@@ -399,50 +399,62 @@
 <hr class="docutils" />
 <div class="section" id="updating-existing-records">
 <h3>Updating Existing Records<a class="headerlink" href="#updating-existing-records" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p>The cabd_id field is the first column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. Copy this value and paste it into the next available cell of the cabd_id column in the template.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/barrierid.jpg"><img alt="../_images/barrierid.jpg" class="align-center" src="../_images/barrierid.jpg" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/cabd_id.jpg"><img alt="../_images/cabd_id.jpg" class="align-center" src="../_images/cabd_id.jpg" style="width: 700px;" /></a>
+<ol class="arabic">
+<li><p>Upon opening the template, the first field in column A is the ‘entry_classification’ field which is used to define the purpose of the information being provided in that row. Please select the most appropriate option from the list of values and descriptions provided below for the feature in question:</p>
+<ul class="simple">
+<li><p><strong>new_feature</strong>: The information being submitted pertains to a feature that is not yet present in the CABD. A new feature point must be generated.</p></li>
+<li><p><strong>modify_feature</strong>: The information being submitted is meant to update attribute information for an existing feature point in the CABD. The existing data is currently unknown, incorrect, or out of date.</p></li>
+<li><p><strong>delete_feature</strong>: The feature, identified via cabd_id, does not exist and should be removed from the CABD.</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/entryclass.jpg"><img alt="../_images/entryclass.jpg" src="../_images/entryclass.jpg" style="width: 800px;" /></a>
+</div>
+</li>
+<li><p>The cabd_id field is the second column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/barrierid.jpg"><img alt="../_images/barrierid.jpg" src="../_images/barrierid.jpg" style="width: 500px;" /></a>
+</div>
+<p>Copy this value and paste it into the next available cell of the cabd_id column in the template, as show in the image below.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/cabd_id.jpg"><img alt="../_images/cabd_id.jpg" src="../_images/cabd_id.jpg" style="width: 800px;" /></a>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Skip this step if the information being added if for a feature that does not yet exist in the CABD. The cabd_id for new features will be generated when initially loaded into the database.</p>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p></li>
+<ol class="loweralpha simple">
+<li><p>If the information being added is for a feature that does not yet exist in the CABD, skip this step. The cabd_id for a new feature will be generated when initially loaded into the database.</p></li>
+<li><p>If a feature is being submitted for deletion, then only the cabd_id of the feature is required as input and the remaining steps detailed below should be skipped.</p></li>
 </ol>
+</div>
+</li>
+<li><p>If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Latitude and longitude values <em>must</em> be populated when adding information for a new feature point.</p>
+<p>Latitude and longitude values are <strong>required</strong> when adding information for a new feature point.</p>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/datasrc.jpg"><img alt="../_images/datasrc.jpg" class="align-center" src="../_images/datasrc.jpg" style="width: 700px;" /></a>
-<ol class="arabic simple" start="4">
-<li><p>Next, select the attribute(s) for which new information will be added, from the options available in the drop down list.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/list1.png"><img alt="../_images/list1.png" class="align-center" src="../_images/list1.png" style="width: 700px;" /></a>
+</li>
+<li><p>Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.</p>
+<a class="reference internal image-reference" href="../_images/datasource.jpg"><img alt="../_images/datasource.jpg" class="align-center" src="../_images/datasource.jpg" style="width: 800px;" /></a>
+</li>
+<li><p>Next, select the attribute(s) for which new information will be added, from the options available in the drop down list.</p>
+<a class="reference internal image-reference" href="../_images/list1.jpg"><img alt="../_images/list1.jpg" class="align-center" src="../_images/list1.jpg" style="width: 800px;" /></a>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.</p>
 </div>
-<ol class="arabic" start="5">
+</li>
 <li><p>Populate the information for the chosen attributes.</p>
 <ol class="loweralpha simple">
 <li><p>If an attribute has a defined list of allowable values, these can be selected via the dropdown that is present next to each cell in the column below the chosen attribute.</p></li>
 </ol>
-<a class="reference internal image-reference" href="../_images/list2.png"><img alt="../_images/list2.png" class="align-center" src="../_images/list2.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/fieldentry.jpg"><img alt="../_images/fieldentry.jpg" class="align-center" src="../_images/fieldentry.jpg" style="width: 800px;" /></a>
 <ol class="loweralpha simple" start="2">
 <li><p>If there is no defined list of allowable values for the selected attribute, type the information directly into the cell.</p></li>
-</ol>
-</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Before entering the information for the chosen attribute, consult the <a class="reference external" href="https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html">Data Catalogue</a> page to check the definition and allowable values for the attribute.</p>
 </div>
-<ol class="arabic simple" start="6">
+</li>
 <li><p>Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.</p></li>
 </ol>
 </div>

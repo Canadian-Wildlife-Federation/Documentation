@@ -472,16 +472,14 @@
 <p><code class="docutils literal notranslate"><span class="pre">/features?point=&lt;longitude&gt;,&lt;latitude&gt;&amp;max-results=&lt;n&gt;&amp;types=&lt;type&gt;,&lt;type&gt;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">/features?filter=&lt;filter&gt;&amp;filter=&lt;filter&gt;</span></code></p>
 <blockquote>
-<div><dl class="simple">
-<dt>Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of bbox or point should be specified. Query options include:</dt><dd><ul class="simple">
+<div><p>Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of bbox or point should be specified. Query options include:</p>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">bbox</span></code> - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: <code class="docutils literal notranslate"><span class="pre">&lt;min_long&gt;,&lt;min_lat&gt;,&lt;max_long&gt;,&lt;max_lat&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">point</span></code> - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: <code class="docutils literal notranslate"><span class="pre">&lt;longitude&gt;,&lt;latitude&gt;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">max-results</span></code> - The maximum number of features to return.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">types</span></code> - The feature types to query.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">filter</span></code> - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.</p></li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
 <p><code class="docutils literal notranslate"><span class="pre">/features/&lt;type&gt;</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">/features/&lt;type&gt;?bbox=&lt;min_long&gt;,&lt;min_lat&gt;,&lt;max_long&gt;,&lt;max_lat&gt;</span></code></p>

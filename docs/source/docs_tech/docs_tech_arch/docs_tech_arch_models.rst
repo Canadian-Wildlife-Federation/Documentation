@@ -155,6 +155,7 @@ New feature types can be added to the system by adding the data to the database 
 5. If the new feature type is considered a barrier you also need to update the ``cabd.barriers_view``.  Use the existing view as an example.
 6. Add a row to the ``cabd.feature_types`` table to represent the new feature type.
 7. Add rows to the ``cabd.feature_type_metadata table``. One row needs to be added for each column returned by the feature type view created in step 3.  
+    
     * ``view_name`` – the name of the view created in step3
     * ``field_name`` – the name of the field in the view
     * ``name`` – the human friendly name for the column
