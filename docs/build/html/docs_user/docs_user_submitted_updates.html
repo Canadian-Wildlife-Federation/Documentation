@@ -406,6 +406,10 @@
 <li><p><strong>modify_feature</strong>: The information being submitted is meant to update attribute information for an existing feature point in the CABD. The existing data is currently unknown, incorrect, or out of date.</p></li>
 <li><p><strong>delete_feature</strong>: The feature, identified via cabd_id, does not exist and should be removed from the CABD.</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Decommissioned structures should <strong>not</strong> be considered for deletion. If a structure is found to be decommissioned/removed, the operating status field should be updated to reflect this information.</p>
+</div>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/entryclass.jpg"><img alt="../_images/entryclass.jpg" src="../_images/entryclass.jpg" style="width: 800px;" /></a>
 </div>
@@ -422,17 +426,17 @@
 <p class="admonition-title">Note</p>
 <ol class="loweralpha simple">
 <li><p>If the information being added is for a feature that does not yet exist in the CABD, skip this step. The cabd_id for a new feature will be generated when initially loaded into the database.</p></li>
-<li><p>If a feature is being submitted for deletion, then only the cabd_id of the feature is required as input and the remaining steps detailed below should be skipped.</p></li>
+<li><p>If a feature is being submitted for deletion, then only the <strong>cabd_id</strong> and the <strong>coordinates</strong> (i.e., latitude and longitude) of the feature are required as input.</p></li>
 </ol>
 </div>
 </li>
-<li><p>If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p>
+<li><p>When modifying an existing feature, if the location of a feature point needs to be updated or corrected, populate latitude and longitude with the new coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Latitude and longitude values are <strong>required</strong> when adding information for a new feature point.</p>
 </div>
 </li>
-<li><p>Enter a link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.</p>
+<li><p>Enter a link to the data source that the updated information comes from. This may be a website, scientific article, news article, technical report, etc.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/datasource.jpg"><img alt="../_images/datasource.jpg" src="../_images/datasource.jpg" style="width: 800px;" /></a>
 </div>
@@ -443,7 +447,7 @@
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.</p>
+<p>Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information for the feature is coming from a second (or third etc.) data source, create a new row with the same cabd_id to input the attribute information obtained from the new data source.</p>
 </div>
 </li>
 <li><p>Populate the information for the chosen attributes.</p>
@@ -459,7 +463,7 @@
 <p>Before entering the information for the chosen attribute, consult the <a class="reference external" href="https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html">Data Catalogue</a> page to check the definition and allowable values for the attribute.</p>
 </div>
 </li>
-<li><p>Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.</p></li>
+<li><p>Add and populate additional attributes (and rows if needed) until all the information for the specific feature(s) is present in the template.</p></li>
 </ol>
 </div>
 </div>

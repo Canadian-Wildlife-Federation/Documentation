@@ -34,7 +34,10 @@ Updating Existing Records
 
    * **modify_feature**: The information being submitted is meant to update attribute information for an existing feature point in the CABD. The existing data is currently unknown, incorrect, or out of date.
 
-   * **delete_feature**: The feature, identified via cabd_id, does not exist and should be removed from the CABD. 
+   * **delete_feature**: The feature, identified via cabd_id, does not exist and should be removed from the CABD.
+
+   .. important::
+       Decommissioned structures should **not** be considered for deletion. If a structure is found to be decommissioned/removed, the operating status field should be updated to reflect this information. 
 
    .. figure:: img/use_submitted_updates/entryclass.jpg
        :align: center
@@ -55,14 +58,14 @@ Updating Existing Records
    .. note::
        a. If the information being added is for a feature that does not yet exist in the CABD, skip this step. The cabd_id for a new feature will be generated when initially loaded into the database. 
 
-       b. If a feature is being submitted for deletion, then only the cabd_id of the feature is required as input and the remaining steps detailed below should be skipped.
+       b. If a feature is being submitted for deletion, then only the **cabd_id** and the **coordinates** (i.e., latitude and longitude) of the feature are required as input.
 
-3. If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.
+3. When modifying an existing feature, if the location of a feature point needs to be updated or corrected, populate latitude and longitude with the new coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.
 
    .. note::
        Latitude and longitude values are **required** when adding information for a new feature point.  
 
-4. Enter a link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.
+4. Enter a link to the data source that the updated information comes from. This may be a website, scientific article, news article, technical report, etc.
 
    .. figure:: img/use_submitted_updates/datasource.jpg
       :align: center
@@ -75,7 +78,7 @@ Updating Existing Records
       :width: 800
 
    .. important::
-       Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.
+       Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information for the feature is coming from a second (or third etc.) data source, create a new row with the same cabd_id to input the attribute information obtained from the new data source.
 
 6. Populate the information for the chosen attributes.
 
@@ -90,7 +93,7 @@ Updating Existing Records
    .. note::
        Before entering the information for the chosen attribute, consult the `Data Catalogue <https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html>`_ page to check the definition and allowable values for the attribute. 
    
-7. Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.
+7. Add and populate additional attributes (and rows if needed) until all the information for the specific feature(s) is present in the template. 
 
 
 Submitting the Updated Template
