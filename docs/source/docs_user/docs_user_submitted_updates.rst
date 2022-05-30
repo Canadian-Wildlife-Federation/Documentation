@@ -62,15 +62,15 @@ Updating Existing Records
    .. note::
        Latitude and longitude values are **required** when adding information for a new feature point.  
 
-4. Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.
+4. Enter a link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.
 
-   .. image:: img/use_submitted_updates/datasource.jpg
+   .. figure:: img/use_submitted_updates/datasource.jpg
       :align: center
       :width: 800
 
 5. Next, select the attribute(s) for which new information will be added, from the options available in the drop down list. 
 
-   .. image:: img/use_submitted_updates/list1.jpg
+   .. figure:: img/use_submitted_updates/list1.jpg
       :align: center
       :width: 800
 
@@ -81,11 +81,11 @@ Updating Existing Records
 
    a. If an attribute has a defined list of allowable values, these can be selected via the dropdown that is present next to each cell in the column below the chosen attribute. 
    
-   .. image:: img/use_submitted_updates/fieldentry.jpg
+   b. If there is no defined list of allowable values for the selected attribute, type the information directly into the cell. 
+
+   .. figure:: img/use_submitted_updates/fieldentry.jpg
       :align: center
       :width: 800
-
-   b. If there is no defined list of allowable values for the selected attribute, type the information directly into the cell. 
 
    .. note::
        Before entering the information for the chosen attribute, consult the `Data Catalogue <https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html>`_ page to check the definition and allowable values for the attribute. 
