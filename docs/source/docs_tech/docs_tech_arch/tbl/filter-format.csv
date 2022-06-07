@@ -1,4 +1,4 @@
 ﻿Parameter,Description
-``<attribute>``,The attribute key described in the feature type schema (``features/types/<type>``).
-``<operator>``,"The filter operator.  Value depends on data type.  Supported operators include: ``in``, ``notin``, ``eq``, ``neq``, ``lt``, ``lte``, ``gt``, ``gte``, ``like``, ``isnull``, ``notnull``."
-``<values>``,Values for the filter.  For ``in`` and ``notin`` operators this is a comma separated list of values. For the ``isnull`` and ``notnull`` operators this value should be empty (example: ``filter=field:isnull:``).
+|filterattr|,|fttype2|
+|filterop|,"The filter operator.  Value depends on data type.  Supported operators include: ``in``, ``notin``, ``eq``, ``neq``, ``lt``, ``lte``, ``gt``, ``gte``, ``like``, ``isnull``, ``notnull``."
+|filtervals|,Values for the filter.  For ``in`` and ``notin`` operators this is a comma separated list of values. For the ``isnull`` and ``notnull`` operators this value should be empty (example: ``filter=field:isnull:``).

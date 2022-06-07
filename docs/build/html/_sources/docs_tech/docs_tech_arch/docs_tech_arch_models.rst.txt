@@ -1,8 +1,29 @@
+..
+    Raw html added to assign styling only to codeblocks being used as headers in this document
+
+.. raw:: html
+
+    <style> .codeblocksize {line-height: 2.5; font-size: x-large; background-color: rgb(175 184 193 / 20%); border-radius: 6px; color: #CC3600; padding: 0.2em 0.4em; padding-top: 0.2em; padding-right: 0.4em; padding-bottom: 0.2em; padding-left: 0.4em;}</style>
+
+.. role:: codeblocksize
+
 .. _cabd-models:
 
-=================================
-CABD Features and Database Models
-=================================
+============================
+Features and Database Models
+============================
+
+.. _current-application-architecture:
+
+Existing Implementation
+-----------------------
+
+-----
+
+The current application runs on two Microsoft Azure Java Web App servers, ``cabd-web`` (for CABD data) and ``chyf-web`` (for CHyF data).
+
+.. image:: img/app-arch3.jpg
+    :align: center
 
 .. _cabd-feature-model:
 
@@ -20,8 +41,9 @@ Features in CABD have an optional hierarchical structure. Feature types can be c
 
 There are no structures in the software/database that enforce this model. The database views (see section below) are used to define the various feature types and super types. It would be possible for a feature type to be associated with multiple super types, if desired.
 
-.. image:: img/generic-feature-model.png
+.. image:: img/genericmodel.jpg
     :align: center
+    :width: 500
 
 .. _implemented-feature-model:
 
@@ -30,17 +52,18 @@ Implemented Feature Model
 
 There are currently three feature types and one super type implemented in CABD. Adding additional feature types is expected and the instructions for this are outlined below (How to add new Feature Type).
 
-.. image:: img/implemented-feature-model.png
+.. image:: img/implementedmodel.jpg
     :align: center
+    :width: 500
 
 Feature types:
 
-- ``barriers``
-- ``dams``
-- ``waterfalls``
-- ``fishways``
-- ``medium``
-- ``big``
+- ``barriers`` - a super feature type that includes dams structures and waterfalls.
+- ``dams`` - a feature type for features classified as a dam structure.
+- ``waterfalls`` - a feature type for features classified as a waterfall.
+- ``fishways`` - a feature type for features classified as a fishway structure.
+- ``medium`` - a feature type created for testing the increase in data volume expected for stream crossing data.
+- ``big`` - a feature type created for testing the increase in data volume expected for stream crossing data.
 
 .. _cabd-database-model:
 
@@ -67,7 +90,7 @@ Core Tables
 
 These tables are the core tables for the system and required regardless of the feature types loaded. They support the definition of feature types.
 
-``cabd.feature_types``
+:codeblocksize:`cabd.feature_types`
 
 Lists all the feature types supported by the system.
 
@@ -76,7 +99,7 @@ Lists all the feature types supported by the system.
     :widths: 30, 70
     :header-rows: 1
 
-``cabd.feature_type_metadata``
+:codeblocksize:`cabd.feature_type_metadata`
 
 Lists all the attributes for a given feature view and the metadata details about the attribute.
 
@@ -85,7 +108,7 @@ Lists all the attributes for a given feature view and the metadata details about
     :widths: 30, 70
     :header-rows: 1
 
-``cabd.data_source``
+:codeblocksize:`cabd.data_source`
 
 Lists data sources. Supports data source tracking for feature type attributes.
 
@@ -135,39 +158,47 @@ The ``<featuretype>_attribute_source`` table contains the cabd_id and one column
 
 .. _add-new-feature-type:
 
-How Add a New Feature Type
---------------------------
+How To Add a New Feature Type
+-----------------------------
 
 -----
 
 New feature types can be added to the system by adding the data to the database and updating the database metadata tables.
 
 1. Create a new schema for your feature type.
+
 2. Create the required data tables and reference tables to store the feature data and populate these tables. These should exist in their own ``<featuretype>`` schema.
+
 3. Create a view that joins the data table with the reference tables to include all the data you want visible to the ui.  Use one of the existing feature types views as an example (ex. ``cabd.dams_view``).
 
-.. warning::
-    When creating and/or updating existing view the role cabd must have permission to use the view (otherise the application won’t start up).
+   .. warning::
+       When creating and/or updating existing view the role cabd must have permission to use the view (otherwise the application won’t start up).
 
-    ``GRANT ALL PRIVILEGES ON cabd.dams_view to cabd;``
+       ``GRANT ALL PRIVILEGES ON cabd.dams_view to cabd;``
 
 4. Update the ``cabd.all_features_view`` to include the data from this new feature type. Use the existing view as an example, appending the new feature type data.
+
 5. If the new feature type is considered a barrier you also need to update the ``cabd.barriers_view``.  Use the existing view as an example.
+
 6. Add a row to the ``cabd.feature_types`` table to represent the new feature type.
+
 7. Add rows to the ``cabd.feature_type_metadata table``. One row needs to be added for each column returned by the feature type view created in step 3.  
     
-    * ``view_name`` – the name of the view created in step3
-    * ``field_name`` – the name of the field in the view
-    * ``name`` – the human friendly name for the column
-    * ``description`` – (optional) a description for the column
-    * ``is_link`` – true if the column represents a link to another api end point in the application
-    * ``data_type`` – data type of the column
-    * ``vw_simple_order`` – the order the column should appear in the simple view of the feature (or null if it shouldn’t appear at all in the simple view)
-    * ``vw_all_order`` – the order the column should appear in the all info view of the feature (or null if it shouldn’t appear at all)
-    * ``include_vector_tile`` – true or false if the attribute should be included in the vector tile of this feature type
-    * ``value_options_reference`` – for columns that have a defined list of valid values in another database table (for example: ``province_territory_code``), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables; otherwise it should contain a string of the form ``“<tablename>;<valuefield>;<namefield>;<descriptionfield>”``. All are required except ``descriptionfield`` which can be blank.  The ``tablename`` references the code table, the ``valuefield`` the value field in the code table, the ``namefield`` the human friendly name field in the table, and ``descriptionfield`` the description field in the table.
+   * ``view_name`` – the name of the view created in step3
+   * ``field_name`` – the name of the field in the view
+   * ``name`` – the human friendly name for the column
+   * ``description`` – (optional) a description for the column
+   * ``is_link`` – true if the column represents a link to another api end point in the application
+   * ``data_type`` – data type of the column
+   * ``vw_simple_order`` – the order the column should appear in the simple view of the feature (or null if it shouldn’t appear at all in the simple view)
+   * ``vw_all_order`` – the order the column should appear in the all info view of the feature (or null if it shouldn’t appear at all)
+   * ``include_vector_tile`` – true or false if the attribute should be included in the vector tile of this feature type
+   * ``value_options_reference`` – for columns that have a defined list of valid values in another database table (for example: ``province_territory_code``), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables; otherwise it should contain a string of the form ``“<tablename>;<valuefield>;<namefield>;<descriptionfield>”``. All are required except ``descriptionfield`` which can be blank.  The ``tablename`` references the code table, the ``valuefield`` the value field in the code table, the ``namefield`` the human friendly name field in the table, and ``descriptionfield`` the description field in the table.
+
 8. [OPTIONAL] Create the ``<featuretype>.<featuretype>_feature_source`` and ``<featuretype>.<featuretype>_attribute_source tables`` and populate with appropriate data.
+
 9. Restart the web server.  A restart is required to reload the cached metadata.
+
 10. At this point the features should be available in the API.
 
 The new feature type should show up in the types API: ``https://server.ca/cabd-api/features/types/``.

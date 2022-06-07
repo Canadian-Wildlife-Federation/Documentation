@@ -131,7 +131,14 @@ caption {
     background-color: #f2f2f3!important;
   }
 
+/*stop navbar font from changing when data dictionary is viewed*/
+ul {
+    font-family: var(--pst-font-family-base);
+}
 
+nav.bd-links p.caption {
+    font-family: var(--pst-font-family-base);
+}
 
   /*MISC ELEMENTS*/
   /*Fixes the floating sidebar on the data dictionary page*/
@@ -179,4 +186,21 @@ hr {
 span.pre {
     font-family: var(--pst-font-family-base);
     font-size: 1.15em;
+}
+
+/*code block styling class elements for multi-coloured code blocks - see rst-epilog for implementation*/
+.cbm {
+    background-color
+    : rgb(175 184 193 / 20%);
+    border-radius: 6px;
+    color: #CC3600;
+    padding: 0.2em 0.4em;
+    padding-top: 0.2em;
+    padding-right: 0.4em;
+    padding-bottom: 0.2em;
+    padding-left: 0.4em;
+}
+
+.cbmcc {
+    color: #2a997d;
 }

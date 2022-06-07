@@ -28,7 +28,6 @@ Definition:
 Attributes:
     :ref:`Architect <architect>`, :ref:`Attraction Estimate (%) <attraction>`, :ref:`Average Velocity of Water Flow (m/s) <avgvelocity>`, :ref:`Completeness Level <complvl>`, :ref:`Constructed By <constructby>`, :ref:`Contracted By <contractby>`, :ref:`Dam Identifier <damid>`, :ref:`Designed Based on Biology <biodesign>`, :ref:`Elevation (m) <elevation>`, :ref:`Engineering Notes <engnotes>`, :ref:`Entrance Location <enterlocal>`, :ref:`Entrance Position <enterpos>`, :ref:`Evaluating Study <evalstudy>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Fishway Type <fishwaytype>`, :ref:`Gradient <gradient>`, :ref:`Has Evaluating Studies <hasevalstudy>`, :ref:`Is Modified <ismod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Maximum Velocity of Water Flow (m/s) <maxvelo>`, :ref:`Mean Channel Depth (m) <meandepth>`, :ref:`Modification Purpose <modpurpose>`, :ref:`Modification Year <modyear>`, :ref:`Monitoring Equipment <monitor>`, :ref:`Municipality <municipality>`, :ref:`Nature of Evaluating Studies <natureevalstudy>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`Operated By <opby>`, :ref:`Operating Note <opnote>`, :ref:`Operation Period <opperiod>`, :ref:`Plans Held By <plansheld>`, :ref:`Province/Territory Name <provterr>`, :ref:`Purpose of Fishway  <fishwaypurpose>`, :ref:`River/Stream Name (English) <rivnameen>`, :ref:`River/Stream Name (French) <rivnamefr>`, :ref:`Species Known to Not Use <knowntouse>`, :ref:`Species Known to Use <knowntouse>`, :ref:`Structure Name (English) <strucnameen>`, :ref:`Structure Name (French) <strucnamefr>`, :ref:`System Identifier <systemid>`, :ref:`Transit Success Estimate (%) <success>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`, :ref:`NHN Watershed Name <nhnname>`, :ref:`Year Constructed <yearconst>`
 
-.. _assessment-schedule:
 
 Attributes 
 ----------
@@ -46,6 +45,8 @@ Barrier Identifier
  
  **Field name:** cabd_id
 
+|dcdamsreturn|
+
 .. _commentdef:
 
 Comments
@@ -53,6 +54,8 @@ Comments
  **Definition:** *Unstructured comments about the feature.*
  
  **Field name:** comments
+
+|dcdamsreturn|
 
 .. _complvl:
 
@@ -69,6 +72,8 @@ Completeness Level
     :widths: 15, 20, 25, 25, 25
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _ftdatasrc:
 
 Feature Data Source Details
@@ -81,6 +86,8 @@ Feature Data Source Details
     :file: tbl/ftdatasrc.csv
     :widths: 25, 75
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _fttype:
 
@@ -95,6 +102,8 @@ Feature Type
     :widths: 15, 85
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _lastmod:
 
 Last Modified
@@ -103,12 +112,16 @@ Last Modified
  
  **Field name:** last_modified
 
+|dcdamsreturn|
+
 .. _lat:
 
 Latitude
 ++++++++
  **Definition:** *The geographic x-coordinate representing the location of the feature.* 
  
+|dcdamsreturn|
+
 .. _length:
 
 Length (m)
@@ -117,12 +130,16 @@ Length (m)
  
  **Field name:** length_m
 
+|dcdamsreturn|
+
 .. _long:
 
 Longitude
 +++++++++
  **Definition:** *The geographic y-coordinate representing the location of the feature.* 
  
+|dcdamsreturn|
+
 .. _municipality:
 
 Municipality
@@ -130,6 +147,8 @@ Municipality
  **Definition:** *The municipality the feature is located in.*
  
  **Field name:** municipality
+
+|dcdamsreturn|
 
 .. _nhnid:
 
@@ -139,6 +158,8 @@ NHN Watershed ID
  
  **Field name:** nhn_watershed_id
 
+|dcdamsreturn|
+
 .. _nhnname:
 
 NHN Watershed Name
@@ -147,6 +168,8 @@ NHN Watershed Name
  
  **Field name:** sub_sub_drainage_area
 
+|dcdamsreturn|
+
 .. _opnote:
 
 Operating Note
@@ -154,6 +177,8 @@ Operating Note
  **Definition:** *Unstructured comments on important operation considerations for the dam structure or fishway.* 
  
  **Field name:** operating_notes
+
+|dcdamsreturn|
 
 .. _passstat:
 
@@ -170,6 +195,8 @@ Passability Status
     :widths: 15, 15, 30, 20, 20
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _passstatnote:
 
 Passability Status Note
@@ -177,6 +204,8 @@ Passability Status Note
  **Definition:** *Unstructured notes to provide context for the assigned passability status (e.g., species restrictions).*
  
  **Field name:** passability_status_note
+
+|dcdamsreturn|
 
 .. _provterr:
 
@@ -186,7 +215,7 @@ Province/Territory Name
  
  **Field name:** province_territory_code
 
-.. _provcompstat:
+|dcdamsreturn|
 
 .. _waterbodynameen:
 
@@ -196,6 +225,8 @@ Waterbody Name (English)
  
  **Field name:** waterbody_name_en
 
+|dcdamsreturn|
+
 .. _waterbodynamefr:
 
 Waterbody Name (French)
@@ -204,15 +235,20 @@ Waterbody Name (French)
  
  **Field name:** waterbody_name_fr
 
+|dcdamsreturn|
 
 Attributes Unique to Dams
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _assessment-schedule:
 
 Assessment Schedule
 +++++++++++++++++++
  **Definition:** *The frequency that the dam structure is assessed by an owner or regulatory body.*
  
  **Field name:** assess_schedule
+
+|dcdamsreturn|
 
 .. _avgrate:
 
@@ -221,6 +257,8 @@ Average Rate of Discharge (L/s)
  **Definition:** *The average rate of discharge at the dam location in litres per second.*
  
  **Field name:** avg_rate_of_discharge_ls
+
+|dcdamsreturn|
 
 .. _contype:
 
@@ -237,6 +275,8 @@ Construction Type
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _conyear:
 
 Construction Year
@@ -244,6 +284,8 @@ Construction Year
  **Definition:** *The year dam construction was completed.*
  
  **Field name:** construction_year
+
+|dcdamsreturn|
 
 .. _damcon:
 
@@ -260,6 +302,8 @@ Dam Condition
     :widths: 15, 15, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _damfunc:
 
 Dam Function
@@ -275,6 +319,8 @@ Dam Function
     :widths: 15, 25, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _damnameen:
 
 Dam Name (English)
@@ -283,6 +329,8 @@ Dam Name (English)
  
  **Field name:** dam_name_en
 
+|dcdamsreturn|
+
 .. _damnamefr:
 
 Dam Name (French)
@@ -290,6 +338,8 @@ Dam Name (French)
  **Definition:** *Given or known name of the dam structure (French).*
  
  **Field name:** dam_name_fr
+
+|dcdamsreturn|
 
 .. _damsize:
 
@@ -306,6 +356,8 @@ Dam Size
     :widths: 15, 15, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _damuse:
 
 Dam Use
@@ -321,6 +373,8 @@ Dam Use
     :widths: 15, 25, 60
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _degreg:
 
 Degree of Regulation
@@ -328,6 +382,8 @@ Degree of Regulation
  **Definition:** *Degree of Regulation (DOR) in percent; equivalent to “residence time” of water in the reservoir.*
  
  **Field name:** degree_of_regulation_pc
+
+|dcdamsreturn|
 
 .. _downpass:
 
@@ -344,6 +400,8 @@ Downstream Passage Route
     :widths: 15, 15, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _explife:
 
 Expected Life (Years)
@@ -351,6 +409,8 @@ Expected Life (Years)
  **Definition:** *The number of years the dam structure is expected to last.* 
  
  **Field name:** expected_life
+
+|dcdamsreturn|
 
 .. _facilnameen:
 
@@ -360,6 +420,8 @@ Facility Name (English)
  
  **Field name:** facility_name_en
 
+|dcdamsreturn|
+
 .. _facilnamefr:
 
 Facility Name (French)
@@ -367,6 +429,8 @@ Facility Name (French)
  **Definition:** *The given or known name of the larger facility that the dam is a part of (e.g., a hydroelectric generating station or mining operation); French.*
  
  **Field name:** facility_name_fr
+
+|dcdamsreturn|
 
 .. _fedcompstat:
 
@@ -376,6 +440,8 @@ Federal Compliance Status
  
  **Field name:** federal_compliance_status
 
+|dcdamsreturn|
+
 .. _fedflowreq:
 
 Federal Flow Requirements (m3/s)
@@ -383,6 +449,8 @@ Federal Flow Requirements (m3/s)
  **Definition:** *The minimum flow recommendations for the dam structure in cubic meters per second (m3/s). Based on assessments by Fisheries and Oceans Canada for the protection of fish and fish habitat.*
  
  **Field name:** federal_flow_req
+
+|dcdamsreturn|
 
 .. _gencap:
 
@@ -392,6 +460,8 @@ Generating Capacity (MWh)
  
  **Field name:** generating_capacity_mwh
 
+|dcdamsreturn|
+
 .. _hydropeak:
 
 Has Hydro Peaking System
@@ -400,6 +470,8 @@ Has Hydro Peaking System
  
  **Field name:** hydro_peaking_system
 
+|dcdamsreturn|
+
 .. _damheight:
 
 Height (m)
@@ -407,6 +479,8 @@ Height (m)
  **Definition:** *The reported height of the dam in meters. Depending on the data source this can be height of the dam wall, crest height, or head height.* 
  
  **Field name:** height_m
+
+|dcdamsreturn|
 
 .. _lakectrl:
 
@@ -423,6 +497,8 @@ Lake Control
     :widths: 15, 15, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _lastmaint:
 
 Last Maintenance Date
@@ -430,6 +506,8 @@ Last Maintenance Date
  **Definition:** *The date of last maintenance or renovation work.*
  
  **Field name:** maintenance_last
+
+|dcdamsreturn|
 
 .. _nextmaint:
 
@@ -439,6 +517,8 @@ Next Maintenance Date
  
  **Field name:** maintenance_next
 
+|dcdamsreturn|
+
 .. _turbcount:
 
 Number of Turbines
@@ -446,6 +526,8 @@ Number of Turbines
  **Definition:** *The number of turbines in the dam structure.*
  
  **Field name:** turbine_number
+
+|dcdamsreturn|
 
 .. _opstat:
 
@@ -462,6 +544,8 @@ Operating Status
     :widths: 15, 25, 60
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _owner:
 
 Owner
@@ -469,6 +553,8 @@ Owner
  **Definition:** *The person, company, organization, government unit, public utility, corporation, or other entity which either holds a water license to operate a dam or retains the legal property title on the dam site.* 
  
  **Field name:** owner
+
+|dcdamsreturn|
 
 .. _owntype:
 
@@ -485,11 +571,17 @@ Ownership Type
     :widths: 15, 25, 60
     :header-rows: 1
 
+|dcdamsreturn|
+
+.. _provcompstat:
+
 Provincial Compliance Status
 ++++++++++++++++++++++++++++
  **Definition:** *The regulatory authorizations that have been approved for the dam by the provincial licensing body.* 
  
  **Field name:** provincial_compliance_status
+
+|dcdamsreturn|
 
 .. _provflowreq:
 
@@ -499,6 +591,8 @@ Provincial Flow Requirements (m3/s)
  
  **Field name:** provincial_flow_req
 
+|dcdamsreturn|
+
 .. _remyear:
 
 Removed Year
@@ -506,6 +600,8 @@ Removed Year
  **Definition:** *The year the dam was decommissioned, removed, replaced, subsumed, or destroyed.*
  
  **Field name:** removed_year
+
+|dcdamsreturn|
 
 .. _resarea:
 
@@ -515,6 +611,8 @@ Reservoir Area (km2)
  
  **Field name:** reservoir_area_skm
 
+|dcdamsreturn|
+
 .. _resdepth:
 
 Reservoir Depth (m)
@@ -522,6 +620,8 @@ Reservoir Depth (m)
  **Definition:** *The average depth of the reservoir in meters.*
  
  **Field name:** reservoir_depth_m
+
+|dcdamsreturn|
 
 .. _resnameen:
 
@@ -531,6 +631,8 @@ Reservoir Name (English)
  
  **Field name:** reservoir_name_en
 
+|dcdamsreturn|
+
 .. _resnamefr:
 
 Reservoir Name (French)
@@ -538,6 +640,8 @@ Reservoir Name (French)
  **Definition:** *Name of the reservoir or controlled lake (French).* 
  
  **Field name:** reservoir_name_fr
+
+|dcdamsreturn|
 
 .. _respres:
 
@@ -547,6 +651,8 @@ Reservoir Present
  
  **Field name:** reservoir_present
 
+|dcdamsreturn|
+
 .. _spillcap:
 
 Spillway Capacity
@@ -554,6 +660,8 @@ Spillway Capacity
  **Definition:** *The designed capacity of the spillway in m3/s.* 
  
  **Field name:** spillway_capacity
+
+|dcdamsreturn|
 
 .. _spilltype:
 
@@ -570,6 +678,8 @@ Spillway Type
     :widths: 15, 15, 70
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _storagecap:
 
 Storage Capacity (mcm)
@@ -577,6 +687,8 @@ Storage Capacity (mcm)
  **Definition:** *The storage capacity of the reservoir in million cubic meters.*
  
  **Field name:** storage_capacity_mcm
+
+|dcdamsreturn|
 
 .. _turbtype:
 
@@ -593,6 +705,8 @@ Turbine Type
     :widths: 10, 25, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _upcatcharea:
 
 Upstream Catchment Area (km2)
@@ -601,6 +715,8 @@ Upstream Catchment Area (km2)
  
  **Field name:** catchment_area_skm
 
+|dcdamsreturn|
+
 .. _uplength:
 
 Upstream Linear Length (km)
@@ -608,6 +724,8 @@ Upstream Linear Length (km)
  **Definition:** *The amount of unobstructed linear kilometers upstream of the dam that would become available to aquatic species if the dam were to be remediated.*
  
  **Field name:** upstream_linear_km
+
+|dcdamsreturn|
 
 .. _uppasstype:
 
@@ -624,6 +742,8 @@ Upstream Passage Type
     :widths: 15, 25, 60
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _usefish:
 
 Use Fisheries
@@ -638,6 +758,8 @@ Use Fisheries
     :file: tbl/usetype.csv
     :widths: 15, 20, 65
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _useflood:
 
@@ -654,6 +776,8 @@ Use Flood Control
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _usehydro:
 
 Use Hydroelectric
@@ -668,6 +792,8 @@ Use Hydroelectric
     :file: tbl/usetype.csv
     :widths: 15, 20, 65
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _useais:
 
@@ -684,6 +810,8 @@ Use Invasive Species Control
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _useirr:
 
 Use Irrigation
@@ -698,6 +826,8 @@ Use Irrigation
     :file: tbl/usetype.csv
     :widths: 15, 20, 65
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _usenav:
 
@@ -714,6 +844,8 @@ Use Navigation
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _useother:
 
 Use Other
@@ -728,6 +860,8 @@ Use Other
     :file: tbl/usetype.csv
     :widths: 15, 20, 65
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _usepoll:
 
@@ -744,6 +878,8 @@ Use Pollution Control
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 .. _userec:
 
 Use Recreation
@@ -758,6 +894,8 @@ Use Recreation
     :file: tbl/usetype.csv
     :widths: 15, 20, 65
     :header-rows: 1
+
+|dcdamsreturn|
 
 .. _usesupply:
 
@@ -774,6 +912,8 @@ Use Water Supply
     :widths: 15, 20, 65
     :header-rows: 1
 
+|dcdamsreturn|
+
 Attributes Unique to Waterfalls
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -785,6 +925,8 @@ Fall Height (m)
  
  **Field name:** fall_height_m
 
+|dcfallreturn|
+
 .. _fallnameen:
 
 Fall Name (English)
@@ -792,6 +934,8 @@ Fall Name (English)
  **Definition:** *Given or known name of the waterfall (English).*
  
  **Field name:** fall_name_en
+
+|dcfallreturn|
 
 .. _fallnamefr:
 
@@ -801,6 +945,7 @@ Fall Name (French)
  
  **Field name:** fall_name_fr
 
+|dcfallreturn|
 
 Attributes Unique to Fishways
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -813,6 +958,8 @@ Architect
  
  **Field name:** architect
 
+|dcfishreturn|
+
 .. _attraction:
 
 Attraction Estimate (%)
@@ -820,6 +967,8 @@ Attraction Estimate (%)
  **Definition:** *Portion of individuals attracted to the fishway in percent.* 
  
  **Field name:** estimate_of_attraction_pct
+
+|dcfishreturn|
 
 .. _avgvelocity:
 
@@ -829,6 +978,8 @@ Average Velocity of Water Flow (m/s)
  
  **Field name:** mean_fishway_velocity_ms
 
+|dcfishreturn|
+
 .. _constructby:
 
 Constructed By
@@ -836,6 +987,8 @@ Constructed By
  **Definition:** *Name of the company that constructed the fishway.* 
  
  **Field name:** constructed_by
+
+|dcfishreturn|
 
 .. _contractby:
 
@@ -845,6 +998,8 @@ Contracted By
  
  **Field name:** contracted_by
 
+|dcfishreturn|
+
 .. _damid:
 
 Dam Identifier
@@ -852,6 +1007,8 @@ Dam Identifier
  **Definition:** *The unique barrier identifier corresponding to the dam that the fishway structure is associated with.* 
  
  **Field name:** dam_id
+
+|dcfishreturn|
 
 .. _biodesign:
 
@@ -861,6 +1018,8 @@ Designed Based on Biology
  
  **Field name:** designed_on_biology
 
+|dcfishreturn|
+
 .. _elevation:
 
 Elevation (m)
@@ -869,6 +1028,8 @@ Elevation (m)
  
  **Field name:** elevation_m
 
+|dcfishreturn|
+
 .. _engnotes:
 
 Engineering Notes
@@ -876,6 +1037,8 @@ Engineering Notes
  **Definition:** *Notes regarding design and construction of the fishway* 
  
  **Field name:** engineering_notes
+
+|dcfishreturn|
 
 .. _enterlocal:
 
@@ -887,6 +1050,8 @@ Entrance Location
 
  **Allowable Values:** Midstream, Bank
 
+|dcfishreturn|
+
 .. _enterpos:
 
 Entrance Position
@@ -897,6 +1062,8 @@ Entrance Position
 
  **Allowable Values:** Bottom, Surface, Bottom and Surface, Mid-column
 
+|dcfishreturn|
+
 .. _evalstudy:
 
 Evaluating Study
@@ -904,6 +1071,8 @@ Evaluating Study
  **Definition:** 	The reference for the literature (peer-reviewed and ‘‘grey’’) used to gather additional information about the fishway. 
  
  **Field name:** fishway_reference_id
+
+|dcfishreturn|
 
 .. _fishwaytype:
 
@@ -920,6 +1089,8 @@ Fishway Type
     :widths: 25, 15, 60
     :header-rows: 1
 	
+|dcfishreturn|
+
 .. _gradient:
 
 Gradient
@@ -927,6 +1098,8 @@ Gradient
  **Definition:** *The fishway’s angle of inclination in percent.* 
  
  **Field name:** gradient
+
+|dcfishreturn|
 
 .. _hasevalstudy:
 
@@ -936,6 +1109,8 @@ Has Evaluating Studies
  
  **Field name:** has_evaluating_studies
 
+|dcfishreturn|
+
 .. _ismod:
 
 Is Modified
@@ -943,6 +1118,8 @@ Is Modified
  **Definition:** *Indicates if the fishway has had any post-construction modifications.* 
  
  **Field name:** modified
+
+|dcfishreturn|
 
 .. _maxvelo:
 
@@ -952,6 +1129,8 @@ Maximum Velocity of Water Flow (m/s)
  
  **Field name:** max_fishway_velocity_ms
 
+|dcfishreturn|
+
 .. _meandepth:
 
 Mean Channel Depth (m)
@@ -959,6 +1138,8 @@ Mean Channel Depth (m)
  **Definition:** *Depth of fishway channel, in meters, during operation.* 
  
  **Field name:** depth_m
+
+|dcfishreturn|
 
 .. _modpurpose:
 
@@ -968,6 +1149,8 @@ Modification Purpose
  
  **Field name:** modification_purpose
 
+|dcfishreturn|
+
 .. _modyear:
 
 Modification Year
@@ -975,6 +1158,8 @@ Modification Year
  **Definition:** *The year that post-construction modifications were completed.*
  
  **Field name:** modification_year
+
+|dcfishreturn|
 
 .. _monitor:
 
@@ -984,6 +1169,8 @@ Monitoring Equipment
  
  **Field name:** monitoring_equipment
 
+|dcfishreturn|
+
 .. _natureevalstudy:
 
 Nature of Evaluating Studies
@@ -991,6 +1178,8 @@ Nature of Evaluating Studies
  **Definition:** *The type of evaluation study performed.*
  
  **Field name:** nature_of_evaluation_studies
+
+|dcfishreturn|
 
 .. _opby:
 
@@ -1000,6 +1189,8 @@ Operated By
 
  **Field name:** operated_by
 
+|dcfishreturn|
+
 .. _opperiod:
 
 Operation Period
@@ -1007,6 +1198,8 @@ Operation Period
  **Definition:** *The dates the fishway is in operation.*
  
  **Field name:** operation_period
+
+|dcfishreturn|
 
 .. _plansheld:
 
@@ -1016,6 +1209,8 @@ Plans Held By
  
  **Field name:** plans_held_by
 
+|dcfishreturn|
+
 .. _fishwaypurpose:
 
 Purpose of Fishway
@@ -1023,6 +1218,8 @@ Purpose of Fishway
  **Definition:** *The reason the fishway was designed and implemented.* 
  
  **Field name:** purpose
+
+|dcfishreturn|
 
 .. _rivnameen:
 
@@ -1032,6 +1229,8 @@ River/Stream Name (English)
  
  **Field name:** river_name_en
 
+|dcfishreturn|
+
 .. _rivnamefr:
 
 River/Stream Name (French)
@@ -1040,11 +1239,15 @@ River/Stream Name (French)
  
  **Field name:** river_name_fr
 
+|dcfishreturn|
+
 .. _knownnotuse:
 
 Species Known to Not Use
 ++++++++++++++++++++++++
  **Definition:** *Species where it is known that the fishway presents a significant barrier to migration.*
+
+|dcfishreturn|
 
 .. _knowntouse:
 
@@ -1052,6 +1255,8 @@ Species Known to Use
 ++++++++++++++++++++
  **Definition:** *Species that are known to use the fishway.* 
  
+|dcfishreturn|
+
 .. _strucnameen:
 
 Structure Name (English)
@@ -1059,6 +1264,8 @@ Structure Name (English)
  **Definition:** *The given or known name of the fishway structure or the dam with which it is associated (English).* 
  
  **Field name:** structure_name_en
+
+|dcfishreturn|
 
 .. _strucnamefr:
 
@@ -1068,6 +1275,8 @@ Structure Name (French)
  
  **Field name:** structure_name_fr
 
+|dcfishreturn|
+
 .. _systemid:
 
 System Identifier
@@ -1075,6 +1284,8 @@ System Identifier
  **Definition:** *Unique identifier for each fishway point.* 
  
  **Field name:** cabd_id
+
+|dcfishreturn|
 
 .. _success:
 
@@ -1084,6 +1295,8 @@ Transit Success Estimate (%)
  
  **Field name:** estimate_of_passage_success_pct
 
+|dcfishreturn|
+
 .. _yearconst:
 
 Year Constructed
@@ -1091,4 +1304,5 @@ Year Constructed
  **Definition:** *Year in which the fishway structure was built.* 
  
  **Field name:** year_constructed
-
+ 
+|dcfishreturn|

@@ -11,7 +11,7 @@ Downloading the Template
 
 Download the appropriate template for the feature type you are looking to submit updates for from the options below: 
 
-:download:`Dam Updates Template <downloads/damstemplate5272022.xlsx>` *(released: 05/27/2022)*
+:download:`Dam Updates Template <downloads/damstemplate06012022.xlsx>` *(released: 06/01/2022)*
 
 *Fishway Updates Template (coming soon)*
 
