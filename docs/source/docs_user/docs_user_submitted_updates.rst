@@ -2,31 +2,54 @@
 Submit Data Updates
 ===================
 
-A user may record and submit updates to the attribute information for one or multiple feature type records in the CABD using the user submitted updates template for dams, fishways or waterfalls. 
+A user may submit updates to the attribute information for one or multiple feature type records in the CABD by: 1) sharing the informaion via email, or 2) filling out the appropriate feature template (dams, fishways or waterfalls).
 
-Downloading the Template
-------------------------
+1. Submit Updates via Email
+---------------------------
 
 -----
 
+The email should be addressed to cabd@cwf-fcf.org.
+
+.. important::
+    
+    To help us identify your submission as quickly as possible, please use the following as the email subject line: "CABD - User Submitted Updates".
+
+The body of the email **must** include:
+
+* The barrier id (cabd_id) of the feature who's attribute information is to be updated (this can be acquired through the web mapping tool. See section *Update Existing Records* below, bullet 2, for more details).
+
+* A URL link for the information source.
+
+* A list detailing the information to be updated.
+
+Once received, our team will review the content and update the database with the provided information.
+
+
+2. Submit Updates Using a Feature Type Template
+-----------------------------------------------
+
+-----
+
+Download the Template
+~~~~~~~~~~~~~~~~~~~~~
+
 Download the appropriate template for the feature type you are looking to submit updates for from the options below: 
 
-:download:`Dam Updates Template <downloads/damstemplate06012022.xlsx>` *(released: 06/01/2022)*
+:download:`Dam Updates Template <downloads/damstemplate06082022.xlsx>` *(released: 06/08/2022)*
 
-*Fishway Updates Template (coming soon)*
+:download:`Fishway Updates Template <downloads/fishwaystemplate06132022.xlsx>` *(released: 06/13/2022)*
 
-*Waterfall Updates Template (coming soon)*
+:download:`Waterfall Updates Template <downloads/waterfallstemplate06132022.xlsx>` *(released: 06/13/2022)*
 
 .. important::
     As changes to the CABD data structure may occur at any time, it is important to check this page and **verify that you have the most recent version** of the user submitted updates template for the feature type you are looking to submit data for. 
 
-Populating the Template
------------------------
+Populate the Template
+~~~~~~~~~~~~~~~~~~~~~
 
------
-
-Updating Existing Records
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Update Existing Records
++++++++++++++++++++++++
 
 1. Upon opening the template, the first field in column A is the 'entry_classification' field which is used to define the purpose of the information being provided in that row. Please select the most appropriate option from the list of values and descriptions provided below for the feature in question:
 
@@ -43,13 +66,13 @@ Updating Existing Records
        :align: center
        :width: 800
 
-2. The cabd_id field is the second column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. 
+2. The cabd_id field is the second column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. To bring up a feature's attribute popup window, open the `web mapping tool <https://aquaticbarriers.ca/>`_, locate the feature point of interest, and click on the point to open the attribute information.
 
    .. figure:: img/use_submitted_updates/barrierid.jpg
        :align: center
        :width: 500
 
-   Copy this value and paste it into the next available cell of the cabd_id column in the template, as show in the image below.
+   Copy the value displayed for ‘Barrier Identifier’, or ‘System Identifier’, and paste it into the next available cell of the cabd_id column in the template, as shown in the image below.
 
    .. figure:: img/use_submitted_updates/cabd_id.jpg
       :align: center
@@ -96,10 +119,8 @@ Updating Existing Records
 7. Add and populate additional attributes (and rows if needed) until all the information for the specific feature(s) is present in the template. 
 
 
-Submitting the Updated Template
--------------------------------
-
------
+Submit the Updated Template
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The updated template should be submitted to cabd@cwf-fcf.org.
 

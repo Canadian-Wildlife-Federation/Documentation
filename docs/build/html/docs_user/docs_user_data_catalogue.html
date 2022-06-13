@@ -183,22 +183,22 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_models.html">
-     CABD Features and Database Models
+     Features and Database Models
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_api.html">
-     CABD REST Services (API Endpoints)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
-     Data Dictionary
+     REST Services (API Endpoints)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_tiles.html">
      Vector Tile Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
+     Data Dictionary
     </a>
    </li>
   </ul>
@@ -2084,6 +2084,10 @@
 <td><p>None</p></td>
 <td><p>Structure does not have a spillway.</p></td>
 </tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Unknown</p></td>
+<td><p>Structure has a spillway but the type is not known.</p></td>
+</tr>
 </tbody>
 </table>
 <p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
@@ -2947,6 +2951,7 @@
 <span id="knownnotuse"></span><h4>Species Known to Not Use<a class="headerlink" href="#species-known-to-not-use" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>Species where it is known that the fishway presents a significant barrier to migration.</em></p>
+<p><strong>Field name:</strong></p>
 </div></blockquote>
 <p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
 </i></a></span></p>
@@ -2955,6 +2960,7 @@
 <span id="knowntouse"></span><h4>Species Known to Use<a class="headerlink" href="#species-known-to-use" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>Species that are known to use the fishway.</em></p>
+<p><strong>Field name:</strong> known_to_use</p>
 </div></blockquote>
 <p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
 </i></a></span></p>

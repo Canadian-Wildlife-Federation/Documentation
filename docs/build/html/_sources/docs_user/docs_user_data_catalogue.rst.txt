@@ -1246,6 +1246,8 @@ River/Stream Name (French)
 Species Known to Not Use
 ++++++++++++++++++++++++
  **Definition:** *Species where it is known that the fishway presents a significant barrier to migration.*
+ 
+ **Field name:**
 
 |dcfishreturn|
 
@@ -1254,6 +1256,8 @@ Species Known to Not Use
 Species Known to Use
 ++++++++++++++++++++
  **Definition:** *Species that are known to use the fishway.* 
+
+ **Field name:** known_to_use
  
 |dcfishreturn|
 
