@@ -1,8 +1,15 @@
+.. raw:: html
+
+    <style> .green {color: #2a997d} </style>
+
+.. role:: green    
+
+
 .. _cabd-rest-services:
 
-==================================
-CABD REST Services (API Endpoints)
-==================================
+=============================
+REST Services (API Endpoints)
+=============================
 
 .. _api-overview:
 
@@ -45,6 +52,15 @@ API End Points
 
 The base API server for the CABD end points is: ``https://cabd-web.azurewebsites.net/cabd-api``.
 
+.. note::
+    
+    The API requests detailed in the following sections may contain one or more parameters (enclosed in chevrons, i.e. < >, and accentuated with the colour :green:`green`). If an API request is being made using one or more of the parameters listed, the chosen parameter must be replaced with an appropriate pre-defined value. 
+    
+    **Example:**
+
+    |requestex1|
+
+
 .. _feature-type-endpoints:
 
 Feature Type End Points
@@ -56,45 +72,52 @@ Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``
 
 ``/features/types/``
 
-    Returns the list of feature types. Each feature type object includes a URL that lists the metadata for that feature type and a URL to list all features for that time.  Some types may be super types that contain data from a collection of other types (for example barriers is a super type that contains dam and waterfall features).
+    Returns the list of feature types. Each feature type object includes a URL that lists the metadata for that feature type and a URL to list all features for that time.  
+    
+    .. note::
+        
+        Some types may be super types that contain data from a collection of other types (e.g., barriers is a super type that contains dam and waterfall features).
 
-``/features/types/<type>``
+|fttype|
 
     Returns a description of the feature type. This description includes all attributes, names, and other metadata associated with the feature type. In addition, the metadata includes display details for attributes, including the details of which attributes should be included in the “simple” display and which included in the “all” attributes display.
 
-    For example, ``https://cabd-web.azurewebsites.net/cabd-api/features/types/dams`` returns a ``json`` with the description of the ``dams`` feature type.
+    .. admonition:: Example
+        
+        ``https://cabd-web.azurewebsites.net/cabd-api/features/types/dams`` returns a ``json`` with the description of the ``dams`` feature type.
 
 .. _feature-endpoints:
 
 Feature End Points
 ~~~~~~~~~~~~~~~~~~
 
-``/features/<feature-id>``
+|ftid|
 
     Returns a single feature based on its ID, which is provided as ``<feature-id>``. This will include all of the attributes specific to the type of feature. Thus, the schema of this resource is variable based on the feature type.
 
 ``/features``
 
-``/features?bbox=<min_long>,<min_lat>,<max_long>,<max_lat>&types=<type>,<type>``
+|ftbbox|
 
-``/features?point=<longitude>,<latitude>&max-results=<n>&types=<type>,<type>``
+|ftpoint|
 
-``/features?filter=<filter>&filter=<filter>``
+|ftfilter|
 
     Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of bbox or point should be specified. Query options include:
-        - ``bbox`` - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: ``<min_long>,<min_lat>,<max_long>,<max_lat>``
-        - ``point`` - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: ``<longitude>,<latitude>``
-        - ``max-results`` - The maximum number of features to return.
-        - ``types`` - The feature types to query.
-        - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
+        
+    - ``bbox`` - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: |bboxcoords|
+    - ``point`` - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: |latlong|
+    - ``max-results`` - The maximum number of features to return.
+    - ``types`` - The feature types to query.
+    - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
 
-``/features/<type>``
+|ftstype|
 
-``/features/<type>?bbox=<min_long>,<min_lat>,<max_long>,<max_lat>``
+|ftsbbox|
 
-``/features/<type>?point=<longitude>,<latitude>&max-results=<n>``
+|ftspoint|
 
-``/features/<type>?filter=<filter>&filter=<filter>``
+|ftsfilter|
 
     Returns a list of the features of the given type. Query options are the same as for the /features endpoint (see above).
 
@@ -102,7 +125,7 @@ Feature End Points
 
     Returns a vector tile of all barrier features.
 
-``/tiles/<type>/z/x/y.mvt``
+|tilestype|
 
     Returns a vector tile of all features for the given type.
 
@@ -120,16 +143,16 @@ Provides a basic option for filtering features based on the feature attributes.
 
 Filter request format:
 
-``filter=<attribute>:<operator>:<values>``, where:
+|filterreq|
 
 .. csv-table:: 
     :file: tbl/filter-format.csv
     :widths: 30, 70
     :header-rows: 1
 
-Example:
-
-``/features/dams?bbox=0,0,1,1&filter=passability_status_code:in:1,2&filter=nhn_workunit_id:eq:08GABX1``
+.. admonition:: Example
+    
+    ``/features/dams?bbox=0,0,1,1&filter=passability_status_code:in:1,2&filter=nhn_workunit_id:eq:08GABX1``
 
 This request will return all dam features with a passability status code of 1 (Barrier) or 2 (Partial Barrier) in the NHN work unit 08GABX1 within the bounding box [(0 0), (1 1)].
 
@@ -140,9 +163,9 @@ Format
 
 The default output format is GeoJSON, however by supplying the format query parameter additional formats are supported.
 
-Example:
-
-``/features/dams_medium_large?filter=nhn_workunit_id:eq:08GABX1&format=geopackage``
+.. admonition:: Example
+    
+    ``/features/dams_medium_large?filter=nhn_workunit_id:eq:08GABX1&format=geopackage``
 
 Supported Formats:
 
@@ -171,9 +194,9 @@ Feature Data Source End Point
 
 -----
 
-``/features/datasources/<feature-id>``
+|ftdsid|
 
-``/features/datasources/<feature-id>?fields=all``
+|ftdsidflds|
 
     Returns the data source details for each attribute associated with the given feature id.  By default this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``ata source feature id``, add the query parameter ``fields=all`` to the request.
 
@@ -184,4 +207,4 @@ Format
 
 The default output format of this end point is CSV.
 
-JSON format is also supported by providing the ``format=json`` query parameter: ``/features/datasources/<feature-id>?format=json``.
+JSON format is also supported by providing the ``format=json`` query parameter: |ftdsidjson|.

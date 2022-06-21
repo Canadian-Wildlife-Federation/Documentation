@@ -81,17 +81,51 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="docs_user_web_map.html">
-   Web Mapping Interface
+   Web Mapping Tool
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial.html">
+     Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_search.html">
+       Searching
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_filter.html">
+       Filtering
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_download.html">
+       Downloading
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="docs_user_data_sources.html">
    Data Sources
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -117,8 +151,8 @@
   <a class="reference internal" href="docs_user_engagement.html">
    Stakeholder Engagement
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -141,30 +175,30 @@
   <a class="reference internal" href="../docs_tech/docs_tech_arch.html">
    Application Architecture
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_models.html">
-     CABD Features and Database Models
+     Features and Database Models
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_api.html">
-     CABD REST Services (API Endpoints)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
-     Data Dictionary
+     REST Services (API Endpoints)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_tiles.html">
      Vector Tile Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
+     Data Dictionary
     </a>
    </li>
   </ul>
@@ -173,8 +207,8 @@
   <a class="reference internal" href="../docs_tech/docs_tech_process.html">
    Barrier Data Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -207,8 +241,8 @@
   <a class="reference internal" href="../docs_chyf/docs_chyf_tools.html">
    Processing Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -234,8 +268,8 @@
   <a class="reference internal" href="../docs_chyf/docs_chyf_process.html">
    Hydro Network Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -476,7 +510,7 @@
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
+      <a class="reference internal nav-link" href="#assessment-schedule">
        Assessment Schedule
       </a>
      </li>
@@ -988,7 +1022,7 @@
 </div>
 </div>
 <div class="section" id="attributes">
-<span id="assessment-schedule"></span><h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <div class="section" id="attributes-common-to-multiple-feature-types">
 <h3>Attributes Common to Multiple Feature Types<a class="headerlink" href="#attributes-common-to-multiple-feature-types" title="Permalink to this headline">¶</a></h3>
@@ -998,6 +1032,8 @@
 <div><p><strong>Definition:</strong>        <em>Unique identifier for each barrier point.</em></p>
 <p><strong>Field name:</strong> cabd_id</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="comments">
 <span id="commentdef"></span><h4>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h4>
@@ -1005,6 +1041,8 @@
 <div><p><strong>Definition:</strong> <em>Unstructured comments about the feature.</em></p>
 <p><strong>Field name:</strong> comments</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="completeness-level">
 <span id="complvl"></span><h4>Completeness Level<a class="headerlink" href="#completeness-level" title="Permalink to this headline">¶</a></h4>
@@ -1056,6 +1094,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="feature-data-source-details">
 <span id="ftdatasrc"></span><h4>Feature Data Source Details<a class="headerlink" href="#feature-data-source-details" title="Permalink to this headline">¶</a></h4>
@@ -1085,6 +1125,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="feature-type">
 <span id="fttype"></span><h4>Feature Type<a class="headerlink" href="#feature-type" title="Permalink to this headline">¶</a></h4>
@@ -1114,6 +1156,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="last-modified">
 <span id="lastmod"></span><h4>Last Modified<a class="headerlink" href="#last-modified" title="Permalink to this headline">¶</a></h4>
@@ -1121,12 +1165,16 @@
 <div><p><strong>Definition:</strong> <em>The release date of the data source most recently used to create, revise, or confirm the feature record.</em></p>
 <p><strong>Field name:</strong> last_modified</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="latitude">
 <span id="lat"></span><h4>Latitude<a class="headerlink" href="#latitude" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>The geographic x-coordinate representing the location of the feature.</em></p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="length-m">
 <span id="length"></span><h4>Length (m)<a class="headerlink" href="#length-m" title="Permalink to this headline">¶</a></h4>
@@ -1134,12 +1182,16 @@
 <div><p><strong>Definition:</strong> <em>Dam - the length of the crest from one bank (or abutment) to the other in meters. Fishway - the length of the fishway in meters.</em></p>
 <p><strong>Field name:</strong> length_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="longitude">
 <span id="long"></span><h4>Longitude<a class="headerlink" href="#longitude" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>The geographic y-coordinate representing the location of the feature.</em></p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="municipality">
 <span id="id1"></span><h4>Municipality<a class="headerlink" href="#municipality" title="Permalink to this headline">¶</a></h4>
@@ -1147,6 +1199,8 @@
 <div><p><strong>Definition:</strong> <em>The municipality the feature is located in.</em></p>
 <p><strong>Field name:</strong> municipality</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="nhn-watershed-id">
 <span id="nhnid"></span><h4>NHN Watershed ID<a class="headerlink" href="#nhn-watershed-id" title="Permalink to this headline">¶</a></h4>
@@ -1154,6 +1208,8 @@
 <div><p><strong>Definition:</strong> <em>A code referencing the work unit ‘Dataset Name’ from the National Hydrographic Network (NHN) that the feature is located in.</em></p>
 <p><strong>Field name:</strong> nhn_watershed_id</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="nhn-watershed-name">
 <span id="nhnname"></span><h4>NHN Watershed Name<a class="headerlink" href="#nhn-watershed-name" title="Permalink to this headline">¶</a></h4>
@@ -1161,6 +1217,8 @@
 <div><p><strong>Definition:</strong> <em>The name of the sub-sub watershed that the feature is located in.</em></p>
 <p><strong>Field name:</strong> sub_sub_drainage_area</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="operating-note">
 <span id="opnote"></span><h4>Operating Note<a class="headerlink" href="#operating-note" title="Permalink to this headline">¶</a></h4>
@@ -1168,6 +1226,8 @@
 <div><p><strong>Definition:</strong> <em>Unstructured comments on important operation considerations for the dam structure or fishway.</em></p>
 <p><strong>Field name:</strong> operating_notes</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="passability-status">
 <span id="passstat"></span><h4>Passability Status<a class="headerlink" href="#passability-status" title="Permalink to this headline">¶</a></h4>
@@ -1219,6 +1279,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="passability-status-note">
 <span id="passstatnote"></span><h4>Passability Status Note<a class="headerlink" href="#passability-status-note" title="Permalink to this headline">¶</a></h4>
@@ -1226,6 +1288,8 @@
 <div><p><strong>Definition:</strong> <em>Unstructured notes to provide context for the assigned passability status (e.g., species restrictions).</em></p>
 <p><strong>Field name:</strong> passability_status_note</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="province-territory-name">
 <span id="provterr"></span><h4>Province/Territory Name<a class="headerlink" href="#province-territory-name" title="Permalink to this headline">¶</a></h4>
@@ -1233,13 +1297,17 @@
 <div><p><strong>Definition:</strong> <em>The Province or Territory the feature is located in.</em></p>
 <p><strong>Field name:</strong> province_territory_code</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="waterbody-name-english">
-<span id="waterbodynameen"></span><span id="provcompstat"></span><h4>Waterbody Name (English)<a class="headerlink" href="#waterbody-name-english" title="Permalink to this headline">¶</a></h4>
+<span id="waterbodynameen"></span><h4>Waterbody Name (English)<a class="headerlink" href="#waterbody-name-english" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>Name of waterbody in which the feature is recorded (English).</em></p>
 <p><strong>Field name:</strong> waterbody_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="waterbody-name-french">
 <span id="waterbodynamefr"></span><h4>Waterbody Name (French)<a class="headerlink" href="#waterbody-name-french" title="Permalink to this headline">¶</a></h4>
@@ -1247,16 +1315,20 @@
 <div><p><strong>Definition:</strong> <em>Name of waterbody in which the feature is recorded (French).</em></p>
 <p><strong>Field name:</strong> waterbody_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 </div>
 <div class="section" id="attributes-unique-to-dams">
 <h3>Attributes Unique to Dams<a class="headerlink" href="#attributes-unique-to-dams" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id2">
-<h4>Assessment Schedule<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="assessment-schedule">
+<span id="id2"></span><h4>Assessment Schedule<a class="headerlink" href="#assessment-schedule" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>The frequency that the dam structure is assessed by an owner or regulatory body.</em></p>
 <p><strong>Field name:</strong> assess_schedule</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="average-rate-of-discharge-l-s">
 <span id="avgrate"></span><h4>Average Rate of Discharge (L/s)<a class="headerlink" href="#average-rate-of-discharge-l-s" title="Permalink to this headline">¶</a></h4>
@@ -1264,6 +1336,8 @@
 <div><p><strong>Definition:</strong> <em>The average rate of discharge at the dam location in litres per second.</em></p>
 <p><strong>Field name:</strong> avg_rate_of_discharge_ls</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="construction-type">
 <span id="contype"></span><h4>Construction Type<a class="headerlink" href="#construction-type" title="Permalink to this headline">¶</a></h4>
@@ -1327,6 +1401,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="construction-year">
 <span id="conyear"></span><h4>Construction Year<a class="headerlink" href="#construction-year" title="Permalink to this headline">¶</a></h4>
@@ -1334,6 +1410,8 @@
 <div><p><strong>Definition:</strong> <em>The year dam construction was completed.</em></p>
 <p><strong>Field name:</strong> construction_year</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-condition">
 <span id="damcon"></span><h4>Dam Condition<a class="headerlink" href="#dam-condition" title="Permalink to this headline">¶</a></h4>
@@ -1373,6 +1451,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-function">
 <span id="damfunc"></span><h4>Dam Function<a class="headerlink" href="#dam-function" title="Permalink to this headline">¶</a></h4>
@@ -1448,6 +1528,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-name-english">
 <span id="damnameen"></span><h4>Dam Name (English)<a class="headerlink" href="#dam-name-english" title="Permalink to this headline">¶</a></h4>
@@ -1455,6 +1537,8 @@
 <div><p><strong>Definition:</strong> <em>Given or known name of the dam structure (English).</em></p>
 <p><strong>Field name:</strong> dam_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-name-french">
 <span id="damnamefr"></span><h4>Dam Name (French)<a class="headerlink" href="#dam-name-french" title="Permalink to this headline">¶</a></h4>
@@ -1462,6 +1546,8 @@
 <div><p><strong>Definition:</strong> <em>Given or known name of the dam structure (French).</em></p>
 <p><strong>Field name:</strong> dam_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-size">
 <span id="damsize"></span><h4>Dam Size<a class="headerlink" href="#dam-size" title="Permalink to this headline">¶</a></h4>
@@ -1501,6 +1587,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-use">
 <span id="damuse"></span><h4>Dam Use<a class="headerlink" href="#dam-use" title="Permalink to this headline">¶</a></h4>
@@ -1568,6 +1656,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="degree-of-regulation">
 <span id="degreg"></span><h4>Degree of Regulation<a class="headerlink" href="#degree-of-regulation" title="Permalink to this headline">¶</a></h4>
@@ -1575,6 +1665,8 @@
 <div><p><strong>Definition:</strong> <em>Degree of Regulation (DOR) in percent; equivalent to “residence time” of water in the reservoir.</em></p>
 <p><strong>Field name:</strong> degree_of_regulation_pc</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="downstream-passage-route">
 <span id="downpass"></span><h4>Downstream Passage Route<a class="headerlink" href="#downstream-passage-route" title="Permalink to this headline">¶</a></h4>
@@ -1614,6 +1706,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="expected-life-years">
 <span id="explife"></span><h4>Expected Life (Years)<a class="headerlink" href="#expected-life-years" title="Permalink to this headline">¶</a></h4>
@@ -1621,6 +1715,8 @@
 <div><p><strong>Definition:</strong> <em>The number of years the dam structure is expected to last.</em></p>
 <p><strong>Field name:</strong> expected_life</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="facility-name-english">
 <span id="facilnameen"></span><h4>Facility Name (English)<a class="headerlink" href="#facility-name-english" title="Permalink to this headline">¶</a></h4>
@@ -1628,6 +1724,8 @@
 <div><p><strong>Definition:</strong> <em>The given or known name of the larger facility of which the dam is a part of (e.g., a hydroelectric generating station or mining operation); English.</em></p>
 <p><strong>Field name:</strong> facility_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="facility-name-french">
 <span id="facilnamefr"></span><h4>Facility Name (French)<a class="headerlink" href="#facility-name-french" title="Permalink to this headline">¶</a></h4>
@@ -1635,6 +1733,8 @@
 <div><p><strong>Definition:</strong> <em>The given or known name of the larger facility that the dam is a part of (e.g., a hydroelectric generating station or mining operation); French.</em></p>
 <p><strong>Field name:</strong> facility_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="federal-compliance-status">
 <span id="fedcompstat"></span><h4>Federal Compliance Status<a class="headerlink" href="#federal-compliance-status" title="Permalink to this headline">¶</a></h4>
@@ -1642,6 +1742,8 @@
 <div><p><strong>Definition:</strong> <em>The regulatory authorizations that have been approved for the dam by the federal licensing body.</em></p>
 <p><strong>Field name:</strong> federal_compliance_status</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="federal-flow-requirements-m3-s">
 <span id="fedflowreq"></span><h4>Federal Flow Requirements (m3/s)<a class="headerlink" href="#federal-flow-requirements-m3-s" title="Permalink to this headline">¶</a></h4>
@@ -1649,6 +1751,8 @@
 <div><p><strong>Definition:</strong> <em>The minimum flow recommendations for the dam structure in cubic meters per second (m3/s). Based on assessments by Fisheries and Oceans Canada for the protection of fish and fish habitat.</em></p>
 <p><strong>Field name:</strong> federal_flow_req</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="generating-capacity-mwh">
 <span id="gencap"></span><h4>Generating Capacity (MWh)<a class="headerlink" href="#generating-capacity-mwh" title="Permalink to this headline">¶</a></h4>
@@ -1656,6 +1760,8 @@
 <div><p><strong>Definition:</strong> <em>The amount of electricity the hydroelectric facility can produce in megawatt hours.</em></p>
 <p><strong>Field name:</strong> generating_capacity_mwh</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="has-hydro-peaking-system">
 <span id="hydropeak"></span><h4>Has Hydro Peaking System<a class="headerlink" href="#has-hydro-peaking-system" title="Permalink to this headline">¶</a></h4>
@@ -1663,6 +1769,8 @@
 <div><p><strong>Definition:</strong> <em>Indicates if the dam uses a hydro peaking system.</em></p>
 <p><strong>Field name:</strong> hydro_peaking_system</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="height-m">
 <span id="damheight"></span><h4>Height (m)<a class="headerlink" href="#height-m" title="Permalink to this headline">¶</a></h4>
@@ -1670,6 +1778,8 @@
 <div><p><strong>Definition:</strong> <em>The reported height of the dam in meters. Depending on the data source this can be height of the dam wall, crest height, or head height.</em></p>
 <p><strong>Field name:</strong> height_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="lake-control">
 <span id="lakectrl"></span><h4>Lake Control<a class="headerlink" href="#lake-control" title="Permalink to this headline">¶</a></h4>
@@ -1705,6 +1815,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="last-maintenance-date">
 <span id="lastmaint"></span><h4>Last Maintenance Date<a class="headerlink" href="#last-maintenance-date" title="Permalink to this headline">¶</a></h4>
@@ -1712,6 +1824,8 @@
 <div><p><strong>Definition:</strong> <em>The date of last maintenance or renovation work.</em></p>
 <p><strong>Field name:</strong> maintenance_last</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="next-maintenance-date">
 <span id="nextmaint"></span><h4>Next Maintenance Date<a class="headerlink" href="#next-maintenance-date" title="Permalink to this headline">¶</a></h4>
@@ -1719,6 +1833,8 @@
 <div><p><strong>Definition:</strong> <em>The date of the next scheduled maintenance or renovation work.</em></p>
 <p><strong>Field name:</strong> maintenance_next</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="number-of-turbines">
 <span id="turbcount"></span><h4>Number of Turbines<a class="headerlink" href="#number-of-turbines" title="Permalink to this headline">¶</a></h4>
@@ -1726,6 +1842,8 @@
 <div><p><strong>Definition:</strong> <em>The number of turbines in the dam structure.</em></p>
 <p><strong>Field name:</strong> turbine_number</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="operating-status">
 <span id="opstat"></span><h4>Operating Status<a class="headerlink" href="#operating-status" title="Permalink to this headline">¶</a></h4>
@@ -1767,8 +1885,14 @@
 <td><p>Unknown</p></td>
 <td><p>Operating status of the structure is not known.</p></td>
 </tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Remediated</p></td>
+<td><p>Structure remains in place but has been modified to allow fish to pass.</p></td>
+</tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="owner">
 <span id="id3"></span><h4>Owner<a class="headerlink" href="#owner" title="Permalink to this headline">¶</a></h4>
@@ -1776,6 +1900,8 @@
 <div><p><strong>Definition:</strong> <em>The person, company, organization, government unit, public utility, corporation, or other entity which either holds a water license to operate a dam or retains the legal property title on the dam site.</em></p>
 <p><strong>Field name:</strong> owner</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="ownership-type">
 <span id="owntype"></span><h4>Ownership Type<a class="headerlink" href="#ownership-type" title="Permalink to this headline">¶</a></h4>
@@ -1825,15 +1951,26 @@
 <td><p>Unknown</p></td>
 <td><p>Ownership of the dam structure is unknown.</p></td>
 </tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Indigenous</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="provincial-compliance-status">
-<h4>Provincial Compliance Status<a class="headerlink" href="#provincial-compliance-status" title="Permalink to this headline">¶</a></h4>
+<span id="provcompstat"></span><h4>Provincial Compliance Status<a class="headerlink" href="#provincial-compliance-status" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>The regulatory authorizations that have been approved for the dam by the provincial licensing body.</em></p>
 <p><strong>Field name:</strong> provincial_compliance_status</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="provincial-flow-requirements-m3-s">
 <span id="provflowreq"></span><h4>Provincial Flow Requirements (m3/s)<a class="headerlink" href="#provincial-flow-requirements-m3-s" title="Permalink to this headline">¶</a></h4>
@@ -1841,6 +1978,8 @@
 <div><p><strong>Definition:</strong> <em>The legislated flow requirements for the dam structure in cubic meters per second (m3/s) regulated by the provincial licensing body.</em></p>
 <p><strong>Field name:</strong> provincial_flow_req</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="removed-year">
 <span id="remyear"></span><h4>Removed Year<a class="headerlink" href="#removed-year" title="Permalink to this headline">¶</a></h4>
@@ -1848,6 +1987,8 @@
 <div><p><strong>Definition:</strong> <em>The year the dam was decommissioned, removed, replaced, subsumed, or destroyed.</em></p>
 <p><strong>Field name:</strong> removed_year</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="reservoir-area-km2">
 <span id="resarea"></span><h4>Reservoir Area (km2)<a class="headerlink" href="#reservoir-area-km2" title="Permalink to this headline">¶</a></h4>
@@ -1855,6 +1996,8 @@
 <div><p><strong>Definition:</strong> <em>The surface area of the reservoir in square kilometers.</em></p>
 <p><strong>Field name:</strong> reservoir_area_skm</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="reservoir-depth-m">
 <span id="resdepth"></span><h4>Reservoir Depth (m)<a class="headerlink" href="#reservoir-depth-m" title="Permalink to this headline">¶</a></h4>
@@ -1862,6 +2005,8 @@
 <div><p><strong>Definition:</strong> <em>The average depth of the reservoir in meters.</em></p>
 <p><strong>Field name:</strong> reservoir_depth_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="reservoir-name-english">
 <span id="resnameen"></span><h4>Reservoir Name (English)<a class="headerlink" href="#reservoir-name-english" title="Permalink to this headline">¶</a></h4>
@@ -1869,6 +2014,8 @@
 <div><p><strong>Definition:</strong> <em>Name of the reservoir or controlled lake (English).</em></p>
 <p><strong>Field name:</strong> reservoir_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="reservoir-name-french">
 <span id="resnamefr"></span><h4>Reservoir Name (French)<a class="headerlink" href="#reservoir-name-french" title="Permalink to this headline">¶</a></h4>
@@ -1876,6 +2023,8 @@
 <div><p><strong>Definition:</strong> <em>Name of the reservoir or controlled lake (French).</em></p>
 <p><strong>Field name:</strong> reservoir_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="reservoir-present">
 <span id="respres"></span><h4>Reservoir Present<a class="headerlink" href="#reservoir-present" title="Permalink to this headline">¶</a></h4>
@@ -1883,6 +2032,8 @@
 <div><p><strong>Definition:</strong> <em>Indicates if a reservoir is present due to construction of the dam.</em></p>
 <p><strong>Field name:</strong> reservoir_present</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="spillway-capacity">
 <span id="spillcap"></span><h4>Spillway Capacity<a class="headerlink" href="#spillway-capacity" title="Permalink to this headline">¶</a></h4>
@@ -1890,6 +2041,8 @@
 <div><p><strong>Definition:</strong> <em>The designed capacity of the spillway in m3/s.</em></p>
 <p><strong>Field name:</strong> spillway_capacity</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="spillway-type">
 <span id="spilltype"></span><h4>Spillway Type<a class="headerlink" href="#spillway-type" title="Permalink to this headline">¶</a></h4>
@@ -1931,8 +2084,14 @@
 <td><p>None</p></td>
 <td><p>Structure does not have a spillway.</p></td>
 </tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Unknown</p></td>
+<td><p>Structure has a spillway but the type is not known.</p></td>
+</tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="storage-capacity-mcm">
 <span id="storagecap"></span><h4>Storage Capacity (mcm)<a class="headerlink" href="#storage-capacity-mcm" title="Permalink to this headline">¶</a></h4>
@@ -1940,6 +2099,8 @@
 <div><p><strong>Definition:</strong> <em>The storage capacity of the reservoir in million cubic meters.</em></p>
 <p><strong>Field name:</strong> storage_capacity_mcm</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="turbine-type">
 <span id="turbtype"></span><h4>Turbine Type<a class="headerlink" href="#turbine-type" title="Permalink to this headline">¶</a></h4>
@@ -1981,8 +2142,14 @@
 <td><p>Unknown</p></td>
 <td><p>The turbine type is unknown.</p></td>
 </tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Other</p></td>
+<td><p>Turbine type is known, but different than those defined in this table.</p></td>
+</tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="upstream-catchment-area-km2">
 <span id="upcatcharea"></span><h4>Upstream Catchment Area (km2)<a class="headerlink" href="#upstream-catchment-area-km2" title="Permalink to this headline">¶</a></h4>
@@ -1990,6 +2157,8 @@
 <div><p><strong>Definition:</strong> <em>The area of upstream catchment draining into the reservoir in square kilometers.</em></p>
 <p><strong>Field name:</strong> catchment_area_skm</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="upstream-linear-length-km">
 <span id="uplength"></span><h4>Upstream Linear Length (km)<a class="headerlink" href="#upstream-linear-length-km" title="Permalink to this headline">¶</a></h4>
@@ -1997,6 +2166,8 @@
 <div><p><strong>Definition:</strong> <em>The amount of unobstructed linear kilometers upstream of the dam that would become available to aquatic species if the dam were to be remediated.</em></p>
 <p><strong>Field name:</strong> upstream_linear_km</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="upstream-passage-type">
 <span id="uppasstype"></span><h4>Upstream Passage Type<a class="headerlink" href="#upstream-passage-type" title="Permalink to this headline">¶</a></h4>
@@ -2060,6 +2231,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-fisheries">
 <span id="usefish"></span><h4>Use Fisheries<a class="headerlink" href="#use-fisheries" title="Permalink to this headline">¶</a></h4>
@@ -2095,6 +2268,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-flood-control">
 <span id="useflood"></span><h4>Use Flood Control<a class="headerlink" href="#use-flood-control" title="Permalink to this headline">¶</a></h4>
@@ -2130,6 +2305,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-hydroelectric">
 <span id="usehydro"></span><h4>Use Hydroelectric<a class="headerlink" href="#use-hydroelectric" title="Permalink to this headline">¶</a></h4>
@@ -2165,6 +2342,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-invasive-species-control">
 <span id="useais"></span><h4>Use Invasive Species Control<a class="headerlink" href="#use-invasive-species-control" title="Permalink to this headline">¶</a></h4>
@@ -2200,6 +2379,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-irrigation">
 <span id="useirr"></span><h4>Use Irrigation<a class="headerlink" href="#use-irrigation" title="Permalink to this headline">¶</a></h4>
@@ -2235,6 +2416,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-navigation">
 <span id="usenav"></span><h4>Use Navigation<a class="headerlink" href="#use-navigation" title="Permalink to this headline">¶</a></h4>
@@ -2270,6 +2453,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-other">
 <span id="useother"></span><h4>Use Other<a class="headerlink" href="#use-other" title="Permalink to this headline">¶</a></h4>
@@ -2305,6 +2490,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-pollution-control">
 <span id="usepoll"></span><h4>Use Pollution Control<a class="headerlink" href="#use-pollution-control" title="Permalink to this headline">¶</a></h4>
@@ -2340,6 +2527,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-recreation">
 <span id="userec"></span><h4>Use Recreation<a class="headerlink" href="#use-recreation" title="Permalink to this headline">¶</a></h4>
@@ -2375,6 +2564,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="use-water-supply">
 <span id="usesupply"></span><h4>Use Water Supply<a class="headerlink" href="#use-water-supply" title="Permalink to this headline">¶</a></h4>
@@ -2410,6 +2601,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#dams"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 </div>
 <div class="section" id="attributes-unique-to-waterfalls">
@@ -2420,6 +2613,8 @@
 <div><p><strong>Definition:</strong> <em>Height of the waterfall in meters.</em></p>
 <p><strong>Field name:</strong> fall_height_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#waterfalls"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="fall-name-english">
 <span id="fallnameen"></span><h4>Fall Name (English)<a class="headerlink" href="#fall-name-english" title="Permalink to this headline">¶</a></h4>
@@ -2427,6 +2622,8 @@
 <div><p><strong>Definition:</strong> <em>Given or known name of the waterfall (English).</em></p>
 <p><strong>Field name:</strong> fall_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#waterfalls"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="fall-name-french">
 <span id="fallnamefr"></span><h4>Fall Name (French)<a class="headerlink" href="#fall-name-french" title="Permalink to this headline">¶</a></h4>
@@ -2434,6 +2631,8 @@
 <div><p><strong>Definition:</strong> <em>Given or known name of the waterfall (French).</em></p>
 <p><strong>Field name:</strong> fall_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#waterfalls"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 </div>
 <div class="section" id="attributes-unique-to-fishways">
@@ -2444,6 +2643,8 @@
 <div><p><strong>Definition:</strong> <em>Company/organization that designed the fishway structure.</em></p>
 <p><strong>Field name:</strong> architect</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="attraction-estimate">
 <span id="attraction"></span><h4>Attraction Estimate (%)<a class="headerlink" href="#attraction-estimate" title="Permalink to this headline">¶</a></h4>
@@ -2451,6 +2652,8 @@
 <div><p><strong>Definition:</strong> <em>Portion of individuals attracted to the fishway in percent.</em></p>
 <p><strong>Field name:</strong> estimate_of_attraction_pct</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="average-velocity-of-water-flow-m-s">
 <span id="avgvelocity"></span><h4>Average Velocity of Water Flow (m/s)<a class="headerlink" href="#average-velocity-of-water-flow-m-s" title="Permalink to this headline">¶</a></h4>
@@ -2458,6 +2661,8 @@
 <div><p><strong>Definition:</strong> <em>Average velocity of water flow through the fishway in m/s.</em></p>
 <p><strong>Field name:</strong> mean_fishway_velocity_ms</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="constructed-by">
 <span id="constructby"></span><h4>Constructed By<a class="headerlink" href="#constructed-by" title="Permalink to this headline">¶</a></h4>
@@ -2465,6 +2670,8 @@
 <div><p><strong>Definition:</strong> <em>Name of the company that constructed the fishway.</em></p>
 <p><strong>Field name:</strong> constructed_by</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="contracted-by">
 <span id="contractby"></span><h4>Contracted By<a class="headerlink" href="#contracted-by" title="Permalink to this headline">¶</a></h4>
@@ -2472,6 +2679,8 @@
 <div><p><strong>Definition:</strong> <em>Name of the agency that contracted the fishway.</em></p>
 <p><strong>Field name:</strong> contracted_by</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="dam-identifier">
 <span id="damid"></span><h4>Dam Identifier<a class="headerlink" href="#dam-identifier" title="Permalink to this headline">¶</a></h4>
@@ -2479,6 +2688,8 @@
 <div><p><strong>Definition:</strong> <em>The unique barrier identifier corresponding to the dam that the fishway structure is associated with.</em></p>
 <p><strong>Field name:</strong> dam_id</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="designed-based-on-biology">
 <span id="biodesign"></span><h4>Designed Based on Biology<a class="headerlink" href="#designed-based-on-biology" title="Permalink to this headline">¶</a></h4>
@@ -2486,6 +2697,8 @@
 <div><p><strong>Definition:</strong> <em>Indicates whether the fishway was designed based on the biology of the species.</em></p>
 <p><strong>Field name:</strong> designed_on_biology</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="elevation-m">
 <span id="elevation"></span><h4>Elevation (m)<a class="headerlink" href="#elevation-m" title="Permalink to this headline">¶</a></h4>
@@ -2493,6 +2706,8 @@
 <div><p><strong>Definition:</strong> <em>Change in height between fishway exit and entrance in meters.</em></p>
 <p><strong>Field name:</strong> elevation_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="engineering-notes">
 <span id="engnotes"></span><h4>Engineering Notes<a class="headerlink" href="#engineering-notes" title="Permalink to this headline">¶</a></h4>
@@ -2500,6 +2715,8 @@
 <div><p><strong>Definition:</strong> <em>Notes regarding design and construction of the fishway</em></p>
 <p><strong>Field name:</strong> engineering_notes</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="entrance-location">
 <span id="enterlocal"></span><h4>Entrance Location<a class="headerlink" href="#entrance-location" title="Permalink to this headline">¶</a></h4>
@@ -2508,6 +2725,8 @@
 <p><strong>Field name:</strong> entrance_location_code</p>
 <p><strong>Allowable Values:</strong> Midstream, Bank</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="entrance-position">
 <span id="enterpos"></span><h4>Entrance Position<a class="headerlink" href="#entrance-position" title="Permalink to this headline">¶</a></h4>
@@ -2516,6 +2735,8 @@
 <p><strong>Field name:</strong> entrance_position_code</p>
 <p><strong>Allowable Values:</strong> Bottom, Surface, Bottom and Surface, Mid-column</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="evaluating-study">
 <span id="evalstudy"></span><h4>Evaluating Study<a class="headerlink" href="#evaluating-study" title="Permalink to this headline">¶</a></h4>
@@ -2523,6 +2744,8 @@
 <div><p><strong>Definition:</strong>        The reference for the literature (peer-reviewed and ‘‘grey’’) used to gather additional information about the fishway.</p>
 <p><strong>Field name:</strong> fishway_reference_id</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="fishway-type">
 <span id="fishwaytype"></span><h4>Fishway Type<a class="headerlink" href="#fishway-type" title="Permalink to this headline">¶</a></h4>
@@ -2586,6 +2809,8 @@
 </tr>
 </tbody>
 </table>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="gradient">
 <span id="id5"></span><h4>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h4>
@@ -2593,6 +2818,8 @@
 <div><p><strong>Definition:</strong> <em>The fishway’s angle of inclination in percent.</em></p>
 <p><strong>Field name:</strong> gradient</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="has-evaluating-studies">
 <span id="hasevalstudy"></span><h4>Has Evaluating Studies<a class="headerlink" href="#has-evaluating-studies" title="Permalink to this headline">¶</a></h4>
@@ -2600,6 +2827,8 @@
 <div><p><strong>Definition:</strong> <em>Indicates whether an evaluation study has been performed at the fishway.</em></p>
 <p><strong>Field name:</strong> has_evaluating_studies</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="is-modified">
 <span id="ismod"></span><h4>Is Modified<a class="headerlink" href="#is-modified" title="Permalink to this headline">¶</a></h4>
@@ -2607,6 +2836,8 @@
 <div><p><strong>Definition:</strong> <em>Indicates if the fishway has had any post-construction modifications.</em></p>
 <p><strong>Field name:</strong> modified</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="maximum-velocity-of-water-flow-m-s">
 <span id="maxvelo"></span><h4>Maximum Velocity of Water Flow (m/s)<a class="headerlink" href="#maximum-velocity-of-water-flow-m-s" title="Permalink to this headline">¶</a></h4>
@@ -2614,6 +2845,8 @@
 <div><p><strong>Definition:</strong> <em>Maximum velocity of water flow recorded in the fishway in m/s.</em></p>
 <p><strong>Field name:</strong> max_fishway_velocity_ms</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="mean-channel-depth-m">
 <span id="meandepth"></span><h4>Mean Channel Depth (m)<a class="headerlink" href="#mean-channel-depth-m" title="Permalink to this headline">¶</a></h4>
@@ -2621,6 +2854,8 @@
 <div><p><strong>Definition:</strong> <em>Depth of fishway channel, in meters, during operation.</em></p>
 <p><strong>Field name:</strong> depth_m</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="modification-purpose">
 <span id="modpurpose"></span><h4>Modification Purpose<a class="headerlink" href="#modification-purpose" title="Permalink to this headline">¶</a></h4>
@@ -2628,6 +2863,8 @@
 <div><p><strong>Definition:</strong> <em>Purpose of post-construction modifications.</em></p>
 <p><strong>Field name:</strong> modification_purpose</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="modification-year">
 <span id="modyear"></span><h4>Modification Year<a class="headerlink" href="#modification-year" title="Permalink to this headline">¶</a></h4>
@@ -2635,6 +2872,8 @@
 <div><p><strong>Definition:</strong> <em>The year that post-construction modifications were completed.</em></p>
 <p><strong>Field name:</strong> modification_year</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="monitoring-equipment">
 <span id="monitor"></span><h4>Monitoring Equipment<a class="headerlink" href="#monitoring-equipment" title="Permalink to this headline">¶</a></h4>
@@ -2642,6 +2881,8 @@
 <div><p><strong>Definition:</strong> <em>Monitoring equipment used at the fishway.</em></p>
 <p><strong>Field name:</strong> monitoring_equipment</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="nature-of-evaluating-studies">
 <span id="natureevalstudy"></span><h4>Nature of Evaluating Studies<a class="headerlink" href="#nature-of-evaluating-studies" title="Permalink to this headline">¶</a></h4>
@@ -2649,6 +2890,8 @@
 <div><p><strong>Definition:</strong> <em>The type of evaluation study performed.</em></p>
 <p><strong>Field name:</strong> nature_of_evaluation_studies</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="operated-by">
 <span id="opby"></span><h4>Operated By<a class="headerlink" href="#operated-by" title="Permalink to this headline">¶</a></h4>
@@ -2656,6 +2899,8 @@
 <div><p><strong>Definition:</strong> <em>Agency responsible for operating the fishway.</em></p>
 <p><strong>Field name:</strong> operated_by</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="operation-period">
 <span id="opperiod"></span><h4>Operation Period<a class="headerlink" href="#operation-period" title="Permalink to this headline">¶</a></h4>
@@ -2663,6 +2908,8 @@
 <div><p><strong>Definition:</strong> <em>The dates the fishway is in operation.</em></p>
 <p><strong>Field name:</strong> operation_period</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="plans-held-by">
 <span id="plansheld"></span><h4>Plans Held By<a class="headerlink" href="#plans-held-by" title="Permalink to this headline">¶</a></h4>
@@ -2670,6 +2917,8 @@
 <div><p><strong>Definition:</strong> <em>Name of the agency that possesses the plans for the fishway.</em></p>
 <p><strong>Field name:</strong> plans_held_by</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="purpose-of-fishway">
 <span id="fishwaypurpose"></span><h4>Purpose of Fishway<a class="headerlink" href="#purpose-of-fishway" title="Permalink to this headline">¶</a></h4>
@@ -2677,6 +2926,8 @@
 <div><p><strong>Definition:</strong> <em>The reason the fishway was designed and implemented.</em></p>
 <p><strong>Field name:</strong> purpose</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="river-stream-name-english">
 <span id="rivnameen"></span><h4>River/Stream Name (English)<a class="headerlink" href="#river-stream-name-english" title="Permalink to this headline">¶</a></h4>
@@ -2684,6 +2935,8 @@
 <div><p><strong>Definition:</strong> <em>Name of river/stream in which the feature is recorded (English).</em></p>
 <p><strong>Field name:</strong> river_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="river-stream-name-french">
 <span id="rivnamefr"></span><h4>River/Stream Name (French)<a class="headerlink" href="#river-stream-name-french" title="Permalink to this headline">¶</a></h4>
@@ -2691,18 +2944,26 @@
 <div><p><strong>Definition:</strong> <em>Name of river/stream in which the feature is recorded (French).</em></p>
 <p><strong>Field name:</strong> river_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="species-known-to-not-use">
 <span id="knownnotuse"></span><h4>Species Known to Not Use<a class="headerlink" href="#species-known-to-not-use" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>Species where it is known that the fishway presents a significant barrier to migration.</em></p>
+<p><strong>Field name:</strong></p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="species-known-to-use">
 <span id="knowntouse"></span><h4>Species Known to Use<a class="headerlink" href="#species-known-to-use" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p><strong>Definition:</strong> <em>Species that are known to use the fishway.</em></p>
+<p><strong>Field name:</strong> known_to_use</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="structure-name-english">
 <span id="strucnameen"></span><h4>Structure Name (English)<a class="headerlink" href="#structure-name-english" title="Permalink to this headline">¶</a></h4>
@@ -2710,6 +2971,8 @@
 <div><p><strong>Definition:</strong> <em>The given or known name of the fishway structure or the dam with which it is associated (English).</em></p>
 <p><strong>Field name:</strong> structure_name_en</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="structure-name-french">
 <span id="strucnamefr"></span><h4>Structure Name (French)<a class="headerlink" href="#structure-name-french" title="Permalink to this headline">¶</a></h4>
@@ -2717,6 +2980,8 @@
 <div><p><strong>Definition:</strong> <em>The given or known name of the fishway structure or the dam it is associated with (French).</em></p>
 <p><strong>Field name:</strong> structure_name_fr</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="system-identifier">
 <span id="systemid"></span><h4>System Identifier<a class="headerlink" href="#system-identifier" title="Permalink to this headline">¶</a></h4>
@@ -2724,6 +2989,8 @@
 <div><p><strong>Definition:</strong> <em>Unique identifier for each fishway point.</em></p>
 <p><strong>Field name:</strong> cabd_id</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="transit-success-estimate">
 <span id="success"></span><h4>Transit Success Estimate (%)<a class="headerlink" href="#transit-success-estimate" title="Permalink to this headline">¶</a></h4>
@@ -2731,6 +2998,8 @@
 <div><p><strong>Definition:</strong> <em>Estimated percentage of individuals that successfully pass through the fishway.</em></p>
 <p><strong>Field name:</strong> estimate_of_passage_success_pct</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 <div class="section" id="year-constructed">
 <span id="yearconst"></span><h4>Year Constructed<a class="headerlink" href="#year-constructed" title="Permalink to this headline">¶</a></h4>
@@ -2738,6 +3007,8 @@
 <div><p><strong>Definition:</strong> <em>Year in which the fishway structure was built.</em></p>
 <p><strong>Field name:</strong> year_constructed</p>
 </div></blockquote>
+<p><span class="raw-html"><a href="#fishways"><i class="fas fa-arrow-up">
+</i></a></span></p>
 </div>
 </div>
 </div>

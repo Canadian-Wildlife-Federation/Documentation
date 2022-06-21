@@ -81,17 +81,51 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="docs_user_web_map.html">
-   Web Mapping Interface
+   Web Mapping Tool
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial.html">
+     Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_search.html">
+       Searching
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_filter.html">
+       Filtering
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_download.html">
+       Downloading
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="docs_user_data_sources.html">
    Data Sources
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -117,8 +151,8 @@
   <a class="reference internal" href="docs_user_engagement.html">
    Stakeholder Engagement
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -141,30 +175,30 @@
   <a class="reference internal" href="../docs_tech/docs_tech_arch.html">
    Application Architecture
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_models.html">
-     CABD Features and Database Models
+     Features and Database Models
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_api.html">
-     CABD REST Services (API Endpoints)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
-     Data Dictionary
+     REST Services (API Endpoints)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_tiles.html">
      Vector Tile Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech/docs_tech_arch/docs_tech_arch_data_dict.html">
+     Data Dictionary
     </a>
    </li>
   </ul>
@@ -173,8 +207,8 @@
   <a class="reference internal" href="../docs_tech/docs_tech_process.html">
    Barrier Data Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -207,8 +241,8 @@
   <a class="reference internal" href="../docs_chyf/docs_chyf_tools.html">
    Processing Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -234,8 +268,8 @@
   <a class="reference internal" href="../docs_chyf/docs_chyf_process.html">
    Hydro Network Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -347,26 +381,38 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#downloading-the-template">
-   Downloading the Template
+  <a class="reference internal nav-link" href="#submit-updates-via-email">
+   1. Submit Updates via Email
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#populating-the-template">
-   Populating the Template
+  <a class="reference internal nav-link" href="#submit-updates-using-a-feature-type-template">
+   2. Submit Updates Using a Feature Type Template
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#updating-existing-records">
-     Updating Existing Records
+    <a class="reference internal nav-link" href="#download-the-template">
+     Download the Template
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#populate-the-template">
+     Populate the Template
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#update-existing-records">
+       Update Existing Records
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submit-the-updated-template">
+     Submit the Updated Template
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submitting-the-updated-template">
-   Submitting the Updated Template
-  </a>
  </li>
 </ul>
 
@@ -381,75 +427,111 @@
                 
   <div class="section" id="submit-data-updates">
 <h1>Submit Data Updates<a class="headerlink" href="#submit-data-updates" title="Permalink to this headline">¶</a></h1>
-<p>A user may record and submit updates to the attribute information for one or multiple feature type records in the CABD using the user submitted updates template for dams, fishways or waterfalls.</p>
-<div class="section" id="downloading-the-template">
-<h2>Downloading the Template<a class="headerlink" href="#downloading-the-template" title="Permalink to this headline">¶</a></h2>
+<p>A user may submit updates to the attribute information for one or multiple feature type records in the CABD by: 1) sharing the informaion via email, or 2) filling out the appropriate feature template (dams, fishways or waterfalls).</p>
+<div class="section" id="submit-updates-via-email">
+<h2>1. Submit Updates via Email<a class="headerlink" href="#submit-updates-via-email" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
+<p>The email should be addressed to <a class="reference external" href="mailto:cabd&#37;&#52;&#48;cwf-fcf&#46;org">cabd<span>&#64;</span>cwf-fcf<span>&#46;</span>org</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>To help us identify your submission as quickly as possible, please use the following as the email subject line: “CABD - User Submitted Updates”.</p>
+</div>
+<p>The body of the email <strong>must</strong> include:</p>
+<ul class="simple">
+<li><p>The barrier id (cabd_id) of the feature who’s attribute information is to be updated (this can be acquired through the web mapping tool. See section <em>Update Existing Records</em> below, bullet 2, for more details).</p></li>
+<li><p>A URL link for the information source.</p></li>
+<li><p>A list detailing the information to be updated.</p></li>
+</ul>
+<p>Once received, our team will review the content and update the database with the provided information.</p>
+</div>
+<div class="section" id="submit-updates-using-a-feature-type-template">
+<h2>2. Submit Updates Using a Feature Type Template<a class="headerlink" href="#submit-updates-using-a-feature-type-template" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="download-the-template">
+<h3>Download the Template<a class="headerlink" href="#download-the-template" title="Permalink to this headline">¶</a></h3>
 <p>Download the appropriate template for the feature type you are looking to submit updates for from the options below:</p>
-<p><a class="reference download internal" download="" href="../_downloads/a8b399bd3975e2c4574d0dfcf09811b2/damstemplate4202022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Dam</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a></p>
-<p><em>Fishway Updates Template (coming soon)</em></p>
-<p><em>Waterfall Updates Template (coming soon)</em></p>
+<p><a class="reference download internal" download="" href="../_downloads/5368bedd31afedb1bfcfb7ee16fb5cff/damstemplate06082022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Dam</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a> <em>(released: 06/08/2022)</em></p>
+<p><a class="reference download internal" download="" href="../_downloads/9c8547bd287a28aef50ead500c8dc8b5/fishwaystemplate06132022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Fishway</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a> <em>(released: 06/13/2022)</em></p>
+<p><a class="reference download internal" download="" href="../_downloads/9813d91ada9a5bfa55e5934f79a7d685/waterfallstemplate06132022.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Waterfall</span> <span class="pre">Updates</span> <span class="pre">Template</span></code></a> <em>(released: 06/13/2022)</em></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>As changes to the CABD data structure may occur at any time, it is important to check this page and <strong>verify that you have the most recent version</strong> of the user submitted updates template for the feature type you are looking to submit data for.</p>
 </div>
 </div>
-<div class="section" id="populating-the-template">
-<h2>Populating the Template<a class="headerlink" href="#populating-the-template" title="Permalink to this headline">¶</a></h2>
-<hr class="docutils" />
-<div class="section" id="updating-existing-records">
-<h3>Updating Existing Records<a class="headerlink" href="#updating-existing-records" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li><p>The cabd_id field is the first column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup information window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. Copy this value and paste it into the next available cell of the cabd_id column in the template.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/barrierid.jpg"><img alt="../_images/barrierid.jpg" class="align-center" src="../_images/barrierid.jpg" style="width: 700px;" /></a>
-<a class="reference internal image-reference" href="../_images/cabd_id.jpg"><img alt="../_images/cabd_id.jpg" class="align-center" src="../_images/cabd_id.jpg" style="width: 700px;" /></a>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Skip this step if the information being added if for a feature that does not yet exist in the CABD. The cabd_id for new features will be generated when initially loaded into the database.</p>
-</div>
-<ol class="arabic simple" start="2">
-<li><p>If the location of a feature point needs to be updated or corrected, populate latitude and longitude with the updated coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p></li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Latitude and longitude values <em>must</em> be populated when adding information for a new feature point.</p>
-</div>
-<ol class="arabic simple" start="3">
-<li><p>Enter a reference or link to the data source that the updated information comes from. This could be a website, scientific article, news article, technical report, etc.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/datasrc.jpg"><img alt="../_images/datasrc.jpg" class="align-center" src="../_images/datasrc.jpg" style="width: 700px;" /></a>
-<ol class="arabic simple" start="4">
-<li><p>Next, select the attribute(s) for which new information will be added, from the options available in the drop down list.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/list1.png"><img alt="../_images/list1.png" class="align-center" src="../_images/list1.png" style="width: 700px;" /></a>
+<div class="section" id="populate-the-template">
+<h3>Populate the Template<a class="headerlink" href="#populate-the-template" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="update-existing-records">
+<h4>Update Existing Records<a class="headerlink" href="#update-existing-records" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p>Upon opening the template, the first field in column A is the ‘entry_classification’ field which is used to define the purpose of the information being provided in that row. Please select the most appropriate option from the list of values and descriptions provided below for the feature in question:</p>
+<ul class="simple">
+<li><p><strong>new_feature</strong>: The information being submitted pertains to a feature that is not yet present in the CABD. A new feature point must be generated.</p></li>
+<li><p><strong>modify_feature</strong>: The information being submitted is meant to update attribute information for an existing feature point in the CABD. The existing data is currently unknown, incorrect, or out of date.</p></li>
+<li><p><strong>delete_feature</strong>: The feature, identified via cabd_id, does not exist and should be removed from the CABD.</p></li>
+</ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information from a different data source is being used to update the same feature, create a second row with the same cabd_id for attribute information pertaining to the second data source.</p>
+<p>Decommissioned structures should <strong>not</strong> be considered for deletion. If a structure is found to be decommissioned/removed, the operating status field should be updated to reflect this information.</p>
 </div>
-<ol class="arabic" start="5">
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/entryclass.jpg"><img alt="../_images/entryclass.jpg" src="../_images/entryclass.jpg" style="width: 800px;" /></a>
+</div>
+</li>
+<li><p>The cabd_id field is the second column in the template and it is required in order to update attributes for an existing feature. The cabd_id value for a feature is located in the detailed view of a feature’s attribute popup window and will be called either ‘Barrier Identifier’ or ‘System Identifier’. To bring up a feature’s attribute popup window, open the <a class="reference external" href="https://aquaticbarriers.ca/">web mapping tool</a>, locate the feature point of interest, and click on the point to open the attribute information.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/barrierid.jpg"><img alt="../_images/barrierid.jpg" src="../_images/barrierid.jpg" style="width: 500px;" /></a>
+</div>
+<p>Copy the value displayed for ‘Barrier Identifier’, or ‘System Identifier’, and paste it into the next available cell of the cabd_id column in the template, as shown in the image below.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/cabd_id.jpg"><img alt="../_images/cabd_id.jpg" src="../_images/cabd_id.jpg" style="width: 800px;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="loweralpha simple">
+<li><p>If the information being added is for a feature that does not yet exist in the CABD, skip this step. The cabd_id for a new feature will be generated when initially loaded into the database.</p></li>
+<li><p>If a feature is being submitted for deletion, then only the <strong>cabd_id</strong> and the <strong>coordinates</strong> (i.e., latitude and longitude) of the feature are required as input.</p></li>
+</ol>
+</div>
+</li>
+<li><p>When modifying an existing feature, if the location of a feature point needs to be updated or corrected, populate latitude and longitude with the new coordinates in decimal degrees. If not, leave the latitude and longitude fields blank.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Latitude and longitude values are <strong>required</strong> when adding information for a new feature point.</p>
+</div>
+</li>
+<li><p>Enter a link to the data source that the updated information comes from. This may be a website, scientific article, news article, technical report, etc.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/datasource.jpg"><img alt="../_images/datasource.jpg" src="../_images/datasource.jpg" style="width: 800px;" /></a>
+</div>
+</li>
+<li><p>Next, select the attribute(s) for which new information will be added, from the options available in the drop down list.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/list1.jpg"><img alt="../_images/list1.jpg" src="../_images/list1.jpg" style="width: 800px;" /></a>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Only attribute information pertaining to the specific data source indicated should be present in the row. If additional information for the feature is coming from a second (or third etc.) data source, create a new row with the same cabd_id to input the attribute information obtained from the new data source.</p>
+</div>
+</li>
 <li><p>Populate the information for the chosen attributes.</p>
 <ol class="loweralpha simple">
 <li><p>If an attribute has a defined list of allowable values, these can be selected via the dropdown that is present next to each cell in the column below the chosen attribute.</p></li>
-</ol>
-<a class="reference internal image-reference" href="../_images/list2.png"><img alt="../_images/list2.png" class="align-center" src="../_images/list2.png" style="width: 700px;" /></a>
-<ol class="loweralpha simple" start="2">
 <li><p>If there is no defined list of allowable values for the selected attribute, type the information directly into the cell.</p></li>
 </ol>
-</li>
-</ol>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/fieldentry.jpg"><img alt="../_images/fieldentry.jpg" src="../_images/fieldentry.jpg" style="width: 800px;" /></a>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Before entering the information for the chosen attribute, consult the <a class="reference external" href="https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue.html">Data Catalogue</a> page to check the definition and allowable values for the attribute.</p>
 </div>
-<ol class="arabic simple" start="6">
-<li><p>Add and populate additional attributes (and rows if needed) until all the information for the specific feature is present in the template.</p></li>
+</li>
+<li><p>Add and populate additional attributes (and rows if needed) until all the information for the specific feature(s) is present in the template.</p></li>
 </ol>
 </div>
 </div>
-<div class="section" id="submitting-the-updated-template">
-<h2>Submitting the Updated Template<a class="headerlink" href="#submitting-the-updated-template" title="Permalink to this headline">¶</a></h2>
-<hr class="docutils" />
+<div class="section" id="submit-the-updated-template">
+<h3>Submit the Updated Template<a class="headerlink" href="#submit-the-updated-template" title="Permalink to this headline">¶</a></h3>
 <p>The updated template should be submitted to <a class="reference external" href="mailto:cabd&#37;&#52;&#48;cwf-fcf&#46;org">cabd<span>&#64;</span>cwf-fcf<span>&#46;</span>org</a>.</p>
 <p>Once received, our team will review the content and update the database with the provided information.</p>
 <div class="admonition important">
@@ -457,6 +539,7 @@
 <p>To help us identify your submission as quickly as possible, please use the following as the email subject line: “CABD - User Submitted Updates”.</p>
 </div>
 <p>Thank you for your contribution!</p>
+</div>
 </div>
 </div>
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CABD Features and Database Models &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    <title>Features and Database Models &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="CABD REST Services (API Endpoints)" href="docs_tech_arch_api.html" />
+    <link rel="next" title="REST Services (API Endpoints)" href="docs_tech_arch_api.html" />
     <link rel="prev" title="Application Architecture" href="../docs_tech_arch.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -81,17 +81,51 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../docs_user/docs_user_web_map.html">
-   Web Mapping Interface
+   Web Mapping Tool
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial.html">
+     Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_search.html">
+       Searching
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_filter.html">
+       Filtering
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_download.html">
+       Downloading
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../docs_user/docs_user_data_sources.html">
    Data Sources
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -117,8 +151,8 @@
   <a class="reference internal" href="../../docs_user/docs_user_engagement.html">
    Stakeholder Engagement
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -141,30 +175,30 @@
   <a class="reference internal" href="../docs_tech_arch.html">
    Application Architecture
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     CABD Features and Database Models
+     Features and Database Models
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="docs_tech_arch_api.html">
-     CABD REST Services (API Endpoints)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="docs_tech_arch_data_dict.html">
-     Data Dictionary
+     REST Services (API Endpoints)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="docs_tech_arch_tiles.html">
      Vector Tile Service
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_tech_arch_data_dict.html">
+     Data Dictionary
     </a>
    </li>
   </ul>
@@ -173,8 +207,8 @@
   <a class="reference internal" href="../docs_tech_process.html">
    Barrier Data Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -207,8 +241,8 @@
   <a class="reference internal" href="../../docs_chyf/docs_chyf_tools.html">
    Processing Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -234,8 +268,8 @@
   <a class="reference internal" href="../../docs_chyf/docs_chyf_process.html">
    Hydro Network Processing
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -347,6 +381,11 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#existing-implementation">
+   Existing Implementation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#cabd-feature-model">
    CABD Feature Model
   </a>
@@ -396,8 +435,8 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-add-a-new-feature-type">
-   How Add a New Feature Type
+  <a class="reference internal nav-link" href="#how-to-add-a-new-feature-type">
+   How To Add a New Feature Type
   </a>
  </li>
 </ul>
@@ -411,8 +450,14 @@
         
               <div>
                 
-  <div class="section" id="cabd-features-and-database-models">
-<span id="cabd-models"></span><h1>CABD Features and Database Models<a class="headerlink" href="#cabd-features-and-database-models" title="Permalink to this headline">¶</a></h1>
+  <style> .codeblocksize {line-height: 2.5; font-size: x-large; background-color: rgb(175 184 193 / 20%); border-radius: 6px; color: #CC3600; padding: 0.2em 0.4em; padding-top: 0.2em; padding-right: 0.4em; padding-bottom: 0.2em; padding-left: 0.4em;}</style><div class="section" id="features-and-database-models">
+<span id="cabd-models"></span><h1>Features and Database Models<a class="headerlink" href="#features-and-database-models" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="existing-implementation">
+<span id="current-application-architecture"></span><h2>Existing Implementation<a class="headerlink" href="#existing-implementation" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>The current application runs on two Microsoft Azure Java Web App servers, <code class="docutils literal notranslate"><span class="pre">cabd-web</span></code> (for CABD data) and <code class="docutils literal notranslate"><span class="pre">chyf-web</span></code> (for CHyF data).</p>
+<img alt="../../_images/app-arch3.jpg" class="align-center" src="../../_images/app-arch3.jpg" />
+</div>
 <div class="section" id="cabd-feature-model">
 <span id="id1"></span><h2>CABD Feature Model<a class="headerlink" href="#cabd-feature-model" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
@@ -420,20 +465,20 @@
 <span id="id2"></span><h3>Generic Feature Model<a class="headerlink" href="#generic-feature-model" title="Permalink to this headline">¶</a></h3>
 <p>Features in CABD have an optional hierarchical structure. Feature types can be combined to form “super feature types”.</p>
 <p>There are no structures in the software/database that enforce this model. The database views (see section below) are used to define the various feature types and super types. It would be possible for a feature type to be associated with multiple super types, if desired.</p>
-<img alt="../../_images/generic-feature-model.png" class="align-center" src="../../_images/generic-feature-model.png" />
+<a class="reference internal image-reference" href="../../_images/genericmodel.jpg"><img alt="../../_images/genericmodel.jpg" class="align-center" src="../../_images/genericmodel.jpg" style="width: 500px;" /></a>
 </div>
 <div class="section" id="implemented-feature-model">
 <span id="id3"></span><h3>Implemented Feature Model<a class="headerlink" href="#implemented-feature-model" title="Permalink to this headline">¶</a></h3>
 <p>There are currently three feature types and one super type implemented in CABD. Adding additional feature types is expected and the instructions for this are outlined below (How to add new Feature Type).</p>
-<img alt="../../_images/implemented-feature-model.png" class="align-center" src="../../_images/implemented-feature-model.png" />
+<a class="reference internal image-reference" href="../../_images/implementedmodel.jpg"><img alt="../../_images/implementedmodel.jpg" class="align-center" src="../../_images/implementedmodel.jpg" style="width: 500px;" /></a>
 <p>Feature types:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">barriers</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">dams</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">waterfalls</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">fishways</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">medium</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">big</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">barriers</span></code> - a super feature type that includes dams structures and waterfalls.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dams</span></code> - a feature type for features classified as a dam structure.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">waterfalls</span></code> - a feature type for features classified as a waterfall.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fishways</span></code> - a feature type for features classified as a fishway structure.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">medium</span></code> - a feature type created for testing the increase in data volume expected for stream crossing data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">big</span></code> - a feature type created for testing the increase in data volume expected for stream crossing data.</p></li>
 </ul>
 </div>
 </div>
@@ -449,7 +494,7 @@
 <div class="section" id="core-tables">
 <span id="id5"></span><h3>Core Tables<a class="headerlink" href="#core-tables" title="Permalink to this headline">¶</a></h3>
 <p>These tables are the core tables for the system and required regardless of the feature types loaded. They support the definition of feature types.</p>
-<p><code class="docutils literal notranslate"><span class="pre">cabd.feature_types</span></code></p>
+<p><span class="codeblocksize">cabd.feature_types</span></p>
 <p>Lists all the feature types supported by the system.</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -482,7 +527,7 @@
 </tr>
 </tbody>
 </table>
-<p><code class="docutils literal notranslate"><span class="pre">cabd.feature_type_metadata</span></code></p>
+<p><span class="codeblocksize">cabd.feature_type_metadata</span></p>
 <p>Lists all the attributes for a given feature view and the metadata details about the attribute.</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -530,7 +575,7 @@
 </tr>
 </tbody>
 </table>
-<p><code class="docutils literal notranslate"><span class="pre">cabd.data_source</span></code></p>
+<p><span class="codeblocksize">cabd.data_source</span></p>
 <p>Lists data sources. Supports data source tracking for feature type attributes.</p>
 <table class="colwidths-given table">
 <colgroup>
@@ -610,26 +655,25 @@
 <p>The <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;_attribute_source</span></code> table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, <code class="docutils literal notranslate"><span class="pre">&lt;attribute&gt;_ds</span></code>, links to the <code class="docutils literal notranslate"><span class="pre">cabd.data_source</span> <span class="pre">table</span></code> to identify the data source for the attribute value.</p>
 </div>
 </div>
-<div class="section" id="how-add-a-new-feature-type">
-<span id="add-new-feature-type"></span><h2>How Add a New Feature Type<a class="headerlink" href="#how-add-a-new-feature-type" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-to-add-a-new-feature-type">
+<span id="add-new-feature-type"></span><h2>How To Add a New Feature Type<a class="headerlink" href="#how-to-add-a-new-feature-type" title="Permalink to this headline">¶</a></h2>
 <hr class="docutils" />
 <p>New feature types can be added to the system by adding the data to the database and updating the database metadata tables.</p>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Create a new schema for your feature type.</p></li>
 <li><p>Create the required data tables and reference tables to store the feature data and populate these tables. These should exist in their own <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;</span></code> schema.</p></li>
-<li><p>Create a view that joins the data table with the reference tables to include all the data you want visible to the ui.  Use one of the existing feature types views as an example (ex. <code class="docutils literal notranslate"><span class="pre">cabd.dams_view</span></code>).</p></li>
-</ol>
+<li><p>Create a view that joins the data table with the reference tables to include all the data you want visible to the ui.  Use one of the existing feature types views as an example (ex. <code class="docutils literal notranslate"><span class="pre">cabd.dams_view</span></code>).</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>When creating and/or updating existing view the role cabd must have permission to use the view (otherise the application won’t start up).</p>
+<p>When creating and/or updating existing view the role cabd must have permission to use the view (otherwise the application won’t start up).</p>
 <p><code class="docutils literal notranslate"><span class="pre">GRANT</span> <span class="pre">ALL</span> <span class="pre">PRIVILEGES</span> <span class="pre">ON</span> <span class="pre">cabd.dams_view</span> <span class="pre">to</span> <span class="pre">cabd;</span></code></p>
 </div>
-<ol class="arabic simple" start="4">
+</li>
 <li><p>Update the <code class="docutils literal notranslate"><span class="pre">cabd.all_features_view</span></code> to include the data from this new feature type. Use the existing view as an example, appending the new feature type data.</p></li>
 <li><p>If the new feature type is considered a barrier you also need to update the <code class="docutils literal notranslate"><span class="pre">cabd.barriers_view</span></code>.  Use the existing view as an example.</p></li>
 <li><p>Add a row to the <code class="docutils literal notranslate"><span class="pre">cabd.feature_types</span></code> table to represent the new feature type.</p></li>
-<li><dl class="simple">
-<dt>Add rows to the <code class="docutils literal notranslate"><span class="pre">cabd.feature_type_metadata</span> <span class="pre">table</span></code>. One row needs to be added for each column returned by the feature type view created in step 3.</dt><dd><ul class="simple">
+<li><p>Add rows to the <code class="docutils literal notranslate"><span class="pre">cabd.feature_type_metadata</span> <span class="pre">table</span></code>. One row needs to be added for each column returned by the feature type view created in step 3.</p>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">view_name</span></code> – the name of the view created in step3</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">field_name</span></code> – the name of the field in the view</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> – the human friendly name for the column</p></li>
@@ -641,8 +685,6 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">include_vector_tile</span></code> – true or false if the attribute should be included in the vector tile of this feature type</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">value_options_reference</span></code> – for columns that have a defined list of valid values in another database table (for example: <code class="docutils literal notranslate"><span class="pre">province_territory_code</span></code>), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables; otherwise it should contain a string of the form <code class="docutils literal notranslate"><span class="pre">“&lt;tablename&gt;;&lt;valuefield&gt;;&lt;namefield&gt;;&lt;descriptionfield&gt;”</span></code>. All are required except <code class="docutils literal notranslate"><span class="pre">descriptionfield</span></code> which can be blank.  The <code class="docutils literal notranslate"><span class="pre">tablename</span></code> references the code table, the <code class="docutils literal notranslate"><span class="pre">valuefield</span></code> the value field in the code table, the <code class="docutils literal notranslate"><span class="pre">namefield</span></code> the human friendly name field in the table, and <code class="docutils literal notranslate"><span class="pre">descriptionfield</span></code> the description field in the table.</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 <li><p>[OPTIONAL] Create the <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;.&lt;featuretype&gt;_feature_source</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;featuretype&gt;.&lt;featuretype&gt;_attribute_source</span> <span class="pre">tables</span></code> and populate with appropriate data.</p></li>
 <li><p>Restart the web server.  A restart is required to reload the cached metadata.</p></li>
@@ -669,7 +711,7 @@
     <a class='right-next' id="next-link" href="docs_tech_arch_api.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CABD REST Services (API Endpoints)</p>
+        <p class="prev-next-title">REST Services (API Endpoints)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

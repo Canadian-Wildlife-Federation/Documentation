@@ -4,3 +4,4 @@ Code,Name,Description
 3,Decommissioned ,Structure dismantled/removed. 
 4,Retired/Closed ,Structure was withdrawn from service but remains in place. 
 5,Unknown  ,Operating status of the structure is not known.
+6,Remediated,Structure remains in place but has been modified to allow fish to pass.
