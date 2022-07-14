@@ -1247,7 +1247,7 @@ Species Known to Not Use
 ++++++++++++++++++++++++
  **Definition:** *Species where it is known that the fishway presents a significant barrier to migration.*
  
- **Field name:**
+ **Field name:** known_to_not_use
 
 |dcfishreturn|
 
