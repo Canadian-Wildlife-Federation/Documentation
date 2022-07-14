@@ -8,4 +8,6 @@ Code,Name,Description
 7,Steel  ,"Structure consisting of a steel framework; inclined struts and steel plates on the upstream face. Supplemented with timber and earthfill to make them water-tight, steel dams are sometimes used as a temporary cofferdam during the construction of the main dam. "
 8,Timber  ,Structure built primarily of wood. Commonly used for temporary water diversion in low-head (2-4 m) areas during the construction of the main dam. 
 9,Unknown  ,Construction type is unknown. 
-10,Other  ,Construction type is different than those defined in this table.
+10,Other  ,"Construction type is different than those defined in this table (e.g., tailings from mining or milling, plastic, rubber, etc.)."
+11,Concrete,Structure constructed of concrete.
+12,Masonry,Structure constructed mainly of stone and/or brick and mortar.
