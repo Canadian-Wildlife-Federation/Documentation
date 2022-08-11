@@ -12,7 +12,7 @@ Dams
 Definition:	
     *In the CABD, dams are defined as: small dams (i.e., having a height of less than 5 m), medium dams (i.e., having a height between 5 and 15 m), and large dams (i.e., having height of 15 m or greater, or a height between 5 m and 15 m that impounds more than 3 million m3).*
 Attributes:
-    :ref:`Assessment Schedule <assessment-schedule>`, :ref:`Average Rate of Discharge (L/s) <avgrate>`, :ref:`Barrier Identifier <bid>`, :ref:`Comments <commentdef>`, :ref:`Completeness Level <complvl>`, :ref:`Construction Material <conmaterial>`, :ref:`Construction Year <conyear>`, :ref:`Dam Condition <damcon>`, :ref:`Dam Function <damfunc>`, :ref:`Dam Name (English) <damnameen>`, :ref:`Dam Name (French) <damnamefr>`, :ref:`Dam Size <damsize>`, :ref:`Dam Use <damuse>`, :ref:`Degree of Regulation <degreg>`, :ref:`Downstream Passage Route <downpass>`, :ref:`Expected Life (Years) <explife>`, :ref:`Facility Name (English) <facilnameen>`, :ref:`Facility Name (French) <facilnamefr>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Federal Compliance Status <fedcompstat>`, :ref:`Federal Flow Requirements (m3/s) <fedflowreq>`, :ref:`Generating Capacity (MWh) <gencap>`, :ref:`Has Hydro Peaking System <hydropeak>`, :ref:`Height (m) <damheight>`, :ref:`Lake Control <lakectrl>`, :ref:`Last Maintenance Date <lastmaint>`, :ref:`Last Modified <lastmod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Municipality <municipality>`, :ref:`Next Maintenance Date <nextmaint>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`Number of Turbines <turbcount>`, :ref:`Operating Note <opnote>`, :ref:`Operating Status <opstat>`, :ref:`Owner <owner>`, :ref:`Ownership Type <owntype>`, :ref:`Passability Status <passstat>`, :ref:`Passability Status Note <passstatnote>`, :ref:`Province/Territory Name <provterr>`, :ref:`Provincial Compliance Status <provcompstat>`, :ref:`Provincial Flow Requirements (m3/s) <provflowreq>`, :ref:`Removed Year <remyear>`, :ref:`Reservoir Area (km2) <resarea>`, :ref:`Reservoir Depth (m) <resdepth>`, :ref:`Reservoir Name (English) <resnameen>`, :ref:`Reservoir Name (French) <resnamefr>`, :ref:`Reservoir Present <respres>`, :ref:`Spillway Capacity <spillcap>`, :ref:`Spillway Type <spilltype>`, :ref:`Storage Capacity (mcm) <storagecap>`, :ref:`Structure Type <structype>`, :ref:`Turbine Type <turbtype>`, :ref:`Upstream Catchment Area (km2) <upcatcharea>`, :ref:`Upstream Linear Length (km) <uplength>`, :ref:`Upstream Passage Type <uppasstype>`, :ref:`Use Fisheries <usefish>`, :ref:`Use Flood Control <useflood>`, :ref:`Use Hydroelectric <usehydro>`, :ref:`Use Invasive Species Control <useais>`, :ref:`Use Irrigation <useirr>`, :ref:`Use Navigation <usenav>`, :ref:`Use Other <useother>`, :ref:`Use Pollution Control <usepoll>`, :ref:`Use Recreation <userec>`, :ref:`Use Water Supply <usesupply>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`, :ref:`NHN Watershed Name <nhnname>`
+    :ref:`Assessment Schedule <assessment-schedule>`, :ref:`Average Rate of Discharge (L/s) <avgrate>`, :ref:`Barrier Identifier <bid>`, :ref:`Comments <commentdef>`, :ref:`Completeness Level <complvl>`, :ref:`Construction Type <contype>`, :ref:`Construction Year <conyear>`, :ref:`Dam Condition <damcon>`, :ref:`Dam Function <damfunc>`, :ref:`Dam Name (English) <damnameen>`, :ref:`Dam Name (French) <damnamefr>`, :ref:`Dam Size <damsize>`, :ref:`Dam Use <damuse>`, :ref:`Degree of Regulation <degreg>`, :ref:`Downstream Passage Route <downpass>`, :ref:`Expected Life (Years) <explife>`, :ref:`Facility Name (English) <facilnameen>`, :ref:`Facility Name (French) <facilnamefr>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Federal Compliance Status <fedcompstat>`, :ref:`Federal Flow Requirements (m3/s) <fedflowreq>`, :ref:`Generating Capacity (MWh) <gencap>`, :ref:`Has Hydro Peaking System <hydropeak>`, :ref:`Height (m) <damheight>`, :ref:`Lake Control <lakectrl>`, :ref:`Last Maintenance Date <lastmaint>`, :ref:`Last Modified <lastmod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Municipality <municipality>`, :ref:`Next Maintenance Date <nextmaint>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`Number of Turbines <turbcount>`, :ref:`Operating Note <opnote>`, :ref:`Operating Status <opstat>`, :ref:`Owner <owner>`, :ref:`Ownership Type <owntype>`, :ref:`Passability Status <passstat>`, :ref:`Passability Status Note <passstatnote>`, :ref:`Province/Territory Name <provterr>`, :ref:`Provincial Compliance Status <provcompstat>`, :ref:`Provincial Flow Requirements (m3/s) <provflowreq>`, :ref:`Removed Year <remyear>`, :ref:`Reservoir Area (km2) <resarea>`, :ref:`Reservoir Depth (m) <resdepth>`, :ref:`Reservoir Name (English) <resnameen>`, :ref:`Reservoir Name (French) <resnamefr>`, :ref:`Reservoir Present <respres>`, :ref:`Spillway Capacity <spillcap>`, :ref:`Spillway Type <spilltype>`, :ref:`Storage Capacity (mcm) <storagecap>`, :ref:`Turbine Type <turbtype>`, :ref:`Upstream Catchment Area (km2) <upcatcharea>`, :ref:`Upstream Linear Length (km) <uplength>`, :ref:`Upstream Passage Type <uppasstype>`, :ref:`Use Fisheries <usefish>`, :ref:`Use Flood Control <useflood>`, :ref:`Use Hydroelectric <usehydro>`, :ref:`Use Invasive Species Control <useais>`, :ref:`Use Irrigation <useirr>`, :ref:`Use Navigation <usenav>`, :ref:`Use Other <useother>`, :ref:`Use Pollution Control <usepoll>`, :ref:`Use Recreation <userec>`, :ref:`Use Water Supply <usesupply>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`, :ref:`NHN Watershed Name <nhnname>`
 
 Waterfalls
 ~~~~~~~~~~
@@ -70,21 +70,6 @@ Completeness Level
 .. csv-table:: 
     :file: tbl/complvl.csv
     :widths: 15, 20, 25, 25, 25
-    :header-rows: 1
-
-|dcdamsreturn|
-
-.. _conmaterial:
-
-Construction Material
-+++++++++++++++++++++
-**Definition:** *The primary construction material of the structure.*
-
-**Field name:** construction_material_code
-
-.. csv-table::
-    :file: tbl/conmaterial.csv
-    :widths: 15, 15, 70
     :header-rows: 1
 
 |dcdamsreturn|
@@ -232,23 +217,6 @@ Province/Territory Name
 
 |dcdamsreturn|
 
-.. _structype:
-
-Structure Type
-+++++++++++++++++
- **Definition:** *The type of structure.* 
- 
- **Field name:** structure_type_code
-
- **Allowable Values:**	
-
-.. csv-table:: 
-    :file: tbl/structype.csv
-    :widths: 15, 20, 65
-    :header-rows: 1
-
-|dcdamsreturn|
-
 .. _waterbodynameen:
 
 Waterbody Name (English)
@@ -276,7 +244,7 @@ Attributes Unique to Dams
 
 Assessment Schedule
 +++++++++++++++++++
- **Definition:** *The frequency that the dam structure is assessed/maintained by an owner or regulatory body.*
+ **Definition:** *The frequency that the dam structure is assessed by an owner or regulatory body.*
  
  **Field name:** assess_schedule
 
@@ -289,6 +257,23 @@ Average Rate of Discharge (L/s)
  **Definition:** *The average rate of discharge at the dam location in litres per second.*
  
  **Field name:** avg_rate_of_discharge_ls
+
+|dcdamsreturn|
+
+.. _contype:
+
+Construction Type
++++++++++++++++++
+ **Definition:** *The type of dam structure, categorized by construction material/design.* 
+ 
+ **Field name:** construction_type_code
+
+ **Allowable Values:**	
+
+.. csv-table:: 
+    :file: tbl/contype.csv
+    :widths: 15, 20, 65
+    :header-rows: 1
 
 |dcdamsreturn|
 

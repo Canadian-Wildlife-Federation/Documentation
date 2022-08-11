@@ -1,9 +1,0 @@
-Code,Name,Description
-1,Concrete,Structure is mainly composed of concrete.
-2,Masonry,Structure is mainly composed of stone and/or brick and mortar.
-3,Earth,Structure is mainly composed of earth.
-4,Rock,Structure is mainly composed of dumped and compacted rockfill or rock boulders.
-5,Timber,Structure is mainly composed of wood timbers or planks.
-6,Steel,Structure is mainly composed of steel.
-7,Other,"The primary construction material is known, but is different than those defined in this table."
-8,Unknown,The primary construction material is unknown.
