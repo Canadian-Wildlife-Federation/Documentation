@@ -44,6 +44,7 @@ Data sources can be filtered using the search table below. To find a data source
    Spatial     Provincial/State         Ontario - Northern Development, Mines, Natural Resources and Foretry (MNDMNRF)                 Ontario Hydro Network (OHN) - Hydrographic Points (a), Lines (b), Polygons (c)                                                                                 :ref:`mndmnrf_ohn <mndmnrf_ohn>`                                                                                                                                                                                                 
    Spatial     Provincial/State         Québec – Ministère de l’Environnement et de la Lutte contre les changements climatiques        Répertoire des Barrages                                                                                                                                        :ref:`qmelcc_repbarrages <qmelcc_repbarrages>`                                                                                                                                                                                          
    Spatial     Academic Institution/NGO Canadian Wildlife Federation (CWF)                                                             CANFISHPASS Database (inherited from Cooke Lab – Carleton University)                                                                                          :ref:`cwf_canfish <cwf_canfish>`                                                                                                                                                                                                 
+   Spatial     Academic Institution/NGO Canadian Wildlife Federation (CWF)                                                             Barrier points identified through visual inspection of satellite imagery                                                                                       :ref:`cwf <cwf>`
    Spatial     Academic Institution/NGO Food and Agriculture Organization (FAO) of the United Nations                                  AQUASTAT Dam Database                                                                                                                                          :ref:`fao_aquastat <fao_aquastat>`                                                                                                                                                                                                
    Spatial     Academic Institution/NGO Global Dam Watch                                                                               Global Reservoir and Dam Database (GRanD)                                                                                                                      :ref:`gdw_grand <gdw_grand>`                                                                                                                                                                                                   
    Spatial     Academic Institution/NGO Global Dam Watch                                                                               Global Georeferenced Database of Dams (GOODD)                                                                                                                  :ref:`gdw_goodd <gdw_goodd>`                                                                                                                                                                                                   
@@ -53,6 +54,9 @@ Data sources can be filtered using the search table below. To find a data source
    Spatial     Academic Institution/NGO Wisconsin Institute for Discovery                                                              Fishwerks                                                                                                                                                      :ref:`wid_fishwerks <wid_fishwerks>`                                                                                                                                                                                               
    Spatial     Miscellaneous            MR Maps                                                                                        Waterfalls of New Brunswick                                                                                                                                    :ref:`mrmaps_nbwf <mrmaps_nbwf>`                                                                                                                                                                                                 
    Spatial     Miscellaneous            MR Maps                                                                                        Waterfalls of Nova Scotia                                                                                                                                      :ref:`mrmaps_nswf <mrmaps_nswf>`                                                                                                                                                                                                 
+   Spatial     Provincial               Manitoba - Infrastructure                                                                      Manitoba Provincial Waterways                                                                                                                                  :ref:`mi_prov_ww <mi_prov_ww>`                                                                                                                                                                                                                                                                                                                                                          
+   Spatial     Provincial               Saskatchewan - Water Security Agency                                                           WSA Owned Dams                                                                                                                                                 :ref:`wsa_sk_owned_dams <wsa_sk_owned_dams>`
+   Spatial     Provincial               Saskatchewan - Ministry of Environment                                                         Saskatchewan Hydrography                                                                                                                                       :ref:`skmoe_hydrography <skmoe_hydrography>`
    Non-spatial Federal                  Environment and Climate Change Canada                                                          Canadian Environmental Assessment Agency                                                                                                                       :ref:`ecc_ceaa_090152237 <ecc_ceaa_090152237>`                                                                                                                                                                                          
    Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament) :ref:`dfo_annu_rep_2003_4 <dfo_annu_rep_2003_4>`                                                                                                                                                                                         
    Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Information in Support of a Recovery Potential Assessment of Bull Trout                                                                                        :ref:`dfo_sawatsky_2016 <dfo_sawatsky_2016>`                                                                                                                                                                                           
@@ -350,6 +354,24 @@ Impounds
 
 |ds_searchtbl_return|
 
+Manitoba – Infrastructure 
++++++++++++++++++++++++++
+
+.. _mi_prov_ww:
+
+Manitoba Provincial Waterways
+`````````````````````````````
+
+    Manitoba Infrastructure, 2021. Manitoba Provincial Waterways. Accessed July 15, 2021 from https://www.arcgis.com/home/item.html?id=38142a3ccca9472fb4fd29cb0282a8ec
+
+    **Geographic coverage:** Manitoba
+
+    **Source ID field:** objectid
+
+    **Short name:** mi_prov_ww
+
+|ds_searchtbl_return|
+
 New Brunswick – Energy and Resource Development 
 +++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -480,11 +502,59 @@ Répertoire des Barrages
 
 |ds_searchtbl_return|
 
+Saskatchewan - Ministry of Environment
+++++++++++++++++++++++++++++++++++++++
+
+.. _skmoe_hydrography:
+
+Saskatchewan Hydrography
+````````````````````````
+
+    Saskatchewan Ministry of Environment, no date. Hydrography. Accessed July 19, 2021, from https://gis.saskatchewan.ca/arcgis/rest/services/Hydrography/MapServer
+
+    **Geographic coverage:** Saskatchewan
+
+    **Source ID field:** feature_id
+
+    **Short name:** skmoe_hydrography
+
+|ds_searchtbl_return|
+
+Saskatchewan Water Security Agency
+++++++++++++++++++++++++++++++++++
+
+.. _wsa_sk_owned_dams:
+
+    Saskatchewan Water Security Agency, no date. WSA Owned Dams. Accessed July 8, 2021, from https://gis.wsask.ca/WSAOwnedDams/
+   
+    **Geographic coverage:** Saskatchewan
+
+    **Source ID field:** objectid
+
+    **Short name:** wsa_sk_owned_dams
+
+|ds_searchtbl_return|
+
 Academic Institutions/NGO Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Canadian Wildlife Federation (CWF)
 ++++++++++++++++++++++++++++++++++
+
+.. _cwf:
+
+Barrier Points Identified Through Visual Inspection of Satellite Imagery
+````````````````````````````````````````````````````````````````````````
+
+    Canadian Wildlife Federation, 2022. Barrier points identified through visual inspection of satellite imagery.
+
+    **Geographic coverage:** National
+
+    **Source ID field:** n/a
+
+    **Short name:** cwf
+
+|ds_searchtbl_return|
 
 .. _cwf_canfish:
 
