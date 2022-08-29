@@ -152,7 +152,7 @@ Filter request format:
 
 .. admonition:: Example
     
-    ``/features/dams?bbox=0,0,1,1&filter=passability_status_code:in:1,2&filter=nhn_workunit_id:eq:08GABX1``
+    ``/features/dams?bbox=0,0,1,1&filter=passability_status_code:in:1,2&filter=nhn_watershed_id:eq:08GABX1``
 
 This request will return all dam features with a passability status code of 1 (Barrier) or 2 (Partial Barrier) in the NHN work unit 08GABX1 within the bounding box [(0 0), (1 1)].
 
@@ -165,7 +165,7 @@ The default output format is GeoJSON, however by supplying the format query para
 
 .. admonition:: Example
     
-    ``/features/dams_medium_large?filter=nhn_workunit_id:eq:08GABX1&format=geopackage``
+    ``/features/dams_medium_large?filter=nhn_watershed_id:eq:08GABX1&format=geopackage``
 
 Supported Formats:
 
