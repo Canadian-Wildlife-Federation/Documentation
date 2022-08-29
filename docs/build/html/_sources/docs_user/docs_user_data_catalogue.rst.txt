@@ -244,7 +244,7 @@ Attributes Unique to Dams
 
 Assessment Schedule
 +++++++++++++++++++
- **Definition:** *The frequency that the dam structure is assessed by an owner or regulatory body.*
+ **Definition:** *The frequency that the dam structure is assessed/maintained by an owner or regulatory body.*
  
  **Field name:** assess_schedule
 
