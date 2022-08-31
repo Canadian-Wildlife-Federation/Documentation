@@ -104,6 +104,7 @@ rst_epilog = """
 .. |ftbbox| replace:: :raw-html:`<p><span class="cbm">/features?bbox=<span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;min_lat&gt</span>,<span class="cbmcc">&lt;max_long&gt</span>,<span class="cbmcc">&lt;max_lat&gt</span>&types=<span class="cbmcc">&lt;type&gt</span>,<span class="cbmcc">&lt;type&gt</span></span></p>`
 .. |ftpoint| replace:: :raw-html:`<p><span class="cbm">/features?point=<span class="cbmcc">&lt;longitude&gt</span>,<span class="cbmcc">&lt;latitude&gt</span>&max-results=<span class="cbmcc">&lt;n&gt</span>&types=<span class="cbmcc">&lt;type&gt</span>,<span class="cbmcc">&lt;type&gt</span></span></p>`
 .. |ftfilter| replace:: :raw-html:`<p><span class="cbm">/features?filter=<span class="cbmcc">&lt;filter&gt</span>&filter=<span class="cbmcc">&lt;filter&gt</span></span></p>`
+.. |ftnamefilter| replace:: :raw-html:`<p><span class="cbm">/features?namefilter=<span class="cbmcc">&lt;namefilter&gt</span></span></p>`
 .. |bboxcoords| replace:: :raw-html:`<p><span class="cbm"><span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;min_lat&gt</span>,<span class="cbmcc">&lt;max_long&gt</span>,<span class="cbmcc">&lt;max_lat&gt</span></span></p>`
 .. |latlong| replace:: :raw-html:`<p><span class="cbm"><span class="cbmcc">&lt;longitude&gt</span>,<span class="cbmcc">&lt;latitude&gt</span></span></p>`
 .. |ftstype| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span></span></p>`
@@ -111,10 +112,13 @@ rst_epilog = """
 .. |ftspoint| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?point=<span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;min_lat&gt</span>&max-results=<span class="cbmcc">&lt;n&gt</span></span></p>`
 .. |ftsfilter| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?filter=<span class="cbmcc">&lt;filter&gt</span>&filter=<span class="cbmcc">&lt;filter&gt</span></span></p>`
 .. |tilestype| replace:: :raw-html:`<p><span class="cbm">/tiles/<span class="cbmcc">&lt;type&gt</span>/z/x/y.mvt</span></p>`
-.. |filterreq| replace:: :raw-html:`<p><span class="cbm">filter=<span class="cbmcc">&lt;attribute&gt</span>:<span class="cbmcc">&lt;values&gt</span></span>, where:</p>`
+.. |filterreq| replace:: :raw-html:`<p><span class="cbm">filter=<span class="cbmcc">&lt;attribute&gt</span>:<span class="cbmcc">&lt;operator&gt</span>:<span class="cbmcc">&lt;values&gt</span></span>, where:</p>`
+.. |namefilterreq| replace:: :raw-html:`<p><span class="cbm">namefilter=<span class="cbmcc">&lt;operator&gt</span>:<span class="cbmcc">&lt;values&gt</span></span></p>`
 .. |filterattr| replace:: :raw-html:`<p><span class="cbmcc">&lt;attribute&gt</span></p>`
 .. |filterop| replace:: :raw-html:`<p><span class="cbmcc">&lt;operator&gt</span></p>`
 .. |filtervals| replace:: :raw-html:`<p><span class="cbmcc">&lt;values&gt</span></p>`
+.. |namefilterop| replace:: :raw-html:`<p><span class="cbmcc">&lt;operator&gt</span></p>`
+.. |namefiltervals| replace:: :raw-html:`<p><span class="cbmcc">&lt;values&gt</span></p>`
 .. |fttype2| replace:: :raw-html:`<p>The attribute key described in the feature type schema (<span class="cbm">features/types/<span class="cbmcc">&lt;type&gt</span></span>).</p>`
 .. |ftdsid| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span></span></p>`
 .. |ftdsidflds| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span>?fields=all</span></p>`

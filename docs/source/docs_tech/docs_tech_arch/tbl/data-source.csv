@@ -5,3 +5,4 @@ version_date,Data source version date.
 version_number,Data source version number (optional).
 source,A link to the source data or description of where the source data came from.
 comments,Any additional comments.
+source_type,spatial or non-spatial
