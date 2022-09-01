@@ -11,6 +11,7 @@ Format
 The only format supported for feature end points is geojson. 
 
 GeoJson feature attributes differ per feature type, but will include some subset of the following:
+
    - ``id`` - System identifier
    - ``ef_type`` - Code representing the flowapth feature type  
    - ``ef_type_name`` - English description of ef_type. 
@@ -51,6 +52,7 @@ End Points
     - ``match-type`` - OPTIONAL - The type of match to perform. Valid values are EXACT, CONTAINS. Default is CONTAINS. 
     - ``feature-type`` - OPTIONAL - The type of feature to search. Valid values include WATERBODY, FLOWAPTH, CATCHMENT. Can be supplied multiple times to search multiple feature types. If not specified all feature types are searched.
     - ``result-type`` - OPTIONAL - Defines how the results are returned. Valid values are BBOX, ALL, GROUPBYTYPE, GROUPBYNAME. Default is BBOX.
+    
          - ``BBOX`` - For each matching name a single feature is returned with the geometry representing the boundary box of all matched features. 
          - ``ALL`` - For each matching name, every database row that is matched is returned as a feature with the original geometry (linestring/polygon).
          - ``GROUPBYTYPE`` - For each matching name, the matching database rows are merged by geometry type. So there will be a maximum of two features returned per name, one for linestring and one for polygons.  
