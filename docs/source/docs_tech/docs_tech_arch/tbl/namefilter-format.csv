@@ -1,0 +1,3 @@
+﻿Parameter,Description
+|namefilterop|,"The filter operator. Supported operators include: ``in``, ``notin``, ``eq``, ``neq``, ``like``"
+|namefiltervals|,Values for the filter.  For ``in`` and ``notin`` operators this is a comma separated list of values. 

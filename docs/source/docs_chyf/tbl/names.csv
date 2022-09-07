@@ -2,10 +2,5 @@
 name_id ,yes ,uuid ,Unique identifier for name. 
 name_en ,no ,String ,English Name. The geographical name value corresponding to the toponymic feature id in the CGNDB – Language field distinguishes French from English from Indigenous names. 
 name_fr ,no ,String ,French Name. The geographical name value corresponding to the toponymic feature id in the CGNDB – Language field distinguishes French from English from Indigenous names. 
-cgndb_id ,no ,uuid ,"Link to Toponymic Feature ID in the Canadian Geographical Names Database. (https://www.nrcan.gc.ca/earth-sciences/geography/querying-canadian-geographical-names-database/canadian-geographical-names-database/19870) 
-
-* nameId1 from NLFLOW table in NHN database 
-
-* lakeId1 or riverId1 from WATERBODY table in NHN database 
-
-* rather than use this is the identifier in CHyF, a link was created to allow custom names in CHyF that are not in CGNDB. "
+geodbname, yes, String, The name of the geographical names database this name is sourced from.  For Example: CGNDB =  Canadian Geographical Names Database. (https://www.nrcan.gc.ca/earth-sciences/geography/querying-canadian-geographical-names-database/canadian-geographical-names-database/19870) 
+geodb_id ,no ,uuid ,"The name identifier in the geographical names database. "
