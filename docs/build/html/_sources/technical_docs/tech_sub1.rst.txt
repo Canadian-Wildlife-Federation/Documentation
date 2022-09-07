@@ -1,9 +1,0 @@
-Database Development
-====================
-.. toctree::
-    :maxdepth: 3
-    :caption: Database Development
-
-    technical_docs/tech_db_data_dictionary
-    technical_docs/tech_db_api_architecture
-

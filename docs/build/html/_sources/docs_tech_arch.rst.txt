@@ -1,8 +1,0 @@
-========================
-Application Architecture
-========================
-.. toctree::
-
-    docs_tech/docs_tech_arch/tech_db_data_dictionary
-    docs_tech/docs_tech_arch/tech_db_api_architecture
-
