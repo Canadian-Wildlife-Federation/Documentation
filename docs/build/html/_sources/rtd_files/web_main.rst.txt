@@ -1,5 +1,0 @@
-.. toctree::
-    :maxdepth: 2
-
-    web_walkthrough
-    web_simplified_data_dictionary
