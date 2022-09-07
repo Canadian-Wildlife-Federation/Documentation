@@ -564,10 +564,15 @@ CANFISHPASS Database (inherited from Cooke Lab – Carleton University)
     Cooke, S., Hatry, C., Smokorowksi, K., Clarke, K., Katopodis, C., Binder, T., Hasler, C., & Thiem, J., 2013. CanFishPass: Inventory of Canadian Fish Passage Facilities. Cooke Lab. Accessed from http://www.fecpl.ca/projects/canfishpass-inventory-of-canadian-fish-passage-facilities/ 
 
     **Geographic coverage:** National
+ 
+    Nova Scotia Salmon Association, 2013. Fish Ladder Database, Adopt a Stream Program. Nova Scotia Salmon Association, unpublished electronic data.
+
+    **Geographic coverage:** Nova Scotia
 
     **Source ID field:** fid
 
     **Short name:** cwf_canfish
+
 
 |ds_searchtbl_return|
 
