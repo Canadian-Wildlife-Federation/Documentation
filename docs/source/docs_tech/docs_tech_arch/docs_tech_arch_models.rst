@@ -79,7 +79,7 @@ The database is structured into multiple schemas.  Each feature type has its own
 Views
 ~~~~~
 
-Each feature type and super feature type has an associated view which supports the api. This view should include all fields required for output (either for display on the UI or to support the future editing api).  The view ``cabd.all_features_view`` supports all features api endpoint. 
+Each feature type and super feature type has two associated views which supports the api - one view for engligh (_en) and one view for french (_fr). These views should include all fields required for output (either for display on the UI or to support the future editing api).  The view ``cabd.all_features_view_XX`` supports all features api endpoint. 
 
 The views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the ``dams`` view queries the dams data table). Super feature types will generally query multiple data tables (for example, the ``barriers`` view queries both the dams data table and the waterfalls data table).
 
@@ -169,22 +169,23 @@ New feature types can be added to the system by adding the data to the database 
 
 2. Create the required data tables and reference tables to store the feature data and populate these tables. These should exist in their own ``<featuretype>`` schema.
 
-3. Create a view that joins the data table with the reference tables to include all the data you want visible to the ui.  Use one of the existing feature types views as an example (ex. ``cabd.dams_view``).
+3. Create two views that joins the data table with the reference tables to include all the data you want visible to the ui. One view for English (_en) and one view for French (_fr)  Use one of the existing feature types views as an example (ex. ``cabd.dams_view_en and cabd.dams_view_fr``).
 
    .. warning::
        When creating and/or updating existing view the role cabd must have permission to use the view (otherwise the application won’t start up).
 
-       ``GRANT ALL PRIVILEGES ON cabd.dams_view to cabd;``
+       ``GRANT ALL PRIVILEGES ON cabd.dams_view_en to cabd;``
+       ``GRANT ALL PRIVILEGES ON cabd.dams_view_fr to cabd;``
 
-4. Update the ``cabd.all_features_view`` to include the data from this new feature type. Use the existing view as an example, appending the new feature type data.
+4. Update the ``cabd.all_features_view_en`` and ``cabd.all_features_view_fr`` to include the data from this new feature type. Use the existing view as an example, appending the new feature type data.
 
-5. If the new feature type is considered a barrier you also need to update the ``cabd.barriers_view``.  Use the existing view as an example.
+5. If the new feature type is considered a barrier you also need to update the ``cabd.barriers_view_en and cabd.barriers_view_fr`` views.  Use the existing view as an example.
 
 6. Add a row to the ``cabd.feature_types`` table to represent the new feature type.
 
-7. Add rows to the ``cabd.feature_type_metadata table``. One row needs to be added for each column returned by the feature type view created in step 3.  
+7. Add rows to the ``cabd.feature_type_metadata table``. One row needs to be added for each column returned by the feature type views created in step 3. You only need to add one set of rows to represent both views.  The software will deal with accessing the _en or _fr view based on the Locale of the data request.
     
-   * ``view_name`` – the name of the view created in step3
+   * ``view_name`` – the name of the view without the language suffix (ex. 'dams_view' or 'waterfalls_view' NOT 'dams_view_en'). 
    * ``field_name`` – the name of the field in the view
    * ``name`` – the human friendly name for the column
    * ``description`` – (optional) a description for the column
@@ -193,7 +194,7 @@ New feature types can be added to the system by adding the data to the database 
    * ``vw_simple_order`` – the order the column should appear in the simple view of the feature (or null if it shouldn’t appear at all in the simple view)
    * ``vw_all_order`` – the order the column should appear in the all info view of the feature (or null if it shouldn’t appear at all)
    * ``include_vector_tile`` – true or false if the attribute should be included in the vector tile of this feature type
-   * ``value_options_reference`` – for columns that have a defined list of valid values in another database table (for example: ``province_territory_code``), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables; otherwise it should contain a string of the form ``“<tablename>;<valuefield>;<namefield>;<descriptionfield>”``. All are required except ``descriptionfield`` which can be blank.  The ``tablename`` references the code table, the ``valuefield`` the value field in the code table, the ``namefield`` the human friendly name field in the table, and ``descriptionfield`` the description field in the table.
+   * ``value_options_reference`` – for columns that have a defined list of valid values in another database table (for example: ``province_territory_code``), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables; otherwise it should contain a string of the form ``“<tablename>;<valuefield>;<namefield>;<descriptionfield>”``. All are required except ``valuefield`` and ``descriptionfield`` which can be blank.  The ``tablename`` references the code table, the ``valuefield`` the value field in the code table, the ``namefield`` the root human friendly name field in the table, and ``descriptionfield`` the root description field in the table. If ``valueField`` is not provided the ``namefield`` is used as the value. The reference table must have a columns named <namefield>_en, <namefield>_fr, <descriptionfield>_en, <descriptionfield>_fr to support translations. For example: "waterfalls.waterfall_complete_level_codes;code;name;description" -> references the table waterfalls.waterfall_complete_level_codes which must have code, name_en, name_fr, description_en, and description_fr columns.
 
 8. [OPTIONAL] Create the ``<featuretype>.<featuretype>_feature_source`` and ``<featuretype>.<featuretype>_attribute_source tables`` and populate with appropriate data.
 
