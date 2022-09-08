@@ -67,8 +67,8 @@ html_js_files = [
     'main.js',
 ]
 # Add a custom favicon and html logo to sidebar
-html_favicon = 'branding/favicon.ico'
-html_logo = 'branding/cwf_logo.png'
+html_favicon = 'https://github.com/Canadian-Wildlife-Federation/Documentation/tree/main/docs/source/branding/favicon.ico'
+html_logo = 'https://github.com/Canadian-Wildlife-Federation/Documentation/tree/main/docs/source/branding/cwf_logo.png'
 
 html_theme_options = {
     'logo_only': True,
