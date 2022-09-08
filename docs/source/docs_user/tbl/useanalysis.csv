@@ -1,0 +1,3 @@
+Name,Description,Shapefile Value,Geopackage Value
+true,Feature point should be used for analysis and is snapped to the hydro network.,T,1
+false,Feature point should not be used for analysis and is not snapped to the hydro network.,F,0
