@@ -10,7 +10,7 @@ Documentation
 
 -----
 
-Welcome to the CABD documentation site!
+Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site! The CABD is developed and maintained by the Canadian Wildlife Federation.
 
 .. note::
    The CABD project is under active development.
