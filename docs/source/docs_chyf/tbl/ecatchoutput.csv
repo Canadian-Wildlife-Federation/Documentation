@@ -1,6 +1,0 @@
-﻿Attribute ,Required ,Data Type 
-internal_id ,yes ,UUID 
-ec_type ,yes ,"Integer (1-reach, 2-bank, 3-empty, 4-water, 5-built-up area) "
-name_string ,no ,String 
-geometry ,yes ,Polygon 
-other_attributes ,no ,n/a

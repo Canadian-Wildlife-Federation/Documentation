@@ -1,3 +1,0 @@
-﻿Value,Name,Description
--1,Unknown,The direction of the flow is unknown and cannot be assumed to follow the order of the vertices. The CHyF Flowpath Constructor can be used to define flow direction; the order of the vertices may be reversed by the tool.  The order may also be reversed if required to ensure that the skeleton flowpaths do not form a cycle. 
-1,Known,The direction of the flow is assumed to follow the order of the vertices. Either it was provided when input or it was assigned by the CHyF Flowpath Constructor.

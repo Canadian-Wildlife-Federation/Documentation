@@ -1,4 +1,0 @@
-Option,Required,Description
--d,Yes,PostgreSQL connection details in the form: host=<HOST>;port=<PORT>;db=<DBNAME>;user=<USERNAME>;password=<PASSWORD>
--ignorenames,No*,Ignore names when computing mainstems
--usenames,No*,Use names when computing mainstems

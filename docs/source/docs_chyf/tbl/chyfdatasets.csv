@@ -1,6 +1,0 @@
-﻿Dataset  ,Description  
-EFlowpaths ,An elementary flowpath is a derived linear feature representing the path of water from one hydro node to another.  
-ECatchments ,"The term elementary catchment refers to a feature with polygonal geometry that defines a fundamental drainage area, including waterbodies. "
-AOI ,Working unit area of interest. 
-Shorelines (if applicable) ,Linear spatial representation representing the boundary between land and sea. 
-TerminalNodes ,Points of inflow/outflow along AOI boundary.

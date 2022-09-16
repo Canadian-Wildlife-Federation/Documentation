@@ -1,4 +1,0 @@
-1,Reach,"If the elementary flowpath represents an observed or inferred single-line flow. Includes Observed and Constructed for networkFlowType from the NHN, as well as flow through dams and potentially other types not present in the NHN."
-2,Bank,"Skeleton segment that connects a bank catchment to the flow network. This has no equivalent in the NHN."
-3,Skeleton,"A skeleton segment in a lake or double-line river that connects at both ends to other skeleton segments or to a reach flowpath. These are referred to as Inferred for networkFlowType in the NHN."
-4,Infrastructure,"An elementary flowpath representing flow contained in a conduit, such as a storm drain or a sanitary sewer. Conduits may be buried, at ground level, or elevated. This is assigned manually during preprocessing."
