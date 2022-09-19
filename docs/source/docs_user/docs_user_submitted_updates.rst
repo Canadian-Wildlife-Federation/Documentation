@@ -1,3 +1,5 @@
+.. _submit-updates:
+
 ===================
 Submit Data Updates
 ===================
