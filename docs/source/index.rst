@@ -5,15 +5,46 @@
 
 **Canadian Aquatic Barriers Database**
 ======================================
-Documentation
+Documentation Site
 -----------------
 
 -----
 
-Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site! The CABD is developed and maintained by the Canadian Wildlife Federation.
+.. admonition:: Canadian Aquatic Barriers Database
+   All of Canada's aquatic barrier and freshwater connectivity information in one place -- easily and openly accessible!
+
+**Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site!**
+
+The CABD is a standardized, curated, central, and open repository for barrier and connectivity data in Canada. It is a tool to support work in a variety of fields and sectors related to freshwater connectivity and aquatic barriers. The database is accessible via our web tool at `aquaticbarriers.ca <https://aquaticbarriers.ca/>`_.
+
+This is your one-stop-shop to learn how about the CABD, how to access and use the data, and help us fill data gaps and improve the database. The site is divided into two sections:
+
+#. CABD User Resources
+#. CABD Technical Documentation
+
+Head to the **CABD User Resources** section if you are interested in exploring:
+
+- The latest announcements and data updates
+- An overview of the CABD project and what the data can be used for
+- :ref:`Tutorials <tutorials>` on how to use the web tool and access data
+- The :ref:`data sources <data-sources>` used to develop the CABD
+- The :ref:`definitions <data-catalogue>` of the data layers and associated attributes
+- How to help us :ref:`fill data gaps <submit-updates>` by submitting user updates
+- The :ref:`engagement process <stakeholder-engagement>` that supported the development of the CABD and associated tools
+
+If you're interested in diving into the more technical aspects of the database, check out the **CABD Technical Documentation** section for resources, including:
+
+- An overview of the :ref:`database and application architecture <cabd-models>`
+- How to access CABD data and data sources via :ref:`REST API services <cabd-rest-services>`
+
+The CABD is a collaborative project developed and maintained by the Canadian Wildlife Federation, you can visit our `website <https://cwf-fcf.org/en/explore/fish-passage/?src=menu>`_ to learn more about our work supporting freshwater connectivity and fish passage.
+
+*The Canadian Aquatic Barriers Database is a multi-year project that is supported partially by financial contributions from Fisheries and Oceans Canada.*
+
+*The Canadian Aquatic Barriers Database is also funded in part by the RBC Foundation in support of RBC Tech for Nature.*
 
 .. note::
-   The CABD project is under active development.
+   The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our Announcements page for new updates!
 
 
 .. toctree::

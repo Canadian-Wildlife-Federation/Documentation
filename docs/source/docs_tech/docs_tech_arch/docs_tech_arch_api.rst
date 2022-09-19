@@ -8,7 +8,7 @@
 .. _cabd-rest-services:
 
 =============================
-REST Services (API Endpoints)
+REST API Services
 =============================
 
 .. _api-overview:

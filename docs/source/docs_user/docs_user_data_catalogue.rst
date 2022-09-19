@@ -1,3 +1,5 @@
+.. _data-catalogue:
+
 ==============
 Data Catalogue
 ==============
