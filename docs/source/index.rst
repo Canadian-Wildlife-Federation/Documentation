@@ -8,9 +8,13 @@
 Documentation Site
 -----------------
 
+.. note::
+   The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our Announcements page for new updates!
+
 -----
 
 .. admonition:: Canadian Aquatic Barriers Database
+
    All of Canada's aquatic barrier and freshwater connectivity information in one place -- easily and openly accessible!
 
 **Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site!**
@@ -42,9 +46,6 @@ The CABD is a collaborative project developed and maintained by the Canadian Wil
 *The Canadian Aquatic Barriers Database is a multi-year project that is supported partially by financial contributions from Fisheries and Oceans Canada.*
 
 *The Canadian Aquatic Barriers Database is also funded in part by the RBC Foundation in support of RBC Tech for Nature.*
-
-.. note::
-   The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our Announcements page for new updates!
 
 
 .. toctree::
