@@ -13,11 +13,11 @@ Documentation Site
 
 -----
 
-.. admonition:: Canadian Aquatic Barriers Database
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   All of Canada's aquatic barrier and freshwater connectivity information in one place -- easily and openly accessible!
-
-**Welcome to the Canadian Aquatic Barriers Database (CABD) documentation site!**
+*All of Canada’s aquatic barrier and freshwater connectivity information in one place -- easily and openly accessible!*
 
 The CABD is a standardized, curated, central, and open repository for barrier and connectivity data in Canada. It is a tool to support work in a variety of fields and sectors related to freshwater connectivity and aquatic barriers. The database is accessible via our web tool at `aquaticbarriers.ca <https://aquaticbarriers.ca/>`_.
 
@@ -28,7 +28,7 @@ This is your one-stop-shop to learn how about the CABD, how to access and use th
 
 Head to the **CABD User Resources** section if you are interested in exploring:
 
-- The latest announcements and data updates
+- The latest :ref:`announcements <announcements>` and data updates
 - An overview of the CABD project and what the data can be used for
 - :ref:`Tutorials <tutorials>` on how to use the web tool and access data
 - The :ref:`data sources <data-sources>` used to develop the CABD
@@ -43,6 +43,10 @@ If you're interested in diving into the more technical aspects of the database, 
 
 The CABD is a collaborative project developed and maintained by the Canadian Wildlife Federation, you can visit our `website <https://cwf-fcf.org/en/explore/fish-passage/?src=menu>`_ to learn more about our work supporting freshwater connectivity and fish passage.
 
+^^^^^^^^^^^^^^^^^^^^^^^^
+Funding Acknowledgements
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 *The Canadian Aquatic Barriers Database is a multi-year project that is supported partially by financial contributions from Fisheries and Oceans Canada.*
 
 *The Canadian Aquatic Barriers Database is also funded in part by the RBC Foundation in support of RBC Tech for Nature.*
@@ -53,11 +57,14 @@ The CABD is a collaborative project developed and maintained by the Canadian Wil
    :hidden:
    :caption: CABD User Resources
 
+   docs_user/announcements
+   docs_user/cabd_overview
    docs_user/docs_user_web_map
    docs_user/docs_user_data_sources
    docs_user/docs_user_data_catalogue
    docs_user/docs_user_submitted_updates
    docs_user/docs_user_engagement
+   docs_user/acknowledgements
 
 
 
