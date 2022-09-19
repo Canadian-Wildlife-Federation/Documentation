@@ -1065,7 +1065,7 @@ Entrance Location
  
  **Field name:** entrance_location_code
 
- **Allowable Values:** Midstream, Bank
+ **Allowable Values:** Midstream(1), Bank(2)
 
 |dcfishreturn|
 
@@ -1075,9 +1075,9 @@ Entrance Position
 +++++++++++++++++
  **Definition:** *Indicates the entrance position of the fishway in the water column.*
  
- **Field name:** entrance_position_code
+ **Field name:** entrance_position_code 
 
- **Allowable Values:** Bottom, Surface, Bottom and Surface, Mid-column
+ **Allowable Values:** Bottom(1), Surface(2), Bottom and Surface(3), Mid-column(4)
 
 |dcfishreturn|
 
