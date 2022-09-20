@@ -6,7 +6,7 @@
 **Canadian Aquatic Barriers Database**
 ======================================
 Documentation Site
------------------
+------------------
 
 .. note::
    The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our Announcements page for new updates!
