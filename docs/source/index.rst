@@ -74,7 +74,7 @@ Funding Acknowledgements
    :caption: CABD Technical Documents
 
    docs_tech/docs_tech_arch
-   docs_tech/docs_tech_process
+   docs_tech/docs_tech_feature_review
 
 .. toctree::
    :maxdepth: 3

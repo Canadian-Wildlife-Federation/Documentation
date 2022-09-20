@@ -3,7 +3,6 @@ Code,Name,Description
 2,Diversion  ,A structure built to divert all or some of the water from a waterway into a man-made canal or conduit.  
 3,Detention  ,"A structure built for flood control. Retains excess water in a reservoir to maintain the carrying capacity of the waterway, releasing it gradually at a controlled rate to protect downstream areas from flooding. "
 4,Debris  ,"A structure built across a waterway to retain debris (e.g., driftwood, gravel, sand etc.)."
-5,Coffer  ,An enclosed temporary structure commonly used during construction. Water is pumped from the enclosure to provide a dry worksite.
 6,Saddle  ,"An auxiliary structure constructed at low spots along the perimeter of a reservoir to limit its extent, or to allow for an increase in storage capacity. "
 7,Hydro - Closed-cycle pumped storage ,A facility configured to pump water between two water reservoirs at different elevations; both reservoirs are isolated from a free-flowing water source.
 8,Hydro - Conventional storage ,"A facility that impounds water, which when released, flows through a turbine and generates electricity.  "
