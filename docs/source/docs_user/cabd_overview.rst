@@ -24,7 +24,7 @@ We are working hard to begin to fill existing data gaps by reviewing non-spatial
 
 Check out our `blog post <INSERT LINK TO BLOG POST HERE>`_ for more information on the CABD 1.0 release, and the `Canadian Wildlife Federation website <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ for more project details, including FAQs.
 
-*Data in the CABD is made available through the `CC BY-SA 4.0* <https://creativecommons.org/licenses/by-nc-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
+*Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
 
 The Web Tool
 ------------
