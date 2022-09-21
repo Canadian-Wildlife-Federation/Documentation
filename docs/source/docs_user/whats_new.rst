@@ -28,10 +28,18 @@ Data Releases
 
 **Version 1.0**
     Release date: 2022-09-25
+
     Summary: Initial release
+
     Layers:
         
-        - dams 1.0
-        - waterfalls 1.0
-        - fishways 1.0
-    Changelog: :download:`Download <downloads/release_1.0_2022-09-25>`
+    - dams 1.0
+    - waterfalls 1.0
+    - fishways 1.0
+  
+    Changelog: :download:`Download <downloads/release_1.0_2022-09-25.txt>`
+
+.. csv-table:: 
+    :file: tbl/data-releases.csv
+    :widths: 15, 25, 30, 30
+    :header-rows: 1
