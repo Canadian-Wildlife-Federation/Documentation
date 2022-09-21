@@ -1,0 +1,12 @@
+Example Changelog - CABD version 1.0
+
+Date: 2022-09-25
+Version: 1.0
+Summary: initial release
+
+Changelog
+dams 1.0
+
+waterfalls 1.0
+
+fishways 1.0
