@@ -28,8 +28,8 @@ This is your one-stop-shop to learn how about the CABD, how to access and use th
 
 Head to the **CABD User Resources** section if you are interested in exploring:
 
-- The latest :ref:`announcements <announcements>` and data updates
-- An overview of the CABD project and what the data can be used for
+- The latest :ref:`announcements and data releases <whats-news>`
+- An :ref:`overview of the CABD project <cabd-overview>` and uses for the data
 - :ref:`Tutorials <tutorials>` on how to use the web tool and access data
 - The :ref:`data sources <data-sources>` used to develop the CABD
 - The :ref:`definitions <data-catalogue>` of the data layers and associated attributes
