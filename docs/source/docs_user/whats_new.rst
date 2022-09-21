@@ -26,9 +26,9 @@ You can also now explore, filter, and download the data through the CABD web too
 Data Releases
 -------------
 
-    *Insert table of data releases here?* Can includes version #, release date, and link to changelog (where would changelog be stored?)
+*Insert table of data releases here?* Can includes version #, release date, and link to changelog (where would changelog be stored?)
 
-    .. csv-table:: 
+.. csv-table:: 
     :file: tbl/data-releases.csv
     :widths: 15, 25, 30, 30
     :header-rows: 1
