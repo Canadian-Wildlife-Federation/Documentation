@@ -57,7 +57,7 @@ Funding Acknowledgements
    :hidden:
    :caption: CABD User Resources
 
-   docs_user/announcements
+   docs_user/whats_new
    docs_user/cabd_overview
    docs_user/docs_user_web_map
    docs_user/docs_user_data_sources

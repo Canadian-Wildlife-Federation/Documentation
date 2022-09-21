@@ -27,4 +27,5 @@ Data Releases
 -------------
 
 .. container:: toggle
+    
     *Insert table of data releases here?* Can includes version #, release date, and link to changelog (where would changelog be stored?)
