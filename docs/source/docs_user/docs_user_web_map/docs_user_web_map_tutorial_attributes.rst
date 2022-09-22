@@ -8,7 +8,7 @@ To view the attribute information for a structure, simply click on its point in 
 
 .. figure:: img/attributes_popup_zoom.png
     :align: left
-    :width: 40%
+    :width: 80%
 
 The name of the structure can be found in the top left-hand corner of this window. Using the two buttons to the right of the structure name, you can toggle between the Simple View (a shortened list of key attributes) and the Detailed View (a list of all attributes available for the feature type). 
 

@@ -8,7 +8,7 @@ Data can be downloaded by opening the ‘Download’ window. This window can be 
 
 .. figure:: img/download_crop_highlight_crop.png
     :align: left
-    :width: 60%
+    :width: 75%
 
 There are three data set options you can choose from when downloading data:
 

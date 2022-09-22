@@ -8,7 +8,7 @@ To filter data based on a specific set of criteria, you will need to open the â€
 
 .. figure:: img/panel_filters_highlight_crop.png
     :align: left
-    :width: 40%
+    :width: 50%
 
 Filter by Location
 ------------------
@@ -25,7 +25,7 @@ Each new selection is added to the text box to create a list of criteria to filt
 
 .. figure:: img/remove.png
     :align: left
-    :width: 40%
+    :width: 50%
 
 In addition to using the method above, watersheds can be added to the filter by clicking in the map view.
 
