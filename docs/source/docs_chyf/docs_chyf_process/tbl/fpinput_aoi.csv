@@ -1,5 +1,0 @@
-﻿Column,Description
-id,The unique identifier for the aoi.
-name,The NHN work unit name (DATASETNAM).
-geometry,The aoi geometry loaded in Step 1.
-status,The current status of this aoi with regards to flowpath processing. Valid values are: READY - the aoi is ready to start processing; FP_PROCESSING - the aoi is currently being processed; FP_DONE - the aoi has completed flowpath processing but there may be errors; WS_PROCESSING - watersheds are being generated for the aoi; WS_ERROR - an error occurred while watersheds were being generated for the aoi; WS_DONE - watersheds have been generated for the aoi.

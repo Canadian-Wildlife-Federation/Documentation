@@ -1,5 +1,0 @@
-﻿Attribute ,Required ,Data Type ,Description 
-id ,yes ,uuid ,Unique identifier for feature. 
-aoi_id ,yes ,uuid ,Link to id in AOI table. 
-flow_direction ,yes ,Integer ,"Determine if the flow is flowing into or out of the area of interest. (1-Input, 2-Output) "
-geometry ,yes ,Point ,Location of terminal node. 

@@ -1,5 +1,0 @@
-﻿Attribute ,Required ,Data Type ,Description 
-ecatchment_id ,yes ,uuid ,Unique identifier for segment. 
-min_elevation ,no ,Integer ,Derived from a DEM for the entire catchment area. 
-max_elevation ,no ,Integer ,Derived from a DEM for the entire catchment area. 
-mean_elevation ,no ,Integer ,Derived from a DEM for the entire catchment area. 

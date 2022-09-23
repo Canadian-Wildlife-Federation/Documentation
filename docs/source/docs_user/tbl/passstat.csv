@@ -1,5 +1,5 @@
 Code,Name,Description,(Dams),(Waterfalls)
 1,Barrier ,The structure acts as a hard barrier to all aquatic species. ,Dam has no associated fishway structure.,Waterfall has a height of 5 m or greater.
 2,Partial Barrier ,The structure may act as a barrier to some aquatic species but may also be passable to others.,A fishway structure is associated with the dam.,Waterfall has a height of less than 5 m.
-3,Passable ,The structure does not act as a barrier to aquatic species.,n/a,n/a
+3,Passable ,The structure does not act as a barrier to aquatic species.,The structure has an operating status of Decomissioned/Removed and is no longer acting as a barrier to fish passage.,n/a
 4,Unknown ,The passability status of the structure is unknown. ,n/a,Waterfall height is unknown.

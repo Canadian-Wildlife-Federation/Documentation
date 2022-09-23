@@ -204,3 +204,18 @@ span.pre {
 .cbmcc {
     color: #2a997d;
 }
+
+.toggle .header {
+    display: block;
+    clear: both;
+}
+
+.toggle .header:after {
+    content: "▸";
+    font-size: 30px;
+}
+
+.toggle .header.open:after {
+    content: "▾";
+    font-size: 30px;
+}

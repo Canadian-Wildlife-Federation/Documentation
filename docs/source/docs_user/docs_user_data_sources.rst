@@ -4,9 +4,18 @@
 Data Sources
 ============
 
-The `Canadian Aquatic Barriers Database <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ (CABD) is a multi-year project that is supported partially by financial contributions from `Fisheries and Oceans Canada <https://www.dfo-mpo.gc.ca/index-eng.html>`_ and the `RBC Foundation <https://www.rbcwealthmanagement.com/ca/en/research-insights/the-rbc-foundation/detail/>`_.
+.. note::
+    
+    If you're visiting from the CABD web tool, and accidentally closed your tab, you can navigate back to the web tool `here <https://aquaticbarriers.ca>`_.
 
-The CABD's associated web mapping tool can be found `here <https://aquaticbarriers.ca>`_.
+
+The CABD only exists due to all the painstaking work done by many groups and organizations who have compiled and maintained existing barrier inventories across North America, and either made them openly available or entered into data-sharing agreements with us. A special thank you to these groups! The CABD simply builds off this existing work, and we hope that our work to fill data gaps can benefit original data holders in return. If you are the maintainer of one of the data sources on this page, and would like to chat about how we can share some of our data updates back to you, please contact us at cabd@cwf-fcf.org.
+
+A lot of the work done on the CABD involved de-duplicating and combining attributes for where two or more data sources have a point representing the same structure. This means that for a single point in the CABD, attribute information may be coming from multiple different sources, which makes data-source attribution a bit tricky! We've come up with a solution to map where each attribute in a CABD data point comes from, check out the :ref:`Feature Data Source Details Download <data-source-details>` page for more information.
+
+.. attention::
+
+    *Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
 
 .. _searchtable:
 
@@ -15,7 +24,7 @@ Data Sources Search Table
 
 -----
 
-Data sources can be filtered using the search table below. To find a data source, enter any number of keywords into the search box and the table will update automatically with the matching results. To view additional details for a data source including formal reference, click on the data source short name. This is a link that will bring you to the details for the data source entry. An arrow, |ds_searchtbl_return|, below each entry will return you to the top of the search table.
+You can filter through the data sources using the search table below. To find a data source, enter any number of keywords into the search box and the table will update automatically with the matching results. To view additional details for a data source including formal reference, simply click on the data source short name. This is a link that will bring you to the details for the data source entry. An arrow, |ds_searchtbl_return|, below each entry will return you to the top of the search table.
 
 .. table:: 
    :class: datatable
@@ -282,7 +291,7 @@ Provincial Obstacles to Fish Passage (FISS)
 
     **Geographic coverage:** British Columbia
 
-    **Source ID field:** fish_obstacle_point_id
+    **Source ID field:** fish_obstacle_point_id (note that this dataset does not have stable IDs)
 
     **Short name:** bceccs_fiss
 

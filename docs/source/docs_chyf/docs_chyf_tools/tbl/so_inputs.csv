@@ -1,4 +1,0 @@
-Table,Required Fields
-<schema>.eflowpath,"aoi_id, from_nexus_id, to_nexus_id, id, ef_type, ef_subtype, length, rank, name_id"
-<schema>.nexus,"id, nexus_type"
-<schema>.aoi,id

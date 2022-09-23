@@ -1,7 +1,0 @@
-﻿Spatial Table,Type Required In Table,Required
-EFlowpaths,Flowpaths with ef_type=1 (reach flowpaths); ef_type=3 (skeleton flowpaths) optional,In all cases
-ECatchments,"Catchments with ec_type=4 (i.e., water catchments)",In all cases
-AOI,n/a,In all cases
-TerminalNodes,n/a,"In all cases, where flow enters or exits the AOI; sink points within the interior of the AOI may or may not be provided"
-Shorelines,n/a,If the AOI intersects (or covers) all or part of a shoreline
-(Other spatial tables),n/a,"No. If other tables are present, they will be ignored. "

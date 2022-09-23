@@ -67,8 +67,8 @@ html_js_files = [
     'main.js',
 ]
 # Add a custom favicon and html logo to sidebar
-html_favicon = 'https://github.com/Canadian-Wildlife-Federation/Documentation/tree/main/docs/source/branding/favicon.ico'
-html_logo = 'https://github.com/Canadian-Wildlife-Federation/Documentation/tree/main/docs/source/branding/cwf_logo.png'
+html_favicon = '_static/branding/favicon.ico'
+html_logo = '_static/branding/cwf_logo.png'
 
 html_theme_options = {
     'logo_only': True,
@@ -125,3 +125,5 @@ rst_epilog = """
 .. |ftdsidjson| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span>?format=json</span></p>`
 .. |requestex1|  replace:: :raw-html:`<p>If a user is looking to request the metadata associated with dams, then <span class="cbm">/features/types/<span class="cbmcc">&lt;type&gt</span></span> should be updated to <span class="cbm">/features/types/dams</span>.</p>`
 """
+def setup(app):
+    app.add_css_file('custom.css')

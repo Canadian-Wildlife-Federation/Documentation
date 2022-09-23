@@ -1,3 +1,0 @@
-﻿10 ,Observed ,Reach flowpath subtype representing an observed stream flowpath. It is equivalent to Observed for networkFlowType for a Water Linear Flow in the NHN. 
-20 ,Inferred ,Reach flowpath subtype representing a flowpath that appears to traverse the land but was not visible when mapped. It is equivalent to Constructed for networkFlowType for a Water Linear Flow in the NHN. Flow through dams that are assigned a Constructed value will require manual review. 
-99 ,Unspecified ,"Unknown, impossible to determine, or unrelated to the other existing subtypes. It is equivalent to Unknown or None for networkFlowType for a Water Linear Flow in the NHN. "

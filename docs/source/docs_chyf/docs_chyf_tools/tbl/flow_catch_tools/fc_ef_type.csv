@@ -1,5 +1,0 @@
-﻿Value,Name,Description
-1,Reach,A reach flowpath corresponds to an observed or inferred single-line river. Includes Observed and Constructed from the NHN.
-2,Bank,A bank flowpath connects a bank catchment to the flowpath network; it is otherwise analogous to a skeleton flowpath. This has no equivalent in the NHN.
-3,Skeleton,A skeleton flowpath exists in a lake or double-line river; at both ends it connects to other skeleton flowpaths or to a reach flowpath. These are referred to as Inferred in the NHN.
-4,Infrastructure,"Reach flowpath representing a contained flow in a conduit, such as a storm drain, a sanitary sewer, a flow through a dam or an industrial complex. In the case of a flow through a dam, it is equivalent to Constructed for FLOW_QUALIFIER for a Water Linear Flow in the NHN."
