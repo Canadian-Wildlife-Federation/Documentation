@@ -13,7 +13,7 @@ Stakeholder Engagement Framework
 
 -----
 
-Stakeholder engagement began in 2019, and continues in an activity capacity. The Stakeholder Engagement Framework comprises the following components:
+Stakeholder engagement began in 2019, and continues in an active capacity. The Stakeholder Engagement Framework comprises the following components:
 
 .. _user-requirements-interviews:
 
@@ -35,14 +35,6 @@ We interviewed over 40 individuals during 2019-20, and the results of these inte
 CABD User and Advisory Groups
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Practitioner Working Group** (Retired)
-
-The Working Group helped synthesize the results of the stakeholder interviews. The group was responsible for providing feedback and input on (among other topics) target end uses and data requirements, decisions related to project objectives and outcomes, web tool design and functionality, and identifying existing aquatic barrier datasets from spring 2020 to spring 2022. This group has since been amalgamated with the Technical Advisory Committee to form a single advisory committee for the CABD.
-
-**Technical Advisory Committee** (Retired)
-
-The Technical Advisory Committee was responsible for providing feedback and input on technical aspects of project implementation, including but not limited to, database design, logistic consideration for data compilation and mechanisms to fill data gaps, and long-term strategic planning from spring 2020 to spring 2022. The committee also assisted in final decision-making review of products from the Working Group. This group has since been amalgamated with the Practitioner Working Group to form a single advisory committee for the CABD.
-
 **CABD Advisory Committee** (Active)
 
 The Advisory Committee is the active CABD engagement group and is responsible for providing guidance and feedback on strategic planning, data and user requirements, web tool testing, and technical development aspects of project implementation. The committee was established in spring 2022 and is anticipated to remain active with monthly conference calls through 2023.
@@ -61,6 +53,14 @@ Former members:
     :widths: 40,60
     :header-rows: 1
 
+**Practitioner Working Group** (Retired)
+
+The Working Group helped synthesize the results of the stakeholder interviews. The group was responsible for providing feedback and input on (among other topics) target end uses and data requirements, decisions related to project objectives and outcomes, web tool design and functionality, and identifying existing aquatic barrier datasets from spring 2020 to spring 2022. This group has since been amalgamated with the Technical Advisory Committee to form a single advisory committee for the CABD.
+
+**Technical Advisory Committee** (Retired)
+
+The Technical Advisory Committee was responsible for providing feedback and input on technical aspects of project implementation, including but not limited to, database design, logistic consideration for data compilation and mechanisms to fill data gaps, and long-term strategic planning from spring 2020 to spring 2022. The committee also assisted in final decision-making review of products from the Working Group. This group has since been amalgamated with the Practitioner Working Group to form a single advisory committee for the CABD.
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Reciprocal Data-Sharing Relationships
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,8 +77,6 @@ The results of the user requirements interviews were synthesized by the CABD tea
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Summary of CABD ‘Use Types’ and ‘Use Cases’
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
------
 
 .. table:: **Use Type: Habitat connectivity assessment, reporting, and management decision-making**
 

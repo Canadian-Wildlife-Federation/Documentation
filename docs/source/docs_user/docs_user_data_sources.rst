@@ -13,6 +13,10 @@ The CABD only exists due to all the painstaking work done by many groups and org
 
 A lot of the work done on the CABD involved de-duplicating and combining attributes for where two or more data sources have a point representing the same structure. This means that for a single point in the CABD, attribute information may be coming from multiple different sources, which makes data-source attribution a bit tricky! We've come up with a solution to map where each attribute in a CABD data point comes from, check out the :ref:`Feature Data Source Details Download <data-source-details>` page for more information.
 
+.. attention::
+
+    *Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
+
 .. _searchtable:
 
 Data Sources Search Table

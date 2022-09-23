@@ -30,7 +30,9 @@ We are working hard to fill existing data gaps by reviewing non-spatial data sou
 
 Check out our `blog post <INSERT LINK TO BLOG POST HERE>`_ for more information on the CABD 1.0 release, and the `Canadian Wildlife Federation website <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ for more project details, including FAQs.
 
-*Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
+.. attention::
+
+   *Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
 
 The Web Tool
 ------------
@@ -54,6 +56,6 @@ What's coming up next?
 
 -----
 
-We have some ambitious plans for the CABD -- and will continue to work on filling data gaps for dams, waterfalls, and fishways across Canada -- but our main focus in the coming months will be to begin compiling stream crossing data and integrating it into the CABD.
+We have some ambitious plans for the CABD -- and will continue to work on filling data gaps for dams, waterfalls, and fishways across Canada -- but one of our main focuses in the coming year will be to begin compiling stream crossing data and integrating it into the CABD.
 
 CABD 1.0 is a vital step towards meeting the data needs to support connectivity conservation and fish passage restoration work; however, dams are only one type of human-made structures that fragment freshwater ecosystems in Canada. While dams are often major barriers to connectivity, smaller structures like stream crossings (e.g., roads, rail lines, or trail cross streams) -- of which there are over a million in Canada -- combine to create major concerns for freshwater connectivity through the cumulative effects of the sheer number of these structures. As part of the next stage of the CABD, CWF is working on incorporating stream crossings by developing a standardized data structure and beginning to compile existing data sources. CWF will continue to work with partners, stakeholders, and interested parties to ensure that the stream crossing data is useful and available to practitioners across the country.

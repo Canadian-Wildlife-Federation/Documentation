@@ -1,6 +1,6 @@
-==================
-CHyF REST Services
-==================
+======================
+CHyF REST API Services
+======================
 
 Feature End Points
 ------------------

@@ -8,4 +8,4 @@ You can contact the CABD Team with any inquiries by clicking the â€˜Contact Usâ€
 
 .. figure:: img/panel_contact_us_highlight.png
     :align: left
-    :width: 60%
+    :width: 90%

@@ -8,7 +8,7 @@ To filter data based on a specific set of criteria, you will need to open the �
 
 .. figure:: img/panel_filters_highlight_crop.png
     :align: left
-    :width: 50%
+    :width: 60%
 
 Filter by Location
 ------------------
@@ -19,13 +19,13 @@ To add the area you are interested in to the filter, simply select it from the d
 
 .. figure:: img/filter_location.png
     :align: left
-    :width: 75%
+    :width: 90%
 
 Each new selection is added to the text box to create a list of criteria to filter on. If a previously selected area needs to be removed from the list, click the ‘x’ on the right-hand side of the entry. 
 
 .. figure:: img/remove.png
     :align: left
-    :width: 50%
+    :width: 60%
 
 In addition to using the method above, watersheds can be added to the filter by clicking in the map view.
 
@@ -33,7 +33,7 @@ To do this, you will need to toggle on the ‘NHN Watershed Boundaries’ layer 
 
 .. figure:: img/watershed_crop.png
     :align: left
-    :width: 75%
+    :width: 100%
 
 .. note::
     
@@ -56,7 +56,7 @@ To view the filterable attributes for a specific feature type, expand the sectio
 
 .. figure:: img/filters_dams.png
     :align: left
-    :width: 75%
+    :width: 100%
 
     Dams filtered to only display structures that have been decommissioned or removed.
 
@@ -67,4 +67,4 @@ The ‘Apply Filters’ button must be clicked to apply filters and display the 
 
 To clear all selected filters and reset the ‘Filters’ window back to default, click the ‘Clear Filters’ button. This action cannot be undone.
 
-Once data is filtered, you can download the results by clicking on the ‘Download Data’ button, which will open the ‘Download Data’ window (see topic :ref:`‘Downloading Data’ <downloading>` for more details).
+Once data is filtered, you can download the results by clicking on the ‘Download Data’ button, which will open the ‘Download Data’ window (see topic :ref:`Downloading Data <downloading>` for more details).
