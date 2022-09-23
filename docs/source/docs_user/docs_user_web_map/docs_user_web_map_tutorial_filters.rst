@@ -35,7 +35,7 @@ To do this, you will need to toggle on the ‘NHN Watershed Boundaries’ layer 
     :align: left
     :width: 75%
 
-.. _note:
+.. note::
     
     Data can only be filtered by province/territory or watershed at one time. Selections may be made under both options but only the criteria present in the active window will be used for filtering the data. 
 
@@ -44,7 +44,7 @@ Filter by Attribute
 
 Below the options to filter by location are the options to filter each feature type by a predefined list of attributes. 
 
-To exclude an entire feature type from being filtered, you can toggle it off by clicking the toggle switch or eye icon on the left inside the ‘Filters’ window.
+To exclude an entire feature type from being filtered, you can toggle it off by clicking the toggle switch on the left inside the ‘Filters’ window.
 
 .. figure:: img/filter_layers.png
     :align: left

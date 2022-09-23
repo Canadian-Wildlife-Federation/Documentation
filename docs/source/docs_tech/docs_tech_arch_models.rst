@@ -36,9 +36,6 @@ Features and Database Models
 
 -----
 
-.. _current-application-architecture:
-
-
 CABD Feature Model
 ~~~~~~~~~~~~~~~~~~
 
