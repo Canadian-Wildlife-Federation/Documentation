@@ -15,6 +15,8 @@ Stakeholder Engagement Framework
 
 Stakeholder engagement began in 2019, and continues in an activity capacity. The Stakeholder Engagement Framework comprises the following components:
 
+.. _user-requirements-interviews:
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 User Requirements Interviews
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -26,6 +28,8 @@ We developed a standardized questionnaire that was used during phone interviews 
 - How would potential users like to access the data?
 
 We interviewed over 40 individuals during 2019-20, and the results of these interviews were synthesized to lay out key user requirements and to develop a set of CABD use cases.
+
+.. _user-advisory-groups:
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 CABD User and Advisory Groups
@@ -70,8 +74,9 @@ Use Cases
 
 The results of the user requirements interviews were synthesized by the CABD team and discussed with the user and advisory groups to finalize potential end uses for the CABD, data requirements associated with each use, and means of accessing the data. The results of the individual user interviews were synthesized to identify common potential end uses and create broad ‘Use Types’ that encompass related ‘Use Cases’. The following tables summarize the proposed ‘Use Types’ following preliminary synthesis of the stakeholder interview results, including the most commonly identified ‘Use Cases’.
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Summary of CABD ‘Use Types’ and ‘Use Cases’
--------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -----
 
