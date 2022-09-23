@@ -13,7 +13,7 @@ Stakeholder Engagement Framework
 
 -----
 
-Stakeholder engagement began in 2019, and continues in an activity capacity to this day. The Stakeholder Engagement Framework comprises the following components:
+Stakeholder engagement began in 2019, and continues in an activity capacity. The Stakeholder Engagement Framework comprises the following components:
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 User Requirements Interviews
@@ -151,8 +151,3 @@ Summary of CABD ‘Use Types’ and ‘Use Cases’
     +--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
     | Create a central repository of resources to support the transfer of knowledge across the country | * As a compliment to the database, a separate section of the web interface to house the compilation and curation of a ‘Freshwater Connectivity Toolkit’ with documents and links to resources (e.g., local/regional/provincial legislations, best management practices, etc.) | * Access toolkit through web interface                                                                                |
     +--------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-
-.. toctree::
-    :hidden:
-
-    docs_user_engagement/docs_user_engagement_use_cases
