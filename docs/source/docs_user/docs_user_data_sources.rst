@@ -284,7 +284,7 @@ Provincial Obstacles to Fish Passage (FISS)
 
     **Geographic coverage:** British Columbia
 
-    **Source ID field:** fish_obstacle_point_id
+    **Source ID field:** fish_obstacle_point_id (note that this dataset does not have stable IDs)
 
     **Short name:** bceccs_fiss
 

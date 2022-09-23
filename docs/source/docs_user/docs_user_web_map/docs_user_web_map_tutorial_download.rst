@@ -13,7 +13,7 @@ Data can be downloaded by opening the ‘Download’ window. This window can be 
 There are three data set options you can choose from when downloading data:
 
 1. Download your filtered results
-2. Download the data currently displayed in your map view window
+2. Download the data currently displayed in your map view window (this is the set of filtered points which show up on the current map view)
 3. Download all the available data for one layer at a time
 
 Once you’ve chosen your desired data set type, you can select file type you’d like to receive the data as by clicking on either the ‘Shapefile’, ‘Geopackage’, ‘KML’, or ‘CSV’ button. 

@@ -73,7 +73,9 @@ Funding Acknowledgements
    :hidden:
    :caption: CABD Technical Documents
 
-   docs_tech/docs_tech_arch
+   docs_tech/docs_tech_arch_models
+   docs_tech/docs_tech_arch_api
+   docs_tech/docs_tech_arch_tiles
    docs_tech/docs_tech_feature_review
 
 .. toctree::
