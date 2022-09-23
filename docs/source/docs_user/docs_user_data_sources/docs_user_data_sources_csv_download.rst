@@ -4,7 +4,7 @@
 Feature Data Source Details Download
 ====================================
 
-To account for the complex data mapping required to populate the CABD (i.e., various attributes for a single structure may come from different data sources), we have implemented a link under **Feature Data Source Details** in the attribute popup box (highlighted by the yellow box in the image below) that allows you to download a csv table with all the data source information available for a given data point. This can be accessed through the `web tool <https://aquaticbarriers.ca/>`_ or by making an API request to the :ref:`Feature Data Source End Point <feature-datasource-endpoint>`.
+To account for the complex attribute mapping required to populate the CABD (i.e., various attributes for a single structure may come from different data sources), we have implemented a link under **Feature Data Source Details** in the attribute popup box (highlighted by the yellow box in the image below) that allows you to download a csv table with all the data source information available for a given data point. This can be accessed through the `web tool <https://aquaticbarriers.ca/>`_ or by making an API request to the :ref:`Feature Data Source End Point <feature-datasource-endpoint>`.
 
 .. figure:: img/download_link.png
     :align: center
@@ -15,7 +15,7 @@ CSV Contents
 
 -----
 
-The image below is an example of the data sources csv table. The red numbered boxes correspond with the descriptions listed below.
+The image below is an example of the data sources csv table. The numbered red boxes correspond with the descriptions listed below.
 
 .. figure:: img/csv_download.png
     :align: center

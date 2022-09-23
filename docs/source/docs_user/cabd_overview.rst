@@ -7,6 +7,8 @@ CABD Overview
 The Database
 ------------
 
+-----
+
 The CABD is a standardized, curated, central, and open database for barrier and connectivity data in Canada. Currently, the CABD 1.0 offers data for three feature types:
 
 #.	Dams (and associated structures) v1.0
@@ -28,10 +30,12 @@ We are working hard to fill existing data gaps by reviewing non-spatial data sou
 
 Check out our `blog post <INSERT LINK TO BLOG POST HERE>`_ for more information on the CABD 1.0 release, and the `Canadian Wildlife Federation website <https://cwf-fcf.org/en/explore/fish-passage/aquatic-barrier-database.html>`_ for more project details, including FAQs.
 
-*Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
+*Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
 
 The Web Tool
 ------------
+
+-----
 
 We're really excited about the `CABD web tool <https://aquaticbarriers.ca/>`_, which provides an easy way to explore and access the data through your web browser. Currently, the tool (and this documentation site) are only available in English, but we will be releasing French versions in Winter 2022/23.
 
@@ -43,10 +47,12 @@ Through the web mapping interface, you can:
 - Download the data in various formats -- shapefile, geopackage, kml, and csv
 - View the data sources used (so far) to compile the CABD
 
-Visit the :ref:`Tutorials <tutorials>` section to learn out to navigate and use the web tool.
+Visit the :ref:`CABD Web Tool <web-tool>` section to learn out to navigate and use the web tool.
 
 What's coming up next?
-----------------
+----------------------
+
+-----
 
 We have some ambitious plans for the CABD -- and will continue to work on filling data gaps for dams, waterfalls, and fishways across Canada -- but our main focus in the coming months will be to begin compiling stream crossing data and integrating it into the CABD.
 
