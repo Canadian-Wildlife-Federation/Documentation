@@ -68,7 +68,7 @@ html_js_files = [
 ]
 # Add a custom favicon and html logo to sidebar
 html_favicon = '_static/branding/favicon.ico'
-html_logo = 'branding/cwf_logo.png'
+html_logo = '_static/branding/cwf_logo.png'
 
 html_theme_options = {
     'logo_only': True,
