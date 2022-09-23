@@ -7,9 +7,9 @@
 
 .. _cabd-rest-services:
 
-=============================
+=================
 REST API Services
-=============================
+=================
 
 .. _api-overview:
 
@@ -384,7 +384,7 @@ The default output format of this end point is CSV.
 JSON format is also supported by providing the ``format=json`` query parameter: |ftdsidjson|.
 
 
-.. _feature-vector-tile-service
+.. _feature-vector-tile-service:
 
 Vector Tile Service
 -------------------
