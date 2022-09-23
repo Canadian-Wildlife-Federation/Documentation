@@ -2,190 +2,90 @@
 Feature Review Process
 ======================
 
-Reviewing existing datasets is an important step in preparing data for the Canadian Aquatic Barriers Database (CABD). This document will walk you through how to examine these datasets and identify and record duplicate features between datasets to be loaded into the CABD.
+Reviewing existing datasets is an important step in preparing data for the Canadian Aquatic Barriers Database (CABD). This section provides a summary of the methods used to validate, deduplicate and standardize existing spatial datasets in an effort to create a harmonized national-scale database of barriers to aquatic connectivity, and associated structures, in Canada.
 
-Setup
------
+.. note::
 
------
+    In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, or fishway. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
 
-1. Go to the feature review folder on the CWF shared drive: J:\Conservation Program\GIS\Freshwater\cabd\feature_review.
+Duplicate identification and tracking
+-------------------------------------
 
-2. Open the qgis_projects folder, select the folder for the province or territory you are reviewing, and open the QGIS project file (.qgz) file saved there – this will be named something like “qc_dam_review” or “qc_waterfall_review”.
+Generating the review layer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-3. Once the project loads, you’ll want to double check a few things before you get started:
+The first step of the review process is to generate a review layer, which will then be manually reviewed and verified. Generating the review layer requires that all known and publicly available source datasets for a predefined area of interest (AOI) be examined to identify the source dataset with the highest number of feature points in the AOI. The feature points of this dataset are extracted to form the foundation of the ‘starting layer’. The review layer is then buffered to determine the most appropriate tolerance that will encircle the majority of the feature points from the other source datasets that represent the same structures (i.e., duplicates), while avoiding those that represent separate structures (i.e., nonduplicates); typically around 50 m.
 
-   a. Go to **View > Panels** and ensure the **Identify Results** panel is enabled. Change the mode at the bottom of this panel to **Layer Selection**.
+Next, the ‘Join attributes by nearest’ tool in QGIS is used to join the unique ids from a second source dataset with the features of the review layer, based on the determined tolerance. The resulting output is a new version of the review layer that contains an additional field in the attribute table which holds the unique id of each assumed duplicate from the second source dataset. This tool is run repeatedly for the remaining source datasets, using the generated output of each run as the first input layer for the next join. 
 
-   b. Go to **Project > Properties** and click the **Data Sources** tab. Ensure that the satellite imagery layers (e.g., Bing VirtualEarth) and the NHN WMS layer are not identifiable, and that all the source datasets and the review layer (e.g., featurecopy.dams) are identifiable.
+Once all runs have completed, features points from each source dataset that fall outside the determined tolerance, but within the AOI, are selected and the entire process is repeated, begging with the layer that has the most features selected. Once most source dataset features are captured, output layers are merged to create the final version of the review layer. To facilitate the review process, a handful of fields were added to the review layer for the purpose of tracking specific details about a feature and an attributes form was created.
 
-   c. Ensure the NHN work units layer (e.g., qc_workunits) is toggled on in the layers panel, and that it is not filtered. You can also set this to be not identifiable in the **Data Sources** tab noted in the previous step.
+Verifying the location of structures using satellite imagery
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   d. Go to **Settings > Options** and click the **Map Tools** tab. Change your “search radius for identifying features and displaying map tips” to at least 5 mm – this will make it easier to query features from the map for this exercise.
+To begin verifying review layer feature points, the first step is to try and verify that the feature point is in the correct location. To do this, the reviewer will examine the feature point’s position relative to the location of the corresponding structure in satellite imagery, if visible. If a structure is not visible in the satellite imagery, the reviewer will use the feature point attributes to research the structure online to confirm the location of the structure or determine if the structure has been removed/decommissioned, and relocate the feature point if necessary. 
 
-   e. Double check the symbology for all the source dataset layers to ensure features are visible and you can easily distinguish between the datasets.
+If the structure has not been decommissioned, the reviewer will then assess the location of the feature point relative to the hydrographic network. If the feature point is located more than 50 m away from the closest hydro network flowpath, the reviewer will relocate the feature point to where the structure intersects with the flowpath.
 
-Reviewing and Adding Features 
------------------------------
+Unless the attribute information or additional research indicates that a structure has been removed, is it assumed that all feature point structures from the source datasets are real. Therefore, in the event that a reviewer cannot confirm the existence or location of the feature point structure, the feature point is left in it’s original location.
 
------
+Review and verify duplicate feature points of the review layer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We need to do three main things when reviewing source datasets:
+While the semi-automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer, and to add any feature points that were missed during the join process. 
 
-1.	Find any duplicate features from other datasets
+This is done by cross referencing the unique ids present in the ‘Duplicates’ tab (fig. 1) of the review layer’s attribute form with the corresponding ids from source dataset features (fig. 2) that are located nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, the feature is investigated further (e.g., checking if structure names match, examining the satellite imagery for an additional structure) to determine if it is a true duplicate. If the missing feature is determined to be a duplicate, the unique id is manually added to the corresponding datasource field in the ‘Duplicates’ tab. If the feature is not a duplicate and was just missed when generating the review layer, a new feature point is manually added to the review layer, inputting the source dataset name and id from the original source dataset.
 
-2.	Identify if a feature should be used for analysis
-
-3.	Determine if the feature is visible
-
-For most features, it should be straightforward to evaluate all three items when you initially review the area.
-
-The review layer you’re working with has been created ahead of time and captures most duplicate features and their IDs based on joining attributes by nearest features. When you open the project, this layer will be symbolized based on the use_analysis field – the features symbolized with a question mark are the ones that haven’t been checked yet.
-
-Find Any Duplicate Features From Other Datasets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1.	Ensure all the source datasets are toggled on, select the **Identify** tool, and click the area you want to query. If there are multiple features at that location, a window will pop up beside your cursor – click **Identify All** to bring up a list of all the features in the **Identify** panel. 
-
-2. The display name for all layers should be set to their unique ID by default, so if you expand each layer using the accordion icon, you will see all the unique IDs for features at that location:
-
-3.	Referring to the **Identify Results** panel for unique IDs, check the data_source_text and data_source_id fields for the point in the review layer, as well as any fields populated in the **Duplicates** tab of the review layer. Note that the visibility of the **Duplicates** tab is controlled by the duplicates field checkbox – when it is toggled, the **Duplicates** tab will be shown.
-
-.. image:: img/uniqueids.png
+.. figure:: img/duplicates.png
     :align: center
-    :width: 400
+    :width: 75%
 
-4. If all the unique IDs are accounted for:
+    Figure 1. The review layer attributes form showing the data source and data source id of a feature point, and the unique ids of feature points (recorded in the ‘Duplicates’ tab) that were identified as duplicates from other source datasets.
 
-   * Expand the individual entries in the **Identify Results** panel and double check that any names available in the source datasets match. If they do match, you’re done this step. If they don’t match, check the imagery and the attributes of other nearby points to see if this feature needs two separate points to represent it.
-
-5. If you’re missing some unique IDs:
-
-   * Refer to the **Identify Results** panel, check the names in the source datasets, and add them in the appropriate field in the **Duplicates** tab of your review layer.
-
-6. If there is no existing feature in the review layer:
-
-   * Add a new point feature to the review layer and fill in the appropriate fields. You can use any of the unique IDs for the data_source_text and data_source fields, then add the remaining unique IDs in the **Duplicates** tab of the review layer.
-
-7.	To ensure you get the correct unique for a dataset, please right click the unique id field in the **Identify** panel and click ‘copy attribute value’.
-
-.. image:: img/duplicates.png
+.. figure:: img/uniqueids.png
     :align: center
-    :width: 400
+    :width: 75%
 
-8.	In some cases, the review layer may include several distinct points close to each other that refer to the same feature. In this case, check the attributes of the source datasets at that location. If the source datasets all appear to refer to a single feature (e.g., a large dam structure), remove any extra points from the review layer until you have a single point, then add all the unique IDs for that feature to the single point.
+    Figure 2. Unique ids of source dataset feature points.
 
-Identify if Features Should Be Used for Analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occasionally, the review layer may include several feature points that appear to correspond to a single structure on the ground. In this case, the attributes of each source dataset feature point in the location are compared and all feature points identified as duplicates are removed from the review layer; unique ids of each duplicate are added to the appropriate data source fields in the ‘Duplicates’ tab of the single remaining feature point. In this case, the feature point with the most attribute information is retained. 
 
-* Some attributes from source datasets may also indicate if a feature should be used for analysis. For example, in most cases, we wouldn’t use features marked as “embankments”, “canals”, or “dykes” for analysis.
+To snap, or not to snap
+-----------------------
 
-* Fishway features will also not be used for analysis and should be stored as separate features from dams. Leaving the **Use in analysis?** box blank, just add the data source and data source id, and check the **Is this a fishway?** box on the **Fishways** tab. If there’s a corresponding record in the CANFISHPASS database, add the unique ID as well. Finally, make sure your point isn’t snapped to a flowpath on the hydro network, and that it reflects the real-world location of the fishway.
+Does the structure block flow?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: img/useanalysis.png
+Considering that not all feature points representing a dam act as a potential longitudinal barrier to flow, a flag was implemented to specify if a feature point should or should not be snapped to the hydrographic network layer and thus used for geospatial analysis. This flag is a boolean field called ‘use_analysis’, or ‘Use for analysis?’ in the attribute form (fig. 1). 
+
+When reviewing a feature point, the reviewer assesses it’s location relative to the flowpath (i.e., a stream or river) or waterbody (i.e., lake or double line river) and examines the information provided in the attribute table. If the attribute information available for the feature is limited, the reviewer may need to perform additional research to determine the nature of structure. 
+
+If a feature is identified as a barrier blocking up- and downstream flow, the reviewer would check the box next to the ‘Use for analysis’ row in the attribute form to set the ‘use_analysis’ field value for the feature point to ‘true’. Once feature review is complete, all features with a value of ‘true’ in the ‘use_analysis’ field will be snapped to a hydro network flowpath using a python script. 
+
+If a feature is identified as an auxiliary structure (e.g., saddle dam, dyke, canal wall, etc.,), it is considered a lateral barrier (i.e., not blocking up- and downstream flow). In this case, the reviewer would leave the ‘Use for analysis?’ checkbox unchecked to set the ‘use_analysis’ field value for the feature point to ‘false’. All features with a value of ‘false’ in the ‘use_analysis’ field would not be snapped to the hydro network and thus omitted from future geospatial analysis.
+
+.. figure:: img/useanalysis.png
     :align: center
-    :width: 700
+    :width: 75%
 
-* If a feature should be used for analysis:
+    Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue - dyke that is acting as a lateral barrier, red - embankment dam acting as a longitudinal barrier, green - duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction. 
 
-  1. Check the **Use in analysis?** box
+Fishway structures are treated differently than barrier structures as their purpose is to facilitate fish passage past structures like dams, culverts or waterfalls. Considering that fishway structures do not act as barriers to fish passage, these features are always assigned a ‘use_analysis’ value of ‘false’, and flagged as a fishway by checking the ‘Is this a fishway’ check box under the ‘Fishway’ tab at the bottom of the review layer attribute form. If the feature point identified as a fishway corresponds to an existing record from the CANFISHPASS database, the unique id is used.
 
-  2. Ensure your point in the review layer is relatively close to a flowpath
+Structures that block flow in multiple locations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  3. If there are multiple flowpaths near a structure, move your point to coincide with the flowpath you want it to be snapped to
+Occasionally, a single feature will be blocking flow at multiple locations (fig. 4). In a case like this, a single feature point is not sufficient and a multipoint feature in required to place a point at each location where flow is blocked by the structure.
 
-* If a structure shouldn’t be used for analysis:
-  
-  1. Leave the **Use in analysis?** box blank
+However, the CABD does not currently support the use of multipoint features, so a flag was created in the review layer attribute form that allows the reviewer to mark a single point feature as a future multipoint feature (i.e., the ‘Multipoint in future?’ checkbox).
 
-  2. Ensure your point in the review layer isn’t snapped to a flowpath on the hydro network (it’s ok for them to be snapped to waterbody polygons)
-
-Single Point and Multi-point Features
-+++++++++++++++++++++++++++++++++++++
-
-* In some cases, you may want to represent a dam as a multi-point feature. Our database structure currently does not support multi-point features, so in this case, just check the “Multipoint in future?” checkbox in the review layer.
-
-* If you have several distinct structures that each block flow through an area, you will generally want to store these as single points. For each structure, store them as a single point with the unique ids from any corresponding source datasets. If there are no corresponding source datasets, simply mark the source as ‘cwf’ and add any information you find about that structure in the freeform reviewer_comments field.
-
-* If the dam has a name, you should do a quick search to see if you can find any additional information or drawings describing the structures that make up the dam complex. You should also check the source dataset points surrounding the structures for names of these structures and to identify which points represent each structure.
-
-
-Determine if a Feature Is Visible
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* Generally, dam structures are characterized by being perpendicular to a watercourse/waterbody and having calm water on one side and disturbed water on the other side:
-
-.. image:: img/presence.png
+.. figure:: img/multidamb.png
     :align: center
-    :width: 700
+    :width: 75%
 
-* For our purposes, we assume that all feature from source datasets exist and are active (i.e., not decommissioned) unless research or attributes from our source data tell us otherwise.
+    Figure 4. An embankment structure that is blocking flow at two separate locations. A multipoint feature is required.
 
-* If you have a clear view of the hydro network from imagery, but you can’t see any structures near a feature’s location, set the **reviewer_classification** field in the **Comments** tab to “No structures present”.
+Last steps
+----------
 
-* If the imagery quality is poor or the feature location is obscured, set the **reviewer_classification** field in the **Comments** tab to “Obscured in imagery”.
-
-Finishing a Work Unit or Province/Territory
--------------------------------------------
-
------
-
-Since our data is saved in Postgres, multiple people can work on the same province/territory at the same time. As you go through feature review, you’ll want to track your progress and coordinate with anyone else reviewing features in the same geographic area to avoid duplicating work.
-
-A Work Unit Is Complete
-~~~~~~~~~~~~~~~~~~~~~~~
-
-* Select the work unit, toggle on editing, and click the **Modify attributes** button:
-
-.. image:: img/modatts.png
-    :align: center
-    :width: 400
-
-* On the new form that pops up, check the **Complete** box for the appropriate feature type (e.g., dams_complete) and save your edits. The default symbology for work units will shade incomplete areas in light yellow, and complete areas with just a black border.
-
-An Entire Province/Territory Is Complete
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-* Do a quick once-over of the area to confirm all points have been accounted for. At this point, you should also double-check for any features with the same data_source_id (the other duplicates fields are evaluated as you input data). 
-
-  * You can do this by selecting by expression on the review layer: ``count (1, “data_source_id”) > 1``. 
-
-  * Then, open the attribute table, change the display to ‘Selected features’ and sort by data_source to check for any duplicates within individual data sources. You can ignore duplicate data source ids that come from different datasets (e.g., canvec and nhn).
-
-Appendix A: Troubleshooting and Tips
-------------------------------------
-
------
-
-* When reviewing a dam facility with many structures, you may find it easiest to start by identifying the main structure by looking at the NHN flowpaths or any details about the facility found online.
-
-* For multi-dam complexes, use your best judgement to determine which source data points are closest to each dam. You should also check the names and group all the points with common names together for a feature – e.g., Alvin Main Dam vs Alvin Freeboard Dam:
-
-.. image:: img/multidam.png
-    :align: center
-    :width: 700
-
-.. image:: img/multidamb.png
-    :align: center
-    :width: 700
-
-* If there are two points for the same feature from one dataset, only include one point in your review layer, ideally the one which has the most attribute information about that feature.
-
-* For long dam structures where there are multiple points from source datasets, choose the side that’s furthest downstream (based on the NHN flowpaths) to include in your review layer – you should not include both.
-
-Appendix B: Reviewer_Classification and Reviewer_Comments
----------------------------------------------------------
-
------
-
-The reviewer_classification field lets our team quickly categorize uncertainty about features, so we can verify their existence with local groups in the future.
-
-The reviewer_comments field is where you’ll add any other comments you have about a feature – e.g., “See link for dam dimensions” or “Part of Churchill Falls generating station?” 
-
-You can select multiple options for a feature in the reviewer_classification field.
-
-.. csv-table:: 
-    :file: tbl/damreviewclass.csv
-    :widths: 30, 70
-    :header-rows: 1
-
+Once the review process is complete, and all feature points in the review layer are verified, the final review layer and all source dataset layers are loaded into the database in preparation for source dataset attribute mapping. 
