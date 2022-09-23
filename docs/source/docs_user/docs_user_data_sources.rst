@@ -6,7 +6,7 @@ Data Sources
 
 .. note::
     
-    If you're visiting from the CABD web tool, and accidently closed your tab, you can navigate back to the web tool `here <https://aquaticbarriers.ca>`_.
+    If you're visiting from the CABD web tool, and accidentally closed your tab, you can navigate back to the web tool `here <https://aquaticbarriers.ca>`_.
 
 
 The CABD only exists due to all the painstaking work done by many groups and organizations who have compiled and maintained existing barrier inventories across North America, and either made them openly available or entered into data-sharing agreements with us. A special thank you to these groups! The CABD simply builds off this existing work, and we hope that our work to fill data gaps can benefit original data holders in return. If you are the maintainer of one of the data sources on this page, and would like to chat about how we can share some of our data updates back to you, please contact us at cabd@cwf-fcf.org.
