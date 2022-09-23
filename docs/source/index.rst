@@ -9,7 +9,7 @@ Documentation Site
 ------------------
 
 .. note::
-   The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our Announcements page for new updates!
+   The CABD project is under active development, which means the content of the database and this site can change frequently. Check out our :ref:`What's New? <whats-new>` page for new updates!
 
 -----
 
@@ -28,7 +28,7 @@ This is your one-stop-shop to learn how about the CABD, how to access and use th
 
 Head to the **CABD User Resources** section if you are interested in exploring:
 
-- The latest :ref:`announcements and data releases <whats-news>`
+- The latest :ref:`announcements and data releases <whats-new>`
 - An :ref:`overview of the CABD project <cabd-overview>` and uses for the data
 - :ref:`Tutorials <tutorials>` on how to use the web tool and access data
 - The :ref:`data sources <data-sources>` used to develop the CABD

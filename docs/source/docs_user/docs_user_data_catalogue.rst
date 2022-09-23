@@ -4,15 +4,19 @@
 Data Catalogue
 ==============
 
+The CABD data catalogue contains the the information you need to make sense of the attributes for each CABD feature type (dams, waterfalls, and fishways), including human-readable field names, breakdowns of allowable field values, and definitions. If you have quations about any of the information on this page, you can reach out to us at cabd@cwf-fcf.org.
+
 Feature Types
 -------------
 
 -----
 
+.. _dams-layer:
+
 Dams
 ~~~~
 Definition:	
-    *In the CABD, dams are defined as: small dams (i.e., having a height of less than 5 m), medium dams (i.e., having a height between 5 and 15 m), and large dams (i.e., having height of 15 m or greater, or a height between 5 m and 15 m that impounds more than 3 million m3).*
+    * A dam is a structure that is constructed to divert or hold back water of a stream, river, or lake for a specific purpose, e.g., hydroelectricity, water storage, or flood control. These structures impede the ability of fish to travel upstream unless there is a fishway installed on the structure. In the CABD, dams are defined as: small dams (i.e., having a height of less than 5 m), medium dams (i.e., having a height between 5 and 15 m), and large dams (i.e., having height of 15 m or greater, or a height between 5 m and 15 m that impounds more than 3 million m3). Currently, the CABD dams layer also includes other types of structures, including weirs, powerhouses, spillways, canals, and lateral structures (e.g., embankments or saddle dams). Some of these structures don't necessarily fragment freshwater systems in the upstream-downstream plane. As such, these structures should not be used for connectivity network analyses or barrier prioritization exercises. These data points can be filtered out using the :ref:`Used for Network Analysis <useanalysis>` field (``use_analysis = false`` in the data).*
 Attributes:
     :ref:`Assessment Schedule <assessment-schedule>`, :ref:`Average Rate of Discharge (L/s) <avgrate>`, :ref:`Barrier Identifier <bid>`, :ref:`Comments <commentdef>`, :ref:`Completeness Level <complvl>`, :ref:`Construction Type <contype>`, :ref:`Construction Year <conyear>`, :ref:`Dam Condition <damcon>`, :ref:`Dam Function <damfunc>`, :ref:`Dam Name (English) <damnameen>`, :ref:`Dam Name (French) <damnamefr>`, :ref:`Dam Size <damsize>`, :ref:`Dam Use <damuse>`, :ref:`Degree of Regulation <degreg>`, :ref:`Downstream Passage Route <downpass>`, :ref:`Expected Life (Years) <explife>`, :ref:`Facility Name (English) <facilnameen>`, :ref:`Facility Name (French) <facilnamefr>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Federal Compliance Status <fedcompstat>`, :ref:`Federal Flow Requirements (m3/s) <fedflowreq>`, :ref:`Generating Capacity (MWh) <gencap>`, :ref:`Has Hydro Peaking System <hydropeak>`, :ref:`Height (m) <damheight>`, :ref:`Lake Control <lakectrl>`, :ref:`Last Maintenance Date <lastmaint>`, :ref:`Last Modified <lastmod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Municipality <municipality>`, :ref:`Next Maintenance Date <nextmaint>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`NHN Watershed Name <nhnname>`, :ref:`Number of Turbines <turbcount>`, :ref:`Operating Note <opnote>`, :ref:`Operating Status <opstat>`, :ref:`Owner <owner>`, :ref:`Ownership Type <owntype>`, :ref:`Passability Status <passstat>`, :ref:`Passability Status Note <passstatnote>`, :ref:`Province/Territory Name <provterr>`, :ref:`Provincial Compliance Status <provcompstat>`, :ref:`Provincial Flow Requirements (m3/s) <provflowreq>`, :ref:`Removed Year <remyear>`, :ref:`Reservoir Area (km2) <resarea>`, :ref:`Reservoir Depth (m) <resdepth>`, :ref:`Reservoir Name (English) <resnameen>`, :ref:`Reservoir Name (French) <resnamefr>`, :ref:`Reservoir Present <respres>`, :ref:`Spillway Capacity <spillcap>`, :ref:`Spillway Type <spilltype>`, :ref:`Storage Capacity (mcm) <storagecap>`, :ref:`Turbine Type <turbtype>`, :ref:`Upstream Catchment Area (km2) <upcatcharea>`, :ref:`Upstream Linear Length (km) <uplength>`, :ref:`Upstream Passage Type <uppasstype>`, :ref:`Use Fisheries <usefish>`, :ref:`Use Flood Control <useflood>`, :ref:`Use Hydroelectric <usehydro>`, :ref:`Use Invasive Species Control <useais>`, :ref:`Use Irrigation <useirr>`, :ref:`Use Navigation <usenav>`, :ref:`Use Other <useother>`, :ref:`Use Pollution Control <usepoll>`, :ref:`Use Recreation <userec>`, :ref:`Use Water Supply <usesupply>`, :ref:`Used for Network Analysis <useanalysis>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`
 
@@ -43,7 +47,7 @@ Attributes Common to Multiple Feature Types
 
 Barrier Identifier
 ++++++++++++++++++
- **Definition:**	*Unique identifier for each barrier point.* 
+ **Definition:**	*A unique, static identifier for each barrier point.* 
  
  **Field name:** cabd_id
 
@@ -128,7 +132,7 @@ Latitude
 
 Length (m)
 ++++++++++
- **Definition:** *Dam - the length of the crest from one bank (or abutment) to the other in meters. Fishway - the length of the fishway in meters.*
+ **Definition:** *Dam - the length of the crest from one bank (or abutment) to the other in meters. Fishway - the length of the fishway in metres.*
  
  **Field name:** length_m
 
@@ -146,7 +150,7 @@ Longitude
 
 Municipality
 ++++++++++++
- **Definition:** *The municipality the feature is located in.*
+ **Definition:** *The municipality in which the feature is located.*
  
  **Field name:** municipality
 
@@ -156,7 +160,7 @@ Municipality
 
 NHN Watershed ID
 ++++++++++++++++
- **Definition:** *A code referencing the work unit ‘Dataset Name’ from the National Hydrographic Network (NHN) that the feature is located in.* 
+ **Definition:** *A code referencing the work unit ‘Dataset Name’ from the National Hydrographic Network (NHN) in which the feature is located.* 
  
  **Field name:** nhn_watershed_id
 
@@ -166,7 +170,7 @@ NHN Watershed ID
 
 NHN Watershed Name
 ++++++++++++++++++
- **Definition:** *The name of the sub-sub watershed that the feature is located in.*
+ **Definition:** *The name of the sub-sub watershed in which the feature is located. The name will have a corresponding nhn_watershed_id*
  
  **Field name:** sub_sub_drainage_area
 
@@ -213,7 +217,7 @@ Passability Status Note
 
 Province/Territory Name
 +++++++++++++++++++++++
- **Definition:** *The Province or Territory the feature is located in.*
+ **Definition:** *The Province or Territory in which the feature is located.*
  
  **Field name:** province_territory_code
 
@@ -263,7 +267,7 @@ Attributes Unique to Dams
 
 Assessment Schedule
 +++++++++++++++++++
- **Definition:** *The frequency that the dam structure is assessed/maintained by an owner or regulatory body.*
+ **Definition:** *The frequency with which the dam structure is assessed/maintained by an owner or regulatory body.*
  
  **Field name:** assess_schedule
 
@@ -300,7 +304,7 @@ Construction Type
 
 Construction Year
 +++++++++++++++++
- **Definition:** *The year dam construction was completed.*
+ **Definition:** *The year dam construction was completed (sometimes a best estimate).*
  
  **Field name:** construction_year
 
@@ -435,7 +439,7 @@ Expected Life (Years)
 
 Facility Name (English)
 +++++++++++++++++++++++
- **Definition:** *The given or known name of the larger facility of which the dam is a part of (e.g., a hydroelectric generating station or mining operation); English.*
+ **Definition:** *The given or known name of the larger facility of which the dam is a part (e.g., a hydroelectric generating station or mining operation); English.*
  
  **Field name:** facility_name_en
 
@@ -445,7 +449,7 @@ Facility Name (English)
 
 Facility Name (French)
 ++++++++++++++++++++++
- **Definition:** *The given or known name of the larger facility that the dam is a part of (e.g., a hydroelectric generating station or mining operation); French.*
+ **Definition:** *The given or known name of the larger facility that the dam is a part (e.g., a hydroelectric generating station or mining operation); French.*
  
  **Field name:** facility_name_fr
 
@@ -505,7 +509,7 @@ Height (m)
 
 Lake Control
 ++++++++++++
- **Definition:** *Indicates if a reservoir has been built at the location of an existing natural lake using a lake control structure.*
+ **Definition:** *Indicates if a reservoir has been built at the location of an existing natural lake, with the dam acting as a lake control structure.*
  
  **Field name:** lake_control_code
 
@@ -542,7 +546,7 @@ Next Maintenance Date
 
 Number of Turbines
 ++++++++++++++++++
- **Definition:** *The number of turbines in the dam structure.*
+ **Definition:** *The number of turbines associated with the dam structure.*
  
  **Field name:** turbine_number
 
@@ -606,7 +610,7 @@ Provincial Compliance Status
 
 Provincial Flow Requirements (m3/s)
 +++++++++++++++++++++++++++++++++++
- **Definition:** *The legislated flow requirements for the dam structure in cubic meters per second (m3/s) regulated by the provincial licensing body.*
+ **Definition:** *The legislated flow requirements for the dam structure in cubic meters per second (m^3/s) regulated by the provincial licensing body.*
  
  **Field name:** provincial_flow_req
 
@@ -676,7 +680,7 @@ Reservoir Present
 
 Spillway Capacity
 +++++++++++++++++
- **Definition:** *The designed capacity of the spillway in m3/s.* 
+ **Definition:** *The designed capacity of the spillway in m^3/s.* 
  
  **Field name:** spillway_capacity
 
@@ -730,7 +734,7 @@ Turbine Type
 
 Upstream Catchment Area (km2)
 +++++++++++++++++++++++++++++
- **Definition:** *The area of upstream catchment draining into the reservoir in square kilometers.*
+ **Definition:** *The area of the upstream catchment draining into the stream or reservoir in square kilometers.*
  
  **Field name:** catchment_area_skm
 
@@ -940,7 +944,7 @@ Attributes Unique to Waterfalls
 
 Fall Height (m)
 +++++++++++++++
- **Definition:** *Height of the waterfall in meters.* 
+ **Definition:** *Height of the waterfall in metres.* 
  
  **Field name:** fall_height_m
 
@@ -1023,7 +1027,7 @@ Contracted By
 
 Dam Identifier
 ++++++++++++++
- **Definition:** *The unique barrier identifier corresponding to the dam that the fishway structure is associated with.* 
+ **Definition:** *The unique barrier identifier (cabd_id) corresponding to the dam that the fishway structure is associated with.* 
  
  **Field name:** dam_id
 
