@@ -1,8 +1,11 @@
+.. _reviewmethods:
+
 =======================
 Data Processing Methods
 =======================
 
 The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from a number of different spatial and non-spatial datasets. This section provides an overview of the methods used to validate, de-duplicate and standardize existing spatial datasets to match the CABD data structure.
+
 .. note::
 
     In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, or fishway. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.

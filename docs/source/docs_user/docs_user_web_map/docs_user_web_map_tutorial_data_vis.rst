@@ -10,7 +10,7 @@ To change the visibility of data layers, navigate to the ‘Layers’ tab in the
 
 .. figure:: img/panel_layers_highlight_crop.png
     :align: left
-    :width: 50%
+    :width: 70%
 
 Accessibility Mode
 ------------------
@@ -19,4 +19,4 @@ At the bottom of the layers panel is a toggle button called ‘Accessibility Mod
 
 .. figure:: img/accessibility_mode_all_highlight.png
     :align: left
-    :width: 75%
+    :width: 90%

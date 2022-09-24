@@ -40,6 +40,7 @@ If you're interested in diving into the more technical aspects of the database, 
 
 - An overview of the :ref:`database and application architecture <cabd-models>`
 - How to access CABD data and data sources via :ref:`REST API services <cabd-rest-services>`
+- Learning how the CABD data was :ref:`compiled and processed <reviewmethods>`
 
 The CABD is a collaborative project developed and maintained by the Canadian Wildlife Federation, you can visit our `website <https://cwf-fcf.org/en/explore/fish-passage/?src=menu>`_ to learn more about our work supporting freshwater connectivity and fish passage.
 

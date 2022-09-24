@@ -7,9 +7,9 @@
 
 .. _cabd-rest-services:
 
-=================
-REST API Services
-=================
+======================
+CABD REST API Services
+======================
 
 .. _api-overview:
 
@@ -63,8 +63,8 @@ The base API server for the CABD end points is: ``https://cabd-web.azurewebsites
 
 .. _feature-type-endpoints:
 
-Feature Type End Points
-~~~~~~~~~~~~~~~~~~~~~~~
+Feature Type Metadata End Points
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The output format of all Feature Type End points is ``json``.
 
@@ -349,13 +349,13 @@ Feature API Result Totals
 
 The Feature API response includes a Content-Range header that summarizes the total number of features that match the filters vs the total number of features returned. This can be used along with the max-results parameter to access the number of features that match a filter without having to load all features.
 
-``http://localhost:8080/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``
+``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``
     
 The API call will return 5 features (max-results=5). However the response header will also include a Content-Range header that looks like:  ``Content-Range: features 0-5/65``. The 0-5 tells us the only the first 5 features are included in the results, the 65 tells us a total of 65 features matched the provided filters.
 
 Therefore, if you want to just get the total feature count and no features you can use a max-results=0 parameter:
 
-``http://localhost:8080/features/waterfalls?max-results=0``
+``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?max-results=0``
 
 This will return an empty feature collection, but the response headers will include Content-Range: ``Content-Range: features 0-0/729``.  Which tells you there are 729 waterfalls in the database.
 
@@ -372,7 +372,7 @@ Feature Data Source End Point
 
 |ftdsidflds|
 
-    Returns the data source details for each attribute associated with the given feature id.  By default this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``ata source feature id``, add the query parameter ``fields=all`` to the request.
+    Returns the data source details for each attribute associated with the given feature id.  By default this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``data source feature id``, add the query parameter ``fields=all`` to the request.
 
 .. _feature-datasource-endpoint-format:
 
@@ -381,8 +381,7 @@ Format
 
 The default output format of this end point is CSV.
 
-JSON format is also supported by providing the ``format=json`` query parameter: |ftdsidjson|.
-
+JSON format is also supported by providing the ``format=json`` query parameter: |ftdsidjson|
 
 .. _feature-vector-tile-service:
 
@@ -401,7 +400,7 @@ The only format supported for the vector tile services is mvt (mapbox vector til
 End Point
 ~~~~~~~~~
 
-``http://localhost:8080/tiles/{type}/{z}/{x}/{y}.{format}``
+``https://cabd-web.azurewebsites.net/cabd-api/tiles/{type}/{z}/{x}/{y}.{format}``
 
 ``type`` must be a valid feature type. 
 
