@@ -1,0 +1,4 @@
+Column,Description
+cabd_id,The unique cabd feature identifier. This id must exist in the corresponding data table for the feature type.
+<attribute1>_ds,A link to the data source id in the cabd.data_source table that <attribute1> comes from for the feature.
+<attribute2>_ds,A link to the data source id in the cabd.data_source table that <attribute2> comes from for the feature.

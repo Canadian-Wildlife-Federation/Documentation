@@ -108,7 +108,7 @@ rst_epilog = """
 .. |bboxcoords| replace:: :raw-html:`<p><span class="cbm"><span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;min_lat&gt</span>,<span class="cbmcc">&lt;max_long&gt</span>,<span class="cbmcc">&lt;max_lat&gt</span></span></p>`
 .. |latlong| replace:: :raw-html:`<p><span class="cbm"><span class="cbmcc">&lt;longitude&gt</span>,<span class="cbmcc">&lt;latitude&gt</span></span></p>`
 .. |ftstype| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span></span></p>`
-.. |ftsbbox| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?bbox=<span class="cbmcc">&lt;min_lat&gt</span>,<span class="cbmcc">&lt;max_long&gt</span>,<span class="cbmcc">&lt;max_lat&gt</span></span></p>`
+.. |ftsbbox| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?bbox=<span class="cbmcc">&lt;min_lat&gt</span>,<span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;max_lat&gt</span>,<span class="cbmcc">&lt;max_long&gt</span></span></p>`
 .. |ftspoint| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?point=<span class="cbmcc">&lt;min_long&gt</span>,<span class="cbmcc">&lt;min_lat&gt</span>&max-results=<span class="cbmcc">&lt;n&gt</span></span></p>`
 .. |ftsfilter| replace:: :raw-html:`<p><span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span>?filter=<span class="cbmcc">&lt;filter&gt</span>&filter=<span class="cbmcc">&lt;filter&gt</span></span></p>`
 .. |tilestype| replace:: :raw-html:`<p><span class="cbm">/tiles/<span class="cbmcc">&lt;type&gt</span>/z/x/y.mvt</span></p>`
@@ -123,7 +123,12 @@ rst_epilog = """
 .. |ftdsid| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span></span></p>`
 .. |ftdsidflds| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span>?fields=all</span></p>`
 .. |ftdsidjson| replace:: :raw-html:`<p><span class="cbm">/features/datasources/<span class="cbmcc">&lt;feature-id&gt</span>?format=json</span></p>`
-.. |requestex1|  replace:: :raw-html:`<p>If a user is looking to request the metadata associated with dams, then <span class="cbm">/features/types/<span class="cbmcc">&lt;type&gt</span></span> should be updated to <span class="cbm">/features/types/dams</span>.</p>`
+.. |requestex1|  replace:: :raw-html:`<p>If you are looking to request the metadata associated with dams, then <span class="cbm">/features/types/<span class="cbmcc">&lt;type&gt</span></span> should be updated to <span class="cbm">/features/types/dams</span>.</p>`
+.. |enfr| replace:: :raw-html:`<p>The view <span class="cbm">cabd.all_features_view_<span class="cbmcc">&lt;en/fr&gt</span></span> supports all feature api endpoints.</p>`
+.. |formatnote|  replace:: :raw-html:`<p>The best way to download data for multiple feature types using the API is to use the <span class="cbm">/features/<span class="cbmcc">&lt;type&gt</span></span> endpoint.</p>`
+.. |typenote| replace:: :raw-html:`<p>While the <span class="cbm">/features/</span> endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the <span class="cbm"><span class="cbmcc">&lt;type&gt</span></span> is specified.</p>`
+.. |chyfuuid| replace:: :raw-html:`<p><span class="cbm">/chyf-web/features/<span class="cbmcc">&lt;uuid&gt</span></span></p>`
+.. |singlemultisearch| replace:: :raw-html:`<p><span class="cbm">/chyf-web/features?name= <span class="cbmcc">&lt;string&gt</span> &max-results= <span class="cbmcc">&lt;int&gt</span> &result-type= <span class="cbmcc">[BBOX,ALL,GROUPBYTYPE,GROUPBYNAME]</span> &feature-type= <span class="cbmcc">[WATERBODY,FLOWPATH,CATCHMENT]</span> &match-type= <span class="cbmcc">[EXACT,CONTAINS]</span></span></p>`
 """
 def setup(app):
     app.add_css_file('custom.css')

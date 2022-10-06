@@ -65,10 +65,10 @@ There are currently three feature types and one super type implemented in CABD. 
 
 Feature types:
 
-- ``barriers`` - a super feature type that includes dams structures and waterfalls.
-- ``dams`` - a feature type for features classified as a dam structure.
+- ``barriers`` - a super feature type that includes dams, other structures, and waterfalls.
+- ``dams`` - a feature type for features classified as a dam or other structure.
 - ``waterfalls`` - a feature type for features classified as a waterfall.
-- ``fishways`` - a feature type for features classified as a fishway structure.
+- ``fishways`` - a feature type for features classified as a fish passage structure.
 - ``medium`` - a feature type created for testing the increase in data volume expected for stream crossing data.
 - ``big`` - a feature type created for testing the increase in data volume expected for stream crossing data.
 
@@ -84,9 +84,11 @@ The database is structured into multiple schemas.  Each feature type has its own
 Views
 +++++
 
-Each feature type and super feature type has two associated views which supports the api - one view for engligh (_en) and one view for french (_fr). These views should include all fields required for output (either for display on the UI or to support the future editing api).  The view ``cabd.all_features_view_XX`` supports all features api endpoint. 
+Each feature type and super feature type has two associated views which support the API - one view for Engligh (_en) and one view for French (_fr). These views should include all fields required for output (either for display on the UI or to support the future editing API). 
 
-The views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the ``dams`` view queries the dams data table). Super feature types will generally query multiple data tables (for example, the ``barriers`` view queries both the dams data table and the waterfalls data table).
+|enfr| 
+
+Views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the ``dams`` view queries the dams data table). Super feature types will generally query multiple data tables (for example, the ``barriers`` view queries both the dams data table and the waterfalls data table).
 
 .. _core-tables:
 
@@ -150,9 +152,11 @@ The feature type data tables are found in their corresponding schema. Generally,
 Feature Type Attribute Data Sources
 +++++++++++++++++++++++++++++++++++
 
-The CABD database has the option of storing the data source for each attribute associated with the feature type. This has been implemented by having ``<featuretype>.<featuretype>_feature_source`` and ``<featuretype>.<featuretype>_attribute_source`` tables for the feature type.
+The CABD database has the option of storing the data source for each attribute associated with the feature type. This has been implemented by having ``<featuretype>.<featuretype>_feature_source`` and ``<featuretype>.<featuretype>_attribute_source`` tables for the feature type (e.g., ``dams.dams_feature_source`` and ``dams.dams_attribute_source``).
 
-The ``<featuretype>_feature_source``  table contains for each cabd feature a link to the data source and associated data source feature id.
+For each cabd feature, the ``<featuretype>_feature_source``  table contains a link to the data sources and associated data source feature ids that the feature was found in. For example, a dam feature that was found in both the nrcan_canvec_mm and bceccs_fiss data sources would have two entries for its ``cabd_id`` in the ``<featuretype>_feature_source`` table.
+
+:codeblocksize:`<featuretype>_feature_source`
 
 .. csv-table:: 
     :file: tbl/feature-source.csv
@@ -161,4 +165,9 @@ The ``<featuretype>_feature_source``  table contains for each cabd feature a lin
 
 The ``<featuretype>_attribute_source`` table contains the cabd_id and one column for each attribute that requires data source tracking.  The column, ``<attribute>_ds``, links to the ``cabd.data_source table`` to identify the data source for the attribute value.
 
-.. _add-new-feature-type:
+:codeblocksize:`<featuretype>_attribute_source`
+
+.. csv-table:: 
+    :file: tbl/feature-attribute.csv
+    :widths: 30, 70
+    :header-rows: 1
