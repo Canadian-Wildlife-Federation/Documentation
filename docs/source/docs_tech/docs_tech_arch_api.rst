@@ -30,7 +30,7 @@ All coordinates are returned in latitude/longitude (EPSG:4617).
 Max Features
 ~~~~~~~~~~~~
 
-For all the feature API end points below, the application returns a maximum of 15000 features. This is configurable and may be modified if required.
+For all the feature API end points below, the application returns a maximum of 55,000 features. This is configurable and may be modified if required.
 
 .. _api-specification:
 
@@ -66,7 +66,7 @@ The base API server for the CABD end points is: ``https://cabd-web.azurewebsites
 Feature Type Metadata End Points
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The output format of all Feature Type End points is ``json``.
+The output format of all Feature Type End points is ``JSON``.
 
 Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``, ``medium``, and ``big``. See :ref:`Implemented Feature Model<implemented-feature-model>` for definitions of each feature type.
 
@@ -84,7 +84,7 @@ Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``
 
     .. admonition:: Example
         
-        ``https://cabd-web.azurewebsites.net/cabd-api/features/types/dams`` returns a ``json`` with the description of the ``dams`` feature type.
+        ``https://cabd-web.azurewebsites.net/cabd-api/features/types/dams`` returns a ``JSON`` with the description of the ``dams`` feature type.
 
 .. _feature-endpoints:
 
@@ -93,7 +93,7 @@ Feature End Points
 
 |ftid|
 
-    Returns a single feature based on its ID, which is provided as ``<feature-id>``. This will include all of the attributes specific to the type of feature. Thus, the schema of this resource is variable based on the feature type.
+    Returns a single feature based on its ID, which is provided as ``<feature-id>``. This will include all of the attributes specific to the type of feature. Therefore, the schema of this resource is variable based on the feature type.
 
 ``/features``
 
@@ -105,7 +105,7 @@ Feature End Points
 
 |ftnamefilter|
 
-    Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of bbox or point should be specified. Query options include:
+    Returns all features that match the given query parameters. Multiple query options can be provided in a single request, however only one of ``bbox`` or ``point`` should be specified. Query options include:
         
     - ``bbox`` - Only include features which intersect the provided bounding box. The bounding box coordinates should be provided in latitude/longitude: |bboxcoords|
     - ``point`` - Returns the nearest features to the given point.  The point should be provided in latitude/longitude: |latlong|
@@ -122,7 +122,7 @@ Feature End Points
 
 |ftsfilter|
 
-    Returns a list of the features of the given type. Query options are the same as for the /features endpoint (see above).
+    Returns a list of the features of the given type (e.g., dams, waterfalls, etc.). Query options are the same as for the ``/features`` endpoint (see above).
 
 ``/tiles/z/x/y.mvt``
 
@@ -131,6 +131,27 @@ Feature End Points
 |tilestype|
 
     Returns a vector tile of all features for the given type.
+
+Feature End Point Examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Return all dam features in the NHN watershed 02OE000:
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=nhn_watershed_id:eq:02OE000``
+
+Return all fishway features within the bounding box [(-95.16,41.66), (-74.34,56.86)]:
+``https://cabd-web.azurewebsites.net/cabd-api/features/fishways?bbox=-95.16,41.66,-74.34,56.86``
+
+Return all waterfall features in Quebec:
+``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?filter=province_territory_code:eq:qc``
+
+Return all fishway features that are associated with a dam structure:
+``https://cabd-web.azurewebsites.net/cabd-api/features/fishways?filter=dam_id:notnull:``
+
+Return all dam features with a use code of 2 (Hydroelectricity):
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2``
+
+Return all dam features with a use code of 2 (Hydroelectricity) and a pool and weir fishway (up_passage_type_code = 3):
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2&filter=up_passage_type_code:eq:3``
 
 .. _feature-endpoints-filter:
 
@@ -165,14 +186,16 @@ This request will return all dam features with a passability status code of 1 (B
 
         .. container:: header
 
-            Click the arrow below to expand a **searchable list of filterable attributes** with allowable values and associated codes in brackets, if applicable.
+            Click the arrow below to expand a **searchable list of filterable attributes** with coded and allowable values where applicable.
+
+            Please note that filters on any attributes with coded values need to specify the code instead of the associated name (i.e., a filter on the operating_status_code attribute should specify a value of 1 for abandoned/orphaned dams: ``&filter=operating_status_code:eq:1``).
 
         .. table:: 
             :class: datatable
             :widths: 15, 20, 30, 35
 
             ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
-            Feature Type               Attribute Name                        Filter Attribute Name           Allowable Values (Code)
+            Feature Type               Attribute Name                        Filter Attribute Name           Allowable Values
             ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
             Dams, waterfalls           Passability status                    passability_status_code         barrier(1), partial barrier(2), passable(3), unknown(4)
             Dams                       Operating status                      operating_status_code           abandoned/orphaned(1), active(2), decommissioned/removed(3), retired/closed(4), unknown(5), remediated(6)
@@ -282,10 +305,9 @@ This request will return all dam features with a passability status code of 1 (B
 Name Filter
 ~~~~~~~~~~~
 
-Provides an option for filtering features based on all the name attributes associated with the feature types. The “name” attributes are different for different features type and specified by the database metadata. Generally it will just include the english and french names, but it may include other fields as well.
-- Works in addition to the ``bbox`` filter described above (logically ANDed with the bbox)
-- Multiple filters can be provided and they will be combined with logical ``OR``, represented by the ``&`` symbol in API requests
-- All comparisons are case insensitive (holden = Holden = HOLDEN) 
+Provides an option for filtering features based on all the name attributes associated with the feature types. The “name” attributes are different for each feature type and specified by the database metadata. Generally, name attributes will just include the English and French names for a feature, but may include other fields as well.
+
+The name filter works in addition to the ``bbox`` filter described above (logically ANDed with the bbox). Multiple name filters can be provided and they will be combined with logical ``OR``, represented by the ``&`` symbol in API requests. All comparisons are case insensitive (holden = Holden = HOLDEN).
 
 Name Filter request format:
 
@@ -302,28 +324,54 @@ Name Filter request format:
 
 This will return all dam features within the bounding box [(0 0), (1 1)] and an english or french name like “holden”.
 
+Examples
+++++++++
+
+Return all dam features with an English or French name like “holden” (case insensitive):
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?&namefilter=like:holden``
+
+Return all dam features with an English or French name like “churchill falls” (case insensitive):
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?&namefilter=like:churchill+falls``
+
+Return all dam features with an English or French name like “churchill falls” or “revelstoke” (case insensitive):
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?&namefilter=like:churchill+falls&namefilter=like:revelstoke``
+
+Return all fishway features with a structure name like “grand falls” (case insensitive):
+``https://cabd-web.azurewebsites.net/cabd-api/features/fishways?&namefilter=like:grand+falls``
+
 .. _feature-endpoints-format:
 
 Format
 ~~~~~~
 
-The default output format is GeoJSON, however by supplying the format query parameter additional formats are supported.
+The default output format is GeoJSON, but additional formats can be returned by supplying the format query parameter. The format parameter can be combined with the attribute filters and name filters described above.
 
-.. admonition:: Example
+Examples
+++++++++
     
-    ``/features/dams_medium_large?filter=nhn_watershed_id:eq:08GABX1&format=geopackage``
+Return all dam features in the NHN watershed 08GABX1 in geopackage format:
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=nhn_watershed_id:eq:08GABX1&format=geopackage``
 
-Supported Formats:
+Return all dam features with a use code of 2 (Hydroelectricity) in geopackage format:
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2&format=geopackage``
+
+Supported Formats
++++++++++++++++++
 
 The following formats are supported for feature endpoints that return a collection of features.
 
-- ``geopackage`` (or ``gpkg``) - outputs geopackage files
+- ``geopackage``/ ``gpkg`` - outputs geopackage file
 - ``shp`` – outputs shapefile
 - ``kml`` – outputs kml file
-- ``json``/``geojson`` - outputs geojson (default)
+- ``json``/``geojson`` - outputs GeoJSON (default)
 - ``csv`` – outputs csv file 
 
-The single feature endpoints only return geojson output.
+The single feature endpoints only return GeoJSON output.
+
+.. note::
+    |formatnote| 
+    
+    While the ``/features/`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the |typenote| is specified.
 
 .. _feature-endpoints-locale:
 
@@ -338,9 +386,9 @@ Results are supported in both English and French. The language returned is deter
 Maximum Features
 ~~~~~~~~~~~~~~~~
 
-A maximum of 15,000 features will be returned.  If a feature api request would result in more than 15,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.
+A maximum of 55,000 features will be returned.  If a feature API request would result in more than 55,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.
 
-The value ``15000`` is an application parameter and can be modified if required (see ``application.properties`` file).
+The value ``55000`` is an application parameter and can be modified if required (see ``application.properties`` file).
 
 .. _feature-endpoints-feature-totals:
 
@@ -348,6 +396,9 @@ Feature API Result Totals
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Feature API response includes a Content-Range header that summarizes the total number of features that match the filters vs the total number of features returned. This can be used along with the max-results parameter to access the number of features that match a filter without having to load all features.
+
+Example
++++++++
 
 ``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``
     
@@ -357,7 +408,7 @@ Therefore, if you want to just get the total feature count and no features you c
 
 ``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?max-results=0``
 
-This will return an empty feature collection, but the response headers will include Content-Range: ``Content-Range: features 0-0/729``.  Which tells you there are 729 waterfalls in the database.
+This will return an empty feature collection, but the response headers will include Content-Range: ``Content-Range: features 0-0/729``, which tells you there are 729 waterfalls in the database.
 
     
 

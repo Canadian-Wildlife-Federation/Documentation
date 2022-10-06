@@ -1,8 +1,8 @@
 ﻿Column,Description
 id,A unique identifier for the data source.
-name,Name of the data source.
+name,Name of the data source (matches short names listed on the `data sources page <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources.html>`_).
 version_date,Data source version date.
 version_number,Data source version number (optional).
-source,A link to the source data or description of where the source data came from.
-comments,Any additional comments.
-source_type,spatial or non-spatial
+source,A link to the source data or full reference and description of where the source data came from.
+comments,Any additional comments about the data source.
+source_type,Type of data source (spatial or non-spatial).
