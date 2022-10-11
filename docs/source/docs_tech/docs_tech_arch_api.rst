@@ -197,35 +197,35 @@ This request will return all dam features with a passability status code of 1 (B
             ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
             Feature Type               Attribute Name                        Filter Attribute Name           Allowable Values
             ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
-            Dams, waterfalls           Passability status                    passability_status_code         barrier(1), partial barrier(2), passable(3), unknown(4)
-            Dams                       Operating status                      operating_status_code           abandoned/orphaned(1), active(2), decommissioned/removed(3), retired/closed(4), unknown(5), remediated(6)
-            Dams                       Ownership type                        ownership_type_code             charity/non-profit(1), federal(2), municipal(3), private(4), provincial/territorial(5), other(6), unknown(7), indigenous(8)
-            Dams                       Dam use                               use_code                        irrigation(1), hydroelectricity(2), water supply(3), flood control(4), recreation(5), navigation(6), fisheries(7), pollution control(8), invasive species control(9), other(10), unknown (11)
-            Dams                       Dam size                              size_class_code                 small(1), medium(2), large(3), unknown(4)
-            Dams, waterfalls, fishways Province/territory name               province_territory_code         alberta(ab), british columbia(bc), manittoba(mb), new brunswick(nb), newfoundland and labrador(nl), nova scotia(ns), northwest territories(nt), nunavut(nu), ontario(on), prince edward island(pe), quebec(qc), saskatchewan(sk), united states(us), yukon(yt)         
+            Dams, waterfalls           Passability status                    passability_status_code         1-barrier, 2-partial barrier, 3-passable, 4-unknown
+            Dams                       Operating status                      operating_status_code           1-abandoned/orphaned, 2-active, 3-decommissioned/removed, 4-retired/closed, 5-unknown, 6-remediated 
+            Dams                       Ownership type                        ownership_type_code             1-charity/non-profit, 2-federal, 3-municipal, 4-private, 5-provincial/territorial, 6-other, 7-unknown, 8-indigenous
+            Dams                       Dam use                               use_code                        1-irrigation, 2-hydroelectricity, 3-water supply, 4-flood control, 5-recreation, 6-navigation, 7-fisheries, 8-pollution control, 9-invasive species control, 10-other, 11-unknown
+            Dams                       Dam size                              size_class_code                 1-small, 2-medium, 3-large, 4-unknown  
+            Dams, waterfalls, fishways Province/territory name               province_territory_code         ab-alberta, bc-british columbia, mb-manittoba, nb-new brunswick, nl-newfoundland and labrador, ns-nova scotia, nt-northwest territories, nu-nunavut, on-ontario, pe-prince edward island, qc-quebec, sk-saskatchewan, us-united states, yt-yukon         
             Dams                       Dam height (m)                        height_m                        n/a
             Dams                       Construction year                     construction_year               n/a
-            Dams                       Upstream passage type                 up_passage_type_code            denil(1), nature-like fishway(2), pool and weir(3), pool and weir with hole(4), trap and truck(5), vertical slot(6), other(7), no structure(8), unknown(9)
-            Dams                       Dam function                          function_code                   storage(1), diversion(2), detention(3), debris(4), saddle(6), hydro - closed-cycle pumped storage(7), hydro - conventional storage(8), hydro - open-cycle pumped storage(9), hydro - run-of-river(10), hydro - tidal(11), other(12), unknown(13)
-            Dams                       Use irrigation                        use_irrigation_code             main(1), major(2), secondary(3)
-            Dams                       Use hydroelectricity                  use_electricity_code            main(1), major(2), secondary(3)
-            Dams                       Use water supply                      use_supply_code                 main(1), major(2), secondary(3)
-            Dams                       Use flood control                     use_floodcontrol_code           main(1), major(2), secondary(3)
-            Dams                       Use recreation                        use_recreation_code             main(1), major(2), secondary(3)
-            Dams                       Use navigation                        use_navigation_code             main(1), major(2), secondary(3)
-            Dams                       Use fisheries                         use_fish_code                   main(1), major(2), secondary(3)
-            Dams                       Use pollution control                 use_pollution_code              main(1), major(2), secondary(3)
-            Dams                       Use invasive species                  use_invasivespecies_code        main(1), major(2), secondary(3)
-            Dams                       Use other                             use_other_code                  main(1), major(2), secondary(3)
-            Dams                       Construction type                     construction_type_code          arch(1), buttress(2), earth(3), gravity(4), multiple arch(5), rock(6), steel(7), timber(8), unknown(9), other(10), concrete(11), masonry(12)
-            Dams                       Spillway type                         spillway_type_code              combined(1), free(2), gated(3), other(4), none(5), unknown(6)
-            Dams                       Turbine type                          turbine_type_code               cross-flow(1), francis(2), kaplan(3), pelton(4), unknown(5), other(6)
-            Dams                       Downstream passage route              down_passage_route_code         bypass(1), river channel(2), spillway(3), turbine(4)
-            Dams, waterfalls, fishways Completeness level                    complete_level_code             unverified(1), minimal(2), moderate(3), complete(4)
-            Dams                       Lake control                          lake_control_code               yes(1), enlarged(2), maybe(3)
-            Dams                       Dam condition                         condition_code                  good(1), fair(2), poor(3), unreliable(4)
+            Dams                       Upstream passage type                 up_passage_type_code            1-denil, 2-nature-like fishway, 3-pool and weir, 4-pool and weir with hole, 5-trap and truck, 6-vertical slot, 7-other, 8-no structure, 9-unknown
+            Dams                       Dam function                          function_code                   1-storage, diversion, 3-detention, 4-debris, 6-saddle, 7-hydro - closed-cycle pumped storage, 8-hydro - conventional storage, 9-hydro - open-cycle pumped storage, 10-hydro - run-of-river, 11-hydro - tidal, 12-other, 13-unknown
+            Dams                       Use irrigation                        use_irrigation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use hydroelectricity                  use_electricity_code            1-main, 2-major, 3-secondary 
+            Dams                       Use water supply                      use_supply_code                 1-main, 2-major, 3-secondary 
+            Dams                       Use flood control                     use_floodcontrol_code           1-main, 2-major, 3-secondary 
+            Dams                       Use recreation                        use_recreation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use navigation                        use_navigation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use fisheries                         use_fish_code                   1-main, 2-major, 3-secondary 
+            Dams                       Use pollution control                 use_pollution_code              1-main, 2-major, 3-secondary 
+            Dams                       Use invasive species                  use_invasivespecies_code        1-main, 2-major, 3-secondary 
+            Dams                       Use other                             use_other_code                  1-main, 2-major, 3-secondary 
+            Dams                       Construction type                     construction_type_code          1-arch, 2-buttress, 3-earth, 4-gravity, 5-multiple arch, 6-rock, 7-steel, 8-timber, 9-unknown, 10-other, 11-concrete, 12-masonry
+            Dams                       Spillway type                         spillway_type_code              1-combined, 2-free, 3-gated, 4-other, 5-none, 6-unknown 
+            Dams                       Turbine type                          turbine_type_code               1-cross-flow, 2-francis, 3-kaplan, 4-pelton, 5-unknown, 6-other 
+            Dams                       Downstream passage route              down_passage_route_code         1-bypass, 2-river channel, 3-spillway, 4-turbine  
+            Dams, waterfalls, fishways Completeness level                    complete_level_code             1-unverified, 2-minimal, 3-moderate, 4-complete  
+            Dams                       Lake control                          lake_control_code               1-yes, 2-enlarged, 3-maybe 
+            Dams                       Dam condition                         condition_code                  1-good, 2-fair, 3-poor, 4-unreliable  
             Waterfalls                 Waterfall height                      fall_height_m                   n/a
-            Fishways                   Fishway type                          fishpass_type_code              denil(1), nature-like fishway(2), pool and weir(3), pool and weir with hole(4), trap and truck(5), vertical slot(6), other(7), no structure(8), unknown(9)
+            Fishways                   Fishway type                          fishpass_type_code              1-denil, 2-nature-like fishway, 3-pool and weir, 4-pool and weir with hole, 5-trap and truck, 6-vertical slot, 7-other, 8-no structure, 9-unknown
             Fishways                   Year constructed                      year_constructed                n/a
             Dams, waterfalls, fishways Municipality                          municipality                    n/a
             Dams                       Dam name (English)                    dam_name_en                     n/a
@@ -278,8 +278,8 @@ This request will return all dam features with a passability status code of 1 (B
             Fishways                   Elevation (m)                         elevation_m                     n/a 
             Fishways                   Gradient (%)                          gradient                        n/a 
             Fishways                   Depth (m)                             depth (m)                       n/a 
-            Fishways                   Entrance location                     entrance_location_code          midstream(1), bank(2)
-            Fishways                   Entrance position                     entrance_position_code          bottom(1), surface(2), bottom and surface(3), mid-column(4)
+            Fishways                   Entrance location                     entrance_location_code          1-midstream, 2-bank
+            Fishways                   Entrance position                     entrance_position_code          1-bottom, 2-surface, 3-bottom and surface, 4-mid-column
             Fishways                   Is modified                           modified                        n/a 
             Fishways                   Modification year                     modification_year               n/a 
             Fishways                   Modification purpose                  modification_purpose            n/a 
