@@ -6,3 +6,4 @@ name_fr,The English human readable name for the feature type. Required.
 attribute_source_table,The data table containing the attribute data source information for the feature type. This is optional and can be null.
 default_featurename_field,The field in the data_view that represents the main feature name.
 feature_source_table,The data table containing a link between the features and the data source information. This is optional and can be null.
+data_version,The version number of the data for the feature type. This version number is included in exports.
