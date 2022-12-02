@@ -724,7 +724,7 @@ Structure Type
  **Allowable Values:**	
 
 .. csv-table:: 
-    :file: tbl/structype.csv
+    :file: tbl/contype.csv
     :widths: 15, 20, 65
     :header-rows: 1
 
