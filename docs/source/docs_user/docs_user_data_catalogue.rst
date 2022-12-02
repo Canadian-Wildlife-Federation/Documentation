@@ -20,7 +20,7 @@ Definition:
     
     *Currently, the CABD dams layer also includes other types of structures, including weirs, powerhouses, spillways, canals, and lateral structures (e.g., embankments or saddle dams). Some of these structures don't necessarily fragment freshwater systems in the upstream-downstream plane. As such, these structures should not be used for connectivity network analyses or barrier prioritization exercises. These data points can be filtered out using the* :ref:`Used for Network Analysis <useanalysis>` *field (``use_analysis = false`` in the data).*
 Attributes:
-    :ref:`Assessment Schedule <assessment-schedule>`, :ref:`Average Rate of Discharge (L/s) <avgrate>`, :ref:`Barrier Identifier <bid>`, :ref:`Comments <commentdef>`, :ref:`Completeness Level <complvl>`, :ref:`Construction Type <contype>`, :ref:`Construction Year <conyear>`, :ref:`Dam Condition <damcon>`, :ref:`Dam Function <damfunc>`, :ref:`Dam Name (English) <damnameen>`, :ref:`Dam Name (French) <damnamefr>`, :ref:`Dam Size <damsize>`, :ref:`Dam Use <damuse>`, :ref:`Degree of Regulation <degreg>`, :ref:`Downstream Passage Route <downpass>`, :ref:`Expected Life (Years) <explife>`, :ref:`Facility Name (English) <facilnameen>`, :ref:`Facility Name (French) <facilnamefr>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Federal Compliance Status <fedcompstat>`, :ref:`Federal Flow Requirements (m3/s) <fedflowreq>`, :ref:`Generating Capacity (MWh) <gencap>`, :ref:`Has Hydro Peaking System <hydropeak>`, :ref:`Height (m) <damheight>`, :ref:`Lake Control <lakectrl>`, :ref:`Last Maintenance Date <lastmaint>`, :ref:`Last Modified <lastmod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Municipality <municipality>`, :ref:`Next Maintenance Date <nextmaint>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`NHN Watershed Name <nhnname>`, :ref:`Number of Turbines <turbcount>`, :ref:`Operating Note <opnote>`, :ref:`Operating Status <opstat>`, :ref:`Owner <owner>`, :ref:`Ownership Type <owntype>`, :ref:`Passability Status <passstat>`, :ref:`Passability Status Note <passstatnote>`, :ref:`Province/Territory Name <provterr>`, :ref:`Provincial Compliance Status <provcompstat>`, :ref:`Provincial Flow Requirements (m3/s) <provflowreq>`, :ref:`Removed Year <remyear>`, :ref:`Reservoir Area (km2) <resarea>`, :ref:`Reservoir Depth (m) <resdepth>`, :ref:`Reservoir Name (English) <resnameen>`, :ref:`Reservoir Name (French) <resnamefr>`, :ref:`Reservoir Present <respres>`, :ref:`Spillway Capacity <spillcap>`, :ref:`Spillway Type <spilltype>`, :ref:`Storage Capacity (mcm) <storagecap>`, :ref:`Turbine Type <turbtype>`, :ref:`Upstream Catchment Area (km2) <upcatcharea>`, :ref:`Upstream Linear Length (km) <uplength>`, :ref:`Upstream Passage Type <uppasstype>`, :ref:`Use Fisheries <usefish>`, :ref:`Use Flood Control <useflood>`, :ref:`Use Hydroelectric <usehydro>`, :ref:`Use Invasive Species Control <useais>`, :ref:`Use Irrigation <useirr>`, :ref:`Use Navigation <usenav>`, :ref:`Use Other <useother>`, :ref:`Use Pollution Control <usepoll>`, :ref:`Use Recreation <userec>`, :ref:`Use Water Supply <usesupply>`, :ref:`Used for Network Analysis <useanalysis>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`
+    :ref:`Assessment Schedule <assessment-schedule>`, :ref:`Average Rate of Discharge (L/s) <avgrate>`, :ref:`Barrier Identifier <bid>`, :ref:`Comments <commentdef>`, :ref:`Completeness Level <complvl>`, :ref:`Construction Material <conmaterial>`, :ref:`Construction Year <conyear>`, :ref:`Dam Condition <damcon>`, :ref:`Dam Function <damfunc>`, :ref:`Dam Name (English) <damnameen>`, :ref:`Dam Name (French) <damnamefr>`, :ref:`Dam Size <damsize>`, :ref:`Dam Use <damuse>`, :ref:`Degree of Regulation <degreg>`, :ref:`Downstream Passage Route <downpass>`, :ref:`Expected Life (Years) <explife>`, :ref:`Facility Name (English) <facilnameen>`, :ref:`Facility Name (French) <facilnamefr>`, :ref:`Feature Data Source Details <ftdatasrc>`, :ref:`Feature Type <fttype>`, :ref:`Federal Compliance Status <fedcompstat>`, :ref:`Federal Flow Requirements (m3/s) <fedflowreq>`, :ref:`Generating Capacity (MWh) <gencap>`, :ref:`Has Hydro Peaking System <hydropeak>`, :ref:`Height (m) <damheight>`, :ref:`Lake Control <lakectrl>`, :ref:`Last Maintenance Date <lastmaint>`, :ref:`Last Modified <lastmod>`, :ref:`Latitude <lat>`, :ref:`Length (m) <length>`, :ref:`Longitude <long>`, :ref:`Municipality <municipality>`, :ref:`Next Maintenance Date <nextmaint>`, :ref:`NHN Watershed ID <nhnid>`, :ref:`NHN Watershed Name <nhnname>`, :ref:`Number of Turbines <turbcount>`, :ref:`Operating Note <opnote>`, :ref:`Operating Status <opstat>`, :ref:`Owner <owner>`, :ref:`Ownership Type <owntype>`, :ref:`Passability Status <passstat>`, :ref:`Passability Status Note <passstatnote>`, :ref:`Province/Territory Name <provterr>`, :ref:`Provincial Compliance Status <provcompstat>`, :ref:`Provincial Flow Requirements (m3/s) <provflowreq>`, :ref:`Removed Year <remyear>`, :ref:`Reservoir Area (km2) <resarea>`, :ref:`Reservoir Depth (m) <resdepth>`, :ref:`Reservoir Name (English) <resnameen>`, :ref:`Reservoir Name (French) <resnamefr>`, :ref:`Reservoir Present <respres>`, :ref:`Spillway Capacity <spillcap>`, :ref:`Spillway Type <spilltype>`, :ref:`Storage Capacity (mcm) <storagecap>`, :ref:`Structure Type <structype>`, :ref:`Turbine Type <turbtype>`, :ref:`Upstream Catchment Area (km2) <upcatcharea>`, :ref:`Upstream Linear Length (km) <uplength>`, :ref:`Upstream Passage Type <uppasstype>`, :ref:`Use Conservation <useconservation>`, :ref:`Use Fisheries <usefish>`, :ref:`Use Flood Control <useflood>`, :ref:`Use Hydroelectric <usehydro>`, :ref:`Use Invasive Species Control <useais>`, :ref:`Use Irrigation <useirr>`, :ref:`Use Navigation <usenav>`, :ref:`Use Other <useother>`, :ref:`Use Pollution Control <usepoll>`, :ref:`Use Recreation <userec>`, :ref:`Use Water Supply <usesupply>`, :ref:`Used for Network Analysis <useanalysis>`, :ref:`Waterbody Name (English) <waterbodynameen>`, :ref:`Waterbody Name (French) <waterbodynamefr>`
 
 Waterfalls
 ~~~~~~~~~~
@@ -285,18 +285,16 @@ Average Rate of Discharge (L/s)
 
 |dcdamsreturn|
 
-.. _contype:
+.. _conmaterial:
 
-Construction Type
-+++++++++++++++++
- **Definition:** *The type of dam structure, categorized by construction material/design.* 
- 
- **Field name:** construction_type_code
+Construction Material
++++++++++++++++++++++
+**Definition:** *The primary construction material of the structure.*
 
- **Allowable Values:**	
+**Field name:** construction_material_code
 
 .. csv-table:: 
-    :file: tbl/contype.csv
+    :file: tbl/materialtype.csv
     :widths: 15, 20, 65
     :header-rows: 1
 
@@ -333,7 +331,7 @@ Dam Condition
 
 Dam Function
 ++++++++++++
- **Definition:** *The intended function of the dam.* 
+ **Definition:** *The intended function of the structure.* 
  
  **Field name:** function_code
 
@@ -431,7 +429,7 @@ Downstream Passage Route
 
 Expected Life (Years)
 +++++++++++++++++++++
- **Definition:** *The number of years the dam structure is expected to last.* 
+ **Definition:** *The year the structure will reach its expected end of life.* 
  
  **Field name:** expected_life
 
@@ -715,6 +713,23 @@ Storage Capacity (mcm)
 
 |dcdamsreturn|
 
+.. _structype:
+
+Structure Type
++++++++++++++++++
+ **Definition:** *The type of structure.* 
+ 
+ **Field name:** structure_type_code
+
+ **Allowable Values:**	
+
+.. csv-table:: 
+    :file: tbl/structype.csv
+    :widths: 15, 20, 65
+    :header-rows: 1
+
+|dcdamsreturn|
+
 .. _turbtype:
 
 Turbine Type
@@ -765,6 +780,23 @@ Upstream Passage Type
 .. csv-table:: 
     :file: tbl/uppasstype.csv
     :widths: 15, 25, 60
+    :header-rows: 1
+
+|dcdamsreturn|
+
+.. _useconservation:
+
+Use Conservation
+++++++++++++++++
+ **Definition:** *Indicates the dam is used for wildlife conservation purposes, and the extent to which wildlife conservation is a planned use.*
+ 
+ **Field name:** use_conservation_code
+
+ **Allowable Values:**	
+
+.. csv-table:: 
+    :file: tbl/usetype.csv
+    :widths: 15, 20, 65
     :header-rows: 1
 
 |dcdamsreturn|

@@ -1,13 +1,13 @@
 Code,Name,Description
-1,Storage  ,"A structure built to store water during times of high flow for a variety of purposes (e.g., water supply, irrigation etc.). "
-2,Diversion  ,A structure built to divert all or some of the water from a waterway into a man-made canal or conduit.  
-3,Detention  ,"A structure built for flood control. Retains excess water in a reservoir to maintain the carrying capacity of the waterway, releasing it gradually at a controlled rate to protect downstream areas from flooding. "
-4,Debris  ,"A structure built across a waterway to retain debris (e.g., driftwood, gravel, sand etc.)."
-6,Saddle  ,"An auxiliary structure constructed at low spots along the perimeter of a reservoir to limit its extent, or to allow for an increase in storage capacity. "
-7,Hydro - Closed-cycle pumped storage ,A facility configured to pump water between two water reservoirs at different elevations; both reservoirs are isolated from a free-flowing water source.
-8,Hydro - Conventional storage ,"A facility that impounds water, which when released, flows through a turbine and generates electricity.  "
-9,Hydro - Open-cycle pumped storage ,A facility configured to pump water between two water reservoirs at different elevations; a free-flowing water source is used for either the upper or lower reservoir.
-10,Hydro - Run-of-river ,A facility that channels flowing water from a river through a canal or penstock to spin a turbine. 
-11,Hydro - Tidal ,A facility configured to intake and store water during high tide and slowly release it back into the ocean during low tide. 
-12,Other  ,The function of the dam cannot be defined by the types listed in this table. 
-13,Unknown  ,No information is known regarding the function of the dam structure/facility.
+1,Storage,"A structure built to store water for a variety of purposes (e.g., water supply, irrigation, pollution control, etc.)."
+2,Diversion,"A structure built to divert all or some water from a waterway, often into a man-made canal or conduit."
+3,Detention,"A structure built for flood control. Retains excess water in a reservoir to maintain the carrying capacity of the waterway, releasing it gradually at a controlled rate to protect downstream areas from flooding."
+4,Saddle,"An auxiliary structure constructed at low spots along the perimeter of a reservoir to limit its extent, or to allow for an increase in storage capacity."
+5,Hydro - Closed-cycle pumped storage,"A structure that is part of a facility configured to pump water between two water reservoirs at different elevations; both reservoirs are isolated from a free-flowing water source."
+6,Hydro - Conventional storage,"A structure that is part of a facility that impounds water, which when released, flows through a turbine and generates electricity."
+7,Hydro - Open-cycle pumped storage,"A structure that is part of a facility configured to pump water between two water reservoirs at different elevations; a free-flowing water source is used for either the upper or lower reservoir."
+8,Hydro - Run-of-river,"A structure that is part of a facility that channels or syphons water from a water source through an intake and into a canal or penstock to spin a turbine."
+9,Hydro - Tidal,"A structure that is part of a facility configured to intake and store water during high tide and slowly release it back into the ocean during low tide."
+10,Hydro - Other,"A structure that is part of a facility used to generate hydroelectricity, whose process for generating power is unknown or different than those defined in this table."
+11,Other,"The function of the structure is known, but is different from those defined in this table (e.g., debris control or cofferdams). Occasionally, some lateral structures (e.g., canals, embankments, and dikes) may serve a specific function other than those defined in this table and should be assigned a dam function of 'other'."
+99,Unknown,"The function of the structure is unknown."

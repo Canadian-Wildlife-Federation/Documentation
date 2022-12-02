@@ -1,12 +1,13 @@
 Code,Name,Description
-1,Irrigation  ,Supplies controlled amounts of water to land or crops in needed intervals. 
-2,Hydroelectricity  ,Generates electricity by passing water through a hydraulic turbine.
-3,Water supply  ,Water stored for municipal use.
-4,Flood control  ,Reduces the effects of flood waters or high-water levels on downstream areas. 
-5,Recreation  ,"Reservoir allows for recreational activities (e.g., swimming, boating, fishing, etc.)."
-6,Navigation  ,Increases water levels on rivers to permit ship to navigate waters that were previously unnavigable. 
-7,Fisheries  ,"Increasing water levels of the reservoir during spawning season creates suitable spawning habitat for fish, enhancing fish production and fishing success of anglers. "
-8,Pollution control  ,Protects the water resource by trapping polluted water in reservoirs or ponds.
-9,Invasive species control ,Prevents the spread of invasive species upstream or to environmentally sensitive areas within the waterway.
-10,Other  ,The intended use of the dam cannot be defined by the use categories defined in this table.
-11,Unknown  ,The intended use of the dam is unknown.
+1,Irrigation,"Supplies controlled amounts of water to land or crops in needed intervals."
+2,Hydroelectricity,"Generates electricity by passing water through a hydraulic turbine."
+3,Water supply,"Water stored for municipal use."
+4,Flood control,"Reduces the effects of flood waters or high-water levels on downstream areas."
+5,Recreation,"Reservoir allows for recreational activities (e.g., swimming, boating, fishing, etc.)."
+6,Navigation,"Increases water levels on rivers to permit ship to navigate waters that were previously unnavigable."
+7,Fisheries,"Regulates the flow of water for the purposes of aquaculture."
+8,Pollution control,"Protects the water resource by trapping polluted water in reservoirs or ponds."
+9,Invasive species control,"Prevents the spread of invasive species upstream or to environmentally sensitive areas within the waterway."
+10,Other,"The intended use of the dam cannot be defined by the use categories defined in this table."
+11,Unknown,"The intended use of the dam is unknown."
+12,Wildlife Conservation,"Regulates the flow of water for the purposes of wildlife conservation (e.g., waterfowl habitat)."
