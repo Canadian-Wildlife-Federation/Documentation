@@ -134,12 +134,12 @@ Vector Tile Service
 -------------------
 
 Format
-++++++
+~~~~~~
 
 The only format supported for the vector tile services is mvt (mapbox vector tile).
 
 End Points
-++++++++++
+~~~~~~~~~~
 
 ``/chyf-web/tiles/water/{z}/{x}/{y}.{format}``
 
