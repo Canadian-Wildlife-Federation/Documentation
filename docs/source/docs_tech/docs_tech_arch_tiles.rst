@@ -130,6 +130,38 @@ Returns a maximum of 5 database rows for any feature type that match the name �
 Returns a maximum of 5 database rows for flowpaths that match the name ‘Berland’ (case insensitive):
 ``https://chyf-web.azurewebsites.net/chyf-web/features?name=Berland&result-type=ALL&max-results=5&feature-type=FLOWPATH``
 
+
+Network Exports
+---------------
+
+Network exports of the CHyF datasets can be extracted using the graph API. This export includes all flowpaths, nexuses, and catchments for
+the requested area with the appropariate network information included on the features 
+  
+Format
+~~~~~~
+
+The only format supported for the network exports is geopackage.
+
+
+API
+~~~
+
+Nework exports are limited to 500,000 flowpath features. The area of interest can be specified by supplying either a bounding box or
+one of more AOIs.
+
+* ``aoi`` - OPTIONAL - A common delimited list of AOI short names
+* ``bbox`` - OPTIONAL - The extent of features to include in export: 'minlong,minlat,maxlong,maxlat'
+
+At least one of aoi or bbox must be supplied.
+
+Example
+~~~~~~~
+
+Returns graph export for AOI 02OJ000:
+``https://chyf-web.azurewebsites.net/chyf-web/graph?aoi=02OJ000``
+  
+
+
 Vector Tile Service
 -------------------
 
