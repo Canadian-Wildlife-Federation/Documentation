@@ -367,13 +367,13 @@ The following formats are supported for feature endpoints that return a collecti
 
 The single feature endpoints only return GeoJSON output.
 
-All exports (except csv) contain data metata that includes the feature type version number, download datetime, and license information. For GeoJSON, this information is included in the feature collection metadata. For shapefile, an additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
+All exports (except csv) contain metadata that includes the feature type version number, download datetime, and license information. For GeoJSON, this information is included in the feature collection metadata. For shapefile, an additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
 
 .. note::
 
    The best way to download data for multiple feature types using the API is to use ``/features/<type>``
    
-   While the ``</features/>`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the ``<type>`` is specified.
+   While the ``/features/`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the ``<type>`` is specified.
 
 .. _feature-endpoints-locale:
 
@@ -442,7 +442,7 @@ Feature Update End Point
 This end point allows users to submit feature update requests. These requests are logged in the database and reviewed by CABD administrators before updates are applied to the feature.
 
 
-* URL: ``</features/<feature-id>>``
+* URL: ``/features/<feature-id>``
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
