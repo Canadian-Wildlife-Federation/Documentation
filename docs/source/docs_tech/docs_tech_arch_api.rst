@@ -367,13 +367,13 @@ The following formats are supported for feature endpoints that return a collecti
 
 The single feature endpoints only return GeoJSON output.
 
-All exports (except csv) include data metata that includes the feature type version number, download datetime, and license information. For json this is included in the feature collection metadata, for shp and additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
+All exports (except csv) contain data metata that includes the feature type version number, download datetime, and license information. For GeoJSON, this information is included in the feature collection metadata. For shapefile, an additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
 
 .. note::
 
-   The best way to download data for multiple feature types using the API is to use the ``/features/<type>``
+   The best way to download data for multiple feature types using the API is to use ``/features/<type>``
    
-   While the /features/ endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the ``<type>`` is specified.
+   While the ``</features/>`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the ``<type>`` is specified.
 
 .. _feature-endpoints-locale:
 
@@ -419,8 +419,6 @@ This will return an empty feature collection, but the response headers will incl
 Feature Data Source End Point
 =============================
 
------
-
 |ftdsid|
 
 |ftdsidflds|
@@ -441,17 +439,15 @@ JSON format is also supported by providing the ``format=json`` query parameter: 
 Feature Update End Point
 ========================
 
------
-
 This end point allows users to submit feature update requests. These requests are logged in the database and reviewed by CABD administrators before updates are applied to the feature.
 
 
-* URL: /features/<feature-id>
+* URL: ``</features/<feature-id>>``
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
- * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
- * name, email, and description are required. Organization and datasource or optional
+  * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
+  * name, email, and description are required. Organization and datasource are optional
 
 
 .. _feature-vector-tile-service:
