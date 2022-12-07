@@ -94,7 +94,7 @@ Views are used to support the CABD APIs that list features. Each feature type is
 Feature Update View
 -------------------
 
-By design each feature includes an updates_pending attribute that is populated with true or false depending on if their are feature updates pending review in the system. This field is populated by the system using the ``cabd.updates_pending`` view. This view should return a single column, cabd_id, for each feature that has a review pending in the database. 
+By design each feature includes an updates_pending attribute that is populated with true or false depending on if there are feature updates pending review in the system. This field is populated by the system using the ``cabd.updates_pending`` view. This view should return a single column, cabd_id, for each feature that has a review pending in the database. 
 
 
 .. _core-tables:
@@ -136,7 +136,7 @@ Lists data sources. Supports data source tracking for feature type attributes.
 
 :codeblocksize:`cabd.contacts`
 
-A list of contacts relevant to the CABD database.  Currently contacts are only created when a user submits a feature update.
+A list of contacts relevant to the CABD database.  Currently, contacts are only created when a user submits a feature update.
 
 .. csv-table:: 
     :file: tbl/contacts.csv
@@ -205,7 +205,8 @@ The ``<featuretype>_attribute_source`` table contains the cabd_id and one column
 Audit Log / Change Tracking
 ---------------------------
 
-The CABD database has tracks changes to the following tables  
+The CABD database has tracks changes to the following tables:
+
 * cabd.contacts
 * cabd.fish_species
 * cabd.data_source
@@ -220,9 +221,10 @@ The CABD database has tracks changes to the following tables
 * fishways.fishways_feature_source
 * fishways.species_mapping
 
-New feature types can also include change tracking by apply the appropriate triggers to any new database tables that require change tracking.
+New feature types can also include change tracking by applying the appropriate triggers to any new database tables that require change tracking.
 
 All changes are logged in the ``cabd.audit_log`` table. This table has the following columns:
+
 .. csv-table:: 
     :file: tbl/audit_log_table.csv
     :widths: 30, 70
