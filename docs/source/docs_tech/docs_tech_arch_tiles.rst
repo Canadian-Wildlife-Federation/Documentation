@@ -5,6 +5,8 @@ CHyF REST API Services
 Overview
 --------
 
+-----
+
 Projection
 ~~~~~~~~~~
 
@@ -29,6 +31,8 @@ https://chyf-web.azurewebsites.net/chyf-web/v3/api-docs (JSON)
 
 Feature End Points
 ------------------
+
+-----
 
 Format
 ~~~~~~
@@ -134,25 +138,24 @@ Returns a maximum of 5 database rows for flowpaths that match the name ‘Berlan
 Network Exports
 ---------------
 
-Network exports of the CHyF datasets can be extracted using the graph API. This export includes all flowpaths, nexuses, and catchments for
-the requested area with the appropariate network information included on the features 
+-----
+
+CHyF network datasets can be extracted using the graph API. This export includes all flowpaths, nexuses, and catchments for the requested area with the appropariate network information included on the features.
   
 Format
 ~~~~~~
 
-The only format supported for the network exports is geopackage.
-
+Geopackage is the only supported format for network exports.
 
 API
 ~~~
 
-Nework exports are limited to 500,000 flowpath features. The area of interest can be specified by supplying either a bounding box or
-one of more AOIs.
+Nework exports are limited to 500,000 flowpath features. The area of interest can be specified by supplying a bounding box or one or more AOIs.
 
 * ``aoi`` - OPTIONAL - A common delimited list of AOI short names
 * ``bbox`` - OPTIONAL - The extent of features to include in export: 'minlong,minlat,maxlong,maxlat'
 
-At least one of aoi or bbox must be supplied.
+At least one, either aoi or bbox, must be supplied.
 
 Example
 ~~~~~~~
@@ -164,6 +167,8 @@ Returns graph export for AOI 02OJ000:
 
 Vector Tile Service
 -------------------
+
+-----
 
 Format
 ~~~~~~
