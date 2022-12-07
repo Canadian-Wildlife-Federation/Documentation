@@ -446,7 +446,9 @@ This end point allows users to submit feature update requests. These requests ar
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
+
   * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
+  
   * name, email, and description are required. Organization and datasource are optional
 
 
