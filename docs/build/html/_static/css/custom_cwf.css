@@ -1,0 +1,75 @@
+/* Top left box - search, logo */
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #393939;
+}
+
+/* Navigation box as a whole */
+.wy-nav-side {
+    background-color: #393939;
+}
+
+/* TOC caption font colour - only in navigation, not in doc body */
+.wy-menu > .caption > span.caption-text {
+    color: white;
+  }
+
+/*TOC caption box colour*/
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    background-color: #393939;
+  }
+  
+/*Subheading1 box colour*/
+.wy-menu-vertical li.toctree-l1 a {
+    background-color: #0a4f58;
+    color: white;
+}
+
+/* Subheading1 font, and box colour upon hover */
+.wy-menu-vertical li.toctree-l1 a:hover {
+    color: white;
+    background-color: #03837f;
+}
+
+/* Subheading1 box and opacity upon hovering over selected element */
+.wy-menu-vertical li.toctree-l1.current > a:hover {
+    background-color: #03837f;
+    opacity: 0.9;
+}
+
+/* (Subheading1 box, and font colour when selected) This element controls property values for main headers (l1) when they are selected (i.e., have been clicked)*/
+.wy-menu-vertical li.toctree-l1.current a {
+    background-color: #03837f;
+    color: white;
+}
+
+/* TOC subheading2 font colour */
+.wy-menu-vertical a {
+    color: white;
+}
+
+/* (Subheading2 box, and font colour when expanded) This element controls the property values for the boxes containing the sub-headers (l2) under each main header (l1), when a specific main header is selected. E.g., if 'Technical Documentation' is selected, 'Architecture Dictionary', 'ChyF Data Model', etc. will appear with a grey background and dark text*/
+.wy-menu-vertical li.toctree-l1.current li.toctree-l2 > a {
+    background-color:  white;
+    color: #3d3135;
+}
+
+/* (Subheading2 box, and font colour when selected) This element controls property values for main headers (l1) when they are selected (i.e., have been clicked)*/
+.wy-menu-vertical li.toctree-l2.current a {
+    background-color: #cce4e3;
+    color: #3d3135;
+}
+
+/*(Subheading2 box, and font colour on hover when expanded)*/
+.wy-menu-vertical li.toctree-l1.current li.toctree-l2 > a:hover {
+    background-color: #cce4e3;
+}
+
+/*Expand/minimize button colour*/
+.wy-menu-vertical li.toctree-l1 a.reference.internal button.toctree-expand {
+    color: white;
+}
+
+/*Body text font type*/
+.rst-content .toctree-wrapper>p.caption, h1, h2, h3, h4, h5, h6, legend {
+    font-family: Lato,proxima-nova,Helvetica Neue,Arial,sans-serif;
+}

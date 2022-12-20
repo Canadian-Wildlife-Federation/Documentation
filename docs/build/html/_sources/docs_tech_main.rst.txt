@@ -1,0 +1,21 @@
+========================
+Application Architecture
+========================
+.. toctree::
+
+    docs_tech/docs_tech_arch/tech_db_data_dictionary
+    docs_tech/docs_tech_arch/tech_db_api_architecture
+
+========================
+TEST
+========================
+
+.. toctree::
+    :maxdepth: 3
+    :caption: CHyF Tools
+
+    technical_docs/chyf_docs/tech_chyf_data_model
+    technical_docs/chyf_docs/tech_chyf_logical_model
+    technical_docs/chyf_docs/tech_chyf_input_specifications
+    technical_docs/chyf_docs/tech_chyf_flowpath_tools
+    technical_docs/chyf_docs/tech_chyf_catchment_delineation_tools
