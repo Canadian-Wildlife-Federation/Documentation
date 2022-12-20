@@ -169,8 +169,6 @@ Canadian Geographical Names Database
 
     Natural Resources Canada, 2020. Canadian Geographical Names Database. Government of Canada Open Government Portal. Accessed July 28, 2021, from https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c
     
-    **Licence:** https://open.canada.ca/en/open-government-licence-canada
-
     **Geographic coverage:** National
     
     **Source ID field:** CGNDB_ID
@@ -185,8 +183,6 @@ CanVec Series – Manmade Features
 ````````````````````````````````
 
     Natural Resources Canada, 2019. Constructions and Land Use in Canada - CanVec Series - Manmade Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6
-
-    **Licence:** https://open.canada.ca/en/open-government-licence-canada
 
     **Geographic coverage:** National
 
@@ -203,8 +199,6 @@ CanVec Series - Hydrographic Features
 
     Natural Resources Canada, 2019. Lakes, Rivers and Glaciers in Canada - CanVec Series - Hydrographic Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b
 
-    **Licence:** https://open.canada.ca/en/open-government-licence-canada
-
     **Geographic coverage:** National
 
     **Source ID field:** feature_id
@@ -219,8 +213,6 @@ National Hydrographic Network (NHN)
 ```````````````````````````````````
 
     Natural Resources Canada, 2016. National Hydro Network - NHN - GeoBase Series. Government of Canada Open Government Portal. Accessed July 24, 2019, from https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977
-
-    **Licence:** https://open.canada.ca/en/open-government-licence-canada
 
     **Geographic coverage:** National
 
@@ -240,8 +232,6 @@ Intercensal - Census Subdivision Boundary Files
 
     Statistics Canada, 2020. Intercensal - Census Subdivision Boundary Files. Accessed November 13, 2020, from https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20
 
-    **Licence:** https://www.statcan.gc.ca/en/reference/licence
-
     **Geographic coverage:** National
 
     **Source ID field:** csduid
@@ -259,8 +249,6 @@ National Inventory of Dams
 ``````````````````````````
 
     United States Army Corps of Engineers, 2022. National Inventory of Dams. United States Army. Accessed February 15, 2022, from https://nid.sec.usace.army.mil/#/downloads 
-
-    **Licence:** 
 
     **Geographic coverage:** United States
 
