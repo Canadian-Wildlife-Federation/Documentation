@@ -68,6 +68,7 @@ You can filter through the data sources using the search table below. To find a 
    Spatial     Provincial               Saskatchewan - Ministry of Environment                                                         Saskatchewan Hydrography                                                                                                                                       :ref:`skmoe_hydrography <skmoe_hydrography>`
    Non-spatial Federal                  Environment and Climate Change Canada                                                          Canadian Environmental Assessment Agency                                                                                                                       :ref:`ecc_ceaa_090152237 <ecc_ceaa_090152237>`                                                                                                                                                                                          
    Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Administration and Enforcement of the Fish Habitat Protection and Pollution Prevention Provisions of the Fisheries Act (2003-2004 Annual Report to Parliament) :ref:`dfo_annu_rep_2003_4 <dfo_annu_rep_2003_4>`                                                                                                                                                                                         
+   Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Babine Lake Development Program for Sockeye Salmon                                                                                                             :ref:`dfo_babine_lake_1967 <dfo_babine_lake_1967>`
    Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Information in Support of a Recovery Potential Assessment of Bull Trout                                                                                        :ref:`dfo_sawatsky_2016 <dfo_sawatsky_2016>`                                                                                                                                                                                           
    Non-spatial Federal                  Fisheries and Oceans (DFO)                                                                     Recovery Strategy for the Atlantic Whitefish                                                                                                                   :ref:`sarpr_atlantic_wfish <sarpr_atlantic_wfish>`                                                                                                                                                                                        
    Non-spatial Federal                  Natural Resources Canada (NRCan)                                                               Atlantic Salmon Rehabilitation Project                                                                                                                         :ref:`dfo_atl_sal_rehab_ns <dfo_atl_sal_rehab_ns>`                                                                                                                                                                                        
@@ -81,6 +82,7 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Provincial               Alberta – Environment and Parks                                                                Little Bow Reservoir FIN Summary                                                                                                                               :ref:`aep_littlebow_res_fin_2020 <aep_littlebow_res_fin_2020>`                                                                                                                                                                                 
    Non-spatial Provincial               Alberta - Natural Resources Conservation Board                                                 Pine Coolee Water Management Project                                                                                                                           :ref:`nrcb_earp_app9401 <nrcb_earp_app9401>`                                                                                                                                                                                           
    Non-spatial Provincial               Alberta – Sustainable Resource Development                                                     Bathymetry Maps                                                                                                                                                :ref:`asrd_bathym_chin <asrd_bathym_chin>`, :ref:`asrd_bathym_forty_mile <asrd_bathym_forty_mile>`, :ref:`asrd_bathym_jensen <asrd_bathym_jensen>`, :ref:`asrd_bathym_keho <asrd_bathym_keho>`, :ref:`asrd_bathym_newell <asrd_bathym_newell>`, :ref:`asrd_bathym_mcgregor <asrd_bathym_mcgregor>`, :ref:`asrd_bathym_payne <asrd_bathym_payne>`, :ref:`asrd_bathym_st_mary <asrd_bathym_st_mary>`, :ref:`asrd_bathym_stafford <asrd_bathym_stafford>`, :ref:`asrd_bathym_travers <asrd_bathym_travers>`  
+   Non-spatial Provincial               British Columbia - BC Hydro                                                                    Alouette System                                                                                                                                                :ref:`bc_hydro_alouette <bc_hydro_alouette>`
    Non-spatial Provincial               Newfoundland and Labrador – Municipal Affairs and Environment                                  Permits to Alter a Body of Water                                                                                                                               :ref:`nl_mae_permit_alt9067 <nl_mae_permit_alt9067>`, :ref:`nl_mae_permit_alt9371 <nl_mae_permit_alt9371>`                                                                                                                                                                
    Non-spatial Provincial               Nova Scotia – Agriculture                                                                      Dykeland Sites                                                                                                                                                 :ref:`ns_dykeland_sites <ns_dykeland_sites>`                                                                                                                                                                                          
    Non-spatial Municipal                City of Calgary, Alberta                                                                       Glenmore Dam Infrastructure Improvements                                                                                                                       :ref:`ab_cal_gdii <ab_cal_gdii>`                                                                                                                                                                                                 
@@ -91,6 +93,8 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Municipal                Halifax Water                                                                                  Chain Lake Dam and Pockwock Lake Dam – Consultant Services                                                                                                     :ref:`ns_hal_p25_2021 <ns_hal_p25_2021>`                                                                                                                                                                                             
    Non-spatial Municipal                Halifax Water                                                                                  Halifax Water Dam Safety Review                                                                                                                                :ref:`ns_hal_p24_2019 <ns_hal_p24_2019>`                                                                                                                                                                                             
    Non-spatial Municipal                Halifax Water                                                                                  Integrated Resource Plan – Water System Review                                                                                                                 :ref:`ns_hal_hwirp_v3 <ns_hal_hwirp_v3>`                                                                                                                                                                                             
+   Non-spatial Energy Company           FortisBC                                                                                       Electrical Facilities and Operations                                                                                                                           :ref:`fortisbc_ops_hydro <fortisbc_ops_hydro>`
+   Non-spatial Energy Company           Innergex                                                                                       Douglas Creek                                                                                                                                                  :ref:`innergex_douglas_creek <innergex_douglas_creek>`
    Non-spatial Energy Company           Irrican Power                                                                                  Chin Chute Power Plant                                                                                                                                         :ref:`irrican_chin_chute <irrican_chin_chute>`                                                                                                                                                                                          
    Non-spatial Energy Company           Irrican Power                                                                                  Drops 4, 5, and 6 Power Plant                                                                                                                                  :ref:`irrican_drops_456 <irrican_drops_456>`                                                                                                                                                                                           
    Non-spatial Energy Company           Irrican Power                                                                                  Raymond Reservoir Power Plant                                                                                                                                  :ref:`irrican_ray_res <irrican_ray_res>`                                                                                                                                                                                             
@@ -139,11 +143,13 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Eastern Newfoundland                                                                                                       :ref:`golder_inv_nl_2016 <golder_inv_nl_2016>`                                                                                                                                                                                          
    Non-spatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Newfoundland and Labrador Year Three                                                                                       :ref:`golder_inv_nl_2019 <golder_inv_nl_2019>`                                                                                                                                                                                          
    Non-spatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Newfoundland and Labrador Year Two                                                                                         :ref:`golder_inv_nl_2017 <golder_inv_nl_2017>`                                                                                                                                                                                          
+   Non-spatial Consulting Reports       Limnotek Research and Development Inc. and Hupacasath First Nation                             Trophic status of Elsie Lake Reservoir                                                                                                                         :ref:`limnotek_tselr_2006 <limnotek_tselr_2006>`  
    Non-spatial Consulting Reports       MPE Engineering Ltd.                                                                           Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios                                                                                  :ref:`mpe_aep_prov_inventory <mpe_aep_prov_inventory>`                                                                                                                                                                                      
    Non-spatial Consulting Reports       Power Advisory LLC                                                                             Review of the Newfoundland and Labrador Electricity System                                                                                                     :ref:`pallc_nl_elec <pallc_nl_elec>`                                                                                                                                                                                               
    Non-spatial Consulting Reports       SNC-Lavalin Group Inc.                                                                         Lower Churchill Project Design Criteria                                                                                                                        :ref:`sncl_lower_churchill <sncl_lower_churchill>`                                                                                                                                                                                        
    Non-spatial Peer-reviewed Articles   Alberta Law Review                                                                                                                                                                                                                                            :ref:`alrs_spray_lakes <alrs_spray_lakes>`                                                                                                                                                                                            
    Non-spatial Peer-reviewed Articles   Canadian Geotechnical Journal                                                                                                                                                                                                                                 :ref:`cgj_williams_etal_1983 <cgj_williams_etal_1983>`                                                                                                                                                                                      
+   Non-spatial Personal Communications  Hillcrest Geographics                                                                          Norris, S.                                                                                                                                                     :ref:`pcom_sn_hc_[year] <pcom_sn_hc>`
    Non-spatial Miscellaneous            Wikipedia                                                                                      Dickson Dam                                                                                                                                                    :ref:`wiki_dickson_dam <wiki_dickson_dam>`                                                                                                                                                                                            
    Non-spatial Miscellaneous            Wikipedia                                                                                      List of Canadian Waterfalls                                                                                                                                    :ref:`wiki_cdn_wfs <wiki_cdn_wfs>`                                                                                                                                                                                                
    Non-spatial Miscellaneous            Wikipedia                                                                                      List of Generating Stations in British Columbia                                                                                                                :ref:`wiki_gs_bc <wiki_gs_bc>`                                                                                                                                                                                                  
@@ -789,6 +795,17 @@ Administration and Enforcement of the Fish Habitat Protection and Pollution Prev
 
 |ds_searchtbl_return|
 
+.. _dfo_babine_lake_1967:
+
+Babine Lake Development Program for Sockeye Salmon
+``````````````````````````````````````````````````
+
+    Heskin, B.A., 1967. The Babine Lake Development Program for Sockeye Salmon. 1967 Northeast Fish and Wildlife Conference, Québec City, Québec. pp. 13. Accessed December 23, 2022, from https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/40593149.pdf.
+
+    **Short name:** dfo_babine_lake_1967
+
+|ds_searchtbl_return|
+
 .. _dfo_sawatsky_2016:
 
 Information in Support of a Recovery Potential Assessment of Bull Trout
@@ -1033,6 +1050,19 @@ Bathymetry Maps
 
 |ds_searchtbl_return|
 
+British Columbia - BC Hydro
++++++++++++++++++++++++++++
+
+.. _bc_hydro_alouette:
+
+Alouette System
+```````````````
+
+    BC Hydro, no date. Alouette system. Accessed October 21, 2022, from https://www.bchydro.com/energy-in-bc/projects/alouette-projects.html.
+
+    **Short name:** bc_hydro_alouette
+
+|ds_searchtbl_return|
 
 Newfoundland and Labrador – Municipal Affairs and Environment
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1192,6 +1222,33 @@ Integrated Resource Plan – Water System Review
 
 Energy Company Sources
 ~~~~~~~~~~~~~~~~~~~~~~
+
+.. _fortisbc_ops_hydro:
+
+FortisBC
+++++++++
+
+Electricity Facilities and Operations
+`````````````````````````````````````
+
+    FortisBC, no date. Electricity facilities and operations. Accessed October 3, 2022, from https://www.fortisbc.com/about-us/facilities-operations-and-energy-information/electricity-facilities-and-operations.
+
+    **Short name:** fortisbc_ops_hydro
+
+|ds_searchtbl_return|
+
+.. _innergex_douglas_creek:
+
+Innergex
+++++++++
+
+Douglas Creek
+`````````````
+    Innergex, no date. Douglas Creek. Accessed October 4, 2022, from https://www.innergex.com/sites/douglas-creek/.
+
+    **Short name:** innergex_douglas_creek
+
+|ds_searchtbl_return|
 
 Irrican Power
 +++++++++++++
@@ -1780,6 +1837,20 @@ Inventory and Assessment of Dams in Newfoundland and Labrador Year Two
 
 |ds_searchtbl_return|
 
+Limnotek Research and Development Inc. and Hupacasath First Nation
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. _limnotek_tselr_2006:
+
+Trophic status of Elsie Lake Reservoir
+``````````````````````````````````````
+
+    Perrin, C.J. and S. Harris. 2006. Trophic status of Elsie Lake Reservoir, 2005. Report prepared by Limnotek Research and Development Inc. and Hupacasath First Nation for Bridge Coastal Restoration Program. Accessed December 23, 2022, from https://a100.gov.bc.ca/pub/acat/documents/r40914/05.As.01_Elsie_1389281641970_9275571770.pdf.
+
+    **Short name:** limnotek_tselr_2006
+
+|ds_searchtbl_return|
+
 MPE Engineering Ltd.
 ++++++++++++++++++++
 
@@ -1844,6 +1915,20 @@ Canadian Geotechnical Journal
     Williams, D. R., Balanko, L. A., & Martin, R. L., 1983. Monitoring and performance of an earth-fill dam in central Alberta. Canadian Geotechnical Journal, 20(4), pp. 570–586. https://doi.org/10.1139/t83-068
 
     **Short name:** cgj_williams_etal_1983
+
+|ds_searchtbl_return|
+
+Personal Communications
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _pcom_sn_hc:
+
+Norris, S.
+``````````
+
+    Norris, S., Hillcrest Geographics, 2022. Personal communication.
+
+    **Short name:** pcom_sn_hc_[year]
 
 |ds_searchtbl_return|
 
