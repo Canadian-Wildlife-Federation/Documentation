@@ -1,5 +1,0 @@
-====================================
-Feature Data Source Details Download
-====================================
-
-This page provides a breakdown of the information provided in the data source details download, which can be acquired through the `Canadian Aquatic Barriers Database's web-map <https://aquaticbarriers.ca/`_.
