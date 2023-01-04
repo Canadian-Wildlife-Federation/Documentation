@@ -1,0 +1,4 @@
+.. toctree::
+
+    docs_user/web_walkthrough
+    docs_user/web_simplified_data_dictionary

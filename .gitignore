@@ -1,5 +1,1 @@
-docs/build/*
-docs/buildhtml*
 docs/source/docs_chyf*
-.venv/*
-.vscode/

@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Processing Methods &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_cwf_book.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../_static/main.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Logical Model" href="../docs_chyf/docs_chyf_logical_model.html" />
+    <link rel="prev" title="CHyF REST API Services" href="docs_tech_arch_tiles.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/cwf_logo_2.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD User Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/whats_new.html">
+   What’s new?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/cabd_overview.html">
+   CABD Overview
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_user/docs_user_web_map.html">
+   The CABD Web Mapping Tool
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_components.html">
+     Interface Components
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_search.html">
+     Searching
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_data_vis.html">
+     Visualizing Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_attributes.html">
+     Viewing Attribute Information
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_filters.html">
+     Filtering Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_download.html">
+     Downloading Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_sources.html">
+     Data Sources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_docs.html">
+     Documentation Site
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_web_map/docs_user_web_map_tutorial_contact.html">
+     Contact Us
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_user/docs_user_data_sources.html">
+   Data Sources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user/docs_user_data_sources/docs_user_data_sources_csv_download.html">
+     Feature Data Source Details Download
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/docs_user_data_catalogue.html">
+   Data Catalogue
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/docs_user_submitted_updates.html">
+   Submit Data Updates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/docs_user_engagement.html">
+   Stakeholder Engagement
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user/acknowledgements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD Technical Documents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_tech_arch_models.html">
+   Application Architecture
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_tech_arch_api.html">
+   CABD REST API Services
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docs_tech_arch_tiles.html">
+   CHyF REST API Services
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data Processing Methods
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CHyF Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_logical_model.html">
+   Logical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_data_model.html">
+   Data Model
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_tools.html">
+   Processing Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_flow_and_catch.html">
+     Flowpath Constructor and Catchment Delineator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_stream_order.html">
+     Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_chyf/docs_chyf_process.html">
+   Hydro Network Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_steps.html">
+     NHN - CHyF Conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_stream_order.html">
+     Calculating Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_chyf/docs_chyf_process/docs_chyf_process_troubleshoot.html">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs_tech/docs_tech_feature_review.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_tech/docs_tech_feature_review.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_tech/docs_tech_feature_review.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#duplicate-identification-and-tracking">
+   Duplicate identification and tracking
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-the-review-layer">
+     Generating the review layer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verifying-the-location-of-structures-using-satellite-imagery">
+     Verifying the location of structures using satellite imagery
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verifying-duplicate-feature-points-of-the-review-layer">
+     Verifying duplicate feature points of the review layer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-snap-or-not-to-snap">
+   To snap, or not to snap
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#does-the-structure-block-flow">
+     Does the structure block flow?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structures-that-block-flow-in-multiple-locations">
+     Structures that block flow in multiple locations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#last-steps">
+   Last steps
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-processing-methods">
+<span id="reviewmethods"></span><h1>Data Processing Methods<a class="headerlink" href="#data-processing-methods" title="Permalink to this headline">¶</a></h1>
+<p>The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from a number of different spatial and non-spatial datasets. This section provides an overview of the methods used to validate, de-duplicate and standardize existing spatial datasets to match the CABD data structure.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, or fishway. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.</p>
+</div>
+<div class="section" id="duplicate-identification-and-tracking">
+<h2>Duplicate identification and tracking<a class="headerlink" href="#duplicate-identification-and-tracking" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="generating-the-review-layer">
+<h3>Generating the review layer<a class="headerlink" href="#generating-the-review-layer" title="Permalink to this headline">¶</a></h3>
+<p>The first step of the process is to generate a review layer that records potential duplicate points from source datasets. The information in this review layer will then be manually reviewed and verified.</p>
+<p>The inputs for the review layer include a predefined area of interest (AOI) and a set of source datasets for the AOI - ideally, all known and publicly available source datasets. After identifying the source dataset with the highest number of feature points in the AOI, the feature points of this dataset are extracted to form the foundation of the ‘starting layer’.</p>
+<p>The starting layer is buffered to determine the most appropriate buffer distance that contains the majority of feature points from other source datasets that represent the same structures (i.e., duplicates), and disjoints those that represent different structures (i.e., non-duplicates). This buffer distance is typically around 50-100 m.</p>
+<p>Next, the ‘Join attributes by nearest’ tool in QGIS is used to join the unique ids from a second source dataset with the features of the starting layer, based on the determined tolerance. The resulting output is a new version of the review layer that contains an additional field in the attribute table which holds the unique id of each assumed duplicate from the second source dataset. This tool is run repeatedly for the remaining source datasets, using the generated output of each run as the input layer for the next join.</p>
+<p>Once all runs have completed, feature points from each source dataset that fall outside the determined tolerance, but within the AOI, are selected and the entire process is repeated with a new ‘starting layer’, beginning with the source dataset that has the most features selected.</p>
+<p>Once most source dataset features are captured, all output layers are merged to create the final version of the review layer. To facilitate the review process, a handful of fields are also added at this point to the review layer to track additional details about features, and a custom attribute form display in QGIS is created. Once this final review layer is completed, it is loaded into a PostgreSQL database with the PostGIS extension to allow for reviewers to work simultaneously to verify feature point locations and information.</p>
+</div>
+<div class="section" id="verifying-the-location-of-structures-using-satellite-imagery">
+<h3>Verifying the location of structures using satellite imagery<a class="headerlink" href="#verifying-the-location-of-structures-using-satellite-imagery" title="Permalink to this headline">¶</a></h3>
+<p>The first step to verify feature points in the review layer is to try and confirm that the feature point is in the correct location. To do this, the reviewer will examine the feature point’s position relative to the location of the corresponding structure in satellite imagery, if visible. If a structure is not visible in the satellite imagery, the reviewer will review information about the structure available from the source datasets or research the structure online to confirm the structure’s location, determine if the structure has been removed or decommissioned, and relocate the feature point if necessary.</p>
+<p>If the structure has not been decommissioned, the reviewer will then assess the location of the feature point relative to the hydrographic network. If the feature point is located more than 50 m away from the closest hydro network flowpath, and is believed to be blocking flow, the reviewer will relocate the feature point to where the structure intersects with the flowpath (see section ‘<a class="reference internal" href="#snapping"><span class="std std-ref">To snap, or not to snap</span></a>’).</p>
+<p>Unless source datasets or additional research indicate that a structure has been removed, it is assumed that all structures from the source datasets exist. Therefore, if a reviewer cannot confirm the existence or location of the structure, the feature point is left in its original location from the source dataset.</p>
+</div>
+<div class="section" id="verifying-duplicate-feature-points-of-the-review-layer">
+<h3>Verifying duplicate feature points of the review layer<a class="headerlink" href="#verifying-duplicate-feature-points-of-the-review-layer" title="Permalink to this headline">¶</a></h3>
+<p>While the semi-automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer, and to add any feature points that were missed during the join process.</p>
+<p>This is done by cross referencing the unique ids present in the ‘Duplicates’ tab (Fig. 1) of the review layer’s attribute form with the corresponding ids from source dataset features (Fig. 2) that are located nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, the feature is investigated further (e.g., checking if structure names match, examining the satellite imagery for an additional structure, etc.) to determine if it corresponds to the same structure. If the missing feature is determined to be a duplicate, the unique id is manually added to the corresponding datasource field in the ‘Duplicates’ tab. If the feature is not a duplicate, a new feature point is manually added to the review layer, inputting the source dataset name and id from the original source dataset.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/duplicates.png"><img alt="../_images/duplicates.png" src="../_images/duplicates.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text">Figure 1. The review layer attributes form showing the original data source and data source id of a feature point (data_source_text and data_source_id), and the unique ids of feature points (recorded in the ‘Duplicates’ tab) that were identified as duplicates of this structure from other source datasets.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/uniqueids.png"><img alt="../_images/uniqueids.png" src="../_images/uniqueids.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text">Figure 2. Example of unique ids of source dataset feature points.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Occasionally, the review layer may include several distinct feature points that appear to correspond to a single structure on the ground. This typically results from differing geographic accuracy of point locations in source datasets. In these cases, the attributes of each source dataset feature point in the location are compared to determine if there should be one feature point at this location, or multiple feature points. If there should only be a single feature point, the unique ids from each source dataset for that point are added to the appropriate data source fields in the ‘Duplicates’ tab of a single feature point, and all other duplicate feature points are removed.</p>
+</div>
+</div>
+<div class="section" id="to-snap-or-not-to-snap">
+<span id="snapping"></span><h2>To snap, or not to snap<a class="headerlink" href="#to-snap-or-not-to-snap" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="does-the-structure-block-flow">
+<h3>Does the structure block flow?<a class="headerlink" href="#does-the-structure-block-flow" title="Permalink to this headline">¶</a></h3>
+<p>Since not all feature points representing a dam or other structure act as a potential longitudinal barrier to flow, a boolean field is added to the review layer to indicate if a feature point should or should not be snapped to the hydrographic network layer and therefore used for network analysis. This field is called ‘use_analysis’, or ‘Use for analysis?’ in the attribute form (Fig. 1).</p>
+<p>When reviewing a feature point, the reviewer assesses its location relative to the flowpath (i.e., a stream or river) or waterbody (i.e., lake or double line river) and examines the information provided in the attribute table. If the attribute information available for the feature is limited, the reviewer may need to research the structure further to determine if it is a longitudinal barrier.</p>
+<p>If a feature is identified as a barrier blocking upstream and downstream flow, the reviewer would set the ‘use_analysis’ field value for the feature point to ‘true’. Once feature review is complete, all features with a value of ‘true’ in the ‘use_analysis’ field will be snapped to a hydro network flowpath using a specified buffer distance - typically 150 m. If hydro networks are not yet available for the area, these features can be re-snapped in the future when hydro networks are available.</p>
+<p>If a feature is identified as an auxiliary structure (e.g., saddle dam, dyke, canal wall, etc.,), it is considered a lateral barrier (i.e., not blocking upstream and downstream flow). In this case, the reviewer would set the ‘use_analysis’ field value for the feature point to ‘false’. All features with a value of ‘false’ in the ‘use_analysis’ field would not be snapped to the hydro network and thus omitted from future geospatial analysis.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/useanalysis.png"><img alt="../_images/useanalysis.png" src="../_images/useanalysis.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text">Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue - dyke that is acting as a lateral barrier, red - embankment dam acting as a longitudinal barrier, green - duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Fishway structures are treated differently than barrier structures as their purpose is to facilitate fish passage past structures like dams, culverts or waterfalls. Considering that fishway structures do not act as barriers to fish passage, these features are always assigned a ‘use_analysis’ value of ‘false’, and flagged as a fishway by setting the ‘fishway_yn’ field value to ‘true’. If the feature point identified as a fishway corresponds to an existing record from the CANFISHPASS database, the unique id from CANFISHPASS is also recorded.</p>
+</div>
+<div class="section" id="structures-that-block-flow-in-multiple-locations">
+<h3>Structures that block flow in multiple locations<a class="headerlink" href="#structures-that-block-flow-in-multiple-locations" title="Permalink to this headline">¶</a></h3>
+<p>Occasionally, a single feature will be blocking flow at multiple locations (fig. 4). In a case like this, a single feature point is not sufficient and a multipoint feature would be required to place a point at each location where flow is blocked by the structure.</p>
+<p>The CABD does not currently support multipoint features, so the ‘multipoint_yn’ field will be set to ‘true’ by the reviewer if the structure should be represented as a multipoint in the future. These structures will be represented as a single point in the existing version of the CABD, typically placed along a primary flowpath.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/multidamb.png"><img alt="../_images/multidamb.png" src="../_images/multidamb.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text">Figure 4. An embankment structure that is blocking flow at two separate locations. A multipoint feature is required.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="last-steps">
+<h2>Last steps<a class="headerlink" href="#last-steps" title="Permalink to this headline">¶</a></h2>
+<p>Once the review process is complete, and all feature points in the review layer are verified, attributes from source datasets can be mapped to the feature points in this final review layer to match the CABD data structure.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="docs_tech_arch_tiles.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">CHyF REST API Services</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../docs_chyf/docs_chyf_logical_model.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Logical Model</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+  </body>
+</html>

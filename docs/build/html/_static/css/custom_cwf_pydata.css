@@ -1,0 +1,31 @@
+/* Top navigation bar colour*/
+/*.navbar-light {
+    background: #0a4f58 !important;
+}
+
+/* Top navigation bar text colour*/
+.navbar-light .navbar-nav li a.nav-link {
+    color: white;
+}
+
+/*Navigation icon colour*/
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
+
+/*Navigation panel left background colour*/
+.navbar-light .navbar-nav li a.nav-link {
+    color: #0a4f58 !important;
+}
+H1 {
+    color: #0a4f58
+}
+
+body {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.prev-next-area a p.prev-next-title p{
+    content: none,
+}

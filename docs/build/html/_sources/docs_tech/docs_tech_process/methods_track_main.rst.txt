@@ -1,0 +1,11 @@
+.. toctree::
+    :maxdepth: 2
+    :caption: Spatial Datasets
+
+    methods_track_spatial
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Non-spatial Datasets
+
+    methods_track_nonspatial

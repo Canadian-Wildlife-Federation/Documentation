@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature Review Process &#8212; Canadian Aquatic Barriers Database 0.1 documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../_static/main.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Logical Model" href="../../docs_chyf/docs_chyf_logical_model.html" />
+    <link rel="prev" title="Barrier Data Processing" href="../docs_tech_process.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/cwf_logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD User Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_user/docs_user_web_map.html">
+   Web Mapping Tool
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial.html">
+     Tutorials
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_search.html">
+       Searching
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_filter.html">
+       Filtering
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../docs_user/docs_user_web_map/docs_user_web_map_tutorial/docs_user_web_map_tutorial_download.html">
+       Downloading
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_user/docs_user_data_sources.html">
+   Data Sources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_user/docs_user_data_sources/docs_user_data_sources_csv_download.html">
+     Feature Data Source Details Download
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_user/docs_user_data_catalogue.html">
+   Data Catalogue
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_user/docs_user_submitted_updates.html">
+   Submit Data Updates
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_user/docs_user_engagement.html">
+   Stakeholder Engagement
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_user/docs_user_engagement/docs_user_engagement_use_cases.html">
+     Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD Technical Documents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_tech_arch.html">
+   Application Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech_arch/docs_tech_arch_models.html">
+     Features and Database Models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech_arch/docs_tech_arch_api.html">
+     REST Services (API Endpoints)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech_arch/docs_tech_arch_tiles.html">
+     CHyF REST Services
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_tech_arch/docs_tech_arch_data_dict.html">
+     Data Dictionary
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../docs_tech_process.html">
+   Barrier Data Processing
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Feature Review Process
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CHyF Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_logical_model.html">
+   Logical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_data_model.html">
+   Data Model
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_tools.html">
+   Processing Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_flow_and_catch.html">
+     Flowpath Constructor and Catchment Delineator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_stream_order.html">
+     Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_process.html">
+   Hydro Network Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_steps.html">
+     NHN - CHyF Conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_stream_order.html">
+     Calculating Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_troubleshoot.html">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <p></p>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs_tech/docs_tech_process/docs_tech_process_dams.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/Canadian-Wildlife-Federation"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_tech/docs_tech_process/docs_tech_process_dams.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_tech/docs_tech_process/docs_tech_process_dams.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Document Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reviewing-and-adding-features">
+   Reviewing and Adding Features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#find-any-duplicate-features-from-other-datasets">
+     Find Any Duplicate Features From Other Datasets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identify-if-features-should-be-used-for-analysis">
+     Identify if Features Should Be Used for Analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#single-point-and-multi-point-features">
+       Single Point and Multi-point Features
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#determine-if-a-feature-is-visible">
+     Determine if a Feature Is Visible
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finishing-a-work-unit-or-province-territory">
+   Finishing a Work Unit or Province/Territory
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-work-unit-is-complete">
+     A Work Unit Is Complete
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-entire-province-territory-is-complete">
+     An Entire Province/Territory Is Complete
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#appendix-a-troubleshooting-and-tips">
+   Appendix A: Troubleshooting and Tips
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#appendix-b-reviewer-classification-and-reviewer-comments">
+   Appendix B: Reviewer_Classification and Reviewer_Comments
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="feature-review-process">
+<h1>Feature Review Process<a class="headerlink" href="#feature-review-process" title="Permalink to this headline">¶</a></h1>
+<p>Reviewing existing datasets is an important step in preparing data for the Canadian Aquatic Barriers Database (CABD). This document will walk you through how to examine these datasets and identify and record duplicate features between datasets to be loaded into the CABD.</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Go to the feature review folder on the CWF shared drive: J:Conservation ProgramGISFreshwatercabdfeature_review.</p></li>
+<li><p>Open the qgis_projects folder, select the folder for the province or territory you are reviewing, and open the QGIS project file (.qgz) file saved there – this will be named something like “qc_dam_review” or “qc_waterfall_review”.</p></li>
+<li><p>Once the project loads, you’ll want to double check a few things before you get started:</p>
+<ol class="loweralpha simple">
+<li><p>Go to <strong>View &gt; Panels</strong> and ensure the <strong>Identify Results</strong> panel is enabled. Change the mode at the bottom of this panel to <strong>Layer Selection</strong>.</p></li>
+<li><p>Go to <strong>Project &gt; Properties</strong> and click the <strong>Data Sources</strong> tab. Ensure that the satellite imagery layers (e.g., Bing VirtualEarth) and the NHN WMS layer are not identifiable, and that all the source datasets and the review layer (e.g., featurecopy.dams) are identifiable.</p></li>
+<li><p>Ensure the NHN work units layer (e.g., qc_workunits) is toggled on in the layers panel, and that it is not filtered. You can also set this to be not identifiable in the <strong>Data Sources</strong> tab noted in the previous step.</p></li>
+<li><p>Go to <strong>Settings &gt; Options</strong> and click the <strong>Map Tools</strong> tab. Change your “search radius for identifying features and displaying map tips” to at least 5 mm – this will make it easier to query features from the map for this exercise.</p></li>
+<li><p>Double check the symbology for all the source dataset layers to ensure features are visible and you can easily distinguish between the datasets.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="reviewing-and-adding-features">
+<h2>Reviewing and Adding Features<a class="headerlink" href="#reviewing-and-adding-features" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>We need to do three main things when reviewing source datasets:</p>
+<ol class="arabic simple">
+<li><p>Find any duplicate features from other datasets</p></li>
+<li><p>Identify if a feature should be used for analysis</p></li>
+<li><p>Determine if the feature is visible</p></li>
+</ol>
+<p>For most features, it should be straightforward to evaluate all three items when you initially review the area.</p>
+<p>The review layer you’re working with has been created ahead of time and captures most duplicate features and their IDs based on joining attributes by nearest features. When you open the project, this layer will be symbolized based on the use_analysis field – the features symbolized with a question mark are the ones that haven’t been checked yet.</p>
+<div class="section" id="find-any-duplicate-features-from-other-datasets">
+<h3>Find Any Duplicate Features From Other Datasets<a class="headerlink" href="#find-any-duplicate-features-from-other-datasets" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Ensure all the source datasets are toggled on, select the <strong>Identify</strong> tool, and click the area you want to query. If there are multiple features at that location, a window will pop up beside your cursor – click <strong>Identify All</strong> to bring up a list of all the features in the <strong>Identify</strong> panel.</p></li>
+<li><p>The display name for all layers should be set to their unique ID by default, so if you expand each layer using the accordion icon, you will see all the unique IDs for features at that location:</p></li>
+<li><p>Referring to the <strong>Identify Results</strong> panel for unique IDs, check the data_source_text and data_source_id fields for the point in the review layer, as well as any fields populated in the <strong>Duplicates</strong> tab of the review layer. Note that the visibility of the <strong>Duplicates</strong> tab is controlled by the duplicates field checkbox – when it is toggled, the <strong>Duplicates</strong> tab will be shown.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/uniqueids.png"><img alt="../../_images/uniqueids.png" class="align-center" src="../../_images/uniqueids.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>If all the unique IDs are accounted for:</p>
+<ul class="simple">
+<li><p>Expand the individual entries in the <strong>Identify Results</strong> panel and double check that any names available in the source datasets match. If they do match, you’re done this step. If they don’t match, check the imagery and the attributes of other nearby points to see if this feature needs two separate points to represent it.</p></li>
+</ul>
+</li>
+<li><p>If you’re missing some unique IDs:</p>
+<ul class="simple">
+<li><p>Refer to the <strong>Identify Results</strong> panel, check the names in the source datasets, and add them in the appropriate field in the <strong>Duplicates</strong> tab of your review layer.</p></li>
+</ul>
+</li>
+<li><p>If there is no existing feature in the review layer:</p>
+<ul class="simple">
+<li><p>Add a new point feature to the review layer and fill in the appropriate fields. You can use any of the unique IDs for the data_source_text and data_source fields, then add the remaining unique IDs in the <strong>Duplicates</strong> tab of the review layer.</p></li>
+</ul>
+</li>
+<li><p>To ensure you get the correct unique for a dataset, please right click the unique id field in the <strong>Identify</strong> panel and click ‘copy attribute value’.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/duplicates.png"><img alt="../../_images/duplicates.png" class="align-center" src="../../_images/duplicates.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="8">
+<li><p>In some cases, the review layer may include several distinct points close to each other that refer to the same feature. In this case, check the attributes of the source datasets at that location. If the source datasets all appear to refer to a single feature (e.g., a large dam structure), remove any extra points from the review layer until you have a single point, then add all the unique IDs for that feature to the single point.</p></li>
+</ol>
+</div>
+<div class="section" id="identify-if-features-should-be-used-for-analysis">
+<h3>Identify if Features Should Be Used for Analysis<a class="headerlink" href="#identify-if-features-should-be-used-for-analysis" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Some attributes from source datasets may also indicate if a feature should be used for analysis. For example, in most cases, we wouldn’t use features marked as “embankments”, “canals”, or “dykes” for analysis.</p></li>
+<li><p>Fishway features will also not be used for analysis and should be stored as separate features from dams. Leaving the <strong>Use in analysis?</strong> box blank, just add the data source and data source id, and check the <strong>Is this a fishway?</strong> box on the <strong>Fishways</strong> tab. If there’s a corresponding record in the CANFISHPASS database, add the unique ID as well. Finally, make sure your point isn’t snapped to a flowpath on the hydro network, and that it reflects the real-world location of the fishway.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/useanalysis.png"><img alt="../../_images/useanalysis.png" class="align-center" src="../../_images/useanalysis.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p>If a feature should be used for analysis:</p>
+<ol class="arabic simple">
+<li><p>Check the <strong>Use in analysis?</strong> box</p></li>
+<li><p>Ensure your point in the review layer is relatively close to a flowpath</p></li>
+<li><p>If there are multiple flowpaths near a structure, move your point to coincide with the flowpath you want it to be snapped to</p></li>
+</ol>
+</li>
+<li><p>If a structure shouldn’t be used for analysis:</p>
+<ol class="arabic simple">
+<li><p>Leave the <strong>Use in analysis?</strong> box blank</p></li>
+<li><p>Ensure your point in the review layer isn’t snapped to a flowpath on the hydro network (it’s ok for them to be snapped to waterbody polygons)</p></li>
+</ol>
+</li>
+</ul>
+<div class="section" id="single-point-and-multi-point-features">
+<h4>Single Point and Multi-point Features<a class="headerlink" href="#single-point-and-multi-point-features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>In some cases, you may want to represent a dam as a multi-point feature. Our database structure currently does not support multi-point features, so in this case, just check the “Multipoint in future?” checkbox in the review layer.</p></li>
+<li><p>If you have several distinct structures that each block flow through an area, you will generally want to store these as single points. For each structure, store them as a single point with the unique ids from any corresponding source datasets. If there are no corresponding source datasets, simply mark the source as ‘cwf’ and add any information you find about that structure in the freeform reviewer_comments field.</p></li>
+<li><p>If the dam has a name, you should do a quick search to see if you can find any additional information or drawings describing the structures that make up the dam complex. You should also check the source dataset points surrounding the structures for names of these structures and to identify which points represent each structure.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="determine-if-a-feature-is-visible">
+<h3>Determine if a Feature Is Visible<a class="headerlink" href="#determine-if-a-feature-is-visible" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Generally, dam structures are characterized by being perpendicular to a watercourse/waterbody and having calm water on one side and disturbed water on the other side:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/presence.png"><img alt="../../_images/presence.png" class="align-center" src="../../_images/presence.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p>For our purposes, we assume that all feature from source datasets exist and are active (i.e., not decommissioned) unless research or attributes from our source data tell us otherwise.</p></li>
+<li><p>If you have a clear view of the hydro network from imagery, but you can’t see any structures near a feature’s location, set the <strong>reviewer_classification</strong> field in the <strong>Comments</strong> tab to “No structures present”.</p></li>
+<li><p>If the imagery quality is poor or the feature location is obscured, set the <strong>reviewer_classification</strong> field in the <strong>Comments</strong> tab to “Obscured in imagery”.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="finishing-a-work-unit-or-province-territory">
+<h2>Finishing a Work Unit or Province/Territory<a class="headerlink" href="#finishing-a-work-unit-or-province-territory" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>Since our data is saved in Postgres, multiple people can work on the same province/territory at the same time. As you go through feature review, you’ll want to track your progress and coordinate with anyone else reviewing features in the same geographic area to avoid duplicating work.</p>
+<div class="section" id="a-work-unit-is-complete">
+<h3>A Work Unit Is Complete<a class="headerlink" href="#a-work-unit-is-complete" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Select the work unit, toggle on editing, and click the <strong>Modify attributes</strong> button:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/modatts.png"><img alt="../../_images/modatts.png" class="align-center" src="../../_images/modatts.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p>On the new form that pops up, check the <strong>Complete</strong> box for the appropriate feature type (e.g., dams_complete) and save your edits. The default symbology for work units will shade incomplete areas in light yellow, and complete areas with just a black border.</p></li>
+</ul>
+</div>
+<div class="section" id="an-entire-province-territory-is-complete">
+<h3>An Entire Province/Territory Is Complete<a class="headerlink" href="#an-entire-province-territory-is-complete" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Do a quick once-over of the area to confirm all points have been accounted for. At this point, you should also double-check for any features with the same data_source_id (the other duplicates fields are evaluated as you input data).</p>
+<ul>
+<li><p>You can do this by selecting by expression on the review layer: <code class="docutils literal notranslate"><span class="pre">count</span> <span class="pre">(1,</span> <span class="pre">“data_source_id”)</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>.</p></li>
+<li><p>Then, open the attribute table, change the display to ‘Selected features’ and sort by data_source to check for any duplicates within individual data sources. You can ignore duplicate data source ids that come from different datasets (e.g., canvec and nhn).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="appendix-a-troubleshooting-and-tips">
+<h2>Appendix A: Troubleshooting and Tips<a class="headerlink" href="#appendix-a-troubleshooting-and-tips" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>When reviewing a dam facility with many structures, you may find it easiest to start by identifying the main structure by looking at the NHN flowpaths or any details about the facility found online.</p></li>
+<li><p>For multi-dam complexes, use your best judgement to determine which source data points are closest to each dam. You should also check the names and group all the points with common names together for a feature – e.g., Alvin Main Dam vs Alvin Freeboard Dam:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/multidam.png"><img alt="../../_images/multidam.png" class="align-center" src="../../_images/multidam.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../../_images/multidamb.png"><img alt="../../_images/multidamb.png" class="align-center" src="../../_images/multidamb.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p>If there are two points for the same feature from one dataset, only include one point in your review layer, ideally the one which has the most attribute information about that feature.</p></li>
+<li><p>For long dam structures where there are multiple points from source datasets, choose the side that’s furthest downstream (based on the NHN flowpaths) to include in your review layer – you should not include both.</p></li>
+</ul>
+</div>
+<div class="section" id="appendix-b-reviewer-classification-and-reviewer-comments">
+<h2>Appendix B: Reviewer_Classification and Reviewer_Comments<a class="headerlink" href="#appendix-b-reviewer-classification-and-reviewer-comments" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<p>The reviewer_classification field lets our team quickly categorize uncertainty about features, so we can verify their existence with local groups in the future.</p>
+<p>The reviewer_comments field is where you’ll add any other comments you have about a feature – e.g., “See link for dam dimensions” or “Part of Churchill Falls generating station?”</p>
+<p>You can select multiple options for a feature in the reviewer_classification field.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Value</p></th>
+<th class="head"><p>Use case</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bridge?</p></td>
+<td><p>The structure may be a bridge instead of a dam. Bridges are generally built over larger areas of a river/lake.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Check location on network</p></td>
+<td><p>The NHN hydro network has a gap in this area (e.g., disconnected flowpaths on either side of a structure) or behaves strangely near the dam (e.g., intermittent flowpaths around a pond/lake).</p></td>
+</tr>
+<tr class="row-even"><td><p>Infrastructure</p></td>
+<td><p>The structure is a canal, dyke, embankment, or other infrastructure feature part of a dam complex. Infrastructure features will typically not be used for analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p>No structures present</p></td>
+<td><p>The imagery quality is high, and you have a clear view of the hydro network/area, but there are no visible structures.</p></td>
+</tr>
+<tr class="row-even"><td><p>Obscured in imagery</p></td>
+<td><p>The imagery quality is poor, or dense tree/vegetation cover is present where the structure should be.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Relocated</p></td>
+<td><p>Based on imagery or additional documentation about a feature, you have moved the structure point a significant distance from where it was placed in the original dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p>Road crossing?</p></td>
+<td><p>The structure may be a road crossing (e.g., a culvert) instead of a dam.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../docs_tech_process.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Barrier Data Processing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../docs_chyf/docs_chyf_logical_model.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Logical Model</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+  </body>
+</html>
