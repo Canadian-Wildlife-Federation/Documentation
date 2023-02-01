@@ -7,35 +7,34 @@
 
 .. _cabd-rest-services:
 
-======================
 CABD REST API Services
-======================
+######################
 
 .. _api-overview:
 
 Overview
---------
+********
 
 -----
 
 .. _api-projection:
 
 Projection
-~~~~~~~~~~
+==========
 
 All coordinates are returned in latitude/longitude (EPSG:4617).
 
 .. _api-max-features:
 
 Max Features
-~~~~~~~~~~~~
+============
 
 For all the feature API end points below, the application returns a maximum of 55,000 features. This is configurable and may be modified if required.
 
 .. _api-specification:
 
 API Specification
-~~~~~~~~~~~~~~~~~
+=================
 
 The latest Open API v3 specification can be found on the server:
 
@@ -46,7 +45,7 @@ https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs (JSON)
 .. _api-endpoints:
 
 API End Points
---------------
+**************
 
 -----
 
@@ -64,7 +63,7 @@ The base API server for the CABD end points is: ``https://cabd-web.azurewebsites
 .. _feature-type-endpoints:
 
 Feature Type Metadata End Points
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+================================
 
 The output format of all Feature Type End points is ``JSON``.
 
@@ -89,7 +88,7 @@ Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``
 .. _feature-endpoints:
 
 Feature End Points
-~~~~~~~~~~~~~~~~~~
+==================
 
 |ftid|
 
@@ -133,7 +132,7 @@ Feature End Points
     Returns a vector tile of all features for the given type.
 
 Feature End Point Examples
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Return all dam features in the NHN watershed 02OE000:
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=nhn_watershed_id:eq:02OE000``
@@ -156,7 +155,7 @@ Return all dam features with a use code of 2 (Hydroelectricity) and a pool and w
 .. _feature-endpoints-filter:
 
 Filter
-~~~~~~
+------
 
 Provides a basic option for filtering features based on the feature attributes.
 
@@ -303,7 +302,7 @@ This request will return all dam features with a passability status code of 1 (B
 
 
 Name Filter
-~~~~~~~~~~~
+-----------
 
 Provides an option for filtering features based on all the name attributes associated with the feature types. The “name” attributes are different for each feature type and specified by the database metadata. Generally, name attributes will just include the English and French names for a feature, but may include other fields as well.
 
@@ -325,7 +324,7 @@ Name Filter request format:
 This will return all dam features within the bounding box [(0 0), (1 1)] and an english or french name like “holden”.
 
 Examples
-++++++++
+^^^^^^^^
 
 Return all dam features with an English or French name like “holden” (case insensitive):
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?&namefilter=like:holden``
@@ -342,12 +341,12 @@ Return all fishway features with a structure name like “grand falls” (case i
 .. _feature-endpoints-format:
 
 Format
-~~~~~~
+------
 
 The default output format is GeoJSON, but additional formats can be returned by supplying the format query parameter. The format parameter can be combined with the attribute filters and name filters described above.
 
 Examples
-++++++++
+^^^^^^^^
     
 Return all dam features in the NHN watershed 08GABX1 in geopackage format:
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=nhn_watershed_id:eq:08GABX1&format=geopackage``
@@ -356,7 +355,7 @@ Return all dam features with a use code of 2 (Hydroelectricity) in geopackage fo
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2&format=geopackage``
 
 Supported Formats
-+++++++++++++++++
+^^^^^^^^^^^^^^^^^
 
 The following formats are supported for feature endpoints that return a collection of features.
 
@@ -368,15 +367,18 @@ The following formats are supported for feature endpoints that return a collecti
 
 The single feature endpoints only return GeoJSON output.
 
+All exports (except csv) contain metadata that includes the feature type version number, download datetime, and license information. For GeoJSON, this information is included in the feature collection metadata. For shapefile, an additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
+
 .. note::
-    |formatnote| 
-    
-    While the ``/features/`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the |typenote| is specified.
+
+   The best way to download data for multiple feature types using the API is to use ``/features/<type>``
+   
+   While the ``/features/`` endpoint will return features from multiple feature types, the list of attributes returned are very limited compared to the list of attributes returned when the ``<type>`` is specified.
 
 .. _feature-endpoints-locale:
 
 Locale
-~~~~~~
+------
 
 Results are supported in both English and French. The language returned is determined by the ``Accept-Language`` header. Default is English.
 
@@ -384,7 +386,7 @@ Results are supported in both English and French. The language returned is deter
 .. _feature-endpoints-max-features:
 
 Maximum Features
-~~~~~~~~~~~~~~~~
+----------------
 
 A maximum of 55,000 features will be returned.  If a feature API request would result in more than 55,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.
 
@@ -393,12 +395,12 @@ The value ``55000`` is an application parameter and can be modified if required 
 .. _feature-endpoints-feature-totals:
 
 Feature API Result Totals
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 The Feature API response includes a Content-Range header that summarizes the total number of features that match the filters vs the total number of features returned. This can be used along with the max-results parameter to access the number of features that match a filter without having to load all features.
 
 Example
-+++++++
+^^^^^^^
 
 ``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``
     
@@ -415,9 +417,7 @@ This will return an empty feature collection, but the response headers will incl
 .. _feature-datasource-endpoint:
 
 Feature Data Source End Point
------------------------------
-
------
+=============================
 
 |ftdsid|
 
@@ -428,28 +428,46 @@ Feature Data Source End Point
 .. _feature-datasource-endpoint-format:
 
 Format
-~~~~~~
+------
 
 The default output format of this end point is CSV.
 
 JSON format is also supported by providing the ``format=json`` query parameter: |ftdsidjson|
 
+.. _submit-feature-update-end-point:
+
+Feature Update End Point
+========================
+
+This end point allows users to submit feature update requests. These requests are logged in the database and reviewed by CABD administrators before updates are applied to the feature.
+
+
+* URL: ``/features/<feature-id>``
+* METHOD: PUT
+* CONTENT-TYPE: application-json
+* BODY: json string containing feature update information
+
+  * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
+  
+  * name, email, and description are required. Organization and datasource are optional
+
+
 .. _feature-vector-tile-service:
 
 Vector Tile Service
--------------------
+===================
 
 -----
 
 The vector tile service creates vector tiles for the barrier feature types.
 
 Format
-~~~~~~
+------
 
 The only format supported for the vector tile services is mvt (mapbox vector tile).
 
 End Point
-~~~~~~~~~
+---------
 
 ``https://cabd-web.azurewebsites.net/cabd-api/tiles/{type}/{z}/{x}/{y}.{format}``
 
