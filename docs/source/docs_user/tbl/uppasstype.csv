@@ -7,5 +7,5 @@ Code,Name,Description
 6,Vertical slot ,"A variation of pool and weir fishways where weirs are replaced by walls with vertical slots in which fish can pass through, allowing fish to swim at their desired depth."
 7,Other ,A fish passage measure exists but is different than the types defined in this table.
 8,No structure ,No fish passage measure is present.
-9,Unknown ,Fish passage measures exists but no other information is known.
+99,Unknown ,Fish passage measures exists but no other information is known.
 n/a,NULL,No fish passage information is known.

@@ -8,6 +8,6 @@ Code,Name,Description
 7,Fisheries,Regulates the flow of water for the purposes of aquaculture.
 8,Pollution control,Protects the water resource by trapping polluted water in reservoirs or ponds.
 9,Invasive species control,Prevents the spread of invasive species upstream or to environmentally sensitive areas within the waterway.
-10,Other,The intended use of the dam cannot be defined by the use categories defined in this table.
-11,Unknown,The intended use of the dam is unknown.
-12,Wildlife Conservation,"Regulates the flow of water for the purposes of wildlife conservation (e.g., waterfowl habitat)."
+10,Wildlife Conservation,"Regulates the flow of water for the purposes of wildlife conservation (e.g., waterfowl habitat)."
+11,Other,The intended use of the dam cannot be defined by the use categories defined in this table.
+99,Unknown,The intended use of the dam is unknown.

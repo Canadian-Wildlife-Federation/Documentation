@@ -3,5 +3,5 @@ Code,Name,Description
 2,Francis  ,A reaction (propeller) turbine commonly used in medium- or large-scale hydroelectric plants for head heights as low as 2 m and as high as 300 m. 
 3,Kaplan  ,A reaction (propeller) turbine with axial-flow and adjustable blades. Most useful for use in dams with large volumes of flow. 
 4,Pelton ,An impulse turbine commonly used in facilities with head height greater than 300 m.
-5,Unknown  ,The turbine type is unknown.
-6,Other,"Turbine type is known, but different than those defined in this table."
+5,Other,"Turbine type is known, but different than those defined in this table."
+99,Unknown  ,The turbine type is unknown.

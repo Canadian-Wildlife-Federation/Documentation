@@ -10,6 +10,6 @@ Code,Name,Description
 9,Powerhouse,"A hydro power facility structure that houses generators and turbines used for generating hydropower."
 10,Lateral Barrier,"A structure that is used to regulate or hold back water. Some lateral barrier structures, such as dikes and embankments, run parallel to a body of water and are used to hold back flood waters. Other lateral barriers, like canals, are used to convey water for a specific purpose such as irrigation or navigation."
 11,Lock,"A structure, consisting of gates, used on navigable waterways to regulate (raise/lower) the water depth on a stretch of river or stream so vessels may pass."
-12,Aboiteau/Tide Gate,"A gate structure used in coastal areas (e.g., marshland), commonly built into an earthen dike or embankment, that permits floodwater to drain during low tide but prevents the overflow of water during high tide."
+12,Aboiteau/ Tide Gate,"A gate structure used in coastal areas (e.g., marshland), commonly built into an earthen dike or embankment, that permits floodwater to drain during low tide but prevents the overflow of water during high tide."
 13,Other,"The type of structure is known, but is different than those defined in this table (e.g., intake structure, lake control structure, etc.)."
 99,Unknown,"The type of structure is unknown."

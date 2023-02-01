@@ -1,8 +1,9 @@
 Code,Name,Description
-1,Charity/Non-profit ,Privately held entities that do not provide financial benefits to their members or organizations; independent from any government. 
-2,Federal ,"National government organization (i.e., department, agency, crown corporation) that performs national level regulatory and administrative functions. "
-3,Municipal,"Local governing body that provides services, facilities, safety, and infrastructure for communities. "
-4,Private ,"Organization, corporation, or partnership operated for profit that is not public or controlled by one or more public corporations."
-5,Provincial/Territorial ,Regional government organization with jurisdiction over their specific regional boundaries. 
-6,Other,The ownership type of the dam cannot be defined by the categories presented in this table. 
-7,Unknown,Ownership of the dam structure is unknown.
+1,Charity/ Non-profit,Privately held entities that do not provide financial benefits to their members or organizations; independent from any government. 
+2,Federal,"National government organization (i.e., department, agency, crown corporation) that performs national level regulatory and administrative functions."
+3,Municipal,"Local governing body that provides services, facilities, safety, and infrastructure for communities."
+4,Private,"Organization, corporation, or partnership operated for profit that is not public or controlled by one or more public corporations."
+5,Provincial/ Territorial,Regional government organization with jurisdiction over their specific regional boundaries. 
+6,Other,"Ownership is known, but different than those defined in this table. This category includes private citizens."
+7,Indigenous,Self-governed Indigenous body.
+99,Unknown,Ownership of the dam structure is unknown.

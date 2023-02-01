@@ -4,4 +4,4 @@ Code,Name,Description
 3,Gated,Surplus water is regulated with a gate to prevent downstream flooding. 
 4,Other,"The spillway type of the dam structure is defined as something other than 'combined', 'free', or 'gated'."
 5,None,Structure does not have a spillway. 
-6,Unknown,Structure has a spillway but the type is not known. 
+99,Unknown,Structure has a spillway but the type is not known. 
