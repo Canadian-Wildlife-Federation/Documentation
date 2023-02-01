@@ -1,5 +1,5 @@
 ﻿Version,Release Date,Description,Changelog
-1.0,9-25-2022,"Initial release comprising complete national coverage for data layers, including:
+1.0,"September 25, 2022","Initial release comprising complete national coverage for data layers, including:
 
 - dams v1.0
 
@@ -11,4 +11,9 @@
 
 - Dams: 167 dams in BC have received updates, including the addition and removal of several structures. Passability status was updated for most of these dams to match new information received from local groups.
 
-- This change was made effective in Version 1.0 on January 4, 2023, 11:00 AM EDT. Please re-download the dams dataset if you downloaded Version 1.0 before this date.",:download:`Download <downloads/release_1.0_2022-09-25.txt>`
+- This change was made effective in Version 1.0 on January 4, 2023, 11:00 AM EST. Please re-download the dams dataset if you downloaded Version 1.0 before this date.",:download:`Download v.1.0 <downloads/release_1.0_2022-09-25.txt>`
+1.1, "February 1, 2023 11:00 AM EST","This release includes:
+
+- dams v.1.1
+
+Updated version of the dams dataset with a modified data structure to allow for more detailed categorization of structures.",:download:`Download v.1.1 <downloads/release_1.1_2023-02-01.txt>`

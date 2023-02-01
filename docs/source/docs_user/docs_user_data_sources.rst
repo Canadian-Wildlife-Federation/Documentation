@@ -83,6 +83,8 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Provincial               Alberta - Natural Resources Conservation Board                                                 Pine Coolee Water Management Project                                                                                                                           :ref:`nrcb_earp_app9401 <nrcb_earp_app9401>`                                                                                                                                                                                           
    Non-spatial Provincial               Alberta – Sustainable Resource Development                                                     Bathymetry Maps                                                                                                                                                :ref:`asrd_bathym_chin <asrd_bathym_chin>`, :ref:`asrd_bathym_forty_mile <asrd_bathym_forty_mile>`, :ref:`asrd_bathym_jensen <asrd_bathym_jensen>`, :ref:`asrd_bathym_keho <asrd_bathym_keho>`, :ref:`asrd_bathym_newell <asrd_bathym_newell>`, :ref:`asrd_bathym_mcgregor <asrd_bathym_mcgregor>`, :ref:`asrd_bathym_payne <asrd_bathym_payne>`, :ref:`asrd_bathym_st_mary <asrd_bathym_st_mary>`, :ref:`asrd_bathym_stafford <asrd_bathym_stafford>`, :ref:`asrd_bathym_travers <asrd_bathym_travers>`  
    Non-spatial Provincial               British Columbia - BC Hydro                                                                    Alouette System                                                                                                                                                :ref:`bc_hydro_alouette <bc_hydro_alouette>`
+   Non-spatial Provincial               British Columbia - BC Hydro                                                                    Hugh Keenleyside Dam                                                                                                                                           :ref:`bc_hydro_keenleyside <bc_hydro_keenleyside>`
+   Non-spatial Provincial               British Columbia - BC Hydro                                                                    Wahleach Water Use Plan: Monitoring and Physical Works Program Synthesis Report                                                                                :ref:`bc_hydro_wwup_2022 <bc_hydro_wwup_2022>`
    Non-spatial Provincial               Newfoundland and Labrador – Municipal Affairs and Environment                                  Permits to Alter a Body of Water                                                                                                                               :ref:`nl_mae_permit_alt9067 <nl_mae_permit_alt9067>`, :ref:`nl_mae_permit_alt9371 <nl_mae_permit_alt9371>`                                                                                                                                                                
    Non-spatial Provincial               Nova Scotia – Agriculture                                                                      Dykeland Sites                                                                                                                                                 :ref:`ns_dykeland_sites <ns_dykeland_sites>`                                                                                                                                                                                          
    Non-spatial Municipal                City of Calgary, Alberta                                                                       Glenmore Dam Infrastructure Improvements                                                                                                                       :ref:`ab_cal_gdii <ab_cal_gdii>`                                                                                                                                                                                                 
@@ -136,6 +138,7 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Academic Institution/NGO Shubenacadie Canal Commission                                                                  The Locks                                                                                                                                                      :ref:`scc_locks <scc_locks>`                                                                                                                                                                                                   
    Non-spatial Academic Institution/NGO South East Alberta Watershed Alliance (SEAWA)                                                  Pakowki Lake Watershed Profile                                                                                                                                 :ref:`seawa_pakowki_lake <seawa_pakowki_lake>`                                                                                                                                                                                          
    Non-spatial Consulting Reports       Advanced Construction Techniques Ltd.                                                          St. Mary Dam Spillway Replacement Project                                                                                                                      :ref:`act_st_mary_spillway <act_st_mary_spillway>`                                                                                                                                                                                        
+   Non-spatial Consulting Reports       AECOM                                                                                          Chapman Lake Water Supply Expansion Project Environmental Assessment                                                                                           :ref:`aecom_clwse_2016 <aecom_clwse_2016>`
    Non-spatial Consulting Reports       AMEC Americas Ltd.                                                                             Flood Risk Mapping Project                                                                                                                                     :ref:`amec_frmp_2013 <amec_frmp_2013>`                                                                                                                                                                                              
    Non-spatial Consulting Reports       AMEC Americas Ltd.                                                                             South Saskatchewan River Basin in Alberta: Water Supply Study                                                                                                  :ref:`amec_ssrba_wss <amec_ssrba_wss>`                                                                                                                                                                                              
    Non-spatial Consulting Reports       East Coast Aquatics Inc.                                                                       Biological Assessment for Proposed Liverpool Wind Farm                                                                                                         :ref:`eca_bio_assess <eca_bio_assess>`                                                                                                                                                                                              
@@ -145,8 +148,10 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Consulting Reports       Golder Associates Inc.                                                                         Inventory and Assessment of Dams in Newfoundland and Labrador Year Two                                                                                         :ref:`golder_inv_nl_2017 <golder_inv_nl_2017>`                                                                                                                                                                                          
    Non-spatial Consulting Reports       Limnotek Research and Development Inc. and Hupacasath First Nation                             Trophic status of Elsie Lake Reservoir                                                                                                                         :ref:`limnotek_tselr_2006 <limnotek_tselr_2006>`  
    Non-spatial Consulting Reports       MPE Engineering Ltd.                                                                           Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios                                                                                  :ref:`mpe_aep_prov_inventory <mpe_aep_prov_inventory>`                                                                                                                                                                                      
+   Non-spatial Consulting Reports       Northwest Hydraulic Consultants                                                                Mark Creek Dam - 2015 Dam Safety Review                                                                                                                        :ref:`nhc_mark_creek_2015 <nhc_mark_creek_2015>`
    Non-spatial Consulting Reports       Power Advisory LLC                                                                             Review of the Newfoundland and Labrador Electricity System                                                                                                     :ref:`pallc_nl_elec <pallc_nl_elec>`                                                                                                                                                                                               
    Non-spatial Consulting Reports       SNC-Lavalin Group Inc.                                                                         Lower Churchill Project Design Criteria                                                                                                                        :ref:`sncl_lower_churchill <sncl_lower_churchill>`                                                                                                                                                                                        
+   Non-spatial Consulting Reports       Golder Associates Inc.                                                                         2020 Annual Inspection Report: Greenhills Operations Tailings Storage Facility                                                                                 :ref:`golder_gotsf_2020 <golder_gotsf_2020>`
    Non-spatial Peer-reviewed Articles   Alberta Law Review                                                                                                                                                                                                                                            :ref:`alrs_spray_lakes <alrs_spray_lakes>`                                                                                                                                                                                            
    Non-spatial Peer-reviewed Articles   Canadian Geotechnical Journal                                                                                                                                                                                                                                 :ref:`cgj_williams_etal_1983 <cgj_williams_etal_1983>`                                                                                                                                                                                      
    Non-spatial Personal Communications  Hillcrest Geographics                                                                          Norris, S.                                                                                                                                                     :ref:`pcom_sn_hc_[year] <pcom_sn_hc>`
@@ -175,6 +180,8 @@ Canadian Geographical Names Database
 
     Natural Resources Canada, 2020. Canadian Geographical Names Database. Government of Canada Open Government Portal. Accessed July 28, 2021, from https://open.canada.ca/data/en/dataset/e27c6eba-3c5d-4051-9db2-082dc6411c2c
     
+    **Licence:** https://open.canada.ca/en/open-government-licence-canada
+
     **Geographic coverage:** National
     
     **Source ID field:** CGNDB_ID
@@ -189,6 +196,8 @@ CanVec Series – Manmade Features
 ````````````````````````````````
 
     Natural Resources Canada, 2019. Constructions and Land Use in Canada - CanVec Series - Manmade Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/fd4369a4-21fe-4070-914a-067474da0fd6
+
+    **Licence:** https://open.canada.ca/en/open-government-licence-canada
 
     **Geographic coverage:** National
 
@@ -205,6 +214,8 @@ CanVec Series - Hydrographic Features
 
     Natural Resources Canada, 2019. Lakes, Rivers and Glaciers in Canada - CanVec Series - Hydrographic Features. Government of Canada Open Government Portal. Accessed July 20, 2019, from https://open.canada.ca/data/en/dataset/9d96e8c9-22fe-4ad2-b5e8-94a6991b744b
 
+    **Licence:** https://open.canada.ca/en/open-government-licence-canada
+
     **Geographic coverage:** National
 
     **Source ID field:** feature_id
@@ -219,6 +230,8 @@ National Hydrographic Network (NHN)
 ```````````````````````````````````
 
     Natural Resources Canada, 2016. National Hydro Network - NHN - GeoBase Series. Government of Canada Open Government Portal. Accessed July 24, 2019, from https://open.canada.ca/data/en/dataset/a4b190fe-e090-4e6d-881e-b87956c07977
+
+    **Licence:** https://open.canada.ca/en/open-government-licence-canada
 
     **Geographic coverage:** National
 
@@ -238,6 +251,8 @@ Intercensal - Census Subdivision Boundary Files
 
     Statistics Canada, 2020. Intercensal - Census Subdivision Boundary Files. Accessed November 13, 2020, from https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-s-eng.cfm?year=20
 
+    **Licence:** https://www.statcan.gc.ca/en/reference/licence
+
     **Geographic coverage:** National
 
     **Source ID field:** csduid
@@ -255,6 +270,8 @@ National Inventory of Dams
 ``````````````````````````
 
     United States Army Corps of Engineers, 2022. National Inventory of Dams. United States Army. Accessed February 15, 2022, from https://nid.sec.usace.army.mil/#/downloads 
+
+    **Licence:** 
 
     **Geographic coverage:** United States
 
@@ -835,8 +852,8 @@ Prairie Farm Rehabilitation Administration (PFRA)
 
 .. _pfra_dams:
 
-PFRA Dam Inventory 
-``````````````````
+PFRA Dam Inventory [No longer accessible online]
+````````````````````````````````````````````````
 
     Prairie Farm Rehabilitation Administration, 1992. PFRA Dam Inventory. pp. 16-18. Accessed from http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf 
     
@@ -1052,6 +1069,28 @@ Alouette System
 
 |ds_searchtbl_return|
 
+.. _bc_hydro_keenleyside:
+
+Hugh Keenleyside Dam
+````````````````````
+
+    BC Hydro, no date. Hugh Keenleyside Dam. Accessed January 17, 2023, from https://www.bchydro.com/community/recreation_areas/hugh_keenleyside_dam.html
+
+    **Short name:** bc_hydro_keenleyside
+
+|ds_searchtbl_return|
+
+.. _bc_hydro_wwup_2022:
+
+Wahleach Water Use Plan: Monitoring and Physical Works Program Synthesis Report
+```````````````````````````````````````````````````````````````````````````````
+
+    BC Hydro, 2022. Wahleach Water Use Plan: Monitoring and Physical Works Program Synthesis Report [Draft]. pp. iv, 2, 22, 26, and Table 3.1. Accessed January 17, 2023, from https://www.bchydro.com/content/dam/BCHydro/customer-portal/documents/corporate/environment-sustainability/water-use-planning/lower-mainland/wahleach-water-use-plan-monitoring-synthesis-report-mar-31-2022.pdf
+
+    **Short name:** bc_hydro_wwup_2022
+
+|ds_searchtbl_return|
+
 Newfoundland and Labrador – Municipal Affairs and Environment
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -1083,7 +1122,7 @@ Nova Scotia – Agriculture
 Dykeland Sites
 ``````````````
 
-    Government of Nova Scotia, no date. Working With the Tides - Dykeland Sites. Accessed February 8, 2022, from https://novascotia.ca/dykeland-system-upgrades/dykeland-sites/
+    Government of Nova Scotia, no date. Working With the Tides - Dykeland Sites. Accessed February 8, 2022, from https://storymaps.arcgis.com/stories/e043dd1df6504f1791eb53ae1e0896ff
 
     **Short name:** ns_dykeland_sites
 
@@ -1343,8 +1382,8 @@ Newfoundland Power
 
 .. _nlp_depreciation_2019:
 
-2019 Depreciation Study – Hydro Plant Decommissioning Report
-````````````````````````````````````````````````````````````
+2019 Depreciation Study – Hydro Plant Decommissioning Report [No longer accessible online]
+``````````````````````````````````````````````````````````````````````````````````````````
 
     Newfoundland Power, 2019. 2019 Depreciation Study - Hydro Plant Decommissioning Report. pp. 4-83. Accessed from http://publicinfo.nlh.nl.ca/Newfoundland%20Power's%202022%20CBA/RFI%20Responses/CA-NP-021.pdf
 
@@ -1739,6 +1778,20 @@ St. Mary Dam Spillway Replacement Project
 
 |ds_searchtbl_return|
 
+AECOM
++++++
+
+.. _aecom_clwse_2016:
+
+Chapman Lake Water Supply Expansion Project Environmental Assessment
+````````````````````````````````````````````````````````````````````
+
+    AECOM, 2016. Chapman Lake Water Supply Expansion Project Environmental Assessment. pp. 11, 18-22, 28, 51, 83. Accessed January 17, 2022, from https://www.scrd.ca/files/File/Infrastructure/Water/AECOM%20Environmental%20Assessment%20PART%201%20agenda%20pages%204-108.pdf
+
+    **Short name:** aecom_clwse_2016
+
+|ds_searchtbl_return|
+
 AMEC Americas Ltd.
 ++++++++++++++++++
 
@@ -1780,6 +1833,17 @@ Biological Assessment for Proposed Liverpool Wind Farm
 
 Golder Associates Inc.
 ++++++++++++++++++++++
+
+.. _golder_gotsf_2020:
+
+2020 Annual Inspection Report: Greenhills Operations Tailings Storage Facility
+``````````````````````````````````````````````````````````````````````````````
+
+    Golder Associates Ltd., 2021. 2020 Annual Inspection Report: Greenhills Operations Tailings Storage Facility. Report prepared for Teck Coal Limited. pp. ii. Accessed January 17, 2023, from https://www.teck.com/media/2020-Dam-Safety-Inspection-for-Greenhills-Tailings-Storage-Facility.pdf
+
+    **Short name:** golder_gotsf_2020
+
+|ds_searchtbl_return|
 
 .. _golder_genesee_2013:
 
@@ -1853,6 +1917,20 @@ Provincial Inventory of Potential Water Storage Sites and Diversion Scenarios
 
 |ds_searchtbl_return|
 
+.. _nhc_mark_creek_2015:
+
+Northwest Hydraulic Consultants
++++++++++++++++++++++++++++++++
+
+Mark Creek Dam - 2015 Dam Safety Review
+```````````````````````````````````````
+
+    Northwest Hydraulic Consultants, 2015. Mark Creek Dam (D310002‐00) 2015 Dam Safety Review, Stage 1: Dam Safety Report. Report prepared for the City of Kimberley, BC. Accessed January 17, 2023, from https://kimberley.civicweb.net/document/36531/
+
+    **Short name:** nhc_mark_creek_2015
+
+|ds_searchtbl_return|
+
 Power Advisory LLC
 ++++++++++++++++++
 
@@ -1912,7 +1990,7 @@ Personal Communications
 .. _pcom_sn_hc:
 
 Norris, S.
-``````````
+++++++++++
 
     Norris, S., Hillcrest Geographics, 2022. Personal communication.
 
