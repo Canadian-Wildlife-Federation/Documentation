@@ -134,7 +134,7 @@ Latitude
 
 Length (m)
 ++++++++++
- **Definition:** *Dam - the length of the crest from one bank (or abutment) to the other in meters. Fishway - the length of the fishway in metres.*
+ **Definition:** *Dam - the length of the crest from one bank (or abutment) to the other in meters. Fishway - the length of the fishway in meters.*
  
  **Field name:** length_m
 
@@ -978,7 +978,7 @@ Attributes Unique to Waterfalls
 
 Fall Height (m)
 +++++++++++++++
- **Definition:** *Height of the waterfall in metres.* 
+ **Definition:** *Height of the waterfall in meters.* 
  
  **Field name:** fall_height_m
 
