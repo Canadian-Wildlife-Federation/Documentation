@@ -1,7 +1,7 @@
 .. _acknowledgements:
 
 ===================
-Acknowledgements
+Acknowledgements - testing FR
 ===================
 
 The Canadian Aquatic Barriers Database is the result of a lot of hardwork by a lot skilled, insightful, and dedicated people across Canada and North America. I would like to extend heartfelt thanks to the following groups and individuals.
