@@ -1,0 +1,3502 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Canadian Wildlife Federation
+# This file is distributed under the same license as the Canadian Aquatic
+# Barriers Database package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Canadian Aquatic Barriers Database \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-30 09:58-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es_AR\n"
+"Language-Team: es_AR <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../docs_tech/docs_tech_arch_api.rst:11
+msgid "CABD REST API Services"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:16
+#: ../../docs_tech/docs_tech_arch_tiles.rst:6
+msgid "Overview"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:23
+#: ../../docs_tech/docs_tech_arch_tiles.rst:11
+msgid "Projection"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:25
+#: ../../docs_tech/docs_tech_arch_tiles.rst:13
+msgid "All coordinates are returned in latitude/longitude (EPSG:4617)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:30
+#: ../../docs_tech/docs_tech_arch_tiles.rst:16
+msgid "Max Features"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:32
+msgid ""
+"For all the feature API end points below, the application returns a "
+"maximum of 55,000 features. This is configurable and may be modified if "
+"required."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:37
+#: ../../docs_tech/docs_tech_arch_tiles.rst:24
+msgid "API Specification"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:39
+#: ../../docs_tech/docs_tech_arch_tiles.rst:26
+msgid "The latest Open API v3 specification can be found on the server:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:41
+msgid "https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs.yaml (YAML)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:43
+msgid "https://cabd-web.azurewebsites.net/cabd-api/v3/api-docs (JSON)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:48
+msgid "API End Points"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:52
+msgid ""
+"The base API server for the CABD end points is: ``https://cabd-"
+"web.azurewebsites.net/cabd-api``."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:56
+msgid ""
+"The API requests detailed in the following sections may contain one or "
+"more parameters (enclosed in chevrons, i.e. < >, and accentuated with the"
+" colour :green:`green`). If an API request is being made using one or "
+"more of the parameters listed, the chosen parameter must be replaced with"
+" an appropriate pre-defined value."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:58
+msgid "**Example:**"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:60
+msgid "|requestex1|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:66
+msgid "Feature Type Metadata End Points"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:68
+msgid "The output format of all Feature Type End points is ``JSON``."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:70
+msgid ""
+"Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, "
+"``fishways``, ``medium``, and ``big``. See :ref:`Implemented Feature "
+"Model<implemented-feature-model>` for definitions of each feature type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:72
+msgid "``/features/types/``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:74
+msgid ""
+"Returns the list of feature types. Each feature type object includes a "
+"URL that lists the metadata for that feature type and a URL to list all "
+"features for that time."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:78
+msgid ""
+"Some types may be super types that contain data from a collection of "
+"other types (e.g., barriers is a super type that contains dam and "
+"waterfall features)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:80
+msgid "|fttype|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:82
+msgid ""
+"Returns a description of the feature type. This description includes all "
+"attributes, names, and other metadata associated with the feature type. "
+"In addition, the metadata includes display details for attributes, "
+"including the details of which attributes should be included in the "
+"“simple” display and which included in the “all” attributes display."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:84
+#: ../../docs_tech/docs_tech_arch_api.rst:176
+#: ../../docs_tech/docs_tech_arch_api.rst:320
+#: ../../docs_tech/docs_tech_arch_api.rst:403
+#: ../../docs_tech/docs_tech_arch_tiles.rst:161
+msgid "Example"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:86
+msgid ""
+"``https://cabd-web.azurewebsites.net/cabd-api/features/types/dams`` "
+"returns a ``JSON`` with the description of the ``dams`` feature type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:91
+#: ../../docs_tech/docs_tech_arch_tiles.rst:33
+msgid "Feature End Points"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:93
+msgid "|ftid|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:95
+msgid ""
+"Returns a single feature based on its ID, which is provided as "
+"``<feature-id>``. This will include all of the attributes specific to the"
+" type of feature. Therefore, the schema of this resource is variable "
+"based on the feature type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:97
+msgid "``/features``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:99
+msgid "|ftbbox|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:101
+msgid "|ftpoint|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:103
+msgid "|ftfilter|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:105
+msgid "|ftnamefilter|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:107
+msgid ""
+"Returns all features that match the given query parameters. Multiple "
+"query options can be provided in a single request, however only one of "
+"``bbox`` or ``point`` should be specified. Query options include:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:109
+msgid ""
+"``bbox`` - Only include features which intersect the provided bounding "
+"box. The bounding box coordinates should be provided in "
+"latitude/longitude: |bboxcoords|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:110
+msgid ""
+"``point`` - Returns the nearest features to the given point.  The point "
+"should be provided in latitude/longitude: |latlong|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:111
+msgid "``max-results`` - The maximum number of features to return."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:112
+msgid "``types`` - The feature types to query."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:113
+msgid ""
+"``filter`` - A filter string that filters features based on attributes. "
+"Can be provided more than once. Multiple filters are combined using "
+"logical AND. See below for more details on the filter format."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:114
+msgid ""
+"``namefilter`` - A filter string that filters features based on all name "
+"attributes (en & fr). Multiple namefilters can be provided. If multiple "
+"are provided they are combined using logical OR. See below for more "
+"details on namefilter."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:116
+msgid "|ftstype|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:118
+msgid "|ftsbbox|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:120
+msgid "|ftspoint|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:122
+msgid "|ftsfilter|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:124
+msgid ""
+"Returns a list of the features of the given type (e.g., dams, waterfalls,"
+" etc.). Query options are the same as for the ``/features`` endpoint (see"
+" above)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:126
+msgid "``/tiles/z/x/y.mvt``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:128
+msgid "Returns a vector tile of all barrier features."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:130
+msgid "|tilestype|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:132
+msgid "Returns a vector tile of all features for the given type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:135
+msgid "Feature End Point Examples"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:137
+msgid ""
+"Return all dam features in the NHN watershed 02OE000: ``https://cabd-"
+"web.azurewebsites.net/cabd-"
+"api/features/dams?filter=nhn_watershed_id:eq:02OE000``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:140
+msgid ""
+"Return all fishway features within the bounding box [(-95.16,41.66), "
+"(-74.34,56.86)]: ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/fishways?bbox=-95.16,41.66,-74.34,56.86``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:143
+msgid ""
+"Return all waterfall features in Quebec: ``https://cabd-"
+"web.azurewebsites.net/cabd-"
+"api/features/waterfalls?filter=province_territory_code:eq:qc``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:146
+msgid ""
+"Return all fishway features that are associated with a dam structure: "
+"``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/fishways?filter=dam_id:notnull:``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:149
+msgid ""
+"Return all dam features with a use code of 2 (Hydroelectricity): ``https"
+"://cabd-web.azurewebsites.net/cabd-"
+"api/features/dams?filter=use_code:eq:2``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:152
+msgid ""
+"Return all dam features with a use code of 2 (Hydroelectricity) and a "
+"pool and weir fishway (up_passage_type_code = 3): ``https://cabd-"
+"web.azurewebsites.net/cabd-"
+"api/features/dams?filter=use_code:eq:2&filter=up_passage_type_code:eq:3``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:158
+msgid "Filter"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:160
+msgid ""
+"Provides a basic option for filtering features based on the feature "
+"attributes."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:162
+msgid ""
+"If the filter attribute name provided is not valid for the feature type, "
+"then an error will be returned (HTTP status code ``400 - Bad Request``)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:163
+msgid ""
+"Works in addition to the ``bbox`` filter described above (logically ANDed"
+" with the bbox)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:164
+msgid ""
+"Multiple filters can be provided and they will be combined with logical "
+"``AND``, represented by the ``&`` symbol in API requests"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:165
+msgid ""
+"String filters are case insensitive (for ``eq``, ``neq``, ``in`` and "
+"``like`` operators)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:167
+msgid "Filter request format:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:169
+msgid "|filterreq|"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+msgid "Parameter"
+msgstr ""
+
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+#: ../../docs_tech/tbl/contacts.csv:1 ../../docs_tech/tbl/core-tables.csv:1
+#: ../../docs_tech/tbl/data-source.csv:1
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+#: ../../docs_tech/tbl/feature-source.csv:1
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+#: ../../docs_tech/tbl/filter-format.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "Description"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid "|filterattr|"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid "|fttype2|"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid "|filterop|"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid ""
+"The filter operator.  Value depends on data type.  Supported operators "
+"include: ``in``, ``notin``, ``eq``, ``neq``, ``lt``, ``lte``, ``gt``, "
+"``gte``, ``like``, ``isnull``, ``notnull``."
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid "|filtervals|"
+msgstr ""
+
+#: ../../docs_tech/tbl/filter-format.csv:1
+msgid ""
+"Values for the filter.  For ``in`` and ``notin`` operators this is a "
+"comma separated list of values. For the ``isnull`` and ``notnull`` "
+"operators this value should be empty (example: ``filter=field:isnull:``)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:178
+msgid "``/features/dams?bbox=0,0,1,1&filter=passability_status_code:in:1,2&filter=nhn_watershed_id:eq:08GABX1``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:180
+msgid ""
+"This request will return all dam features with a passability status code "
+"of 1 (Barrier) or 2 (Partial Barrier) in the NHN work unit 08GABX1 within"
+" the bounding box [(0 0), (1 1)]."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:188
+msgid ""
+"Click the arrow below to expand a **searchable list of filterable "
+"attributes** with coded and allowable values where applicable."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:190
+msgid ""
+"Please note that filters on any attributes with coded values need to "
+"specify the code instead of the associated name (i.e., a filter on the "
+"operating_status_code attribute should specify a value of 1 for "
+"abandoned/orphaned dams: ``&filter=operating_status_code:eq:1``)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:197
+msgid "Feature Type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:197
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "Attribute Name"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:197
+msgid "Filter Attribute Name"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:197
+msgid "Allowable Values"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:199
+msgid "Dams, waterfalls"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:199
+msgid "Passability status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:199
+msgid "passability_status_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:199
+msgid "1-barrier, 2-partial barrier, 3-passable, 4-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:200
+#: ../../docs_tech/docs_tech_arch_api.rst:201
+#: ../../docs_tech/docs_tech_arch_api.rst:202
+#: ../../docs_tech/docs_tech_arch_api.rst:203
+#: ../../docs_tech/docs_tech_arch_api.rst:205
+#: ../../docs_tech/docs_tech_arch_api.rst:206
+#: ../../docs_tech/docs_tech_arch_api.rst:207
+#: ../../docs_tech/docs_tech_arch_api.rst:208
+#: ../../docs_tech/docs_tech_arch_api.rst:209
+#: ../../docs_tech/docs_tech_arch_api.rst:210
+#: ../../docs_tech/docs_tech_arch_api.rst:211
+#: ../../docs_tech/docs_tech_arch_api.rst:212
+#: ../../docs_tech/docs_tech_arch_api.rst:213
+#: ../../docs_tech/docs_tech_arch_api.rst:214
+#: ../../docs_tech/docs_tech_arch_api.rst:215
+#: ../../docs_tech/docs_tech_arch_api.rst:216
+#: ../../docs_tech/docs_tech_arch_api.rst:217
+#: ../../docs_tech/docs_tech_arch_api.rst:218
+#: ../../docs_tech/docs_tech_arch_api.rst:219
+#: ../../docs_tech/docs_tech_arch_api.rst:220
+#: ../../docs_tech/docs_tech_arch_api.rst:221
+#: ../../docs_tech/docs_tech_arch_api.rst:222
+#: ../../docs_tech/docs_tech_arch_api.rst:224
+#: ../../docs_tech/docs_tech_arch_api.rst:225
+#: ../../docs_tech/docs_tech_arch_api.rst:230
+#: ../../docs_tech/docs_tech_arch_api.rst:231
+#: ../../docs_tech/docs_tech_arch_api.rst:235
+#: ../../docs_tech/docs_tech_arch_api.rst:236
+#: ../../docs_tech/docs_tech_arch_api.rst:241
+#: ../../docs_tech/docs_tech_arch_api.rst:242
+#: ../../docs_tech/docs_tech_arch_api.rst:243
+#: ../../docs_tech/docs_tech_arch_api.rst:245
+#: ../../docs_tech/docs_tech_arch_api.rst:246
+#: ../../docs_tech/docs_tech_arch_api.rst:247
+#: ../../docs_tech/docs_tech_arch_api.rst:248
+#: ../../docs_tech/docs_tech_arch_api.rst:249
+#: ../../docs_tech/docs_tech_arch_api.rst:250
+#: ../../docs_tech/docs_tech_arch_api.rst:251
+#: ../../docs_tech/docs_tech_arch_api.rst:252
+#: ../../docs_tech/docs_tech_arch_api.rst:253
+#: ../../docs_tech/docs_tech_arch_api.rst:254
+#: ../../docs_tech/docs_tech_arch_api.rst:255
+#: ../../docs_tech/docs_tech_arch_api.rst:256
+#: ../../docs_tech/docs_tech_arch_api.rst:257
+#: ../../docs_tech/docs_tech_arch_api.rst:258
+#: ../../docs_tech/docs_tech_arch_api.rst:259
+#: ../../docs_tech/docs_tech_arch_api.rst:260
+#: ../../docs_tech/docs_tech_arch_api.rst:261
+#: ../../docs_tech/docs_tech_arch_api.rst:262
+#: ../../docs_tech/docs_tech_arch_api.rst:265
+#: ../../docs_tech/docs_tech_arch_api.rst:266
+#: ../../docs_tech/docs_tech_arch_api.rst:267
+msgid "Dams"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:200
+msgid "Operating status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:200
+msgid "operating_status_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:200
+msgid ""
+"1-abandoned/orphaned, 2-active, 3-decommissioned/removed, "
+"4-retired/closed, 5-unknown, 6-remediated"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:201
+msgid "Ownership type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:201
+msgid "ownership_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:201
+msgid ""
+"1-charity/non-profit, 2-federal, 3-municipal, 4-private, "
+"5-provincial/territorial, 6-other, 7-unknown, 8-indigenous"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:202
+msgid "Dam use"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:202
+msgid "use_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:202
+msgid ""
+"1-irrigation, 2-hydroelectricity, 3-water supply, 4-flood control, "
+"5-recreation, 6-navigation, 7-fisheries, 8-pollution control, 9-invasive "
+"species control, 10-other, 11-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:203
+msgid "Dam size"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:203
+msgid "size_class_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:203
+msgid "1-small, 2-medium, 3-large, 4-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:204
+#: ../../docs_tech/docs_tech_arch_api.rst:223
+#: ../../docs_tech/docs_tech_arch_api.rst:229
+#: ../../docs_tech/docs_tech_arch_api.rst:232
+#: ../../docs_tech/docs_tech_arch_api.rst:233
+#: ../../docs_tech/docs_tech_arch_api.rst:234
+#: ../../docs_tech/docs_tech_arch_api.rst:237
+#: ../../docs_tech/docs_tech_arch_api.rst:238
+#: ../../docs_tech/docs_tech_arch_api.rst:263
+#: ../../docs_tech/docs_tech_arch_api.rst:264
+msgid "Dams, waterfalls, fishways"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:204
+msgid "Province/territory name"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:204
+msgid "province_territory_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:204
+msgid ""
+"ab-alberta, bc-british columbia, mb-manittoba, nb-new brunswick, nl-"
+"newfoundland and labrador, ns-nova scotia, nt-northwest territories, nu-"
+"nunavut, on-ontario, pe-prince edward island, qc-quebec, sk-saskatchewan,"
+" us-united states, yt-yukon"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:205
+msgid "Dam height (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:205
+msgid "height_m"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:205
+#: ../../docs_tech/docs_tech_arch_api.rst:206
+#: ../../docs_tech/docs_tech_arch_api.rst:226
+#: ../../docs_tech/docs_tech_arch_api.rst:228
+#: ../../docs_tech/docs_tech_arch_api.rst:229
+#: ../../docs_tech/docs_tech_arch_api.rst:230
+#: ../../docs_tech/docs_tech_arch_api.rst:231
+#: ../../docs_tech/docs_tech_arch_api.rst:232
+#: ../../docs_tech/docs_tech_arch_api.rst:233
+#: ../../docs_tech/docs_tech_arch_api.rst:234
+#: ../../docs_tech/docs_tech_arch_api.rst:235
+#: ../../docs_tech/docs_tech_arch_api.rst:236
+#: ../../docs_tech/docs_tech_arch_api.rst:237
+#: ../../docs_tech/docs_tech_arch_api.rst:239
+#: ../../docs_tech/docs_tech_arch_api.rst:240
+#: ../../docs_tech/docs_tech_arch_api.rst:241
+#: ../../docs_tech/docs_tech_arch_api.rst:242
+#: ../../docs_tech/docs_tech_arch_api.rst:243
+#: ../../docs_tech/docs_tech_arch_api.rst:244
+#: ../../docs_tech/docs_tech_arch_api.rst:245
+#: ../../docs_tech/docs_tech_arch_api.rst:246
+#: ../../docs_tech/docs_tech_arch_api.rst:247
+#: ../../docs_tech/docs_tech_arch_api.rst:248
+#: ../../docs_tech/docs_tech_arch_api.rst:249
+#: ../../docs_tech/docs_tech_arch_api.rst:250
+#: ../../docs_tech/docs_tech_arch_api.rst:251
+#: ../../docs_tech/docs_tech_arch_api.rst:253
+#: ../../docs_tech/docs_tech_arch_api.rst:254
+#: ../../docs_tech/docs_tech_arch_api.rst:255
+#: ../../docs_tech/docs_tech_arch_api.rst:256
+#: ../../docs_tech/docs_tech_arch_api.rst:257
+#: ../../docs_tech/docs_tech_arch_api.rst:258
+#: ../../docs_tech/docs_tech_arch_api.rst:259
+#: ../../docs_tech/docs_tech_arch_api.rst:260
+#: ../../docs_tech/docs_tech_arch_api.rst:261
+#: ../../docs_tech/docs_tech_arch_api.rst:262
+#: ../../docs_tech/docs_tech_arch_api.rst:263
+#: ../../docs_tech/docs_tech_arch_api.rst:264
+#: ../../docs_tech/docs_tech_arch_api.rst:265
+#: ../../docs_tech/docs_tech_arch_api.rst:266
+#: ../../docs_tech/docs_tech_arch_api.rst:267
+#: ../../docs_tech/docs_tech_arch_api.rst:268
+#: ../../docs_tech/docs_tech_arch_api.rst:269
+#: ../../docs_tech/docs_tech_arch_api.rst:270
+#: ../../docs_tech/docs_tech_arch_api.rst:271
+#: ../../docs_tech/docs_tech_arch_api.rst:272
+#: ../../docs_tech/docs_tech_arch_api.rst:273
+#: ../../docs_tech/docs_tech_arch_api.rst:274
+#: ../../docs_tech/docs_tech_arch_api.rst:275
+#: ../../docs_tech/docs_tech_arch_api.rst:276
+#: ../../docs_tech/docs_tech_arch_api.rst:277
+#: ../../docs_tech/docs_tech_arch_api.rst:278
+#: ../../docs_tech/docs_tech_arch_api.rst:279
+#: ../../docs_tech/docs_tech_arch_api.rst:282
+#: ../../docs_tech/docs_tech_arch_api.rst:283
+#: ../../docs_tech/docs_tech_arch_api.rst:284
+#: ../../docs_tech/docs_tech_arch_api.rst:285
+#: ../../docs_tech/docs_tech_arch_api.rst:286
+#: ../../docs_tech/docs_tech_arch_api.rst:287
+#: ../../docs_tech/docs_tech_arch_api.rst:288
+#: ../../docs_tech/docs_tech_arch_api.rst:290
+#: ../../docs_tech/docs_tech_arch_api.rst:291
+#: ../../docs_tech/docs_tech_arch_api.rst:292
+#: ../../docs_tech/docs_tech_arch_api.rst:293
+#: ../../docs_tech/docs_tech_arch_api.rst:294
+#: ../../docs_tech/docs_tech_arch_api.rst:295
+#: ../../docs_tech/docs_tech_arch_api.rst:296
+#: ../../docs_tech/docs_tech_arch_api.rst:297
+#: ../../docs_tech/docs_tech_arch_api.rst:298
+msgid "n/a"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:206
+msgid "Construction year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:206
+msgid "construction_year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:207
+msgid "Upstream passage type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:207
+msgid "up_passage_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:207
+#: ../../docs_tech/docs_tech_arch_api.rst:227
+msgid ""
+"1-denil, 2-nature-like fishway, 3-pool and weir, 4-pool and weir with "
+"hole, 5-trap and truck, 6-vertical slot, 7-other, 8-no structure, "
+"9-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:208
+msgid "Dam function"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:208
+msgid "function_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:208
+msgid ""
+"1-storage, diversion, 3-detention, 4-debris, 6-saddle, 7-hydro - closed-"
+"cycle pumped storage, 8-hydro - conventional storage, 9-hydro - open-"
+"cycle pumped storage, 10-hydro - run-of-river, 11-hydro - tidal, "
+"12-other, 13-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:209
+msgid "Use irrigation"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:209
+msgid "use_irrigation_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:209
+#: ../../docs_tech/docs_tech_arch_api.rst:210
+#: ../../docs_tech/docs_tech_arch_api.rst:211
+#: ../../docs_tech/docs_tech_arch_api.rst:212
+#: ../../docs_tech/docs_tech_arch_api.rst:213
+#: ../../docs_tech/docs_tech_arch_api.rst:214
+#: ../../docs_tech/docs_tech_arch_api.rst:215
+#: ../../docs_tech/docs_tech_arch_api.rst:216
+#: ../../docs_tech/docs_tech_arch_api.rst:217
+#: ../../docs_tech/docs_tech_arch_api.rst:218
+msgid "1-main, 2-major, 3-secondary"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:210
+msgid "Use hydroelectricity"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:210
+msgid "use_electricity_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:211
+msgid "Use water supply"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:211
+msgid "use_supply_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:212
+msgid "Use flood control"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:212
+msgid "use_floodcontrol_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:213
+msgid "Use recreation"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:213
+msgid "use_recreation_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:214
+msgid "Use navigation"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:214
+msgid "use_navigation_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:215
+msgid "Use fisheries"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:215
+msgid "use_fish_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:216
+msgid "Use pollution control"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:216
+msgid "use_pollution_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:217
+msgid "Use invasive species"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:217
+msgid "use_invasivespecies_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:218
+msgid "Use other"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:218
+msgid "use_other_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:219
+msgid "Construction type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:219
+msgid "construction_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:219
+msgid ""
+"1-arch, 2-buttress, 3-earth, 4-gravity, 5-multiple arch, 6-rock, 7-steel,"
+" 8-timber, 9-unknown, 10-other, 11-concrete, 12-masonry"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:220
+msgid "Spillway type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:220
+msgid "spillway_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:220
+msgid "1-combined, 2-free, 3-gated, 4-other, 5-none, 6-unknown"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:221
+msgid "Turbine type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:221
+msgid "turbine_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:221
+msgid "1-cross-flow, 2-francis, 3-kaplan, 4-pelton, 5-unknown, 6-other"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:222
+msgid "Downstream passage route"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:222
+msgid "down_passage_route_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:222
+msgid "1-bypass, 2-river channel, 3-spillway, 4-turbine"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:223
+msgid "Completeness level"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:223
+msgid "complete_level_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:223
+msgid "1-unverified, 2-minimal, 3-moderate, 4-complete"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:224
+msgid "Lake control"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:224
+msgid "lake_control_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:224
+msgid "1-yes, 2-enlarged, 3-maybe"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:225
+msgid "Dam condition"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:225
+msgid "condition_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:225
+msgid "1-good, 2-fair, 3-poor, 4-unreliable"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:226
+#: ../../docs_tech/docs_tech_arch_api.rst:239
+#: ../../docs_tech/docs_tech_arch_api.rst:240
+msgid "Waterfalls"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:226
+msgid "Waterfall height"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:226
+msgid "fall_height_m"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:227
+#: ../../docs_tech/docs_tech_arch_api.rst:228
+#: ../../docs_tech/docs_tech_arch_api.rst:268
+#: ../../docs_tech/docs_tech_arch_api.rst:269
+#: ../../docs_tech/docs_tech_arch_api.rst:270
+#: ../../docs_tech/docs_tech_arch_api.rst:271
+#: ../../docs_tech/docs_tech_arch_api.rst:272
+#: ../../docs_tech/docs_tech_arch_api.rst:273
+#: ../../docs_tech/docs_tech_arch_api.rst:274
+#: ../../docs_tech/docs_tech_arch_api.rst:275
+#: ../../docs_tech/docs_tech_arch_api.rst:276
+#: ../../docs_tech/docs_tech_arch_api.rst:277
+#: ../../docs_tech/docs_tech_arch_api.rst:278
+#: ../../docs_tech/docs_tech_arch_api.rst:279
+#: ../../docs_tech/docs_tech_arch_api.rst:280
+#: ../../docs_tech/docs_tech_arch_api.rst:281
+#: ../../docs_tech/docs_tech_arch_api.rst:282
+#: ../../docs_tech/docs_tech_arch_api.rst:283
+#: ../../docs_tech/docs_tech_arch_api.rst:284
+#: ../../docs_tech/docs_tech_arch_api.rst:285
+#: ../../docs_tech/docs_tech_arch_api.rst:286
+#: ../../docs_tech/docs_tech_arch_api.rst:287
+#: ../../docs_tech/docs_tech_arch_api.rst:288
+#: ../../docs_tech/docs_tech_arch_api.rst:289
+#: ../../docs_tech/docs_tech_arch_api.rst:290
+#: ../../docs_tech/docs_tech_arch_api.rst:291
+#: ../../docs_tech/docs_tech_arch_api.rst:292
+#: ../../docs_tech/docs_tech_arch_api.rst:293
+#: ../../docs_tech/docs_tech_arch_api.rst:294
+#: ../../docs_tech/docs_tech_arch_api.rst:295
+#: ../../docs_tech/docs_tech_arch_api.rst:296
+#: ../../docs_tech/docs_tech_arch_api.rst:297
+#: ../../docs_tech/docs_tech_arch_api.rst:298
+msgid "Fishways"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:227
+msgid "Fishway type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:227
+msgid "fishpass_type_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:228
+msgid "Year constructed"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:228
+msgid "year_constructed"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:229
+msgid "Municipality"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:229
+msgid "municipality"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:230
+msgid "Dam name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:230
+msgid "dam_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:231
+msgid "Dam name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:231
+msgid "dam_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:232
+msgid "Waterbody name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:232
+msgid "waterbody_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:233
+msgid "Waterbody name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:233
+msgid "waterbody_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:234
+msgid "Barrier/system Identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:234
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+#: ../../docs_tech/tbl/feature-source.csv:1
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "cabd_id"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:235
+msgid "Reservoir name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:235
+msgid "reservoir_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:236
+msgid "Reservoir name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:236
+msgid "reservoir_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:237
+msgid "NHN Watershed ID"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:237
+msgid "nhn_watershed_id"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:238
+msgid "Used for Network Analysis"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:238
+msgid "use_analysis"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:238
+#: ../../docs_tech/docs_tech_arch_api.rst:252
+#: ../../docs_tech/docs_tech_arch_api.rst:289
+msgid "true, false"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:239
+msgid "Waterfall name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:239
+msgid "fall_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:240
+msgid "Waterfall name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:240
+msgid "fall_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:241
+msgid "Generating capacity (MWh)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:241
+msgid "generating_capacity_mwh"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:242
+msgid "Federal compliance status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:242
+msgid "federal_compliance_status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:243
+msgid "Provincial compliance status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:243
+msgid "provincial_compliance_status"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:244
+msgid "Dams, fishways"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:244
+msgid "Operating notes"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:244
+msgid "operating_notes"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:245
+msgid "Removed year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:245
+msgid "removed_year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:246
+msgid "Assessment schedule"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:246
+msgid "assess_schedule"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:247
+msgid "Expected life (years)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:247
+msgid "expected_life"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:248
+msgid "Next maintenance date"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:248
+msgid "maintenance_next"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:249
+msgid "Last maintenance date"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:249
+msgid "maintenance_last"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:250
+msgid "Dam length (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:250
+#: ../../docs_tech/docs_tech_arch_api.rst:276
+msgid "length_m"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:251
+msgid "Spillway Capacity (m3/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:251
+msgid "spillway_capacity"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:252
+msgid "Reservoir present"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:252
+msgid "reservoir_present"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:253
+msgid "Reservoir area(km2)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:253
+msgid "reservoir_area_skm"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:254
+msgid "Reservoir depth (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:254
+msgid "reservoir_depth_m"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:255
+msgid "Storage Capacity (mcm)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:255
+msgid "storage_capacity_mcm"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:256
+msgid "Average rate of discharge (L/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:256
+msgid "avg_rate_of_discharge_ls"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:257
+msgid "Degree of regulation (%)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:257
+msgid "degree_of_regulation_pc"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:258
+msgid "Provincial flow requirements (m3/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:258
+msgid "provincial_flow_req"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:259
+msgid "Federal flow requirements (m3/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:259
+msgid "federal_flow_req"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:260
+msgid "Catchment Area (km2)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:260
+msgid "catchment_area_skm"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:261
+msgid "Hydro peaking system"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:261
+msgid "hydro_peaking_system"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:262
+msgid "Number of turbines"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:262
+msgid "turbine_number"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:263
+msgid "Last modified"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:263
+msgid "last_modified"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:264
+msgid "Comments"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:264
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "comments"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:265
+msgid "Upstream linear length (km)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:265
+msgid "upstream_linear_km"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:266
+msgid "Facility name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:266
+msgid "facility_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:267
+msgid "Facility name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:267
+msgid "facility_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:268
+msgid "Monitoring equipment"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:268
+msgid "monitoring_equipment"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:269
+msgid "Architect"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:269
+msgid "architect"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:270
+msgid "Contracted by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:270
+msgid "contracted_by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:271
+msgid "Constructed by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:271
+msgid "constructed_by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:272
+msgid "Plans held by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:272
+msgid "plans_held_by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:273
+msgid "Purpose"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:273
+msgid "purpose"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:274
+msgid "Dam Identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:274
+msgid "dam_id"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:275
+msgid "Designed based on biology"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:275
+msgid "designed_on_biology"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:276
+msgid "Fishway length (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:277
+msgid "Elevation (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:277
+msgid "elevation_m"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:278
+msgid "Gradient (%)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:278
+msgid "gradient"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:279
+msgid "Depth (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:279
+msgid "depth (m)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:280
+msgid "Entrance location"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:280
+msgid "entrance_location_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:280
+msgid "1-midstream, 2-bank"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:281
+msgid "Entrance position"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:281
+msgid "entrance_position_code"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:281
+msgid "1-bottom, 2-surface, 3-bottom and surface, 4-mid-column"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:282
+msgid "Is modified"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:282
+msgid "modified"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:283
+msgid "Modification year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:283
+msgid "modification_year"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:284
+msgid "Modification purpose"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:284
+msgid "modification_purpose"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:285
+msgid "Structure name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:285
+msgid "structure_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:286
+msgid "Structure name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:286
+msgid "structure_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:287
+msgid "Operated by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:287
+msgid "operated_by"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:288
+msgid "Operation period"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:288
+msgid "operation_period"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:289
+msgid "Has evaluating studies"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:289
+msgid "has_evaluating_studies"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:290
+msgid "Nature of evaluating studies"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:290
+msgid "nature_of_evaluation_studies"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:291
+msgid "Engineering notes"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:291
+msgid "engineering_notes"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:292
+msgid "Maximum Velocity of Water Flow (m/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:292
+msgid "max_fishway_velocity_ms"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:293
+msgid "Average Velocity of Water Flow (m/s)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:293
+msgid "mean_fishway_velocity_ms"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:294
+msgid "Attraction Estimate (%)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:294
+msgid "estimate_of_attraction_pct"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:295
+msgid "Transit Success Estimate (%)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:295
+msgid "estimate_of_passage_success_pct"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:296
+msgid "Evaluating study/reference identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:296
+msgid "fishway_reference_id"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:297
+msgid "River name (English)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:297
+msgid "river_name_en"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:298
+msgid "River name (French)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:298
+msgid "river_name_fr"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:305
+msgid "Name Filter"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:307
+msgid ""
+"Provides an option for filtering features based on all the name "
+"attributes associated with the feature types. The “name” attributes are "
+"different for each feature type and specified by the database metadata. "
+"Generally, name attributes will just include the English and French names"
+" for a feature, but may include other fields as well."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:309
+msgid ""
+"The name filter works in addition to the ``bbox`` filter described above "
+"(logically ANDed with the bbox). Multiple name filters can be provided "
+"and they will be combined with logical ``OR``, represented by the ``&`` "
+"symbol in API requests. All comparisons are case insensitive (holden = "
+"Holden = HOLDEN)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:311
+msgid "Name Filter request format:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:313
+msgid "|namefilterreq|"
+msgstr ""
+
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+msgid "|namefilterop|"
+msgstr ""
+
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+msgid ""
+"The filter operator. Supported operators include: ``in``, ``notin``, "
+"``eq``, ``neq``, ``like``"
+msgstr ""
+
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+msgid "|namefiltervals|"
+msgstr ""
+
+#: ../../docs_tech/tbl/namefilter-format.csv:1
+msgid ""
+"Values for the filter.  For ``in`` and ``notin`` operators this is a "
+"comma separated list of values."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:322
+msgid "``/features/dams?bbox=0,0,1,1&filtername=like:holden``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:324
+msgid ""
+"This will return all dam features within the bounding box [(0 0), (1 1)] "
+"and an english or french name like “holden”."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:327
+#: ../../docs_tech/docs_tech_arch_api.rst:349
+#: ../../docs_tech/docs_tech_arch_tiles.rst:123
+msgid "Examples"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:329
+msgid ""
+"Return all dam features with an English or French name like “holden” "
+"(case insensitive): ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/dams?&namefilter=like:holden``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:332
+msgid ""
+"Return all dam features with an English or French name like “churchill "
+"falls” (case insensitive): ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/dams?&namefilter=like:churchill+falls``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:335
+msgid ""
+"Return all dam features with an English or French name like “churchill "
+"falls” or “revelstoke” (case insensitive): ``https://cabd-"
+"web.azurewebsites.net/cabd-"
+"api/features/dams?&namefilter=like:churchill+falls&namefilter=like:revelstoke``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:338
+msgid ""
+"Return all fishway features with a structure name like “grand falls” "
+"(case insensitive): ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/fishways?&namefilter=like:grand+falls``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:344
+#: ../../docs_tech/docs_tech_arch_api.rst:433
+#: ../../docs_tech/docs_tech_arch_api.rst:485
+#: ../../docs_tech/docs_tech_arch_tiles.rst:38
+#: ../../docs_tech/docs_tech_arch_tiles.rst:146
+#: ../../docs_tech/docs_tech_arch_tiles.rst:174
+msgid "Format"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:346
+msgid ""
+"The default output format is GeoJSON, but additional formats can be "
+"returned by supplying the format query parameter. The format parameter "
+"can be combined with the attribute filters and name filters described "
+"above."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:351
+msgid ""
+"Return all dam features in the NHN watershed 08GABX1 in geopackage "
+"format: ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/dams?filter=nhn_watershed_id:eq:08GABX1&format=geopackage``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:354
+msgid ""
+"Return all dam features with a use code of 2 (Hydroelectricity) in "
+"geopackage format: ``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/dams?filter=use_code:eq:2&format=geopackage``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:358
+msgid "Supported Formats"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:360
+msgid ""
+"The following formats are supported for feature endpoints that return a "
+"collection of features."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:362
+msgid "``geopackage``/ ``gpkg`` - outputs geopackage file"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:363
+msgid "``shp`` – outputs shapefile"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:364
+msgid "``kml`` – outputs kml file"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:365
+msgid "``json``/``geojson`` - outputs GeoJSON (default)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:366
+msgid "``csv`` – outputs csv file"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:368
+msgid "The single feature endpoints only return GeoJSON output."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:370
+msgid ""
+"All exports (except csv) include data metata that includes the feature "
+"type version number, download datetime, and license information. For json"
+" this is included in the feature collection metadata, for shp and "
+"additional csv metadata file is included in the zip package, for kml it "
+"is included as \"extendedData\", and for geopackage it is included as an "
+"additional non-spatial metadata layer."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:374
+msgid ""
+"The best way to download data for multiple feature types using the API is"
+" to use the ``/features/<type>``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:376
+msgid ""
+"While the /features/ endpoint will return features from multiple feature "
+"types, the list of attributes returned are very limited compared to the "
+"list of attributes returned when the ``<type>`` is specified."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:381
+msgid "Locale"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:383
+msgid ""
+"Results are supported in both English and French. The language returned "
+"is determined by the ``Accept-Language`` header. Default is English."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:389
+msgid "Maximum Features"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:391
+msgid ""
+"A maximum of 55,000 features will be returned.  If a feature API request "
+"would result in more than 55,000 features the system will return an error"
+" with a HTTP Status code of 403 (Forbidden), and a message telling the "
+"user they should add additional filter to limit the query results."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:393
+msgid ""
+"The value ``55000`` is an application parameter and can be modified if "
+"required (see ``application.properties`` file)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:398
+msgid "Feature API Result Totals"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:400
+msgid ""
+"The Feature API response includes a Content-Range header that summarizes "
+"the total number of features that match the filters vs the total number "
+"of features returned. This can be used along with the max-results "
+"parameter to access the number of features that match a filter without "
+"having to load all features."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:405
+msgid ""
+"``https://cabd-web.azurewebsites.net/cabd-"
+"api/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:407
+msgid ""
+"The API call will return 5 features (max-results=5). However the response"
+" header will also include a Content-Range header that looks like:  "
+"``Content-Range: features 0-5/65``. The 0-5 tells us the only the first 5"
+" features are included in the results, the 65 tells us a total of 65 "
+"features matched the provided filters."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:409
+msgid ""
+"Therefore, if you want to just get the total feature count and no "
+"features you can use a max-results=0 parameter:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:411
+msgid ""
+"``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?max-"
+"results=0``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:413
+msgid ""
+"This will return an empty feature collection, but the response headers "
+"will include Content-Range: ``Content-Range: features 0-0/729``, which "
+"tells you there are 729 waterfalls in the database."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:420
+msgid "Feature Data Source End Point"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:424
+msgid "|ftdsid|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:426
+msgid "|ftdsidflds|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:428
+msgid ""
+"Returns the data source details for each attribute associated with the "
+"given feature id.  By default this returns a reduced set of attributes: "
+"``feature id``, ``attribute field``, ``data source name``, and ``data "
+"source feature id``. To include the complete set of attributes (``feature"
+" id``, ``attribute field``, ``attribute name``, ``data source name``, "
+"``data source date``, ``data source version``, ``data source feature "
+"id``, add the query parameter ``fields=all`` to the request."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:435
+msgid "The default output format of this end point is CSV."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:437
+msgid ""
+"JSON format is also supported by providing the ``format=json`` query "
+"parameter: |ftdsidjson|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:442
+msgid "Feature Update End Point"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:446
+msgid ""
+"This end point allows users to submit feature update requests. These "
+"requests are logged in the database and reviewed by CABD administrators "
+"before updates are applied to the feature."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:449
+msgid "URL: /features/<feature-id>"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:450
+#: ../../docs_tech/docs_tech_arch_api.rst:468
+msgid "METHOD: PUT"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:451
+#: ../../docs_tech/docs_tech_arch_api.rst:469
+msgid "CONTENT-TYPE: application-json"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:452
+#: ../../docs_tech/docs_tech_arch_api.rst:470
+msgid "BODY: json string containing feature update information"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:453
+msgid ""
+"{\"name\": \"First Last\", \"email\": \"first.last@host.com\", "
+"\"organization\": \"<Optional>\", \"description\": \"Description of "
+"feature update\", \"datasource\", \"Optional. Information about source of"
+" data update\"}"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:454
+msgid ""
+"name, email, and description are required. Organization and datasource or"
+" optional"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:460
+msgid "Contact End Point"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:464
+msgid ""
+"This end point allows users to create new contact or update an existing "
+"contact. Contacts are identified by their email address. If a contact "
+"already exists in the database it will be updated with the information "
+"supplied."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:467
+msgid "URL: /contacts"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:471
+msgid ""
+"{\"name\": \"First Last\", \"email\": \"first.last@host.com\", "
+"\"organization\": \"<Optional>\"}"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:472
+msgid "name, and email are required. Organization is options."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:478
+#: ../../docs_tech/docs_tech_arch_tiles.rst:169
+msgid "Vector Tile Service"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:482
+msgid ""
+"The vector tile service creates vector tiles for the barrier feature "
+"types."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:487
+#: ../../docs_tech/docs_tech_arch_tiles.rst:176
+msgid ""
+"The only format supported for the vector tile services is mvt (mapbox "
+"vector tile)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:490
+msgid "End Point"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:492
+msgid ""
+"``https://cabd-web.azurewebsites.net/cabd-"
+"api/tiles/{type}/{z}/{x}/{y}.{format}``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:494
+msgid "``type`` must be a valid feature type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_api.rst:496
+msgid ""
+"The attributes included in the vector tile are those whose "
+"\"include_vector_tile\" value in the feature_type_metadata table are "
+"true."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:13
+msgid "Application Architecture"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:15
+msgid ""
+"This section contains technical details about the current implementation "
+"of the Canadian Aquatic Barriers Database (CABD) back-end application, "
+"including feaure and vector tile services and the CABD data dictionary. "
+"The intended audience are software developers and similar technical users"
+" looking to upgrade/maintain the current system or use the API endpoints."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:20
+msgid "Existing Implementation"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:24
+msgid ""
+"The current application runs on two Microsoft Azure Java Web App servers,"
+" ``cabd-web`` (for CABD data) and ``chyf-web`` (for CHyF data)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:34
+msgid "Features and Database Models"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:39
+msgid "CABD Feature Model"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:44
+msgid "Generic Feature Model"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:46
+msgid ""
+"Features in CABD have an optional hierarchical structure. Feature types "
+"can be combined to form “super feature types”."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:48
+msgid ""
+"There are no structures in the software/database that enforce this model."
+" The database views (see section below) are used to define the various "
+"feature types and super types. It would be possible for a feature type to"
+" be associated with multiple super types, if desired."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:57
+msgid "Implemented Feature Model"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:59
+msgid ""
+"There are currently three feature types and one super type implemented in"
+" CABD. Adding additional feature types is expected and the instructions "
+"for this are outlined below (How to add new Feature Type)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:65
+msgid "Feature types:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:67
+msgid ""
+"``barriers`` - a super feature type that includes dams, other structures,"
+" and waterfalls."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:68
+msgid ""
+"``dams`` - a feature type for features classified as a dam or other "
+"structure."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:69
+msgid "``waterfalls`` - a feature type for features classified as a waterfall."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:70
+msgid ""
+"``fishways`` - a feature type for features classified as a fish passage "
+"structure."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:71
+msgid ""
+"``medium`` - a feature type created for testing the increase in data "
+"volume expected for stream crossing data."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:72
+msgid ""
+"``big`` - a feature type created for testing the increase in data volume "
+"expected for stream crossing data."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:77
+msgid "CABD Database Model"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:79
+msgid ""
+"The database is structured into multiple schemas.  Each feature type has "
+"its own schema, with a common ``cabd`` schema for shared data and feature"
+" metadata."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:84
+msgid "Feature Views"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:86
+msgid ""
+"Each feature type and super feature type has two associated views which "
+"support the API - one view for Engligh (_en) and one view for French "
+"(_fr). These views should include all fields required for output (either "
+"for display on the UI or to support the future editing API)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:88
+msgid "|enfr|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:90
+msgid ""
+"Views are used to support the CABD APIs that list features. Each feature "
+"type is linked to a database view. When requesting features of a specific"
+" type the view associated with this type is queried. The fields returned "
+"by this view populate the attributes of the feature returned by the API. "
+"Feature type views will generally query a single data table (for example,"
+" the ``dams`` view queries the dams data table). Super feature types will"
+" generally query multiple data tables (for example, the ``barriers`` view"
+" queries both the dams data table and the waterfalls data table)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:95
+msgid "Feature Update View"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:97
+msgid ""
+"By design each feature includes an updates_pending attribute that is "
+"populated with true or false depending on if there are feature updates "
+"pending review in the system. This field is populated by the system using"
+" the ``cabd.updates_pending`` view. This view should return a single "
+"column, cabd_id, for each feature that has a review pending in the "
+"database."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:103
+msgid "Core Tables"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:105
+msgid ""
+"These tables are the core tables for the system and required regardless "
+"of the feature types loaded. They support the definition of feature "
+"types."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:107
+msgid ":codeblocksize:`cabd.feature_types`"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:109
+msgid "Lists all the feature types supported by the system."
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1 ../../docs_tech/tbl/core-tables.csv:1
+#: ../../docs_tech/tbl/data-source.csv:1
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+#: ../../docs_tech/tbl/feature-source.csv:1
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "Column"
+msgstr ""
+
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+#: ../../docs_tech/tbl/core-tables.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "type"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "Unique identifier for feature type. Required."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "data_view"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid ""
+"The root name of the data view supporting the feature type. This is the "
+"view name without the language suffix (ex. dams_view). Required."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "name_en"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "The English human readable name for the feature type. Required."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "name_fr"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "attribute_source_table"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid ""
+"The data table containing the attribute data source information for the "
+"feature type. This is optional and can be null."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "default_featurename_field"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "The field in the data_view that represents the main feature name."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "feature_source_table"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid ""
+"The data table containing a link between the features and the data source"
+" information. This is optional and can be null."
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid "data_version"
+msgstr ""
+
+#: ../../docs_tech/tbl/core-tables.csv:1
+msgid ""
+"The version number of the data for the feature type. This version number "
+"is included in exports."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:116
+msgid ":codeblocksize:`cabd.feature_type_metadata`"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:118
+msgid ""
+"Lists all the attributes for a given feature view and the metadata "
+"details about the attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "view_name"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "The data view name."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "field_name"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "The field name in the data view that represents this attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "The English name of the attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "The French name of the attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "description_en"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "An English description of the attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "description_fr"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "A French description of the attribute."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "is_link"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"Boolean.  If true this attribute will be treated as a URL in the API. The"
+" value will be returned in URL format (For example: link to another "
+"feature)."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "data_type"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"The data type for the attribute. Valid values: varchar(xxx), text, "
+"boolean, array(type), integer, double, uuid, date, geometry."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "vw_simple_order"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"Metadata for the UI. The UI supports a simple and all attribute view. "
+"This field represents the order the attribute should appear in the simple"
+" ui view. The value should be null for attributes that should not appear "
+"in the simple view."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "vw_all_order"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"Metadata for the UI. The UI supports a simple and all attribute view. "
+"This field represents the order the attribute should appear in the all "
+"attribute view. Should be null for attributes that should not appear in "
+"the view."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "include_vector_tile"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"Boolean.  If true this attribute will be included in the vector tile "
+"service."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "value_options_reference"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"For columns that have a defined list of valid values in another database "
+"table (for example: ``province_territory_code``), this field identifies "
+"what table the values can be loaded from and what fields in the table "
+"that provide the value, name, and description. This column should be null"
+" for fields that don’t reference tables."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:3
+msgid ""
+"The string should be of the form "
+"``<tablename>;<valuefield>;<namefield>;<descriptionfield>``. All are "
+"required except ``valuefield`` and ``descriptionfield`` which can be "
+"blank.  The ``tablename`` references the code table, the ``valuefield`` "
+"the value field in the code table, the ``namefield`` the human friendly "
+"name field in the table, and ``descriptionfield`` the description field "
+"in the table. The name and description fields should exclude the language"
+" suffix and each reference table should have both _en and _fr columns for"
+" the name and description fields."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:5
+msgid ""
+"For example: ``dams.use_codes;code;name;description`` or "
+"``cabd.province_territory_codes;code;name;``."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid "is_name_search"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-type-metadata.csv:1
+msgid ""
+"True if field to be included in the name API search. Should be set to "
+"true fo any attributes that represent the feature name or want to include"
+" when searching by name."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:125
+msgid ":codeblocksize:`cabd.data_source`"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:127
+msgid ""
+"Lists data sources. Supports data source tracking for feature type "
+"attributes."
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1 ../../docs_tech/tbl/data-source.csv:1
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "id"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "A unique identifier for the data source."
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1 ../../docs_tech/tbl/data-source.csv:1
+msgid "name"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid ""
+"Name of the data source (matches short names listed on the `data sources "
+"page <https://cabd-"
+"docs.netlify.app/docs_user/docs_user_data_sources.html>`_)."
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "version_date"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "Data source version date."
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "version_number"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "Data source version number (optional)."
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "source"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid ""
+"A link to the source data or full reference and description of where the "
+"source data came from."
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "Any additional comments about the data source."
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "source_type"
+msgstr ""
+
+#: ../../docs_tech/tbl/data-source.csv:1
+msgid "Type of data source (spatial or non-spatial)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:137
+msgid ":codeblocksize:`cabd.contacts`"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:139
+msgid ""
+"A list of contacts relevant to the CABD database.  Currently, contacts "
+"are only created when a user submits a feature update."
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "unique system generated number"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "email"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "Users email"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "Users name"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "organization"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid "(Optional) Organization associated with the user"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1 ../../docs_tech/tbl/feature-source.csv:1
+msgid "datasource_id"
+msgstr ""
+
+#: ../../docs_tech/tbl/contacts.csv:1
+msgid ""
+"(Optional) Link to the cabd.data_source table which represents the "
+"datasource associated with this user."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:147
+msgid ":codeblocksize:`cabd.user_feature_updates`"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:149
+msgid ""
+"Users can use the Features API to submit updates to features. All "
+"submissions are stored in this table."
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "unique system generated identifier"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "datetime"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "Date time of submission"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "contact_id"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "Link to the contact who submitted the change"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "Link to the feature the update references"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "cabd_type"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "CABD feature type"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "user_description"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "The user provided description of the update"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "user_data_source"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "The user provided data source"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid "status"
+msgstr ""
+
+#: ../../docs_tech/tbl/user_feature_updates.csv:1
+msgid ""
+"Internal field representing the status of the update. This is managed by "
+"the CABD administrators."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:158
+msgid "Shared Attribute Tables"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:160
+msgid ""
+"All of these tables store data that are shared between multiple feature "
+"types. Generally, each of these tables have a unique code (for "
+"references), a name, and a description."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:162
+msgid "``cabd.barrier_ownership_type_codes``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:163
+msgid "``cabd.fish_species``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:164
+msgid "``cabd.nhn_workunit``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:165
+msgid "``cabd.passability_status_codes``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:166
+msgid "``cabd.province_territory_codes``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:167
+msgid "``cabd.upstream_passage_type_codes``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:168
+msgid "``cabd.census_subdivisions``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:173
+msgid "Feature Tables"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:175
+msgid ""
+"The feature type data tables are found in their corresponding schema. "
+"Generally, there will be one feature data table and a number of reference"
+" tables that represent attribute values.  Details for current feature "
+"types can be found in the Data Dictionary document."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:180
+msgid "Feature Type Attribute Data Sources"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:182
+msgid ""
+"The CABD database has the option of storing the data source for each "
+"attribute associated with the feature type. This has been implemented by "
+"having ``<featuretype>.<featuretype>_feature_source`` and "
+"``<featuretype>.<featuretype>_attribute_source`` tables for the feature "
+"type (e.g., ``dams.dams_feature_source`` and "
+"``dams.dams_attribute_source``)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:184
+msgid ""
+"For each cabd feature, the ``<featuretype>_feature_source``  table "
+"contains a link to the data sources and associated data source feature "
+"ids that the feature was found in. For example, a dam feature that was "
+"found in both the nrcan_canvec_mm and bceccs_fiss data sources would have"
+" two entries for its ``cabd_id`` in the ``<featuretype>_feature_source`` "
+"table."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:186
+msgid ":codeblocksize:`<featuretype>_feature_source`"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+#: ../../docs_tech/tbl/feature-source.csv:1
+msgid ""
+"The unique cabd feature identifier. This id must exist in the "
+"corresponding data table for the feature type."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-source.csv:1
+msgid "A link to the data source id in the cabd.data_source table"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-source.csv:1
+msgid "datasource_feature_id"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-source.csv:1
+msgid "The identifier of the feature in the data source."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:193
+msgid ""
+"The ``<featuretype>_attribute_source`` table contains the cabd_id and one"
+" column for each attribute that requires data source tracking.  The "
+"column, ``<attribute>_ds``, links to the ``cabd.data_source table`` to "
+"identify the data source for the attribute value."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:195
+msgid ":codeblocksize:`<featuretype>_attribute_source`"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+msgid "<attribute1>_ds"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+msgid ""
+"A link to the data source id in the cabd.data_source table that "
+"<attribute1> comes from for the feature."
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+msgid "<attribute2>_ds"
+msgstr ""
+
+#: ../../docs_tech/tbl/feature-attribute.csv:1
+msgid ""
+"A link to the data source id in the cabd.data_source table that "
+"<attribute2> comes from for the feature."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:206
+msgid "Audit Log / Change Tracking"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:208
+msgid "The CABD database has tracks changes to the following tables:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:210
+msgid "cabd.contacts"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:211
+msgid "cabd.fish_species"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:212
+msgid "cabd.data_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:213
+msgid "dams.dams"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:214
+msgid "dams.dams_attribute_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:215
+msgid "dams.dams_feature_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:216
+msgid "waterfalls.waterfalls"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:217
+msgid "waterfalls.waterfalls_attribute_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:218
+msgid "waterfalls.waterfalls_feature_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:219
+msgid "fishways.fishways"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:220
+msgid "fishways.fishways_attribute_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:221
+msgid "fishways.fishways_feature_source"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:222
+msgid "fishways.species_mapping"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:224
+msgid ""
+"New feature types can also include change tracking by applying the "
+"appropriate triggers to any new database tables that require change "
+"tracking."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_models.rst:226
+msgid ""
+"All changes are logged in the ``cabd.audit_log`` table. This table has "
+"the following columns:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:3
+msgid "CHyF REST API Services"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:18
+msgid ""
+"For all the feature API end points below, the application returns a "
+"maximum of 5000 features. This is configurable and may be modified if "
+"required."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:21
+msgid ""
+"The data available through the CHyF end points at this time only includes"
+" the data available for our 8 pilot regions - this extent can be seen on "
+"the CABD web tool’s ‘Hydro Networks’ layer. The CABD team is hard at work"
+" preparing new hydro network data to be added in the future!"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:28
+msgid "https://chyf-web.azurewebsites.net/chyf-web/v3/api-docs.yaml (YAML)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:30
+msgid "https://chyf-web.azurewebsites.net/chyf-web/v3/api-docs (JSON)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:40
+msgid ""
+"The base API server for the CHyF end points is https://chyf-"
+"web.azurewebsites.net/chyf-web/"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:42
+msgid "The only format supported for feature end points is GeoJSON."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:44
+msgid ""
+"GeoJSON feature attributes differ per feature type, but will include some"
+" subset of the following:"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:46
+msgid "``id`` - System identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:48
+msgid "``ef_type`` - Code representing the flowpath feature type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:50
+msgid "``ef_type_name`` - English description of ef_type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:52
+msgid "``ec_type`` - Code representing the catchment feature type"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:54
+msgid "``ec_type_name`` - English description of ec_type."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:56
+msgid "``rank`` - Rank (primary/secondary) associated with flowpath"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:58
+msgid "``length`` - Length of flowpath"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:60
+msgid "``aoi_id`` - CHyF AOI identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:62
+msgid "``aoi_name`` - CHyF AOI name"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:64
+msgid "``ecatchment_id`` - Catchment that contains flowpath"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:66
+msgid "``rivernameid1`` - Primary CHyF name identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:68
+msgid "``rivername1_en`` - English name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:70
+msgid "``rivername1_fr`` - French name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:72
+msgid "``rivernameid2`` - Secondary CHyF name identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:74
+msgid "``rivername2_en`` - English name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:76
+msgid "``rivername2_fr`` - French name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:78
+msgid "``lakenameid1`` - Primary CHyF lake name identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:80
+msgid "``lakename1_en`` - English name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:82
+msgid "``lakename1_fr`` - French name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:84
+msgid "``lakenameid2`` - Secondary CHyF lake name identifier"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:86
+msgid "``lakename2_en`` - English name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:88
+msgid "``lakename2_fr`` - French name of feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:91
+msgid "Find a single feature"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:93
+msgid "|chyfuuid|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:95
+msgid ""
+"Returns the individual feature represented by the uuid. This feature can "
+"be flowpath, catchment or shoreline. Please note that returning nexus "
+"features is not supported at this time."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:98
+msgid "Search by feature name or type (single or multiple features)"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:100
+msgid "|singlemultisearch|"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:102
+msgid "Returns all features that match the search parameters."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:104
+msgid ""
+"``name`` - REQUIRED - The feature name to search for. All searches are "
+"case insenstive."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:106
+msgid ""
+"``max-results`` - OPTIONAL - The maximum number of features to return. "
+"Default value is 5000."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:108
+msgid ""
+"``result-type`` - OPTIONAL (but recommended) - Defines how the results "
+"are returned. Valid values are BBOX, ALL, GROUPBYTYPE, GROUPBYNAME. "
+"Default is BBOX. We recommend testing the same query with different "
+"``result-type`` parameters to identify the ``result-type`` that works "
+"best for your needs."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:110
+msgid ""
+"``BBOX`` - For each matching name, a single feature is returned with the "
+"geometry representing the boundary box of all matched features."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:112
+msgid ""
+"``ALL`` - For each matching name, every database row that is matched is "
+"returned as a feature with the original geometry (linestring/polygon)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:114
+msgid ""
+"``GROUPBYTYPE`` - For each matching name, the matching database rows are "
+"merged by geometry type. So there will be a maximum of two features "
+"returned per name, one for linestrings and one for polygons."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:116
+msgid ""
+"``GROUPBYNAME`` - For each matching names, the matching database rows are"
+" merged into a single feature. So one feature will be returned per name, "
+"and this feature will contain a geometry collection of linestrings and "
+"polygons."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:118
+msgid ""
+"``match-type`` - OPTIONAL - The type of match to perform. Valid values "
+"are EXACT, CONTAINS. Default is CONTAINS."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:120
+msgid ""
+"``feature-type`` - OPTIONAL - The type of feature to search. Valid values"
+" include WATERBODY, FLOWPATH, CATCHMENT. Can be supplied multiple times "
+"to search multiple feature types. If not specified all feature types are "
+"searched."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:125
+msgid ""
+"Returns information for a single feature with an id of "
+"‘f2e7c275-5425-4d19-9db5-d6916b940799’: ``https://chyf-"
+"web.azurewebsites.net/chyf-"
+"web/features/f2e7c275-5425-4d19-9db5-d6916b940799``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:128
+msgid ""
+"Returns all database rows for any feature type that match the name ‘South"
+" Berland’: ``https://chyf-web.azurewebsites.net/chyf-"
+"web/features?name=South+Berland&result-type=ALL``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:131
+msgid ""
+"Returns a maximum of 5 database rows for any feature type that match the "
+"name ‘Berland’ (case insensitive): ``https://chyf-web.azurewebsites.net"
+"/chyf-web/features?name=Berland&result-type=ALL&max-results=5``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:134
+msgid ""
+"Returns a maximum of 5 database rows for flowpaths that match the name "
+"‘Berland’ (case insensitive): ``https://chyf-web.azurewebsites.net/chyf-"
+"web/features?name=Berland&result-type=ALL&max-results=5&feature-"
+"type=FLOWPATH``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:139
+msgid "Network Exports"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:143
+msgid ""
+"CHyF network datasets can be extracted using the graph API. This export "
+"includes all flowpaths, nexuses, and catchments for the requested area "
+"with the appropariate network information included on the features."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:148
+msgid "Geopackage is the only supported format for network exports."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:151
+msgid "API"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:153
+msgid ""
+"Nework exports are limited to 500,000 flowpath features. The area of "
+"interest can be specified by supplying a bounding box or one or more "
+"AOIs."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:155
+msgid "``aoi`` - OPTIONAL - A common delimited list of AOI short names"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:156
+msgid ""
+"``bbox`` - OPTIONAL - The extent of features to include in export: "
+"'minlong,minlat,maxlong,maxlat'"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:158
+msgid "At least one, either aoi or bbox, must be supplied."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:163
+msgid ""
+"Returns graph export for AOI 02OJ000: ``https://chyf-"
+"web.azurewebsites.net/chyf-web/graph?aoi=02OJ000``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:179
+msgid "End Points"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:181
+msgid "``/chyf-web/tiles/water/{z}/{x}/{y}.{format}``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:183
+msgid ""
+"End point for water features.  This includes single line streams and "
+"polygonal waterbody features. The output features include the following "
+"attributes:"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "The type of the features (‘flowpath’ or ‘waterbody’)."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "feature_type"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"The classification of the feature. See the ef_type (for flowpaths) and "
+"ec_type (for waterbodies) attributes in the CHyF Data Model documentation"
+" for valid values."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "feature_type_name"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "The name of the feature type (i.e., Skeleton, Reach etc.)"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "subtype"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"The sub classification of the feature. See the ef_sub_type (for "
+"flowpaths) and ec_sub_type (for waterbodies) attributes in the CHyF Data "
+"Model documentation for valid values."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "subtype_name"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "The name of the sub classification of the feature."
+msgstr ""
+
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "size"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"The size of the feature. For linear features this will be the length in "
+"meters, and for polygon features this will be the area in square meters."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "rank"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"The rank associated with the feature (primary/secondary). This only "
+"applies to linear flowpath features. See rank attribute in the CHyF Data "
+"Model documentation for more information."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "strahler_order"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"The Strahler order associated with the feature. For waterbody features "
+"this will be the maximum Strahler order of all the skeleton lines "
+"associated with the waterbody. Strahler order is only calculated for "
+"primary reach, infrastructure, and skeleton flowpaths. It will be null "
+"for all other flowpaths and waterbodies which don't contain one of these "
+"features."
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "The English name associated with the feature"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "The French name associated with the feature"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid "is_reservoir"
+msgstr ""
+
+#: ../../docs_tech/tbl/flow_attributes.csv:1
+msgid ""
+"Only applied to waterbody features. Will be true if the waterbody is "
+"flagged as a reservoir otherwise the values will be false or null or "
+"missing."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:190
+msgid "``/chyf-web/tiles/ecatchment/{z}/{x}/{y}.{format}``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:192
+msgid ""
+"Contains catchments.  Currently there are no catchments loaded into CHyF "
+"database so these vector tiles will be empty. The output features include"
+" the following attributes:"
+msgstr ""
+
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+msgid "The catchment type (‘elementary_catchment’)."
+msgstr ""
+
+#: ../../docs_tech/tbl/catch_attributes.csv:1
+msgid "The area in square meters of the catchment."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:199
+msgid "``/chyf-web/tiles/nhnworkunit/{z}/{x}/{y}.{format}``"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_arch_tiles.rst:201
+msgid ""
+"End point for NHN work unit polygonal features. The output features "
+"include the following attributes:"
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "The NHN work unit identifier (DATASETNAM)."
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "major_drainage_area"
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "Water Survey of Canada Major Drainage Area (WSCMDA)."
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "sub_drainage_area"
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "Water Survey of Canada Sub-Drainage Area (WSCSDA)."
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "sub_sub_drainage_area"
+msgstr ""
+
+#: ../../docs_tech/tbl/wu_attributes.csv:1
+msgid "Water Survey of Canada Sub-Sub-Drainage Area (WSCSSDA)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:5
+msgid "Data Processing Methods"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:7
+msgid ""
+"The data in the Canadian Aquatic Barriers Database (CABD) has been "
+"compiled from a number of different spatial and non-spatial datasets. "
+"This section provides an overview of the methods used to validate, de-"
+"duplicate and standardize existing spatial datasets to match the CABD "
+"data structure."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:11
+msgid ""
+"In the CABD, the term ‘feature’ is used to reference an individual "
+"structure that represents a dam, waterfall, or fishway. In this section, "
+"the term ‘feature point’ is used to represent the geographic point "
+"location of a feature."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:14
+msgid "Duplicate identification and tracking"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:17
+msgid "Generating the review layer"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:19
+msgid ""
+"The first step of the process is to generate a review layer that records "
+"potential duplicate points from source datasets. The information in this "
+"review layer will then be manually reviewed and verified."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:21
+msgid ""
+"The inputs for the review layer include a predefined area of interest "
+"(AOI) and a set of source datasets for the AOI - ideally, all known and "
+"publicly available source datasets. After identifying the source dataset "
+"with the highest number of feature points in the AOI, the feature points "
+"of this dataset are extracted to form the foundation of the ‘starting "
+"layer’."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:23
+msgid ""
+"The starting layer is buffered to determine the most appropriate buffer "
+"distance that contains the majority of feature points from other source "
+"datasets that represent the same structures (i.e., duplicates), and "
+"disjoints those that represent different structures (i.e., non-"
+"duplicates). This buffer distance is typically around 50-100 m."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:25
+msgid ""
+"Next, the ‘Join attributes by nearest’ tool in QGIS is used to join the "
+"unique ids from a second source dataset with the features of the starting"
+" layer, based on the determined tolerance. The resulting output is a new "
+"version of the review layer that contains an additional field in the "
+"attribute table which holds the unique id of each assumed duplicate from "
+"the second source dataset. This tool is run repeatedly for the remaining "
+"source datasets, using the generated output of each run as the input "
+"layer for the next join."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:27
+msgid ""
+"Once all runs have completed, feature points from each source dataset "
+"that fall outside the determined tolerance, but within the AOI, are "
+"selected and the entire process is repeated with a new ‘starting layer’, "
+"beginning with the source dataset that has the most features selected."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:29
+msgid ""
+"Once most source dataset features are captured, all output layers are "
+"merged to create the final version of the review layer. To facilitate the"
+" review process, a handful of fields are also added at this point to the "
+"review layer to track additional details about features, and a custom "
+"attribute form display in QGIS is created. Once this final review layer "
+"is completed, it is loaded into a PostgreSQL database with the PostGIS "
+"extension to allow for reviewers to work simultaneously to verify feature"
+" point locations and information."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:32
+msgid "Verifying the location of structures using satellite imagery"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:34
+msgid ""
+"The first step to verify feature points in the review layer is to try and"
+" confirm that the feature point is in the correct location. To do this, "
+"the reviewer will examine the feature point’s position relative to the "
+"location of the corresponding structure in satellite imagery, if visible."
+" If a structure is not visible in the satellite imagery, the reviewer "
+"will review information about the structure available from the source "
+"datasets or research the structure online to confirm the structure’s "
+"location, determine if the structure has been removed or decommissioned, "
+"and relocate the feature point if necessary."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:36
+msgid ""
+"If the structure has not been decommissioned, the reviewer will then "
+"assess the location of the feature point relative to the hydrographic "
+"network. If the feature point is located more than 50 m away from the "
+"closest hydro network flowpath, and is believed to be blocking flow, the "
+"reviewer will relocate the feature point to where the structure "
+"intersects with the flowpath (see section ‘:ref:`To snap, or not to snap "
+"<snapping>`’)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:38
+msgid ""
+"Unless source datasets or additional research indicate that a structure "
+"has been removed, it is assumed that all structures from the source "
+"datasets exist. Therefore, if a reviewer cannot confirm the existence or "
+"location of the structure, the feature point is left in its original "
+"location from the source dataset."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:41
+msgid "Verifying duplicate feature points of the review layer"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:43
+msgid ""
+"While the semi-automated process of generating the review layer is used "
+"to quickly capture most duplicate ids, it isn’t expected to produce a "
+"perfect result. Therefore, each feature point requires manual review to "
+"verify that all duplicate ids from the source datasets are being tracked "
+"correctly in the review layer, and to add any feature points that were "
+"missed during the join process."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:45
+msgid ""
+"This is done by cross referencing the unique ids present in the "
+"‘Duplicates’ tab (Fig. 1) of the review layer’s attribute form with the "
+"corresponding ids from source dataset features (Fig. 2) that are located "
+"nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, "
+"the feature is investigated further (e.g., checking if structure names "
+"match, examining the satellite imagery for an additional structure, etc.)"
+" to determine if it corresponds to the same structure. If the missing "
+"feature is determined to be a duplicate, the unique id is manually added "
+"to the corresponding datasource field in the ‘Duplicates’ tab. If the "
+"feature is not a duplicate, a new feature point is manually added to the "
+"review layer, inputting the source dataset name and id from the original "
+"source dataset."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:51
+msgid ""
+"Figure 1. The review layer attributes form showing the original data "
+"source and data source id of a feature point (data_source_text and "
+"data_source_id), and the unique ids of feature points (recorded in the "
+"‘Duplicates’ tab) that were identified as duplicates of this structure "
+"from other source datasets."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:57
+msgid "Figure 2. Example of unique ids of source dataset feature points."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:59
+msgid ""
+"Occasionally, the review layer may include several distinct feature "
+"points that appear to correspond to a single structure on the ground. "
+"This typically results from differing geographic accuracy of point "
+"locations in source datasets. In these cases, the attributes of each "
+"source dataset feature point in the location are compared to determine if"
+" there should be one feature point at this location, or multiple feature "
+"points. If there should only be a single feature point, the unique ids "
+"from each source dataset for that point are added to the appropriate data"
+" source fields in the ‘Duplicates’ tab of a single feature point, and all"
+" other duplicate feature points are removed."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:64
+msgid "To snap, or not to snap"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:67
+msgid "Does the structure block flow?"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:69
+msgid ""
+"Since not all feature points representing a dam or other structure act as"
+" a potential longitudinal barrier to flow, a boolean field is added to "
+"the review layer to indicate if a feature point should or should not be "
+"snapped to the hydrographic network layer and therefore used for network "
+"analysis. This field is called ‘use_analysis’, or ‘Use for analysis?’ in "
+"the attribute form (Fig. 1)."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:71
+msgid ""
+"When reviewing a feature point, the reviewer assesses its location "
+"relative to the flowpath (i.e., a stream or river) or waterbody (i.e., "
+"lake or double line river) and examines the information provided in the "
+"attribute table. If the attribute information available for the feature "
+"is limited, the reviewer may need to research the structure further to "
+"determine if it is a longitudinal barrier."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:73
+msgid ""
+"If a feature is identified as a barrier blocking upstream and downstream "
+"flow, the reviewer would set the ‘use_analysis’ field value for the "
+"feature point to ‘true’. Once feature review is complete, all features "
+"with a value of ‘true’ in the ‘use_analysis’ field will be snapped to a "
+"hydro network flowpath using a specified buffer distance - typically 150 "
+"m. If hydro networks are not yet available for the area, these features "
+"can be re-snapped in the future when hydro networks are available."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:75
+msgid ""
+"If a feature is identified as an auxiliary structure (e.g., saddle dam, "
+"dyke, canal wall, etc.,), it is considered a lateral barrier (i.e., not "
+"blocking upstream and downstream flow). In this case, the reviewer would "
+"set the ‘use_analysis’ field value for the feature point to ‘false’. All "
+"features with a value of ‘false’ in the ‘use_analysis’ field would not be"
+" snapped to the hydro network and thus omitted from future geospatial "
+"analysis."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:81
+msgid ""
+"Figure 3. An example illustrating the logic used when determining if a "
+"feature point should or should not be used for analysis, snapped or not "
+"snapped to the hydrographic network, respectively. Shown are three "
+"feature points, each from a different source dataset: blue - dyke that is"
+" acting as a lateral barrier, red - embankment dam acting as a "
+"longitudinal barrier, green - duplicate of the red feature point. The "
+"flow in this area is represented by the red dotted line; arrows indicate "
+"the flow direction."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:83
+msgid ""
+"Fishway structures are treated differently than barrier structures as "
+"their purpose is to facilitate fish passage past structures like dams, "
+"culverts or waterfalls. Considering that fishway structures do not act as"
+" barriers to fish passage, these features are always assigned a "
+"‘use_analysis’ value of ‘false’, and flagged as a fishway by setting the "
+"‘fishway_yn’ field value to ‘true’. If the feature point identified as a "
+"fishway corresponds to an existing record from the CANFISHPASS database, "
+"the unique id from CANFISHPASS is also recorded."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:86
+msgid "Structures that block flow in multiple locations"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:88
+msgid ""
+"Occasionally, a single feature will be blocking flow at multiple "
+"locations (fig. 4). In a case like this, a single feature point is not "
+"sufficient and a multipoint feature would be required to place a point at"
+" each location where flow is blocked by the structure."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:90
+msgid ""
+"The CABD does not currently support multipoint features, so the "
+"‘multipoint_yn’ field will be set to ‘true’ by the reviewer if the "
+"structure should be represented as a multipoint in the future. These "
+"structures will be represented as a single point in the existing version "
+"of the CABD, typically placed along a primary flowpath."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:96
+msgid ""
+"Figure 4. An embankment structure that is blocking flow at two separate "
+"locations. A multipoint feature is required."
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:99
+msgid "Last steps"
+msgstr ""
+
+#: ../../docs_tech/docs_tech_feature_review.rst:101
+msgid ""
+"Once the review process is complete, and all feature points in the review"
+" layer are verified, attributes from source datasets can be mapped to the"
+" feature points in this final review layer to match the CABD data "
+"structure."
+msgstr ""
+

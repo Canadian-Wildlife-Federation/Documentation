@@ -1,0 +1,659 @@
+
+<!DOCTYPE html>
+
+<html lang="fr_CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Interface Components &#8212; Documentation Canadian Aquatic Barriers Database 0.1</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom_cwf_book.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="../../_static/main.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Searching" href="docs_user_web_map_tutorial_search.html" />
+    <link rel="prev" title="The CABD Web Mapping Tool" href="../docs_user_web_map.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr_CA">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/cwf_logo_2.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD User Resources
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../whats_new.html">
+   What’s new?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cabd_overview.html">
+   CABD Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../docs_user_web_map.html">
+   The CABD Web Mapping Tool
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Interface Components
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_search.html">
+     Searching
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_data_vis.html">
+     Visualizing Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_attributes.html">
+     Viewing Attribute Information
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_filters.html">
+     Filtering Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_download.html">
+     Downloading Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_sources.html">
+     Data Sources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_docs.html">
+     Documentation Site
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs_user_web_map_tutorial_contact.html">
+     Contact Us
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../docs_user_data_sources.html">
+   Data Sources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../docs_user_data_sources/docs_user_data_sources_csv_download.html">
+     Feature Data Source Details Download
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user_data_catalogue.html">
+   Data Catalogue
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user_submitted_updates.html">
+   Submit Data Updates
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docs_user_engagement.html">
+   Stakeholder Engagement
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../acknowledgements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CABD Technical Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_tech/docs_tech_arch_models.html">
+   Application Architecture
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_tech/docs_tech_arch_api.html">
+   CABD REST API Services
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_tech/docs_tech_arch_tiles.html">
+   CHyF REST API Services
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_tech/docs_tech_feature_review.html">
+   Data Processing Methods
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  CHyF Documents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_logical_model.html">
+   Logical Model
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_data_model.html">
+   Data Model
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_tools.html">
+   Processing Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_flow_and_catch.html">
+     Flowpath Constructor and Catchment Delineator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_stream_order.html">
+     Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_tools/docs_chyf_tools_specification.html">
+     Input Specifications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../docs_chyf/docs_chyf_process.html">
+   Hydro Network Processing
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_steps.html">
+     NHN - CHyF Conversion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_stream_order.html">
+     Calculating Stream Order
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../docs_chyf/docs_chyf_process/docs_chyf_process_troubleshoot.html">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <p></p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Canadian-Wildlife-Federation"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Canadian-Wildlife-Federation/issues/new?title=Issue%20on%20page%20%2Fdocs_user/docs_user_web_map/docs_user_web_map_tutorial_components.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/github.com/Canadian-Wildlife-Federation/edit/master/docs_user/docs_user_web_map/docs_user_web_map_tutorial_components.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs_user/docs_user_web_map/docs_user_web_map_tutorial_components.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Document Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-map-view-window">
+   The Map View Window
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-legend">
+   The Legend
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-left-hand-panel">
+   The Left-hand Panel
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Interface Components</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Document Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-map-view-window">
+   The Map View Window
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-legend">
+   The Legend
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-left-hand-panel">
+   The Left-hand Panel
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="interface-components">
+<span id="components"></span><h1>Interface Components<a class="headerlink" href="#interface-components" title="Lien permanent vers ce titre">#</a></h1>
+<p>The user interface consists of 3 main elements:</p>
+<ol class="arabic simple">
+<li><p>the map view window</p></li>
+<li><p>the legend</p></li>
+<li><p>the left-hand panel</p></li>
+</ol>
+<section id="the-map-view-window">
+<h2>The Map View Window<a class="headerlink" href="#the-map-view-window" title="Lien permanent vers ce titre">#</a></h2>
+<p>The map space is where data is visualized.</p>
+<figure class="align-left">
+<a class="reference internal image-reference" href="../../_images/load_mapspace.png"><img alt="../../_images/load_mapspace.png" src="../../_images/load_mapspace.png" style="width: 90%;" /></a>
+</figure>
+<p>You can zoom in or out of the map space in three different ways: using the scroll button on your mouse, dragging two fingers if using a track pad, or by clicking the ‘+’ or ‘-’ buttons located in the bottom right-hand corner of the map space.</p>
+<p>Below the zoom buttons are two other buttons that allow you to toggle between the basemap (left) and satellite imagery (right).</p>
+<figure class="align-left">
+<a class="reference internal image-reference" href="../../_images/mv_buttons.png"><img alt="../../_images/mv_buttons.png" src="../../_images/mv_buttons.png" style="width: 90%;" /></a>
+</figure>
+</section>
+<section id="the-legend">
+<h2>The Legend<a class="headerlink" href="#the-legend" title="Lien permanent vers ce titre">#</a></h2>
+<p>A legend defines the symbology of the data.</p>
+<figure class="align-left">
+<a class="reference internal image-reference" href="../../_images/load_legend.png"><img alt="../../_images/load_legend.png" src="../../_images/load_legend.png" style="width: 90%;" /></a>
+</figure>
+<p>Here, the feature type (i.e., dam, waterfall, or fishway) that a data point represents is defined using shape while the passability status of the feature is defined using colour. If you have difficulty distinguishing colours from each other, you can visualize data using the ‘accessibility mode’. See the topic <a class="reference internal" href="docs_user_web_map_tutorial_data_vis.html#visualizing"><span class="std std-ref">Visualizing Data</span></a> for more details.</p>
+<figure class="align-left">
+<a class="reference internal image-reference" href="../../_images/legend_highlight.png"><img alt="../../_images/legend_highlight.png" src="../../_images/legend_highlight.png" style="width: 90%;" /></a>
+</figure>
+<p>To gain more space in the map view window, the legend window can be collapsed by clicking on the red circle in the top right corner of the legend window. To restore the legend window, simply click on the ‘Legend’ button.</p>
+</section>
+<section id="the-left-hand-panel">
+<h2>The Left-hand Panel<a class="headerlink" href="#the-left-hand-panel" title="Lien permanent vers ce titre">#</a></h2>
+<p>The left-hand panel is where you can access the bulk of the available web tool functionality.</p>
+<figure class="align-left">
+<a class="reference internal image-reference" href="../../_images/load_panel.png"><img alt="../../_images/load_panel.png" src="../../_images/load_panel.png" style="width: 90%;" /></a>
+</figure>
+<p>This functionality includes:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="docs_user_web_map_tutorial_search.html#searching"><span class="std std-ref">Searching for a particular place or structure</span></a></p></li>
+<li><p><a class="reference internal" href="docs_user_web_map_tutorial_data_vis.html#visualizing"><span class="std std-ref">Visualizing the data in the map view</span></a></p></li>
+<li><p><a class="reference internal" href="docs_user_web_map_tutorial_filters.html#filtering"><span class="std std-ref">Filtering the data based on a set of criteria</span></a></p></li>
+<li><p><a class="reference internal" href="docs_user_web_map_tutorial_download.html#downloading"><span class="std std-ref">Downloading data</span></a></p></li>
+</ul>
+<p>Other tabs in the panel will give you access to the <a class="reference internal" href="docs_user_web_map_tutorial_docs.html#docs"><span class="std std-ref">CABD documentation site</span></a> so you can explore the <a class="reference internal" href="../docs_user_data_sources.html#data-sources"><span class="std std-ref">data sources</span></a> used, review technical documentation, and more.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../docs_user_web_map.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">The CABD Web Mapping Tool</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="docs_user_web_map_tutorial_search.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Searching</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2022, Canadian Wildlife Federation.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+  </body>
+</html>
