@@ -62,6 +62,7 @@ msgid ""
 "/online-conservation-tool-for.html>`_ were significant inspirations for "
 "the CABD."
 msgstr ""
+"La BDOAC est aussi redevable à Scott Jackson, à Erik Martin et à Josh Noseworthy pour leurs heures de discussion et leurs contributions précieuses dans le cadre de la conceptualisation du projet de la BDOAC. Les bases de données et les outils associés aux projets North Atlantic Aquatic Connectivity Collaborative, The Nature Conservancy’s Northeast Aquatic Connectivity Assessment Project, et The Nature Conservancy of Canada’s Freshwater Conservation Blueprint ont été d’importantes sources d’inspiration pour la BDOAC."
 
 #: ../../docs_user/acknowledgements.rst:13
 msgid ""
