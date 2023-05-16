@@ -229,6 +229,4 @@ All changes are logged in the ``cabd.audit_log`` table. This table has the follo
     :file: tbl/audit_log_table.csv
     :widths: 30, 70
     :header-rows: 1
-
-.. _audit_log:
     

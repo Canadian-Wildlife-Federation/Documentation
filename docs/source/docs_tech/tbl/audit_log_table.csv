@@ -1,12 +1,12 @@
 Column,Description
 revision,Unique incrementing revision number
-datetime,The timestamp of associated with the change.
-username,The user who made the change. This is the postgresql user who made the change.
-schemaname,The schema of the modified table.
-tablename,The name of the modified table,
-action,INSERT, UPDATE or DELETE,
-cabd_id,The CABD feature id if applicable or null if not applicable. This field will be populated for most changes but will not be populated for changes to the contacts, fish_species, and datasources tables.
-datasource_id,The datasource id if applicable or null. This field will be populated with the table has a datasource_id field that is part of the primary key for the table.
-id_pk,The primary key for the row being modified if applicable or null. This field is populated for tables whose primary keys are not cabd_id or datasource_id (for example contacts and fish_species)
-oldvalues,The original values of the row (before updating). This only includes values that were modified.
-newvalues,The new values for the row. This only include values that have been modified. Values that remain the same are not included. 
+datetime,The timestamp of associated with the change
+username,The user who made the change. This is the postgresql user who made the change
+schemaname,The schema of the modified table
+tablename,The name of the modified table
+action,"INSERT, UPDATE, or DELETE"
+cabd_id,"The CABD feature id if applicable or null if not applicable. This field will be populated for most changes but will not be populated for changes to the contacts, fish_species, and datasources tables."
+datasource_id,"The datasource id if applicable or null. This field will be populated with the table has a datasource_id field that is part of the primary key for the table."
+id_pk,"The primary key for the row being modified if applicable or null. This field is populated for tables whose primary keys are not cabd_id or datasource_id (for example contacts and fish_species)."
+oldvalues,"The original values of the row (before updating). This only includes values that were modified."
+newvalues,"The new values for the row. This only include values that have been modified. Values that remain the same are not included. "
