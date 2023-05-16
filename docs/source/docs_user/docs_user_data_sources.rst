@@ -154,7 +154,10 @@ You can filter through the data sources using the search table below. To find a 
    Non-spatial Consulting Reports       Golder Associates Inc.                                                                         2020 Annual Inspection Report: Greenhills Operations Tailings Storage Facility                                                                                 :ref:`golder_gotsf_2020 <golder_gotsf_2020>`
    Non-spatial Peer-reviewed Articles   Alberta Law Review                                                                                                                                                                                                                                            :ref:`alrs_spray_lakes <alrs_spray_lakes>`                                                                                                                                                                                            
    Non-spatial Peer-reviewed Articles   Canadian Geotechnical Journal                                                                                                                                                                                                                                 :ref:`cgj_williams_etal_1983 <cgj_williams_etal_1983>`                                                                                                                                                                                      
-   Non-spatial Personal Communications  Hillcrest Geographics                                                                          Norris, S.                                                                                                                                                     :ref:`pcom_sn_hc_[year] <pcom_sn_hc>`
+   Non-spatial Personal Communications  Hillcrest Geographics                                                                          Norris, S.                                                                                                                                                     :ref:`pcom_sn_hc_2022 <pcom_sn_hc>`
+   Non-spatial Personal Communications  Baker Creek Enhancement Society                                                                Mills, B.                                                                                                                                                      :ref:`pcom_bm_bces_2023 <pcom_bm_bces>`
+   Non-spatial Personal Communications  Lhtako Dene Nation                                                                             Neustater, J.                                                                                                                                                  :ref:`pcom_jn_ldn_2023 <pcom_jn_ldn>`
+   Non-spatial Personal Communications  Souris and Area Branch of the PEI Wildlife Federation                                          MacKinnon, J.                                                                                                                                                  :ref:`pcom_jm_sab_2023 <pcom_jm_sab>`
    Non-spatial Miscellaneous            Wikipedia                                                                                      Dickson Dam                                                                                                                                                    :ref:`wiki_dickson_dam <wiki_dickson_dam>`                                                                                                                                                                                            
    Non-spatial Miscellaneous            Wikipedia                                                                                      List of Canadian Waterfalls                                                                                                                                    :ref:`wiki_cdn_wfs <wiki_cdn_wfs>`                                                                                                                                                                                                
    Non-spatial Miscellaneous            Wikipedia                                                                                      List of Generating Stations in British Columbia                                                                                                                :ref:`wiki_gs_bc <wiki_gs_bc>`                                                                                                                                                                                                  
@@ -852,10 +855,10 @@ Prairie Farm Rehabilitation Administration (PFRA)
 
 .. _pfra_dams:
 
-PFRA Dam Inventory [No longer accessible online]
-````````````````````````````````````````````````
+PFRA Dam Inventory **[No longer accessible online]**
+````````````````````````````````````````````````````
 
-    Prairie Farm Rehabilitation Administration, 1992. PFRA Dam Inventory. pp. 16-18. Accessed from http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf 
+    Prairie Farm Rehabilitation Administration, 1992. PFRA Dam Inventory. pp. 16-18. Accessed from http://www.pfra.ca/doc/Dams/PFRA%20Dam%20Inventory_PFRA_Jan%201992.pdf
     
     **Short name:** pfra_dams
 
@@ -1382,8 +1385,8 @@ Newfoundland Power
 
 .. _nlp_depreciation_2019:
 
-2019 Depreciation Study – Hydro Plant Decommissioning Report [No longer accessible online]
-``````````````````````````````````````````````````````````````````````````````````````````
+2019 Depreciation Study – Hydro Plant Decommissioning Report **[No longer accessible online]**
+``````````````````````````````````````````````````````````````````````````````````````````````
 
     Newfoundland Power, 2019. 2019 Depreciation Study - Hydro Plant Decommissioning Report. pp. 4-83. Accessed from http://publicinfo.nlh.nl.ca/Newfoundland%20Power's%202022%20CBA/RFI%20Responses/CA-NP-021.pdf
 
@@ -1994,9 +1997,43 @@ Norris, S.
 
     Norris, S., Hillcrest Geographics, 2022. Personal communication.
 
-    **Short name:** pcom_sn_hc_[year]
+    **Short name:** pcom_sn_hc_2022
 
 |ds_searchtbl_return|
+
+.. _pcom_bm_bces:
+
+Mills, B.
++++++++++
+
+    Mills, B., Baker Creek Enhancement Society, 2023. Personal communication.
+
+    **Short name:** pcom_bm_bces_2023
+
+|ds_searchtbl_return|
+
+.. _pcom_jn_ldn:
+
+Neustater, J.
++++++++++++++
+
+    Neustater, J., Lhtako Dene Nation, 2023. Personal communication.
+
+    **Short name:** pcom_jn_ldn_2023
+
+|ds_searchtbl_return|
+
+.. _pcom_jm_sab:
+
+MacKinnon, J.
++++++++++++++
+
+    MacKinnon, J., Souris and Area Branch of the PEI Wildlife Federation, 2023. Personal communication.
+
+    **Short name:** pcom_jm_sab_2023
+
+|ds_searchtbl_return|
+
 
 Miscellaneous Online Sources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
