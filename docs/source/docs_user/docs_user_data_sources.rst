@@ -18,12 +18,13 @@ A lot of the work done on the CABD involved de-duplicating and combining attribu
 
     *Data in the CABD is made available through the* `CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_ *license. This license allows you to share and adapt this data, as long as you provide proper credit and distribute any derivative data under the same CC BY-SA 4.0 license.*
 
+Data Source Table
+-----------------
+
 
 .. raw:: html
   
-    <!--<iframe src="http://localhost:8080/docs?options=ds" width=100% height=1000px"></iframe>-->
-    <div id="datasourcecontent">
-    </div>
+    <div id="datasourcecontent"/>
     
     <script>
     function loadDataSources() {
@@ -41,11 +42,62 @@ A lot of the work done on the CABD involved de-duplicating and combining attribu
             //convert this into a dataTable
             $('#ds_dataTable').DataTable();
             
-            
+            let kids = $('nav[class*=\"page-toc\"]');
+            for (kid of kids){
+               createToC(element, kid);
+             }
         }
       }
       // Sending our request
       xhr.send();
+    } 
+    
+    function createToC(element, appendTo){
+   
+       for (let kid of element.children){
+         
+         if (kid.tagName.toLowerCase() == "section" && kid.id.startsWith("dsid_")){
+            
+            let ulchild = document.createElement("ul");
+            ulchild.className = "visible nav section-nav flex-column";
+            
+            
+            let child = document.createElement("li");
+            child.className = "nav-item toc-entry toc-h2";
+            
+            let achild = document.createElement("a");
+            achild.className="reference internal nav-link";
+            achild.href = "#" + kid.id;
+            achild.innerHTML = kid.children[0].innerHTML;
+            
+            child.appendChild(achild);
+            ulchild.appendChild(child);
+      
+            appendTo.appendChild(ulchild);
+            
+            for (let kid2 of kid.children){
+               if (kid2.tagName.toLowerCase() == "section" && kid2.id.startsWith("dsid_")){         
+                  let ulchild = document.createElement("ul");
+                  ulchild.className = "visible nav section-nav flex-column";
+                  
+                  
+                  let child2 = document.createElement("li");
+                  child2.className = "nav-item toc-entry toc-h3";
+                  
+                  let achild = document.createElement("a");
+                  achild.className="reference internal nav-link";
+                  achild.href = "#" + kid2.id;
+                  //achild.innerHTML = kid2.innerHTML
+                  achild.innerHTML = kid2.children[0].innerHTML;
+                  
+                  child2.appendChild(achild);
+                  ulchild.appendChild(child2);
+            
+                  child.appendChild(ulchild);
+               }
+            }
+          }    
+      }
     }
     loadDataSources();
     </script>
