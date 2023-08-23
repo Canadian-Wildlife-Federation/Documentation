@@ -42,10 +42,13 @@ Data Source Table
             //convert this into a dataTable
             $('#ds_dataTable').DataTable();
             
-            let kids = $('nav[class*=\"page-toc\"]');
-            for (kid of kids){
-               createToC(element, kid);
-             }
+            let kids = $('div[class*=\"tocsection\"]');
+            for (kid of kids){        
+               for (kid2 of kid.parentElement.children){
+                  if (kid2.tagName == "NAV") createToC(element, kid2);
+               }
+           
+            }
         }
       }
       // Sending our request

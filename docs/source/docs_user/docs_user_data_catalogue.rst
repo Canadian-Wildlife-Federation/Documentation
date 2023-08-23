@@ -33,10 +33,12 @@ Feature Types
             $("table[id^='datatable_attribute_nhn_watershed_id']").each(function(){
                $("#" + this.id).DataTable();
             });            
-            
-            let kids = $('nav[class*=\"page-toc\"]');
-            for (kid of kids){
-               createToC(element, kid);
+           
+            let kids = $('div[class*=\"tocsection\"]');
+            for (kid of kids){        
+               for (kid2 of kid.parentElement.children){
+                  if (kid2.tagName == "NAV") createToC(element, kid2);
+               }
             }
         }
       }
