@@ -41,7 +41,3 @@ The image below is an example of the data sources csv table. The numbered red bo
 
 8. The list of data sources representing which dataset was used to populate information for that specific attribute.
 
-
-.. toctree::
-   
-   :hidden:

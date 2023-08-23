@@ -18,7 +18,6 @@ Feature Types
     function loadDataSources() {
     
       let url = "https://cabd-web.azurewebsites.net/cabd-api/docs?options=types"
-      
       let xhr = new XMLHttpRequest();
       // Making our connection 
        xhr.open("GET", url, true);
@@ -94,4 +93,3 @@ Feature Types
     }
     loadDataSources();
     </script>
-  

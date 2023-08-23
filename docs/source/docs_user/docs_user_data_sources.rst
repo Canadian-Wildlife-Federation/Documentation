@@ -101,17 +101,11 @@ Data Source Table
     }
     loadDataSources();
     </script>
+
   
+.. toctree::
+    :maxdepth: 3
+    :hidden:
 
-
-
-
-
-
-
-
-
-
-
-
-
+    docs_user_data_sources/docs_user_data_sources_csv_download
+  
