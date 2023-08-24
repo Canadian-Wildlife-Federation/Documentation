@@ -11,7 +11,7 @@ To account for the complex attribute mapping required to populate the CABD (i.e.
     :width: 400
 
 CSV Contents
---------------
+------------
 
 -----
 
@@ -40,3 +40,4 @@ The image below is an example of the data sources csv table. The numbered red bo
 7. The list of attributes available in the CABD for the selected feature type.
 
 8. The list of data sources representing which dataset was used to populate information for that specific attribute.
+
