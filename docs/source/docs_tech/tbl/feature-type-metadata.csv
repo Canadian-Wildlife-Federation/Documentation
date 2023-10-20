@@ -16,3 +16,4 @@ The string should be of the form ``<tablename>;<valuefield>;<namefield>;<descrip
 
 For example: ``dams.use_codes;code;name;description`` or ``cabd.province_territory_codes;code;name;``."
 is_name_search,True if field to be included in the name API search. Should be set to true fo any attributes that represent the feature name or want to include when searching by name.
+shape_field_name,The field name for shapefile exports of features.
