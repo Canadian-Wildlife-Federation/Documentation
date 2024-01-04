@@ -16,4 +16,4 @@ There is a table on the ‘Data Sources’ page that you can search using the se
     :align: left
     :width: 90%
 
-The data source short names in this table can be cross-referenced with the values provided in the ‘datasource_name’ columns in the ‘Feature Data Source Download’ CSV. `Click here for more details. <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources/docs_user_data_sources_csv_download.html#csv-contents>`_
+The data source short names in this table can be cross-referenced with the values provided in the ‘datasource_name’ columns in the ‘Feature Data Source Download’ CSV. `Click here for more details. <https://cabd-docs-fr.netlify.app/docs_user/docs_user_data_sources/docs_user_data_sources_csv_download.html#csv-contents>`_

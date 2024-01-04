@@ -16,7 +16,7 @@ Also, the database and web tool would, quite literally, not exist without the ta
 
 This project would not have been possible without the necessary resources to build the CABD -- thank you to Fisheries and Oceans Canada's Freshwater Habitat Science Initiative, the RBC Foundation's RBC Tech for Nature program, and to CWF donors across Canada for providing the financial support for the CABD.
 
-Thank you to the incredible Canadian Wildlife Federation staff who have helped make this project a reality -- particularly, the IT and Operations team, the Communiciations team, the Finance team, and the Fundraising team. 
+Thank you to the incredible Canadian Wildlife Federation staff who have helped make this project a reality -- particularly, the IT and Operations team, the Communications team, the Finance team, and the Fundraising team. 
 
 Thank you to Rick Bates and David Browne for empowering the CABD team with the resources, support, and trust necessary to implement a project of this magnitude and complexity. And a special thank you to Nicolas Lapointe for sharing your vision of a national database of aquatic barriers for Canada and for the countless hours of support, discussions, strategic planning, and guidance to help bring that vision to life.
 

@@ -1,9 +1,13 @@
 ﻿Version,Release Date,Description,Changelog
-1.2, "September 30, 2023 11:00 AM EST", "This release includes:
+1.2, "January 08, 2024 11:00 AM EST", "This release includes:
 
 - dams v.1.2
 
-Updated version of the dams dataset with updates to 1,681 dams across Canada from a variety of sources.",:download:`Download v.1.2 <downloads/release_1.2_2023-09-30.txt>`
+- waterfalls v.1.1
+
+- fishways v.1.1
+
+This version includes updated dams, waterfalls, and fishways datasets with collective updates made to ~3000 structures across Canada from a variety of sources. This update includes the addition of some new structures that weren't previously in the CABD.",:download:`Download v.1.2 <downloads/release_1.2_2024-01-08.txt>`
 1.1, "February 1, 2023 11:00 AM EST","This release includes:
 
 - dams v.1.1

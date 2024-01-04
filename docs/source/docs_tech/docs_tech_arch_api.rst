@@ -362,12 +362,12 @@ The following formats are supported for feature endpoints that return a collecti
 - ``geopackage``/ ``gpkg`` - outputs geopackage file
 - ``shp`` – outputs shapefile
 - ``kml`` – outputs kml file
-- ``json``/``geojson`` - outputs GeoJSON (default)
+- ``json``/ ``geojson`` - outputs GeoJSON (default)
 - ``csv`` – outputs csv file 
 
 The single feature endpoints only return GeoJSON output.
 
-All exports (except csv) include data metata that includes the feature type version number, download datetime, and license information. For json this is included in the feature collection metadata, for shp and additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
+All exports (except csv) include data metadata that includes the feature type version number, download datetime, and license information. For json this is included in the feature collection metadata, for shp and additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
 
 .. note::
 
@@ -450,6 +450,7 @@ This end point allows users to submit feature update requests. These requests ar
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
+
  * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
  * name, email, and description are required. Organization and datasource or optional
 
@@ -461,13 +462,14 @@ Contact End Point
 
 -----
 
-This end point allows users to create new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database it will be updated with the information supplied.
+This end point allows users to create a new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database it will be updated with the information supplied.
 
 
 * URL: /contacts
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
+
  * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>"}
  * name, and email are required. Organization is options.
 

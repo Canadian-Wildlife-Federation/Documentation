@@ -52,6 +52,12 @@ Funding Acknowledgements
 
 *The Canadian Aquatic Barriers Database is also funded in part by the RBC Foundation in support of RBC Tech for Nature.*
 
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: FRENCH DOCUMENTATION
+
+   https://cabd-docs-fr.netlify.app/
 
 .. toctree::
    :maxdepth: 3
