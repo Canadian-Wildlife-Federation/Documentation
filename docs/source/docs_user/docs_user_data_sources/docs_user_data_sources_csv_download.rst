@@ -25,11 +25,11 @@ The image below is an example of the data sources csv table. The numbered red bo
 
 2. The unique barrier/system identifier (``cabd_id``) for the structure.
 	
-3. The link to the `Data Sources <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources.html>`_ page that holds the attribution information for the data held in the database.
+3. The link to the `Data Sources <https://cabd-docs-fr.netlify.app/docs_user/docs_user_data_sources.html>`_ page that holds the attribution information for the data held in the database.
     
    .. note:: 
        
-       The shortened data source names in the CSV (shown is boxes 4, 6, and 8) can be cross referenced with the `Data Sources <https://cabd-docs.netlify.app/docs_user/docs_user_data_sources.html>`_ page to identify the full name and reference information for each data source.
+       The shortened data source names in the CSV (shown is boxes 4, 6, and 8) can be cross referenced with the `Data Sources <https://cabd-docs-fr.netlify.app/docs_user/docs_user_data_sources.html>`_ page to identify the full name and reference information for each data source.
 	
 4. The list of spatial data sources that contain a corresponding point for the structure.
 	

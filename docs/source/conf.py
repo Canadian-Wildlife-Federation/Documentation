@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Canadian Aquatic Barriers Database'
-copyright = '2022, Canadian Wildlife Federation'
+copyright = '2024, Canadian Wildlife Federation | ©Fédération canadienne de la faune, 2024. Tous droits réservés'
 #author = 'alexl'
 
 # The full version, including alpha/beta/rc tags
