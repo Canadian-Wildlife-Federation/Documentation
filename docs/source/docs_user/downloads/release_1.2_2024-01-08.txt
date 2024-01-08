@@ -1,16 +1,16 @@
 CABD Changelog
 
-Date: January 08, 2024 11:00 AM EST
+Date: January 05, 2024 5:00 PM EST
 Version: 1.2
-Summary: Updated version of the dams dataset with updates to 1,681 dams across Canada from a variety of sources. 
+Summary: This version includes updated dams, waterfalls, and fishways datasets with collective updates made to ~3000 structures across Canada from a variety of sources. This update includes the addition of some new structures that weren't previously in the CABD.
 
 Data Layers
 
 dams 1.2
-- 36,821 structures
+- 36,968 structures
 
-waterfalls 1.0
-- 22,194 waterfalls
+waterfalls 1.1
+- 24,981 waterfalls
 
-fishways 1.0
-- 408 fishways
+fishways 1.1
+- 436 fishways
