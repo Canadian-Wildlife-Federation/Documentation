@@ -450,9 +450,20 @@ This end point allows users to submit feature update requests. These requests ar
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
+ * name, email, and description are required
+ * organization, mailinglist, and datasource are optional
+ * if a contact exists in the system with the given email then the name, description, organization, and mailinglist properties are overwritten with the new properties (if provided)
 
- * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>", "description": "Description of feature update", "datasource", "Optional. Information about source of data update"}
- * name, email, and description are required. Organization and datasource or optional
+::
+
+   {
+     "name": "First Last", 
+     "email": "first.last@host.com", 
+     "organization": "<Optional>", 
+     "mailinglist": <true|false>, 
+     "description": "Description of feature update", 
+     "datasource", "Optional. Information about source of data update"
+   }
 
 
 .. _submit-contact-end-point:
@@ -462,16 +473,24 @@ Contact End Point
 
 -----
 
-This end point allows users to create a new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database it will be updated with the information supplied.
+This end point allows users to create a new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database it will be updated with the information supplied. If an optional field is not provided that field is not updated.
 
 
 * URL: /contacts
 * METHOD: PUT
 * CONTENT-TYPE: application-json
 * BODY: json string containing feature update information
+ * name and email are required 
+ * organization and mailinglist are optional
 
- * {"name": "First Last", "email": "first.last@host.com", "organization": "<Optional>"}
- * name, and email are required. Organization is options.
+::
+
+   {
+     "name": "First Last", 
+     "email": "first.last@host.com", 
+     "organization": "<Optional>", 
+     "mailinglist": <true|false>
+   }
 
 
 .. _feature-vector-tile-service:
