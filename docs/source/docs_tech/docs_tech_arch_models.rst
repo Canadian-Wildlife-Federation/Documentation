@@ -113,6 +113,20 @@ Lists all the feature types supported by the system.
     :widths: 30, 70
     :header-rows: 1
 
+:codeblocksize:`cabd.attribute_set`
+
+Lists the attribute sets supported by the system. Attribute sets allows user to specify which attributes the want included in API results that list features.
+
+Notes:
+ * The attribute set should not have the name "vectortile". The system generates a vectortile attribute set automatically that is linked to the include_vector_tile field in the cabd.feature_type_metadata and used for the vector tile service.
+ * The attribute "url" which provides a url to link to the full CABD feature is included in all JSON output for all attribute sets. There is no option to remove it. It is NOT included in other export formats (shape, geopackage, kml). 
+
+.. csv-table:: 
+    :file: tbl/attribute-set.csv
+    :widths: 30, 70
+    :header-rows: 1
+
+
 :codeblocksize:`cabd.feature_type_metadata`
 
 Lists all the attributes for a given feature view and the metadata details about the attribute.

@@ -7,9 +7,6 @@ description_en,An English description of the attribute.
 description_fr,A French description of the attribute.
 is_link,Boolean.  If true this attribute will be treated as a URL in the API. The value will be returned in URL format (For example: link to another feature).
 data_type,"The data type for the attribute. Valid values: varchar(xxx), text, boolean, array(type), integer, double, uuid, date, geometry."
-vw_simple_order,Metadata for the UI. The UI supports a simple and all attribute view. This field represents the order the attribute should appear in the simple ui view. The value should be null for attributes that should not appear in the simple view.
-vw_all_order,Metadata for the UI. The UI supports a simple and all attribute view. This field represents the order the attribute should appear in the all attribute view. Should be null for attributes that should not appear in the view.
-include_vector_tile,Boolean.  If true this attribute will be included in the vector tile service.
 value_options_reference,"For columns that have a defined list of valid values in another database table (for example: ``province_territory_code``), this field identifies what table the values can be loaded from and what fields in the table that provide the value, name, and description. This column should be null for fields that don’t reference tables.
 
 The string should be of the form ``<tablename>;<valuefield>;<namefield>;<descriptionfield>``. All are required except ``valuefield`` and ``descriptionfield`` which can be blank.  The ``tablename`` references the code table, the ``valuefield`` the value field in the code table, the ``namefield`` the human friendly name field in the table, and ``descriptionfield`` the description field in the table. The name and description fields should exclude the language suffix and each reference table should have both _en and _fr columns for the name and description fields.
@@ -17,3 +14,5 @@ The string should be of the form ``<tablename>;<valuefield>;<namefield>;<descrip
 For example: ``dams.use_codes;code;name;description`` or ``cabd.province_territory_codes;code;name;``."
 is_name_search,True if field to be included in the name API search. Should be set to true fo any attributes that represent the feature name or want to include when searching by name.
 shape_field_name,The field name for shapefile exports of features.
+vw_<attributeset>_order,Metadata for the UI. These fields represents the order the attribute should appear in the ui for a given attribute set. The value should be null for attributes to be excluded from the results for the given set. There should be one column for each attribute set listed in the cabd.attribute_set table.
+include_vector_tile,Boolean.  If true this attribute will be included in the vector tile service.
