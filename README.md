@@ -5,5 +5,3 @@
 CABD and CHyF Documentation Repo.
 
 Production version of the site can be viewed here: [https://cabd-docs.netlify.app/](https://cabd-docs.netlify.app/)
-
-Changes for demo - don't commit to main
