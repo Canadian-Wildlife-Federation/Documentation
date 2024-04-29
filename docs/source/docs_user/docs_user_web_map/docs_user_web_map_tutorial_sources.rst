@@ -22,3 +22,7 @@ Please watch the video below for a demonstration on how to access the Data Sourc
 
 .. video:: _static/Data_sources.mp4
     :width: 600
+
+.. raw:: html
+
+    <video controls src="_static/Data_sources.mp4"></video>
