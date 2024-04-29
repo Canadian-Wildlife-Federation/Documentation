@@ -41,13 +41,15 @@ To do this, you will need to toggle on the ‘NHN Watershed Boundaries’ layer 
 
 Please watch the videos below for a demonstration on how to filter by province/territory or watershed.
 
-.. video:: _static/Filter_by_location.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_location.mp4"></video>
 
 Filtering by province/territory
 
-.. video:: _static/Filter_by_Watershed.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_watershed.mp4"></video>
 
 Filtering by watershed
 
@@ -68,8 +70,9 @@ To view the filterable attributes for a specific feature type, expand the sectio
 
 Please watch the video below for a demonstration on how to filter by attribute.
 
-.. video:: _static/Filter_by_attribute.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_attribute.mp4"></video>
 
 Apply Filters, Clear Filters and Download Data Buttons
 ------------------------------------------------------

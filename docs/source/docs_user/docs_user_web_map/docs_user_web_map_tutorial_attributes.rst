@@ -6,8 +6,9 @@ Viewing Attribute Information
 
 To view the attribute information for a structure, simply click on its point in the map space and the ‘Attributes’ popup will appear.
 
-.. video:: _static/Attribute_information.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Attribute_information.mp4"></video>
 
 The name of the structure can be found in the top left-hand corner of this window. Using the two buttons to the right of the structure name, you can toggle between the Simple View (a shortened list of key attributes) and the Detailed View (a list of all attributes available for the feature type). 
 
@@ -22,5 +23,6 @@ At the bottom of both the Simple and Detailed Views is a link that you can click
 
 The video below demonstrates how to find and down load the Feature Data Source Details Download for a structure of interest. Please refer to the `Feature Data Source Details Download <https://cabd-docs-fr.netlify.app/docs_user/docs_user_data_sources/docs_user_data_sources_csv_download.html#csv-contents>`_ section on the CABD documentation site for more information about the CSV table contents.
 
-.. video:: _static/Download_data_source_information.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Download_data_source_information.mp4"></video>

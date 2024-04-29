@@ -44,8 +44,9 @@ Here, the feature type (i.e., dam, waterfall, or fishway) that a data point repr
 
 To gain more space in the map view window, the legend window can be collapsed by clicking on the red circle in the top right corner of the legend window. To restore the legend window, simply click on the ‘Legend’ button. 
 
-.. video:: _static/Legend.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Legend.mp4"></video>
 
 The Left-hand Panel
 ~~~~~~~~~~~~~~~~~~~

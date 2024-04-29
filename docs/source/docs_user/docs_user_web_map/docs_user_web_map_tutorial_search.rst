@@ -44,5 +44,6 @@ You can choose to search for a location or structure in a few different ways :
 
 Please watch the video below for a demonstration on how to user the search functionality to find a specific geographic location.
 
-.. video:: _static/Search.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Search.mp4"></video>

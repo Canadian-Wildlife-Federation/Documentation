@@ -24,5 +24,6 @@ During this process, you can navigate the map view while the download window is 
 
 Please watch the video below for a demonstration on how to download data through the CABD web tool.
 
-.. video:: _static/Downloading_data.mp4
-    :width: 600
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Downloading_data.mp4"></video>
