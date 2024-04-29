@@ -84,6 +84,7 @@ Funding Acknowledgements
    docs_tech/docs_tech_arch_api
    docs_tech/docs_tech_arch_tiles
    docs_tech/docs_tech_feature_review
+   docs_tech/docs_tech_crossing_review
 
 .. toctree::
    :maxdepth: 3

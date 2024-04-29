@@ -39,6 +39,20 @@ To do this, you will need to toggle on the ‘NHN Watershed Boundaries’ layer 
     
     Data can only be filtered by province/territory or watershed at one time. Selections may be made under both options but only the criteria present in the active window will be used for filtering the data. 
 
+Please watch the videos below for a demonstration on how to filter by province/territory or watershed.
+
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_location.mp4"></video>
+
+Filtering by province/territory
+
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_watershed.mp4"></video>
+
+Filtering by watershed
+
 Filter by Attribute
 -------------------
 
@@ -54,11 +68,11 @@ To exclude an entire feature type from being filtered, you can toggle it off by 
 
 To view the filterable attributes for a specific feature type, expand the section and select criteria from the available options. The checkbox to the right of each attribute name can be used to reset or clear all checkboxes for the values listed below it. If an attribute value is checked, all features that contain this value in the database will appear in the map view window once the ‘Apply Filters’ button is clicked. If an attribute value is unchecked, all features that contain that value will be omitted from the results and not displayed in the map view window. 
 
-.. figure:: img/filters_dams.png
-    :align: left
-    :width: 100%
+Please watch the video below for a demonstration on how to filter by attribute.
 
-    Dams filtered to only display structures that have been decommissioned or removed.
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Filter_by_attribute.mp4"></video>
 
 Apply Filters, Clear Filters and Download Data Buttons
 ------------------------------------------------------

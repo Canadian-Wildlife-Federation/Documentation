@@ -21,3 +21,9 @@ Once you’ve chosen your desired data set type, you can select file type you’
 When downloading all data, you will need to select which feature type layer you would like that data for. If you’d like to download all data for more than one layer, you will need to download each layer separately.
 
 During this process, you can navigate the map view while the download window is open. If the filters applied to data need to be edited, you can press the ‘Edit Filters’ button in the bottom right to reopen the ‘Filter Data’ window.
+
+Please watch the video below for a demonstration on how to download data through the CABD web tool.
+
+.. raw:: html
+
+    <video controls width="600"><source src="../../_static/Downloading_data.mp4"></video>
