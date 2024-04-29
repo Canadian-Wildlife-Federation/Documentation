@@ -20,5 +20,5 @@ The data source short names in this table can be cross-referenced with the value
 
 Please watch the video below for a demonstration on how to access the Data Sources page and search table on the CABD Documentation Site.
 
-.. video:: vid/Data_sources.mp4
+.. video:: _static/Data_sources.mp4
     :width: 600

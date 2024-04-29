@@ -14,7 +14,7 @@ To change the visibility of data layers, navigate to the ‘Layers’ tab in the
 
 Please watch the video below for a demonstration on how to toggle the visibility of the layers in the left-hand panel.
 
-.. video:: vid/Visualizing_data.mp4
+.. video:: _static/Visualizing_data.mp4
     :width: 600
 
 Accessibility Mode
@@ -28,5 +28,5 @@ At the bottom of the layers panel is a toggle button called ‘Accessibility Mod
 
 Please watch the video below for a demonstration of how to activate accessibility mode in the CABD web tool.
 
-.. video:: vid/Accessibility.mp4
+.. video:: _static/Accessibility.mp4
     :width: 600

@@ -12,5 +12,5 @@ You can access the CABD documentation site by clicking the ‘Documentation Site
 
 The CABD documentation site contains a number of user resources and technical documentation that provide more information about the CABD web tool, the data held in the CABD, and the database architecture.
 
-.. video:: vid/Documentation_site.mp4
+.. video:: _static/Documentation_site.mp4
     :width: 600
