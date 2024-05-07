@@ -4,23 +4,23 @@
 Data Processing Methods: Dams, Fishways, Waterfalls
 ===================================================
 
-The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from a number of different spatial and non~spatial datasets. This section provides an overview of the methods used to validate, de~duplicate and standardize existing spatial datasets to match the CABD data structure.
+The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from a number of different spatial and non-spatial datasets. This section provides an overview of the methods used to validate, de-duplicate and standardize existing spatial datasets to match the CABD data structure.
 
 .. note::
 
     In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, or fishway. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
 
 Duplicate identification and tracking
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 Generating the review layer
 +++++++++++++++++++++++++++
 
 The first step of the process is to generate a review layer that records potential duplicate points from source datasets. The information in this review layer will then be manually reviewed and verified. 
 
-The inputs for the review layer include a predefined area of interest (AOI) and a set of source datasets for the AOI ~ ideally, all known and publicly available source datasets. After identifying the source dataset with the highest number of feature points in the AOI, the feature points of this dataset are extracted to form the foundation of the ‘starting layer’. 
+The inputs for the review layer include a predefined area of interest (AOI) and a set of source datasets for the AOI - ideally, all known and publicly available source datasets. After identifying the source dataset with the highest number of feature points in the AOI, the feature points of this dataset are extracted to form the foundation of the ‘starting layer’. 
 
-The starting layer is buffered to determine the most appropriate buffer distance that contains the majority of feature points from other source datasets that represent the same structures (i.e., duplicates), and disjoints those that represent different structures (i.e., non~duplicates). This buffer distance is typically around 50~100 m.
+The starting layer is buffered to determine the most appropriate buffer distance that contains the majority of feature points from other source datasets that represent the same structures (i.e., duplicates), and disjoints those that represent different structures (i.e., non-duplicates). This buffer distance is typically around 50-100 m.
 
 Next, the ‘Join attributes by nearest’ tool in QGIS is used to join the unique ids from a second source dataset with the features of the starting layer, based on the determined tolerance. The resulting output is a new version of the review layer that contains an additional field in the attribute table which holds the unique id of each assumed duplicate from the second source dataset. This tool is run repeatedly for the remaining source datasets, using the generated output of each run as the input layer for the next join. 
 
@@ -40,7 +40,7 @@ Unless source datasets or additional research indicate that a structure has been
 Verifying duplicate feature points of the review layer
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-While the semi~automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer, and to add any feature points that were missed during the join process. 
+While the semi-automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer, and to add any feature points that were missed during the join process. 
 
 This is done by cross referencing the unique ids present in the ‘Duplicates’ tab (Fig. 1) of the review layer’s attribute form with the corresponding ids from source dataset features (Fig. 2) that are located nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, the feature is investigated further (e.g., checking if structure names match, examining the satellite imagery for an additional structure, etc.) to determine if it corresponds to the same structure. If the missing feature is determined to be a duplicate, the unique id is manually added to the corresponding datasource field in the ‘Duplicates’ tab. If the feature is not a duplicate, a new feature point is manually added to the review layer, inputting the source dataset name and id from the original source dataset.
 
@@ -61,7 +61,7 @@ Occasionally, the review layer may include several distinct feature points that 
 .. _snapping:
 
 To snap, or not to snap
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Does the structure block flow?
 ++++++++++++++++++++++++++++++
@@ -70,7 +70,7 @@ Since not all feature points representing a dam or other structure act as a pote
 
 When reviewing a feature point, the reviewer assesses its location relative to the flowpath (i.e., a stream or river) or waterbody (i.e., lake or double line river) and examines the information provided in the attribute table. If the attribute information available for the feature is limited, the reviewer may need to research the structure further to determine if it is a longitudinal barrier.
 
-If a feature is identified as a barrier blocking upstream and downstream flow, the reviewer would set the ‘use_analysis’ field value for the feature point to ‘true’. Once feature review is complete, all features with a value of ‘true’ in the ‘use_analysis’ field will be snapped to a hydro network flowpath using a specified buffer distance ~ typically 50 m. If hydro networks are not yet available for the area, these features can be re~snapped in the future when hydro networks are available.
+If a feature is identified as a barrier blocking upstream and downstream flow, the reviewer would set the ‘use_analysis’ field value for the feature point to ‘true’. Once feature review is complete, all features with a value of ‘true’ in the ‘use_analysis’ field will be snapped to a hydro network flowpath using a specified buffer distance - typically 50 m. If hydro networks are not yet available for the area, these features can be re-snapped in the future when hydro networks are available.
 
 If a feature is identified as an auxiliary structure (e.g., saddle dam, dyke, canal wall, etc.,), it is considered a lateral barrier (i.e., not blocking upstream and downstream flow). In this case, the reviewer would set the ‘use_analysis’ field value for the feature point to ‘false’. All features with a value of ‘false’ in the ‘use_analysis’ field would not be snapped to the hydro network and thus omitted from future geospatial analysis.
 
@@ -78,7 +78,7 @@ If a feature is identified as an auxiliary structure (e.g., saddle dam, dyke, ca
     :align: center
     :width: 75%
 
-    Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue ~ dyke that is acting as a lateral barrier, red ~ embankment dam acting as a longitudinal barrier, green ~ duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction.  
+    Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue - dyke that is acting as a lateral barrier, red - embankment dam acting as a longitudinal barrier, green - duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction.  
 
 Fishway structures are treated differently than barrier structures as their purpose is to facilitate fish passage past structures like dams, culverts or waterfalls. Considering that fishway structures do not act as barriers to fish passage, these features are always assigned a ‘use_analysis’ value of ‘false’, and flagged as a fishway by setting the ‘fishway_yn’ field value to ‘true’. If the feature point identified as a fishway corresponds to an existing record from the CANFISHPASS database, the unique id from CANFISHPASS is also recorded.
 
@@ -96,14 +96,14 @@ The CABD does not currently support multipoint features, so the ‘multipoint_yn
     Figure 4. An embankment structure that is blocking flow at two separate locations. A multipoint feature is required.
 
 Last steps
-~~~~~~~~~~
+----------
 
 Once the review process is complete, and all feature points in the review layer are verified, attributes from source datasets can be mapped to the feature points in this final review layer to match the CABD data structure.
 
 Stream Crossings
 ----------------
 
-Stream crossings in the CABD are compiled from a variety of sources. The starting point are “modelled stream crossings” ~ which are identified by finding places where the stream network intersects a road, railway, or trail. 
+Stream crossings in the CABD are compiled from a variety of sources. The starting point are “modelled stream crossings” - which are identified by finding places where the stream network intersects a road, railway, or trail. 
 
 Then, inventories of bridges, culverts, and other structures help fill in data gaps by identifying structure types for modelled crossings.
 
@@ -111,28 +111,28 @@ Finally, stream crossing assessment data is incorporated to fill in more detaile
 
 ## Generate modelled stream crossings
 
-Modelling stream crossings is an important first step to identify areas where human~made structures may be blocking fish passage. The CABD team compiles authoritative data about transportation networks ~ roads, railways, and trails ~ for each province and territory and runs a model that identifies all the areas where these transportation networks intersect a stream from NRCan’s National Hydrographic Network (NHN).
+Modelling stream crossings is an important first step to identify areas where human-made structures may be blocking fish passage. The CABD team compiles authoritative data about transportation networks - roads, railways, and trails - for each province and territory and runs a model that identifies all the areas where these transportation networks intersect a stream from NRCan’s National Hydrographic Network (NHN).
 
 The model automatically clusters crossings within a specified distance (which may differ between provinces and territories) and removes duplicate stream crossings based on a set of rules. Some of these rules include:
 
-~ If there are multiple modelled crossings within 20 m of each other, keep only the most downstream crossing
-~ Flag crossings for removal that are on winter roads, canoe routes, or ferry routes
-~ Flag crossings for removal where the transportation network indicates the crossing has been removed
+- If there are multiple modelled crossings within 20 m of each other, keep only the most downstream crossing
+- Flag crossings for removal that are on winter roads, canoe routes, or ferry routes
+- Flag crossings for removal where the transportation network indicates the crossing has been removed
 
-Since crossings associated with railway networks are often separate from those on other nearby roads or trails, modelled crossings on railways are generally clustered and de~duplicated separately. However, in some areas of Canada, old railway lines have been converted to ‘rail trails’, which may result in two crossings being generated on each of the railway and trail lines. In these cases, the modelled crossing on the railway is kept, but relevant information from the trail layer (trail name and trail association) is added to these points, along with a comment indicating that the point is on a rail trail.
+Since crossings associated with railway networks are often separate from those on other nearby roads or trails, modelled crossings on railways are generally clustered and de-duplicated separately. However, in some areas of Canada, old railway lines have been converted to ‘rail trails’, which may result in two crossings being generated on each of the railway and trail lines. In these cases, the modelled crossing on the railway is kept, but relevant information from the trail layer (trail name and trail association) is added to these points, along with a comment indicating that the point is on a rail trail.
 
-The scripts used to generate modelled stream crossings are available at https://github.com/Canadian~Wildlife~Federation/CABD/tree/main/cabd~database/barriers/stream_crossings.
+The scripts used to generate modelled stream crossings are available at https://github.com/Canadian-Wildlife-Federation/CABD/tree/main/cabd-database/barriers/stream_crossings.
 
 ## Clean up modelled stream crossings
 
 As modelled stream crossings are generated from the intersection of transportation networks and stream networks, there are often useful pieces of information from these networks that can be added to the crossing, such as:
 
-~ road/railway/trail name
-~ stream name
-~ stream order ~ this is a proxy for stream size, where larger streams fed by multiple tributaries typically have a larger stream order
-~ type of road ~ e.g., highway, residential, arterial
-~ type of crossing ~ some networks may have separate sections that indicate bridges, culverts, or other structures
-~ owner or operator of the road, railway, or trail
+- road/railway/trail name
+- stream name
+- stream order - this is a proxy for stream size, where larger streams fed by multiple tributaries typically have a larger stream order
+- type of road - e.g., highway, residential, arterial
+- type of crossing - some networks may have separate sections that indicate bridges, culverts, or other structures
+- owner or operator of the road, railway, or trail
 
 Crossings that are on a stream order 6 or higher stream are also automatically given a crossing type of ‘bridge’, as it’s assumed that most crossings on these larger streams would be bridges.
 
@@ -144,16 +144,16 @@ As each inventory is unique, the CABD team reviews each dataset for relevant inf
 
 Bridges are particularly important to identify, as these structures are passable to fish in almost all cases. Finding the locations of bridges lets us remove these from the count of barriers to fish in a watershed.
 
-To identify if a structure inventory was used to help fill in information about a particular crossing, refer to the `crossing_type_source` and cross~reference this value with the CABD data sources page: https://cabd~docs.netlify.app/docs_user/docs_user_data_sources
+To identify if a structure inventory was used to help fill in information about a particular crossing, refer to the `crossing_type_source` and cross-reference this value with the CABD data sources page: https://cabd-docs.netlify.app/docs_user/docs_user_data_sources
 
 ## Manual review
 
 The CABD team also carries out a number of checks manually using satellite imagery to supplement the information described above. Some of these checks include:
 
-~ Review all crossings classified as bridges based on stream order.
-    ~ During this check, some crossings may be changed to ‘culvert’ or ‘multiple culvert’, or marked for removal if there is no permanent stream crossing infrastructure at that location.
-    ~ Some bridges may also have multiple crossing points representing them ~ in these cases, only a single crossing point is kept.
-~ Review all crossings within 25 m of another crossing to confirm if there are multiple separate crossings in that location
-~ Review all crossings within 45 m of a dam to confirm if the crossing exists, and is separate from the dam structure
-~ Review all crossings that are on the same transportation network segment and stream segment. These typically result from streams that are represented as flowing nearly parallel to a transportation network, but may occur in other areas with a high density of roads or railways such as highway on/off ramps and interchanges, train yards, and residential areas.
-~ Review all crossings on a named watercourse where the name includes ‘River’ or ‘Rivière’. These are often bridges.
+- Review all crossings classified as bridges based on stream order.
+    - During this check, some crossings may be changed to ‘culvert’ or ‘multiple culvert’, or marked for removal if there is no permanent stream crossing infrastructure at that location.
+    - Some bridges may also have multiple crossing points representing them - in these cases, only a single crossing point is kept.
+- Review all crossings within 25 m of another crossing to confirm if there are multiple separate crossings in that location
+- Review all crossings within 45 m of a dam to confirm if the crossing exists, and is separate from the dam structure
+- Review all crossings that are on the same transportation network segment and stream segment. These typically result from streams that are represented as flowing nearly parallel to a transportation network, but may occur in other areas with a high density of roads or railways such as highway on/off ramps and interchanges, train yards, and residential areas.
+- Review all crossings on a named watercourse where the name includes ‘River’ or ‘Rivière’. These are often bridges.
