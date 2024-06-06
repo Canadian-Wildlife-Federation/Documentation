@@ -462,7 +462,7 @@ This end point allows users to submit feature update requests. These requests ar
      "organization": "<Optional>", 
      "mailinglist": <true|false>, 
      "description": "Description of feature update", 
-     "datasource", "Optional. Information about source of data update"
+     "datasource": "Optional. Information about source of data update"
    }
 
 
