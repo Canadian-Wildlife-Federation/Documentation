@@ -515,3 +515,120 @@ End Point
 ``type`` must be a valid feature type. 
 
 The attributes included in the vector tile are those whose "include_vector_tile" value in the feature_type_metadata table are true.
+
+
+Community Data
+==============
+
+-----
+
+The community data API supports the collection of data from community users. This API was developed to be used in conjunction with the Mobile Data Application. 
+
+The data submitted to the community API immediately gets written to a community data table without 
+any validation or processing.  A separate job takes data from this community data table, 
+parses the feature type, photos, user information and stores the parsed data in the appropriate feature staging 
+table. Any features provided without a cabd_id are assigned a new one. 
+Once in the feature staging table it is up to Data Reviews to review the data and update the appropriate CABD features.
+
+Ghost features are features which have been submitted to the community data API without a cabd_id 
+and have not yet been reviewed and added to the official feature dataset. These features are available 
+for viewing via the community ghost feature api. 
+
+
+Submit Community Data End Point
+-------------------------------
+
+This end point allows user to submit new community data.
+
+* URL: /community
+* METHOD: POST
+* CONTENT-TYPE: application/geo+json 
+* BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs feature_type & user_name properties. A cabd_id property should be provided if an existing feature is updated. Any other properties provided are retained and available to the data reviewer. All photo data should be submitted as base64 encoded png images. 
+
+::
+   { 
+     "type": "Feature", 
+     "geometry": { 
+      "type": "Point", 
+      "coordinates": [ -123.36089100000027, 48.46620700000054] 
+     }, 
+     "properties": { 
+      "feature_type": "dams", 
+      "user_email": "datasubmittor@email.com", 
+      "cabd_id": "F515F5FB-2519-400F-A258-EEF7219C40BE", 
+      "dropImage": "<imagedata>", 
+      "streamFlowing": "true", 
+      "downstreamImage": "<imagedata>", 
+      "notes": "", 
+      "passability_status": "passable",
+      "structureFlowing": "true", 
+      "blockagesOther": "false", 
+      "blockagesFencing": "false", 
+      "blockageImage": "<imagedata>", 
+      "selectedType": "bridge", 
+      "physicalBlockages": "true", 
+      "blockageDebris": "false", 
+      "outletDrop": ">20", 
+      "blockagesDeformation": "true", 
+      "lat": 48.46620700000054, 
+      "blockagesDam": "true", 
+      "lng": -123.36089100000027 
+     } 
+   } 
+
+* RETURN: JSON containing a unique identifer
+
+::
+   { 
+   
+     "id": "e217b9b7-3f2e-4fe4-8b7b-61e09e2cff98" 
+   
+   } 
+
+
+This unique identifier can be used to determine if there was a problem with the submission.
+The end point ``/community/status/<uuid>`` will return 404 (not found) if the data was processed correctly or 200 with some error information if there was an issue with processing the submitted data (or processing is still in progress). This was written strictly for testing the submission API and may be removed at a future date. 
+
+ 
+Ghost Feature End Point
+-----------------------
+This api returns all the "ghost" features - new features submitted through the community data API that are awaiting review.
+
+
+``https://cabd-web.azurewebsites.net/community/ghost``
+``https://cabd-web.azurewebsites.net/community/ghost/{type}``
+
+``type`` must be a valid feature type. 
+
+A maximum of 500 features will be returned.
+
+::
+   {
+     "type": "FeatureCollection",
+     "crs": "EPSG:4617",
+     "features": [
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [125.6,10.1]
+         },
+         "properties": {
+           "cabd_id": "bad8c0f4-e89c-4773-8ab3-f90f7f2d1e93",
+           "feature_type": "dams"
+         }
+       },
+       {
+         "type": "Feature",
+         "geometry": {
+           "type": "Point",
+           "coordinates": [125.6,10.1]
+         },
+         "properties": {
+           "cabd_id": "2c4693c1-f4f8-4686-9314-ecc074694a29",
+           "feature_type": "stream_crossings"
+         }
+       } 
+     ]    
+   }  
+   
