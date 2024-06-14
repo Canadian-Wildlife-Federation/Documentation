@@ -546,6 +546,7 @@ This end point allows user to submit new community data.
 * BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs feature_type & user_name properties. A cabd_id property should be provided if an existing feature is updated. Any other properties provided are retained and available to the data reviewer. All photo data should be submitted as base64 encoded png images. 
 
 ::
+
    { 
      "type": "Feature", 
      "geometry": { 
@@ -579,10 +580,9 @@ This end point allows user to submit new community data.
 * RETURN: JSON containing a unique identifer
 
 ::
+
    { 
-   
      "id": "e217b9b7-3f2e-4fe4-8b7b-61e09e2cff98" 
-   
    } 
 
 
@@ -596,6 +596,7 @@ This api returns all the "ghost" features - new features submitted through the c
 
 
 ``https://cabd-web.azurewebsites.net/community/ghost``
+
 ``https://cabd-web.azurewebsites.net/community/ghost/{type}``
 
 ``type`` must be a valid feature type. 
@@ -603,6 +604,7 @@ This api returns all the "ghost" features - new features submitted through the c
 A maximum of 500 features will be returned.
 
 ::
+
    {
      "type": "FeatureCollection",
      "crs": "EPSG:4617",
