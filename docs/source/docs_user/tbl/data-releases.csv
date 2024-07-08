@@ -9,9 +9,17 @@
 
 This version includes collective updates made to ~2800 structures across Canada from just over 600 data sources. Updates were processed for dams, waterfalls, and fishways. For dams, a total of 11947 pieces of information were updated for 63 different attributes. The attribute most often updated was owner followed by dam use and operating status. This update also includes the addition of over 200 new structures that weren’t previously in the CABD.
 
+**Update - June 28, 2024**
+
+- Waterfalls: In British Columbia, updates to 46 waterfalls were made to correct their location and/or passability status, 30 new waterfall features were added, and 2 existing waterfall features were removed from the database. 
+
+- These changes were made effective in Version 1.2 on June 28, 2024, 12:00 PM EST. Please re-download the dams dataset if you downloaded Version 1.2 before this date.
+
 **Update - May 17, 2024**
 
-Updates were made for 5 dams in the Horsefly River watershed, British Columbia. Two dams received updates to their attributes and three dams were removed from the dataset. These changes were made effective in Version 1.2 on May 13, 2024, 8:00 AM EST. Please re-download the dams dataset it you downloaded Version 1.2 before this date.",:download:`Download v.1.2 <downloads/release_1.2_2024-01-08.txt>`
+- Dams: Updates were made for 5 dams in the Horsefly River watershed, British Columbia. Two dams received updates to their attributes and three dams were removed from the dataset. 
+
+- These changes were made effective in Version 1.2 on May 13, 2024, 8:00 AM EST. Please re-download the dams dataset if you downloaded Version 1.2 before this date.",:download:`Download v.1.2 <downloads/release_1.2_2024-01-08.txt>`
 1.1, "February 1, 2023 11:00 AM EST","This release includes:
 
 - dams v.1.1
