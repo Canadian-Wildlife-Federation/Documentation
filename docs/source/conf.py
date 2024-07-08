@@ -73,7 +73,7 @@ html_logo = '_static/cwf_logo_2.png'
 
 html_theme_options = {
     'logo_only': True,
-    "repository_url": "https://github.com/Canadian-Wildlife-Federation",
+    "repository_url": "https://github.com/Canadian-Wildlife-Federation/Documentation",
     "use_issues_button": True,
     "repository_branch": "",
     "use_repository_button": True,
