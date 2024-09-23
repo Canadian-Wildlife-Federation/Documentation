@@ -13,6 +13,30 @@ If you'd like to be added to a mailing list to receive email notifications when 
 Announcements
 -------------
 
+**September 23, 2024**
+
+We are pleased to announce the release of stream crossings in the CABD. This initial release of stream crossings includes 'modelled' stream crossing points, automatically generated where streams intersect with transportation networks (such as roads, railways, and trails). These points represent locations where structures like bridges, culverts, or fords are likely to exist. Future updates will integrate field verification and existing stream crossing assessments information.
+
+For more information about the modelled stream crossings data structure, please visit the Data Catalogue: https://cabd-docs.netlify.app/docs_user/docs_user_data_catalogue#ft_modelled_crossings.
+
+For more information about how modelled stream crossings were compiled, please visit the Data Processing Methods page: https://cabd-docs.netlify.app/docs_tech/docs_tech_crossing_review.
+
+With this release, we are launching a new feature that allows anyone to provide information on aquatic barriers directly through the `CABD web tool <https://aquaticbarriers.ca/en>`_. This feature is a simple form that is intended to make sharing information you may have about structures in your area as easy as possible. You can access this feature by navigating to the CABD web tool and opening the attribute popup for the structure in question by clicking on it in the map. From there, clicking on the ‘Update This Information' tab within the popup will open the form, which you can then fill out. As part of this form, you can also choose to be added to the CABD mailing list to receive updates on new releases and other news. 
+
+For more information about the 'Update This Information' feature, please visit the Submit Data Updates page: https://cabd-docs.netlify.app/docs_user/docs_user_submitted_updates.
+
+
+**April 24, 2024**
+
+Two new passability statuses were added to the CABD:
+
+*   NA - no structure
+*   NA - removed/decommissioned
+
+As a result of this change, any structures with an operating_status of 'removed/decommissioned' will also now have a passability_status of 'NA - removed/decommissioned' instead of 'passable'.
+
+You will also notice that there are new symbols used to represent these passability statuses in the web tool. We hope this helps users better distinguish between structures that have been removed/decommissioned versus those that have been made passable through fish passage rehabilitation projects.
+
 **May 15, 2023**
 
 The CABD web tool has been updated to make searching, filtering, and visualizing data easier and faster for our users.

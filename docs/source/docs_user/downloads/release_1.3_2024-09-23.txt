@@ -1,0 +1,21 @@
+CABD Changelog
+
+Date: September 23, 2024 3:00 PM EST
+Version: 1.3
+Summary: This version includes a new modelled stream crossings feature type.
+
+Update - September 23, 2024: Stream crossings: Passability status values were updated for modelled stream crossings across British Columbia based on available field assessment information from the Provincial Stream Crossing Information System (PSCIS). These changes were made effective in Version 1.3 on September 23, 2024, 3:00 PM EST.
+
+Data Layers
+
+dams 1.2
+- 36,968 structures
+
+waterfalls 1.1
+- 24,981 waterfalls
+
+fishways 1.1
+- 436 fishways
+
+stream crossings 1.0
+- 1,525,787 modelled stream crossings
