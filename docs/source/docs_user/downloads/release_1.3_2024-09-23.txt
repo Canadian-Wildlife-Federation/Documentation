@@ -4,6 +4,8 @@ Date: September 23, 2024 3:00 PM EST
 Version: 1.3
 Summary: This version includes a new modelled stream crossings feature type.
 
+Update - September 23, 2024: Stream crossings: Passability status values were updated for modelled stream crossings across British Columbia based on available field assessment information from the Provincial Stream Crossing Information System (PSCIS). These changes were made effective in Version 1.3 on September 23, 2024, 3:00 PM EST.
+
 Data Layers
 
 dams 1.2

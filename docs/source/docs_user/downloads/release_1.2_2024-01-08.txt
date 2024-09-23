@@ -4,13 +4,13 @@ Date: January 05, 2024 5:00 PM EST
 Version: 1.2
 Summary: This version includes collective updates made to ~3000 structures across Canada from just over 600 data sources. Updates were processed for dams, waterfalls, and fishways. For dams, a total of 11947 pieces of information were updated for 63 different attributes. The attribute most often updated was owner followed by dam use and operating status. This update also includes the addition of over 200 new structures that weren’t previously in the CABD.
 
-Update - September 16, 2024: In the Margaree River watershed, heights for 4 waterfalls were added. These changes were made effecitve in Versions 1.2 on September 16, 2024, 10:00 AM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
+Update - September 16, 2024: In the Margaree River watershed, heights for 4 waterfalls were added. These changes were made effecitve in Versions 1.2 on September 16, 2024, 10:00 AM EST. 
 
-Update - July 26, 2024: Throughout British Columbia, 15 waterfalls were updated and 2 new waterfalls were added. Within the Upper Shushwap River watershed, 1 dam was updated and 1 dam was added. A dam was also removed in the Bonaparte River watershed. A fishway was added in the Bonaparte River watershed. These changes were made effective in Versions 1.2 on July 26, 2024, 1:30 PM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
+Update - July 26, 2024: Throughout British Columbia, 15 waterfalls were updated and 2 new waterfalls were added. Within the Upper Shushwap River watershed, 1 dam was updated and 1 dam was added. A dam was also removed in the Bonaparte River watershed. A fishway was added in the Bonaparte River watershed. These changes were made effective in Versions 1.2 on July 26, 2024, 1:30 PM EST. 
 
-Update - June 28, 2024: In British Columbia, updates to 46 waterfalls were made to correct their location and/or passability status, 30 new waterfall features were added, and 2 existing waterfall features were removed from the database. These changes were made effective in Version 1.2 on June 28, 2024, 12:00 PM EST. Please re-download the dams dataset if you downloaded Version 1.2 before this date.
+Update - June 28, 2024: In British Columbia, updates to 46 waterfalls were made to correct their location and/or passability status, 30 new waterfall features were added, and 2 existing waterfall features were removed from the database. These changes were made effective in Version 1.2 on June 28, 2024, 12:00 PM EST. 
 
-Update - May 17, 2024: Updates were made for 5 dams in the Horsefly River watershed, British Columbia. Two dams received updates to their attributes and three dams were removed from the dataset. These changes were made effective in Version 1.2 on May 13, 2024, 8:00 AM EST. Please re-download the dams dataset if you downloaded Version 1.2 before this date.
+Update - May 17, 2024: Updates were made for 5 dams in the Horsefly River watershed, British Columbia. Two dams received updates to their attributes and three dams were removed from the dataset. These changes were made effective in Version 1.2 on May 13, 2024, 8:00 AM EST. 
 
 Data Layers
 
