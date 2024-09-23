@@ -1,0 +1,19 @@
+CABD Changelog
+
+Date: September 23, 2024 3:00 PM EST
+Version: 1.3
+Summary: This version includes a new modelled stream crossings feature type.
+
+Data Layers
+
+dams 1.2
+- 36,968 structures
+
+waterfalls 1.1
+- 24,981 waterfalls
+
+fishways 1.1
+- 436 fishways
+
+stream crossings 1.0
+- 1,525,787 modelled stream crossings
