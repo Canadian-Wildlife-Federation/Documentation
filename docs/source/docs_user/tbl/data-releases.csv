@@ -12,6 +12,14 @@ For more information about the modelled stream crossings data structure, please 
 
 For more information about how modelled stream crossings were compiled, please visit the Data Processing Methods page: https://cabd-docs.netlify.app/docs_tech/docs_tech_crossing_review
 
+**Update - September 24, 2024** 
+
+- Dams: In the Lower Nicola River watershed, information for 2 dams were updated.
+
+- Waterfalls: In the Lower Nicola River watershed, information for 2 waterfalls were updated while 2 other waterfalls were removed from the database.
+
+- These changes were made effective in Version 1.3 on September 24, 2024, 4:00 PM EST. Please re-download this dataset if you downloaded Version 1.3 before this date.
+
 **Update - September 23, 2024**
 
 - Stream crossings: Passability status values were updated for modelled stream crossings across British Columbia based on available field assessment information from the Provincial Stream Crossing Information System (PSCIS). 
@@ -31,7 +39,7 @@ This version includes collective updates made to ~2800 structures across Canada 
 
 - Waterfalls: In the Margaree River watershed, heights for 4 waterfalls were added.
 
-- These changes were made effecitve in Versions 1.2 on September 16, 2024, 10:00 AM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
+- These changes were made effecitve in Version 1.2 on September 16, 2024, 10:00 AM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
 
 **Update - July 26, 2024**
 
@@ -41,7 +49,7 @@ This version includes collective updates made to ~2800 structures across Canada 
 
 - Fishways: A fishway was added in the Bonaparte River watershed.
 
-- These changes were made effective in Versions 1.2 on July 26, 2024, 1:30 PM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
+- These changes were made effective in Version 1.2 on July 26, 2024, 1:30 PM EST. Please re-download this dataset if you downloaded Version 1.2 before this date.
 
 **Update - June 28, 2024**
 
