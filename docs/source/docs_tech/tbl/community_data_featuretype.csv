@@ -1,0 +1,7 @@
+Column,Description
+id,The unique system assigned identifier
+uploaded_datetime,The date/time the data was submitted
+data,The raw data submitted
+status,The system managed status field (one of NEW; PROCESSING; DONE)
+status_message,A message describing the processing status
+warnings,A list of warning messages generated during processing 
