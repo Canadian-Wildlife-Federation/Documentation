@@ -36,7 +36,7 @@ A legend defines the symbology of the data.
     :align: left
     :width: 90%
 
-Here, the feature type (i.e., dam, waterfall, or fishway) that a data point represents is defined using shape while the passability status of the feature is defined using colour. If you have difficulty distinguishing colours from each other, you can visualize data using the ‘accessibility mode’. See the topic :ref:`Visualizing Data <visualizing>` for more details.
+Here, the feature type (i.e., dam, waterfall, fishway or modelling crossings) that a data point represents is defined using shape while the passability status of the feature is defined using colour. If you have difficulty distinguishing colours from each other, you can visualize data using the ‘accessibility mode’. See the topic :ref:`Visualizing Data <visualizing>` for more details.
 
 .. figure:: img/legend_highlight.png
     :align: left

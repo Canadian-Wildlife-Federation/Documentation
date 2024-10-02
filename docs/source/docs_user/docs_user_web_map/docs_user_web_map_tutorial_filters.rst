@@ -7,8 +7,8 @@ Filtering Data
 To filter data based on a specific set of criteria, you will need to open the ‘Filters’ window by clicking the ‘Filter Data’ tab in the left-hand panel. 
 
 .. figure:: img/panel_filters_highlight_crop.png
-    :align: left
-    :width: 60%
+    :align: center
+    :width: 70%
 
 Filter by Location
 ------------------
@@ -61,10 +61,10 @@ Below the options to filter by location are the options to filter each feature t
 To exclude an entire feature type from being filtered, you can toggle it off by clicking the toggle switch on the left inside the ‘Filters’ window.
 
 .. figure:: img/filter_layers.png
-    :align: left
+    :align: center
     :width: 40%
 
-    Here, filters have been applied to only show data for dams.
+    Here, filters have been applied to only show data for dams, waterfalls, fishways, and modelled crossings.
 
 To view the filterable attributes for a specific feature type, expand the section and select criteria from the available options. The checkbox to the right of each attribute name can be used to reset or clear all checkboxes for the values listed below it. If an attribute value is checked, all features that contain this value in the database will appear in the map view window once the ‘Apply Filters’ button is clicked. If an attribute value is unchecked, all features that contain that value will be omitted from the results and not displayed in the map view window. 
 
