@@ -36,7 +36,6 @@ The video below shows you how to update information about a specific structure u
     <video controls width="500"><source src="../../_static/submit_data_update.mp4"></video>
 
 Once subscribed to the mailing list, you can unsubscribe by clicking the button as shown below.
-
 .. figure:: img/unsubscribe_mailing.png
     :align: left
     :width: 60%
