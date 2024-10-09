@@ -7,7 +7,7 @@ Downloading Data
 Data can be downloaded by opening the ‘Download’ window. This window can be opened by clicking the ‘Download Data’ button in the ‘Filters’ window, or by navigating to the ‘Download Data’ tab in the left-hand panel.
 
 .. figure:: img/download_crop_highlight_crop.png
-    :align: center
+    :align: left
     :width: 90%
 
 There are three data set options you can choose from when downloading data:

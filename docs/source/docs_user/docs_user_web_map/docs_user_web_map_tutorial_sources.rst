@@ -7,7 +7,7 @@ Data Sources
 Data source information for all spatial and non-spatial sources can be accessed by navigating to the ‘Data Sources’ tab in the left-hand panel. When clicked, the ‘Data Sources’ page on the CABD documentation site will open in a new browser tab. 
 
 .. figure:: img/panel_data_sources_highlight.png
-    :align: center
+    :align: left
     :width: 90%
 
 There is a table on the ‘Data Sources’ page that you can search using the search box at the top right of the table. The ‘Data Source Short Name’ field contains hyperlinked values that will you to more detailed information about the data source when clicked.
