@@ -12,6 +12,7 @@ The CABD Web Mapping Tool
     docs_user_web_map/docs_user_web_map_tutorial_search
     docs_user_web_map/docs_user_web_map_tutorial_data_vis
     docs_user_web_map/docs_user_web_map_tutorial_attributes
+    docs_user_web_map/docs_user_web_map_update_information
     docs_user_web_map/docs_user_web_map_tutorial_filters
     docs_user_web_map/docs_user_web_map_tutorial_download
     docs_user_web_map/docs_user_web_map_tutorial_sources
@@ -34,6 +35,7 @@ Explore the topics listed below to learn more about the different components and
 * :ref:`Searching <searching>`
 * :ref:`Visualizing Data <visualizing>`
 * :ref:`Viewing Attribute Information <attributes>`
+* :ref:`Submitting Data Updates <data-submissions>`
 * :ref:`Filtering Data <filtering>`
 * :ref:`Downloading Data <downloading>`
 * :ref:`Data Sources <data-sources>`

@@ -4,13 +4,13 @@
 Visualizing Data
 ================
 
-When the web tool initially loads in your browser window, all feature layers (dams, waterfalls, and fishways) across Canada will be displayed by default, except for the NHN watershed boundaries layer which is toggled off. 
+When the web tool initially loads in your browser window, all feature layers (dams, waterfalls, fishways, and modelled crossings) across Canada will be displayed by default, except for the NHN watershed boundaries layer which is toggled off. 
 
 To change the visibility of data layers, navigate to the ‘Layers’ tab in the left-hand panel and click the eye icon.
 
 .. figure:: img/panel_layers_highlight_crop.png
-    :align: left
-    :width: 70%
+    :align: center
+    :width: 60%
 
 Please watch the video below for a demonstration on how to toggle the visibility of the layers in the left-hand panel.
 
