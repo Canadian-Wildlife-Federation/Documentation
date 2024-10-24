@@ -4,7 +4,7 @@
 Data Catalogue
 ==============
 
-The CABD data catalogue contains the the information you need to make sense of the attributes for each CABD feature type (dams, waterfalls, and fishways), including human-readable field names, breakdowns of allowable field values, and definitions. If you have questions about any of the information on this page, you can reach out to us at cabd@cwf-fcf.org.
+The CABD data catalogue contains the the information you need to make sense of the attributes for each CABD feature type (dams, waterfalls, fishways, stream crossings and modelled crossings), including human-readable field names, breakdowns of allowable field values, and definitions. If you have questions about any of the information on this page, you can reach out to us at cabd@cwf-fcf.org.
 
 Feature Types
 -------------

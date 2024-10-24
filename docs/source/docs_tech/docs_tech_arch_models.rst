@@ -12,7 +12,7 @@
 Application Architecture
 ########################
 
-This section contains technical details about the current implementation of the Canadian Aquatic Barriers Database (CABD) back-end application, including feaure and vector tile services and the CABD data dictionary. The intended audience are software developers and similar technical users looking to upgrade/maintain the current system or use the API endpoints.
+This section contains technical details about the current implementation of the Canadian Aquatic Barriers Database (CABD) back-end application, including feature and vector tile services and the CABD data dictionary. The intended audience are software developers and similar technical users looking to upgrade/maintain the current system or use the API endpoints.
 
 .. _current-application-architecture:
 
@@ -64,12 +64,12 @@ There are currently three feature types and one super type implemented in CABD. 
 
 Feature types:
 
-- ``barriers`` - a super feature type that includes dams, other structures, and waterfalls.
+- ``barriers`` - a super feature type that includes dams, other structures, waterfalls, and modelled crossings.
 - ``dams`` - a feature type for features classified as a dam or other structure.
 - ``waterfalls`` - a feature type for features classified as a waterfall.
 - ``fishways`` - a feature type for features classified as a fish passage structure.
-- ``medium`` - a feature type created for testing the increase in data volume expected for stream crossing data.
-- ``big`` - a feature type created for testing the increase in data volume expected for stream crossing data.
+- ``modelled crossings`` - a feature type for features classified as a modelled crossing.
+- ``stream crossings`` - a feature type for features classified as a stream crossing.
 
 .. _cabd-database-model:
 

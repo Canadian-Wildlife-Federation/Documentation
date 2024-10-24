@@ -8,7 +8,7 @@ The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from
 
 .. note::
 
-    In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, or fishway. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
+    In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, fishway or modelled crossing. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
 
 Duplicate identification and tracking
 -------------------------------------
