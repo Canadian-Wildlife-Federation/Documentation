@@ -17,7 +17,7 @@ Feature Types
     <script>
     function loadDataSources() {
     
-      let url = "https://cabd-web.azurewebsites.net/cabd-api/docs?options=types"
+      let url = "https://cabd-web.azurewebsites.net/cabd-api/docs?options=barriers, dams, modelled crossings, fishways, stream crossings, waterfalls"
       let xhr = new XMLHttpRequest();
       // Making our connection 
        xhr.open("GET", url, true);
