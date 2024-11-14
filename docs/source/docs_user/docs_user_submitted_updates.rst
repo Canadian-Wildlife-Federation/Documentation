@@ -4,7 +4,7 @@
 Submit Data Updates
 ===================
 
-We are working hard to fill existing data gaps in the CABD, but filling these data gaps is a huge job and we’re hoping people across Canada can help! We’re working on some new tools to allow users to submit information through the CABD web tool, but in the meantime you can submit updates to the attribute information for features in the CABD (i.e., a dam, waterfall, or fishway) by sharing the information with the CABD team via email (see below for details).
+We are working hard to fill existing data gaps in the CABD, but filling these data gaps is a huge job and we’re hoping people across Canada can help! We’re working on some new tools to allow users to submit information through the CABD web tool, but in the meantime you can submit updates to the attribute information for features in the CABD (i.e., a dam, waterfall, fishway or modelled stream crossing) by sharing the information with the CABD team via email (see below for details).
 
 We’ll compile and release data updates in bulk periodically (every few months), so check out our :ref:`Data Releases <data-releases>` section for the latest updates!
 
