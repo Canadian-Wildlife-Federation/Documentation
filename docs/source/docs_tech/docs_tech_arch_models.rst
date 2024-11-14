@@ -68,7 +68,7 @@ Feature types:
 - ``dams`` - a feature type for features classified as a dam or other structure.
 - ``waterfalls`` - a feature type for features classified as a waterfall.
 - ``fishways`` - a feature type for features classified as a fish passage structure.
-- ``modelled crossings`` - a feature type for features classified as a modelled crossing.
+- ``modelled crossings`` - a feature type for features classified as a modelled stream crossing.
 - ``stream crossings`` - a feature type for features classified as a stream crossing.
 
 .. _cabd-database-model:
