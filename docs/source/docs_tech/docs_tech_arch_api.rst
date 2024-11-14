@@ -67,7 +67,7 @@ Feature Type Metadata End Points
 
 The output format of all Feature Type End points is ``JSON``.
 
-Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``, ``modelled crossings``, and ``stream crossings``. See :ref:`Implemented Feature Model<implemented-feature-model>` for definitions of each feature type.
+Existing feature types are: ``barriers``, ``dams``, ``waterfalls``, ``fishways``, ``medium``, and ``big``. See :ref:`Implemented Feature Model<implemented-feature-model>` for definitions of each feature type.
 
 ``/features/types/``
 
@@ -181,12 +181,123 @@ This request will return all dam features with a passability status code of 1 (B
 
 .. note::
 
+    .. container:: toggle
+
         .. container:: header
 
-            For a list of attributes and coded values, visit the :ref:`Data Catalogue <data-catalogue>`
+            Click the arrow below to expand a **searchable list of filterable attributes** with coded and allowable values where applicable.
 
             Please note that filters on any attributes with coded values need to specify the code instead of the associated name (i.e., a filter on the operating_status_code attribute should specify a value of 1 for abandoned/orphaned dams: ``&filter=operating_status_code:eq:1``).
 
+        .. table:: 
+            :class: datatable
+            :widths: 15, 20, 30, 35
+
+            ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
+            Feature Type               Attribute Name                        Filter Attribute Name           Allowable Values
+            ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
+            Dams, waterfalls           Passability status                    passability_status_code         1-barrier, 2-partial barrier, 3-passable, 4-unknown
+            Dams                       Operating status                      operating_status_code           1-abandoned/orphaned, 2-active, 3-decommissioned/removed, 4-retired/closed, 5-unknown, 6-remediated 
+            Dams                       Ownership type                        ownership_type_code             1-charity/non-profit, 2-federal, 3-municipal, 4-private, 5-provincial/territorial, 6-other, 7-unknown, 8-indigenous
+            Dams                       Dam use                               use_code                        1-irrigation, 2-hydroelectricity, 3-water supply, 4-flood control, 5-recreation, 6-navigation, 7-fisheries, 8-pollution control, 9-invasive species control, 10-other, 11-unknown
+            Dams                       Dam size                              size_class_code                 1-small, 2-medium, 3-large, 4-unknown  
+            Dams, waterfalls, fishways Province/territory name               province_territory_code         ab-alberta, bc-british columbia, mb-manittoba, nb-new brunswick, nl-newfoundland and labrador, ns-nova scotia, nt-northwest territories, nu-nunavut, on-ontario, pe-prince edward island, qc-quebec, sk-saskatchewan, us-united states, yt-yukon         
+            Dams                       Dam height (m)                        height_m                        n/a
+            Dams                       Construction year                     construction_year               n/a
+            Dams                       Upstream passage type                 up_passage_type_code            1-denil, 2-nature-like fishway, 3-pool and weir, 4-pool and weir with hole, 5-trap and truck, 6-vertical slot, 7-other, 8-no structure, 9-unknown
+            Dams                       Dam function                          function_code                   1-storage, diversion, 3-detention, 4-debris, 6-saddle, 7-hydro - closed-cycle pumped storage, 8-hydro - conventional storage, 9-hydro - open-cycle pumped storage, 10-hydro - run-of-river, 11-hydro - tidal, 12-other, 13-unknown
+            Dams                       Use irrigation                        use_irrigation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use hydroelectricity                  use_electricity_code            1-main, 2-major, 3-secondary 
+            Dams                       Use water supply                      use_supply_code                 1-main, 2-major, 3-secondary 
+            Dams                       Use flood control                     use_floodcontrol_code           1-main, 2-major, 3-secondary 
+            Dams                       Use recreation                        use_recreation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use navigation                        use_navigation_code             1-main, 2-major, 3-secondary 
+            Dams                       Use fisheries                         use_fish_code                   1-main, 2-major, 3-secondary 
+            Dams                       Use pollution control                 use_pollution_code              1-main, 2-major, 3-secondary 
+            Dams                       Use invasive species                  use_invasivespecies_code        1-main, 2-major, 3-secondary 
+            Dams                       Use other                             use_other_code                  1-main, 2-major, 3-secondary 
+            Dams                       Construction type                     construction_type_code          1-arch, 2-buttress, 3-earth, 4-gravity, 5-multiple arch, 6-rock, 7-steel, 8-timber, 9-unknown, 10-other, 11-concrete, 12-masonry
+            Dams                       Spillway type                         spillway_type_code              1-combined, 2-free, 3-gated, 4-other, 5-none, 6-unknown 
+            Dams                       Turbine type                          turbine_type_code               1-cross-flow, 2-francis, 3-kaplan, 4-pelton, 5-unknown, 6-other 
+            Dams                       Downstream passage route              down_passage_route_code         1-bypass, 2-river channel, 3-spillway, 4-turbine  
+            Dams, waterfalls, fishways Completeness level                    complete_level_code             1-unverified, 2-minimal, 3-moderate, 4-complete  
+            Dams                       Lake control                          lake_control_code               1-yes, 2-enlarged, 3-maybe 
+            Dams                       Dam condition                         condition_code                  1-good, 2-fair, 3-poor, 4-unreliable  
+            Waterfalls                 Waterfall height                      fall_height_m                   n/a
+            Fishways                   Fishway type                          fishpass_type_code              1-denil, 2-nature-like fishway, 3-pool and weir, 4-pool and weir with hole, 5-trap and truck, 6-vertical slot, 7-other, 8-no structure, 9-unknown
+            Fishways                   Year constructed                      year_constructed                n/a
+            Dams, waterfalls, fishways Municipality                          municipality                    n/a
+            Dams                       Dam name (English)                    dam_name_en                     n/a
+            Dams                       Dam name (French)                     dam_name_fr                     n/a
+            Dams, waterfalls, fishways Waterbody name (English)              waterbody_name_en               n/a
+            Dams, waterfalls, fishways Waterbody name (French)               waterbody_name_fr               n/a
+            Dams, waterfalls, fishways Barrier/system Identifier             cabd_id                         n/a
+            Dams                       Reservoir name (English)              reservoir_name_en               n/a
+            Dams                       Reservoir name (French)               reservoir_name_fr               n/a
+            Dams, waterfalls, fishways NHN Watershed ID                      nhn_watershed_id                n/a
+            Dams, waterfalls, fishways Used for Network Analysis             use_analysis                    true, false
+            Waterfalls                 Waterfall name (English)              fall_name_en                    n/a
+            Waterfalls                 Waterfall name (French)               fall_name_fr                    n/a
+            Dams                       Generating capacity (MWh)             generating_capacity_mwh         n/a
+            Dams                       Federal compliance status             federal_compliance_status       n/a
+            Dams                       Provincial compliance status          provincial_compliance_status    n/a
+            Dams, fishways             Operating notes                       operating_notes                 n/a 
+            Dams                       Removed year                          removed_year                    n/a
+            Dams                       Assessment schedule                   assess_schedule                 n/a 
+            Dams                       Expected life (years)                 expected_life                   n/a 
+            Dams                       Next maintenance date                 maintenance_next                n/a
+            Dams                       Last maintenance date                 maintenance_last                n/a 
+            Dams                       Dam length (m)                        length_m                        n/a 
+            Dams                       Spillway Capacity (m3/s)              spillway_capacity               n/a 
+            Dams                       Reservoir present                     reservoir_present               true, false
+            Dams                       Reservoir area(km2)                   reservoir_area_skm              n/a
+            Dams                       Reservoir depth (m)                   reservoir_depth_m               n/a 
+            Dams                       Storage Capacity (mcm)                storage_capacity_mcm            n/a 
+            Dams                       Average rate of discharge (L/s)       avg_rate_of_discharge_ls        n/a 
+            Dams                       Degree of regulation (%)              degree_of_regulation_pc         n/a 
+            Dams                       Provincial flow requirements (m3/s)   provincial_flow_req             n/a 
+            Dams                       Federal flow requirements (m3/s)      federal_flow_req                n/a 
+            Dams                       Catchment Area (km2)                  catchment_area_skm              n/a 
+            Dams                       Hydro peaking system                  hydro_peaking_system            n/a 
+            Dams                       Number of turbines                    turbine_number                  n/a
+            Dams, waterfalls, fishways Last modified                         last_modified                   n/a 
+            Dams, waterfalls, fishways Comments                              comments                        n/a 
+            Dams                       Upstream linear length (km)           upstream_linear_km              n/a 
+            Dams                       Facility name (English)               facility_name_en                n/a 
+            Dams                       Facility name (French)                facility_name_fr                n/a 
+            Fishways                   Monitoring equipment                  monitoring_equipment            n/a 
+            Fishways                   Architect                             architect                       n/a 
+            Fishways                   Contracted by                         contracted_by                   n/a 
+            Fishways                   Constructed by                        constructed_by                  n/a 
+            Fishways                   Plans held by                         plans_held_by                   n/a 
+            Fishways                   Purpose                               purpose                         n/a 
+            Fishways                   Dam Identifier                        dam_id                          n/a 
+            Fishways                   Designed based on biology             designed_on_biology             n/a 
+            Fishways                   Fishway length (m)                    length_m                        n/a 
+            Fishways                   Elevation (m)                         elevation_m                     n/a 
+            Fishways                   Gradient (%)                          gradient                        n/a 
+            Fishways                   Depth (m)                             depth (m)                       n/a 
+            Fishways                   Entrance location                     entrance_location_code          1-midstream, 2-bank
+            Fishways                   Entrance position                     entrance_position_code          1-bottom, 2-surface, 3-bottom and surface, 4-mid-column
+            Fishways                   Is modified                           modified                        n/a 
+            Fishways                   Modification year                     modification_year               n/a 
+            Fishways                   Modification purpose                  modification_purpose            n/a 
+            Fishways                   Structure name (English)              structure_name_en               n/a 
+            Fishways                   Structure name (French)               structure_name_fr               n/a 
+            Fishways                   Operated by                           operated_by                     n/a 
+            Fishways                   Operation period                      operation_period                n/a 
+            Fishways                   Has evaluating studies                has_evaluating_studies          true, false
+            Fishways                   Nature of evaluating studies          nature_of_evaluation_studies    n/a 
+            Fishways                   Engineering notes                     engineering_notes               n/a 
+            Fishways                   Maximum Velocity of Water Flow (m/s)  max_fishway_velocity_ms         n/a
+            Fishways                   Average Velocity of Water Flow (m/s)  mean_fishway_velocity_ms        n/a 
+            Fishways                   Attraction Estimate (%)               estimate_of_attraction_pct      n/a 
+            Fishways                   Transit Success Estimate (%)          estimate_of_passage_success_pct n/a
+            Fishways                   Evaluating study/reference identifier fishway_reference_id            n/a
+            Fishways                   River name (English)                  river_name_en                   n/a
+            Fishways                   River name (French)                   river_name_fr                   n/a
+            ========================== ===================================== =============================== ==============================================================================================================================================================================================================================================================
+    
 .. _feature-endpoints-namefilter:
 
 

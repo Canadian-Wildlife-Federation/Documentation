@@ -4,7 +4,7 @@
 Data Catalogue
 ==============
 
-The CABD data catalogue contains the the information you need to make sense of the attributes for each CABD feature type (dams, waterfalls, fishways, stream crossings and modelled stream crossings), including human-readable field names, breakdowns of allowable field values, and definitions. If you have questions about any of the information on this page, you can reach out to us at cabd@cwf-fcf.org.
+The CABD data catalogue contains the the information you need to make sense of the attributes for each CABD feature type (dams, waterfalls, and fishways), including human-readable field names, breakdowns of allowable field values, and definitions. If you have questions about any of the information on this page, you can reach out to us at cabd@cwf-fcf.org.
 
 Feature Types
 -------------
@@ -17,7 +17,7 @@ Feature Types
     <script>
     function loadDataSources() {
     
-      let url = "https://cabd-web.azurewebsites.net/cabd-api/docs?options=barriers, dams, modelled_crossings, fishways, stream_crossings, waterfalls"
+      let url = "https://cabd-web.azurewebsites.net/cabd-api/docs?options=types"
       let xhr = new XMLHttpRequest();
       // Making our connection 
        xhr.open("GET", url, true);
