@@ -214,6 +214,64 @@ The ``<featuretype>_attribute_source`` table contains the cabd_id and one column
     :header-rows: 1
 
 
+
+    
+.. _community_data:
+    
+Community Data
+--------------
+
+The community data API supports the collection of data from community users. This API was developed to be used in conjunction with the Mobile Data Application.
+
+The data submitted to the community API immediately gets written to the cabd.community_data_raw table without any 
+validation or processing.  A separate job takes data from this community data table, parses the feature type, 
+photos, and user information and places the photos onto the azure infrastructure, 
+and the remaining data into the appropriate feature staging table in the database. 
+Any features provided without a cabd_id are assigned a new one. 
+Once in the feature staging table it is up to Data Reviews to review the data and update the appropriate CABD features.
+
+Community data submissions can include images. These images are expected to be provided in the JSON as base64 encoded
+JPEG files. The processing of the raw data includes converting this data into a jpeg file which is placed on the Azure
+blob storage. The name of the file is referenced in the parsed json data.
+
+:codeblocksize:`cabd.community_data_raw`
+
+.. csv-table:: 
+    :file: tbl/community_data_raw.csv
+    :widths: 30, 70
+    :header-rows: 1
+
+Community data users are stored in a separate cabd.community_contact table.
+
+:codeblocksize:`cabd.community_contact`
+
+.. csv-table:: 
+    :file: tbl/community_contact.csv
+    :widths: 30, 70
+    :header-rows: 1
+    
+Each feature type supported needs a feature staging table (<featuretype>_community_staging). 
+This table name is specified in the cabd.feature_types metadata table. Each feature type staging table has a status column. 
+By default the value is NEW. Once the data has been reviewed and appropriate features created/updated, 
+this status column should be updated to something other than NEW.
+
+:codeblocksize:`<featuretype>.community_data_<feature_type>`
+
+.. csv-table:: 
+    :file: tbl/community_data_featuretype.csv
+    :widths: 30, 70
+    :header-rows: 1
+
+
+Each cabd feature has an updates_pending flag, and this flag includes features 
+from the community data staging table that have a status of NEW.
+
+Ghost features are features which have been submitted to the community data API without a cabd id 
+and have not yet been reviewed and added to the official feature dataset. These features also rely on the 
+feature type community data stating table status column (only features with a status of NEW 
+will be considered for ghost features).
+
+
 .. _audit_log:
     
 Audit Log / Change Tracking
