@@ -8,7 +8,7 @@ The data in the Canadian Aquatic Barriers Database (CABD) has been compiled from
 
 .. note::
 
-    In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, fishway or modelled crossing. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
+    In the CABD, the term ‘feature’ is used to reference an individual structure that represents a dam, waterfall, fishway, or modelled crossing. In this section, the term ‘feature point’ is used to represent the geographic point location of a feature.
 
 Duplicate identification and tracking
 -------------------------------------
@@ -20,11 +20,11 @@ The first step of the process is to generate a review layer that records potenti
 
 The inputs for the review layer include a predefined area of interest (AOI) and a set of source datasets for the AOI - ideally, all known and publicly available source datasets. After identifying the source dataset with the highest number of feature points in the AOI, the feature points of this dataset are extracted to form the foundation of the ‘starting layer’. 
 
-The starting layer is buffered to determine the most appropriate buffer distance that contains the majority of feature points from other source datasets that represent the same structures (i.e., duplicates), and disjoints those that represent different structures (i.e., non-duplicates). This buffer distance is typically around 50-100 m.
+The starting layer is buffered to determine the most appropriate buffer distance that contains the majority of feature points from other source datasets that represent the same structures (i.e., duplicates) and disjoints those that represent different structures (i.e., non-duplicates). This buffer distance is typically around 50-100 m.
 
 Next, the ‘Join attributes by nearest’ tool in QGIS is used to join the unique ids from a second source dataset with the features of the starting layer, based on the determined tolerance. The resulting output is a new version of the review layer that contains an additional field in the attribute table which holds the unique id of each assumed duplicate from the second source dataset. This tool is run repeatedly for the remaining source datasets, using the generated output of each run as the input layer for the next join. 
 
-Once all runs have completed, feature points from each source dataset that fall outside the determined tolerance, but within the AOI, are selected and the entire process is repeated with a new ‘starting layer’, beginning with the source dataset that has the most features selected. 
+Once all runs have completed, feature points from each source dataset that fall outside the determined tolerance but within the AOI are selected, and the entire process is repeated with a new ‘starting layer’, beginning with the source dataset that has the most features selected. 
 
 Once most source dataset features are captured, all output layers are merged to create the final version of the review layer. To facilitate the review process, a handful of fields are also added at this point to the review layer to track additional details about features, and a custom attribute form display in QGIS is created. Once this final review layer is completed, it is loaded into a PostgreSQL database with the PostGIS extension to allow for reviewers to work simultaneously to verify feature point locations and information.
 
@@ -40,9 +40,9 @@ Unless source datasets or additional research indicate that a structure has been
 Verifying duplicate feature points of the review layer
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-While the semi-automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer, and to add any feature points that were missed during the join process. 
+While the semi-automated process of generating the review layer is used to quickly capture most duplicate ids, it isn’t expected to produce a perfect result. Therefore, each feature point requires manual review to verify that all duplicate ids from the source datasets are being tracked correctly in the review layer and to add any feature points that were missed during the join process. 
 
-This is done by cross referencing the unique ids present in the ‘Duplicates’ tab (Fig. 1) of the review layer’s attribute form with the corresponding ids from source dataset features (Fig. 2) that are located nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, the feature is investigated further (e.g., checking if structure names match, examining the satellite imagery for an additional structure, etc.) to determine if it corresponds to the same structure. If the missing feature is determined to be a duplicate, the unique id is manually added to the corresponding datasource field in the ‘Duplicates’ tab. If the feature is not a duplicate, a new feature point is manually added to the review layer, inputting the source dataset name and id from the original source dataset.
+This is done by cross-referencing the unique ids present in the ‘Duplicates’ tab (Fig. 1) of the review layer’s attribute form with the corresponding ids from source dataset features (Fig. 2) that are located nearby. If a feature’s unique id is missing from the ‘Duplicates’ tab, the feature is investigated further (e.g., checking if structure names match, examining the satellite imagery for an additional structure, etc.) to determine if it corresponds to the same structure. If the missing feature is determined to be a duplicate, the unique id is manually added to the corresponding datasource field in the ‘Duplicates’ tab. If the feature is not a duplicate, a new feature point is manually added to the review layer, inputting the source dataset name and id from the original source dataset.
 
 .. figure:: img/duplicates.png
     :align: center
@@ -56,7 +56,7 @@ This is done by cross referencing the unique ids present in the ‘Duplicates’
 
     Figure 2. Example of unique ids of source dataset feature points.
 
-Occasionally, the review layer may include several distinct feature points that appear to correspond to a single structure on the ground. This typically results from differing geographic accuracy of point locations in source datasets. In these cases, the attributes of each source dataset feature point in the location are compared to determine if there should be one feature point at this location, or multiple feature points. If there should only be a single feature point, the unique ids from each source dataset for that point are added to the appropriate data source fields in the ‘Duplicates’ tab of a single feature point, and all other duplicate feature points are removed.
+Occasionally, the review layer may include several distinct feature points that appear to correspond to a single structure on the ground. This typically results from differing geographic accuracy of point locations in source datasets. In these cases, the attributes of each source dataset feature point in the location are compared to determine if there should be one feature point at this location or multiple feature points. If there should only be a single feature point, the unique ids from each source dataset for that point are added to the appropriate data source fields in the ‘Duplicates’ tab of a single feature point, and all other duplicate feature points are removed.
 
 .. _snapping:
 
@@ -78,9 +78,9 @@ If a feature is identified as an auxiliary structure (e.g., saddle dam, dyke, ca
     :align: center
     :width: 75%
 
-    Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue - dyke that is acting as a lateral barrier, red - embankment dam acting as a longitudinal barrier, green - duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction.  
+    Figure 3. An example illustrating the logic used when determining if a feature point should or should not be used for analysis, snapped or not snapped to the hydrographic network, respectively. Shown are three feature points, each from a different source dataset: blue - dyke that is acting as a lateral barrier; red - embankment dam acting as a longitudinal barrier; green - duplicate of the red feature point. The flow in this area is represented by the red dotted line; arrows indicate the flow direction.  
 
-Fishway structures are treated differently than barrier structures as their purpose is to facilitate fish passage past structures like dams, culverts or waterfalls. Considering that fishway structures do not act as barriers to fish passage, these features are always assigned a ‘use_analysis’ value of ‘false’, and flagged as a fishway by setting the ‘fishway_yn’ field value to ‘true’. If the feature point identified as a fishway corresponds to an existing record from the CANFISHPASS database, the unique id from CANFISHPASS is also recorded.
+Fishway structures are treated differently than barrier structures, as their purpose is to facilitate fish passage past structures like dams, culverts, waterfalls, or stream crossings. Considering that fishway structures do not act as barriers to fish passage, these features are always assigned a ‘use_analysis’ value of ‘false’, and flagged as a fishway by setting the ‘fishway_yn’ field value to ‘true’. If the feature point identified as a fishway corresponds to an existing record from the CANFISHPASS database, the unique id from CANFISHPASS is also recorded.
 
 Structures that block flow in multiple locations
 ++++++++++++++++++++++++++++++++++++++++++++++++
@@ -98,4 +98,4 @@ The CABD does not currently support multipoint features, so the ‘multipoint_yn
 Last steps
 ----------
 
-Once the review process is complete, and all feature points in the review layer are verified, attributes from source datasets can be mapped to the feature points in this final review layer to match the CABD data structure.
+Once the review process is complete and all feature points in the review layer are verified, attributes from source datasets can be mapped to the feature points in this final review layer to match the CABD data structure.

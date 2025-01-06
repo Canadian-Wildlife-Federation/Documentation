@@ -1,12 +1,12 @@
 ﻿Attribute Name,Description
 type,The type of the features (‘flowpath’ or ‘waterbody’).
 feature_type,The classification of the feature. See the ef_type (for flowpaths) and ec_type (for waterbodies) attributes in the CHyF Data Model documentation for valid values.
-feature_type_name,"The name of the feature type (i.e., Skeleton, Reach etc.)"
-subtype,The sub classification of the feature. See the ef_sub_type (for flowpaths) and ec_sub_type (for waterbodies) attributes in the CHyF Data Model documentation for valid values.
-subtype_name,The name of the sub classification of the feature. 
+feature_type_name,"The name of the feature type (i.e., Skeleton, Reach, etc.)"
+subtype,The sub-classification of the feature. See the ef_sub_type (for flowpaths) and ec_sub_type (for waterbodies) attributes in the CHyF Data Model documentation for valid values.
+subtype_name,The name of the sub-classification of the feature. 
 size,"The size of the feature. For linear features this will be the length in meters, and for polygon features this will be the area in square meters."
 rank,The rank associated with the feature (primary/secondary). This only applies to linear flowpath features. See rank attribute in the CHyF Data Model documentation for more information.
-strahler_order,"The Strahler order associated with the feature. For waterbody features this will be the maximum Strahler order of all the skeleton lines associated with the waterbody. Strahler order is only calculated for primary reach, infrastructure, and skeleton flowpaths. It will be null for all other flowpaths and waterbodies which don't contain one of these features. "
+strahler_order,"The Strahler order associated with the feature. For waterbody features, this will be the maximum Strahler order of all the skeleton lines associated with the waterbody. Strahler order is only calculated for primary reach, infrastructure, and skeleton flowpaths. It will be null for all other flowpaths and waterbodies which don't contain one of these features. "
 name_en,The English name associated with the feature 
 name_fr,The French name associated with the feature
-is_reservoir,Only applied to waterbody features. Will be true if the waterbody is flagged as a reservoir otherwise the values will be false or null or missing.  
+is_reservoir,"Only applied to waterbody features. Will be true if the waterbody is flagged as a reservoir; otherwise, the values will be false or null or missing.  "

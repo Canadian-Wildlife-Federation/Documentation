@@ -111,7 +111,7 @@ Feature End Points
     - ``max-results`` - The maximum number of features to return.
     - ``types`` - The feature types to query.
     - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
-    - ``namefilter`` - A filter string that filters features based on all name attributes (en & fr). Multiple namefilters can be provided. If multiple are provided they are combined using logical OR. See below for more details on namefilter. 
+    - ``namefilter`` - A filter string that filters features based on all name attributes (en & fr). Multiple namefilters can be provided. If multiple are provided, they are combined using logical OR. See below for more details on namefilter. 
 
 |ftstype|
 
@@ -161,7 +161,7 @@ Provides a basic option for filtering features based on the feature attributes.
 
 - If the filter attribute name provided is not valid for the feature type, then an error will be returned (HTTP status code ``400 - Bad Request``)
 - Works in addition to the ``bbox`` filter described above (logically ANDed with the bbox)
-- Multiple filters can be provided and they will be combined with logical ``AND``, represented by the ``&`` symbol in API requests
+- Multiple filters can be provided, and they will be combined with logical ``AND``, represented by the ``&`` symbol in API requests
 - String filters are case insensitive (for ``eq``, ``neq``, ``in`` and ``like`` operators)
 
 Filter request format:
@@ -256,7 +256,7 @@ The following formats are supported for feature endpoints that return a collecti
 
 The single feature endpoints only return GeoJSON output.
 
-All exports (except csv) include data metadata that includes the feature type version number, download datetime, and license information. For json this is included in the feature collection metadata, for shp and additional csv metadata file is included in the zip package, for kml it is included as "extendedData", and for geopackage it is included as an additional non-spatial metadata layer.  
+All exports (except csv) include data metadata that includes the feature type version number, download datetime, and license information. For json, this is included in the feature collection metadata; for shp, an additional csv metadata file is included in the zip package; for kml, it is included as "extendedData"; and for geopackage, it is included as an additional non-spatial metadata layer.  
 
 .. note::
 
@@ -277,7 +277,7 @@ Results are supported in both English and French. The language returned is deter
 Maximum Features
 ----------------
 
-A maximum of 55,000 features will be returned.  If a feature API request would result in more than 55,000 features the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filter to limit the query results.
+A maximum of 55,000 features will be returned.  If a feature API request would result in more than 55,000 features, the system will return an error with a HTTP Status code of 403 (Forbidden), and a message telling the user they should add additional filters to limit the query results.
 
 The value ``55000`` is an application parameter and can be modified if required (see ``application.properties`` file).
 
@@ -293,9 +293,9 @@ Example
 
 ``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?filter=fall_name_en:like:fall&max-results=5``
     
-The API call will return 5 features (max-results=5). However the response header will also include a Content-Range header that looks like:  ``Content-Range: features 0-5/65``. The 0-5 tells us the only the first 5 features are included in the results, the 65 tells us a total of 65 features matched the provided filters.
+The API call will return 5 features (max-results=5). However, the response header will also include a Content-Range header that looks like:  ``Content-Range: features 0-5/65``. The 0-5 tells us the only the first 5 features are included in the results, the 65 tells us a total of 65 features matched the provided filters.
 
-Therefore, if you want to just get the total feature count and no features you can use a max-results=0 parameter:
+Therefore, if you want to just get the total feature count and no features, you can use a max-results=0 parameter:
 
 ``https://cabd-web.azurewebsites.net/cabd-api/features/waterfalls?max-results=0``
 
@@ -314,7 +314,7 @@ Feature Data Source End Point
 
 |ftdsidflds|
 
-    Returns the data source details for each attribute associated with the given feature id.  By default this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``data source feature id``, add the query parameter ``fields=all`` to the request.
+    Returns the data source details for each attribute associated with the given feature id.  By default, this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``data source feature id``, add the query parameter ``fields=all`` to the request.
 
 .. _feature-datasource-endpoint-format:
 
@@ -362,7 +362,7 @@ Contact End Point
 
 -----
 
-This end point allows users to create a new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database it will be updated with the information supplied. If an optional field is not provided that field is not updated.
+This end point allows users to create a new contact or update an existing contact. Contacts are identified by their email address. If a contact already exists in the database, it will be updated with the information supplied. If an optional field is not provided, that field is not updated.
 
 
 * URL: /contacts

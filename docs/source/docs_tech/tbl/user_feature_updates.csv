@@ -1,9 +1,9 @@
 Column,Description
-id,unique system generated identifier
+id,unique system-generated identifier
 datetime,Date time of submission
 contact_id,Link to the contact who submitted the change
 cabd_id,Link to the feature the update references
 cabd_type,CABD feature type
-user_description,The user provided description of the update
+user_description,The user provided a description of the update
 user_data_source,The user provided data source
 status,Internal field representing the status of the update. This is managed by the CABD administrators.
