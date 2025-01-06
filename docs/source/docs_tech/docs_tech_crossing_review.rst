@@ -35,7 +35,7 @@ As modelled stream crossings are generated from the intersection of transportati
 - type of crossing - some networks may have separate sections that indicate bridges, culverts, or other structures
 - owner or operator of the road, railway, or trail
 
-Crossings that are on a stream order 6 or higher stream are also automatically given a crossing type of ‘bridge’, as it’s assumed that most crossings on these larger streams would be bridges.
+Crossings that are on a stream order 6 or higher are also automatically given a crossing type of ‘bridge’, as it’s assumed that most crossings on these larger streams would be bridges.
 
 Incorporate structure inventories
 ---------------------------------

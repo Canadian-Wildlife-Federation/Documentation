@@ -56,7 +56,7 @@ There are no structures in the software/database that enforce this model. The da
 Implemented Feature Model
 -------------------------
 
-There are currently three feature types and one super type implemented in CABD. Adding additional feature types is expected and the instructions for this are outlined below (How to add new Feature Type).
+There are currently four feature types and one super type implemented in CABD. Adding additional feature types is expected, and the instructions for this are outlined below (How to add new Feature Type).
 
 .. image:: img/implementedmodel.jpg
     :align: center
@@ -83,18 +83,18 @@ The database is structured into multiple schemas.  Each feature type has its own
 Feature Views
 -------------
 
-Each feature type and super feature type has two associated views which support the API - one view for Engligh (_en) and one view for French (_fr). These views should include all fields required for output (either for display on the UI or to support the future editing API). 
+Each feature type and super feature type has two associated views which support the API - one view for English (_en) and one view for French (_fr). These views should include all fields required for output (either for display on the UI or to support the future editing API). 
 
 |enfr| 
 
-Views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the ``dams`` view queries the dams data table). Super feature types will generally query multiple data tables (for example, the ``barriers`` view queries both the dams data table and the waterfalls data table).
+Views are used to support the CABD APIs that list features. Each feature type is linked to a database view. When requesting features of a specific type, the view associated with this type is queried. The fields returned by this view populate the attributes of the feature returned by the API. Feature type views will generally query a single data table (for example, the ``dams`` view queries the dams data table). Super feature types will generally query multiple data tables (for example, the ``barriers`` view queries both the dams data table and the waterfalls data table).
 
 .. _cabd-feature-update-view:
 
 Feature Update View
 -------------------
 
-By design each feature includes an updates_pending attribute that is populated with true or false depending on if there are feature updates pending review in the system. This field is populated by the system using the ``cabd.updates_pending`` view. This view should return a single column, cabd_id, for each feature that has a review pending in the database. 
+By design, each feature includes an updates_pending attribute that is populated with true or false depending on if there are feature updates pending review in the system. This field is populated by the system using the ``cabd.updates_pending`` view. This view should return a single column, cabd_id, for each feature that has a review pending in the database. 
 
 
 .. _core-tables:
@@ -115,7 +115,7 @@ Lists all the feature types supported by the system.
 
 :codeblocksize:`cabd.attribute_set`
 
-Lists the attribute sets supported by the system. Attribute sets allows user to specify which attributes the want included in API results that list features.
+Lists the attribute sets supported by the system. Attribute sets allows user to specify which attributes they want included in API results that list features.
 
 Notes:
  * The attribute set should not have the name "vectortile". The system generates a vectortile attribute set automatically that is linked to the include_vector_tile field in the cabd.feature_type_metadata and used for the vector tile service.

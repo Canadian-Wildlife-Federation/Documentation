@@ -92,7 +92,7 @@ Find a single feature
 
 |chyfuuid|
 
-Returns the individual feature represented by the uuid. This feature can be flowpath, catchment or shoreline. Please note that returning nexus features is not supported at this time.
+Returns the individual feature represented by the uuid. This feature can be a flowpath, catchment or shoreline. Please note that returning nexus features is not supported at this time.
 
 Search by feature name or type (single or multiple features)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ Search by feature name or type (single or multiple features)
 
 Returns all features that match the search parameters.
    
-* ``name`` - REQUIRED - The feature name to search for. All searches are case insenstive.
+* ``name`` - REQUIRED - The feature name to search for. All searches are case insensitive.
 
 * ``max-results`` - OPTIONAL - The maximum number of features to return. Default value is 5000.
 
@@ -117,7 +117,7 @@ Returns all features that match the search parameters.
 
 * ``match-type`` - OPTIONAL - The type of match to perform. Valid values are EXACT, CONTAINS. Default is CONTAINS. 
 
-* ``feature-type`` - OPTIONAL - The type of feature to search. Valid values include WATERBODY, FLOWPATH, CATCHMENT. Can be supplied multiple times to search multiple feature types. If not specified all feature types are searched.
+* ``feature-type`` - OPTIONAL - The type of feature to search. Valid values include WATERBODY, FLOWPATH, CATCHMENT. Can be supplied multiple times to search multiple feature types. If not specified, all feature types are searched.
 
 Examples
 ++++++++
@@ -150,7 +150,7 @@ Geopackage is the only supported format for network exports.
 API
 ~~~
 
-Nework exports are limited to 500,000 flowpath features. The area of interest can be specified by supplying a bounding box or one or more AOIs.
+Network exports are limited to 500,000 flowpath features. The area of interest can be specified by supplying a bounding box or one or more AOIs.
 
 * ``aoi`` - OPTIONAL - A common delimited list of AOI short names
 * ``bbox`` - OPTIONAL - The extent of features to include in export: 'minlong,minlat,maxlong,maxlat'
@@ -180,7 +180,7 @@ End Points
 
 ``/chyf-web/tiles/water/{z}/{x}/{y}.{format}``
 
-End point for water features.  This includes single line streams and polygonal waterbody features. The output features include the following attributes:
+End point for water features.  This includes single-line streams and polygonal waterbody features. The output features include the following attributes:
 
 .. csv-table:: 
     :file: tbl/flow_attributes.csv
@@ -189,7 +189,7 @@ End point for water features.  This includes single line streams and polygonal w
 
 ``/chyf-web/tiles/ecatchment/{z}/{x}/{y}.{format}``
 
-Contains catchments.  Currently there are no catchments loaded into CHyF database so these vector tiles will be empty. The output features include the following attributes:
+Contains catchments.  Currently there are no catchments loaded into CHyF database, so these vector tiles will be empty. The output features include the following attributes:
 
 .. csv-table:: 
     :file: tbl/catch_attributes.csv

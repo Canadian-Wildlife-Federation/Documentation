@@ -1,6 +1,6 @@
 Column,Description
-id,unique system generated number
-email,Users email
-name,Users name
+id,unique system-generated number
+email,User's email
+name,User's name
 organization,(Optional) Organization associated with the user
-datasource_id,(Optional) Link to the cabd.data_source table which represents the datasource associated with this user.
+datasource_id,"(Optional) Link to the cabd.data_source table, which represents the datasource associated with this user."
