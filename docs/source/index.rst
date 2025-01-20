@@ -58,7 +58,7 @@ Funding Acknowledgements
    :caption: FRENCH DOCUMENTATION
 
    https://cabd-docs-fr.netlify.app/
-
+ 
 .. toctree::
    :maxdepth: 3
    :hidden:
@@ -70,6 +70,7 @@ Funding Acknowledgements
    docs_user/docs_user_data_sources
    docs_user/docs_user_data_catalogue
    docs_user/docs_user_submitted_updates
+   docs_user/docs_user_api
    docs_user/docs_user_engagement
    docs_user/acknowledgements
 
