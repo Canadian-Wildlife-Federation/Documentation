@@ -314,7 +314,11 @@ Feature Data Source End Point
 
 |ftdsidflds|
 
-    Returns the data source details for each attribute associated with the given feature id.  By default, this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``data source feature id``, add the query parameter ``fields=all`` to the request.
+    Returns the data source details for each attribute associated with the given feature id.  
+    
+    For features types that are not site/structure types by default this returns a reduced set of attributes: ``feature id``, ``attribute field``, ``data source name``, and ``data source feature id``. To include the complete set of attributes (``feature id``, ``attribute field``, ``attribute name``, ``data source name``, ``data source date``, ``data source version``, ``data source feature id``, add the query parameter ``fields=all`` to the request.
+
+    For site/structure feature types the fields returned are attribute_name, datasource_name and assessment type. The datasource name is the assessment identifier. A link to the full assessment details is included at the top of the results for all assessment data sources.
 
 .. _feature-datasource-endpoint-format:
 
@@ -404,3 +408,34 @@ End Point
 ``type`` must be a valid feature type. 
 
 The attributes included in the vector tile are those whose "include_vector_tile" value in the feature_type_metadata table are true.
+
+
+Assessment End Points
+=================
+
+-----
+
+These end points allow users to access short form and long for assessment data for individual assessments or cabd features.
+
+Assessment Details
+------
+
+``/assessments/<assessment-id>``
+
+    Returns the complete details of the given assessment. The exact json fields returned depend on the assessment type.
+
+
+``/assessments/cabd/<feature-id>``
+
+    Returns an array of all assessments associated with the given cabd feature id. If there are no assessments an empty array is returned.
+
+Assessment Type Details
+------
+
+``/assessments/types``
+
+    Returns a list of the assessment types supported by the system.
+
+``/assessments/types/<assessment-type>``
+
+    Returns a description of all the fields associated with the provided assessment type.
