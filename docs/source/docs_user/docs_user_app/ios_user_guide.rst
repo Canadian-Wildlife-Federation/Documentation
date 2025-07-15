@@ -30,11 +30,11 @@ This page contains information on:
 Getting Started
 ^^^^^^^^^^^^^^^^
 
-Once the app is downloaded and installed, you can open it from your device’s home screen. When you first open the app you will be greeted with a home screen that has the CWF logo and a text box where you'll enter your email address. Once the email is correct and saved, you can click ‘Continue’, which will bring you to the main app page and map space. 
+Once the app is downloaded and installed, you can open it from your device’s home screen. On first launch, the home screen will appear with the CWF logo and your email address. You can also choose to enter a different email if needed. After saving your email, tap ‘Continue’ to access the main app interface and map view. Links to a Getting Started guide, Privacy Policy, and Terms of Use & Copyright are also available on this screen.
 
 .. figure:: img/ios_email.png
     :align: center
-    :width: 20%
+    :width: 30%
 
 .. _interface:
 
@@ -80,7 +80,7 @@ Here’s a quick summary of what each one does:
 
    * - |logo1|
      - Settings 
-     - Opens the Settings tab, within which you can refresh map features and view/manage your cache of assessed features see :ref:` Using the Feature Cache to Upload Saved Assessment Submissions for more information on the feature cache <feature-cache>`.
+     - Opens the Settings tab, within which you can refresh map features and view/manage your cache of assessed features see :ref:`using the feature cache to upload saved assessment submissions for more information on the feature cache <feature-cache>`.
     
    * - |logo2|
      - Map Tile Download
@@ -121,6 +121,16 @@ While there is currently no in-app legend, the color of each icon indicates the 
     :align: center
     :width: 20%
 
+Additionally, once you begin :ref:`assessing barriers <assessing-barriers>`, halos will appear around them to indicate their status: 
+
+- Green - uploaded features
+- Blue - autosaved features
+- Yellow - saved features.
+
+.. figure:: img/halo_barriers.png
+    :align: center
+    :width: 30%
+
 When barrier visibility is toggled on, dams will always remain visible on the map. However, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear.
 
 You can navigate the map space using standard iOS gestures:
@@ -157,7 +167,11 @@ Once the cursor is aligned with an existing barrier point, an information box wi
     :align: center
     :width: 20%
 
-To assess the selected barrier, tap the ‘Assess this Feature’ button. This will open the rapid assessment form.
+To assess the selected barrier, tap the ‘Assess this Feature’ button. This will open the rapid assessment form. You can also exit the assessment form at anytime by clicking the "X" at the top left of the assessment form. 
+
+.. figure:: img/x_button.png
+    :align: center
+    :width: 30%
 
 The first question you will be asked is whether the structure type that exists in the CABD matches what you see at the site. For example, if the barrier feature is a stream crossing in the database, the question will read " is the structure type correct: Stream Crossing".
 
@@ -201,7 +215,11 @@ The first step is to select the structure type:
 - Stream Crossing
 - Dam
 
-Once you select the structure type, a customized set of assessment questions and photo prompts will appear based on your selection. 
+Once you select the structure type, a customized set of assessment questions and photo prompts will appear based on your selection. If you are unable to take a photo at a particular feature, you can select 'no photo'.
+
+.. figure:: img/no_photo.png
+    :align: center
+    :width: 40%
 
 If you choose ‘Stream Crossing’, you’ll also need to specify the crossing sub-type:
 
@@ -225,21 +243,23 @@ Each question in the assessment form includes an information icon next to it. Ta
 
 **Saving and Uploading Barrier Assessment Submissions**
 
-Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see three buttons: 'Save for Later', 'Upload' and 'Cancel'. 
+Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see four buttons: 'Save for Later', 'Upload' 'Delete' and 'Cancel'. 
 
 .. figure:: img/ios_bottom.png
     :align: center
-    :width: 20%
+    :width: 40%
 
-The ‘Cancel’ button allows you to exit the assessment form, but please note that any information you’ve entered will not be saved. The "Cancel" button will only appear after you have answered the first two questions in the form - "Is the structure type correct?" and "Please choose the correct structure type". Until these two questions are complete, the form cannot be exited or cancelled. Once these questions have been answered, the remaining assessment questions will appear, along with the "Cancel" button of the screen. If you choose to cancel the assessment at this stage without saving or uploading first, all entered data will be lost. 
+The ‘Cancel’ button allows you to exit the assessment form. The "Cancel" button will only appear after you have answered the first two questions in the form. Once these questions have been answered, the remaining assessment questions will appear, along with the "Cancel" button of the screen. If you choose to cancel the assessment at this stage, the assessment will be autosaved. 
 
-The "Save for Later" button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. this button does not upload the infomration to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The "Save for Later" function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
+The 'Delete' button allows you to delete the entire assessment form. You can only do this for features that have not yet been uploaded. 
+
+The "Save for Later" button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. this button does not upload the information to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The "Save for Later" function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
 
 .. figure:: img/ios_save.png
     :align: center
     :width: 30%
 
-The ‘Upload’ button is used to both save and submit your completed assessment directly to the database. You do not need to press ‘Save for Later’ before uploading—simply complete your assessment and click ‘Upload’ when you’re ready. Once an assessment is uploaded, the associated feature point will appear on the map with a green halo, indicating that it has been successfully submitted.
+The ‘Upload’ button is used to submit your completed assessment directly to the database. You do not need to press ‘Save for Later’ before uploading—simply complete your assessment and click ‘Upload’ when you’re ready. Once an assessment is uploaded, the associated feature point will appear on the map with a green halo, indicating that it has been successfully submitted.
 
 After an assessment is uploaded, you can still reopen the form to review the submitted information; however, the content can no longer be edited. The form becomes locked for editing after upload to ensure data integrity.
 
