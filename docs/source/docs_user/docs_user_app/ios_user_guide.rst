@@ -138,7 +138,7 @@ You can navigate the map space using standard iOS gestures:
 - Tap and drag to pan around the map.
 - Pinch to zoom in or out.
 
-You’ll also notice a small black square at the center of the screen (see image below). This is the app cursor, which helps you select barrier points on the map. There are two ways to select a barrier:
+You’ll also notice a small black crosshair at the center of the screen (see image below). This is the app cursor, which helps you select barrier points on the map. There are two ways to select a barrier:
 
 #. Tap and drag the screen until the crosshair is targeted at the barrier point of interest.
 #. Click on a barrier point of interest and the crosshair will automatically snap to that feature. 
@@ -177,7 +177,7 @@ The first question you will be asked is whether the structure type that exists i
 
 Then, there will be one of the two outcomes: 
 
-- If the  structure type you see at the site is a stream crossing, you would select "Yes".
+- If the structure type you see at the site is a stream crossing, you would select "Yes".
 - If there is no stream crossing, but there is a dam or possibly no structure at all, you would select "No". If you select "No", you can then choose the correct structure type, include identifying that there is no structure at or nearby the location on the map. 
 
 .. figure:: img/ios_form.png

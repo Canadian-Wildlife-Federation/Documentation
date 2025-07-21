@@ -41,26 +41,57 @@ Once the app is downloaded and installed, you can open it from your device’s h
 Interface Components
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Once you’ve navigated past the home screen, the main map space of the app will appear. In the top-right corner of the screen, you’ll see a gear icon and three vertical dots (see image below). Tap the gear icon to open the Settings window. From there, you can refresh map features and view or manage your cache of assessed features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache>`.)
+Once you’ve navigated past the home screen, the main map space of the app will appear. In the top-right corner of the screen, you’ll see three vertical dots (see image below).
 
 .. figure:: img/android_map_icons.png
     :align: center
     :width: 30%
 
-The three vertical dots to the right of the gear icon open the app menu. Within this menu, you'll find the following options:
+From there, you can refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache>`.)
+
+.. figure:: img/android_cached_features.png
+    :align: center
+    :width: 20%
 
 .. _app-toggles:
 
-#. **"Go to your Location"**: Snaps the map view back to your current location
-#. **"Satellite Map Style"**: Toggles satellite imagery on and off.
-#. **"Toggle Dams"**: A checkbox that toggles the visibility of dams features. 
-#. **"Toggle Stream Crossings"**: A checkbox that toggles the visibility of stream crossing features. 
-#. **"Download Map Tiles"**: Currently inactive; clicking this button will not perform any action.
-#. **"Create New Features"**: Adds a new barrier feature point that doesn't already exist on the map (For more details, see :ref:`Adding and Assessing a New Barrier below for more information <adding-assessing-new-barriers>`).
+Additionally, in the top-right corner, you'll see three buttons under the vertical dots which give you access to key features of the app. 
 
-.. figure:: img/android_app_menu.png
-    :align: center
-    :width: 20%
+Here’s a quick summary of what each one does:
+
+.. |logo5| image:: img/arrow_android.png
+   :width: 30pt
+   :height: 30pt
+
+.. |logo6| image:: img/base_map_android.png
+   :width: 30pt
+   :height: 30pt
+
+.. |logo7| image:: img/plus_sign_android.png
+   :width: 30pt
+   :height: 30pt
+
+.. _my-location:
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Button icon
+     - Button Name 
+     - Button Functionality
+
+   * - |logo5|
+     - My Location
+     - Snaps the map space back to your current location. 
+
+   * - |logo6|
+     - Imagery/Base Map Toggle
+     - Toggles between satellite imagery, base map and feature (dams and stream crossing) views. 
+
+   * - |logo7|
+     - New feature
+     - Adds a new barrier feature point that does not already exist on the map, see :ref:`adding and assessing a new barrier below for more information on adding new features <adding-assessing-new-barriers>`. 
 
 .. _navigation:
 
@@ -92,11 +123,11 @@ You can navigate the map space using standard Android gestures:
 - Tap and drag to pan around the map
 - Pinch to zoom in or out
 
-You’ll also notice a small black square at the center of the screen (see image below). This is the app cursor, which helps you select barrier points on the map. To select a barrier, simply drag the map until the cursor aligns with the barrier of interest.
+You’ll also notice a small black crosshair at the center of the screen (see image below). This is the app cursor, which helps you select barrier points on the map. To select a barrier, simply drag the map until the cursor aligns with the barrier of interest.
 
 .. figure:: img/android_inset_map.png
     :align: center
-    :width: 40%
+    :width: 20%
 
 Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Update Information’ button.
 
@@ -116,27 +147,32 @@ To begin, align the app cursor with an existing barrier point, or move it to the
 
 **Assessing Existing Barriers**
 
-Once the cursor is aligned with an existing barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Update Information’ button (see image below).
+Once the cursor is aligned with an existing barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Assess this Feature’ button (see image below).
 
-Tapping the ‘Update Information’ button opens a form where you can complete the barrier assessment.
+Tapping the ‘Assess this Feature’ button opens a form where you can complete the barrier assessment.
 
 .. figure:: img/android_update.png
     :align: center
     :width: 20%
 
-To assess the selected barrier, tap the ‘Update Information’ button. This will open the rapid assessment form.
+To assess the selected barrier, tap the ‘Assess this Feature’ button. This will open the rapid assessment form.
 
-The first question will ask, “What type of structure is it?” If the barrier already exists in the CABD, the default value will match the existing structure type.
+The first question will ask, “This structure is currently identified as (either a dam or a modelled crossings), is this correct?
 
-- If the default structure type is correct, simply tap ‘Next’ to proceed.
-- If the structure type is incorrect, select the correct type from the dropdown menu, then tap ‘Next’.
-- If there is no structure at or near the location, select ‘No Structure’ from the dropdown before proceeding.
+- If the default structure type is correct, simply tap ‘Yes’ to proceed.
+- If the structure type is incorrect, select the correct type from the dropdown menu, then tap ‘No/Unsure’.
 
 .. figure:: img/android_feature_form.png
     :align: center
     :width: 20%
 
-Once the structure type is confirmed and you’ve tapped ‘Next’, a set of assessment questions and photo prompts specific to that structure type will appear.
+You will then be asked "Are you able to acess the site?" with options of ‘Yes’ or ‘No’
+
+.. figure:: img/android_access_site.png
+    :align: center
+    :width: 20%
+
+Once the structure type is confirmed, a set of assessment questions and photo prompts specific to that structure type will appear.
 
 If you selected ‘Stream Crossing’ as the structure type, you’ll also be asked to choose a crossing sub-type:
 
@@ -159,14 +195,14 @@ If you encounter a dam or stream crossing that is not shown on the map (i.e., no
 To add a new feature:
 
 #. Use the ‘Go to Your Location’ button (described above) if you're physically at the structure site, or manually drag the cursor to the correct location on the map.
-#. Once the cursor is at the appropriate spot, tap the ‘Create New Feature’ button in the app menu. This will open the rapid assessment form.
+#. Once the cursor is at the appropriate spot, tap the plus sign button in the app menu. This will open the rapid assessment form.
 
 The first step is to select the structure type:
 
 - Stream Crossing
 - Dam
 
-After selecting the type and tapping ‘Next’, you’ll be presented with a set of assessment questions and photo prompts based on the selected structure.
+After selecting the type, you’ll be presented with a set of assessment questions and photo prompts based on the selected structure.
 
 If you choose ‘Stream Crossing’, you’ll also need to specify the crossing sub-type:
 
@@ -174,13 +210,13 @@ If you choose ‘Stream Crossing’, you’ll also need to specify the crossing 
 - Open-bottom
 - Ford-like
 
-Each sub-type has a unique set of questions, so please be sure to select the correct one. Once selected, tap ‘Next’ to proceed with the rest of the assessment.
+Each sub-type has a unique set of questions, so please be sure to select the correct one. Once selected, additional assessment questions will appear.
 
 Once a new barrier assessment has been saved or uploaded, a black feature point will appear on the map at the assessment location — a square for dams and a circle for stream crossings. See :ref:`Saving and Uploading Barrier Assessment Submissions below for more information <saving-uploading-assessments>`. 
 
 .. figure:: img/android_new_features.png
     :align: center
-    :width: 40%
+    :width: 20%
 
 **Notes of Completing the Barrier Assessment Forms**
 
