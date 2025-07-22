@@ -1,0 +1,3 @@
+Column,Description
+user_id,The unique system assigned identifier
+username,The username/email of the community user
