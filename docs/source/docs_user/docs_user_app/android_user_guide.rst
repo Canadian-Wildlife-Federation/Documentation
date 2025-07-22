@@ -47,7 +47,7 @@ Once you’ve navigated past the home screen, the main map space of the app will
     :align: center
     :width: 30%
 
-From there, you can refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache>`.)
+Press these three dots to refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache>`.)
 
 .. figure:: img/android_cached_features.png
     :align: center
@@ -55,7 +55,7 @@ From there, you can refresh map features and view or manage your uploaded or cac
 
 .. _app-toggles:
 
-Additionally, in the top-right corner, you'll see three buttons under the vertical dots which give you access to key features of the app. 
+Below the three vertical dots, you'll see three buttons which gives you access to key features in the app. 
 
 Here’s a quick summary of what each one does:
 
@@ -83,7 +83,7 @@ Here’s a quick summary of what each one does:
 
    * - |logo5|
      - My Location
-     - Snaps the map space back to your current location. 
+     - Snaps the map space back to your current location. Ensure your location settings are enabled to use this feature. 
 
    * - |logo6|
      - Imagery/Base Map Toggle
@@ -98,7 +98,7 @@ Here’s a quick summary of what each one does:
 Navigating the Map Space and Barrier Symbology
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-On the map space page, you should see your current location along with the default base map. If your location is not automatically displayed, ensure that your device’s location services are enabled and that the app has permission to access your location. Once permissions are confirmed, open the app menu and tap ‘Go to Your Location’ to center the map on your current position.
+On the map space page, you should see your current location along with the default base map. If your location is not automatically displayed, ensure that your device’s location services are enabled and that the app has permission to access your location. Once permissions are confirmed, open the app menu and tap ‘My Location’ (see above) to center the map on your current position.
 
 Within the map space, you’ll also see aquatic barrier layers:
 
@@ -116,7 +116,7 @@ While there is currently no in-app legend, the color of each icon indicates the 
     :align: center
     :width: 20%
 
-When barrier visibility is toggled on (For more details, see :ref:`App Menu Toggles for more details <app-toggles>`), dams will always remain visible on the map. However, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear.
+Dams will always remain visible on the map, however, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear (For more details, see :ref:`App Menu Toggles for more details <app-toggles>`). 
 
 You can navigate the map space using standard Android gestures:
 
@@ -129,9 +129,9 @@ You’ll also notice a small black crosshair at the center of the screen (see im
     :align: center
     :width: 20%
 
-Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Update Information’ button.
+Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
 
-Tapping the ‘Update Information’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers>`
+Tapping the ‘ASSESS THIS FEATURE’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers>`. 
 
 .. _assessing-barriers:
 
@@ -160,19 +160,19 @@ To assess the selected barrier, tap the ‘Assess this Feature’ button. This w
 The first question will ask, “This structure is currently identified as (either a dam or a modelled crossings), is this correct?
 
 - If the default structure type is correct, simply tap ‘Yes’ to proceed.
-- If the structure type is incorrect, select the correct type from the dropdown menu, then tap ‘No/Unsure’.
+- If the structure type is incorrect, then tap ‘No/Unsure’.
 
 .. figure:: img/android_feature_form.png
     :align: center
     :width: 20%
 
-You will then be asked "Are you able to acess the site?" with options of ‘Yes’ or ‘No’
+Regardless of whether the user selects ‘Yes’ or ‘No/Unsure’ for the question above, the follow-up question will be: "Are you able to acesss the site?" with options of ‘Yes’ or ‘No’
 
 .. figure:: img/android_access_site.png
     :align: center
     :width: 20%
 
-Once the structure type is confirmed, a set of assessment questions and photo prompts specific to that structure type will appear.
+Once these questions are responded to, an additional set of assessment questions and photo prompts specific to that structure type or accessibilty status will appear.
 
 If you selected ‘Stream Crossing’ as the structure type, you’ll also be asked to choose a crossing sub-type:
 
@@ -226,7 +226,7 @@ Each question in the assessment form includes an information icon next to it. Ta
 
 **Saving and Uploading Barrier Assessment Submissions**
 
-Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see two buttons: ‘SAVE’ and ‘UPLOAD’.
+Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see two buttons: ‘SAVE’ and ‘UPLOAD’.If these buttons are greyed out, this means you haven't filled out all of the required questions in the assessment form. 
 
 .. figure:: img/android_save.png
     :align: center
@@ -250,7 +250,7 @@ The ‘UPLOAD’ button, on the other hand, will both save and immediately uploa
 
 If you’ve uploaded an assessment directly from an individual feature’s assessment form, you’re all done — great job! However, if you have saved one or more assessments instead, you can either upload them individually or submit them all at once using the app’s feature cache. To upload individually, simply reopen the saved assessment form while connected to Wi-Fi or cellular data, and tap the ‘UPLOAD’ button.
 
-To upload multiple saved assessments at once, use the feature cache. You can access this by opening the Settings window — just tap the gear icon located in the top right-hand corner of the app. In the Settings window, you’ll see a summary of the features you’ve already uploaded, as well as a list of cached features (i.e., saved assessments) that are still waiting to be uploaded. The app displays counts for both new features and edited ones (edited features are those that already existed in the database and have been updated). If there are one or more assessments in the “Cached Features waiting for upload” section, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of cached features will reset to zero.
+To upload multiple saved assessments at once, use the feature cache. You can access this by opening the Settings window. In the Settings window, you’ll see a summary of the features you’ve already uploaded, as well as a list of cached features (i.e., saved assessments) that are still waiting to be uploaded. The app displays counts for both new features and edited ones (edited features are those that already existed in the database and have been updated). If there are one or more assessments in the “Cached Features waiting for upload” section, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of cached features will reset to zero.
 
 .. figure:: img/android_upload.png
     :align: center
