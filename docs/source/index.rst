@@ -72,6 +72,7 @@ Funding Acknowledgements
    docs_user/docs_user_submitted_updates
    docs_user/docs_user_api
    docs_user/docs_user_engagement
+   docs_user/docs_user_app
    docs_user/acknowledgements
 
 
