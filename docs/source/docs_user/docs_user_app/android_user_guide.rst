@@ -20,12 +20,12 @@ App Overview and Guidance
 ----------------------------
 This page contains information on:
 
-- :ref:`Getting Started on the App <getting-started>`
-- :ref:`A summary of the user interface components <interface>`
-- :ref:`Navigating the map space and barrier symbology <navigation>`
-- :ref:`Assessing barrier features <assessing-barriers>`
+- :ref:`Getting Started on the App <getting-started-android>`
+- :ref:`A summary of the user interface components <interface-android>`
+- :ref:`Navigating the map space and barrier symbology <navigation-android>`
+- :ref:`Assessing barrier features <assessing-barriers-android>`
 
-.. _getting-started:
+.. _getting-started-android:
 
 Getting Started
 ^^^^^^^^^^^^^^^^
@@ -36,7 +36,7 @@ Once the app is downloaded and installed, you can open it from your device’s h
     :align: center
     :width: 20%
 
-.. _interface:
+.. _interface-android:
 
 Interface Components
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -47,13 +47,13 @@ Once you’ve navigated past the home screen, the main map space of the app will
     :align: center
     :width: 30%
 
-Press these three dots to refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache>`.)
+Press these three dots to refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache-android>`.)
 
 .. figure:: img/android_cached_features.png
     :align: center
     :width: 20%
 
-.. _app-toggles:
+.. _app-toggles-android:
 
 Below the three vertical dots, you'll see three buttons which gives you access to key features in the app. 
 
@@ -71,7 +71,7 @@ Here’s a quick summary of what each one does:
    :width: 30pt
    :height: 30pt
 
-.. _my-location:
+.. _my-location-android:
 
 .. list-table:: Title
    :widths: 25 25 50
@@ -91,9 +91,9 @@ Here’s a quick summary of what each one does:
 
    * - |logo7|
      - New feature
-     - Adds a new barrier feature point that does not already exist on the map, see :ref:`adding and assessing a new barrier below for more information on adding new features <adding-assessing-new-barriers>`. 
+     - Adds a new barrier feature point that does not already exist on the map, see :ref:`adding and assessing a new barrier below for more information on adding new features <adding-assessing-new-barriers-android>`. 
 
-.. _navigation:
+.. _navigation-android:
 
 Navigating the Map Space and Barrier Symbology
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -116,7 +116,7 @@ While there is currently no in-app legend, the color of each icon indicates the 
     :align: center
     :width: 20%
 
-Dams will always remain visible on the map, however, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear (For more details, see :ref:`App Menu Toggles for more details <app-toggles>`). 
+Dams will always remain visible on the map, however, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear (For more details, see :ref:`App Menu Toggles for more details <app-toggles-android>`). 
 
 You can navigate the map space using standard Android gestures:
 
@@ -131,9 +131,9 @@ You’ll also notice a small black crosshair at the center of the screen (see im
 
 Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
 
-Tapping the ‘ASSESS THIS FEATURE’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers>`. 
+Tapping the ‘ASSESS THIS FEATURE’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers-android>`. 
 
-.. _assessing-barriers:
+.. _assessing-barriers-android:
 
 Assessing Barriers
 ^^^^^^^^^^^^^^^^^^^
@@ -186,7 +186,7 @@ Each sub-type includes a unique set of questions, so be sure to select the corre
     :align: center
     :width: 20%
 
-.. _adding-assessing-new-barriers:
+.. _adding-assessing-new-barriers-android:
 
 **Adding and Assessing a New Barrier**
 
@@ -212,7 +212,7 @@ If you choose ‘Stream Crossing’, you’ll also need to specify the crossing 
 
 Each sub-type has a unique set of questions, so please be sure to select the correct one. Once selected, additional assessment questions will appear.
 
-Once a new barrier assessment has been saved or uploaded, a black feature point will appear on the map at the assessment location — a square for dams and a circle for stream crossings. See :ref:`Saving and Uploading Barrier Assessment Submissions below for more information <saving-uploading-assessments>`. 
+Once a new barrier assessment has been saved or uploaded, a black feature point will appear on the map at the assessment location — a square for dams and a circle for stream crossings. See :ref:`Saving and Uploading Barrier Assessment Submissions below for more information <saving-uploading-assessments-android>`. 
 
 .. figure:: img/android_new_features.png
     :align: center
@@ -222,7 +222,7 @@ Once a new barrier assessment has been saved or uploaded, a black feature point 
 
 Each question in the assessment form includes an information icon next to it. Tapping this icon will open a tooltip containing helpful guidance and examples. These tooltips provide context, definitions, and instructions to help you accurately answer each question or take the required photos.
 
-.. _saving-uploading-assessments:
+.. _saving-uploading-assessments-android:
 
 **Saving and Uploading Barrier Assessment Submissions**
 
@@ -244,7 +244,7 @@ The ‘UPLOAD’ button, on the other hand, will both save and immediately uploa
     :align: center
     :width: 20%
 
-.. _feature-cache:    
+.. _feature-cache-android:    
 
 **Using the Feature Cache to Upload Saved Assessment Submissions**
 
