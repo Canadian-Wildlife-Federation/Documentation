@@ -58,7 +58,7 @@ Copyright and Creative Commons copyright
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Unless otherwise indicated in the App, the App and all content and other materials on the App, including, without limitation all trademarks, service marks, designs, texts, graphics, pictures, information, data, software, other files and the selection and arrangement thereof (collectively, the “App Materials”) are the proprietary property of CWF and are protected by Canadian and international copyright, trademark, and other intellectual property laws. 
 
-Permission is granted to access and use, download, copy and print the data, including information submitted through the App, from the CABD database for personal or commercial uses, in accordance with these App Terms and the other rules and restrictions contained in the App and CABD site, as well as under a Creative Commons license (the specific license is `CC BY-SA <https://creativecommons.org/share-your-work/cclicenses/>`_, and we recommend you read these terms). 
+Permission is granted to access and use, download, copy and print the data, including information submitted through the App, from the CABD database for personal or commercial uses, in accordance with these App Terms and the other rules and restrictions contained in the App and CABD site, as well as under a Creative Commons license (the specific license is `CC BY-SA <https://creativecommons.org/licenses/by-sa/4.0/>`_, and we recommend you read these terms). 
 
 Importantly, under this Creative Commons license, if you adapt or build upon the material, you must license the modified material under identical terms. 
 
