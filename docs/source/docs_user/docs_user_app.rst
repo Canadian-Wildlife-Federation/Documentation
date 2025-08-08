@@ -10,6 +10,7 @@ The CABD App
 
     docs_user_app/android_user_guide
     docs_user_app/ios_user_guide
+    docs_user_app/terms_of_use_copyright
 
 The Canadian Wildlife Federation (CWF) has developed the CABD Rapid Barrier Assessment mobile app to support the Canadian Aquatic Barriers Database (CABD)—Canada’s centralized, open-access resource for data on aquatic barriers like dams, stream crossings, waterfalls, and fishways.
 
