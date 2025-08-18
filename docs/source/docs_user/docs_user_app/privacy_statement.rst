@@ -195,6 +195,7 @@ We may disclose Personal Information in an anonymized or de-identified form (i.e
 While CWF does not rent or sell our donor list, we do exchange it with other non-governmental organizations that also engage in fundraising activities.
 
 .. _your-consent:
+
 Your Consent
 ^^^^^^^^^^^^^
 **Consent.** Unless permitted or required by law, CWF will not collect Personal Information without first obtaining your consent. In the event we want to use the information for a new or different purpose and believe consent is required, we will seek your further consent to use and disclose your Personal Information.
