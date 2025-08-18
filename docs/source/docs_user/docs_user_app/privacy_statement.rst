@@ -22,7 +22,7 @@ This Privacy Statement is divided into sections to explain:
 - :ref:`How We Use Personal Information <information-use>`
 - :ref:`Our Use of Internet Technology <internet-technology>`
 - :ref:`Our Disclosure of Personal Information <information-disclosure>`
-- :ref:`Your Consent <consent>`
+- :ref:`Your Consent <your-consent>`
 - :ref:`How We Protect Personal Information <information-protect>`
 - :ref:`Where We Keep Personal Information <information-keep>`
 - :ref:`How Long We Keep Personal Information <information-long>`
@@ -194,7 +194,8 @@ We may disclose Personal Information in an anonymized or de-identified form (i.e
 
 While CWF does not rent or sell our donor list, we do exchange it with other non-governmental organizations that also engage in fundraising activities.
 
-.. _consent:
+.. _your-consent:
+
 Your Consent
 ^^^^^^^^^^^^^
 **Consent.** Unless permitted or required by law, CWF will not collect Personal Information without first obtaining your consent. In the event we want to use the information for a new or different purpose and believe consent is required, we will seek your further consent to use and disclose your Personal Information.
