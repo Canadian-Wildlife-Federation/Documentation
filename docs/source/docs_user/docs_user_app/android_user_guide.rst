@@ -4,15 +4,15 @@
 Android User Guide
 =============================
 
-The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CABD Rapid Barrier Assessment Android mobile app is one such tool.
+The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CANFISHPASS Android mobile app is one such tool.
 
 App Access and Installation
 ----------------------------
-You can download the mobile app (Aquatic Barrier Ranger) from the Google Play store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
+You can download the mobile app (CANFISHPASS) from the Google Play store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
 
-.. figure:: img/android_app_phone.png
+.. figure:: img/android_app_phone.jpg
     :align: center
-    :width: 20%
+    :width: 25%
 
 You are now ready to open and explore the app!
 
@@ -34,7 +34,7 @@ Once the app is downloaded and installed, you can open it from your device’s h
 
 .. figure:: img/android_email.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. _interface-android:
 
@@ -45,13 +45,13 @@ Once you’ve navigated past the home screen, the main map space of the app will
 
 .. figure:: img/android_map_icons.png
     :align: center
-    :width: 30%
+    :width: 25%
 
 Press these three dots to refresh map features and view or manage your uploaded or cached features. (For more details, see :ref:`Using the Feature Cache to Upload Saved Assessment Submissions <feature-cache-android>`.)
 
 .. figure:: img/android_cached_features.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. _app-toggles-android:
 
@@ -114,7 +114,7 @@ While there is currently no in-app legend, the color of each icon indicates the 
 
 .. figure:: img/android_feature_map.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Dams will always remain visible on the map, however, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear (For more details, see :ref:`App Menu Toggles for more details <app-toggles-android>`). 
 
@@ -127,7 +127,7 @@ You’ll also notice a small black crosshair at the center of the screen (see im
 
 .. figure:: img/android_inset_map.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
 
@@ -147,30 +147,30 @@ To begin, align the app cursor with an existing barrier point, or move it to the
 
 **Assessing Existing Barriers**
 
-Once the cursor is aligned with an existing barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Assess this Feature’ button (see image below).
+Once the cursor is aligned with an existing barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button (see image below).
 
-Tapping the ‘Assess this Feature’ button opens a form where you can complete the barrier assessment.
+Tapping the ‘ASSESS THIS FEATURE’ button opens a form where you can complete the barrier assessment.
 
 .. figure:: img/android_update.png
     :align: center
-    :width: 20%
+    :width: 25%
 
-To assess the selected barrier, tap the ‘Assess this Feature’ button. This will open the rapid assessment form.
+To assess the selected barrier, tap the ‘ASSESS THIS FEATURE’ button. This will open the rapid assessment form.
 
-The first question will ask, “This structure is currently identified as (either a dam or a modelled crossings), is this correct?
+The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?
 
 - If the default structure type is correct, simply tap ‘Yes’ to proceed.
 - If the structure type is incorrect, then tap ‘No/Unsure’.
 
 .. figure:: img/android_feature_form.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Regardless of whether the user selects ‘Yes’ or ‘No/Unsure’ for the question above, the follow-up question will be: "Are you able to acesss the site?" with options of ‘Yes’ or ‘No’
 
 .. figure:: img/android_access_site.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Once these questions are responded to, an additional set of assessment questions and photo prompts specific to that structure type or accessibilty status will appear.
 
@@ -184,7 +184,7 @@ Each sub-type includes a unique set of questions, so be sure to select the corre
 
 .. figure:: img/android_form.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. _adding-assessing-new-barriers-android:
 
@@ -216,7 +216,7 @@ Once a new barrier assessment has been saved or uploaded, a black feature point 
 
 .. figure:: img/android_new_features.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 **Notes of Completing the Barrier Assessment Forms**
 
@@ -230,7 +230,7 @@ Once you’ve completed all the questions in the assessment form, you’re ready
 
 .. figure:: img/android_save.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Tapping the ‘SAVE’ button will store the assessment information you’ve entered so that you can manually upload it later. It’s important to note that saving does not upload the assessment to the database. When an assessment is saved, the associated feature point will appear on the map with a yellow halo (see image below). You can reopen a saved form at any time to review or edit the content before choosing to either save it again or upload it. The ‘SAVE’ function works whether you’re online or offline, including when connected to Wi-Fi, using cellular data, or with no service at all.
 
@@ -238,11 +238,11 @@ The ‘UPLOAD’ button, on the other hand, will both save and immediately uploa
 
 .. figure:: img/android_save_feature.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. figure:: img/android_upload_feature.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. _feature-cache-android:    
 
@@ -254,7 +254,7 @@ To upload multiple saved assessments at once, use the feature cache. You can acc
 
 .. figure:: img/android_upload.png
     :align: center
-    :width: 40%
+    :width: 50%
 
 In the feature cache, you’ll also find a ‘DELETE ALL’ button. This function will remove all saved and uploaded assessment features from the map — including their yellow and green halos — and delete all saved assessment form data stored locally in the app. Importantly, this action does not delete any information from the database.
 

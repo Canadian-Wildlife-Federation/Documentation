@@ -15,7 +15,7 @@ CANFISHPASS App
 
 The Canadian Wildlife Federation (CWF) has developed the Canadian Fish Passage Assessment (CANFISHPASS) mobile app to help improve the Canadian Aquatic Barriers Database (CABD)—Canada’s centralized, open-access resource for data on aquatic structures like dams, stream crossings, waterfalls, and fishways—and engage Canadians and local communities in action to help support freshwater conservation and restoration. 
 
-The CABD app can be downloaded for Android or iOS devices. 
+The CABD app can be downloaded for `Android <https://play.google.com/store/apps/details?id=com.foundry.cabdapp>`_ or iOS devices. 
 
 .. note::
     
