@@ -129,7 +129,7 @@ You’ll also notice a small black crosshair at the center of the screen (see im
     :align: center
     :width: 25%
 
-Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
+Once the cursor is aligned with a barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
 
 Tapping the ‘ASSESS THIS FEATURE’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers-android>`. 
 
@@ -157,7 +157,7 @@ Tapping the ‘ASSESS THIS FEATURE’ button opens a form where you can complete
 
 To assess the selected barrier, tap the ‘ASSESS THIS FEATURE’ button. This will open the rapid assessment form.
 
-The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?
+The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?""
 
 - If the default structure type is correct, simply tap ‘Yes’ to proceed.
 - If the structure type is incorrect, then tap ‘No/Unsure’.

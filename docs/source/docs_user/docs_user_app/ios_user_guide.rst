@@ -151,7 +151,7 @@ You’ll also notice a small black crosshair at the center of the screen (see im
 #. Tap and drag the screen until the crosshair is targeted at the barrier point of interest.
 #. Click on a barrier point of interest and the crosshair will automatically snap to that feature. 
 
-Once the cursor is aligned with a barrier point, a information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Assess this Feature’ button.
+Once the cursor is aligned with a barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘Assess this Feature’ button.
 
 Tapping the ‘Assess this Feature’ button opens a form that allows you to assess the selected feature. For detailed instructions on completing an assessment, see the next section :ref:`Assessing Barriers <assessing-barriers>`.
 
@@ -251,17 +251,17 @@ Each question in the assessment form includes an information icon next to it. Ta
 
 **Saving and Uploading Barrier Assessment Submissions**
 
-Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see four buttons: 'Save for Later', 'Upload' 'Delete' and 'Cancel'. 
+Once you’ve completed all the questions in the assessment form, you’re ready to save or upload your assessment. At the bottom of the form, you’ll see four buttons: 'Save for Later', 'Upload', 'Delete' and 'Cancel'. 
 
 .. figure:: img/ios_bottom.png
     :align: center
     :width: 40%
 
-The ‘Cancel’ button allows you to exit the assessment form. The "Cancel" button will only appear after you have answered the first two questions in the form. Once these questions have been answered, the remaining assessment questions will appear, along with the "Cancel" button of the screen. If you choose to cancel the assessment at this stage, the assessment will be autosaved. 
+The ‘Cancel’ button allows you to exit the assessment form. The "Cancel" button will only appear after you have answered the first two questions in the form. Once these questions have been answered, the remaining assessment questions will appear, along with the 'Cancel' button of the screen. If you choose to cancel the assessment at this stage, the assessment will be autosaved. 
 
 The 'Delete' button allows you to delete the entire assessment form. You can only do this for features that have not yet been uploaded. 
 
-The "Save for Later" button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. This button does not upload the information to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The "Save for Later" function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
+The 'Save for Later' button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. This button does not upload the information to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The 'Save for Later' function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
 
 .. figure:: img/ios_save.png
     :align: center
