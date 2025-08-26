@@ -59,15 +59,15 @@ Below the three vertical dots, you'll see three buttons which gives you access t
 
 Here’s a quick summary of what each one does:
 
-.. |logo5| image:: img/arrow_android.png
+.. |logo6| image:: img/arrow_android.png
    :width: 30pt
    :height: 30pt
 
-.. |logo6| image:: img/base_map_android.png
+.. |logo7| image:: img/base_map_android.png
    :width: 30pt
    :height: 30pt
 
-.. |logo7| image:: img/plus_sign_android.png
+.. |logo8| image:: img/plus_sign_android.png
    :width: 30pt
    :height: 30pt
 
@@ -81,15 +81,15 @@ Here’s a quick summary of what each one does:
      - Button Name 
      - Button Functionality
 
-   * - |logo5|
+   * - |logo6|
      - My Location
      - Snaps the map space back to your current location. Ensure your location settings are enabled to use this feature. 
 
-   * - |logo6|
+   * - |logo7|
      - Imagery/Base Map Toggle
      - Toggles between satellite imagery, base map and feature (dams and stream crossing) views. 
 
-   * - |logo7|
+   * - |logo8|
      - New feature
      - Adds a new barrier feature point that does not already exist on the map, see :ref:`adding and assessing a new barrier below for more information on adding new features <adding-assessing-new-barriers-android>`. 
 
