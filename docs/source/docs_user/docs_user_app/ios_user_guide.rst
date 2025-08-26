@@ -4,11 +4,11 @@
 iOS User Guide
 =============================
 
-The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CABD Rapid Barrier Assessment iOS mobile app is one such tool.
+The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CANFISHPASS iOS mobile app is one such tool.
 
 App Access and Installation
 ----------------------------
-You can download the mobile app (Aquatic Barrier Ranger) from the Apple App store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
+You can download the mobile app (CANFISHPASS) from the Apple App store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
 
 .. figure:: img/apple_app_phone.png
     :align: center
@@ -30,7 +30,7 @@ This page contains information on:
 Getting Started
 ^^^^^^^^^^^^^^^^
 
-Once the app is downloaded and installed, you can open it from your device’s home screen. On first launch, the home screen will appear with the CWF logo and your email address. You can also choose to enter a different email if needed. After saving your email, tap ‘Continue’ to access the main app interface and map view. Links to a Getting Started guide, Privacy Policy, and Terms of Use & Copyright are also available on this screen.
+Once the app is downloaded and installed, you can open it from your device’s home screen. On first launch, the home screen will appear with the CWF logo and your email address. You can also choose to enter a different email if needed. After saving your email, tap ‘Save’ to access the main app interface and map view. Links to a Getting Started guide, Privacy Policy, and Terms of Use & Copyright are also available on this screen.
 
 .. figure:: img/ios_email.png
     :align: center
@@ -45,6 +45,10 @@ Once you’ve passed the home screen, you’ll arrive at the main map interface.
 Here’s a quick summary of what each one does:
 
 .. |logo| image:: img/arrow.png
+   :width: 30pt
+   :height: 30pt
+
+.. |logo5| image:: img/homepage.png
    :width: 30pt
    :height: 30pt
 
@@ -77,6 +81,10 @@ Here’s a quick summary of what each one does:
    * - |logo|
      - My Location
      - Snaps the map space back to your current location. 
+    
+   * - |logo5|
+     - Homepage
+     - Returns you to the homepage. 
 
    * - |logo1|
      - Settings 
@@ -96,7 +104,7 @@ Here’s a quick summary of what each one does:
 
 .. figure:: img/ios_feature_map.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 .. _navigation:
 
@@ -119,7 +127,7 @@ While there is currently no in-app legend, the color of each icon indicates the 
 
 .. figure:: img/ios_features.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 Additionally, once you begin :ref:`assessing barriers <assessing-barriers>`, halos will appear around them to indicate their status: 
 
@@ -165,7 +173,7 @@ Once the cursor is aligned with an existing barrier point, an information box wi
 
 .. figure:: img/ios_update.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 To assess the selected barrier, tap the ‘Assess this Feature’ button. This will open the rapid assessment form. You can also exit the assessment form at anytime by clicking the "X" at the top left of the assessment form. 
 
@@ -182,7 +190,7 @@ Then, there will be one of the two outcomes:
 
 .. figure:: img/ios_form.png
     :align: center
-    :width: 40%
+    :width: 50%
 
 Once the structure type is confirmed, a set of assessment questions and photo prompts specific to that structure type will appear.
 
@@ -208,7 +216,7 @@ To add a new feature:
 
 .. figure:: img/ios_new_feature.png
     :align: center
-    :width: 20%
+    :width: 25%
 
 The first step is to select the structure type:
 
@@ -233,7 +241,7 @@ Once a new barrier assessment has been saved or uploaded, a black feature point 
 
 .. figure:: img/ios_new_features.png
     :align: center
-    :width: 40%
+    :width: 50%
 
 **Notes of Completing the Barrier Assessment Forms**
 
@@ -253,7 +261,7 @@ The ‘Cancel’ button allows you to exit the assessment form. The "Cancel" but
 
 The 'Delete' button allows you to delete the entire assessment form. You can only do this for features that have not yet been uploaded. 
 
-The "Save for Later" button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. this button does not upload the information to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The "Save for Later" function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
+The "Save for Later" button allows you to save the information you've entered into the assessment form so you can return to it and manually upload it later. This button does not upload the information to the central database. Once an assessment is saved, the associated feature point will appear on the map with a yellow halo around it, indicating that it has been stored locally. You can reopen the form for a saved feature at any time to continue editing or complete and upload it. The "Save for Later" function works whether you are connected to Wi-Fi, using cellular data, or even if you are offline with no service. 
 
 .. figure:: img/ios_save.png
     :align: center
@@ -279,7 +287,7 @@ To upload multiple saved assessments at once, use the feature cache. You can acc
 
 .. figure:: img/ios_uploads.png
     :align: center
-    :width: 40%
+    :width: 50%
 
 In the feature cache, you’ll also find a ‘DELETE ALL’ button. This function will remove all saved and uploaded assessment features from the map — including their yellow and green halos — and delete all saved assessment form data stored locally in the app. Importantly, this action does not delete any information from the database.
 
