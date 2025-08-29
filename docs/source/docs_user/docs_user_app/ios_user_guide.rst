@@ -4,11 +4,9 @@
 iOS User Guide
 =============================
 
-The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CANFISHPASS iOS mobile app is one such tool.
-
 App Access and Installation
 ----------------------------
-You can download the mobile app (CANFISHPASS) from the Apple App store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
+You can download the mobile app (CANFISHPASS) from the `Apple App store <https://apps.apple.com/ca/app/canfishpass/id6749703687>`_. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
 
 .. figure:: img/apple_app_phone.png
     :align: center
@@ -30,7 +28,7 @@ This page contains information on:
 Getting Started
 ^^^^^^^^^^^^^^^^
 
-Once the app is downloaded and installed, you can open it from your device’s home screen. On first launch, the home screen will appear with the CWF logo and your email address. You can also choose to enter a different email if needed. After saving your email, tap ‘Save’ to access the main app interface and map view. Links to a Getting Started guide, Privacy Policy, and Terms of Use & Copyright are also available on this screen.
+Once the app is downloaded and installed, you can open it from your device’s home screen. When you first open the app you will be greeted with a home screen that has the CWF logo and a text box where you'll enter your email address and click 'Continue' which will bring you to the main app page and map space. Links to a Getting Started guide, Privacy Policy, and Terms of Use & Copyright are also available on this screen.
 
 .. figure:: img/ios_email.png
     :align: center
@@ -40,7 +38,7 @@ Once the app is downloaded and installed, you can open it from your device’s h
 
 Interface Components
 ^^^^^^^^^^^^^^^^^^^^^^
-Once you’ve passed the home screen, you’ll arrive at the main map interface. In the top-right corner, you’ll see five buttons/icons that give you access to key features of the app.
+Once you’ve passed the home screen, you’ll arrive at the main map interface. In the top-right corner, you’ll see six buttons/icons that give you access to key features of the app.
 
 Here’s a quick summary of what each one does:
 
@@ -181,7 +179,7 @@ To assess the selected barrier, tap the ‘Assess this Feature’ button. This w
     :align: center
     :width: 30%
 
-The first question you will be asked is whether the structure type that exists in the CABD matches what you see at the site. For example, if the barrier feature is a stream crossing in the database, the question will read " is the structure type correct: Stream Crossing".
+The first question you will be asked is whether the structure type that exists in the CABD matches what you see at the site. For example, if the barrier feature is a stream crossing in the database, the question will read 'Is "Stream Crossing" the correct structure type?'.
 
 Then, there will be one of the two outcomes: 
 
