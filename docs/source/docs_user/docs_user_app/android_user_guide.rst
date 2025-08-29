@@ -4,11 +4,9 @@
 Android User Guide
 =============================
 
-The CABD has compiled information on dams, waterfalls, stream crossings, and fishways from over 800 data sources; however, there is still many missing structures and a need to fill in information gaps for the majority of existing points. To address these data gaps, tools are being developed to enable individuals across the country to contribute information to the CABD. The CANFISHPASS Android mobile app is one such tool.
-
 App Access and Installation
 ----------------------------
-You can download the mobile app (CANFISHPASS) from the Google Play store. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
+You can download the mobile app (CANFISHPASS) from the `Google Play store <https://play.google.com/store/apps/details?id=com.foundry.cabdapp>`_. Once installed, the app will be accessible on your phone with the CWF logo as the app icon. 
 
 .. figure:: img/android_app_phone.jpg
     :align: center
@@ -115,6 +113,16 @@ While there is currently no in-app legend, the color of each icon indicates the 
 .. figure:: img/android_feature_map.png
     :align: center
     :width: 25%
+
+Additionally, once you begin :ref:`assessing barriers <assessing-barriers-android>`, halos will appear around them to indicate their status: 
+
+- Green - uploaded features
+- Blue - autosaved features
+- Yellow - saved features.
+
+.. figure:: img/halo_barriers.png
+    :align: center
+    :width: 30%
 
 Dams will always remain visible on the map, however, to improve app performance, stream crossings will automatically be hidden when you zoom out beyond a certain level. As you zoom back in, they will reappear (For more details, see :ref:`App Menu Toggles for more details <app-toggles-android>`). 
 
