@@ -434,7 +434,7 @@ This end point allows user to submit new community data.
 * METHOD: POST
 * CONTENT-TYPE: application/geo+json 
 * AUTHORIZATION: Bearer <token>
-* BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs feature_type & user_name properties. 
+* BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs a feature_type and valid geometry.
 A cabd_id property should be provided if an existing feature is updated. All other properties are retained and available to the data reviewer. All photo data should be submitted as base64 encoded png images. 
 
 ::
@@ -446,8 +446,7 @@ A cabd_id property should be provided if an existing feature is updated. All oth
       "coordinates": [ -123.36089100000027, 48.46620700000054] 
      }, 
      "properties": { 
-      "feature_type": "dams", 
-      "user_email": "datasubmittor@email.com", 
+      "feature_type": "dams",  
       "cabd_id": "F515F5FB-2519-400F-A258-EEF7219C40BE", 
       "dropImage": "<imagedata>", 
       "streamFlowing": "true", 
@@ -558,11 +557,10 @@ This api returns the details of an individual community feature
 ``id`` is the community feature id (the id property of the community feature returned by the /community/data api )
 
 The results are provided as a geojson feature will all of the original properties provided in the community data with the following modifications:
- - image data is removed and replaced with a filename. In the future this filename will allow you to view the image.
+ - image data is removed and replaced with a filename. In the future this filename will allow you to view the image
  - an uploaded_datetime field is added that represents the date/time the community data was uploaded
  - an id field is added that represents the system id assigned to the community feature (will match the id in the url)
- - a status field is added representing the status of the community feature processing
- - user_email field is removed.
+ - user_email field (if provided) is removed
  
 ::
 
@@ -574,7 +572,6 @@ The results are provided as a geojson feature will all of the original propertie
     },
     "properties": {
       "id": "63ec44c8-5016-4ac2-bea4-da82d5fa5484",
-      "status": "NEW",
       "uploaded_datetime": "2024-10-10T07:35:27.214788-07:00",
       "weir": "true",
       "notes": "This is a simple example.",
