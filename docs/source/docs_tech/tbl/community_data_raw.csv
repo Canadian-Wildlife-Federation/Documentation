@@ -1,0 +1,7 @@
+Column,Description
+id,The unique system assigned identifier
+cabd_id,Link to the cabd feature to be updated. If this doesn't match any existing cabd_id features then this should be considered a new feature.
+user_id,The id of the user who submitted the data (references cabd.community_contact)
+uploaded_datetime,The date/time of the submission
+data,The data submitted. This is a json object containing the original data with processed image data. Image key/value pairs in the JSON reference a filename of the image which is stored on the Azure blob storage.
+status,The status field that should be managed by the data reviewers. By default the value is 'NEW' but after the data has been reviewed this should bc updated to any other value.

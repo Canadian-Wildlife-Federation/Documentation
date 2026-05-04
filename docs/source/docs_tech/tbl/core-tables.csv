@@ -7,3 +7,7 @@ attribute_source_table,The data table containing the attribute data source infor
 default_featurename_field,The field in the data_view that represents the main feature name.
 feature_source_table,The data table containing a link between the features and the data source information. This is optional and can be null.
 data_version,The version number of the data for the feature type. This version number is included in exports.
+description,A description of the feature type
+data_table,The name of the table(s) that contain the official feature data.
+community_data_type,The name of the community data staging table. Data submitted via the community data api will be placed in this table.
+community_data_photo_fields,List of photo fields for the community data. Any json keys that match one of these strings will be considered photo data and parsed into an image file and places on the Azure blob storage.

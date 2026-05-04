@@ -8,6 +8,12 @@ Update - September 23, 2024: Stream crossings: Passability status values were up
 
 Update - September 24, 2024: Dams: In the Lower Nicola River watershed, information for 2 dams were updated. Waterfalls: In the Lower Nicola River watershed, information for 2 waterfalls were updated while 2 other waterfalls were removed from the database. These changes were made effective in Version 1.3 on September 24, 2024, 4:00 PM EST. 
 
+Update - October 24, 2024: Waterfalls: In the Bulkley River Watershed, information for 1 waterfall was updated and 1 waterfall feature was added. These changes were made October 24, 2025, 2:15 PM EST. 
+
+Update - January 10, 2025: Dams: Comments were updated for 1 dam in the Yukon. Fishways: Information was updated for 1 fishway in the Yukon. These changes were made January 10, 2025, 11:30 AM EST. 
+
+Update - April 29, 2025: Waterfalls: In the Bulkley River Watershed, names were updates for 4 waterfalls and passability status updated for 5 waterfalls. These changes were made April 29, 2025, 2:00 PM EST. 
+
 Data Layers
 
 dams 1.2

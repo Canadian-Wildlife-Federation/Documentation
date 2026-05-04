@@ -411,7 +411,6 @@ The attributes included in the vector tile are those whose "include_vector_tile"
 
 
 Assessment End Points
-=================
 
 -----
 
@@ -439,3 +438,191 @@ Assessment Type Details
 ``/assessments/types/<assessment-type>``
 
     Returns a description of all the fields associated with the provided assessment type.
+Community Data
+
+-----
+
+The community data API supports the collection of data from community users. This API was developed to be used in conjunction with the Mobile Data Application. 
+
+The data submitted to the community API immediately gets written to a community data table without 
+any validation or processing.  A separate job takes data from this community data table, 
+parses the feature type, photos, user information and stores the parsed data in the appropriate feature staging 
+table. Any features provided without a cabd_id are assigned a new one. 
+Once in the feature staging table it is up to Data Reviews to review the data and update the appropriate CABD features.
+
+Authentication
+-------------------------------
+
+The entire community data api is secured behind Auth0. All requests must include a valid JSON Web Token (JWT) supplied as a bearer token in the ``Authorization`` header. Request that omit the header, present a malformed or invalid token will be rejected with an HTTP ``401 Unauthorized`` response.
+
+
+Submit Community Data End Point
+-------------------------------
+
+This end point allows user to submit new community data.
+
+* URL: /community
+* METHOD: POST
+* CONTENT-TYPE: application/geo+json 
+* AUTHORIZATION: Bearer <token>
+* BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs a feature_type and valid geometry.
+A cabd_id property should be provided if an existing feature is updated. All other properties are retained and available to the data reviewer. All photo data should be submitted as base64 encoded png images. 
+
+::
+
+   { 
+     "type": "Feature", 
+     "geometry": { 
+      "type": "Point", 
+      "coordinates": [ -123.36089100000027, 48.46620700000054] 
+     }, 
+     "properties": { 
+      "feature_type": "dams",  
+      "cabd_id": "F515F5FB-2519-400F-A258-EEF7219C40BE", 
+      "dropImage": "<imagedata>", 
+      "streamFlowing": "true", 
+      "downstreamImage": "<imagedata>", 
+      "notes": "", 
+      "passability_status": "passable",
+      "structureFlowing": "true", 
+      "blockagesOther": "false", 
+      "blockagesFencing": "false", 
+      "blockageImage": "<imagedata>", 
+      "selectedType": "bridge", 
+      "physicalBlockages": "true", 
+      "blockageDebris": "false", 
+      "outletDrop": ">20", 
+      "blockagesDeformation": "true", 
+      "lat": 48.46620700000054, 
+      "blockagesDam": "true", 
+      "lng": -123.36089100000027 
+     } 
+   } 
+
+* RETURN: JSON containing a unique identifer
+
+::
+
+   { 
+     "id": "e217b9b7-3f2e-4fe4-8b7b-61e09e2cff98" 
+   } 
+
+
+This unique identifier can be used to determine if there was a problem with the submission.
+The end point ``/community/status/<uuid>`` will return 404 (not found) if the data was processed correctly or 200 with some error information if there was an issue with processing the submitted data (or processing is still in progress). This was written strictly for testing the submission API and may be removed at a future date. 
+This id is not used anywhere else in the system.
+ 
+List Community Data Features
+-----------------------
+
+This api returns all the features submitted to the community data with a limited set of attributes
+
+
+``https://cabd-web.azurewebsites.net/community/data?fromdate=2026-04-28T20:58:28Z&todate=2026-04-28T20:58:28Z&max-results=20``
+
+``https://cabd-web.azurewebsites.net/community/data/{type}?fromdate=2026-04-28T20:58:28Z&todate=2026-04-28T20:58:28Z&max-results=20``
+
+``type`` must be a valid feature type. 
+
+    Returns all features that match the given query parameters. Query options include:
+        
+    - ``fromdate`` - The earliest upload date to return results for. ISO 8601 UTC date/time. Date only (not time) is also accepted. Exclusive.
+    - ``todate`` - The latest upload date to return results for. ISO 8601 UTC date/time. Date only (not time) is also accepted. Exclusive.
+    - ``max-results`` - The maximum number of features to return (if not provided will default to system maximum)
+    
+
+The attributes included in the response are:
+ - id - unique id for the community feature. Not related to the id returned by the upload API
+ - cabd_id - the cabd_id 
+ - feature_type - the feautre type
+ - is_owner - if this feature was submitted by the current user or not
+ - uploaded_datetime - the date/time the feature was uploaded
+
+
+::
+
+   {
+     "type": "FeatureCollection",
+     "crs": "EPSG:4617",
+     "features": [
+       {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [125.6,10.1]
+          },
+          "properties": {
+            "cabd_id": "8c7fe8c2-0890-4d65-884c-ec8087368800",
+            "feature_type": "dams",
+            "is_owner": true,
+            "uploaded_datetime": "2026-04-24T22:25:56.226352Z",
+            "id": "0e0170ab-03c6-4dc8-988c-27eba419f82f"
+         }
+       },
+       {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [125.6,10.1]
+          },
+          "properties": {
+            "cabd_id": "2c4693c1-f4f8-4686-9314-ecc074694a29",
+            "feature_type": "stream_crossings"
+            "is_owner": false,
+            "uploaded_datetime": "2026-04-22T21:05:23.3421Z",
+            "id": "fa44eff1-2e9f-4266-86ea-94679e991d9a"
+          }
+        } 
+      ]    
+    }  
+   
+ 
+Community Feature Details
+-----------------------
+
+This api returns the details of an individual community feature
+
+
+``https://cabd-web.azurewebsites.net/community/data/{id}``
+
+``id`` is the community feature id (the id property of the community feature returned by the /community/data api )
+
+The results are provided as a geojson feature will all of the original properties provided in the community data with the following modifications:
+ - image data is removed and replaced with a filename. In the future this filename will allow you to view the image
+ - an uploaded_datetime field is added that represents the date/time the community data was uploaded
+ - an id field is added that represents the system id assigned to the community feature (will match the id in the url)
+ - user_email field (if provided) is removed
+ 
+::
+
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-73.95183384418488,46.409556709382144]
+    },
+    "properties": {
+      "id": "63ec44c8-5016-4ac2-bea4-da82d5fa5484",
+      "uploaded_datetime": "2024-10-10T07:35:27.214788-07:00",
+      "weir": "true",
+      "notes": "This is a simple example.",
+      "cabd_id": "174db114-c7cc-4c75-be1f-30b337905c71",
+      "uploaded": "false",
+      "dam_height": "<5m",
+      "feature_type": "dams",
+      "dam_name_known": "false",
+      "has_fish_structure": "false",
+      "passability_status": "Obstacle",
+      "physical_blockages": "false",
+      "partial_dam_removal": "false",
+      "side_channel_bypass": "false",
+      "upstream_side_image": "63ec44c850164ac2bea4da82d5fa5484_upstream_side_image.jpeg",
+      "downstream_side_image": "63ec44c850164ac2bea4da82d5fa5484_downstream_side_image.jpeg",
+      "structure_type_correct": "yes",
+      "upstream_direction_image": "63ec44c850164ac2bea4da82d5fa5484_upstream_direction_image.jpeg",
+      "downstream_direction_image": "63ec44c850164ac2bea4da82d5fa5484_downstream_direction_image.jpeg"
+    }
+  }
+
+
+   
