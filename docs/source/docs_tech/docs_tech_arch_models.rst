@@ -251,11 +251,11 @@ Community data users are stored in a separate cabd.community_contact table.
     :header-rows: 1
     
 Each feature type supported needs a feature staging table (<featuretype>_community_staging). 
-This table name is specified in the cabd.feature_types metadata table. Each feature type staging table has a status column. 
-By default the value is NEW. Once the data has been reviewed and appropriate features created/updated, 
+This table name is specified in the cabd.feature_types metadata table. Each feature type staging table has a status column with a deafult value of NEW. 
+Once the data has been reviewed and appropriate features created/updated, 
 this status column should be updated to something other than NEW.
 
-:codeblocksize:`<featuretype>.community_data_<feature_type>`
+:codeblocksize:`<featuretype>.<feature_type>_community_staging`
 
 .. csv-table:: 
     :file: tbl/community_data_featuretype.csv
@@ -266,10 +266,28 @@ this status column should be updated to something other than NEW.
 Each cabd feature has an updates_pending flag, and this flag includes features 
 from the community data staging table that have a status of NEW.
 
-Ghost features are features which have been submitted to the community data API without a cabd id 
-and have not yet been reviewed and added to the official feature dataset. These features also rely on the 
-feature type community data stating table status column (only features with a status of NEW 
-will be considered for ghost features).
+
+
+:codeblocksize:`<featuretype>.<feature_type>_community_holding`
+
+
+Holding tables are used as a location to parse the json data into and review before copying the data into the CABD feature types. 
+These tables may or may not be implemented and are usually populated by triggers. Triggers are also used to copy the data from
+the holding table into the CABD feature tables after reviewed. The structure of these tables varies by feature type, however they should contain
+a status field which drives the status field in the community_data_staging_view descriped below.
+
+:codeblocksize:`cabd.community_data_staging_view`
+
+This view combines all the feature type staging tables into a single view and adds a status column. 
+In this case the status column is the status of the data integration into CABD database, not the status of the processing
+from the staging table. This status column pulls the data from other tables (generally the _holding tables).  
+
+If you add new feature types to the community data collection, this view needs to be updated to include these new feature type tables.
+
+.. csv-table:: 
+    :file: tbl/community_data_staging_view.csv
+    :widths: 30, 70
+    :header-rows: 1
 
 
 .. _audit_log:
