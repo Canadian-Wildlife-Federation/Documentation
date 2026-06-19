@@ -1,3 +1,4 @@
 Column,Description
 user_id,The unique system assigned identifier
-username,The username/email of the community user
+username,The username/email of the community user - for Auth0 users this will be populated with their email address
+oauth_id,The OAuth user identifier provided by auth0

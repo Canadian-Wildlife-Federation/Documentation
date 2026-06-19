@@ -540,7 +540,6 @@ The attributes included in the response are:
  - ``uploaded_datetime`` - the date/time the feature was uploaded
  - ``status`` - the current processing status of the feature. Valid values include: 
 
-   - ``UNKNOWN`` - the processing status is not known 
    - ``NEW`` - new feature that has not been reviewed
    - ``REVIEWED`` - feature has been reviewed but not yet incorporated in CABD database 
    - ``PROCESSED`` - feature has been reviewd, processed and incorporated in the CABD if appropriate
