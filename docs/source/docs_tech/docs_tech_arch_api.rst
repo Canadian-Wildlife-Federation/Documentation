@@ -438,9 +438,10 @@ Assessment Type Details
 ``/assessments/types/<assessment-type>``
 
     Returns a description of all the fields associated with the provided assessment type.
-Community Data
 
------
+
+Community Data
+=================
 
 The community data API supports the collection of data from community users. This API was developed to be used in conjunction with the Mobile Data Application. 
 
