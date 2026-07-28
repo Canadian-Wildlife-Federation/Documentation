@@ -5,3 +5,7 @@ user_id,The id of the user who submitted the data (references cabd.community_con
 uploaded_datetime,The date/time of the submission
 data,The data submitted. This is a json object containing the original data with processed image data. Image key/value pairs in the JSON reference a filename of the image which is stored on the Azure blob storage.
 status,The status field that should be managed by the data reviewers. By default the value is 'NEW' but after the data has been reviewed this should bc updated to any other value.
+status_message,A string field containing description of the status message
+warnings,Array of all warnings generated while processing the file
+oauth_id,The OAuthId of the user you submitted the data
+oauth_email,The email associated with the oauth user

@@ -533,11 +533,19 @@ This api returns all the features submitted to the community data with a limited
     
 
 The attributes included in the response are:
- - id - unique id for the community feature. Not related to the id returned by the upload API
- - cabd_id - the cabd_id 
- - feature_type - the feautre type
- - is_owner - if this feature was submitted by the current user or not
- - uploaded_datetime - the date/time the feature was uploaded
+ - ``id`` - unique id for the community feature. Not related to the id returned by the upload API
+ - ``cabd_id`` - the cabd_id 
+ - ``feature_type`` - the feautre type
+ - ``is_owner`` - if this feature was submitted by the current user or not
+ - ``uploaded_datetime`` - the date/time the feature was uploaded
+ - ``status`` - the current processing status of the feature. Valid values include: 
+
+   - ``NEW`` - new feature that has not been reviewed
+   - ``REVIEWED`` - feature has been reviewed but not yet incorporated in CABD database 
+   - ``PROCESSED`` - feature has been reviewd, processed and incorporated in the CABD if appropriate
+   - ``ERROR/WARNING`` - feature is rejected 
+   - ``REQUIRES CLARIFICATION`` - feature has been reviewed, but further review/clarification is required before acceptance
+
 
 
 ::
@@ -557,7 +565,8 @@ The attributes included in the response are:
             "feature_type": "dams",
             "is_owner": true,
             "uploaded_datetime": "2026-04-24T22:25:56.226352Z",
-            "id": "0e0170ab-03c6-4dc8-988c-27eba419f82f"
+            "id": "0e0170ab-03c6-4dc8-988c-27eba419f82f",
+            "status": "NEW"
          }
        },
        {
@@ -572,6 +581,7 @@ The attributes included in the response are:
             "is_owner": false,
             "uploaded_datetime": "2026-04-22T21:05:23.3421Z",
             "id": "fa44eff1-2e9f-4266-86ea-94679e991d9a"
+            "status": "PROCESSED"
           }
         } 
       ]    
@@ -590,9 +600,10 @@ This api returns the details of an individual community feature
 
 The results are provided as a geojson feature will all of the original properties provided in the community data with the following modifications:
  - image data is removed and replaced with a filename. In the future this filename will allow you to view the image
- - an uploaded_datetime field is added that represents the date/time the community data was uploaded
- - an id field is added that represents the system id assigned to the community feature (will match the id in the url)
- - user_email field (if provided) is removed
+ - an ``uploaded_datetime`` field is added that represents the date/time the community data was uploaded
+ - an ``id`` field is added that represents the system id assigned to the community feature (will match the id in the url)
+ - a ``status`` field is added (same as the status field described above in the community feature listing section)
+ - ``user_email`` field (if provided) is removed
  
 ::
 
@@ -605,6 +616,7 @@ The results are provided as a geojson feature will all of the original propertie
     "properties": {
       "id": "63ec44c8-5016-4ac2-bea4-da82d5fa5484",
       "uploaded_datetime": "2024-10-10T07:35:27.214788-07:00",
+      "status:" "NEW",
       "weir": "true",
       "notes": "This is a simple example.",
       "cabd_id": "174db114-c7cc-4c75-be1f-30b337905c71",
