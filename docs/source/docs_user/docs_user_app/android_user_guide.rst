@@ -10,7 +10,7 @@ You can download the mobile app (CANFISHPASS) from the `Google Play store <https
 
 .. figure:: img/app_icon.png
     :align: center
-    :width: 25%
+    :width: 10%
 
 App Overview and Guidance
 ----------------------------
@@ -28,6 +28,7 @@ Getting Started
 From the home screen, you can log in or create an account, open this Getting Started guide, or view the map. You can view the map without needing to log in.
 
 # TO DO: REPLACE THIS IMAGE once login button is added
+
 .. figure:: img/android_email.png
     :align: center
     :width: 25%
@@ -218,7 +219,7 @@ If you have multiple saved assessments that you want to upload all at once, open
 
 While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of saved assessments will be reset to zero.
 
-.. figure:: img/profile_screen.png
+.. figure:: img/android_profile_screen.png
     :align: center
     :width: 50%
 
