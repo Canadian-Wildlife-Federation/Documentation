@@ -67,7 +67,7 @@ Here’s a quick summary of what each one does:
 
 .. _my-location-android:
 
-.. list-table:: Title
+.. list-table:: Interface Components
    :widths: 25 25 50
    :header-rows: 1
 
@@ -81,7 +81,7 @@ Here’s a quick summary of what each one does:
 
    * - |logo7|
      - Legend
-     - Open a legend for features displayed on the map.  
+     - Open a legend for features displayed on the map. 
 
    * - |logo8|
      - Base Map and Layer Toggle
@@ -113,15 +113,30 @@ You’ll also notice a small black crosshair at the center of the screen (see im
     :align: center
     :width: 25%
 
-Once the crosshair is aligned with a barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with an ‘ASSESS THIS FEATURE’ button.
+Once the crosshair is aligned with a barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with ‘EXPLORE THIS FEATURE’ and ‘ASSESS THIS FEATURE’ buttons.
 
 Dams are represented as squares, and stream crossings are represented as circles. The colour of each icon indicates the passability status. Use the legend button to identify what each colour means.
 
 You may also see different-coloured haloes around features as you start :ref:`assessing barriers <assessing-barriers-android>` or if other users have assessed barriers near you.
 
-.. figure:: img/halo_barriers.png
+.. figure:: img/android_halo_barriers.png
     :align: center
     :width: 30%
+
+.. _exploring-barriers-android:
+
+Exploring Barriers
+^^^^^^^^^^^^^^^^^^^
+
+Once the crosshair is aligned with an existing barrier point, an information box will appear at the bottom of the screen with the structure type and passability status.
+
+Click ‘EXPLORE THIS FEATURE’ to open the barrier information window.
+
+.. figure:: img/android_explore_this_feature.png
+    :align: center
+    :width: 30%
+
+This will display the existing information known about the structure from the Canadian Aquatic Barriers Database (CABD). You'll likely see lots of NULL values here - so any information you can provide helps us improve our database!
 
 .. _assessing-barriers-android:
 
