@@ -191,7 +191,7 @@ Tip: If you're unsure what a question is asking, or how to respond, tap the Info
 
 .. raw:: html
 
-    <video controls width="600"><source src="../../_static/ios_assess_existing.mp4"></video>
+    <video controls width="300"><source src="../../_static/ios_assess_existing.mp4"></video>
 
 The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?""
 
@@ -215,11 +215,12 @@ To add a new feature:
 
 .. raw:: html
 
-    <video controls width="600"><source src="../../_static/ios_assess_new.mp4"></video>
+    <video controls width="300"><source src="../../_static/ios_assess_new.mp4"></video>
 
 Once you select the structure type, additional assessment questions and photo prompts will appear. 
 
 Once a new barrier assessment has been saved or uploaded, a black feature point will appear on the map at the assessment location — a square for dams and a circle for stream crossings.
+
 .. figure:: img/ios_new_features.png
     :align: center
     :width: 50%
@@ -241,6 +242,7 @@ When an assessment is saved, the associated feature point will appear on the map
 Clicking ‘UPLOAD’ will both save and immediately upload the completed assessment to the database. Once uploaded, the feature point will be displayed on the map with a green halo. You can open and review the content of an uploaded assessment, but you cannot edit it after it has been submitted. The ‘UPLOAD’ button appears blue when you have a Wi-Fi or cellular connection and is greyed out when offline. You can only upload assessments when you are connected to the internet. If you're offline, use the ‘SAVE’ button instead and upload your completed assessments once a connection is available.
 
 **Using the Feature Cache to Upload Saved Assessment Submissions**
+
 If you have multiple saved assessments that you want to upload all at once, open the Profile window at the top right of your screen. You’ll see a summary of the features you’ve already uploaded, as well as a list of saved assessments that are still waiting to be uploaded. 
 
 While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of saved assessments will be reset to zero.
