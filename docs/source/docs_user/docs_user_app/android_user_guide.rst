@@ -18,6 +18,7 @@ App Overview and Guidance
 - :ref:`Getting Started on the App <getting-started-android>`
 - :ref:`A summary of the user interface components <interface-android>`
 - :ref:`Navigating the map space and barrier symbology <navigation-android>`
+- :ref:`Exploring barrier features <exploring-barriers-android>`
 - :ref:`Assessing barrier features <assessing-barriers-android>`
 
 .. _getting-started-android:
@@ -221,7 +222,7 @@ While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all
 
 .. figure:: img/android_profile_screen.png
     :align: center
-    :width: 50%
+    :width: 25%
 
 You will also see a  ‘DELETE ALL’ button on this screen. This button will remove all assessment data saved locally in the app, but will NOT delete any information from the CWF database.
 
