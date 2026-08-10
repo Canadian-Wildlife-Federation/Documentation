@@ -129,27 +129,6 @@ You’ll also notice a small black crosshair at the center of the screen (see im
 
 Once the crosshair is aligned with a barrier point, an information box will appear at the bottom of the screen. This box displays the barrier ID, structure type, and passability status, along with ‘EXPLORE THIS FEATURE’ and ‘ASSESS THIS FEATURE’ buttons.
 
-Dams are represented as squares, and stream crossings are represented as circles. The colour of each icon indicates the passability status. Use the legend button to identify what each colour means.
-
-- Green - Passable 
-- Orange - Partial Barrier
-- Red - Barrier
-- Purple - Unknown
-- Dark Grey - N/A - No structure
-- Light Grey - N/A - Decommissioned/Removed 
-
-.. figure:: img/ios_features.png
-    :align: center
-    :width: 25%
-
-Additionally, once you begin :ref:`assessing barriers <assessing-barriers>`, halos will appear around them to indicate their community status: 
-
-- Dark Blue - Your Submitted Features
-- Pink - Community Submitted Features
-- Orange - Your Uploaded Features
-- Light Blue - Your Autosaved Features
-- Yellow - Your Not Uploaded Yet Features 
-
 .. figure:: img/halo_barriers.png
     :align: center
     :width: 30%
@@ -243,7 +222,9 @@ Clicking ‘UPLOAD’ will both save and immediately upload the completed assess
 
 **Using the Feature Cache to Upload Saved Assessment Submissions**
 
-If you have multiple saved assessments that you want to upload all at once, open the Profile window at the top right of your screen. You’ll see a summary of the features you’ve already uploaded, as well as a list of saved assessments that are still waiting to be uploaded. 
+If you have multiple saved assessments that you want to upload all at once, open the Profile window at the top right of your screen. You’ll see a summary of total assessments including verified assessments and submissions in review. 
+
+Verified means that the assessment has been reviewed by CWF and added to the CABD. Submissions in review means that they are still under review by CWF and that they have not been added. 
 
 While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of saved assessments will be reset to zero.
 
@@ -254,3 +235,5 @@ While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all
 You will also see a  ‘DELETE ALL’ button on this screen. This button will remove all assessment data saved locally in the app, but will NOT delete any information from the CWF database.
 
 The ‘DELETE ALL’ button is intended to help clear the app’s memory if performance becomes sluggish due to a large number of saved or uploaded features. You should only use this button if you are experiencing app performance issues, and it is essential to ensure that all saved features have been uploaded from the feature cache before doing so to avoid losing any unsubmitted data.
+
+
