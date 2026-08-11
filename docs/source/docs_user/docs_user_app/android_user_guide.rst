@@ -218,6 +218,8 @@ Clicking ‘UPLOAD’ will both save and immediately upload the completed assess
 
 If you have multiple saved assessments that you want to upload all at once, open the Profile window at the top right of your screen. You’ll see a summary of the features you’ve already uploaded, as well as a list of saved assessments that are still waiting to be uploaded. 
 
+Verified means that the assessment has been reviewed by CWF and added to the CABD. Submissions in review means that they are still under review by CWF and that they have not been added. 
+
 While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all saved assessments at once. Once the upload is complete, the counts of saved assessments will be reset to zero.
 
 .. figure:: img/android_profile_screen.png
