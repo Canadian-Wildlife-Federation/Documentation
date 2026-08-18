@@ -22,7 +22,9 @@ Overview
 Projection
 ==========
 
-All coordinates are returned in latitude/longitude (EPSG:4617).
+All coordinates are returned in latitude/longitude (EPSG:4617).  
+
+Most end points have the option to request data in other projections. See specific end point for more details.
 
 .. _api-max-features:
 
@@ -112,6 +114,7 @@ Feature End Points
     - ``types`` - The feature types to query.
     - ``filter`` - A filter string that filters features based on attributes. Can be provided more than once. Multiple filters are combined using logical AND. See below for more details on the filter format.
     - ``namefilter`` - A filter string that filters features based on all name attributes (en & fr). Multiple namefilters can be provided. If multiple are provided, they are combined using logical OR. See below for more details on namefilter. 
+    - ``crs`` - The coordinate reference system to return results in. The default is EPSG:4617.  Any code supported by PostGIS can used.  Must be provided in the form <authority>:<code>  Example: crs=EPSG:4326
 
 |ftstype|
 
@@ -148,6 +151,10 @@ Return all fishway features that are associated with a dam structure:
 
 Return all dam features with a use code of 2 (Hydroelectricity):
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2``
+
+Return all dam features with a use code of 2 (Hydroelectricity) in EPSG:4326
+``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2&crs=epsg:4326``
+
 
 Return all dam features with a use code of 2 (Hydroelectricity) and a pool and weir fishway (up_passage_type_code = 3):
 ``https://cabd-web.azurewebsites.net/cabd-api/features/dams?filter=use_code:eq:2&filter=up_passage_type_code:eq:3``
@@ -250,7 +257,7 @@ The following formats are supported for feature endpoints that return a collecti
 
 - ``geopackage``/ ``gpkg`` - outputs geopackage file
 - ``shp`` – outputs shapefile
-- ``kml`` – outputs kml file
+- ``kml`` – outputs kml file (kml is only providedin EPSG:4326)
 - ``json``/ ``geojson`` - outputs GeoJSON (default)
 - ``csv`` – outputs csv file 
 
@@ -407,10 +414,11 @@ End Point
 
 ``type`` must be a valid feature type. 
 
-The attributes included in the vector tile are those whose "include_vector_tile" value in the feature_type_metadata table are true.
+The attributes included in the vector tile are those whose "include_vector_tile" value in the feature_type_metadata table are true. In addition there are latitude_4326 and longitude_4326 attributes the report the feature position in epsg:4326.
 
 
 Assessment End Points
+======================
 
 -----
 
@@ -466,7 +474,7 @@ This end point allows user to submit new community data.
 * METHOD: POST
 * CONTENT-TYPE: application/geo+json 
 * AUTHORIZATION: Bearer <token>
-* BODY: Either a single GeoJson feature or array of GeoJson features. At a minimum each GeoJson feature needs a feature_type and valid geometry.
+* BODY: Either a single GeoJson feature or array of GeoJson features. All coordinates must be provided in epsg:4326. At a minimum each GeoJson feature needs a feature_type and valid geometry.
 A cabd_id property should be provided if an existing feature is updated. All other properties are retained and available to the data reviewer. All photo data should be submitted as base64 encoded png images. 
 
 ::
@@ -530,6 +538,7 @@ This api returns all the features submitted to the community data with a limited
     - ``fromdate`` - The earliest upload date to return results for. ISO 8601 UTC date/time. Date only (not time) is also accepted. Exclusive.
     - ``todate`` - The latest upload date to return results for. ISO 8601 UTC date/time. Date only (not time) is also accepted. Exclusive.
     - ``max-results`` - The maximum number of features to return (if not provided will default to system maximum)
+    - ``crs`` - The coordinate system to return the geojson geometries in. The default is epsg:4617. Any projection supported by PostGIS is supported.  Should be provided in the form "<authority>:<code>".  Example: "&crs=epsg:4326"
     
 
 The attributes included in the response are:
@@ -538,6 +547,8 @@ The attributes included in the response are:
  - ``feature_type`` - the feautre type
  - ``is_owner`` - if this feature was submitted by the current user or not
  - ``uploaded_datetime`` - the date/time the feature was uploaded
+ - ``x`` - the x location of the feature (in the projection requested)
+ - ``y`` - the y location of the feature (in the projection requested)
  - ``status`` - the current processing status of the feature. Valid values include: 
 
    - ``NEW`` - new feature that has not been reviewed
@@ -566,7 +577,9 @@ The attributes included in the response are:
             "is_owner": true,
             "uploaded_datetime": "2026-04-24T22:25:56.226352Z",
             "id": "0e0170ab-03c6-4dc8-988c-27eba419f82f",
-            "status": "NEW"
+            "status": "NEW",
+            "x": 125.6,
+            "y": 10.1
          }
        },
        {
@@ -581,7 +594,9 @@ The attributes included in the response are:
             "is_owner": false,
             "uploaded_datetime": "2026-04-22T21:05:23.3421Z",
             "id": "fa44eff1-2e9f-4266-86ea-94679e991d9a"
-            "status": "PROCESSED"
+            "status": "PROCESSED",
+            "x": 125.6,
+            "y": 10.1
           }
         } 
       ]    
