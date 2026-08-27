@@ -4,6 +4,27 @@
 Android User Guide
 =============================
 
+.. important::
+    **Safety, access and permissions**
+
+    CANFISHPASS is intended to help users record observations about aquatic barriers. It is not a field-safety tool and does not give you permission to enter, inspect, photograph or assess any property, structure or waterway.
+
+    Before beginning an assessment, consider whether you can make the observation safely and lawfully. You are responsible for following all applicable laws, site rules, warnings, permits and access restrictions.
+
+    When using CANFISHPASS:
+
+    - Do not trespass or enter private, restricted, closed or hazardous areas.
+    - Do not climb on, enter, alter or interfere with dams, culverts, bridges, crossings, equipment or other infrastructure.
+    - Keep a safe distance from traffic, moving water, unstable ground, construction activity and other hazards.
+    - Do not enter water or approach a structure solely to complete an assessment.
+    - Do not use the App while driving or otherwise distracted.
+    - Obtain any necessary permission before accessing a site or taking photographs.
+    - If access, conditions or safety are uncertain, do not proceed. Record only information you can safely observe from a location you are authorized to access.
+    
+    Please respect the privacy and rights of others. Avoid capturing identifiable people, private-property details or other unnecessary personal information in photographs or comments. Do not submit information you believe to be confidential, culturally sensitive or likely to create a safety, privacy, security or conservation risk if disclosed.
+
+    CWF may review submitted information before it is included in the Canadian Aquatic Barriers Database. That review does not make CWF responsible for a user’s field decisions, conduct or compliance with access requirements.
+
 App Access and Installation
 ----------------------------
 You can download the mobile app (CANFISHPASS) from the `Google Play store <https://play.google.com/store/apps/details?id=com.foundry.cabdapp>`_. Once installed, the app will be accessible by clicking the CWF logo app icon. 
@@ -27,8 +48,6 @@ Getting Started
 ^^^^^^^^^^^^^^^^
 
 From the home screen, you can log in or create an account, open this Getting Started guide, or view the map. You can view the map without needing to log in.
-
-# TO DO: REPLACE THIS IMAGE once login button is added
 
 .. figure:: img/android_email.png
     :align: center
