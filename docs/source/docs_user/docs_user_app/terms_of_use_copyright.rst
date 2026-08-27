@@ -5,10 +5,8 @@ Terms of Use and Copyright
 =============================
 
 Canadian Fish Passage Assessment (CANFISHPASS) Mobile Application 
------------------------------------------------------------------
 
 Canadian Wildlife Federation 
-----------------------------
 
 Terms of Use
 ^^^^^^^^^^^^
