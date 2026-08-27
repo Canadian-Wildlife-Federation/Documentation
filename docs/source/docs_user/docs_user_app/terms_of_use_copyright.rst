@@ -5,6 +5,7 @@ Terms of Use and Copyright
 =============================
 
 Canadian Fish Passage Assessment (CANFISHPASS) Mobile Application 
+-----------------------------------------------------------------
 
 Canadian Wildlife Federation 
 ----------------------------
@@ -32,7 +33,7 @@ The personal information collected by CWF from App users is used to:
 
 Privacy Policy
 ^^^^^^^^^^^^^^^
-Please refer to our `privacy policy < https://cabd-docs.netlify.app/docs_user/docs_user_app/privacy_statement>`_ for information on how CWF collects, uses and discloses personally identifiable information from its users.
+Please refer to our `privacy policy <https://cabd-docs.netlify.app/docs_user/docs_user_app/privacy_statement>`_ for information on how CWF collects, uses and discloses personally identifiable information from its users.
 
 User Content and Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
