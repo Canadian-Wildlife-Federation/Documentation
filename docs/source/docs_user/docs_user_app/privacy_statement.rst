@@ -152,7 +152,6 @@ Our Use of Internet Technology
 - `Canadian Fish Passage Assessment (CANFISHPASS) app <https://cabd-docs.netlify.app/docs_user/docs_user_app>`_
     - CANFISHPASS allows individual Canadians to register and submit personal assessments and photographs of aquatic barrier structures. The assessment information is incorporated into the Canadian Aquatic Barriers Database (CABD) and made publicly available for practitioners and decision-makers to find and use the data. 
     - Upon registration and use of the application, the following information is or may be collected: 
-
         1. Non-identifiable unique ID provided to each CANFISHPASS user 
         2. The date the account was created 
         3. The date of the latest log in 
