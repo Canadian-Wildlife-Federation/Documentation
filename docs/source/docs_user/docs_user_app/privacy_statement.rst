@@ -106,6 +106,7 @@ Our Use of Internet Technology
     - This site supports the CanFish Gear Lending Program, a program created by CWF to provide solutions and support to fish harvesters impacted by fisheries closures due to whale presence. Harvesters are provided with on-demand fishing gear, free of cost, to allow them to continue fishing and minimize negative impacts to their livelihood. Personal information collected via this site concerns the borrowing of fish gear. Information collected, which depending on context, may constitute personal information, consists of: Name, Status as fishing license holder, fishing licence number, email address, telephone number, home port, vessel number, description of fishing equipment currently used. 
 - `Foundation <https://cwf-fcf.org/en/foundation/?src=site-map>`_
     - This CWF subsite contains information on the activities and directors of the CWF Foundation. It also includes a page where on-line applications for scholarships may be submitted. Personal information collected in these application forms include: 
+    
     1. Name 
     2. Mailing address 
     3. Email address 
@@ -126,6 +127,7 @@ Our Use of Internet Technology
     - This site is operated by CWF and supported by the Canadian Wildlife Service. It provides access to multimedia materials pertaining to Canada’s wildlife and diverse ecosystems. Personal information may be collected through the site in the use of cookies and other digital markers as well as a contact form (name, age, email address, location and unstructured question/comment). 
 - `iNaturalist.ca <https://inaturalist.ca/?src=site-map>`_
     - iNaturalist is an American organization that promotes nature observation and supports similar activities in a number of countries. The CWF is the Canadian iNaturalist Network Member. This site, operated by CWF, allows individual Canadians to register and submit personal observations and photographs. The findings are shared with scientific data repositories to help scientists find and use the data. The information is not directly collected by CWF. Upon registration and use of the application or website, the following information is or may be collected: 
+    
     1. Unique ID provided to each iNaturalist user 
     2. The date the account was created 
     3. The date when the person updated their account settings 
@@ -150,13 +152,13 @@ Our Use of Internet Technology
 - `Canadian Fish Passage Assessment (CANFISHPASS) app <https://cabd-docs.netlify.app/docs_user/docs_user_app>`_
     - CANFISHPASS allows individual Canadians to register and submit personal assessments and photographs of aquatic barrier structures. The assessment information is incorporated into the Canadian Aquatic Barriers Database (CABD) and made publicly available for practitioners and decision-makers to find and use the data. 
     - Upon registration and use of the application, the following information is or may be collected: 
-        1. Non-identifiable unique ID provided to each CANFISHPASS user 
-        2. The date the account was created 
-        3. The date of the latest log in 
-        4. The number of total log ins 
-        5. The person’s CANFISHPASS username 
-        6. The email address associated with the account 
-        7. The number of aquatic barrier assessments the person has made in CANFISHPASS 
+    1. Non-identifiable unique ID provided to each CANFISHPASS user 
+    2. The date the account was created 
+    3. The date of the latest log in 
+    4. The number of total log ins 
+    5. The person’s CANFISHPASS username 
+    6. The email address associated with the account 
+    7. The number of aquatic barrier assessments the person has made in CANFISHPASS 
     8. Photos and precise GPS-coordinates of each submission the person has made in CANFISHPASS 
 
 We use Personal Information collected via CANFISHPASS to:
