@@ -4,7 +4,9 @@
 Terms of Use and Copyright
 =============================
 
-CWF Canada
+Canadian Fish Passage Assessment (CANFISHPASS) Mobile Application 
+
+Canadian Wildlife Federation 
 ----------------------------
 
 Terms of Use
@@ -30,7 +32,7 @@ The personal information collected by CWF from App users is used to:
 
 Privacy Policy
 ^^^^^^^^^^^^^^^
-Please refer to our `privacy policy <https://cwf-fcf.org/en/about-cwf/policies/privacy-policy.html>`_ for information on how CWF collects, uses and discloses personally identifiable information from its users.
+Please refer to our `privacy policy < https://cabd-docs.netlify.app/docs_user/docs_user_app/privacy_statement>`_ for information on how CWF collects, uses and discloses personally identifiable information from its users.
 
 User Content and Services
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,9 +46,24 @@ By using these services, you agree not to post, upload to, transmit, distribute,
 (d) User Content that impersonates any person or entity or otherwise misrepresents your affiliation with a person or entity;
 (e) User Content that, in CWF’s sole judgment, may endanger or otherwise affect CWF’s tax-exempt status, including but not limited to content on behalf of (or in opposition to) any candidate for public office, and content that contains propaganda or that otherwise attempts to influence legislation;
 (f) Promotions, advertising or solicitations;
-(g) Private information of any third party, including, without limitation, addresses, phone numbers, email addresses, Social Security numbers and credit card numbers;
+(g) Personal information or other third-party content including, without limitation, addresses, telephone numbers, email addresses, payment-card information, images of identifiable individuals, or information concerning private property, unless you have the lawful authority and any required consent to submit it; 
 (h) Viruses, corrupted data or other harmful, disruptive or destructive files; and
 (i) User Content that, in the sole judgment of CWF, is objectionable or which restricts or inhibits any other person from using or enjoying the Interactive Areas or the App, or which may expose CWF or its users to any harm or liability of any type.
+
+The App may be used to collect and submit information concerning aquatic barriers and related sites. You are solely responsible for deciding whether it is safe, lawful and appropriate to access, observe, photograph or otherwise access any location. 
+
+When using the App or collecting information for submission, you agree that you will: 
+
+(a) Comply with all applicable laws, regulations, permits, site rules and access restrictions; 
+(b) Obtain all permissions, consents and authorizations necessary to enter or access a site, conduct an assessment, take photographs, collect location information, or submit information through the App; 
+(c) Not trespass, enter restricted or hazardous areas, interfere with infrastructure or operations, or place yourself or any other person at risk; 
+(d) Not upload or submit personal information, images of identifiable individuals, private-property information, or other third-party content unless you have the lawful authority and any required consent to do so; 
+(e) Not submit information that you know, or reasonably should know, is inaccurate, misleading, unlawfully obtained, confidential, culturally sensitive, or likely to create a safety, privacy, security, conservation or other material risk if disclosed; and 
+(f) Take reasonable care to avoid including unnecessary identifying information in photographs, comments or other submitted materials. 
+
+CWF may review, edit, withhold, remove or decline to publish any submission, in whole or in part, where CWF reasonably considers this necessary to protect privacy, safety, legal rights, sensitive locations or information, data quality, the integrity of the Canadian Aquatic Barriers Database, or the public interest. CWF’s review of a submission does not make CWF responsible for your conduct, the accuracy of your submission, or your compliance with these App Terms. 
+
+You represent and warrant that your collection and submission of User Content complies with this section and does not infringe or violate the rights of any person or entity. 
 
 CWF takes no responsibility and assumes no liability for any User Content posted, stored or uploaded by you or any third party, or for any loss or damage thereto, nor is CWF liable for any mistakes, defamation, slander, libel, omissions, falsehoods, obscenity, profanity you may encounter. Your use of the App is at your own risk. As a provider of interactive services, CWF is not liable for any statements, representations or User Content provided by its users in any way on the App or CABD site. 
 
@@ -84,7 +101,7 @@ Any comments or materials sent to CWF (via any medium including e-mail and regul
 
 Limitation of Liability
 ^^^^^^^^^^^^^^^^^^^^^^^
-Activities associated with the App can at times involve risk of injury, death, property damage, and other dangers associated with such activities. You understand that, to the fullest extent permitted by applicable law, CWF cannot and does not assume responsibility for any such personal injury, death, or property damage resulting from your use of the App.
+Activities associated with the App can at times involve risk of injury, death, property damage, and other dangers associated with such activities. Without limiting the foregoing, you are responsible for your own decisions and conduct when accessing, observing, photographing, or assessing any site in connection with the App. You understand that, to the fullest extent permitted by applicable law, CWF is not responsible for any such personal injury, death, property damage, loss or other harm arising from or related to your field activities, access to any site, or failure to obtain necessary permissions or comply with applicable laws, permits, site rules or safety requirements, to the fullest extent permitted by applicable law.
 
 In no event shall CWF, any other party (whether or not involved in creating, producing, maintaining or delivering the App), and/or the officers, directors, employees, shareholders or agents of any of them, be liable for any direct, incidental or consequential damages of any kind, including, without limitation, loss of use, loss of income, loss of actual or anticipated profits, loss of business, loss of contracts, loss of goodwill or reputation, loss of anticipated savings, loss of, damage to or corruption of data, whether in an action in contract, tort (including but not limited to negligence) or otherwise, arising out of or in any way connected with the use of the App, the services, the content or the materials contained in or accessed through the App or CABD site, including without limitation any damages caused by or resulting from reliance by user on any information obtained from CWF, or that result from mistakes, omissions, interruptions, deletion of files or email, errors, defects, viruses, delays in operation or transmission or any failure of performance, whether or not resulting from acts of god, communications failure, theft, destruction or unauthorized access to CWF’s records, programs or services. In no event shall the aggregate liability of CWF, whether in contract, warranty, tort (including negligence, whether active, passive or imputed), product liability, strict liability or other theory, arising out of or relating to the use of the App exceed any compensation you pay, if any, to CWF for access to or use of the App.
 
