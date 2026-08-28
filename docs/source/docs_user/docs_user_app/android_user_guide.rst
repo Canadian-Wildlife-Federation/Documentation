@@ -181,7 +181,7 @@ Tip: If you're unsure what a question is asking, or how to respond, tap the Info
 
 .. raw:: html
 
-    <video controls width="600"><source src="../../_static/android_assess_existing.mp4"></video>
+    <video controls width="300"><source src="../../_static/android_assess_existing.mp4"></video>
 
 The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?""
 
@@ -205,7 +205,7 @@ To add a new feature:
 
 .. raw:: html
 
-    <video controls width="600"><source src="../../_static/android_assess_new.mp4"></video>
+    <video controls width="300"><source src="../../_static/android_assess_new.mp4"></video>
 
 Once you select the structure type, additional assessment questions and photo prompts will appear. 
 
