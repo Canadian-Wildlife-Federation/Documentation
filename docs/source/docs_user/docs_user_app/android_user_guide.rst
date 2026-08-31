@@ -105,8 +105,8 @@ Here’s a quick summary of what each one does:
      - Open a legend for features displayed on the map. 
 
    * - |logo8|
-     - Base Map and Layer Toggle
-     - Toggle between satellite map style and base map style, and toggle dam or stream crossing layers on or off.  
+     - Base Map and Layer Controls
+     - Toggle between satellite map style and base map style, and toggle dam or stream crossing layers on or off. You can also click "Reload Community Features" to refresh the points displayed if you run into any issues with the map layers.
 
    * - |logo9|
      - Add New Feature
@@ -180,7 +180,7 @@ Click ‘ASSESS THIS FEATURE’ to open the assessment form.
 Tip: If you're unsure what a question is asking, or how to respond, tap the Info icon at the top right of the question for additional details. 
 
 .. raw:: html
-
+    :align: center
     <video controls width="300"><source src="../../_static/android_assess_existing.mp4"></video>
 
 The first question will ask, “This structure is currently identified as (either a dam or a stream crossing), is this correct?""
@@ -204,7 +204,7 @@ To add a new feature:
 #. Once the crosshair is at the appropriate spot, tap the plus sign button in the app menu. This will open the rapid assessment form.
 
 .. raw:: html
-
+    :align: center
     <video controls width="300"><source src="../../_static/android_assess_new.mp4"></video>
 
 Once you select the structure type, additional assessment questions and photo prompts will appear. 
