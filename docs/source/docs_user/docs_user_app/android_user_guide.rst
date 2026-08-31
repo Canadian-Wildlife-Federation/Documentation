@@ -105,8 +105,8 @@ Here’s a quick summary of what each one does:
      - Open a legend for features displayed on the map. 
 
    * - |logo8|
-     - Base Map and Layer Toggle
-     - Toggle between satellite map style and base map style, and toggle dam or stream crossing layers on or off.  
+     - Base Map and Layer Controls
+     - Toggle between satellite map style and base map style, and toggle dam or stream crossing layers on or off. You can also click "Reload Community Features" to refresh the points displayed if you run into any issues with the map layers.
 
    * - |logo9|
      - Add New Feature
