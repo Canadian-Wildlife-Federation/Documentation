@@ -12,6 +12,7 @@ iOS User Guide
     Before beginning an assessment, consider whether you can make the observation safely and lawfully. You are responsible for following all applicable laws, site rules, warnings, permits and access restrictions.
     
     When using CANFISHPASS:
+
     - Do not trespass or enter private, restricted, closed or hazardous areas.
     - Do not climb on, enter, alter or interfere with dams, culverts, bridges, crossings, equipment or other infrastructure. 
     - Keep a safe distance from traffic, moving water, unstable ground, construction activity and other hazards. 
@@ -251,6 +252,9 @@ While in this window, you can tap the ‘UPLOAD FEATURES’ button to submit all
 .. figure:: img/ios_profile_screen.png
     :align: center
     :width: 50%
+
+
+The 'Refresh Features' button can be used to refresh the barrier points on the map. The can be used if you run into any issues with the maps layers, particularly if you do not see your submitted assessments appear right away.
 
 You will also see a  ‘DELETE ALL’ button on this screen. This button will remove all assessment data saved locally in the app, but will NOT delete any information from the CWF database.
 
